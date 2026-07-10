@@ -1,0 +1,18 @@
+{
+    "name": "SmartLighting2D_Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5343df9de3c746d4eb2e4a5af14e1d78"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

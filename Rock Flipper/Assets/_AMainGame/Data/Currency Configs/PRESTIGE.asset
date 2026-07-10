@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18118eca4e28ee5458a83d80fcd87049, type: 3}
+  m_Name: PRESTIGE
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Run.CurrencyConfigAsset
+  header: PRESTIGE
+  currency: 3
+  isInCombatOnly: 0
+  defaultAutoSellPercentage: 0
+  baseCashValue: 1
+  cashValueMultiplierPerLevel: 1.5
+  baseLevelUpCost: 10
+  levelUpCostGrowthFactor: 1.2000000476837158
+  mediumValueScale: 3
+  bigValueScale: 5
+  icon: {fileID: 21300000, guid: c664ac74b1eed7f41b54cacd7d2c46fa, type: 3}
+  color: {r: 0.02745098, g: 0.09411765, b: 0.12156863, a: 1}
+  textSprite: 
+  achievementConfig:
+    commonAchievementId: 
+    steamAchievementId: 

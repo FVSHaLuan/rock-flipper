@@ -1,0 +1,17 @@
+{
+    "name": "FHC",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b7aa2bc266cfcf247a01da547b0299ed",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

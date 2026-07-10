@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ff1ec19b0f2e34bb2fa4e8bb61412d, type: 3}
+  m_Name: RunDataObject_2
+  m_EditorClassIdentifier: 
+  key: 4d9b9d112ef05a840afff9fbbfddbf41
+  standAloneKey: 4d9b9d112ef05a840afff9fbbfddbf41_PC
+  fileFormat: 1
+  password: 
+  encryptOnStandalone: 0
+  encryptOnMobile: 0
+  encryptOnEditor: 0
+  editor_CurrentData:
+    slotId: 2
+    compatVersion: 1
+    initedRun: 1
+    finishedTutorial: 0
+    beatFinale: 0
+    isInPrestige: 0
+    prestigeCount: 0
+    exponentUnlockedPrestigeCount: -1
+    playTime: 6.9659805
+    prestigePlayTime: 6.9659805
+    previousPrestigePlayTime: 0
+    temporaryMultiplier: 1
+    currencyValues:
+      m_keys: 
+      m_values: []
+    discoveredCurrencies: 0000000002000000
+    currentStage: 1
+    maxUnlockedStage: 1
+    coreStates:
+    - id: basic
+      currentHPFraction: 1
+    unspawnedStagedCoreCount: 0
+    groupStates:
+      m_keys: []
+      m_values: []
+    moduleStates:
+      m_keys: []
+      m_values: []
+    moduleItemStates:
+      m_keys: []
+      m_values: []
+    ballSaveDataDictionary:
+      m_keys: 
+      m_values: []
+    dismissedPaintButtonHighlighter: 0
+    auraWaveSpendingFactor: 0.5
+    everUnlockedModules:
+      m_keys: []
+    timeWarpProgress: -1
+    lastCalculatedTotalSkillPoints: 1
+    skillLevels:
+      m_keys: []
+      m_values: 
+    unlockedSkillIds:
+      m_keys: []
+    maxAverageDamagePerSecond: 0.6
+    maxAverageDamagePerSecondThisPrestige: 0.6
+    bossCoreLevel: 0
+    afterPrestigeBossCoreLevel: 0
+    autoTriggerBallExciter: 1
+    autoTriggerTimeWarp: 1
+    savedMaxUnlockedStage: 0
+    savedEverUnlockedModules:
+      m_keys: []
+    savedBossCoreLevel: 0
+    savedMaxAverageDamagePerSecond: 0
+    savedStartingCash: 0
+  saveCurrentData: 0
+  defaultData:
+    slotId: 0
+    compatVersion: 0
+    initedRun: 0
+    finishedTutorial: 0
+    beatFinale: 0
+    isInPrestige: 0
+    prestigeCount: 0
+    exponentUnlockedPrestigeCount: -1
+    playTime: 0
+    prestigePlayTime: 0
+    previousPrestigePlayTime: 0
+    temporaryMultiplier: 1
+    currencyValues:
+      m_keys: 
+      m_values: []
+    discoveredCurrencies: 
+    currentStage: 0
+    maxUnlockedStage: 0
+    coreStates: []
+    unspawnedStagedCoreCount: 0
+    groupStates:
+      m_keys: []
+      m_values: []
+    moduleStates:
+      m_keys: []
+      m_values: []
+    moduleItemStates:
+      m_keys: []
+      m_values: []
+    ballSaveDataDictionary:
+      m_keys: 
+      m_values: []
+    dismissedPaintButtonHighlighter: 0
+    auraWaveSpendingFactor: 0.5
+    everUnlockedModules:
+      m_keys: []
+    timeWarpProgress: -1
+    lastCalculatedTotalSkillPoints: 0
+    skillLevels:
+      m_keys: []
+      m_values: 
+    unlockedSkillIds:
+      m_keys: []
+    maxAverageDamagePerSecond: 0
+    maxAverageDamagePerSecondThisPrestige: 0
+    bossCoreLevel: 0
+    afterPrestigeBossCoreLevel: 0
+    autoTriggerBallExciter: 1
+    autoTriggerTimeWarp: 1
+    savedMaxUnlockedStage: 0
+    savedEverUnlockedModules:
+      m_keys: []
+    savedBossCoreLevel: 0
+    savedMaxAverageDamagePerSecond: 0
+    savedStartingCash: 0

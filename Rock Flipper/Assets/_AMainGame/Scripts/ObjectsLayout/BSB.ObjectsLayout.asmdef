@@ -1,0 +1,16 @@
+{
+    "name": "BSB.ObjectsLayout",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0379123a2aea5834ba136b944fbac53e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ClickHold
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: cc4a14721c90e03469484f118b2db466, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: Helpers.UnityExtend::ClickHold
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selfLog.enableLogger
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selfLog.alsoLogToUnityConsole
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selfLog.selfLogs
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: threshold
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: initialClickSpeed
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxClickSpeed
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickAcceleration
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+    value: BT.Run.Shop.ModuleItem, Assembly-CSharp
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+    value: OnHold_Buy
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+    value: UnityEngine.Object, UnityEngine
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+    value: BT.ClickParticleHelper, Assembly-CSharp
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+    value: TryPlayClickParticle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+    value: UnityEngine.Object, UnityEngine
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clickParticleDelegate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+    value: 2
+    objectReference: {fileID: 0}
+  m_ExcludedProperties:
+  - onHoldClick.m_PersistentCalls.m_Calls
+  - clickParticleDelegate.m_PersistentCalls.m_Calls
+  - selfLog
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []

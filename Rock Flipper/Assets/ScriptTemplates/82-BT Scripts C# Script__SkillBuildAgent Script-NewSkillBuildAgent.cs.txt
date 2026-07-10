@@ -1,0 +1,12 @@
+using UnityEngine;
+
+namespace BT.Run.Stats.Agents
+{
+    public class #SCRIPTNAME# : SkillBuildAgentWithSimpleTooltip
+    {
+        public override void Apply(int currentLevel, int addingLevel, double buildValuePerLevel)
+        {
+            // Write apply logic here
+        }
+    }
+}

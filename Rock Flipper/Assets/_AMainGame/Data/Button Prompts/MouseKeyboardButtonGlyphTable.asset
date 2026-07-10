@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04116ffc35ad748b817650349e0504, type: 3}
+  m_Name: MouseKeyboardButtonGlyphTable
+  m_EditorClassIdentifier: 
+  spriteButtonPairs:
+  - name: '[NULL]NotSet'
+    mouseKeyBoardButton: 0
+    sprite: {fileID: 0}
+  - name: Escape
+    mouseKeyBoardButton: 27
+    sprite: {fileID: 21300000, guid: aed5083d77a12ff4386d69262dc67fa7, type: 3}
+  - name: Space
+    mouseKeyBoardButton: 32
+    sprite: {fileID: 21300000, guid: 783fc5b886e764746922e18070323870, type: 3}
+  - name: Alpha0
+    mouseKeyBoardButton: 48
+    sprite: {fileID: 21300000, guid: c8f9d4aa22199bd48a8f05ca05f4d770, type: 3}
+  - name: Alpha1
+    mouseKeyBoardButton: 49
+    sprite: {fileID: 21300000, guid: f29bbb07914186a42a70d464dd25586d, type: 3}
+  - name: Alpha3
+    mouseKeyBoardButton: 51
+    sprite: {fileID: 21300000, guid: d0aaf588346a3304c88bd8994378c2ad, type: 3}
+  - name: A
+    mouseKeyBoardButton: 97
+    sprite: {fileID: 21300000, guid: dae1f13f8151d0d4da4ab94fa59de91c, type: 3}
+  - name: C
+    mouseKeyBoardButton: 99
+    sprite: {fileID: 21300000, guid: bad781277b8c02646b3661b1c6bfad4b, type: 3}
+  - name: D
+    mouseKeyBoardButton: 100
+    sprite: {fileID: 21300000, guid: 29665a8a401e7d443a73bd5eaf3d023f, type: 3}
+  - name: E
+    mouseKeyBoardButton: 101
+    sprite: {fileID: 21300000, guid: e9add457d65dd9c4484d23a031ff2047, type: 3}
+  - name: F
+    mouseKeyBoardButton: 102
+    sprite: {fileID: 21300000, guid: b54fce24257a1a646a212399be77f259, type: 3}
+  - name: G
+    mouseKeyBoardButton: 103
+    sprite: {fileID: 21300000, guid: 7c12e7675dd14af4299fbbf9e45f2637, type: 3}
+  - name: H
+    mouseKeyBoardButton: 104
+    sprite: {fileID: 21300000, guid: b811377ff95dd3c4e9dd93c8753a4d66, type: 3}
+  - name: Q
+    mouseKeyBoardButton: 113
+    sprite: {fileID: 21300000, guid: 994c17ac99b257145b7d8864b01ae7d8, type: 3}
+  - name: S
+    mouseKeyBoardButton: 115
+    sprite: {fileID: 21300000, guid: b761ad349a23a624890341221ed0a8df, type: 3}
+  - name: W
+    mouseKeyBoardButton: 119
+    sprite: {fileID: 21300000, guid: 4ffc1bc4cf4210e4da0b5cab10a99778, type: 3}
+  - name: X
+    mouseKeyBoardButton: 120
+    sprite: {fileID: 21300000, guid: 1477511b5fec3894eb5654a8c8485280, type: 3}
+  - name: Z
+    mouseKeyBoardButton: 122
+    sprite: {fileID: 21300000, guid: 32ffa003d6e62134c8a12161dec76cf5, type: 3}
+  - name: LeftMouse
+    mouseKeyBoardButton: 323
+    sprite: {fileID: 21300000, guid: d5766168417e21741a503d756319448d, type: 3}
+  - name: RightMouse
+    mouseKeyBoardButton: 324
+    sprite: {fileID: 21300000, guid: f53f82d7db3d37c43923bca85de9839b, type: 3}
+  - name: MiddleMouse
+    mouseKeyBoardButton: 325
+    sprite: {fileID: 21300000, guid: be935ac0f702d684b93ff6b2ca699e4f, type: 3}
+  - name: Mouse
+    mouseKeyBoardButton: -3
+    sprite: {fileID: 21300000, guid: 96d3a6eee6af14040b79a6a3b3b55f28, type: 3}
+  - name: ScrollMouse
+    mouseKeyBoardButton: -2
+    sprite: {fileID: 21300000, guid: 0ec7a7048c6dbb84db6158fa064d06d1, type: 3}
+  - name: '[NULL]WASD'
+    mouseKeyBoardButton: -1
+    sprite: {fileID: 21300000, guid: cf8b61048ab21894f805db69b1bc980e, type: 3}
+  - name: Alpha2
+    mouseKeyBoardButton: 50
+    sprite: {fileID: 21300000, guid: fd6a72174ce7e8b419e5ca6464796d54, type: 3}
+  - name: Alpha4
+    mouseKeyBoardButton: 52
+    sprite: {fileID: 21300000, guid: 84f4903a458844c4a8b0f25ca0257d15, type: 3}
+  - name: Alpha5
+    mouseKeyBoardButton: 53
+    sprite: {fileID: 21300000, guid: b2098adc04d86f34b8cf78e50254d36a, type: 3}
+  - name: Alpha6
+    mouseKeyBoardButton: 54
+    sprite: {fileID: 21300000, guid: a0281948922e2764b857117950e4a1b3, type: 3}
+  - name: Alpha7
+    mouseKeyBoardButton: 55
+    sprite: {fileID: 21300000, guid: 1991f714f7daa7e4eb6cc05fc69c83ec, type: 3}
+  - name: Alpha8
+    mouseKeyBoardButton: 56
+    sprite: {fileID: 21300000, guid: 53f9d624c0deeed49aefc09bdd4343c3, type: 3}
+  - name: Alpha9
+    mouseKeyBoardButton: 57
+    sprite: {fileID: 21300000, guid: 04ac8210b3bdfb5459f0a154a3c4dd33, type: 3}
+  - name: R
+    mouseKeyBoardButton: 114
+    sprite: {fileID: 21300000, guid: 4f3b59e437ee2d64d98acb9ef0beaeea, type: 3}
+  - name: T
+    mouseKeyBoardButton: 116
+    sprite: {fileID: 21300000, guid: 31ec612c9dc65ac4d8c0d5f67c212332, type: 3}
+  - name: Y
+    mouseKeyBoardButton: 121
+    sprite: {fileID: 21300000, guid: 6b74cb61043a21b4681f86d2bcc4ae45, type: 3}
+  - name: V
+    mouseKeyBoardButton: 118
+    sprite: {fileID: 21300000, guid: 2a5a5b3ed266e2349abc30d1f6692cf5, type: 3}
+  - name: Enter
+    mouseKeyBoardButton: 13
+    sprite: {fileID: 21300000, guid: cc2b720da3e1a7e43a843e6d9a5637b4, type: 3}
+  - name: '[NULL]Tab'
+    mouseKeyBoardButton: 9
+    sprite: {fileID: 21300000, guid: 91f4a6fb368f7f443ada5ae00deb513d, type: 3}

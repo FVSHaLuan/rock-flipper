@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Boundary
+  - Core
+  - Ball
+  - MultButton
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Capture
+  - Water
+  - UI
+  - Core
+  - Ball
+  - HardBoundary
+  - MultButton
+  - Boundary
+  - PlayerCursor
+  - MouseHoverBall
+  - PrestigeSkillScreenBK
+  - SystemCam
+  - 
+  - 
+  - SystemUI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1598460271
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ball
+    uniqueID: 265591557
+    locked: 0
+  - name: Core
+    uniqueID: 1031368237
+    locked: 0
+  - name: Laser
+    uniqueID: 2661898693
+    locked: 0
+  - name: PlayerCursor
+    uniqueID: 5382387
+    locked: 0
+  - name: Combat particle effect
+    uniqueID: 3661504733
+    locked: 0
+  - name: AuraWave
+    uniqueID: 2804607251
+    locked: 0
+  - name: Lightning
+    uniqueID: 2625658281
+    locked: 0
+  - name: Lighting 2D
+    uniqueID: 1850657777
+    locked: 0
+  - name: Combat UI Effect
+    uniqueID: 1414876891
+    locked: 0
+  - name: Floating Numbers
+    uniqueID: 1425206213
+    locked: 0
+  - name: UI
+    uniqueID: 1568848067
+    locked: 0
+  - name: UI Particles
+    uniqueID: 3756174689
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []

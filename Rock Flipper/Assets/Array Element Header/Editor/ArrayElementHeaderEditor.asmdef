@@ -1,0 +1,18 @@
+{
+    "name": "ArrayElementHeaderEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:25e620e9ff775ff4f900e86b70e51790"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

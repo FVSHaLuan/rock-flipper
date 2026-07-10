@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1993723498915865109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385348728857820063}
+  - component: {fileID: 5789884900222166960}
+  m_Layer: 0
+  m_Name: BuildStats - Default
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &385348728857820063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993723498915865109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5789884900222166960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993723498915865109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db77bab4c53e52c429369c9f216e168a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  minEffectiveUnlockingStage: 0
+  buyPerModuleLevel: 100
+  damageMultiplierPerModuleLevel: 2
+  damageToCash: 1
+  damageToRawDarkmatter: 1
+  mouseCircleRadius: 0.2
+  mouseHoverDamage: 1
+  mouseHoverFireRate: 1.2
+  mouseHoverModuleLevel: 0
+  mouseHoverDamageFactorPerCoreInRange: 0
+  mouseHoverDamageFactorPerBallInRange: 0
+  enabledAutoMouseHover: 0
+  autoMouseHoverSpeedFactor: 1
+  mouseClickModuleLevel: 0
+  mouseClickDamage: 500
+  mouseClickRate: 0.008333334
+  mouseClickCapacity: 3
+  mouseClickCoreHPFactorPerModuleLevel: 0
+  darkCoreChance: 0
+  darkCoreAdditionalDarkmatterRate: 0
+  goldenCoreChance: 0
+  goldenCoreAdditionalCashRate: 0
+  multCoreChance: 0
+  multCoreMultiplierIncrement: 0.001
+  tempMultPerClearedStage: 0
+  tempMultPerClearedStageMultiplier: 1
+  ballPowerShift: 0
+  unlockedRegularBallTierCount: 5
+  ballDamageMultiplier: 1
+  temporaryMultiplierPerBallCount: 0
+  temporaryMultiplierPerBallDamageLevel: 0
+  maxBallCount: 20
+  maxBallDamageLevel: 200
+  regularBallStats: []
+  bonusBucketPerLevel: 10
+  ballExciterCooldownTime: 120
+  ballExciterChanceTargetCore: 0.2
+  ballExcitedDamageFactor: 1
+  ballExcitedSpeedFactor: 1
+  ballExcitedRawDarkmatterGainFactor: 1
+  ballExcitedCashGainFactor: 1
+  ballExcitedAuraGainFactor: 1
+  ballExciterFollowUpChance: 0
+  ballExciterAutoTriggerChance: 0
+  pigmentSpeedBoost: 1.5
+  pigmentDamageBoost: 1.5
+  pigmentRawDarkmatterGainBoost: 2
+  pigmentCashBoost: 2
+  pigmentJumpCoreChance: 0.2
+  enabledPrestigeMultiplier: 0
+  enabledPrestigeExponentNextPrestige: 0
+  enabledPrestigeExponent: 0
+  enabledSkill: 0
+  blackMarketStartRate: 1.2
+  blackMarketRateMultiplierPerModuleLevel: 1.001
+  cashKeepBetweenPrestige: 0
+  freeTagEvery_11_Stage: 0
+  freeTagEvery_9_Stage: 0
+  freeTagEvery_7_Stage: 0
+  freeTagEvery_5_Stage: 0
+  freeTagEvery_3_Stage: 0
+  freeTagPerModuleLevel: 0
+  timeWarpChargeRate: 0.0016
+  timeWarpDischargeRate: 0.05
+  timeWarpMaxSpeed: 1.5
+  lightningPeriodicalInterval: 10
+  lightningPeriodicalChance: 0
+  minLightningBolts: 1
+  maxLightningBolts: 1
+  lightningFollowUpChance: 0
+  lightningHPDamageFactor: 0.01
+  lightningBallDamageMultiplier: 1
+  lightningClickDamageMultiplier: 1
+  chainLightningChance: 0
+  enabledLaser: 0
+  laserLightningCountRequired: 20
+  laserWidth: 0.34
+  laserCashExtractionFactor: 0.01
+  laserDarkmatterExtractionFactor: 0.01
+  enabledAuraFarming: 0
+  auraFarmingLevel: 0
+  auraPerBallCoreHit: 5
+  auraPerBallCoreKilled: 0
+  auraPerBallWallHit: 0
+  auraComboMultiplierPerCoreHit: 0
+  auraTrailCount: 0
+  auraGlowCount: 0
+  auraHatCount: 0
+  auraTrailMultiplier: 1.05
+  auraGlowMultiplier: 1.1
+  auraHatMultiplier: 1.5
+  auraWaveMultiplier: 1
+  auraWaveLevel: 0
+  auraWaveChanceNotSpend: 0
+  multButtonCooldownTime: 10
+  multButtonLevel0: 0
+  multButtonLevel1: 0
+  multButtonLevel2: 0
+  multButtonLevel3: 0
+  multButtonLevel4: 0

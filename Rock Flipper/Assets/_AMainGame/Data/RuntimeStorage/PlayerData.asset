@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b95646567d34143b776fab7ceb63f2, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  key: 1f7a2caa3c7fac64cb49e71f27b7fa86
+  standAloneKey: 1f7a2caa3c7fac64cb49e71f27b7fa86_PC
+  fileFormat: 1
+  password: 
+  encryptOnStandalone: 0
+  encryptOnMobile: 0
+  encryptOnEditor: 0
+  editor_CurrentData:
+    lastTimeSaved: -99
+    installTime: -1
+    timeSpentInGame: 0
+    lastLaunchVersion: 
+    currentVersion: 0.40.13
+    randomSeed: 1665655283
+    runAnalytics:
+      towerId: 
+      firstSkillId: 
+      difficulty: 0
+      isEndless: 0
+      playerHash: 
+      version: 
+      branch: 
+      versionBranch: 0
+      platform: 
+      initedSteam: 0
+      enabledTerminal: 0
+      error: 
+      enemySpeed: 0
+      enemyHP: 0
+      enemyDamage: 0
+      finishedRunBefore: 0
+      shopData: []
+      combatData: []
+    generalStorage:
+      intDictionary:
+        m_keys: []
+        m_values: 
+      floatDictionary:
+        m_keys: []
+        m_values: []
+      doubleDictionary:
+        m_keys: []
+        m_values: []
+      stringDictionary:
+        m_keys: []
+        m_values: []
+      boolDictionary:
+        m_keys: []
+        m_values: 
+      vector2Dictionary:
+        m_keys: []
+        m_values: []
+      vector3Dictionary:
+        m_keys: []
+        m_values: []
+    platformUserId: 
+    pseudoUserId: dc30e5c0e034ed098c59ffabd3fb23a5
+    buildItemIds: []
+    holdingBuildItemIds: []
+    holdingBuildItemOriginalPrices: []
+    talentPoints: 0
+    prerunSpentTalentPoints: 0
+    prerunMinTalentBuildItemCost: 2
+    unlockedPremium: 0
+    finishedRunCount: 0
+    lifetimeDifficulty: 0
+    maxWonWave:
+      difficulty: 0
+      wave: -1
+    maxWonElite:
+      difficulty: 0
+      wave: 0
+    revealedBuildItems: []
+    encounteredEnemies: []
+    towerDifficultyProgress:
+      m_keys: []
+      m_values: 
+    skillDifficultyProgress:
+      m_keys: []
+      m_values: 
+    prerunTalentBuildItems:
+      m_keys: []
+      m_values: 
+    buffStats: 
+    buffStatValues: []
+    buffStatModificationsAfterEachFight:
+      m_keys: 
+      m_values: []
+    buffStatModificationsEachLevel:
+      m_keys: 
+      m_values: []
+    buildItemStorages: []
+    newRunParameters:
+      towerId: 
+      skillId: 
+      isEndless: 0
+      mapBackgroundSeed: 0
+      difficulty: 0
+      firstSkillAutoConfig:
+        interval: 0
+        enemyHPWeight: 0
+        enemyDamageWeight: 0
+        enemySpeedWeight: 0
+        enemyDistanceWeight: 0
+        prioritizeSupplyEnemy: 0
+        minEnemyCount: 0
+        useSkillReadiness: 0
+      prerunSpentTalentPoints: 0
+      prerunMinTalentBuildItemCost: 0
+    runState: 0
+    fightRetryCount: 0
+    currentWave: 0
+    coins: 0
+    level: 0
+    xp: 0
+    isEndless: 0
+    difficulty: 0
+    infiniteCommonItemBuyThisWave: 0
+    savedShopItems: []
+    savedShopRerollCountThisWave: 0
+    savedShopFreeRerollUsedCount: 0
+    shopCommonCostFactorThisWave: 0
+    coinsSpentOnCommonItemsLastWave: 0
+    coinsSpentOnCommonItemsThisWave: 0
+    savedShopState: 0
+    rerolledByAdsCount: 0
+    addCoinsByAdsCount: 0
+    shopAnalytics:
+      coinsEarned: 0
+      coinsSpent: 0
+      rerollCount: 0
+      addedItems: []
+    shopQueuedItems: []
+    revealedBuildItemsThisRun: []
+    eliteWavesInfo: []
+    additionalEliteEnemyIds: []
+    removedBuildItemsThisRun: []
+    doNotShowSkipFightPopupThisRun: 0
+    customEnemyHPFactor: 1
+    customEnemySpeedFactor: 1
+    customEnemyDamageFactor: 1
+    lastFightTowerHP: 0
+    mapBackgroundSeed: 0
+    skillAutoConfigs: []
+    availableTalentPoints: 0
+    minTalentBuildItemCost: 0
+    talentBuildItems: []
+    talentBuildItemCountWhenStartedRun: 0
+  saveCurrentData: 0
+  defaultData:
+    lastTimeSaved: -99
+    installTime: -1
+    timeSpentInGame: 0
+    lastLaunchVersion: 
+    currentVersion: 
+    randomSeed: 0
+    runAnalytics:
+      towerId: 
+      firstSkillId: 
+      difficulty: 0
+      isEndless: 0
+      playerHash: 
+      version: 
+      branch: 
+      versionBranch: 0
+      platform: 
+      initedSteam: 0
+      enabledTerminal: 0
+      error: 
+      enemySpeed: 0
+      enemyHP: 0
+      enemyDamage: 0
+      finishedRunBefore: 0
+      shopData: []
+      combatData: []
+    generalStorage:
+      intDictionary:
+        m_keys: []
+        m_values: 
+      floatDictionary:
+        m_keys: []
+        m_values: []
+      doubleDictionary:
+        m_keys: []
+        m_values: []
+      stringDictionary:
+        m_keys: []
+        m_values: []
+      boolDictionary:
+        m_keys: []
+        m_values: 
+      vector2Dictionary:
+        m_keys: []
+        m_values: []
+      vector3Dictionary:
+        m_keys: []
+        m_values: []
+    platformUserId: 
+    pseudoUserId: 
+    buildItemIds: []
+    holdingBuildItemIds: []
+    holdingBuildItemOriginalPrices: []
+    talentPoints: 0
+    prerunSpentTalentPoints: 0
+    prerunMinTalentBuildItemCost: 1
+    unlockedPremium: 0
+    finishedRunCount: 0
+    lifetimeDifficulty: 0
+    maxWonWave:
+      difficulty: 0
+      wave: -1
+    maxWonElite:
+      difficulty: 0
+      wave: 0
+    revealedBuildItems: []
+    encounteredEnemies: []
+    towerDifficultyProgress:
+      m_keys: []
+      m_values: 
+    skillDifficultyProgress:
+      m_keys: []
+      m_values: 
+    prerunTalentBuildItems:
+      m_keys: []
+      m_values: 
+    buffStats: 
+    buffStatValues: []
+    buffStatModificationsAfterEachFight:
+      m_keys: 
+      m_values: []
+    buffStatModificationsEachLevel:
+      m_keys: 
+      m_values: []
+    buildItemStorages: []
+    newRunParameters:
+      towerId: 
+      skillId: 
+      isEndless: 0
+      mapBackgroundSeed: 0
+      difficulty: 0
+      firstSkillAutoConfig:
+        interval: 0
+        enemyHPWeight: 0
+        enemyDamageWeight: 0
+        enemySpeedWeight: 0
+        enemyDistanceWeight: 0
+        prioritizeSupplyEnemy: 0
+        minEnemyCount: 0
+        useSkillReadiness: 0
+      prerunSpentTalentPoints: 0
+      prerunMinTalentBuildItemCost: 0
+    runState: 0
+    fightRetryCount: 0
+    currentWave: 0
+    coins: 0
+    level: 0
+    xp: 0
+    isEndless: 0
+    difficulty: 0
+    infiniteCommonItemBuyThisWave: 0
+    savedShopItems: []
+    savedShopRerollCountThisWave: 0
+    savedShopFreeRerollUsedCount: 0
+    shopCommonCostFactorThisWave: 0
+    coinsSpentOnCommonItemsLastWave: 0
+    coinsSpentOnCommonItemsThisWave: 0
+    savedShopState: 0
+    rerolledByAdsCount: 0
+    addCoinsByAdsCount: 0
+    shopAnalytics:
+      coinsEarned: 0
+      coinsSpent: 0
+      rerollCount: 0
+      addedItems: []
+    shopQueuedItems: []
+    revealedBuildItemsThisRun: []
+    eliteWavesInfo: []
+    additionalEliteEnemyIds: []
+    removedBuildItemsThisRun: []
+    doNotShowSkipFightPopupThisRun: 0
+    customEnemyHPFactor: 1
+    customEnemySpeedFactor: 1
+    customEnemyDamageFactor: 1
+    lastFightTowerHP: 0
+    mapBackgroundSeed: 0
+    skillAutoConfigs: []
+    availableTalentPoints: 0
+    minTalentBuildItemCost: 0
+    talentBuildItems: []
+    talentBuildItemCountWhenStartedRun: 0

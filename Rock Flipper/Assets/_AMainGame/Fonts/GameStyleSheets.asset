@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2114bdc8544297b417dfefe9f1e410, type: 3}
+  m_Name: GameStyleSheets
+  m_EditorClassIdentifier: 
+  m_StyleList:
+  - m_Name: cs_highlight
+    m_HashCode: 601412895
+    m_OpeningDefinition: <b><color=#f542f2>
+    m_ClosingDefinition: </b></color>
+    m_OpeningTagArray: 3c000000620000003e0000003c000000630000006f0000006c0000006f000000720000003d000000230000006600000035000000340000003200000066000000320000003e000000
+    m_ClosingTagArray: 3c0000002f000000620000003e0000003c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: cs_bullet
+    m_HashCode: -1915362615
+    m_OpeningDefinition: <color=#a83e32>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d000000230000006100000038000000330000006500000033000000320000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: cs_bracket
+    m_HashCode: 1499312839
+    m_OpeningDefinition: <color=white>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000630000006f0000006c0000006f000000720000003d00000077000000680000006900000074000000650000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
+  - m_Name: Normal
+    m_HashCode: -1183493901
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 

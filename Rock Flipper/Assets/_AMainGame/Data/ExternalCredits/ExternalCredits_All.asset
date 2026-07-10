@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ab177f1f5b92440b09082fb67028f1, type: 3}
+  m_Name: ExternalCredits_All
+  m_EditorClassIdentifier: 
+  assets:
+  - texture: {fileID: 2800000, guid: 2d8b3045e545b784a80836742023da1f, type: 3}
+    audioClip: {fileID: 0}
+    creditText: 
+    creditUrls:
+    - https://pixabay.com/photos/planets-moon-space-universe-galaxy-5799077/
+  - texture: {fileID: 2800000, guid: 7ee393d3c45c97649b17c2d4692dc3f5, type: 3}
+    audioClip: {fileID: 0}
+    creditText: 
+    creditUrls:
+    - https://pixabay.com/illustrations/science-fiction-universe-alien-1677542/
+  - texture: {fileID: 2800000, guid: 21a19d64023636940baca60d7595c5ef, type: 3}
+    audioClip: {fileID: 0}
+    creditText: 
+    creditUrls:
+    - https://pixabay.com/photos/science-fiction-adventure-spaceship-2907434/

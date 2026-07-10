@@ -1,0 +1,390 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ff1ec19b0f2e34bb2fa4e8bb61412d, type: 3}
+  m_Name: RunDataObject_1
+  m_EditorClassIdentifier: 
+  key: 579b579fe7eea81489a6e24810045978
+  standAloneKey: 579b579fe7eea81489a6e24810045978_PC
+  fileFormat: 1
+  password: 
+  encryptOnStandalone: 0
+  encryptOnMobile: 0
+  encryptOnEditor: 0
+  editor_CurrentData:
+    slotId: 1
+    compatVersion: 1
+    initedRun: 1
+    finishedTutorial: 0
+    beatFinale: 0
+    isInPrestige: 0
+    prestigeCount: 1
+    exponentUnlockedPrestigeCount: 0
+    playTime: 2097.55
+    prestigePlayTime: 2097.0442
+    previousPrestigePlayTime: 0.5059929
+    temporaryMultiplier: 752.8543174639344
+    currencyValues:
+      m_keys: 
+      m_values: []
+    discoveredCurrencies: 00000000020000000400000006000000
+    currentStage: 61
+    maxUnlockedStage: 61
+    coreStates:
+    - id: dark
+      currentHPFraction: 0.9354784
+    - id: dark
+      currentHPFraction: 0.60459286
+    - id: golden
+      currentHPFraction: 0.9977902
+    - id: basic
+      currentHPFraction: 0.9964765
+    - id: golden
+      currentHPFraction: 0.99460953
+    - id: basic
+      currentHPFraction: 0.996737
+    - id: basic
+      currentHPFraction: 0.9950094
+    - id: basic
+      currentHPFraction: 0.99803865
+    - id: dark
+      currentHPFraction: 0.9948447
+    - id: golden
+      currentHPFraction: 0.9922669
+    - id: dark
+      currentHPFraction: 0.99715054
+    - id: golden
+      currentHPFraction: 0.89088255
+    - id: basic
+      currentHPFraction: 0.99746513
+    - id: basic
+      currentHPFraction: 0.9402929
+    - id: dark
+      currentHPFraction: 0.9138741
+    - id: basic
+      currentHPFraction: 0.8453333
+    - id: basic
+      currentHPFraction: 0.9449749
+    - id: basic
+      currentHPFraction: 0.9875853
+    - id: dark
+      currentHPFraction: 0.9976387
+    - id: basic
+      currentHPFraction: 0.95211047
+    - id: dark
+      currentHPFraction: 0.993987
+    - id: dark
+      currentHPFraction: 0.999523
+    - id: dark
+      currentHPFraction: 0.99715716
+    - id: dark
+      currentHPFraction: 0.9659164
+    - id: golden
+      currentHPFraction: 0.9947196
+    - id: basic
+      currentHPFraction: 0.9997236
+    - id: dark
+      currentHPFraction: 0.99354255
+    - id: basic
+      currentHPFraction: 0.9943034
+    - id: basic
+      currentHPFraction: 0.8736061
+    - id: basic
+      currentHPFraction: 0.94177365
+    - id: basic
+      currentHPFraction: 0.993209
+    - id: basic
+      currentHPFraction: 0.9905406
+    - id: basic
+      currentHPFraction: 0.9981278
+    - id: basic
+      currentHPFraction: 0.9715723
+    - id: basic
+      currentHPFraction: 0.98855203
+    - id: golden
+      currentHPFraction: 0.90185857
+    - id: golden
+      currentHPFraction: 0.9965975
+    - id: basic
+      currentHPFraction: 0.29582033
+    - id: basic
+      currentHPFraction: 0.98596686
+    - id: basic
+      currentHPFraction: 0.99270874
+    - id: basic
+      currentHPFraction: 0.99476254
+    - id: dark
+      currentHPFraction: 0.9982402
+    - id: basic
+      currentHPFraction: 0.996679
+    - id: basic
+      currentHPFraction: 0.92548734
+    - id: basic
+      currentHPFraction: 0.9971728
+    - id: basic
+      currentHPFraction: 0.99495834
+    - id: basic
+      currentHPFraction: 0.9903458
+    - id: basic
+      currentHPFraction: 0.997202
+    - id: basic
+      currentHPFraction: 0.99499846
+    - id: basic
+      currentHPFraction: 0.96320975
+    - id: basic
+      currentHPFraction: 0.85280156
+    - id: basic
+      currentHPFraction: 0.19393875
+    - id: basic
+      currentHPFraction: 0.83434623
+    - id: basic
+      currentHPFraction: 0.90982115
+    - id: dark
+      currentHPFraction: 0.99640197
+    - id: basic
+      currentHPFraction: 0.9970979
+    - id: basic
+      currentHPFraction: 0.73063934
+    - id: basic
+      currentHPFraction: 0.9367446
+    - id: golden
+      currentHPFraction: 0.99657154
+    - id: basic
+      currentHPFraction: 0.95254207
+    - id: basic
+      currentHPFraction: 0.99272865
+    unspawnedStagedCoreCount: 0
+    groupStates:
+      m_keys: []
+      m_values: []
+    moduleStates:
+      m_keys: []
+      m_values: []
+    moduleItemStates:
+      m_keys: []
+      m_values: []
+    ballSaveDataDictionary:
+      m_keys: 
+      m_values: []
+    dismissedPaintButtonHighlighter: 1
+    auraWaveSpendingFactor: 0.5
+    everUnlockedModules:
+      m_keys:
+      - BallExciter
+      - BallPainter
+      - Bosses
+      - BlackMarket
+      - TimeWarp
+      - AuraActivity
+      - AuraEnhancement
+      - MultButton
+    timeWarpProgress: 0.7200727
+    lastCalculatedTotalSkillPoints: 671
+    skillLevels:
+      m_keys:
+      - s0_IncreaseDamageToCashRate
+      - s0_IncreaseExcitedBallsCashGainFactor
+      - s0_IncreaseExcitedBallsDamageFactor
+      - s0_IncreaseDamageToRawDarkmatterRate
+      - s0_IncreaseExcitedBallsRawDarkmatterGainFactor
+      - s0_IncreaseBallExciterChanceToTargetCore
+      - s0_increaseDamageModuleLevelMult
+      - s1_IncreasePigmentDamageFactor
+      - s1_UnlockMoreRegularBallTiers
+      - s1_IncreaseDamageToCashRate
+      - s1_IncreaseDamageToRawDarkmatterRate
+      - s1_Ball.Damage.Multiplier
+      - s1_Ball.Damage.PowerShift
+      - s1_Ball.Count.MaxLevel
+      - s1_Ball.Damage.MaxLevel
+      - s1_IncreaseExcitedBallsCashGainFactor
+      - s1_IncreaseExcitedBallsDamageFactor
+      - s1_IncreaseExcitedBallsRawDarkmatterGainFactor
+      - s1_IncreasePigmentRawDarkmatterGainFactor
+      - s1_IncreasePigmentCashGainFactor
+      - s1_ReduceBallExciterCooldown
+      - s0_ReduceBallExciterCooldown
+      - s2_IncreaseExcitedBallsDamageFactor
+      - s2_Ball.Damage.Multiplier
+      - s2_Mouse.Hover.Auto.Enable
+      - s0_mouseCircleRadius
+      - s1_mouseCircleRadius
+      - s2_mouseCircleRadius
+      - s2_IncreaseExcitedBallsCashGainFactor
+      - s2_IncreaseExcitedBallsRawDarkmatterGainFactor
+      - s2_IncreaseDamageToCashRate
+      - s2_IncreaseDamageToRawDarkmatterRate
+      - s2_decreaseModuleLevelReq
+      - s2_ReduceBallExciterCooldown
+      - s2_increaseDamageModuleLevelMult
+      - s2_IncreasePigmentCashGainFactor
+      - s2_IncreaseMouseHoverDamagePerCoreInRange
+      - s2_IncreasePigmentRawDarkmatterGainFactor
+      - s3_Stage.EveryCleared.TempMult
+      - s3_IncreaseDamageToRawDarkmatterRate
+      - s3_IncreaseDamageToCashRate
+      - s3_Ball.Damage.PowerShift
+      - s3_IncreaseExcitedBallsCashGainFactor
+      - s3_IncreaseExcitedBallsRawDarkmatterGainFactor
+      - s3_mouseCircleRadius
+      - s3_IncreaseMouseHoverDamagePerCoreInRange
+      - s3_IncreaseBonusBucketPerPainterModuleLevel
+      - s3_IncreasePigmentCashGainFactor
+      - s3_IncreasePigmentDamageFactor
+      - s3_IncreasePigmentRawDarkmatterGainFactor
+      - s3_BallExciter.AuraGainFactor
+      - s2_BallExciter.AuraGainFactor
+      - s3_TimeWarp.Charge
+      - s3_Core.Dark.Chance
+      - s3_Core.Dark.Rate
+      - s3_UnlockMoreRegularBallTiers
+      - s3_Ball.Damage.Multiplier
+      - s3_Ball.Count.MaxLevel
+      - s3_Ball.Damage.MaxLevel
+      - s3_IncreaseMouseHoverDamagePerBallInRange
+      - s3_decreaseModuleLevelReq
+      - s3_Prestige.BlackMarket.RateMultiplierPerModuleLevel
+      - s3_increaseDamageModuleLevelMult
+      - s3_ReduceBallExciterCooldown
+      - s3_IncreaseExcitedBallsDamageFactor
+      - s4_Stage.EveryCleared.TempMult.Multiplier
+      - s4_IncreaseExcitedBallsCashGainFactor
+      - s4_Core.Golden.Chance
+      - s4_Mouse.Hover.Auto.Speed
+      - s4_Prestige.KeepCash
+      - s4_TimeWarp.MaxSpeed
+      - s4_IncreasePigmentRawDarkmatterGainFactor
+      - s4_IncreasePigmentDamageFactor
+      - s4_IncreasePigmentCashGainFactor
+      - s4_ReduceBallExciterCooldown
+      - s4_Lightning.Periodical.1.Chance
+      - s4_mouseCircleRadius
+      - s4_Ball.Damage.Multiplier
+      - s4_BallExciter.AuraGainFactor
+      - s4_Lightning.Chain.Chance
+      - s4_IncreaseBallExciterChanceToTargetCore
+      - s4_IncreaseExcitedBallsDamageFactor
+      - s4_IncreaseExcitedBallsRawDarkmatterGainFactor
+      m_values: 0200000002000000020000000300000002000000010000000200000005000000010000000200000002000000020000000200000004000000020000000300000002000000030000000500000005000000050000000500000002000000020000000100000005000000050000000500000001000000010000000100000001000000050000000500000003000000050000000300000005000000050000000100000001000000010000000100000001000000050000000300000001000000040000000100000005000000050000000300000005000000040000000300000001000000020000000100000001000000040000000500000003000000010000000500000005000000010000000500000002000000050000000500000002000000050000000500000005000000010000000300000005000000020000000500000001000000010000000100000001000000
+    unlockedSkillIds:
+      m_keys:
+      - IncreaseDamageToCashRate
+      - IncreaseExcitedBallsCashGainFactor
+      - IncreaseExcitedBallsDamageFactor
+      - IncreaseDamageToRawDarkmatterRate
+      - IncreaseExcitedBallsRawDarkmatterGainFactor
+      - IncreaseBallExciterChanceToTargetCore
+      - increaseDamageModuleLevelMult
+      - IncreasePigmentDamageFactor
+      - UnlockMoreRegularBallTiers
+      - Ball.Damage.Multiplier
+      - Ball.Damage.PowerShift
+      - Ball.Count.MaxLevel
+      - Ball.Damage.MaxLevel
+      - IncreasePigmentRawDarkmatterGainFactor
+      - IncreasePigmentCashGainFactor
+      - ReduceBallExciterCooldown
+      - Mouse.Hover.Auto.Enable
+      - mouseCircleRadius
+      - decreaseModuleLevelReq
+      - IncreaseMouseHoverDamagePerCoreInRange
+      - Stage.EveryCleared.TempMult
+      - IncreaseBonusBucketPerPainterModuleLevel
+      - BallExciter.AuraGainFactor
+      - TimeWarp.Charge
+      - Core.Dark.Chance
+      - Core.Dark.Rate
+      - IncreaseMouseHoverDamagePerBallInRange
+      - Prestige.BlackMarket.RateMultiplierPerModuleLevel
+      - Stage.EveryCleared.TempMult.Multiplier
+      - Core.Golden.Chance
+      - Mouse.Hover.Auto.Speed
+      - Prestige.KeepCash
+      - TimeWarp.MaxSpeed
+      - Lightning.Periodical.1.Chance
+      - Lightning.Chain.Chance
+    maxAverageDamagePerSecond: 9.278733102785534e+23
+    maxAverageDamagePerSecondThisPrestige: 9.278733102785534e+23
+    bossCoreLevel: 3
+    afterPrestigeBossCoreLevel: 3
+    autoTriggerBallExciter: 1
+    autoTriggerTimeWarp: 1
+    savedMaxUnlockedStage: 58
+    savedEverUnlockedModules:
+      m_keys:
+      - BallExciter
+      - BallPainter
+      - Bosses
+      - BlackMarket
+      - TimeWarp
+      - AuraActivity
+      - AuraEnhancement
+      - MultButton
+    savedBossCoreLevel: 3
+    savedMaxAverageDamagePerSecond: 0
+    savedStartingCash: 0
+  saveCurrentData: 0
+  defaultData:
+    slotId: 0
+    compatVersion: 0
+    initedRun: 0
+    finishedTutorial: 0
+    beatFinale: 0
+    isInPrestige: 0
+    prestigeCount: 0
+    exponentUnlockedPrestigeCount: -1
+    playTime: 0
+    prestigePlayTime: 0
+    previousPrestigePlayTime: 0
+    temporaryMultiplier: 1
+    currencyValues:
+      m_keys: 
+      m_values: []
+    discoveredCurrencies: 
+    currentStage: 0
+    maxUnlockedStage: 0
+    coreStates: []
+    unspawnedStagedCoreCount: 0
+    groupStates:
+      m_keys: []
+      m_values: []
+    moduleStates:
+      m_keys: []
+      m_values: []
+    moduleItemStates:
+      m_keys: []
+      m_values: []
+    ballSaveDataDictionary:
+      m_keys: 
+      m_values: []
+    dismissedPaintButtonHighlighter: 0
+    auraWaveSpendingFactor: 0.5
+    everUnlockedModules:
+      m_keys: []
+    timeWarpProgress: -1
+    lastCalculatedTotalSkillPoints: 0
+    skillLevels:
+      m_keys: []
+      m_values: 
+    unlockedSkillIds:
+      m_keys: []
+    maxAverageDamagePerSecond: 0
+    maxAverageDamagePerSecondThisPrestige: 0
+    bossCoreLevel: 0
+    afterPrestigeBossCoreLevel: 0
+    autoTriggerBallExciter: 1
+    autoTriggerTimeWarp: 1
+    savedMaxUnlockedStage: 0
+    savedEverUnlockedModules:
+      m_keys: []
+    savedBossCoreLevel: 0
+    savedMaxAverageDamagePerSecond: 0
+    savedStartingCash: 0

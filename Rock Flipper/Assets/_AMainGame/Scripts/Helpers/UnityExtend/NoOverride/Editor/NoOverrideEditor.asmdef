@@ -1,0 +1,18 @@
+{
+    "name": "NoOverrideEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:478bd1c8422959f4092bb21145a27447"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

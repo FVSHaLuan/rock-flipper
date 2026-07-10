@@ -1,0 +1,19 @@
+{
+    "name": "Helpers.UnityExtend.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:478bd1c8422959f4092bb21145a27447",
+        "GUID:77290010f0fa1e245903683ebdc046be"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c10edc5a0a1ad4191dee24634db2ad, type: 3}
+  m_Name: OtherGamepadButtonGlyphTable
+  m_EditorClassIdentifier: 
+  spriteButtonPairs:
+  - name: NotSet
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 0
+  - name: LeftTrigger
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 1
+  - name: RightTrigger
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 2
+  - name: LeftShoulder
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 3
+  - name: RightShoulder
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 4
+  - name: LeftStick
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 5
+  - name: LeftStickPress
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 6
+  - name: RightStick
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 7
+  - name: RightStickPress
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 8
+  - name: Left
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 9
+  - name: Right
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 10
+  - name: Up
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 11
+  - name: Down
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 12
+  - name: North
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 13
+  - name: East
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 14
+  - name: South
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 15
+  - name: West
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 16
+  - name: GameplayMenu
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 17
+  - name: SystemMenu
+    sprite: {fileID: 21300000, guid: 8f9a9525a07112c4a8b52c8ee0fae722, type: 3}
+    gamepadButton: 18
