@@ -21,6 +21,7 @@ namespace Agame.Run.Combat
 
         public bool IsFlipping { get; private set; }
         public float FlippingProgress { get; private set; }
+        public float HeightProgress { get; private set; }
 
         public bool TryFlipping()
         {
@@ -56,6 +57,7 @@ namespace Agame.Run.Combat
             flippingTimeElapsed = 0;
 
             ///
+            flippingDuration = duration;
             flippingStartPosition = transform.position;
             flippingEndPosition = landingPosition;
         }
@@ -89,6 +91,7 @@ namespace Agame.Run.Combat
                 IsFlipping = false;
                 flippingTimeElapsed = 0;
                 FlippingProgress = 0;
+                HeightProgress = 0;
             }
 
             ///
@@ -98,7 +101,8 @@ namespace Agame.Run.Combat
         private void UpdateFlippingPosition()
         {
             ///
-            var height = Mathf.Sin(FlippingProgress * Mathf.PI) * baseFlippingHeight;
+            HeightProgress = Mathf.Sin(FlippingProgress * Mathf.PI);
+            var height = HeightProgress * baseFlippingHeight;
 
             ///
             var th = transformHandle;
