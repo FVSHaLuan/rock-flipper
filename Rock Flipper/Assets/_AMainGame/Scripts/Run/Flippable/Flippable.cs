@@ -43,7 +43,7 @@ namespace Agame.Run.Combat
             landingPosition = Random.insideUnitCircle.normalized * distance + (Vector2)transform.position;
 
             ///
-            height =baseFlippingHeight;
+            height = baseFlippingHeight;
         }
 
         private void StartFlipping(float duration, Vector2 landingPosition, float height)
@@ -88,8 +88,12 @@ namespace Agame.Run.Combat
 
         private void UpdateFlippingPosition()
         {
+            ///
+            var height = Mathf.Sin(FlippingProgress * Mathf.PI) * baseFlippingHeight;
+
+            ///
             var th = transformHandle;
-            th.position = Vector2.Lerp(flippingStartPosition, flippingEndPosition, FlippingProgress);
+            th.position = Vector2.Lerp(flippingStartPosition, flippingEndPosition, FlippingProgress) + Vector2.up * height;
         }
 
 #if UNITY_EDITOR
