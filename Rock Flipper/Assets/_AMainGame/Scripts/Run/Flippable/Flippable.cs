@@ -99,7 +99,7 @@ namespace Agame.Run.Combat
         [ContextMenu("Editor_Try Flipping"), PlayModeOnly]
         private void Editor_TryFlipping()
         {
-
+            Debug.Log($"Try flipping: {TryFlipping()}");
         }
 #endif
     }
