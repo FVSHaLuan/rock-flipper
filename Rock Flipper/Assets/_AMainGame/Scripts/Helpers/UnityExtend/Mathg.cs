@@ -223,4 +223,10 @@ public static class Mathg
     {
         return (Vector2)(Quaternion.AngleAxis(angle, Vector3.forward) * Vector2.right) * (point - origin).magnitude + origin;
     }
+
+    public static float DecimalPart(float value)
+    {
+        var av = Mathf.Abs(value);
+        return av - Mathf.Floor(av);
+    }
 }
