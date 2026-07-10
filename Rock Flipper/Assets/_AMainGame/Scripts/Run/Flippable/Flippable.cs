@@ -4,6 +4,9 @@ namespace Agame.Run.Combat
 {
     public class Flippable : ExtendedMonoBehaviourRun
     {
+        public event System.Action OnUpdatedFlipping;
+        public event System.Action OnUpdatedProgress;
+
         [SerializeField]
         private float baseDuration = 2f;
         [SerializeField]
@@ -75,6 +78,9 @@ namespace Agame.Run.Combat
             FlippingProgress = Mathf.Clamp01(flippingTimeElapsed / flippingDuration);
 
             ///
+            OnUpdatedProgress?.Invoke();
+
+            ///
             UpdateFlippingPosition();
 
             ///
@@ -84,6 +90,9 @@ namespace Agame.Run.Combat
                 flippingTimeElapsed = 0;
                 FlippingProgress = 0;
             }
+
+            ///
+            OnUpdatedFlipping?.Invoke();
         }
 
         private void UpdateFlippingPosition()
