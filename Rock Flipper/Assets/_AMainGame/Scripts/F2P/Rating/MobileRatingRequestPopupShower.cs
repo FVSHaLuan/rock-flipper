@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
-using BT.Home;
+using Agame.FeatureBranching;
+using Agame.Home;
 using UnityEngine;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     public class MobileRatingRequestPopupShower : ExtendedMonoBehaviourHome
     {

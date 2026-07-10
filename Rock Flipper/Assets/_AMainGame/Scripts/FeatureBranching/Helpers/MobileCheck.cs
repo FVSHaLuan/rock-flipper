@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     public class MobileCheck : MonoBehaviour
     {

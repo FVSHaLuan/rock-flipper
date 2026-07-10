@@ -4,7 +4,7 @@ using Steamworks;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public class StatReporter : ExtendedMonoBehaviour
     {

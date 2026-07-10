@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Systems.ScreenReaders
+namespace Agame.Systems.ScreenReaders
 {
     [RequireComponent(typeof(Camera))]
     public class ScreenReader : MonoBehaviourWithInit

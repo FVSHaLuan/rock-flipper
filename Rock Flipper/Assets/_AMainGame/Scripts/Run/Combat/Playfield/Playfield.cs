@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public partial class Playfield : ExtendedMonoBehaviourRun
     {

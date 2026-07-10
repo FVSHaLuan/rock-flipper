@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     [CreateAssetMenu(fileName = "PlayerDataSnapShotDemo", menuName = "BSB/Dev/PlayerDataSnapshot/PlayerDataSnapShotDemo")]
     public class PlayerDataSnapShotDemo : PlayerDataSnapShotBase

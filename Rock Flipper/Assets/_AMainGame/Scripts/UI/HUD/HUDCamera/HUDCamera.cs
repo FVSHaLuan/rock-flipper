@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI
+namespace Agame.UI
 {
     [RequireComponent(typeof(Camera))]
     public class HUDCamera : ExtendedMonoBehaviour

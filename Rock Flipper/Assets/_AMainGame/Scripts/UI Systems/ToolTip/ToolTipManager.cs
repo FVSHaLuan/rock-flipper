@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace BT.UI.ToolTips
+namespace Agame.UI.ToolTips
 {
     public class ToolTipManager : ExtendedMonoBehaviour
     {

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace BT.PointerInput
+namespace Agame.PointerInput
 {
     public class PointerEnterAndExitEvents : MonoBehaviourWithInit, IPointerEnterHandler, IPointerExitHandler
     {

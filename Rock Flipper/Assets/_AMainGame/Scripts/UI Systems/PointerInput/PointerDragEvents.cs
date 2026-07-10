@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
-namespace BT.PointerInput
+namespace Agame.PointerInput
 {
     public class PointerDragEvents : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
     {

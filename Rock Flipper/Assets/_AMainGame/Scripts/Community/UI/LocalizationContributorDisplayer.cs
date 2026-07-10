@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Community.UI
+namespace Agame.Community.UI
 {
     public class LocalizationContributorDisplayer : ExtendedMonoBehaviour
     {

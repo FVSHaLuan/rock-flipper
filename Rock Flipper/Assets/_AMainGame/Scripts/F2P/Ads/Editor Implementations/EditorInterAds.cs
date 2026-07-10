@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     public class EditorInterAds : IInterAdsImplementation
     {

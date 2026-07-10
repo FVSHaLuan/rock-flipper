@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public enum Currency
     {

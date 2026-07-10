@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI.Tips
+namespace Agame.UI.Tips
 {
     [CreateAssetMenu(menuName = "BSB/SingleInstance/GameTipManager")]
     public class GameTipManager : ScriptableObjectWithInit

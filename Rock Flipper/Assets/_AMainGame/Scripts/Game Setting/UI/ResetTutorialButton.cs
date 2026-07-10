@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     [RequireComponent(typeof(Button), typeof(SelectedObjectFallback))]
     public class ResetTutorialButton : ExtendedMonoBehaviour

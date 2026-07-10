@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.UI.LoadingScreen
+namespace Agame.UI.LoadingScreen
 {
     public class LoadingScreenHandleEvents : MonoBehaviour
     {

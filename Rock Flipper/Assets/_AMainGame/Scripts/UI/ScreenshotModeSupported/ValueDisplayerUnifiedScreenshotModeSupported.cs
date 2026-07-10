@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public abstract class ValueDisplayerUnifiedScreenshotModeSupported<T> : ValueDisplayerUnified<T> where T : System.IComparable<T>
     {

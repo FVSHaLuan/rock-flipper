@@ -1,9 +1,9 @@
-using BT.F2P;
-using BT.UI;
-using BT.UI.ToolTips;
+using Agame.F2P;
+using Agame.UI;
+using Agame.UI.ToolTips;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public class CommonEntry : MonoBehaviourWithInit
     {

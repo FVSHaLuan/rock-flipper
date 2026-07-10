@@ -1,7 +1,7 @@
 using System.Text;
 using UnityEngine;
 
-namespace BT.Run.Dev
+namespace Agame.Run.Dev
 {
     public class RunLogger : MonoBehaviour
     {

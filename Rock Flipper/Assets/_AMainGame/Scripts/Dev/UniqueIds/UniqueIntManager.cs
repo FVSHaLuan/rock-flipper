@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     [CreateAssetMenu(fileName = "UniqueIntManager", menuName = "BSB/Dev/UniqueIntManager")]
     public class UniqueIntManager : ScriptableObject

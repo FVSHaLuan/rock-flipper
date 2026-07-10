@@ -1,4 +1,4 @@
-using BT.Dev;
+using Agame.Dev;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     public static class ScriptableObjectCreation
     {

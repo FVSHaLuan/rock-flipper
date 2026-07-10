@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Systems.CameraStabilizerEffect
+namespace Agame.Systems.CameraStabilizerEffect
 {
     [RequireComponent(typeof(CameraStabilizerEffect))]
     public class CameraStabilizerEffectPositionRandomizer : ExtendedMonoBehaviour

@@ -1,10 +1,10 @@
 using I2.Loc;
 using System.Collections;
 using System.Collections.Generic;
-using BT.Dev;
+using Agame.Dev;
 using UnityEngine;
 
-namespace BT.Localization
+namespace Agame.Localization
 {
     public class LocalizedStrings : ScriptableObjectWithInit
     {

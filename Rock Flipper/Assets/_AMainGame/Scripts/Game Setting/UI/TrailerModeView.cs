@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     public class TrailerModeView : ExtendedMonoBehaviour
     {

@@ -1,8 +1,8 @@
-using BT.Run.Combat;
-using BT.Run.Stats;
+using Agame.Run.Combat;
+using Agame.Run.Stats;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class ExtendedMonoBehaviourRun : ExtendedMonoBehaviour
     {

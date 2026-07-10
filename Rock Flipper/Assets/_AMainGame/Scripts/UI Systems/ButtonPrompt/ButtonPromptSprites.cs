@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI.ButtonPrompts
+namespace Agame.UI.ButtonPrompts
 {
     [System.Serializable]
     public struct ButtonPromptSprites

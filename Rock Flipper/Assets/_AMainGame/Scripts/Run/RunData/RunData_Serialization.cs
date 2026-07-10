@@ -1,7 +1,7 @@
-using BT.Run;
+using Agame.Run;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public partial class RunData
     {

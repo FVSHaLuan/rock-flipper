@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     public class InputDeviceOptionSlider : SettingSlider
     {

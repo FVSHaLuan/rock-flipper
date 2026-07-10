@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Localization.Dev
+namespace Agame.Localization.Dev
 {
     public interface ILocalizable
     {

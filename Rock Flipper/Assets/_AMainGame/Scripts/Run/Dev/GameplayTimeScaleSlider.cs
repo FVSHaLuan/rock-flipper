@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace BT.Run.Dev
+namespace Agame.Run.Dev
 {
     public class GameplayTimeScaleSlider : ExtendedMonoBehaviourRun, ITimeScaleControl
     {

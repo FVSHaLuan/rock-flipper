@@ -1,11 +1,11 @@
-using BT.Run.Combat;
-using BT.Run.Stats;
+using Agame.Run.Combat;
+using Agame.Run.Stats;
 using UnityEngine;
 using UnityEngine.UI;
-using BT.Run.Combat.Tutorials;
+using Agame.Run.Combat.Tutorials;
 using UnityEngine.InputSystem;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class RunEntry : CommonEntry
     {

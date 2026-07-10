@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     public class TargetFPSSlider : SettingSlider
     {

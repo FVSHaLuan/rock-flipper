@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     public class PurchasedProductsHandler : ExtendedMonoBehaviour
     {

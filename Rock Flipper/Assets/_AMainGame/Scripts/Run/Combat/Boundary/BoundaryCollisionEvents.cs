@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public class BoundaryCollisionEvents : SpecificCollisionEvents
     {

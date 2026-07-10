@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI.ButtonPrompts
+namespace Agame.UI.ButtonPrompts
 {
     public class ButtonGryphTable<T, U> : ScriptableObject where T : ISpriteButtonPair<T, U>, new()
     {

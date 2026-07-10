@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public class LoadingScreenAnimator : ExtendedMonoBehaviour
     {

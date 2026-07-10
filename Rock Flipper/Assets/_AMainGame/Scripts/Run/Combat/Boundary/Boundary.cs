@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public class Boundary : ExtendedMonoBehaviourRun
     {

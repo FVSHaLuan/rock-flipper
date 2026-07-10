@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public class InitRunState : ExtendedMonoBehaviourRun
     {

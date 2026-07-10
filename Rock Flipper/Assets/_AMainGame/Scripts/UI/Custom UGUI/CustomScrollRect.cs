@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public class CustomScrollRect : ScrollRect
     {

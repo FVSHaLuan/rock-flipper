@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.Run.Combat.Tutorials
+namespace Agame.Run.Combat.Tutorials
 {
     public class SkipTutorialButton : ExtendedMonoBehaviourRun
     {

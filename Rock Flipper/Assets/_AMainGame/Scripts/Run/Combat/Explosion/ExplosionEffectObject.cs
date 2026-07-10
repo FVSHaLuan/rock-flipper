@@ -2,7 +2,7 @@ using FH.Core.Architecture.Pool;
 using System.Collections;
 using UnityEngine;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public class ExplosionEffectObject : GeneralPoolMemberSimplified
     {

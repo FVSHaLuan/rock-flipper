@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     public class HoldToBlowToggle : SettingToggle
     {

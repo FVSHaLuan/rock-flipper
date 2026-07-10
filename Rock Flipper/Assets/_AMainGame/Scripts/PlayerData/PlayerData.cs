@@ -5,10 +5,10 @@ using System;
 using FHC.Core.Architecture;
 using UnityEngine.Rendering;
 using System.Runtime.InteropServices.ComTypes;
-using BT.FeatureBranching;
-using BT.Balancing;
+using Agame.FeatureBranching;
+using Agame.Balancing;
 
-namespace BT
+namespace Agame
 {
     [Serializable]
     public partial class PlayerData

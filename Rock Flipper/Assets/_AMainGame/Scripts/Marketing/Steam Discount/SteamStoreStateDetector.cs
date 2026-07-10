@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace BT.Marketing
+namespace Agame.Marketing
 {
     public class SteamStoreStateDetector : ExtendedMonoBehaviour
     {

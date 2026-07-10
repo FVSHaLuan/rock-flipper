@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.UI.LoadingScreen
+namespace Agame.UI.LoadingScreen
 {
     public class LoadingScreenHandle : MonoBehaviourWithInit
     {

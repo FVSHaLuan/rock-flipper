@@ -1,7 +1,7 @@
 using FH.Core.Architecture.Pool;
 using UnityEngine;
 
-namespace BT.UI.ToolTips
+namespace Agame.UI.ToolTips
 {
     public class ToolTip : GeneralPoolMemberSimplified
     {

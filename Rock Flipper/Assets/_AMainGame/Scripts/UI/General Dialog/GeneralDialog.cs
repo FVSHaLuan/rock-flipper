@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static System.Runtime.CompilerServices.RuntimeHelpers;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public class GeneralDialog : ExtendedMonoBehaviour
     {

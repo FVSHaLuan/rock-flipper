@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-namespace BT.Cores.HelperComponent
+namespace Agame.Cores.HelperComponent
 {
     [RequireComponent(typeof(Toggle))]
     [ExecuteInEditMode]

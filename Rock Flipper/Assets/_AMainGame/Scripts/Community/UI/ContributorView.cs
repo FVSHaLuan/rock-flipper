@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.Community.UI
+namespace Agame.Community.UI
 {
     public class ContributorView : MonoBehaviour
     {

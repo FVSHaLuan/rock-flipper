@@ -1,9 +1,9 @@
-using BT.Meta;
+using Agame.Meta;
 using Steamworks;
 using UnityEngine;
 using static System.Net.WebRequestMethods;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public class SteamDLCValidator : DLCValidator
     {

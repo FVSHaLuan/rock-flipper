@@ -1,10 +1,10 @@
-using BT.Dev;
+using Agame.Dev;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     public class FeatureBranchingObject : FeatureBrancher, IGameObjectBuildStateSetter
     {

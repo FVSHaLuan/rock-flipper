@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.Run.Shop
+namespace Agame.Run.Shop
 {
     [RequireComponent(typeof(ParticleSystem))]
     public class ParticleRateByMaxUnlockedStage : ExtendedMonoBehaviourRun

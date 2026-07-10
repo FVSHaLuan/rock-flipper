@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace BT.Marketing
+namespace Agame.Marketing
 {
     public class CountdownBox : MonoBehaviour
     {

@@ -1,7 +1,7 @@
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class ShowDemoEndingScreen : ExtendedMonoBehaviourRun
     {

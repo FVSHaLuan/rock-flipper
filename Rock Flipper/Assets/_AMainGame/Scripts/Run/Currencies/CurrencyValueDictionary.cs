@@ -1,7 +1,7 @@
 
 using System.Runtime.Serialization;
 
-namespace BT.Run
+namespace Agame.Run
 {
     [System.Serializable]
     public class CurrencyValueDictionary : SerializableDictionary<Currency, double>

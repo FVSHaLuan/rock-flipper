@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class CompatManager : ScriptableObjectWithInit
     {

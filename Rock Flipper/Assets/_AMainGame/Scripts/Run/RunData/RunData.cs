@@ -1,10 +1,10 @@
-using BT.Run;
+using Agame.Run;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using BT.Run.Dev;
+using Agame.Run.Dev;
 
-namespace BT
+namespace Agame
 {
     [Serializable]
     public partial class RunData

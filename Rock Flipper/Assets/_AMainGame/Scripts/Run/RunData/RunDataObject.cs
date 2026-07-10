@@ -1,7 +1,7 @@
 using FH.Core.Architecture.WritableData;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public class RunDataObject : WritableScriptableObject<RunData>
     {

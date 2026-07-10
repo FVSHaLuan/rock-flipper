@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace BT.UI.ButtonPrompts
+namespace Agame.UI.ButtonPrompts
 {
     [RequireComponent(typeof(Image))]
     public class ButtonPromptViewImage : ButtonPromptView

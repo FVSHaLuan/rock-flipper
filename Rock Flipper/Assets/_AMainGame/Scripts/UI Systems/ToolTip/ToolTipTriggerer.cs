@@ -2,7 +2,7 @@ using FH.Core.Gameplay.HelperComponent;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace BT.UI.ToolTips
+namespace Agame.UI.ToolTips
 {
     public class ToolTipTriggerer : MonoBehaviourWithInit, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
     {

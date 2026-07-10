@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using EnhancedUI.EnhancedScroller;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 
 [RequireComponent(typeof(ScrollRect))]
 public class ScrollRectScrollBySelection : ExtendedMonoBehaviour

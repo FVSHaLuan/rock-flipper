@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     public static class RewardedAds
     {

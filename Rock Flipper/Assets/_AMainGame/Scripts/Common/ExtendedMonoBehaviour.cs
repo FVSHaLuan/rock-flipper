@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using BT;
-using BT.Balancing;
+using Agame;
+using Agame.Balancing;
 using UnityEngine;
 
 public abstract class ExtendedMonoBehaviour : MonoBehaviourWithInit
@@ -23,7 +23,7 @@ public abstract class ExtendedMonoBehaviour : MonoBehaviourWithInit
     protected float GameplayUnscaledTime => entry.timeScaleManager.GameplayUnscaledTime;
     protected float GameplayUnscaledTimeAbsolute => entry.timeScaleManager.GetTime(TimeScaleMode.GameplayUnscaledTimeAbsolute);
 
-    protected bool IsLoadingScreenNullOrFinished => BT.UI.LoadingScreen.LoadingScreenHandle.IsNullOrFinished;
+    protected bool IsLoadingScreenNullOrFinished => Agame.UI.LoadingScreen.LoadingScreenHandle.IsNullOrFinished;
 
     protected GeneralPool CurrentSceneGeneralPool => CommonEntry.GeneralPool;
 

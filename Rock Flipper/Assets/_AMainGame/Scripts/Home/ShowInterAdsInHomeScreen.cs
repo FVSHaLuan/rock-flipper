@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using BT.F2P;
+using Agame.F2P;
 using UnityEngine;
 
-namespace BT.Home
+namespace Agame.Home
 {
     public class ShowInterAdsInHomeScreen : ExtendedMonoBehaviourHome
     {

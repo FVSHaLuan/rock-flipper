@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace BT.Tutorials
+namespace Agame.Tutorials
 {
     public class Tutorial : ScriptableObjectWithInit
     {

@@ -1,8 +1,8 @@
-using BT.GamePlatform;
-using BT.Run.Shop;
+using Agame.GamePlatform;
+using Agame.Run.Shop;
 using UnityEngine;
 
-namespace BT.Run.Achievements
+namespace Agame.Run.Achievements
 {
     public class GameAchievementsReporter : ExtendedMonoBehaviourRun
     {

@@ -1,11 +1,11 @@
 ﻿using CommandTerminal;
 using I2.Loc;
 using System;
-using BT;
-using BT.Dev;
+using Agame;
+using Agame.Dev;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using BT.Run;
+using Agame.Run;
 
 internal static partial class TerminalCommands
 {

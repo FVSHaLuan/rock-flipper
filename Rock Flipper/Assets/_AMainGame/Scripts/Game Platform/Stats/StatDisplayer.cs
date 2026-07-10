@@ -3,7 +3,7 @@ using Steamworks;
 #endif
 using UnityEngine;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public class StatDisplayer : ValueDisplayerUnified<double>
     {

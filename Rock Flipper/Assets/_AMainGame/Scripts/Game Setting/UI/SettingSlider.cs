@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     [RequireComponent(typeof(Slider))]
     public abstract class SettingSlider : ExtendedMonoBehaviour

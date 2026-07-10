@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.UI.ToolTips
+namespace Agame.UI.ToolTips
 {
     [RequireComponent(typeof(ToolTipTriggerer))]
     [DisallowMultipleComponent]

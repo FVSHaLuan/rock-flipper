@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace BT.UI.ButtonPrompts
+namespace Agame.UI.ButtonPrompts
 {
     public abstract class ButtonPromptView : ExtendedMonoBehaviour
     {

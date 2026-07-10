@@ -3,10 +3,10 @@ using Steamworks;
 #endif
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public class FeedbackPopupLauncher : ExtendedMonoBehaviour
     {

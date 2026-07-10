@@ -3,14 +3,14 @@ using Steamworks;
 #endif
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public class FeedbackPopup : ExtendedMonoBehaviour
     {

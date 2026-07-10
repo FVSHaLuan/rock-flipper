@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.Localization
+namespace Agame.Localization
 {
     public class LanguageChangeEvent : MonoBehaviour
     {

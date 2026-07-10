@@ -1,11 +1,11 @@
-using BT.GamePlatform;
-using BT.Run.Combat;
-using BT.Run.Dev;
+using Agame.GamePlatform;
+using Agame.Run.Combat;
+using Agame.Run.Dev;
 using System;
 using System.Collections;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class RunStateManager : ExtendedMonoBehaviourRun
     {

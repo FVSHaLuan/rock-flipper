@@ -4,7 +4,7 @@ using UnityEngine;
 using FH.Core.HelperComponent;
 using UnityEngine.Events;
 
-namespace BT.GameplayHelpers
+namespace Agame.GameplayHelpers
 {
     public class ExecuteOrderedEventsOnMultipleObjects : ExtendedMonoBehaviourWithTime
     {

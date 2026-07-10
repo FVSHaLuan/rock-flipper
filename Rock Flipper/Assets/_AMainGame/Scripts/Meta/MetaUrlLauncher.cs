@@ -1,11 +1,11 @@
 #if !DISABLESTEAMWORKS
 using Steamworks;
 #endif
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 using static System.Net.WebRequestMethods;
 
-namespace BT.Meta
+namespace Agame.Meta
 {
     public class MetaUrlLauncher : MonoBehaviour
     {

@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static BT.F2P.RewardedAds;
+using static Agame.F2P.RewardedAds;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     public interface IRewardedAdsImplementation
     {

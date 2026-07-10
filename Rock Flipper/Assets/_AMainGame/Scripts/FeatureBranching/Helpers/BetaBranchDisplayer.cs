@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     public class BetaBranchDisplayer : MonoBehaviour
     {

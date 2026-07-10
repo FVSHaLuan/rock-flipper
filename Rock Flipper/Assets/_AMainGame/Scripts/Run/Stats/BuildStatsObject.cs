@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Run.Stats
+namespace Agame.Run.Stats
 {
     public class BuildStatsObject : MonoBehaviourWithInit
     {

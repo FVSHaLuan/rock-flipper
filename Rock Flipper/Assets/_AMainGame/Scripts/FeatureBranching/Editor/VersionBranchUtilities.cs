@@ -6,7 +6,7 @@ using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     public class VersionBranchUtilities : IPreprocessBuildWithReport
     {

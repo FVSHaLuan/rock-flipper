@@ -40,7 +40,7 @@ public class MouseCursorVisibilityManager : ExtendedMonoBehaviour
         ///
         if (!IsLoadingScreenNullOrFinished)
         {
-            BT.UI.LoadingScreen.LoadingScreenHandle.Instance.OnFinished += Instance_OnFinished;
+            Agame.UI.LoadingScreen.LoadingScreenHandle.Instance.OnFinished += Instance_OnFinished;
         }
     }
 

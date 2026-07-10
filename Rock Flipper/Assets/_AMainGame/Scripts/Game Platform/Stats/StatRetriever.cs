@@ -4,7 +4,7 @@ using Steamworks;
 using System.ComponentModel;
 using UnityEngine;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public class StatRetriever
     {

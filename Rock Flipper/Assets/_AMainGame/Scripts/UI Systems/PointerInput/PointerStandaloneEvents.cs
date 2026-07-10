@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
-namespace BT.PointerInput
+namespace Agame.PointerInput
 {
     public class PointerStandaloneEvents : MonoBehaviour
     {

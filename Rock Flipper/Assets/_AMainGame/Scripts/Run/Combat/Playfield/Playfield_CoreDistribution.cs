@@ -2,7 +2,7 @@ using GD;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public partial class Playfield
     {

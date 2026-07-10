@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.Run.Stats.Agents
+namespace Agame.Run.Stats.Agents
 {
     public abstract class SkillBuildAgent : BuildAgent
     {

@@ -5,7 +5,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     public class EditorRewardedAds : IRewardedAdsImplementation
     {

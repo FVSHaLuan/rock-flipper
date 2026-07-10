@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     public class PlatformObject : MonoBehaviour
     {

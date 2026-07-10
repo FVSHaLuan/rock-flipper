@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.Run.Combat
+namespace Agame.Run.Combat
 {
     public abstract class SpecificCollisionEvents : MonoBehaviour
     {

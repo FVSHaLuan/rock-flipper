@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 using static UnityEngine.EventSystems.EventTrigger;
 
-namespace BT
+namespace Agame
 {
     public class SettingPopupHelper : ExtendedMonoBehaviour
     {

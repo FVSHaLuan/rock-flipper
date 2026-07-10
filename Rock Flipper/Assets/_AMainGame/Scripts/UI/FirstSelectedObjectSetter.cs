@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public class FirstSelectedObjectSetter : ExtendedMonoBehaviour
     {

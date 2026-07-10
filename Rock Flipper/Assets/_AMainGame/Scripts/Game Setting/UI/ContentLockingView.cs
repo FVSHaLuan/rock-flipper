@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 
-namespace BT.UI.GameSettings
+namespace Agame.UI.GameSettings
 {
     public class ContentLockingView : ExtendedMonoBehaviour
     {

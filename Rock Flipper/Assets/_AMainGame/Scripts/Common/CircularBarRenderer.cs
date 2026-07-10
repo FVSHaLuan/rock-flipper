@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     [RequireComponent(typeof(MeshRenderer))]
     public class CircularBarRenderer : MonoBehaviourWithInit

@@ -4,7 +4,7 @@ using UnityEngine;
 using GD;
 using System;
 
-namespace BT
+namespace Agame
 {
     public partial class PlayerData
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public class TowerfulBackgroundMusicPlayer : BackgroundMusicPlayer
     {

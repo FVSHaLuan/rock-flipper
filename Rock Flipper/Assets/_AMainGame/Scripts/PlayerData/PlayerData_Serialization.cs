@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public partial class PlayerData
     {

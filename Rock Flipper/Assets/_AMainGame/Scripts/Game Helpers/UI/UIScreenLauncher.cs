@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.GameplayHelpers
+namespace Agame.GameplayHelpers
 {
     [DisallowMultipleComponent]
     public class UIScreenLauncher : ExtendedMonoBehaviour

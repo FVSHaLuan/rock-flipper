@@ -7,11 +7,11 @@ using Steamworks;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public class AchievementReporter : ExtendedMonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FH.Core.Architecture.WritableData;
 
-namespace BT
+namespace Agame
 {
     [CreateAssetMenu(fileName = "PlayerData", menuName = "BSB/SingleInstance/PlayerData")]
     public class PlayerDataObject : WritableScriptableObject<PlayerData>

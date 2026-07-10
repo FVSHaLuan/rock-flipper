@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Tutorials
+namespace Agame.Tutorials
 {
     public class TutorialUnitPopup : TutorialUnit
     {

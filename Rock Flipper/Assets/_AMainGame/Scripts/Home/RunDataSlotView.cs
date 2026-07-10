@@ -1,10 +1,10 @@
-using BT.Balancing;
-using BT.Run;
+using Agame.Balancing;
+using Agame.Run;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.Home
+namespace Agame.Home
 {
     public class RunDataSlotView : ExtendedMonoBehaviourHome
     {

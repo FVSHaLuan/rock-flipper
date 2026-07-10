@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class CameraShake : ExtendedMonoBehaviour
     {

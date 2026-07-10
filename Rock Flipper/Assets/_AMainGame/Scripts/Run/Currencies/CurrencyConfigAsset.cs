@@ -1,7 +1,7 @@
-using BT.GamePlatform;
+using Agame.GamePlatform;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class CurrencyConfigAsset : ScriptableObjectWithInit, IUnityCustomArrayElementHeader
     {

@@ -1,8 +1,8 @@
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using System.Collections;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class ShowDemoNoticePopupInRun : ExtendedMonoBehaviourRun
     {

@@ -1,7 +1,7 @@
-using BT.GamePlatform;
+using Agame.GamePlatform;
 using UnityEngine;
 
-namespace BT.Run.Stats.Agents
+namespace Agame.Run.Stats.Agents
 {
     [DisallowMultipleComponent]
     public abstract class BuildAgent : ExtendedMonoBehaviourRun

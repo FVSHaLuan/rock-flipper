@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using BT.Dev;
+using Agame.Dev;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace BT
+namespace Agame
 {
     [CreateAssetMenu(menuName = "OV/SingleInstances/VisualDefinitions")]
     public class VisualDefinitions : ScriptableObjectWithInit

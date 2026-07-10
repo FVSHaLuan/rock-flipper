@@ -1,8 +1,8 @@
-using BT.Run;
+using Agame.Run;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
-namespace BT
+namespace Agame
 {
     public class RunDataManager : ScriptableObjectWithInit
     {

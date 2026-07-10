@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Conditions
+namespace Agame.Conditions
 {
     public abstract class Condition : ScriptableObjectWithInit
     {

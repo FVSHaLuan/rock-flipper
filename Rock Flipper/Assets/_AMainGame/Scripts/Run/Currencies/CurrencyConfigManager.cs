@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using System.Linq;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class CurrencyConfigManager : ScriptableObjectWithInit
     {

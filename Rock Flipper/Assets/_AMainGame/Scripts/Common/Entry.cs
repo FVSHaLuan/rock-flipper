@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.UI;
-using BT.UI.ButtonPrompts;
-using BT.FeatureBranching;
-using BT.UI;
-using BT;
-using BT.Dev;
-using BT.Balancing;
-using BT.Demo;
-using BT.Steamworks;
-using BT.GamePlatform;
-using BT.Marketing;
-using BT.Localization;
-using BT.Run;
+using Agame.UI.ButtonPrompts;
+using Agame.FeatureBranching;
+using Agame.UI;
+using Agame;
+using Agame.Dev;
+using Agame.Balancing;
+using Agame.Demo;
+using Agame.Steamworks;
+using Agame.GamePlatform;
+using Agame.Marketing;
+using Agame.Localization;
+using Agame.Run;
 
 public partial class Entry : MonoBehaviour
 {

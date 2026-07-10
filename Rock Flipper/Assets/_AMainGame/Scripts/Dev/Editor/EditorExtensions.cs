@@ -4,7 +4,7 @@ using System.Text;
 using UnityEditor;
 using UnityEngine;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     public static class EditorExtensions
     {

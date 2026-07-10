@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace BT.UI
+namespace Agame.UI
 {
     [ExecuteInEditMode]
     public class ExplanationBox : GeneralPoolMemberSimplified

@@ -1,10 +1,10 @@
 // #define BETA_VERSION
-using BT.Dev;
+using Agame.Dev;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     public enum VersionBranch
     {

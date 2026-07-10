@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     public static class GameObjectBuildStateMenu
     {

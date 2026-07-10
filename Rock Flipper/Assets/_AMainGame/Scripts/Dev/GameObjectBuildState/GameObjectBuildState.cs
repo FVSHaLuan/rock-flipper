@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     [DisallowMultipleComponent]
     public class GameObjectBuildState : MonoBehaviour, IGameObjectBuildStateSetter

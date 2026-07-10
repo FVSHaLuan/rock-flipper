@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Marketing
+namespace Agame.Marketing
 {
     public class SteamDiscountDisplayer : ExtendedMonoBehaviour
     {

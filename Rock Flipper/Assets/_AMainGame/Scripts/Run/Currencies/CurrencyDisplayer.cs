@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class CurrencyDisplayer : ExtendedMonoBehaviourRun
     {

@@ -1,14 +1,14 @@
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using BT.Run;
-using BT.Balancing;
+using Agame.Run;
+using Agame.Balancing;
 using I2.Loc;
-using BT.Demo;
-using BT.Localization;
+using Agame.Demo;
+using Agame.Localization;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     [CreateAssetMenu(fileName = "DevEntry", menuName = "BSB/Dev/DevEntry")]
     [ExecuteInEditMode]

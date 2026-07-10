@@ -2,7 +2,7 @@ using GD;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Balancing
+namespace Agame.Balancing
 {
     public class StageConfig : ScriptableObjectWithInit
     {

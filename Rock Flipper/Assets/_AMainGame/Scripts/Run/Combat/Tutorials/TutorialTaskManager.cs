@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Run.Combat.Tutorials
+namespace Agame.Run.Combat.Tutorials
 {
     public class TutorialTaskManager : ExtendedMonoBehaviourRun
     {

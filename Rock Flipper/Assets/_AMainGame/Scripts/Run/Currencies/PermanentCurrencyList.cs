@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class PermanentCurrencyList : ExtendedMonoBehaviourRun
     {

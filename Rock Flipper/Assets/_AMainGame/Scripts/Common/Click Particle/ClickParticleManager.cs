@@ -2,7 +2,7 @@ using FH.Core.Architecture.Pool;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace BT
+namespace Agame
 {
     public class ClickParticleManager : ExtendedMonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public static class DLCManager
     {

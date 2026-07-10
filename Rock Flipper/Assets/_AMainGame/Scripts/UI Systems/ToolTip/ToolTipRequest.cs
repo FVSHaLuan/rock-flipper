@@ -1,7 +1,7 @@
-using BT.UI.ToolTips;
+using Agame.UI.ToolTips;
 using UnityEngine;
 
-namespace BT.UI.ToolTips
+namespace Agame.UI.ToolTips
 {
     [System.Serializable]
     public struct ToolTipRequest

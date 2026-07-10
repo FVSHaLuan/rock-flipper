@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using System.Text.RegularExpressions;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class ShortHandManager : ScriptableObjectWithInit
     {

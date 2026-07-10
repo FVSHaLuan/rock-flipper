@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.UI
+namespace Agame.UI
 {
     public class GeneralDialogLauncher : ExtendedMonoBehaviour
     {

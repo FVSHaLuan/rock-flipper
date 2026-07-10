@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
-using BT.Meta;
+using Agame.Meta;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class TextMeshProLinkHandler : MonoBehaviour, IPointerClickHandler

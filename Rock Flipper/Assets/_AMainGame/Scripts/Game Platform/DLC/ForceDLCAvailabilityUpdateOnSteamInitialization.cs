@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.GamePlatform
+namespace Agame.GamePlatform
 {
     public class ForceDLCAvailabilityUpdateOnSteamInitialization : MonoBehaviour
     {

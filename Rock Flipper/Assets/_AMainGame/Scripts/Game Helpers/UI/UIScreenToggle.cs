@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BT.GameplayHelpers
+namespace Agame.GameplayHelpers
 {
     public class UIScreenToggle : MonoBehaviour
     {

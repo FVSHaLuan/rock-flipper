@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.F2P
+namespace Agame.F2P
 {
     [RequireComponent(typeof(UIScreen))]
     public class UsePremiumFeaturePopup : MonoBehaviour

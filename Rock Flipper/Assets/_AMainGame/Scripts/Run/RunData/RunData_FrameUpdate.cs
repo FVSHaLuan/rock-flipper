@@ -1,10 +1,10 @@
-using BT.Run;
+using Agame.Run;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public partial class RunData
     {

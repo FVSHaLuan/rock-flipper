@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.Run
+namespace Agame.Run
 {
     public class CameraShakeHelper : ExtendedMonoBehaviourRun
     {

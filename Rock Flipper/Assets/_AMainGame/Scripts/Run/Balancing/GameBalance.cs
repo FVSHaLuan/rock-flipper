@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT.Balancing
+namespace Agame.Balancing
 {
     public partial class GameBalance : ScriptableObjectWithInit
     {

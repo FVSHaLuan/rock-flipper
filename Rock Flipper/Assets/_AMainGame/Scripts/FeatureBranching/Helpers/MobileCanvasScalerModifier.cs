@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BT.FeatureBranching
+namespace Agame.FeatureBranching
 {
     [RequireComponent(typeof(CanvasScaler))]
     public class MobileCanvasScalerModifier : MonoBehaviour

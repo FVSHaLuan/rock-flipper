@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using BT.FeatureBranching;
+using Agame.FeatureBranching;
 using UnityEngine;
 
-namespace BT.Home
+namespace Agame.Home
 {
     public class ShowDemoNoticePopup : ExtendedMonoBehaviourHome
     {

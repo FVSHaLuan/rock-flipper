@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace BT.UI.ButtonPrompts
+namespace Agame.UI.ButtonPrompts
 {
     [CreateAssetMenu(fileName = "ButtonPromptManager", menuName = "BSB/SingleInstance/ButtonPromptManager")]
     public class ButtonPromptManager : ScriptableObject

@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using UnityEngine;
 
-namespace BT.Run
+namespace Agame.Run
 {
     [System.Serializable]
     public class CurrencyStateDictionary : SerializableDictionary<Currency, CurrencyState>

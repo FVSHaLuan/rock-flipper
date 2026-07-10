@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace BT
+namespace Agame
 {
     public class VisualSceneLoader : ExtendedMonoBehaviour
     {

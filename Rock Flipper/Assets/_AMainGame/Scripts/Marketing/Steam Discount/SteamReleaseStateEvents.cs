@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BT.Marketing
+namespace Agame.Marketing
 {
     public class SteamReleaseStateEvents : ExtendedMonoBehaviour
     {

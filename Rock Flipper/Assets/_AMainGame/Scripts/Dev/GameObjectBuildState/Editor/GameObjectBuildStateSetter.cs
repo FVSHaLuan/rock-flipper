@@ -6,7 +6,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
-namespace BT.Dev
+namespace Agame.Dev
 {
     public static class GameObjectBuildStateSetter
     {

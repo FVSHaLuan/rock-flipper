@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BT
+namespace Agame
 {
     public class ClickParticleHelper : ExtendedMonoBehaviour
     {
