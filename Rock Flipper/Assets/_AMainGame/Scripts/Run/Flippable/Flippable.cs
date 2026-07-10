@@ -7,13 +7,9 @@ namespace Agame.Run.Combat
         [SerializeField]
         private float baseDuration = 2f;
         [SerializeField]
-        private float baseRange = 3f;
+        private float baseFlippingDistance = 0.2f;
         [SerializeField]
-        private float baseMinDistance = 0.2f;
-        [SerializeField]
-        private float baseMaxHeight = 2f;
-        [SerializeField]
-        private float baseMinHeight = 0.5f;
+        private float baseFlippingHeight = 2f;
 
         private float flippingDuration = 1;
         private float flippingTimeElapsed;
@@ -43,11 +39,11 @@ namespace Agame.Run.Combat
             duration = baseDuration;
 
             ///
-            float randomDistance = Random.Range(baseMinDistance, baseRange);
-            landingPosition = Random.insideUnitCircle.normalized * randomDistance + (Vector2)transform.position;
+            float distance = baseFlippingDistance;
+            landingPosition = Random.insideUnitCircle.normalized * distance + (Vector2)transform.position;
 
             ///
-            height = Random.Range(baseMinHeight, baseMaxHeight);
+            height =baseFlippingHeight;
         }
 
         private void StartFlipping(float duration, Vector2 landingPosition, float height)
@@ -92,7 +88,8 @@ namespace Agame.Run.Combat
 
         private void UpdateFlippingPosition()
         {
-
+            var th = transformHandle;
+            th.position = Vector2.Lerp(flippingStartPosition, flippingEndPosition, FlippingProgress);
         }
 
 #if UNITY_EDITOR
