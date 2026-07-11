@@ -17,7 +17,7 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnUpdatedFlipping()
         {
-            var cycle = Mathg.DecimalPart(flippable.HeightProgress * cycleCount / 2);
+            var cycle = Mathg.DecimalPart(flippable.FlippingHeightProgress * cycleCount / 2);
             var angle = Mathf.Lerp(0, 360, cycle);
             var th = transformHandle;
             th.rotation = Quaternion.Euler(0, 0, angle);

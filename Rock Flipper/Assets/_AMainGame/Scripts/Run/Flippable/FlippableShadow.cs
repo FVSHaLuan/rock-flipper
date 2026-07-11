@@ -19,8 +19,15 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnUpdatedFlipping()
         {
-            var scale = Mathf.Lerp(1, minScale, flippable.HeightProgress);
-            shadow.localScale = Vector3.one * scale;
+            ///
+            var scale = Mathf.Lerp(1, minScale, flippable.FlippingHeightProgress);
+
+            ///
+            var th = shadow.transformHandle;
+
+            ///
+            th.localScale = Vector3.one * scale;
+            th.position = flippable.FlippingGroundPosition;
         }
     }
 }

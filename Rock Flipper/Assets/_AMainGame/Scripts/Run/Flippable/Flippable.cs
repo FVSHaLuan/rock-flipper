@@ -21,7 +21,8 @@ namespace Agame.Run.Combat
 
         public bool IsFlipping { get; private set; }
         public float FlippingProgress { get; private set; }
-        public float HeightProgress { get; private set; }
+        public float FlippingHeightProgress { get; private set; }
+        public Vector2 FlippingGroundPosition { get; private set; }
 
         public bool TryFlipping()
         {
@@ -86,27 +87,30 @@ namespace Agame.Run.Combat
             UpdateFlippingPosition();
 
             ///
+            OnUpdatedFlipping?.Invoke();
+
+            ///
             if (flippingTimeElapsed >= flippingDuration)
             {
                 IsFlipping = false;
                 flippingTimeElapsed = 0;
                 FlippingProgress = 0;
-                HeightProgress = 0;
+                FlippingHeightProgress = 0;
             }
-
-            ///
-            OnUpdatedFlipping?.Invoke();
         }
 
         private void UpdateFlippingPosition()
         {
             ///
-            HeightProgress = Mathf.Sin(FlippingProgress * Mathf.PI);
-            var height = HeightProgress * baseFlippingHeight;
+            FlippingHeightProgress = Mathf.Sin(FlippingProgress * Mathf.PI);
+            var height = FlippingHeightProgress * baseFlippingHeight;
+
+            ///
+            FlippingGroundPosition = Vector2.Lerp(flippingStartPosition, flippingEndPosition, FlippingProgress);
 
             ///
             var th = transformHandle;
-            th.position = Vector2.Lerp(flippingStartPosition, flippingEndPosition, FlippingProgress) + Vector2.up * height;
+            th.position = FlippingGroundPosition + Vector2.up * height;
         }
 
 #if UNITY_EDITOR
