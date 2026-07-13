@@ -15,7 +15,16 @@ namespace Agame.Run.Combat
 
         protected void LateUpdate()
         {
-            SimpleCast2D.PointCast(transformHandle.position, true, flippableHits);
+            if (BuildStats.enabledPlayerCursorRadius)
+            {
+                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.playerCursorRadius, true, flippableHits);
+            }
+            else
+            {
+                SimpleCast2D.PointCast(transformHandle.position, true, flippableHits);
+            }
+
+            ///
             foreach (var item in flippableHits)
             {
                 item.Flippable.TryFlipping();
