@@ -14,6 +14,10 @@ namespace Agame.Run.Combat
         [SerializeField]
         private float baseFlippingHeight = 2f;
 
+        [Space]
+        [SerializeField]
+        private float playfieldPadding = 0.5f;
+
         private float flippingDuration = 1;
         private float flippingTimeElapsed;
         private Vector2 flippingStartPosition;
@@ -43,12 +47,40 @@ namespace Agame.Run.Combat
             ///
             duration = baseDuration;
 
-            ///
-            float distance = baseFlippingDistance;
-            landingPosition = Random.insideUnitCircle.normalized * distance + (Vector2)transform.position;
+            ///            
+            landingPosition = GetRandomLandingPosition();
 
             ///
             height = baseFlippingHeight;
+        }
+
+        private Vector2 GetRandomLandingPosition()
+        {
+            ///
+            float distance = baseFlippingDistance;
+
+            ///
+            var clampedPosition = (Vector2)Playfield.Clamp(transform.position, playfieldPadding * Vector2.one);
+
+            ///
+            Playfield.GetBounds(out var min, out var max, playfieldPadding);
+
+            ///
+            float directionX = Random.Range(-1f, 1f);
+            float directionY = Random.Range(-1f, 1f);
+
+            if (clampedPosition.x - min.x < distance)
+                directionX = Mathf.Abs(directionX);
+            else if (max.x - clampedPosition.x < distance)
+                directionX = -Mathf.Abs(directionX);
+
+            if (clampedPosition.y - min.y < distance)
+                directionY = Mathf.Abs(directionY);
+            else if (max.y - clampedPosition.y < distance)
+                directionY = -Mathf.Abs(directionY);
+
+            Vector2 direction = new Vector2(directionX, directionY).normalized;
+            return clampedPosition + direction * distance;
         }
 
         private void StartFlipping(float duration, Vector2 landingPosition, float height)

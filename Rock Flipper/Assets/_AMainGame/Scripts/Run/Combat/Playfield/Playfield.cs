@@ -524,5 +524,11 @@ namespace Agame.Run.Combat
                 y = Mathg.InverseLerpWithoutClamp(MinY, MaxY, worldPosition.y)
             };
         }
+
+        public void GetBounds(out Vector2 min, out Vector2 max, float padding)
+        {
+            min = new Vector2(MinX + padding, MinY + padding);
+            max = new Vector2(MaxX - padding, MaxY - padding);
+        }
     }
 }
