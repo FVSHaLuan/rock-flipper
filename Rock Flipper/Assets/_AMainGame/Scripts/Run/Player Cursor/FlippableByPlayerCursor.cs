@@ -1,16 +1,23 @@
 using UnityEngine;
 
-public class FlippableByPlayerCursor : MonoBehaviour
+namespace Agame.Run.Combat
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [RequireComponent(typeof(Flippable))]
+    public class FlippableByPlayerCursor : MonoBehaviour
     {
-        
+        private Flippable flippable;
+
+        public Flippable Flippable
+        {
+            get
+            {
+                if (flippable == null)
+                {
+                    flippable = GetComponent<Flippable>();
+                }
+                return flippable;
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
