@@ -9,6 +9,11 @@ namespace Agame.Run.Combat
             var th = transformHandle;
             th.position = entry.GetPointerPositionViaConversionCamera();
         }
+
+        protected void LateUpdate()
+        {
+
+        }
     }
 
 }
