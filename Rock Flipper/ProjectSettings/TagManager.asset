@@ -48,26 +48,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ball
-    uniqueID: 265591557
-    locked: 0
-  - name: Core
-    uniqueID: 1031368237
-    locked: 0
-  - name: Laser
-    uniqueID: 2661898693
-    locked: 0
   - name: PlayerCursor
     uniqueID: 5382387
     locked: 0
   - name: Combat particle effect
     uniqueID: 3661504733
-    locked: 0
-  - name: AuraWave
-    uniqueID: 2804607251
-    locked: 0
-  - name: Lightning
-    uniqueID: 2625658281
     locked: 0
   - name: Lighting 2D
     uniqueID: 1850657777
