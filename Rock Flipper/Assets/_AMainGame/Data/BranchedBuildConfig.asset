@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BranchedBuildConfig
   m_EditorClassIdentifier: Assembly-CSharp-Editor::BranchedBuildConfig
   version: 0.9.30
-  windowsBuildFolder: D:\Builds\BT Builds
+  windowsBuildFolder: D:\Builds\RF Builds
   macBuildFolder: TestBuilds
   buildExecutableName: Ballatory
