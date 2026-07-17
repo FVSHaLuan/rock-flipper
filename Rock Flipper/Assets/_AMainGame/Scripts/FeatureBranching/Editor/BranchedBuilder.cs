@@ -52,10 +52,18 @@ public class BranchedBuilder : IPreprocessBuildWithReport, IPostprocessBuildWith
         ///
         if (!BranchedBuildConfig.CheckInitiatedBuild())
         {
-            EditorUtility.DisplayDialog("Error", "Must initiate build from BranchedBuildConfig", "Cancel Build");
-            // ping the instance
-            Selection.activeObject = config;
-            throw new BuildFailedException($"Didn't initiate build from BranchedBuildConfig (can be found at {BranchedBuildConfig.AssetPath})");
+            bool allowed = true;
+            if (!allowed)
+            {
+                EditorUtility.DisplayDialog("Error", "Must initiate build from BranchedBuildConfig", "Cancel Build");
+                // ping the instance
+                Selection.activeObject = config;
+                throw new BuildFailedException($"Didn't initiate build from BranchedBuildConfig (can be found at {BranchedBuildConfig.AssetPath})");
+            }
+            else
+            {
+                EditorUtility.DisplayDialog("Error", "Must initiate build from BranchedBuildConfig.\r\nBut you're allowed for now!", "Continue Build");
+            }
         }
 
         // Correct version

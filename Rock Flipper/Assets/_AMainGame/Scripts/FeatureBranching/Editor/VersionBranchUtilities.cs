@@ -14,7 +14,21 @@ namespace Agame.FeatureBranching
 
         public void OnPreprocessBuild(BuildReport report)
         {
+            bool skipCheck = true;
+
             // Check output path
+            if (!skipCheck)
+            {
+                CheckAndConfirmBuildBranchAndOutputFolder(report); 
+            }
+            else
+            {
+                EditorUtility.DisplayDialog("Warning", "Skipping build branch and output folder check. Make sure you are building to the correct folder for the current version branch.", "OK");
+            }
+        }
+
+        private static void CheckAndConfirmBuildBranchAndOutputFolder(BuildReport report)
+        {
             if (VersionBranchInfo.IsPlaytestOrDemo || VersionBranchInfo.IsPlaytest)
             {
                 if (report.summary.outputPath.ToLower().Contains("release"))
