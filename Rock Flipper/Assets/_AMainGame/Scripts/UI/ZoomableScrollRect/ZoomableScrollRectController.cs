@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(ScrollRect))]
@@ -72,7 +73,7 @@ public class ZoomableScrollRectController : MonoBehaviourWithInit
 
     private void UpdateZoomByMouse()
     {
-        float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
+        float scrollWheel = Mouse.current.scroll.ReadValue().y;
 
         ///
         if (scrollWheel == 0)
@@ -81,7 +82,7 @@ public class ZoomableScrollRectController : MonoBehaviourWithInit
         }
 
         ///
-        var inputPosition = Input.mousePosition;
+        Vector2 inputPosition = Mouse.current.position.ReadValue();
 
         // Return if the mouse is outside the game's window
         if (inputPosition.x < 0 || inputPosition.x > Screen.width || inputPosition.y < 0 || inputPosition.y > Screen.height)
