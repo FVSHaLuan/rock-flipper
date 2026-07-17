@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_AMainGame/Scenes/InBuild/Blank.unity
     guid: 4b2cce9aba81a03478d87e2d09ffe9d9
-  - enabled: 1
-    path: Assets/_AMainGame/Scenes/FakeOS.unity
-    guid: 80ea90d3fabdd334b9743f312067d2d3
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: a83ac1839dc136048a41bd4bc41dd9ab, type: 2}
