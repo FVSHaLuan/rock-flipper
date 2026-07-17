@@ -38,6 +38,8 @@ namespace Agame
         public TightScreenDetector tightScreenDetector;
         public UsePremiumFeaturePopup usePremiumFeaturePopup;
         public ToolTipManager toolTipManager;
+        [System.Obsolete]
+        public Transform tooltipTransformParent;
 
         private EntryGeneralPool generalPool;
 

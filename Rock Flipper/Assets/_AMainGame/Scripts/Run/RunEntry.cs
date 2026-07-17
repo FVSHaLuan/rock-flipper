@@ -34,6 +34,8 @@ namespace Agame.Run
         public Selectable combatInvisibleButton;
         public TutorialFlags tutorialFlags;
         public UIScreen combatScreen;
+        public SkillTree skillTree;
+        public SkillCostTracker skillCostTracker;
 
         private bool isUsingTestBuildStats;
         private string baseBuildStatsName = "";
@@ -241,6 +243,11 @@ namespace Agame.Run
         protected void LateUpdate()
         {
             RunData.FrameUpdateLate();
+        }
+
+        public void MarkBuildStatsAsInvalid()
+        {
+            IsBuildStatsInvalid = true;
         }
 
 #if UNITY_EDITOR

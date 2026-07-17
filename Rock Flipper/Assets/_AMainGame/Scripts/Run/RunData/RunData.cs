@@ -44,7 +44,11 @@ namespace Agame
         private CurrencyValueDictionary currencyValues;
         [SerializeField]
         private List<Currency> discoveredCurrencies;
-        
+
+        [Header("Currency")]
+        [SerializeField]
+        private SkillNodeStateDictionary skillNodeStateDictionary;
+
         [Header("Other gameplay data (NO RESET)")]     
         public bool showedDemoEnding = false;
 
@@ -309,6 +313,31 @@ namespace Agame
             }
         }
         #endregion Currencies
+
+        #region Skills
+        public SkillNodeState GetSkillNodeState(string skillNodeId)
+        {
+            if (skillNodeStateDictionary == null
+                || !skillNodeStateDictionary.ContainsKey(skillNodeId))
+            {
+                return new SkillNodeState();
+            }
+
+            ///
+            return skillNodeStateDictionary[skillNodeId];
+        }
+
+        public void UpdateSkillNodeState(string skillNodeId, SkillNodeState skillNodeState)
+        {
+            if (skillNodeStateDictionary == null)
+            {
+                skillNodeStateDictionary = new SkillNodeStateDictionary();
+            }
+
+            ///
+            skillNodeStateDictionary[skillNodeId] = skillNodeState;
+        }
+        #endregion Skills
 
         #region Other Gameplay Data
 

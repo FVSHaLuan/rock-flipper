@@ -17,6 +17,8 @@ namespace Agame.Run
         BUCKET = 4,
         FREE = 5,
         AURA = 6,
+        BOSS = 7,
+        P7 = 8,
     }
 
     public static class CurrencyExtensions
