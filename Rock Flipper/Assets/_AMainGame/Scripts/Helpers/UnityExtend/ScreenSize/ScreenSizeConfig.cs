@@ -2,8 +2,6 @@ using UnityEngine;
 
 public static class ScreenSizeConfig
 {
-
-
     // Screens    
     public const float MinWidthRatio = 16f / 10f;
     public const float MaxWidthRatio = 19.5f / 9f;

@@ -54,6 +54,6 @@ SpriteAtlas:
   m_PackedSprites: []
   m_PackedSpriteNamesToIndex: []
   m_RenderDataMap: {}
-  m_Tag: Sprite Atlas - Branding
+  m_Tag: SA - Branding
   m_IsVariant: 0
   m_Guid: 511ce2d8dabd3d641b061b3509f3bb5b
