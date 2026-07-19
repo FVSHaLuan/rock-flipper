@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 9053617545869976771}
   - component: {fileID: 8602128471210126185}
   - component: {fileID: 1226529021745053492}
+  - component: {fileID: 2360683051412856914}
   m_Layer: 0
   m_Name: Flippable
   m_TagString: Untagged
@@ -358,6 +359,19 @@ MonoBehaviour:
   drawMode: 2
   xLength: 1
   yLength: 1
+--- !u!210 &2360683051412856914
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452235509922874149}
+  m_Enabled: 1
+  m_SortingLayerID: -253843699
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &7239387867784244313
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,8 +381,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886979152495369733}
-  - component: {fileID: 8998828348407551701}
   - component: {fileID: 1795440210425325493}
+  - component: {fileID: 8593718016570200180}
   m_Layer: 0
   m_Name: View
   m_TagString: Untagged
@@ -392,19 +406,6 @@ Transform:
   - {fileID: 7726427343024958822}
   m_Father: {fileID: 7317944234808884923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!210 &8998828348407551701
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7239387867784244313}
-  m_Enabled: 1
-  m_SortingLayerID: -253843699
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_SortAtRoot: 0
-  m_Sort3DAs2D: 0
 --- !u!114 &1795440210425325493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +419,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlippableRotator
   cycleCount: 10
+--- !u!210 &8593718016570200180
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239387867784244313}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &8540305917342788684
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,5 +476,5 @@ SortingGroup:
   m_SortingLayerID: 556955577
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_SortAtRoot: 0
+  m_SortAtRoot: 1
   m_Sort3DAs2D: 0
