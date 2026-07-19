@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4.66
+      value: 4.38
       objectReference: {fileID: 0}
     - target: {fileID: 5576551447022452610, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.748
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 5576551447022452610, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.561
+      value: -1.039
       objectReference: {fileID: 0}
     - target: {fileID: 5576551447022452610, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55,22 +55,22 @@ PrefabInstance:
     - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ac7abd2a4a45cec47a1e63d3ec142ba2, type: 3}
+      objectReference: {fileID: 21300000, guid: 66a231d0d7ea70e439d1b223d8b101cd, type: 3}
     - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Color.b
-      value: 0.9254902
+      value: 0.25792095
       objectReference: {fileID: 0}
     - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Color.g
-      value: 0.9137255
+      value: 0.8679245
       objectReference: {fileID: 0}
     - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Color.r
-      value: 0.7019608
+      value: 0.86271024
       objectReference: {fileID: 0}
     - target: {fileID: 8171674314610655772, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Name
-      value: Rock - P1 Pure
+      value: Rock - P2 Pure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
