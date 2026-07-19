@@ -131,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.98, y: 3.8}
+    oldSize: {x: 4.2, y: 2.92}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 6104432965653635643}
   - component: {fileID: 9053617545869976771}
   - component: {fileID: 8602128471210126185}
+  - component: {fileID: 1226529021745053492}
   m_Layer: 0
   m_Name: Flippable
   m_TagString: Untagged
@@ -341,6 +342,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1226529021745053492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452235509922874149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044c2b47424aad04fa664ac1b50d1df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Helpers.UnityExtend::GeneralGizmosBaseLines
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  drawMode: 2
+  xLength: 1
+  yLength: 1
 --- !u!1 &7239387867784244313
 GameObject:
   m_ObjectHideFlags: 0
