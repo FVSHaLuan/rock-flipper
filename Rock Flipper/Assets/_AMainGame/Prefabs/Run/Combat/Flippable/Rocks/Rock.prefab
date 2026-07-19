@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_Name
-      value: Flippable
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,5 +55,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3220070170073099721}
   m_SourcePrefab: {fileID: 100100000, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+--- !u!1 &5794978290778122173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+  m_PrefabInstance: {fileID: 711872273693500568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3220070170073099721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5794978290778122173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e422b58109fb994fa894eae7f6bca2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Rock
