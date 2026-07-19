@@ -19,3 +19,17 @@ MonoBehaviour:
     m_Color: {r: 0.12215203, g: 0.455624, b: 0.5754717, a: 1}
   - m_Name: Notification badge
     m_Color: {r: 0.9528302, g: 0.61196744, b: 0.22022964, a: 1}
+  - m_Name: Biome 1 - Grass
+    m_Color: {r: 0.112896055, g: 0.5566038, b: 0.27136317, a: 1}
+  - m_Name: Biome 2 - Snow
+    m_Color: {r: 0.638, g: 0.638, b: 0.638, a: 1}
+  - m_Name: Biome 3 - Underground
+    m_Color: {r: 0.2621539, g: 0.056799997, b: 0.284, a: 1}
+  - m_Name: Biome 4 - Dessert
+    m_Color: {r: 0.6792453, g: 0.51701695, b: 0.33641866, a: 1}
+  - m_Name: Biome 5 - Volcanic
+    m_Color: {r: 0.674, g: 0.31200045, b: 0.21300943, a: 1}
+  - m_Name: Biome 6 - Oceanic
+    m_Color: {r: 0.14751692, g: 0.27183905, b: 0.4811321, a: 1}
+  - m_Name: Biome 7 - Void
+    m_Color: {r: 0.29596087, g: 0.15801886, b: 0.5, a: 1}

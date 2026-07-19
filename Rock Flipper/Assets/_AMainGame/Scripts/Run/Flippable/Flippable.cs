@@ -4,6 +4,8 @@ namespace Agame.Run.Combat
 {
     public class Flippable : ExtendedMonoBehaviourRun
     {
+        private const int LandingPositionMaxTrialCount = 20;
+
         public event System.Action OnStartedFlipping;
         public event System.Action OnFinishedFlipping;
         public event System.Action OnUpdatedFlipping;
@@ -68,21 +70,47 @@ namespace Agame.Run.Combat
             Playfield.GetBounds(out var min, out var max, playfieldPadding);
 
             ///
-            float directionX = Random.Range(-1f, 1f);
-            float directionY = Random.Range(-1f, 1f);
+            int trialCount = 0;
+            Vector2 landingPosition = Playfield.CenterPoint;
 
-            if (clampedPosition.x - min.x < distance)
-                directionX = Mathf.Abs(directionX);
-            else if (max.x - clampedPosition.x < distance)
-                directionX = -Mathf.Abs(directionX);
+            ///
+            while (trialCount <= LandingPositionMaxTrialCount)
+            {
+                ///
+                float directionX = Random.Range(-1f, 1f);
+                float directionY = Random.Range(-1f, 1f);
 
-            if (clampedPosition.y - min.y < distance)
-                directionY = Mathf.Abs(directionY);
-            else if (max.y - clampedPosition.y < distance)
-                directionY = -Mathf.Abs(directionY);
+                ///
+                if (trialCount == LandingPositionMaxTrialCount)
+                {
+                    if (clampedPosition.x - min.x < distance)
+                        directionX = Mathf.Abs(directionX);
+                    else if (max.x - clampedPosition.x < distance)
+                        directionX = -Mathf.Abs(directionX);
 
-            Vector2 direction = new Vector2(directionX, directionY).normalized;
-            return clampedPosition + direction * distance;
+                    if (clampedPosition.y - min.y < distance)
+                        directionY = Mathf.Abs(directionY);
+                    else if (max.y - clampedPosition.y < distance)
+                        directionY = -Mathf.Abs(directionY);
+                }
+
+                ///
+                Vector2 direction = new Vector2(directionX, directionY).normalized;
+                landingPosition = clampedPosition + direction * distance;
+
+                // Validation: Check if the landing position is within the playfield bounds
+                if (landingPosition.x >= min.x && landingPosition.x <= max.x &&
+                    landingPosition.y >= min.y && landingPosition.y <= max.y)
+                {
+                    break;
+                }
+
+                ///
+                trialCount++;
+            }
+
+            ///
+            return landingPosition;
         }
 
         private void StartFlipping(float duration, Vector2 landingPosition, float height)
