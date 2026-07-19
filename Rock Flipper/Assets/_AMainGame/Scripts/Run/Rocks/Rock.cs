@@ -25,12 +25,20 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnFinishedFlipping()
         {
-            
+            CurrentHP--;
+            if (CurrentHP <= 0)
+            {
+                StartNewLife();
+            }
+            else
+            {
+                OnHPChanged?.Invoke();
+            }
         }
 
         private void Flippable_OnStartedFlipping()
         {
-            
+
         }
 
         [ContextMenu("Start New Life"), PlayModeOnly]
