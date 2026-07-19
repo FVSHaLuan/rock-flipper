@@ -10,10 +10,28 @@ namespace Agame.Run.Combat
         [SerializeField]
         private int baseHP = 5;
 
-        // [Header("Components")]        
+        [Header("Components")]
+        [SerializeField]
+        private Flippable flippable;
 
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
+
+        protected void Start()
+        {
+            flippable.OnStartedFlipping += Flippable_OnStartedFlipping;
+            flippable.OnFinishedFlipping += Flippable_OnFinishedFlipping;
+        }
+
+        private void Flippable_OnFinishedFlipping()
+        {
+            
+        }
+
+        private void Flippable_OnStartedFlipping()
+        {
+            
+        }
 
         [ContextMenu("Start New Life"), PlayModeOnly]
         public void StartNewLife()

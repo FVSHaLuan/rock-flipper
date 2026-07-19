@@ -377,8 +377,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Rock
   baseHP: 5
+  flippable: {fileID: 7931788272956034127}
 --- !u!4 &7813634911743892003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
   m_PrefabInstance: {fileID: 711872273693500568}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7931788272956034127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7490132037195802839, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+  m_PrefabInstance: {fileID: 711872273693500568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5794978290778122173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b01e34c3dfbc3418d46493fa179139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Flippable

@@ -4,6 +4,8 @@ namespace Agame.Run.Combat
 {
     public class Flippable : ExtendedMonoBehaviourRun
     {
+        public event System.Action OnStartedFlipping;
+        public event System.Action OnFinishedFlipping;
         public event System.Action OnUpdatedFlipping;
         public event System.Action OnUpdatedProgress;
 
@@ -93,6 +95,9 @@ namespace Agame.Run.Combat
             flippingDuration = duration;
             flippingStartPosition = transform.position;
             flippingEndPosition = landingPosition;
+
+            ///
+            OnStartedFlipping?.Invoke();
         }
 
         protected void Update()
@@ -128,6 +133,9 @@ namespace Agame.Run.Combat
                 flippingTimeElapsed = 0;
                 FlippingProgress = 0;
                 FlippingHeightProgress = 0;
+
+                ///
+                OnFinishedFlipping?.Invoke();
             }
         }
 
