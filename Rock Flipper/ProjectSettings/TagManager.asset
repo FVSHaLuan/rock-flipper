@@ -48,6 +48,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BiomeBackground
+    uniqueID: 1976201481
+    locked: 0
+  - name: Shadow
+    uniqueID: 556955577
+    locked: 0
+  - name: Flippable
+    uniqueID: 4041123597
+    locked: 0
   - name: PlayerCursor
     uniqueID: 5382387
     locked: 0

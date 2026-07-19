@@ -27,7 +27,10 @@ namespace Agame.Run.Combat
             ///
             foreach (var item in flippableHits)
             {
-                item.Flippable.TryFlipping();
+                if (item.isActiveAndEnabled)
+                {
+                    item.Flippable.TryFlipping();
+                }
             }
         }
     }
