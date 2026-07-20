@@ -9,7 +9,10 @@ public abstract class YSortingListener : MonoBehaviour
     protected void OnDisable()
     {
         var manager = YSortingManager.DirectInstance;
-        YSortingManager.Instance.UnregisterListener(this);
+        if (manager != null)
+        {
+            manager.UnregisterListener(this);
+        }
     }
 
     protected void OnEnable()
