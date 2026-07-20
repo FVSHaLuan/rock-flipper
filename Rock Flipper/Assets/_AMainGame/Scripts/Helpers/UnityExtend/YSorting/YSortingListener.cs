@@ -3,11 +3,12 @@ using UnityEngine;
 public abstract class YSortingListener : MonoBehaviour
 {
     public abstract int SortingLayer { get; }
-    public int SortingOrder { get; set; }
-    public float Y { get; }
+    public abstract int SortingOrder { get; set; }
+    public abstract float Y { get; }
 
     protected void OnDisable()
     {
+        var manager = YSortingManager.DirectInstance;
         YSortingManager.Instance.UnregisterListener(this);
     }
 

@@ -22,6 +22,7 @@ public class YSortingManager : MonoBehaviourWithInit
             return instance;
         }
     }
+    public static YSortingManager DirectInstance => instance;
 
     private HashSet<YSortingListener> allListeners = new HashSet<YSortingListener>();
     private Dictionary<int, List<YSortingListener>> sortedListeners = new Dictionary<int, List<YSortingListener>>();
