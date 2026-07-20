@@ -36,6 +36,7 @@ namespace Agame.Run
         public UIScreen combatScreen;
         public SkillTree skillTree;
         public SkillCostTracker skillCostTracker;
+        public RockInstanceManager rockInstanceManager;
 
         private bool isUsingTestBuildStats;
         private string baseBuildStatsName = "";
