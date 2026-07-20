@@ -54,14 +54,17 @@ TagManager:
   - name: Shadow
     uniqueID: 556955577
     locked: 0
-  - name: Flippable
+  - name: GroundFlippable
     uniqueID: 4041123597
     locked: 0
-  - name: PlayerCursor
-    uniqueID: 5382387
+  - name: AirFlippable
+    uniqueID: 3888830043
     locked: 0
   - name: Combat particle effect
     uniqueID: 3661504733
+    locked: 0
+  - name: PlayerCursor
+    uniqueID: 5382387
     locked: 0
   - name: Lighting 2D
     uniqueID: 1850657777
