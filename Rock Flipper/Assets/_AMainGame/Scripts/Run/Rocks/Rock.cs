@@ -12,6 +12,8 @@ namespace Agame.Run.Combat
 
         [Header("Components")]
         [SerializeField]
+        private RockPoolHandler rockPoolHandler;
+        [SerializeField]
         private Flippable flippable;
 
         public int MaxHP { get; private set; }

@@ -992,6 +992,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3220070170073099721}
+    - targetCorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6063040817023332797}
   m_SourcePrefab: {fileID: 100100000, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
 --- !u!4 &1427343685690768029 stripped
 Transform:
@@ -1016,7 +1019,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Rock
   baseHP: 5
+  rockPoolHandler: {fileID: 6063040817023332797}
   flippable: {fileID: 7931788272956034127}
+--- !u!114 &6063040817023332797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5794978290778122173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53018a0896fe8c74dacbc5cf2da1186a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.RockPoolHandler
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  rock: {fileID: 3220070170073099721}
 --- !u!4 &7813634911743892003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
