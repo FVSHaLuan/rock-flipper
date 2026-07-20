@@ -15,4 +15,15 @@ public abstract class YSortingListener : MonoBehaviour
     {
         YSortingManager.Instance.RegisterListener(this);
     }
+
+    public static int Compare(YSortingListener a, YSortingListener b)
+    {
+        if (a.SortingLayer != b.SortingLayer)
+        {
+            return a.SortingLayer.CompareTo(b.SortingLayer);
+        }
+
+        ///
+        return a.Y.CompareTo(b.Y);
+    }
 }

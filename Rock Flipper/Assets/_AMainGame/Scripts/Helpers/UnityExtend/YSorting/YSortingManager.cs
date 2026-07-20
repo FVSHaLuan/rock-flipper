@@ -23,7 +23,8 @@ public class YSortingManager : MonoBehaviourWithInit
         }
     }
 
-    private HashSet<YSortingListener> listeners = new HashSet<YSortingListener>();
+    private HashSet<YSortingListener> allListeners = new HashSet<YSortingListener>();
+    private Dictionary<int, List<YSortingListener>> sortedListeners = new Dictionary<int, List<YSortingListener>>();
 
     protected override void ExtendedAwake()
     {
@@ -36,11 +37,42 @@ public class YSortingManager : MonoBehaviourWithInit
 
     public void RegisterListener(YSortingListener listener)
     {
-        listeners.Add(listener);
+        allListeners.Add(listener);
     }
 
     public void UnregisterListener(YSortingListener listener)
     {
-        listeners.Remove(listener);
+        allListeners.Remove(listener);
+    }
+
+    protected void LateUpdate()
+    {
+        ///
+        foreach (var listeners in sortedListeners.Values)
+        {
+            listeners.Clear();
+        }
+
+        ///
+        foreach (var listener in allListeners)
+        {
+            if (!sortedListeners.TryGetValue(listener.SortingLayer, out var listeners))
+            {
+                listeners = new List<YSortingListener>();
+                sortedListeners[listener.SortingLayer] = listeners;
+            }
+            listeners.Add(listener);
+        }
+
+        ///
+        foreach (var listeners in sortedListeners.Values)
+        {
+            listeners.Sort(YSortingListener.Compare);
+            int sortingOrder = 32767;
+            for (int i = 0; i < listeners.Count; i++)
+            {
+                listeners[i].SortingOrder = sortingOrder--;
+            }
+        }
     }
 }
