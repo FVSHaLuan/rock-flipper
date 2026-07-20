@@ -16,6 +16,12 @@ namespace Agame.Run.Combat
         {
             rock = GetComponent<Rock>();
         }
+
+        [ContextMenu("Spawn As Old Rock"), PlayModeOnly]
+        private void Editor_SpawnAsOldRock()
+        {
+            RunEntry.Instance.rockInstanceManager.SpawnAsOldRock(this);
+        }
 #endif
     }
 
