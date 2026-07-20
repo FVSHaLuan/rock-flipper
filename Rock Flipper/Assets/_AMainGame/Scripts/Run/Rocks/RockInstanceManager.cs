@@ -23,5 +23,20 @@ namespace Agame.Run.Combat
             ///
             return rock;
         }
+
+        public Rock SpawnAsNewRock(RockPoolHandler rockPoolHandler, Vector2 startPosition)
+        {
+            var rock = Spawn(rockPoolHandler);
+
+            ///
+            rock.StartNewLife();
+
+            ///
+            rock.transform.position = startPosition;            
+            rock.DoNewRockFlipping(Playfield.GetRandomPoint(Vector2.zero));            
+
+            ///
+            return rock;
+        }
     }
 }

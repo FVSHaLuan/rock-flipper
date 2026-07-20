@@ -22,6 +22,12 @@ namespace Agame.Run.Combat
         {
             RunEntry.Instance.rockInstanceManager.SpawnAsOldRock(this);
         }
+
+        [ContextMenu("Spawn As New Rock"), PlayModeOnly]
+        private void Editor_SpawnAsNewRock()
+        {
+            RunEntry.Instance.rockInstanceManager.SpawnAsNewRock(this, Vector2.zero);
+        }
 #endif
     }
 

@@ -46,6 +46,15 @@ namespace Agame.Run.Combat
             return true;
         }
 
+        public void ForceFlipping(float duration, Vector2 landingPosition, float height)
+        {
+            ///
+            ResetFlippingState();
+
+            ///
+            StartFlipping(duration, landingPosition, height);
+        }
+
         private void GetRandomFlippingParameters(out float duration, out Vector2 landingPosition, out float height)
         {
             ///
@@ -128,6 +137,11 @@ namespace Agame.Run.Combat
             OnStartedFlipping?.Invoke();
         }
 
+        protected void OnDisable()
+        {
+            ResetFlippingState();
+        }
+
         protected void Update()
         {
             if (!IsFlipping)
@@ -157,14 +171,19 @@ namespace Agame.Run.Combat
             ///
             if (flippingTimeElapsed >= flippingDuration)
             {
-                IsFlipping = false;
-                flippingTimeElapsed = 0;
-                FlippingProgress = 0;
-                FlippingHeightProgress = 0;
+                ResetFlippingState();
 
                 ///
                 OnFinishedFlipping?.Invoke();
             }
+        }
+
+        private void ResetFlippingState()
+        {
+            IsFlipping = false;
+            flippingTimeElapsed = 0;
+            FlippingProgress = 0;
+            FlippingHeightProgress = 0;
         }
 
         private void UpdateFlippingPosition()

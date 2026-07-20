@@ -10,6 +10,12 @@ namespace Agame.Run.Combat
         [SerializeField]
         private int baseHP = 5;
 
+        [Header("New rock flipping")]
+        [SerializeField]
+        private float newRockFlippingDuration = 1f;
+        [SerializeField]
+        private float newRockFlippingHeight = 2f;
+
         [Header("Components")]
         [SerializeField]
         private RockPoolHandler rockPoolHandler;
@@ -51,6 +57,11 @@ namespace Agame.Run.Combat
 
             ///
             OnStartedNewLife?.Invoke();
+        }
+
+        public void DoNewRockFlipping(Vector2 landingPosition)
+        {
+            flippable.ForceFlipping(newRockFlippingDuration, landingPosition, newRockFlippingHeight);
         }
     }
 
