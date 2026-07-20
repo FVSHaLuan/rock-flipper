@@ -876,22 +876,6 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.54089534
       objectReference: {fileID: 0}
-    - target: {fileID: 6238325920108204209, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
-      propertyPath: m_Color.a
-      value: 0.77254903
-      objectReference: {fileID: 0}
-    - target: {fileID: 6238325920108204209, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
-      propertyPath: m_Color.b
-      value: 0.254717
-      objectReference: {fileID: 0}
-    - target: {fileID: 6238325920108204209, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
-      propertyPath: m_Color.g
-      value: 0.254717
-      objectReference: {fileID: 0}
-    - target: {fileID: 6238325920108204209, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
-      propertyPath: m_Color.r
-      value: 0.254717
-      objectReference: {fileID: 0}
     - target: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_Name
       value: Rock
@@ -1019,6 +1003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Rock
   baseHP: 5
+  newRockFlippingDuration: 1
+  newRockFlippingHeight: 2
   rockPoolHandler: {fileID: 6063040817023332797}
   flippable: {fileID: 7931788272956034127}
 --- !u!114 &6063040817023332797
