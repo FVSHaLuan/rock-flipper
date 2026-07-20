@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class YSortingManager : MonoBehaviourWithInit
@@ -22,6 +23,8 @@ public class YSortingManager : MonoBehaviourWithInit
         }
     }
 
+    private HashSet<YSortingListener> listeners = new HashSet<YSortingListener>();
+
     protected override void ExtendedAwake()
     {
         ///
@@ -29,5 +32,15 @@ public class YSortingManager : MonoBehaviourWithInit
 
         ///
         instance = this;
+    }
+
+    public void RegisterListener(YSortingListener listener)
+    {
+        listeners.Add(listener);
+    }
+
+    public void UnregisterListener(YSortingListener listener)
+    {
+        listeners.Remove(listener);
     }
 }
