@@ -45,11 +45,13 @@ namespace Agame
         [SerializeField]
         private List<Currency> discoveredCurrencies;
 
-        [Header("Currency")]
+        [Header("Stat builder states")]
         [SerializeField]
         private SkillNodeStateDictionary skillNodeStateDictionary;
+        [SerializeField]
+        private StringIntSerializableDictionary builderButtonLevels;
 
-        [Header("Other gameplay data (NO RESET)")]     
+        [Header("Other gameplay data (NO RESET)")]
         public bool showedDemoEnding = false;
 
         [Space]
@@ -60,7 +62,7 @@ namespace Agame
         public static int UpStagedFrame { get; private set; } = -1;
 
         public float LastSaveTime => lastSaveTime;
-                
+
         public int CompatVersion => compatVersion;
         public bool InitedRun { get => initedRun; private set => initedRun = value; }
         public bool FinishedTutorial { get => finishedTutorial; set => finishedTutorial = value; }
@@ -148,7 +150,7 @@ namespace Agame
             if (initedRun)
             {
                 throw new InvalidOperationException("Cannot copy data into an already initialized RunData.");
-            }            
+            }
 
             ///
             initedRun = true;
@@ -314,7 +316,7 @@ namespace Agame
         }
         #endregion Currencies
 
-        #region Skills
+        #region Stat builder states
         public SkillNodeState GetSkillNodeState(string skillNodeId)
         {
             if (skillNodeStateDictionary == null
@@ -336,6 +338,48 @@ namespace Agame
 
             ///
             skillNodeStateDictionary[skillNodeId] = skillNodeState;
+        }
+
+        public int GetBuilderButtonLevel(string buttonId)
+        {
+            ///
+            if (string.IsNullOrWhiteSpace(buttonId))
+            {
+                throw new ArgumentException("Button ID cannot be null or whitespace.", nameof(buttonId));
+            }
+
+            ///
+            if (!builderButtonLevels.ContainsKey(buttonId))
+            {
+                return 0;
+            }
+
+            ///
+            return builderButtonLevels[buttonId];
+        }
+
+        public void SetBuilderButtonLevel(string buttonId, int level)
+        {
+            ///
+            if (string.IsNullOrWhiteSpace(buttonId))
+            {
+                throw new ArgumentException("Button ID cannot be null or whitespace.", nameof(buttonId));
+            }
+
+            ///
+            if (level < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(level), "Level cannot be negative.");
+            }
+
+            ///
+            if (builderButtonLevels == null)
+            {
+                builderButtonLevels = new StringIntSerializableDictionary();
+            }
+
+            ///
+            builderButtonLevels[buttonId] = level;
         }
         #endregion Skills
 
