@@ -8,6 +8,10 @@ namespace Agame.Run.Combat
         public event System.Action OnHPChanged;
 
         [SerializeField]
+        private RockTier rockTier = RockTier.P0;
+
+        [Space]
+        [SerializeField]
         private int baseHP = 5;
 
         [Header("New rock flipping")]

@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.136
       objectReference: {fileID: 0}
+    - target: {fileID: 3220070170073099721, guid: ed37500b8e54fa34c9add81838ee1f1c, type: 3}
+      propertyPath: rockTier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4942943732966320418, guid: ed37500b8e54fa34c9add81838ee1f1c, type: 3}
       propertyPath: m_Sprite
       value: 

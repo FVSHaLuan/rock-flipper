@@ -15614,6 +15614,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5047733040343607903, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      propertyPath: buttonIDAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 03ee42d2aabdc0643acf50022b72707a, type: 2}
     - target: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
       propertyPath: m_Name
       value: Stat Builder Button
