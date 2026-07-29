@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Agame.Run.Stats.Agents
 {
+    [System.Obsolete("Gonna use a separate component for building tooltip")]
     public abstract class SkillBuildAgentWithSimpleTooltip : SkillBuildAgent
     {
         [SerializeField, TextArea]
