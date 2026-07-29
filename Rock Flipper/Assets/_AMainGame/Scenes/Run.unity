@@ -3777,12 +3777,6 @@ MonoBehaviour:
 
     (Your data has been
     saved!)'
-  localizedMessage:
-    mTerm: 
-    mRTL_IgnoreArabicFix: 0
-    mRTL_MaxLineLength: 0
-    mRTL_ConvertNumbers: 0
-    m_DontLocalizeParameters: 0
   isCancellable: 1
   callbackImmediatelyOnCancel: 0
   callbackImmediatelyOnOK: 1
@@ -6328,12 +6322,6 @@ MonoBehaviour:
 
 
     (Your data has been saved!)'
-  localizedMessage:
-    mTerm: 
-    mRTL_IgnoreArabicFix: 0
-    mRTL_MaxLineLength: 0
-    mRTL_ConvertNumbers: 0
-    m_DontLocalizeParameters: 0
   isCancellable: 1
   callbackImmediatelyOnCancel: 0
   callbackImmediatelyOnOK: 1
@@ -9362,6 +9350,7 @@ MonoBehaviour:
   TermPrefix: 
   TermSuffix: 
   LocalizeOnAwake: 1
+  LastLocalizedLanguage: 
   IgnoreRTL: 0
   MaxCharactersInRTL: 0
   IgnoreNumbersInRTL: 1
@@ -9373,10 +9362,9 @@ MonoBehaviour:
   LocalizeEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   AlwaysForceLocalize: 0
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
+  LocalizeCallBack: {Target: {fileID: 0}, MethodName: }
   mGUI_ShowReferences: 0
   mGUI_ShowTems: 1
   mGUI_ShowCallback: 0
