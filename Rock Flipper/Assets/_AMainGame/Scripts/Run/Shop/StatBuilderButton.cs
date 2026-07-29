@@ -2,19 +2,10 @@ using UnityEngine;
 
 namespace Agame.Run
 {
-    public class StatBuilderButton : MonoBehaviour
+    public class StatBuilderButton : ExtendedMonoBehaviourRun
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        //[SerializeField, ReadOnly]
+        //private string builder
     }
 
 }
