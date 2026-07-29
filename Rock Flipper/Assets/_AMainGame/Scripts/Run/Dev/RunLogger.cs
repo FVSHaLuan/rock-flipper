@@ -106,7 +106,7 @@ namespace Agame.Run.Dev
 
         private static bool FindInstance()
         {
-            instance = FindFirstObjectByType<RunLogger>();
+            instance = FindAnyObjectByType<RunLogger>();
             return instance != null;
         }
     }

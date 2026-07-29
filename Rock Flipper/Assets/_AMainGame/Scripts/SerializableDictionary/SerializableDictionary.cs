@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using UnityEngine;
 
+[Serializable]
 public abstract class SerializableDictionaryBase<TKey, TValue, TValueStorage> : Dictionary<TKey, TValue>, ISerializationCallbackReceiver
 {
     [SerializeField]
@@ -70,6 +71,7 @@ public abstract class SerializableDictionaryBase<TKey, TValue, TValueStorage> : 
     }
 }
 
+[Serializable]
 public class SerializableDictionary<TKey, TValue> : SerializableDictionaryBase<TKey, TValue, TValue>
 {
     public SerializableDictionary()

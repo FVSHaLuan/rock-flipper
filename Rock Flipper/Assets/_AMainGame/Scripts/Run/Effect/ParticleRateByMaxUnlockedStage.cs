@@ -10,7 +10,7 @@ namespace Agame.Run.Shop
         [SerializeField]
         private float maxRate = 100;
 
-        private new ParticleSystem particleSystem;
+        private ParticleSystem particleSystem;
 
         protected void OnDestroy()
         {

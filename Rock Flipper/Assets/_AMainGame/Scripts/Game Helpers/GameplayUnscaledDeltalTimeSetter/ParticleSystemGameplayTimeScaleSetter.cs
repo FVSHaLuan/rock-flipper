@@ -6,7 +6,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class ParticleSystemGameplayTimeScaleSetter : GameplayTimeScaleSetter
 {
-    private new ParticleSystem particleSystem;
+    private ParticleSystem particleSystem;
 
     protected override void ExtendedAwake()
     {

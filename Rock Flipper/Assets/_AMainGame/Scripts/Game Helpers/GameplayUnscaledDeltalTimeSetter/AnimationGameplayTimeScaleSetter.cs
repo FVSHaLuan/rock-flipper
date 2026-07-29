@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animation))]
 public class AnimationGameplayTimeScaleSetter : GameplayTimeScaleSetter
 {
-    private new Animation animation;
+    private Animation animation;
 
     protected void LateUpdate()
     {

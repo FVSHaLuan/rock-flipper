@@ -41,7 +41,7 @@ public class LightningBolt2D : MonoBehaviour
     public int orderInLayer = 0;
 
     [SerializeField]
-    EntityId entityId = 0;
+    EntityId entityId = EntityId.None;
 
     #endregion
 
@@ -115,14 +115,14 @@ public class LightningBolt2D : MonoBehaviour
         //Check if object is a copy
         if (entityId != GetEntityId())
         {
-            if (entityId == 0)
+            if (entityId == EntityId.None)
             {
                 entityId = GetEntityId();
             }
             else
             {
                 entityId = GetEntityId();
-                if (entityId < 0)
+                if (entityId == EntityId.None)
                 {
                     arcs = new List<arc>(5);
                     mesh = null;

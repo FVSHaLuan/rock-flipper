@@ -11,7 +11,7 @@ namespace Agame.UI
         [SerializeField, UnityLayer]
         private int dropItemLayer;
 
-        private new Camera camera;
+        private Camera camera;
 
         private BalancerWithObjects viewDropItemBalancer = new BalancerWithObjects();
 

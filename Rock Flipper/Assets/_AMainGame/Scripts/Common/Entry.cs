@@ -50,7 +50,7 @@ public partial class Entry : MonoBehaviour
 #if UNITY_EDITOR
             if (!Application.isPlaying)
             {
-                instance = FindFirstObjectByType<Entry>();
+                instance = FindAnyObjectByType<Entry>();
             }
 #endif
             ///

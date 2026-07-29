@@ -44,7 +44,7 @@ public class ExtendedMonoBehaviourWithUniqueId : ExtendedMonoBehaviour
     {
 #if UNITY_EDITOR
         ///
-        var listInScene = FindObjectsByType<ExtendedMonoBehaviourWithUniqueId>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        var listInScene = FindObjectsByType<ExtendedMonoBehaviourWithUniqueId>(FindObjectsInactive.Include);
         var listFromRoot = transform.root.GetComponentsInChildren<ExtendedMonoBehaviourWithUniqueId>(true);
 
         ///
