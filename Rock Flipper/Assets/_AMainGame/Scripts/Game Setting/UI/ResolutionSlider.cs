@@ -1,4 +1,3 @@
-using I2.Loc;
 using System.Collections;
 using System.Collections.Generic;
 using Agame.FeatureBranching;
@@ -207,7 +206,7 @@ public class ResolutionSlider : MonoBehaviour
         currentResolutionText.Text = string.Format("{0} x {1}", resolution.x, resolution.y);
         if (resolution.isRecommended)
         {
-            currentResolutionText.Text += "\r\n(" + ScriptLocalization.Common.Recommended + ")";
+            currentResolutionText.Text += "\r\n(Recommended)";
         }
     }
 

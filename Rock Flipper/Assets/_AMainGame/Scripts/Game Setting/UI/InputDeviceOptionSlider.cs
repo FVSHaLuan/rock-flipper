@@ -1,4 +1,3 @@
-using I2.Loc;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +12,7 @@ namespace Agame.UI.GameSettings
 
         [Space]
         [SerializeField]
-        private List<LocalizedString> optionNames;
+        private List<string> optionNames;
 
         protected override void OnEnable()
         {

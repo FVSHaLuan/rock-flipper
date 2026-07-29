@@ -1,12 +1,9 @@
 using Agame.FeatureBranching;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using Agame.Run;
 using Agame.Balancing;
-using I2.Loc;
 using Agame.Demo;
-using Agame.Localization;
 
 namespace Agame.Dev
 {
@@ -25,10 +22,8 @@ namespace Agame.Dev
         public CashTiers cashTiers;
         public CurrencyConfigManager currencyConfigManager;
         public Font monoSpaceFont;
-        public LanguageSourceAsset languageSourceAsset;
         public VisualDefinitions visualDefinitions;
         public DemoHub demoHub;
-        public LocalizedStrings localizedStrings;
 
 #if UNITY_EDITOR
         [NonSerialized]

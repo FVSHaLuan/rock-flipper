@@ -8,7 +8,6 @@ using XNode;
 using Agame.Balancing;
 using Agame.FeatureBranching;
 using Agame.Meta;
-using I2.Loc;
 
 namespace Agame.Run
 {

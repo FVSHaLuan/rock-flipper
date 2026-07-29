@@ -1,5 +1,4 @@
 ﻿using CommandTerminal;
-using I2.Loc;
 using System;
 using Agame;
 using Agame.Dev;
@@ -333,36 +332,6 @@ internal static partial class TerminalCommands
         Debug.Log("Enabled SteamStats.");
     }
     #endregion Steam
-
-    #region Localization
-
-    //[RegisterCommand()]
-    //private static void ToggleLocalizationDebug(CommandArg[] args)
-    //{
-    //    ///
-    //    LocalizationManager.DebugFlag = !LocalizationManager.DebugFlag;
-
-    //    ///
-    //    Debug.LogFormat("DebugFlag = {0}", LocalizationManager.DebugFlag);
-    //}
-
-    [RegisterCommand(Help = "string lang")]
-    private static void SetLanguage(CommandArg[] args)
-    {
-        ///
-        string lang = args[0].String;
-        string code = args.Length >= 2 ? args[1].String : null;
-
-        ///
-        LocalizationManager.SetLanguageAndCode(lang, code);
-    }
-
-    [RegisterCommand()]
-    private static void CurrentLanaguage(CommandArg[] args)
-    {
-        Debug.Log(LocalizationManager.CurrentLanguage);
-    }
-    #endregion Localization
 
     #region Run
     [RegisterCommand(Help = "int sourceIndex, int targetIndex, bool copySkills")]

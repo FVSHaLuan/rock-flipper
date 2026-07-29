@@ -1,6 +1,3 @@
-using I2.Loc;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,8 +7,6 @@ namespace Agame.UI
     {
         [SerializeField, TextArea]
         private string message;
-        [SerializeField]
-        private LocalizedString localizedMessage;
         [SerializeField]
         private bool isCancellable;
         [SerializeField]
@@ -33,7 +28,7 @@ namespace Agame.UI
         public void Launch()
         {
             ///
-            var finalMessage = string.IsNullOrWhiteSpace(localizedMessage) ? message : localizedMessage.ToString();
+            var finalMessage = string.IsNullOrWhiteSpace(message) ? string.Empty : message;
 
             ///
             var option = new GeneralDialog.DialogOption()

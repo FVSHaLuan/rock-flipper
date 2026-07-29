@@ -1,4 +1,3 @@
-using I2.Loc;
 using UnityEngine;
 
 namespace Agame.Run
@@ -10,18 +9,14 @@ namespace Agame.Run
         [SerializeField]
         private string specialCrusherName;
         [SerializeField]
-        private LocalizedString specialCrusherNameLocalized;
-        [SerializeField]
         private Sprite icon;
         [SerializeField, TextArea]
         private string specialCrusherDescription;
-        [SerializeField]
-        private LocalizedString specialCrusherDescriptionLocalized;
 
-        public string SpecialCrusherName => specialCrusherNameLocalized;
+        public string SpecialCrusherName => specialCrusherName;
         public SpecialCrusherId SpecialCrusherId => specialCrusherId;
         public Sprite Icon => icon;
-        public string SpecialCrusherDescription => specialCrusherDescriptionLocalized;
+        public string SpecialCrusherDescription => specialCrusherDescription;
     }
 
 }

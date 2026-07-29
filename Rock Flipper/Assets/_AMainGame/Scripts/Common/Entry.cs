@@ -12,7 +12,6 @@ using Agame.Demo;
 using Agame.Steamworks;
 using Agame.GamePlatform;
 using Agame.Marketing;
-using Agame.Localization;
 using Agame.Run;
 
 public partial class Entry : MonoBehaviour
@@ -76,7 +75,6 @@ public partial class Entry : MonoBehaviour
     private PlayerDataObject playerDataObjectDemo;
     public PlayerDataSaver playerDataSaver;
     public GameSettingObject gameSettingObject;
-    public LocalizedStrings localizedStrings;
     public CompatManager compatManager;
 
     [Header("1. Time")]
