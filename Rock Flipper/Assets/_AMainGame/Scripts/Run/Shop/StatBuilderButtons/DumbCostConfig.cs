@@ -8,6 +8,8 @@ namespace Agame.Run.Shop
         [SerializeField, OneLine]
         private CurrencyAmount cost;
 
+        public Currency Currency => cost.currency;
+
         public CurrencyAmount GetNextLevelCost(int level)
         {
             return cost;

@@ -49,9 +49,27 @@ namespace Agame.Run.Shop
             return base.Init();
         }
 
+        protected void OnDisable()
+        {
+            ///
+            RunData.OnCurrencyValueModifiedThisFrame -= RunData_OnCurrencyValueModifiedThisFrame;
+        }
+
         protected void OnEnable()
         {
+            ///
             UpdateViewAll();
+
+            ///
+            RunData.OnCurrencyValueModifiedThisFrame += RunData_OnCurrencyValueModifiedThisFrame;
+        }
+
+        private void RunData_OnCurrencyValueModifiedThisFrame(Currency currency)
+        {
+            if (currency == costConfig.Currency)
+            {
+                UpdateInteractability();
+            }
         }
 
         public void Apply()
