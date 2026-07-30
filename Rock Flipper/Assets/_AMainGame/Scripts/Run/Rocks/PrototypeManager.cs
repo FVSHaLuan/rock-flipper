@@ -49,6 +49,10 @@ namespace Agame.Run.Combat
 
         public Rock GetRockPrototype(RockTier tier, bool isPure)
         {
+            ///
+            TryInit();
+
+            ///
             if (isPure)
             {
                 if (pureRockDictionary.TryGetValue(tier, out var pureRock))

@@ -32,6 +32,7 @@ namespace Agame.Run.Combat
         public bool IsPure => isPure;
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
+        public RockPoolHandler PoolHandler => rockPoolHandler;
 
         protected void Start()
         {

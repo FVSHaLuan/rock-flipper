@@ -20,7 +20,7 @@ namespace Agame.Run.Stats
         [SerializeField]
         private RockTierBuildStats rock_P3;
 
-        public RockTierBuildStats GetRockBuildStats(RockTier rockTier)
+        public RockTierBuildStats GetRockTierBuildStats(RockTier rockTier)
         {
             return rockTier switch
             {

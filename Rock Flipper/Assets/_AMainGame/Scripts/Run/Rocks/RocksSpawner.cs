@@ -10,7 +10,7 @@ namespace Agame.Run.Shop
             ///
             if (CurrentRunState == RunState.Combat)
             {
-                Spawn();
+                SpawnOldRocks();
             }
 
             ///
@@ -19,20 +19,23 @@ namespace Agame.Run.Shop
 
         private void StateManager_OnCombatStarted()
         {
-            Spawn();
+            SpawnOldRocks();
         }
 
-        private void Spawn()
+        private void SpawnOldRocks()
         {
             foreach (RockTier rockTier in RockTierExtensions.AllTiers())
             {
-                Spawn(rockTier);
+                SpawnOldRocks(rockTier);
             }
         }
 
-        private void Spawn(RockTier rockTier)
+        private void SpawnOldRocks(RockTier rockTier)
         {
-
+            var tierBuildStats = BuildStats.GetRockTierBuildStats(rockTier);
+            bool isPure = Random.value <= tierBuildStats.purity;
+            var rockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, isPure);
+            RunEntry.rockInstanceManager.SpawnAsOldRock(rockPrototype.PoolHandler);
         }
     }
 

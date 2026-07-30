@@ -12,7 +12,7 @@ namespace Agame.Run.Stats.Agents
 
         public override void Apply(int currentLevel, int addingLevel, double buildValuePerLevel)
         {
-            var rockTierBuildStats = BuildStats.GetRockBuildStats(rockTier);
+            var rockTierBuildStats = BuildStats.GetRockTierBuildStats(rockTier);
             Apply(rockTierBuildStats, currentLevel, addingLevel, buildValuePerLevel);
         }
     }
