@@ -33,9 +33,23 @@ namespace Agame.Run.Shop
         private void SpawnOldRocks(RockTier rockTier)
         {
             var tierBuildStats = BuildStats.GetRockTierBuildStats(rockTier);
-            bool isPure = Random.value <= tierBuildStats.purity;
-            var rockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, isPure);
-            RunEntry.rockInstanceManager.SpawnAsOldRock(rockPrototype.PoolHandler);
+            var count = tierBuildStats.count;
+            if (count <= 0)
+            {
+                return;
+            }
+
+            ///
+            var regularRockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, false);
+            var pureRockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, true);
+
+            ///
+            for (int i = 0; i < count; i++)
+            {
+                bool isPure = Random.value <= tierBuildStats.purity;
+                var rockPrototype = isPure ? pureRockPrototype : regularRockPrototype;
+                RunEntry.rockInstanceManager.SpawnAsOldRock(rockPrototype.PoolHandler); 
+            }
         }
     }
 
