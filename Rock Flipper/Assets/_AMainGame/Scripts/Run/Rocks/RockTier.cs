@@ -21,7 +21,7 @@ namespace Agame.Run.Combat
             allTiers = (RockTier[])System.Enum.GetValues(typeof(RockTier));
         }
 
-        public static RockTier[] AllTiers()
+        public static IEnumerable AllTiers()
         {
             return allTiers;
         }
