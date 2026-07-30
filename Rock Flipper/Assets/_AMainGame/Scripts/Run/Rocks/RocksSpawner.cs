@@ -1,3 +1,4 @@
+using Agame.Run.Combat;
 using UnityEngine;
 
 namespace Agame.Run.Shop
@@ -22,6 +23,14 @@ namespace Agame.Run.Shop
         }
 
         private void Spawn()
+        {
+            foreach (RockTier rockTier in RockTierExtensions.AllTiers())
+            {
+                Spawn(rockTier);
+            }
+        }
+
+        private void Spawn(RockTier rockTier)
         {
 
         }

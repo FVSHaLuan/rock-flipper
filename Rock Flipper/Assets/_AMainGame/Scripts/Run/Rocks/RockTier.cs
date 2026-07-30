@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Agame.Run.Combat
@@ -10,4 +11,19 @@ namespace Agame.Run.Combat
         P3 = 3,
     }
 
+    public static class RockTierExtensions
+    {
+        private static readonly RockTier[] allTiers;
+
+        static RockTierExtensions()
+        {
+            // Get all values of the RockTier enum and store them in the array
+            allTiers = (RockTier[])System.Enum.GetValues(typeof(RockTier));
+        }
+
+        public static RockTier[] AllTiers()
+        {
+            return allTiers;
+        }
+    }
 }
