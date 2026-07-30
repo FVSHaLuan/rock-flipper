@@ -13,6 +13,7 @@ namespace Agame.Run.Shop
         private ICostConfig costConfig;
         private IBuildValueConfig buildValueConfig;
         private IStatBuilderButtonSpecific statBuilderButtonSpecific;
+        private IMaxLevelConfig maxLevelConfig;
 
         protected override bool Init()
         {
@@ -20,11 +21,13 @@ namespace Agame.Run.Shop
             buildAgent = GetComponentInParent<BuildAgent>();
             costConfig = GetComponentInParent<ICostConfig>();
             buildValueConfig = GetComponentInParent<IBuildValueConfig>();
+            maxLevelConfig = GetComponentInParent<IMaxLevelConfig>();
 
             ///
             Assert.IsNotNull(buildAgent, $"StatBuilderButton: {name} is missing BuildAgent component in parent.");
             Assert.IsNotNull(costConfig, $"StatBuilderButton: {name} is missing ICostConfig component in parent.");
             Assert.IsNotNull(buildValueConfig, $"StatBuilderButton: {name} is missing IBuildValueConfig component in parent.");
+            Assert.IsNotNull(maxLevelConfig, $"StatBuilderButton: {name} is missing IMaxLevelConfig component in parent.");
 
             ///
             statBuilderButtonSpecific = GetComponentInParent<IStatBuilderButtonSpecific>();

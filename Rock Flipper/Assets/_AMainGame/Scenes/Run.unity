@@ -15614,6 +15614,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3794721277953846887, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32.54001
+      objectReference: {fileID: 0}
     - target: {fileID: 5047733040343607903, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
       propertyPath: buttonIDAsset
       value: 
@@ -15625,13 +15629,86 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5919843769420158683}
+    - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5919843769420158682}
+    - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5919843769420158681}
+    - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5919843769420158684}
   m_SourcePrefab: {fileID: 100100000, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
 --- !u!224 &5919843769420158679 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1688616179500982506, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
   m_PrefabInstance: {fileID: 5919843769420158678}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5919843769420158680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+  m_PrefabInstance: {fileID: 5919843769420158678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5919843769420158681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919843769420158680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90087315e334bf749820080ebf7a4326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbCostConfig
+  dumbCost: 1
+--- !u!114 &5919843769420158682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919843769420158680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef77942fe7d48b4da3aa329e9dba748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbBuildValueConfig
+  buildValue: 1
+--- !u!114 &5919843769420158683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919843769420158680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f7f371bb01b9d479f5545b4d6cbb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.IncreaseRockCount
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  rockTier: 0
+--- !u!114 &5919843769420158684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919843769420158680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b57ba15598fe043988ac487b74ab52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbMaxLevelConfig
+  maxLevel: 10
 --- !u!222 &7238746554273336636
 CanvasRenderer:
   m_ObjectHideFlags: 0
