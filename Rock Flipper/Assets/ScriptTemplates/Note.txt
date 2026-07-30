@@ -1,0 +1,21 @@
+Step-by-Step Process
+NOTE: I tested this solution with Unity 2019.3.1f1.
+
+Create a ScriptTemplates folder as a direct child of the Assets folder
+Create an empty text file that follows a specific naming convention
+Start with 80 if you want it before C# Script and 82 if you want it after, example: “80”
+Add a single dash, example: “80-“
+Add a menu name, example: “80-WBD C# Script”
+Add two underscores, example: “80-WBD C# Script__”
+Add a sub-menu name, example: “80-WBD C# Script__MB Script”
+Add a single dash, example: “80-WBD C# Script__MB Script-“
+Add a default file name, example: “80-WBD C# Script__MB Script-NewBehaviourScript”
+Add the double file extensions, example: “80-WBD C# Script__MB Script-NewBehaviourScript.cs.txt”
+Open the text file and create your default script template
+Use #SCRIPTNAME# after the object type, e.g., class, enum, etc.
+Use #NOTRIM# to create empty lines with proper indentation
+Type up your remaining template as desired
+See this gist for an example
+Restart Unity
+Optional: commit to your version control system so your team uses the same templates
+If you try this in another version of Unity please leave me a comment and let me know.

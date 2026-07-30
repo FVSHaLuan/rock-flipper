@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace BT.Run.Stats.Agents
+namespace Agame.Run.Stats.Agents
 {
-    public class #SCRIPTNAME# : SkillBuildAgentWithSimpleTooltip
+    public class #SCRIPTNAME# : BuildAgent
     {
         public override void Apply(int currentLevel, int addingLevel, double buildValuePerLevel)
         {
