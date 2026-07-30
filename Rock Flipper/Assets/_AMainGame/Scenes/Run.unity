@@ -4058,6 +4058,7 @@ MonoBehaviour:
   skillTree: {fileID: 0}
   skillCostTracker: {fileID: 0}
   rockInstanceManager: {fileID: 716291608}
+  prototypeManager: {fileID: 11400000, guid: 67c76c0d57db1ed4b8fcac74a5a5155d, type: 2}
 --- !u!4 &487646590
 Transform:
   m_ObjectHideFlags: 0
