@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Agame.Run.Combat.Tutorials;
 using UnityEngine.InputSystem;
+using Agame.Run.Shop;
 
 namespace Agame.Run
 {
@@ -38,6 +39,7 @@ namespace Agame.Run
         public SkillCostTracker skillCostTracker;
         public RockInstanceManager rockInstanceManager;
         public PrototypeManager prototypeManager;
+        public SideBarStatBuilder sideBarStatBuilder;
 
         private bool isUsingTestBuildStats;
         private string baseBuildStatsName = "";
@@ -239,7 +241,8 @@ namespace Agame.Run
 
         private void ApplyAllToBuildStats()
         {
-            Debug.LogError("ApplyAllToBuildStats is not implemented yet. Please implement this method to apply necessary data to the BuildStatsObject.");
+            Debug.LogError("Please apply Skill Tree to BuildStats");
+            sideBarStatBuilder.Apply();
         }
 
         protected void LateUpdate()

@@ -4059,6 +4059,7 @@ MonoBehaviour:
   skillCostTracker: {fileID: 0}
   rockInstanceManager: {fileID: 716291608}
   prototypeManager: {fileID: 11400000, guid: 67c76c0d57db1ed4b8fcac74a5a5155d, type: 2}
+  sideBarStatBuilder: {fileID: 2052955422}
 --- !u!4 &487646590
 Transform:
   m_ObjectHideFlags: 0
@@ -14521,6 +14522,7 @@ GameObject:
   - component: {fileID: 2052955419}
   - component: {fileID: 2052955421}
   - component: {fileID: 2052955420}
+  - component: {fileID: 2052955422}
   m_Layer: 5
   m_Name: Side bar
   m_TagString: Untagged
@@ -14588,6 +14590,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052955418}
   m_CullTransparentMesh: 1
+--- !u!114 &2052955422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052955418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e10087ecdcff641a6463ab6ac70ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SideBarStatBuilder
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
 --- !u!1 &2081516879
 GameObject:
   m_ObjectHideFlags: 0

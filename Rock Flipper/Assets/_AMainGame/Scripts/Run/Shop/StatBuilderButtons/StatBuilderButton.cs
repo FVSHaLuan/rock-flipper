@@ -1,3 +1,4 @@
+using Agame.Run.Stats;
 using Agame.Run.Stats.Agents;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Agame.Run.Shop
 {
-    public class StatBuilderButton : ExtendedMonoBehaviourRun
+    public class StatBuilderButton : ExtendedMonoBehaviourRun, IStatBuilder
     {
         [SerializeField]
         private IDAsset buttonIDAsset;
@@ -72,7 +73,7 @@ namespace Agame.Run.Shop
             }
         }
 
-        public void Apply()
+        public void ApplyToBuildStats()
         {
             ///
             TryInit();
