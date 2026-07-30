@@ -1,6 +1,7 @@
 using Agame.Run.Stats.Agents;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.UI;
 
 namespace Agame.Run.Shop
 {
@@ -10,6 +11,8 @@ namespace Agame.Run.Shop
         private IDAsset buttonIDAsset;
 
         [Space]
+        [SerializeField]
+        private Button button;
         [SerializeField]
         private UnifiedText levelText;
         [SerializeField]
@@ -48,7 +51,7 @@ namespace Agame.Run.Shop
 
         protected void OnEnable()
         {
-            UpdateView();
+            UpdateViewAll();
         }
 
         public void Apply()
@@ -61,11 +64,31 @@ namespace Agame.Run.Shop
             buildAgent.Apply(0, level, buildValueConfig.BuildValue);
         }
 
-        private void UpdateView()
+        private void UpdateViewAll()
         {
             var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            UpdateViewContent(level);
+            UpdateInteractability(level);
+        }
+
+        private void UpdateViewContent(int level = -1)
+        {
+            if (level < 0)
+            {
+                level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            }
             levelText.Text = $"{level}/{maxLevelConfig.MaxLevel}";
-            costText.Text = $"{costConfig.GetCost(level).GetFormattedString()}";
+            costText.Text = level < maxLevelConfig.MaxLevel ? $"{costConfig.GetCost(level).GetFormattedString()}" : "MAXED";
+        }
+
+        private void UpdateInteractability(int level = -1)
+        {
+            if (level < 0)
+            {
+                level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            }
+            var isInteractable = level < maxLevelConfig.MaxLevel && RunData.IsEnough(costConfig.GetCost(level));
+            button.interactable = isInteractable;
         }
     }
 
