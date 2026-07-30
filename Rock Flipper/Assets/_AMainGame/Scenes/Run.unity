@@ -1102,17 +1102,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6214593898393610153, guid: b4befd01b21d93d45a60c472d36c1f3f, type: 3}
   m_PrefabInstance: {fileID: 137458519}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &137458521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3733974582437233871, guid: b4befd01b21d93d45a60c472d36c1f3f, type: 3}
-  m_PrefabInstance: {fileID: 137458519}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &139691968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,11 +3086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481ab606793a67349be805c13febeba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTarget: {fileID: 137458521}
-  mAlignment_RTL: 514
-  mAlignment_LTR: 514
-  mAlignmentWasRTL: 0
-  mInitializeAlignment: 0
 --- !u!1001 &384542678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9326,33 +9310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTerm: Common/Button/Setting
-  mTermSecondary: NotoSans-Regular SDF
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  TermPrefix: 
-  TermSuffix: 
-  LocalizeOnAwake: 1
-  LastLocalizedLanguage: 
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  IgnoreNumbersInRTL: 1
-  CorrectAlignmentForRTL: 1
-  AddSpacesToJoinedLanguages: 0
-  AllowLocalizedParameters: 1
-  AllowParameters: 1
-  TranslatedObjects: []
-  LocalizeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  AlwaysForceLocalize: 0
-  LocalizeCallBack: {Target: {fileID: 0}, MethodName: }
-  mGUI_ShowReferences: 0
-  mGUI_ShowTems: 1
-  mGUI_ShowCallback: 0
-  mLocalizeTarget: {fileID: 0}
-  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!114 &1176393886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15665,7 +15622,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90087315e334bf749820080ebf7a4326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbCostConfig
-  dumbCost: 1
+  cost:
+    currency: 0
+    amount: 92
 --- !u!114 &5919843769420158682
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,15 +1,16 @@
+using OneLine;
 using UnityEngine;
 
 namespace Agame.Run.Shop
 {
     public class DumbCostConfig : MonoBehaviour, ICostConfig
     {
-        [SerializeField]
-        private double dumbCost = 1.0;
+        [SerializeField, OneLine]
+        private CurrencyAmount cost;
 
-        public double GetCost(int level)
+        public CurrencyAmount GetCost(int level)
         {
-            return dumbCost;
+            return cost;
         }
     }
 

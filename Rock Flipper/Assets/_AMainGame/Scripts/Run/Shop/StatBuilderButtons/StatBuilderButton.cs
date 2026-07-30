@@ -9,6 +9,12 @@ namespace Agame.Run.Shop
         [SerializeField]
         private IDAsset buttonIDAsset;
 
+        [Space]
+        [SerializeField]
+        private UnifiedText levelText;
+        [SerializeField]
+        private UnifiedText costText;
+
         private BuildAgent buildAgent;
         private ICostConfig costConfig;
         private IBuildValueConfig buildValueConfig;
@@ -40,6 +46,11 @@ namespace Agame.Run.Shop
             return base.Init();
         }
 
+        protected void OnEnable()
+        {
+            UpdateView();
+        }
+
         public void Apply()
         {
             ///
@@ -48,6 +59,13 @@ namespace Agame.Run.Shop
             ///
             var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
             buildAgent.Apply(0, level, buildValueConfig.BuildValue);
+        }
+
+        private void UpdateView()
+        {
+            var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            levelText.Text = $"{level}/{maxLevelConfig.MaxLevel}";
+            costText.Text = $"{costConfig.GetCost(level).GetFormattedString()}";
         }
     }
 
