@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: m_Size.x
+      value: 5.328997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: m_Size.y
+      value: 5.111499
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.013951063
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.017578125
+      objectReference: {fileID: 0}
     - target: {fileID: 5576551447022452610, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.48872
@@ -62,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8171674314610655772, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Name
-      value: Rock - P1 Pure
+      value: Rock - P0 Pure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -970,6 +970,22 @@ PrefabInstance:
       value: 0.05055164
       objectReference: {fileID: 0}
     - target: {fileID: 8005544477336198609, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      propertyPath: m_Size.x
+      value: 7.615696
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005544477336198609, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      propertyPath: m_Size.y
+      value: 5.8398547
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005544477336198609, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.22568226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005544477336198609, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.38175607
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005544477336198609, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 5.12
       objectReference: {fileID: 0}
@@ -1032,6 +1048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e422b58109fb994fa894eae7f6bca2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Rock
+  rockTier: 0
+  isPure: 0
   baseHP: 5
   newRockFlippingDuration: 1
   newRockFlippingHeight: 2
