@@ -2,18 +2,14 @@ using UnityEngine;
 
 namespace Agame.Run.Shop
 {
-    public class DumbCostConfig : MonoBehaviour
+    public class DumbCostConfig : MonoBehaviour, ICostConfig
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        [SerializeField]
+        private double dumbCost = 1.0;
+
+        public double GetCost(int level)
         {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            return dumbCost;
         }
     }
 
