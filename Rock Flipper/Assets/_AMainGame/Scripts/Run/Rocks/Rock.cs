@@ -9,6 +9,8 @@ namespace Agame.Run.Combat
 
         [SerializeField]
         private RockTier rockTier = RockTier.P0;
+        [SerializeField]
+        private bool isPure = false;
 
         [Space]
         [SerializeField]
@@ -28,6 +30,7 @@ namespace Agame.Run.Combat
 
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
+        public bool IsPure => isPure;
 
         protected void Start()
         {
