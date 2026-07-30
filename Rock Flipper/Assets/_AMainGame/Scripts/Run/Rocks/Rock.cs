@@ -28,9 +28,10 @@ namespace Agame.Run.Combat
         [SerializeField]
         private Flippable flippable;
 
+        public RockTier Tier => rockTier;
+        public bool IsPure => isPure;
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
-        public bool IsPure => isPure;
 
         protected void Start()
         {
