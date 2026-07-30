@@ -4,7 +4,7 @@ namespace Agame.Run.Shop
 {
     public interface ICostConfig
     {
-        public CurrencyAmount GetCost(int level);
+        public CurrencyAmount GetNextLevelCost(int currentLevel);
     }
 
 }

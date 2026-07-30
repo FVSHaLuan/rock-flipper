@@ -78,7 +78,7 @@ namespace Agame.Run.Shop
                 level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
             }
             levelText.Text = $"{level}/{maxLevelConfig.MaxLevel}";
-            costText.Text = level < maxLevelConfig.MaxLevel ? $"{costConfig.GetCost(level).GetFormattedString()}" : "MAXED";
+            costText.Text = level < maxLevelConfig.MaxLevel ? $"{costConfig.GetNextLevelCost(level).GetFormattedString()}" : "MAXED";
         }
 
         private void UpdateInteractability(int level = -1)
@@ -87,8 +87,34 @@ namespace Agame.Run.Shop
             {
                 level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
             }
-            var isInteractable = level < maxLevelConfig.MaxLevel && RunData.IsEnough(costConfig.GetCost(level));
+            var isInteractable = level < maxLevelConfig.MaxLevel && RunData.IsEnough(costConfig.GetNextLevelCost(level));
             button.interactable = isInteractable;
+        }
+
+        public void HandleClick()
+        {
+            var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            if (level >= maxLevelConfig.MaxLevel)
+            {
+                return;
+            }
+
+            ///
+            var cost = costConfig.GetNextLevelCost(level);
+            if (RunData.SpendCurrency(cost))
+            {
+                LevelUp(level, 1);
+                UpdateViewAll();
+            }
+        }
+
+        private void LevelUp(int currentLevel, int levelCount)
+        {
+            ///
+            buildAgent.Apply(currentLevel, levelCount, buildValueConfig.BuildValue);
+
+            ///
+            RunData.SetBuilderButtonLevel(buttonIDAsset.ID, currentLevel + levelCount);
         }
     }
 
