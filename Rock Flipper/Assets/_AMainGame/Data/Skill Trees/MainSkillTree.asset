@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13d8c04140d19f4a88e0898e24dea45, type: 3}
+  m_Name: MainSkillTree
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillTreeGraph
+  gridSnapStep: 8
+  crossGridScale: 1
+  nodes: []
+  overlappedNodes: []
+  rootNode: {fileID: 0}
+  compactModeWidth: 100

@@ -41,11 +41,11 @@ namespace Agame.Run
         private AchievementConfig maxedSkillTreeAchievementConfig;
 
         [Space]
-        [SerializeField, ReadOnly]
+        [SerializeField, ReadOnly, Tooltip("Filled by the script")]
         private List<SkillNode> mainSkillNodes;
-        [SerializeField, ReadOnly]
+        [SerializeField, ReadOnly, Tooltip("Filled by the script")]
         private List<SkillNode> laserSkillNodes;
-        [SerializeField, ReadOnly]
+        [SerializeField, ReadOnly, Tooltip("Filled by the script")]
         private List<SkillNode> lightningSkillNodes;
 
         private HashSet<SkillNode> maxableSkills = new HashSet<SkillNode>();
