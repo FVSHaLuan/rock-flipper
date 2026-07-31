@@ -40,8 +40,15 @@ namespace Agame.Run
             // Spawn nodes
             Editor_SpawnNodes(mainSkillTreeGraph, ref mainSkillNodes, ref mainRootNode, mainTreeRoot);
             Editor_FindSpecialEntryNode();
-            Editor_SpawnNodes(laserSkillTreeGraph, ref laserSkillNodes, ref laserRootNode, laserTreeRoot);
-            Editor_SpawnNodes(lightningSkillTreeGraph, ref lightningSkillNodes, ref lightningRootNode, lightningTreeRoot);
+            if (specialEntryNode != null)
+            {
+                Editor_SpawnNodes(laserSkillTreeGraph, ref laserSkillNodes, ref laserRootNode, laserTreeRoot);
+                Editor_SpawnNodes(lightningSkillTreeGraph, ref lightningSkillNodes, ref lightningRootNode, lightningTreeRoot);
+            }
+            else
+            {
+                Debug.LogWarning("SpecialEntry node not found, skipping special trees!");
+            }
 
             // Import
             foreach (var item in editor_SkillGraphNodeDictionary)
@@ -157,7 +164,8 @@ namespace Agame.Run
             ///
             if (specialEntryNode == null)
             {
-                throw new System.Exception("SpecialEntry node not found!");
+                // throw new System.Exception("SpecialEntry node not found!");
+                Debug.LogWarning("SpecialEntry node not found!");
             }
         }
 
