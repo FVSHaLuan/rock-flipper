@@ -7424,8 +7424,8 @@ MonoBehaviour:
   mainSkillNodes: []
   laserSkillNodes: []
   lightningSkillNodes: []
-  nodePrototype: {fileID: 0}
-  debugNodePrototype: {fileID: 0}
+  nodePrototype: {fileID: 6576922219200033195, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
+  debugNodePrototype: {fileID: 3044310063794014558, guid: a4ab334677111ed46813e9d4ef20d9bc, type: 3}
   nodeDistanceInUnit: 2.4
   treePaddingScale: 10
   debugRoot: {fileID: 2008506478}
