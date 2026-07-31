@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
-  m_Name: Skill Graph
+  m_Name: s1
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
   position: {x: -64, y: -56}
@@ -44,13 +44,13 @@ MonoBehaviour:
   output: 0
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: c8f9d4aa22199bd48a8f05ca05f4d770, type: 3}
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
-  buildAgent: {fileID: 0}
+  buildAgent: {fileID: 7003530285812043713, guid: c746f2396cf795740ae4c4b932d8c130, type: 3}
   buildValue: 0
-  cashTier: -1
+  cashTier: 0
   costs_1:
   - currency: 0
     amount: 1
@@ -67,10 +67,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
-  m_Name: Skill Graph
+  m_Name: s2
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 152, y: -56}
+  position: {x: 144, y: -64}
   ports:
     keys:
     - input
@@ -101,13 +101,13 @@ MonoBehaviour:
   output: 0
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b2098adc04d86f34b8cf78e50254d36a, type: 3}
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
-  buildAgent: {fileID: 0}
+  buildAgent: {fileID: 7003530285812043713, guid: c746f2396cf795740ae4c4b932d8c130, type: 3}
   buildValue: 0
-  cashTier: -1
+  cashTier: 0
   costs_1:
   - currency: 0
     amount: 1

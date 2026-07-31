@@ -48,6 +48,7 @@ namespace Agame.Run
         [SerializeField, ReadOnly, Tooltip("Filled by the script")]
         private List<SkillNode> lightningSkillNodes;
 
+        private List<SkillNode> noneSkillNodes = new List<SkillNode>();
         private HashSet<SkillNode> maxableSkills = new HashSet<SkillNode>();
         private HashSet<SkillNode> upgradableSkills = new HashSet<SkillNode>();
         private SpecialCrusherId activeSpecialTree;
@@ -194,6 +195,8 @@ namespace Agame.Run
         {
             switch (activeSpecialTree)
             {
+                case SpecialCrusherId.None:
+                    return noneSkillNodes;
                 case SpecialCrusherId.Demo:
                     throw new System.Exception("Demo has no tree");
                 case SpecialCrusherId.Laser:
