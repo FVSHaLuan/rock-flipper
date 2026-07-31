@@ -19,7 +19,7 @@ namespace Agame.Run
         private int output;
 
         [Space]
-        [SerializeField]
+        [SerializeField, Tooltip("If null, use default")]
         private SkillNode skillNodePrototype;
 
         [Space]
