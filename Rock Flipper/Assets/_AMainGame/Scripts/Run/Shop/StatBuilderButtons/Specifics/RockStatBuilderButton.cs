@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Agame.Run.Shop
 {
-    public abstract class RockStatBuilderButton : ExtendedMonoBehaviourRun, IStatBuilderButtonSpecific
+    public abstract class RockStatBuilderButton : StatBuilderButtonSpecificMonoBehaviour
     {
         [SerializeField]
         private RockTier tier;

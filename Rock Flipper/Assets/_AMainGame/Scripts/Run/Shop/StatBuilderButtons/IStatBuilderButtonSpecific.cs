@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Agame.Run.Shop
 {
-	public interface IStatBuilderButtonSpecific
-	{
-
-	} 
+    public interface IStatBuilderButtonSpecific
+    {
+        void HandleLeveledUp(int levelCount);
+    }
 }

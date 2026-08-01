@@ -134,6 +134,9 @@ namespace Agame.Run.Shop
 
             ///
             RunData.SetBuilderButtonLevel(buttonId, currentLevel + levelCount);
+
+            ///
+            statBuilderButtonSpecific.HandleLeveledUp(levelCount);
         }
     }
 
