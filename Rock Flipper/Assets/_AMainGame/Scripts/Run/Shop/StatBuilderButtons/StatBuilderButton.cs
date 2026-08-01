@@ -9,7 +9,7 @@ namespace Agame.Run.Shop
     public class StatBuilderButton : ExtendedMonoBehaviourRun, IStatBuilder
     {
         [SerializeField]
-        private IDAsset buttonIDAsset;
+        private string buttonId;
 
         [Space]
         [SerializeField]
@@ -79,13 +79,13 @@ namespace Agame.Run.Shop
             TryInit();
 
             ///
-            var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            var level = RunData.GetBuilderButtonLevel(buttonId);
             buildAgent.Apply(0, level, buildValueConfig.BuildValue);
         }
 
         private void UpdateViewAll()
         {
-            var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            var level = RunData.GetBuilderButtonLevel(buttonId);
             UpdateViewContent(level);
             UpdateInteractability(level);
         }
@@ -94,7 +94,7 @@ namespace Agame.Run.Shop
         {
             if (level < 0)
             {
-                level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+                level = RunData.GetBuilderButtonLevel(buttonId);
             }
             levelText.Text = $"{level}/{maxLevelConfig.MaxLevel}";
             costText.Text = level < maxLevelConfig.MaxLevel ? $"{costConfig.GetNextLevelCost(level).GetFormattedString()}" : "MAXED";
@@ -104,7 +104,7 @@ namespace Agame.Run.Shop
         {
             if (level < 0)
             {
-                level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+                level = RunData.GetBuilderButtonLevel(buttonId);
             }
             var isInteractable = level < maxLevelConfig.MaxLevel && RunData.IsEnough(costConfig.GetNextLevelCost(level));
             button.interactable = isInteractable;
@@ -112,7 +112,7 @@ namespace Agame.Run.Shop
 
         public void HandleClick()
         {
-            var level = RunData.GetBuilderButtonLevel(buttonIDAsset.ID);
+            var level = RunData.GetBuilderButtonLevel(buttonId);
             if (level >= maxLevelConfig.MaxLevel)
             {
                 return;
@@ -133,7 +133,7 @@ namespace Agame.Run.Shop
             buildAgent.Apply(currentLevel, levelCount, buildValueConfig.BuildValue);
 
             ///
-            RunData.SetBuilderButtonLevel(buttonIDAsset.ID, currentLevel + levelCount);
+            RunData.SetBuilderButtonLevel(buttonId, currentLevel + levelCount);
         }
     }
 

@@ -199,8 +199,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3540347834542676038, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
+      propertyPath: m_text
+      value: <Builder Name>
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540347834542676038, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
       propertyPath: m_fontSize
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6262447393203394529, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
       propertyPath: m_AnchoredPosition.x
