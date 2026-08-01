@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688616179500982506}
   - component: {fileID: 5047733040343607903}
+  - component: {fileID: 4633360995078833249}
   m_Layer: 5
   m_Name: Stat Builder Button
   m_TagString: Untagged
@@ -57,6 +58,26 @@ MonoBehaviour:
   button: {fileID: 7324744912707199029}
   levelText: {fileID: 8932389786694323454}
   costText: {fileID: 2478063501818926089}
+--- !u!114 &4633360995078833249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936968851189325072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: 70
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1001 &7079975672109316486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176,6 +197,10 @@ PrefabInstance:
     - target: {fileID: 2828299816235121945, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540347834542676038, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
+      propertyPath: m_fontSize
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6262447393203394529, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
       propertyPath: m_AnchoredPosition.x
