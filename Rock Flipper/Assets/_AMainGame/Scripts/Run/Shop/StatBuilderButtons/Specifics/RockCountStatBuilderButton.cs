@@ -3,12 +3,9 @@ using UnityEngine;
 
 namespace Agame.Run.Shop
 {
-    public class RockCountStatBuilderButton : ExtendedMonoBehaviourRun, IStatBuilderButtonSpecific, IMaxLevelConfig
+    public class RockCountStatBuilderButton : RockStatBuilderButton, IMaxLevelConfig
     {
-        [SerializeField]
-        private RockTier tier;
-
-        public int MaxLevel => BuildStats.GetRockTierBuildStats(tier).maxCount;
+        public int MaxLevel => TierBuildStats.maxCount;
     }
 
 }
