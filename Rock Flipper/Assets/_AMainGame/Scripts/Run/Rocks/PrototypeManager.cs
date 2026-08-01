@@ -47,6 +47,11 @@ namespace Agame.Run.Combat
             }
         }
 
+        public Rock GetRockPrototype(RockTier tier, float purity)
+        {
+            return GetRockPrototype(tier, Random.value < purity);
+        }
+
         public Rock GetRockPrototype(RockTier tier, bool isPure)
         {
             ///
