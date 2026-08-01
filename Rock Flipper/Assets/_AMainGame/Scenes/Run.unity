@@ -1248,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 7306070992359174219, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: buttonId
+      value: rockCountP2
+      objectReference: {fileID: 0}
     - target: {fileID: 8073178878626151380, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_text
       value: P2 Rock
@@ -1259,6 +1263,10 @@ PrefabInstance:
     - target: {fileID: 8146201495436953348, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Name
       value: Rock Count P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778630213239712207, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: rockTier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2648,6 +2656,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 7306070992359174219, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: buttonId
+      value: rockCountP3
+      objectReference: {fileID: 0}
     - target: {fileID: 8073178878626151380, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_text
       value: P3 Rock
@@ -2659,6 +2671,10 @@ PrefabInstance:
     - target: {fileID: 8146201495436953348, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Name
       value: Rock Count P3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778630213239712207, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: rockTier
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10581,6 +10597,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 7306070992359174219, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: buttonId
+      value: rockCountP0
+      objectReference: {fileID: 0}
     - target: {fileID: 8073178878626151380, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_text
       value: P0 Rock
@@ -12047,6 +12067,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 7306070992359174219, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: buttonId
+      value: rockCountP1
+      objectReference: {fileID: 0}
     - target: {fileID: 8073178878626151380, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_text
       value: P1 Rock
@@ -12058,6 +12082,10 @@ PrefabInstance:
     - target: {fileID: 8146201495436953348, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Name
       value: Rock Count P1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778630213239712207, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: rockTier
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
