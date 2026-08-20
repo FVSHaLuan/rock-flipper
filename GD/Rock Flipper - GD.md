@@ -55,7 +55,7 @@ Only one currency, Cash ($)
   * when a rock is spawned, it has a chance to be a pure rock
   * upon landing, if a rock's HP reaches 0, it'll be re-determined to be a pure or normal rock again
 
-#### 4.3 Helpers
+#### 4.3 Flipper Bots
 
 * agents that go around, flip rocks that they touch
 
@@ -73,9 +73,9 @@ A side bar in the right
 
 #### 4.6 Biomes
 
-Unlock linearly. 
+Unlock linearly.
 
-Each biome has a cash income multiplier (**multiplier**), with the later biome has better multiplier than the ones before it. 
+Each biome has a cash income multiplier (**multiplier**), with the later biome has better multiplier than the ones before it.
 
 Each biome has a hardness multiplier (**hardness**) which defines how hard it is to get collectibles, destroy environmental elements, raise totems, get artifacts on that biome. The later biome has bigger hardness than the ones before it.
 
@@ -98,9 +98,9 @@ Some tied to a biome, some can be found anywhere.
 
 ##### 4.6.3 Totems
 
-Each biome has 1 (or more) totems that are hidden at first. 
+Each biome has 1 (or more) totems that are hidden at first.
 
-As the rocks flipping on that biome, the totems slowly raise up. 
+As the rocks flipping on that biome, the totems slowly raise up.
 
 When the totems fully raised, they give the biome's ultimate boost.
 
