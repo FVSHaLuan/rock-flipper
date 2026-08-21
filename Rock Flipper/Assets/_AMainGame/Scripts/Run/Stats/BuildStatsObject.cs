@@ -20,6 +20,10 @@ namespace Agame.Run.Stats
         [SerializeField]
         private RockTierBuildStats rock_P3;
 
+        [Header("Flipper Bots")]
+        public float flipperBotFlippingInterval = 2.0f;
+
+
         public RockTierBuildStats GetRockTierBuildStats(RockTier rockTier)
         {
             return rockTier switch

@@ -184,6 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8870793170061342532}
+  - component: {fileID: 3972022116171283037}
   - component: {fileID: 5173155811303705552}
   - component: {fileID: 7215110032270065167}
   - component: {fileID: 8886045293766071949}
@@ -212,6 +213,22 @@ Transform:
   - {fileID: 4046880773776131527}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3972022116171283037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220183543597905602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a868185d5d2bdd419560f5fc5450538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.FlipperBot
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
 --- !u!114 &5173155811303705552
 MonoBehaviour:
   m_ObjectHideFlags: 0
