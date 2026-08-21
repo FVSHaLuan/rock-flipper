@@ -169,3 +169,18 @@ After launching the spaceship, players land here. This serves as an ending scree
 * Unlock biome 3 -> 4
 * Launch the spaceship -> end game
 
+### 7\. Skills
+
+#### 7.1 Rocks
+
+#### 7.2 Helpers
+
+* Max count
+* Movement speed
+* Charging time
+* Battery capacity
+* Flip interval
+* Flip range
+* Flip strength (how many rocks flipped at once)
+* Smart targeting: random -> move to rocks -> re-evaluate target in realtime
+
