@@ -22,7 +22,7 @@ namespace Agame.Run.Stats
 
         [Header("Flipper Bots")]
         public float flipperBotFlippingInterval = 2.0f;
-
+        public float flipperBotMovementSpeed = 3f;
 
         public RockTierBuildStats GetRockTierBuildStats(RockTier rockTier)
         {
