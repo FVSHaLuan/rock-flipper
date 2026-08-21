@@ -54,6 +54,7 @@ SpriteAtlas:
     - 9b098930040d3064496ebf87eb060287: 21300000
     - 66a231d0d7ea70e439d1b223d8b101cd: 21300000
     - 629710012b80e904baeae0c7e8ad4195: 21300000
+    - 5e50f932679fd21469121a2d6a1c29da: 21300000
     - 2e0739030fb6320438e5a7017bc2430f: 21300000
     - 0d2be9c3999e49c49a2d398042d503d3: 21300000
     - 07f65994bfd1dcd4b9de83398241e462: 21300000
@@ -80,6 +81,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9b098930040d3064496ebf87eb060287, type: 3}
   - {fileID: 21300000, guid: 66a231d0d7ea70e439d1b223d8b101cd, type: 3}
   - {fileID: 21300000, guid: 629710012b80e904baeae0c7e8ad4195, type: 3}
+  - {fileID: 21300000, guid: 5e50f932679fd21469121a2d6a1c29da, type: 3}
   - {fileID: 21300000, guid: 2e0739030fb6320438e5a7017bc2430f, type: 3}
   - {fileID: 21300000, guid: 0d2be9c3999e49c49a2d398042d503d3, type: 3}
   - {fileID: 21300000, guid: 07f65994bfd1dcd4b9de83398241e462, type: 3}
@@ -105,6 +107,7 @@ SpriteAtlas:
   - P0 - CutOff
   - Rock 3
   - P1 - CutOff
+  - Flipper
   - P4
   - Rock 7
   - P7 - CutOff
