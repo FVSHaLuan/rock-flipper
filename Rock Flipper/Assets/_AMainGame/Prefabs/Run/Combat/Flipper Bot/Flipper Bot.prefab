@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 7215110032270065167}
   - component: {fileID: 8886045293766071949}
   - component: {fileID: 8627410450616663833}
+  - component: {fileID: 139498848426998875}
   m_Layer: 0
   m_Name: Flipper Bot
   m_TagString: Untagged
@@ -316,6 +317,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &139498848426998875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220183543597905602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa7b8417ce85ea43a8661edfb9335be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.FlipperBotMovement
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
 --- !u!1 &5361135190069971290
 GameObject:
   m_ObjectHideFlags: 0
