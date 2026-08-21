@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine;
 
 public class EyeLookAtMovingDirection : MonoBehaviour
 {
     [SerializeField]
     private Transform moverTransform;
     [SerializeField]
-    private float maxSpeed=5;
+    private float maxSpeed = 5;
     [SerializeField]
     private float maxEyeDistance = 0.5f;
 
@@ -33,6 +32,10 @@ public class EyeLookAtMovingDirection : MonoBehaviour
             Vector3 direction = velocity / speed;
             float distance = Mathf.Clamp(speed, 0f, maxSpeed) / maxSpeed * maxEyeDistance;
             transform.localPosition = direction * distance;
+        }
+        else
+        {
+            transform.localPosition = Vector3.zero;
         }
 
         _previousPosition = moverTransform.position;
