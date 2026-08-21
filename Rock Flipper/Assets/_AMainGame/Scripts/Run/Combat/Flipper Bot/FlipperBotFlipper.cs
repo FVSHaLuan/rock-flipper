@@ -1,19 +1,37 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Agame.Run.Combat
 {
     public class FlipperBotFlipper : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
+        [SerializeField]
+        private CircleCollider2D refCollider;
+        [SerializeField]
+        private UnityEvent onFlipRocks;
 
+        private List<Flippable> flippables = new List<Flippable>();
+
+        [ContextMenu("Try To Flip Rocks"), PlayModeOnly]
+        public void TryToFlipRocks()
+        {
+            ///
+            CastForFlippables();
+
+            ///
+            foreach (var flippable in flippables)
+            {
+                flippable.TryFlipping();
+            }
+
+            ///
+            onFlipRocks?.Invoke();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void CastForFlippables()
         {
-
+            SimpleCast2D.CircleCast(refCollider.bounds.center, refCollider.radius, true, flippables);
         }
     }
 

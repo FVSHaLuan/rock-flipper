@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6954266167181189286}
   - component: {fileID: 3443110900522088416}
+  - component: {fileID: 8933669590850172056}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -138,6 +139,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!58 &8933669590850172056
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416137391780989367}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.00000047683716}
+  m_Radius: 0.49999997
 --- !u!1 &5220183543597905602
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +186,8 @@ GameObject:
   - component: {fileID: 8870793170061342532}
   - component: {fileID: 5173155811303705552}
   - component: {fileID: 7215110032270065167}
+  - component: {fileID: 8886045293766071949}
+  - component: {fileID: 8627410450616663833}
   m_Layer: 0
   m_Name: Flipper Bot
   m_TagString: Untagged
@@ -204,6 +243,61 @@ MonoBehaviour:
   shadowTransform: {fileID: 4046880773776131527}
   objectTransform: {fileID: 3869983716844248631}
   shadowScalePerDistance: 5
+--- !u!114 &8886045293766071949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220183543597905602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0e5b5af25b2b54ab723b38faeacb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.FlipperBotFlipper
+  refCollider: {fileID: 8933669590850172056}
+  onFlipRocks:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5604843467527667329}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Flick
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!50 &8627410450616663833
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220183543597905602}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5361135190069971290
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,5 +767,10 @@ PrefabInstance:
 --- !u!4 &4009212607094547835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2943927894330573013, guid: a661e12e7caf1114384fc9a3410dd34a, type: 3}
+  m_PrefabInstance: {fileID: 2267979459528451502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5604843467527667329 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5958574831459162927, guid: a661e12e7caf1114384fc9a3410dd34a, type: 3}
   m_PrefabInstance: {fileID: 2267979459528451502}
   m_PrefabAsset: {fileID: 0}
