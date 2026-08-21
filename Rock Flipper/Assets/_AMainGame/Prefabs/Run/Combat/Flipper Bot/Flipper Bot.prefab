@@ -229,6 +229,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
+  flipper: {fileID: 8886045293766071949}
 --- !u!114 &5173155811303705552
 MonoBehaviour:
   m_ObjectHideFlags: 0
