@@ -7,7 +7,7 @@ public class FloatingObjectShadow : MonoBehaviour
     [SerializeField]
     private Transform objectTransform;
     [SerializeField]
-    private float shadowScalePerDistance = 0.2f;
+    private float shadowScalePerDistance = 3f;
 
     protected void Update()
     {
@@ -19,6 +19,7 @@ public class FloatingObjectShadow : MonoBehaviour
 
         // Scale the shadow based on the distance
         float scale = 1f + (distance * shadowScalePerDistance);
+        if (scale < 0f) scale = 0f; // Prevent negative scale
         shadowTransform.localScale = new Vector3(scale, scale, scale);
     }
 }
