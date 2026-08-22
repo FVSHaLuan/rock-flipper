@@ -13,8 +13,8 @@
 
 ### 2\. Concept \& Fantasy
 
-* **Core fantasy**: operating some kind of sci-fi operation/experiment that involves throwing up rocks into the air, when it drops it earns money (flipping). Along with doing that, player also builds a spaceship to "escape", it's also the game's premise and long-term goal.
-* **Theme**: sci-fi, subtle, rocks/mineral/ore, casual, funny, plot twist, 2D flat art, space
+* **Core fantasy**: operating some kind of sci-fi/fantasy operation/experiment that involves throwing up rocks into the air, when it drops it earns money (flipping). 
+* **Theme**: sci-fi, fantasy, subtle, rocks/mineral/ore, casual, funny, plot twist, 2D flat art, space
 * **Why incremental**: players don't need muscular/reflective/reflexive skills or strategic thinking, just play along from the start to the end of the game and watch the game's mechanics, systems, stories,...to unfold
 * Emotional core: growth, evolution, revelation (plot twist), discovery, completion, relaxation
 
@@ -23,7 +23,7 @@
 ### 3\. Core Gameplay Loop
 
 * **Early game**: players have to click or hover mouse on rocks to flip them
-* **Mid to end game**: the game plays itself via helpers (agents that flip the rocks without players' input), special effects that trigger the rock flipping,...
+* **Mid to end game**: the game plays itself via helpers (Flipper Bots) (agents that flip the rocks without players' input), special effects that trigger the rock flipping,...
 * Either via manual or auto flipping, every tens of seconds, there would be new things for players to buy (either a skill upgrade, a helper agent, a new rock count,...)
 * No offline earning/progress
 
@@ -73,14 +73,6 @@ A side bar in the right
 
 #### 4.6 Biomes
 
-Unlock linearly.
-
-Each biome has a cash income multiplier (**multiplier**), with the later biome has better multiplier than the ones before it.
-
-Each biome has a hardness multiplier (**hardness**) which defines how hard it is to get collectibles, destroy environmental elements, raise totems, get artifacts on that biome. The later biome has bigger hardness than the ones before it.
-
-The first biome has x1 multiplier.
-
 ##### 4.6.1 Environmental Elements
 
 Themed elements tied to a biome.
@@ -96,25 +88,27 @@ Can be sold for cash.
 
 Some tied to a biome, some can be found anywhere.
 
-##### 4.6.3 Totems
-
-Each biome has 1 (or more) totems that are hidden at first.
-
-As the rocks flipping on that biome, the totems slowly raise up.
-
-When the totems fully raised, they give the biome's ultimate boost.
-
-##### 4.6.4 Artifacts
+##### 4.6.3 Artifacts
 
 * Special items that give boosts
 
-##### 4.6.5 Challenge Scroll
+##### 4.6.4 Challenge Scrolls
 
 * Special items that give a challenge and reward when completed
 
 #### 4.7 Prestige
 
 \---
+
+#### 4.8 Monoliths
+
+* There 6 of them floating in the center
+* They can be unlocked one by one in the skill tree
+* Each of them has a unique ability and many skills in the tree to enhance the ability
+
+#### 4.9 The Rift
+
+* A sci-fi-y/magical rift at the center
 
 ### 5\. Content
 
@@ -136,7 +130,7 @@ Designer note: need to specify special ability for each tier
 
 ##### 5.1.1 Tier 6
 
-#### 5.2 Helpers
+#### 5.2 Flipper Bots
 
 #### 5.3 Biomes
 
@@ -150,13 +144,7 @@ Designer note: need to specify special ability for each tier
 
 ##### 5.3.5 Normal Biome 4
 
-##### 5.3.6 Special Biome - Secret Base
-
-It's where the spaceship is built.
-
-##### 5.3.7 Special Biome - Void
-
-After launching the spaceship, players land here. This serves as an ending screen.
+##### 5.3.6 Special Biome - Void
 
 ### 6\. Progression overview
 
@@ -164,16 +152,15 @@ After launching the spaceship, players land here. This serves as an ending scree
 
 * New game
 * Unlock Skill Tree
-* Unlock biome 1 -> 2
-* Unlock biome Secret Base
-* Unlock biome 3 -> 4
-* Launch the spaceship -> end game
+* Unlock some biomes
+* Unlock some monoliths
+* Unlock The Rift
 
 ### 7\. Skills
 
 #### 7.1 Rocks
 
-#### 7.2 Helpers
+#### 7.2 Flipper Bots
 
 * Max count
 * Movement speed
