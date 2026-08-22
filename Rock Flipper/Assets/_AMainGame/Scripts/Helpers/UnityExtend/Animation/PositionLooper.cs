@@ -12,6 +12,10 @@ public class PositionLooper : MonoBehaviour
     private bool isLocalPosition = true;
     [SerializeField]
     private bool startAtRandomOffset = false;
+    [SerializeField, Tooltip("When enabled, plays the curve forward then backward instead of jumping back to the start")]
+    private bool pingPong = false;
+    [SerializeField, Tooltip("Multiplies the evaluated curve values, scaling the loop's amplitude")]
+    private Vector2 curveScale = Vector2.one;
 
     private Vector3 basePosition;
     private float timeOffset;
@@ -34,8 +38,11 @@ public class PositionLooper : MonoBehaviour
             return;
         }
 
-        var t = Mathf.Repeat(Time.time + timeOffset, loopDuration) / loopDuration;
-        var offset = new Vector3(xCurve.Evaluate(t), yCurve.Evaluate(t), 0f);
+        var elapsed = Time.time + timeOffset;
+        var t = (pingPong
+            ? Mathf.PingPong(elapsed, loopDuration)
+            : Mathf.Repeat(elapsed, loopDuration)) / loopDuration;
+        var offset = new Vector3(xCurve.Evaluate(t) * curveScale.x, yCurve.Evaluate(t) * curveScale.y, 0f);
 
         SetPosition(basePosition + offset);
     }
