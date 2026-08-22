@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 8795972602562659925}
   - component: {fileID: 7894522789143493657}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Mnlth Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,8 +200,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6004593797335463000}
   m_Enabled: 1
-  m_SortingLayerID: -253843699
-  m_SortingLayer: 3
+  m_SortingLayerID: -406137253
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
