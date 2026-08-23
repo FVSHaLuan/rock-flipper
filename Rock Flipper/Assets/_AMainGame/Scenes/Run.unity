@@ -13994,6 +13994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1822756509}
+  - component: {fileID: 1822756510}
   m_Layer: 0
   m_Name: Grassland
   m_TagString: Untagged
@@ -14016,6 +14017,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4075722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1822756510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822756508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85e2f6fc37d4154c822586a9dfce698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Backgrounds.CombatBackground
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  isNaNInDemo: 0
+  backgroundName: Grassland
+  cameraColor: {r: 1, g: 1, b: 1, a: 1}
+  thumbnail: {fileID: 0}
+  rockRoot: {fileID: 0}
+  rockCount: 30
+  weightedRockPrototypes: []
+  rocks: []
+  clusterCountMin: 2
+  clusterCountMax: 5
+  clusterRadius: 2.5
+  onInitThisCombat:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1823943502
 PrefabInstance:
   m_ObjectHideFlags: 0
