@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Helpers.UnityExtend::GeneralGizmosBaseLines
   gizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  drawMode: 0
+  drawMode: 2
   xLength: 1
   yLength: 1
 --- !u!114 &3798937081010692288

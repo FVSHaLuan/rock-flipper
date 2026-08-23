@@ -40,6 +40,12 @@ namespace Agame.Run.Combat.Backgrounds
 
         [Space]
         [SerializeField]
+        private float minRotation;
+        [SerializeField]
+        private float maxRotation = 360;
+
+        [Space]
+        [SerializeField]
         private UnityEvent onInitThisCombat;
 
         private List<Vector2> clusterCenters = new List<Vector2>();
@@ -124,7 +130,7 @@ namespace Agame.Run.Combat.Backgrounds
                 // Instantiate element                
                 var element = elements[i];
                 element.transform.localPosition = elementPos;
-                element.transform.localRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                element.transform.localRotation = Quaternion.Euler(0, 0, Random.Range(minRotation, maxRotation));
             }
 
         }

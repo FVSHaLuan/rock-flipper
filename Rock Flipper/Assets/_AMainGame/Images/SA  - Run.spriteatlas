@@ -54,6 +54,7 @@ SpriteAtlas:
     - 9b098930040d3064496ebf87eb060287: 21300000
     - 66a231d0d7ea70e439d1b223d8b101cd: 21300000
     - 629710012b80e904baeae0c7e8ad4195: 21300000
+    - 9b3bc0e1610de2243905a86ca6fcebfe: 21300000
     - 5e50f932679fd21469121a2d6a1c29da: 21300000
     - 2e0739030fb6320438e5a7017bc2430f: 21300000
     - 0d2be9c3999e49c49a2d398042d503d3: 21300000
@@ -72,8 +73,10 @@ SpriteAtlas:
     - 55f302671a107764e8cc9b3a7fd5fa01: 21300000
     - 599d38c70e0abe94a91c265935230b2d: 21300000
     - a836f80882c7f9e4caaa373912363b79: 21300000
+    - 50b278180ff5e89449aee8ab53235038: 21300000
     - b88f2b583b19d9b48847ad4e0209bf67: 21300000
     - 3beef67987034de48b8cd944f59c35b3: 21300000
+    - ab62d70af0e48284b836be372b186664: 21300000
     - ac7abd2a4a45cec47a1e63d3ec142ba2: 21300000
     - 8f26ff2a91b29c24f907e9b403cf97c9: 21300000
     - 5860457a18a9ea84394bf780c43476e0: 21300000
@@ -82,11 +85,13 @@ SpriteAtlas:
     - 498d264d71d1d6a45b936ba0f9acd768: 21300000
     - d9d6186d799e26443b73d038b9613934: 21300000
     - 72e9d3cd7dad32d42b74b6a1ae83b556: 21300000
+    - 0c19e6be8f0b9bd459181b67aea2e580: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 9b098930040d3064496ebf87eb060287, type: 3}
   - {fileID: 21300000, guid: 66a231d0d7ea70e439d1b223d8b101cd, type: 3}
   - {fileID: 21300000, guid: 629710012b80e904baeae0c7e8ad4195, type: 3}
+  - {fileID: 21300000, guid: 9b3bc0e1610de2243905a86ca6fcebfe, type: 3}
   - {fileID: 21300000, guid: 5e50f932679fd21469121a2d6a1c29da, type: 3}
   - {fileID: 21300000, guid: 2e0739030fb6320438e5a7017bc2430f, type: 3}
   - {fileID: 21300000, guid: 0d2be9c3999e49c49a2d398042d503d3, type: 3}
@@ -105,8 +110,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 55f302671a107764e8cc9b3a7fd5fa01, type: 3}
   - {fileID: 21300000, guid: 599d38c70e0abe94a91c265935230b2d, type: 3}
   - {fileID: 21300000, guid: a836f80882c7f9e4caaa373912363b79, type: 3}
+  - {fileID: 21300000, guid: 50b278180ff5e89449aee8ab53235038, type: 3}
   - {fileID: 21300000, guid: b88f2b583b19d9b48847ad4e0209bf67, type: 3}
   - {fileID: 21300000, guid: 3beef67987034de48b8cd944f59c35b3, type: 3}
+  - {fileID: 21300000, guid: ab62d70af0e48284b836be372b186664, type: 3}
   - {fileID: 21300000, guid: ac7abd2a4a45cec47a1e63d3ec142ba2, type: 3}
   - {fileID: 21300000, guid: 8f26ff2a91b29c24f907e9b403cf97c9, type: 3}
   - {fileID: 21300000, guid: 5860457a18a9ea84394bf780c43476e0, type: 3}
@@ -115,10 +122,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 498d264d71d1d6a45b936ba0f9acd768, type: 3}
   - {fileID: 21300000, guid: d9d6186d799e26443b73d038b9613934, type: 3}
   - {fileID: 21300000, guid: 72e9d3cd7dad32d42b74b6a1ae83b556, type: 3}
+  - {fileID: 21300000, guid: 0c19e6be8f0b9bd459181b67aea2e580, type: 3}
   m_PackedSpriteNamesToIndex:
   - P0 - CutOff
   - Rock 3
   - P1 - CutOff
+  - noun-stones-3804431-FFFFFF
   - Flipper
   - P4
   - Rock 7
@@ -137,8 +146,10 @@ SpriteAtlas:
   - Rock 5
   - Rock 6
   - P5 - Cutoff
+  - noun-grasses-7598358-FFFFFF
   - P2 - CutOff
   - P1
+  - noun-stones-1658460-FFFFFF
   - Rock 2
   - Monolith_6
   - P2
@@ -147,6 +158,7 @@ SpriteAtlas:
   - P6
   - P8 - CutOff
   - Monolith_2
+  - noun-stones-4016845-FFFFFF
   m_RenderDataMap: {}
   m_Tag: SA  - Run
   m_IsVariant: 0

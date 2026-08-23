@@ -44,7 +44,7 @@ namespace Agame.Run.Combat.Backgrounds
 
         public void UpdateBackgroundForCurrentCombat()
         {
-            throw new System.NotImplementedException("This method is not implemented yet.");
+            Debug.LogError("This method is not implemented yet.", this);
             //var background = combatBackgrounds[RunData.ActiveBackgroundId];
             //SetActiveBackground(background);
         }
