@@ -22,13 +22,13 @@ namespace Agame.Run.Combat.Backgrounds
 
         [Space]
         [SerializeField]
-        private Transform rockRoot;
+        private Transform elementRoot;
         [SerializeField]
-        private int rockCount = 30;
+        private int elementCount = 30;
         [SerializeField, OneLineWithHeader]
-        private List<WeightedRockPrototype> weightedRockPrototypes = new List<WeightedRockPrototype>();
+        private List<WeightedElementPrototype> weightedElementPrototypes = new List<WeightedElementPrototype>();
         [SerializeField, ReadOnly]
-        private List<GameObject> rocks = new List<GameObject>();
+        private List<GameObject> elements = new List<GameObject>();
 
         [Space]
         [SerializeField]
@@ -45,15 +45,15 @@ namespace Agame.Run.Combat.Backgrounds
         private List<Vector2> clusterCenters = new List<Vector2>();
 
         [System.Serializable]
-        private struct WeightedRockPrototype : IWeighted
+        private struct WeightedElementPrototype : IWeighted
         {
             [SerializeField]
-            private GameObject rockPrototype;
+            private GameObject elementPrototype;
             [SerializeField]
             private float weight;
 
             public float Weight => weight;
-            public GameObject RockPrototype => rockPrototype;
+            public GameObject ElementPrototype => elementPrototype;
         }
 
         public Color CameraColor => cameraColor;
@@ -64,19 +64,19 @@ namespace Agame.Run.Combat.Backgrounds
             base.InitThisCombat();
 
             ///
-            RandomizeRocks();
+            RandomizeElements();
 
             ///
             onInitThisCombat?.Invoke();
         }
 
-        [ContextMenu("RandomizeRocks")]
-        private void RandomizeRocks()
+        [ContextMenu("RandomizeElements")]
+        private void RandomizeElements()
         {
 #if UNITY_EDITOR
             if (!Application.isPlaying)
             {
-                UnityEditor.Undo.RegisterFullObjectHierarchyUndo(rockRoot, "Randomize rocks");
+                UnityEditor.Undo.RegisterFullObjectHierarchyUndo(elementRoot, "Randomize elements");
             }
 #endif
 
@@ -108,46 +108,46 @@ namespace Agame.Run.Combat.Backgrounds
                 clusterCenters.Add(new Vector2(clusterX, clusterY));
             }
 
-            // Place rocks around cluster centers
-            for (int i = 0; i < rockCount; i++)
+            // Place elements around cluster centers
+            for (int i = 0; i < elementCount; i++)
             {
                 // Pick a random cluster center
                 Vector2 clusterCenter = clusterCenters[Random.Range(0, clusterCenters.Count)];
 
                 // Generate a position within the cluster radius
-                var rockPos = Random.insideUnitCircle * clusterRadius + clusterCenter;
+                var elementPos = Random.insideUnitCircle * clusterRadius + clusterCenter;
 
                 // Clamp position to bounds
-                rockPos.x = Mathf.Clamp(rockPos.x, minX, maxX);
-                rockPos.y = Mathf.Clamp(rockPos.y, minY, maxY);
+                elementPos.x = Mathf.Clamp(elementPos.x, minX, maxX);
+                elementPos.y = Mathf.Clamp(elementPos.y, minY, maxY);
 
-                // Instantiate rock                
-                var rock = rocks[i];
-                rock.transform.localPosition = rockPos;
-                rock.transform.localRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                // Instantiate element                
+                var element = elements[i];
+                element.transform.localPosition = elementPos;
+                element.transform.localRotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
             }
 
         }
 
 #if UNITY_EDITOR
-        [ContextMenu("Editor_SpawnRocks"), EditorModeOnly]
-        private void Editor_SpawnRocks()
+        [ContextMenu("Editor_SpawnElements"), EditorModeOnly]
+        private void Editor_SpawnElements()
         {
-            UnityEditor.Undo.RegisterFullObjectHierarchyUndo(rockRoot, "Spawn rocks for background");
+            UnityEditor.Undo.RegisterFullObjectHierarchyUndo(elementRoot, "Spawn elements for background");
 
             ///
-            foreach (var rock in rocks)
+            foreach (var element in elements)
             {
-                DestroyImmediate(rock);
+                DestroyImmediate(element);
             }
-            rocks.Clear();
+            elements.Clear();
 
             ///
-            for (int i = 0; i < rockCount; i++)
+            for (int i = 0; i < elementCount; i++)
             {
-                var prototype = weightedRockPrototypes.PickOne(UnityRandom.Default).RockPrototype;
-                var rock = UnityEditor.PrefabUtility.InstantiatePrefab(prototype, rockRoot) as GameObject;
-                rocks.Add(rock);
+                var prototype = weightedElementPrototypes.PickOne(UnityRandom.Default).ElementPrototype;
+                var element = UnityEditor.PrefabUtility.InstantiatePrefab(prototype, elementRoot) as GameObject;
+                elements.Add(element);
             }
         }
 
