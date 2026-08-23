@@ -13,10 +13,11 @@
 
 ### 2\. Concept \& Fantasy
 
-* **Core fantasy**: operating some kind of sci-fi/fantasy operation/experiment that involves throwing up rocks into the air, when it drops it earns money (flipping). 
+* **Core fantasy**: operating some kind of sci-fi/fantasy operation/experiment that involves throwing up rocks into the air, when it drops it earns money (flipping).
 * **Theme**: sci-fi, fantasy, subtle, rocks/mineral/ore, casual, funny, plot twist, 2D flat art, space
 * **Why incremental**: players don't need muscular/reflective/reflexive skills or strategic thinking, just play along from the start to the end of the game and watch the game's mechanics, systems, stories,...to unfold
-* Emotional core: growth, evolution, revelation (plot twist), discovery, completion, relaxation
+* **Emotional core**: growth, evolution, revelation (plot twist), discovery, completion, relaxation
+* **Tone**: keep everything light and casual, a little humour here and there
 
 \---
 
