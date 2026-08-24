@@ -78,7 +78,7 @@ A side bar in the right
 
 Themed elements tied to a biome.
 
-* Non-interactable: only for decoration
+* Non-interactable (statics): only for decoration
 * Interactable: have HP, lose HP when rocks land near it. When an element's HP reaches 0, trigger some effect and disappear. New element takes some time to spawn.
 
 ##### 4.6.2 Collectibles
@@ -135,7 +135,10 @@ Designer note: need to specify special ability for each tier
 
 #### 5.3 Biomes
 
-##### 5.3.1 Normal Biome 0 (starter)
+##### 5.3.1 Normal Biome 0 (starter) - Grassland
+
+* Background color: green
+* Statics: small grasses, stones
 
 ##### 5.3.2 Normal Biome 1
 
