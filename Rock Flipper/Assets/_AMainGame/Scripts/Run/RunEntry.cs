@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Agame.Run.Combat.Tutorials;
 using UnityEngine.InputSystem;
 using Agame.Run.Shop;
+using Agame.Run.Combat.Backgrounds;
 
 namespace Agame.Run
 {
@@ -40,6 +41,7 @@ namespace Agame.Run
         public RockInstanceManager rockInstanceManager;
         public PrototypeManager prototypeManager;
         public SideBarStatBuilder sideBarStatBuilder;
+        public CombatBackgroundManager combatBackgroundManager;
 
         private bool isUsingTestBuildStats;
         private string baseBuildStatsName = "";

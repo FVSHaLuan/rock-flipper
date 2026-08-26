@@ -420,6 +420,14 @@ internal static partial class TerminalCommands
     {
         RunEntry.Instance.runStateManager.StartPrestige(null);
     }
+
+    [RegisterCommand(Help = "int backgroundId")]
+    private static void SetBackground(CommandArg[] args)
+    {
+        int backgroundId = args[0].Int;
+        RunEntry.Instance.RunData.ActiveBackgroundId = backgroundId;
+        RunEntry.Instance.combatBackgroundManager.UpdateBackgroundForCurrentCombat();
+    }
     #endregion Combat
 
     //[RegisterCommand(Help = "")]

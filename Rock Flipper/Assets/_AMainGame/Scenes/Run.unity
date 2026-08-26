@@ -16296,7 +16296,7 @@ MonoBehaviour:
     selfLogs: 
   isNaNInDemo: 0
   backgroundName: Grassland
-  cameraColor: {r: 1, g: 1, b: 1, a: 1}
+  cameraColor: {r: 0.1254902, g: 0.47058824, b: 0.24705882, a: 1}
   thumbnail: {fileID: 0}
   elementRoot: {fileID: 2078869356}
   elementCount: 30

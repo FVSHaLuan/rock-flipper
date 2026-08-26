@@ -1,8 +1,9 @@
 using Agame.Run;
+using Agame.Run.Dev;
+using GD;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Agame.Run.Dev;
 
 namespace Agame
 {
@@ -13,6 +14,10 @@ namespace Agame
 
         [field: System.NonSerialized]
         public event Action<Currency> OnCurrencyValueModified;
+        [field: System.NonSerialized]
+        public event Action<int> OnActiveBackgroundIdChanged;
+        [field: System.NonSerialized]
+        public event Action<int> OnPreferredBackgroundIdChanged;
 
         [SerializeField]
         private int slotId;
@@ -50,6 +55,17 @@ namespace Agame
         private SkillNodeStateDictionary skillNodeStateDictionary;
         [SerializeField]
         private StringIntSerializableDictionary builderButtonLevels;
+
+        [Header("Backgrounds")]
+        [SerializeField]
+        private int activeBackgroundId;
+        [SerializeField]
+        private int preferredBackgroundId;
+        [SerializeField]
+        private float preferredBackgroundTimeElapsed;
+        public bool visitedBackgroundShop;
+        [SerializeField]
+        private List<int> unlockedBackgroundIds = new List<int>() { 0 };
 
         [Header("Other gameplay data (NO RESET)")]
         public bool showedDemoEnding = false;
@@ -118,6 +134,41 @@ namespace Agame
         }
 
         public int ExponentUnlockedPrestigeCount { get => exponentUnlockedPrestigeCount; set => exponentUnlockedPrestigeCount = value; }
+
+        #region Background - Properties
+        public int ActiveBackgroundId
+        {
+            get => activeBackgroundId;
+            set
+            {
+                if (activeBackgroundId == value) return;
+
+                ///
+                activeBackgroundId = value;
+
+                ///
+                OnActiveBackgroundIdChanged?.Invoke(activeBackgroundId);
+            }
+        }
+        public int PreferredBackgroundId
+        {
+            get => preferredBackgroundId;
+            set
+            {
+                if (preferredBackgroundId == value) return;
+
+                ///
+                preferredBackgroundId = value;
+                preferredBackgroundTimeElapsed = 0;
+
+                ///
+                OnPreferredBackgroundIdChanged?.Invoke(preferredBackgroundId);
+            }
+        }
+        public float PreferredBackgroundTimeElapsed { get => preferredBackgroundTimeElapsed; set => preferredBackgroundTimeElapsed = value; }
+        public int UnlockedBackgroundCount => unlockedBackgroundIds == null ? 1 : unlockedBackgroundIds.Count;
+        #endregion Background - Properties
+
 
         #region Initialization
         public void InitRun(int slotId)
@@ -316,6 +367,46 @@ namespace Agame
         }
         #endregion Currencies
 
+        #region Background
+        public bool IsBackgroundUnlocked(int backgroundId)
+        {
+            if (backgroundId == 0) return true;
+
+            ///
+            if (unlockedBackgroundIds == null) return false;
+
+            ///
+            return unlockedBackgroundIds.Contains(backgroundId);
+        }
+
+        public void UnlockBackground(int backgroundId)
+        {
+            if (unlockedBackgroundIds == null)
+            {
+                unlockedBackgroundIds = new List<int>() { 0 };
+            }
+
+            ///
+            if (!unlockedBackgroundIds.Contains(backgroundId))
+            {
+                unlockedBackgroundIds.Add(backgroundId);
+            }
+        }
+
+        public void ChangeRandomPreferredBackground()
+        {
+            int backgroundId;
+            do
+            {
+                backgroundId = unlockedBackgroundIds.GetRandomItem();
+            }
+            while (backgroundId == preferredBackgroundId);
+
+            ///
+            PreferredBackgroundId = backgroundId;
+        }
+        #endregion Background
+
         #region Stat builder states
         public SkillNodeState GetSkillNodeState(string skillNodeId)
         {
@@ -381,7 +472,7 @@ namespace Agame
             ///
             builderButtonLevels[buttonId] = level;
         }
-        #endregion Skills
+        #endregion Stat builder states
 
         #region Other Gameplay Data
 
