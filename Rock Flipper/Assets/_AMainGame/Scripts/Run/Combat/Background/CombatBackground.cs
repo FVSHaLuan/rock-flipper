@@ -57,9 +57,17 @@ namespace Agame.Run.Combat.Backgrounds
             private GameObject elementPrototype;
             [SerializeField]
             private float weight;
+            [SerializeField]
+            private int minCount;
+            [SerializeField]
+            private int maxCount;
 
             public float Weight => weight;
             public GameObject ElementPrototype => elementPrototype;
+            public int MinCount => minCount;
+
+            /// <summary>Max instances of this prototype allowed in the background. &lt;= 0 means unlimited.</summary>
+            public int MaxCount => maxCount;
         }
 
         public Color CameraColor => cameraColor;
@@ -149,12 +157,77 @@ namespace Agame.Run.Combat.Backgrounds
             elements.Clear();
 
             ///
-            for (int i = 0; i < elementCount; i++)
+            var counts = BuildPrototypeCounts();
+            for (int i = 0; i < weightedElementPrototypes.Count; i++)
             {
-                var prototype = weightedElementPrototypes.PickOne(UnityRandom.Default).ElementPrototype;
-                var element = UnityEditor.PrefabUtility.InstantiatePrefab(prototype, elementRoot) as GameObject;
-                elements.Add(element);
+                var prototype = weightedElementPrototypes[i].ElementPrototype;
+                for (int c = 0; c < counts[i]; c++)
+                {
+                    var element = UnityEditor.PrefabUtility.InstantiatePrefab(prototype, elementRoot) as GameObject;
+                    elements.Add(element);
+                }
             }
+        }
+
+        /// <summary>Distributes elementCount instances across weightedElementPrototypes, respecting each prototype's min/max count.</summary>
+        private int[] BuildPrototypeCounts()
+        {
+            var counts = new int[weightedElementPrototypes.Count];
+            int total = 0;
+            for (int i = 0; i < weightedElementPrototypes.Count; i++)
+            {
+                int min = Mathf.Max(0, weightedElementPrototypes[i].MinCount);
+                counts[i] = min;
+                total += min;
+            }
+
+            // If mins alone exceed elementCount, trim down starting from the last prototypes with a min.
+            while (total > elementCount)
+            {
+                int trimIndex = -1;
+                for (int i = counts.Length - 1; i >= 0; i--)
+                {
+                    if (counts[i] > 0)
+                    {
+                        trimIndex = i;
+                        break;
+                    }
+                }
+                if (trimIndex < 0)
+                {
+                    break;
+                }
+                counts[trimIndex]--;
+                total--;
+            }
+
+            // Fill remaining slots via weighted pick, skipping prototypes that hit their max.
+            var eligibleIndices = new List<int>();
+            var eligibleProtos = new List<WeightedElementPrototype>();
+            while (total < elementCount)
+            {
+                eligibleIndices.Clear();
+                eligibleProtos.Clear();
+                for (int i = 0; i < weightedElementPrototypes.Count; i++)
+                {
+                    var proto = weightedElementPrototypes[i];
+                    if (proto.MaxCount <= 0 || counts[i] < proto.MaxCount)
+                    {
+                        eligibleIndices.Add(i);
+                        eligibleProtos.Add(proto);
+                    }
+                }
+                if (eligibleProtos.Count == 0)
+                {
+                    break;
+                }
+
+                eligibleProtos.PickOne(out int pickedLocalIndex, UnityRandom.Default);
+                counts[eligibleIndices[pickedLocalIndex]]++;
+                total++;
+            }
+
+            return counts;
         }
 
         [ContextMenu("Editor_SetAsActive"), PlayModeOnly]
