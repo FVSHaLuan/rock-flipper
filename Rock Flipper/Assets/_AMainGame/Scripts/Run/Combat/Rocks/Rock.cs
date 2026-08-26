@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Agame.Run.Combat
 {
@@ -28,6 +29,12 @@ namespace Agame.Run.Combat
         [SerializeField]
         private Flippable flippable;
 
+        [Header("Events")]
+        [SerializeField]
+        private UnityEvent onStartedFlipping;
+        [SerializeField]
+        private UnityEvent onFinishedFlipping;
+
         public RockTier Tier => rockTier;
         public bool IsPure => isPure;
         public int MaxHP { get; private set; }
@@ -49,13 +56,14 @@ namespace Agame.Run.Combat
             }
             else
             {
+                onFinishedFlipping?.Invoke();
                 OnHPChanged?.Invoke();
             }
         }
 
         private void Flippable_OnStartedFlipping()
         {
-
+            onStartedFlipping?.Invoke();
         }
 
         [ContextMenu("Start New Life"), PlayModeOnly]
