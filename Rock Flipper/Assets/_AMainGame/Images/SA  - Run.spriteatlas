@@ -83,9 +83,11 @@ SpriteAtlas:
     - acc6318b56a3e7c4a9350dd76272acd5: 21300000
     - 5efad1cbbf1e299429faa2a40a5bf214: 21300000
     - 498d264d71d1d6a45b936ba0f9acd768: 21300000
+    - 7585506db33a9ab41998262750b69e85: 21300000
     - d9d6186d799e26443b73d038b9613934: 21300000
     - 72e9d3cd7dad32d42b74b6a1ae83b556: 21300000
     - 0c19e6be8f0b9bd459181b67aea2e580: 21300000
+    - a95c781fa25edb34080af7f09f1c39c7: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 9b098930040d3064496ebf87eb060287, type: 3}
@@ -120,9 +122,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: acc6318b56a3e7c4a9350dd76272acd5, type: 3}
   - {fileID: 21300000, guid: 5efad1cbbf1e299429faa2a40a5bf214, type: 3}
   - {fileID: 21300000, guid: 498d264d71d1d6a45b936ba0f9acd768, type: 3}
+  - {fileID: 21300000, guid: 7585506db33a9ab41998262750b69e85, type: 3}
   - {fileID: 21300000, guid: d9d6186d799e26443b73d038b9613934, type: 3}
   - {fileID: 21300000, guid: 72e9d3cd7dad32d42b74b6a1ae83b556, type: 3}
   - {fileID: 21300000, guid: 0c19e6be8f0b9bd459181b67aea2e580, type: 3}
+  - {fileID: 21300000, guid: a95c781fa25edb34080af7f09f1c39c7, type: 3}
   m_PackedSpriteNamesToIndex:
   - P0 - CutOff
   - Rock 3
@@ -156,9 +160,11 @@ SpriteAtlas:
   - Monolith_3
   - P4 - Icon
   - P6
+  - noun-grass-7984216-FFFFFF
   - P8 - CutOff
   - Monolith_2
   - noun-stones-4016845-FFFFFF
+  - noun-grass-6980873-FFFFFF
   m_RenderDataMap: {}
   m_Tag: SA  - Run
   m_IsVariant: 0

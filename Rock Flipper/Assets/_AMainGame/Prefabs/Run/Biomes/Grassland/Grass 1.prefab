@@ -8,21 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1004795494383172605, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1004795494383172605, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.030571342
-      objectReference: {fileID: 0}
     - target: {fileID: 3670912039202104473, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.24
+      value: -1.403
       objectReference: {fileID: 0}
     - target: {fileID: 3670912039202104473, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.33
+      value: -1.446
       objectReference: {fileID: 0}
     - target: {fileID: 3670912039202104473, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59,30 +51,18 @@ PrefabInstance:
     - target: {fileID: 3727550772302465337, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0c19e6be8f0b9bd459181b67aea2e580, type: 3}
-    - target: {fileID: 3727550772302465337, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
-      propertyPath: m_Color.b
-      value: 0.40784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 3727550772302465337, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
-      propertyPath: m_Color.g
-      value: 0.59607846
-      objectReference: {fileID: 0}
-    - target: {fileID: 3727550772302465337, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
-      propertyPath: m_Color.r
-      value: 0.30588236
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: a95c781fa25edb34080af7f09f1c39c7, type: 3}
     - target: {fileID: 4085827865366854451, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.07636584
+      value: 0.69443023
       objectReference: {fileID: 0}
     - target: {fileID: 4085827865366854451, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06374174
+      value: 0.5796334
       objectReference: {fileID: 0}
     - target: {fileID: 4085827865366854451, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.079596095
+      value: 0.7238044
       objectReference: {fileID: 0}
     - target: {fileID: 4085827865366854451, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90,11 +70,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4085827865366854451, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.151
+      value: 0.133
       objectReference: {fileID: 0}
     - target: {fileID: 8666581213975095388, guid: ebeab1ae4edc8d7459e5ad2335b2fb61, type: 3}
       propertyPath: m_Name
-      value: Stone 1
+      value: Grass 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
