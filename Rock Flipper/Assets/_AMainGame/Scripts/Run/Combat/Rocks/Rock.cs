@@ -56,23 +56,46 @@ namespace Agame.Run.Combat
             CurrentHP--;
             if (CurrentHP <= 0)
             {
-                var isNewRockPure = Random.value <= Tier.GetPurityChance();
-                if (isNewRockPure && isPure)
-                {
-                    StartNewLife(true);
-                }
-                else
-                {
-                    PoolHandler.TryReturnToPoolAndDeactivate();
-                    var newRockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, isNewRockPure);
-                    RunEntry.rockInstanceManager.SpawnAsReplacement(newRockPrototype.rockPoolHandler, transform.position);
-                }
+                ///
+                EarnBreakingCash();
+
+                ///
+                BreakCurrentRockAndSpawnNewOne();
             }
             else
             {
+                ///
+                EarnLandingCash();
+
+                ///
                 onFinishedFlipping?.Invoke();
                 OnHPChanged?.Invoke();
             }
+        }
+
+        private void BreakCurrentRockAndSpawnNewOne()
+        {
+            var isNewRockPure = Random.value <= Tier.GetPurityChance();
+            if (isNewRockPure && isPure)
+            {
+                StartNewLife(true);
+            }
+            else
+            {
+                PoolHandler.TryReturnToPoolAndDeactivate();
+                var newRockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, isNewRockPure);
+                RunEntry.rockInstanceManager.SpawnAsReplacement(newRockPrototype.rockPoolHandler, transform.position);
+            }
+        }
+
+        private void EarnLandingCash()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void EarnBreakingCash()
+        {
+            throw new System.NotImplementedException();
         }
 
         private void Flippable_OnStartedFlipping()

@@ -51,7 +51,7 @@ MonoBehaviour:
   enabledPlayerCursorRadius: 0
   playerCursorRadius: 0.5
   rock_P0:
-    count: 0
+    count: 1
     maxCount: 10
     purity: 0.1
   rock_P1:
