@@ -27,7 +27,7 @@ namespace Agame.Run.Combat
             ///
             foreach (var item in flippableHits)
             {
-                if (item.isActiveAndEnabled)
+                if (item.isActiveAndEnabled && item.CooledDown)
                 {
                     item.Flippable.TryFlipping();
                 }

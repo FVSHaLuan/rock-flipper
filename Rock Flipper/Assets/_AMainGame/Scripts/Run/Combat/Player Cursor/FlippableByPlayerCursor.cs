@@ -6,6 +6,8 @@ namespace Agame.Run.Combat
     public class FlippableByPlayerCursor : MonoBehaviour
     {
         private Flippable flippable;
+        private float lastTimeLanded;
+        private float landingCooldown;
 
         public Flippable Flippable
         {
@@ -18,6 +20,9 @@ namespace Agame.Run.Combat
                 return flippable;
             }
         }
-    }
 
+        public float LastTimeLanded { get => lastTimeLanded; set => lastTimeLanded = value; }
+        public float LandingCooldownTime { get => landingCooldown; set => landingCooldown = value; }
+        public bool CooledDown => (Time.time - lastTimeLanded) >= LandingCooldownTime;
+    }
 }

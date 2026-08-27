@@ -20404,6 +20404,7 @@ MonoBehaviour:
   newRockFlippingHeight: 2
   rockPoolHandler: {fileID: 6063040817023332797}
   flippable: {fileID: 7931788272956034127}
+  flippableByPlayerCursor: {fileID: 8378381129742385243}
   onStartedFlipping:
     m_PersistentCalls:
       m_Calls:
@@ -20494,3 +20495,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b01e34c3dfbc3418d46493fa179139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Flippable
+--- !u!114 &8378381129742385243 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9053617545869976771, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+  m_PrefabInstance: {fileID: 711872273693500568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5794978290778122173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab391e914aa48b46ae37220cf464dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.FlippableByPlayerCursor

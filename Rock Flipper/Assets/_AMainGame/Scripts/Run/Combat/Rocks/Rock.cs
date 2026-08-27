@@ -28,6 +28,8 @@ namespace Agame.Run.Combat
         private RockPoolHandler rockPoolHandler;
         [SerializeField]
         private Flippable flippable;
+        [SerializeField]
+        private FlippableByPlayerCursor flippableByPlayerCursor;
 
         [Header("Events")]
         [SerializeField]
@@ -68,9 +70,18 @@ namespace Agame.Run.Combat
                 EarnLandingCash();
 
                 ///
+                UpdateLandingCooldown();
+
+                ///
                 onFinishedFlipping?.Invoke();
                 OnHPChanged?.Invoke();
             }
+        }
+
+        private void UpdateLandingCooldown()
+        {
+            flippableByPlayerCursor.LastTimeLanded = Time.time;
+            flippableByPlayerCursor.LandingCooldownTime = BuildStats.GetRockTierBuildStats(Tier).landingCooldown;
         }
 
         private void BreakCurrentRockAndSpawnNewOne()
@@ -112,6 +123,9 @@ namespace Agame.Run.Combat
         {
             MaxHP = baseHP;
             CurrentHP = MaxHP;
+
+            ///
+            UpdateLandingCooldown();
 
             ///
             gameObject.SetActive(true);

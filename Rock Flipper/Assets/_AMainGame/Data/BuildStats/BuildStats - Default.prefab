@@ -54,17 +54,33 @@ MonoBehaviour:
     count: 1
     maxCount: 10
     purity: 0.1
+    landingCash: 1
+    breakingCash: 5
+    purityCashMultiplier: 3
+    landingCooldown: 0.5
   rock_P1:
     count: 0
     maxCount: 10
     purity: 0.1
+    landingCash: 1
+    breakingCash: 5
+    purityCashMultiplier: 3
+    landingCooldown: 0.5
   rock_P2:
     count: 0
     maxCount: 10
     purity: 0.1
+    landingCash: 1
+    breakingCash: 5
+    purityCashMultiplier: 3
+    landingCooldown: 0.5
   rock_P3:
     count: 0
     maxCount: 10
     purity: 0.1
+    landingCash: 1
+    breakingCash: 5
+    purityCashMultiplier: 3
+    landingCooldown: 0.5
   flipperBotFlippingInterval: 2
   flipperBotMovementSpeed: 1
