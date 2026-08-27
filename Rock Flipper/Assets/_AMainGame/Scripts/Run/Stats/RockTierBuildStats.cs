@@ -11,6 +11,10 @@ namespace Agame.Run.Stats
         public double landingCash = 1;
         public double breakingCash = 5;
         public float purityCashMultiplier = 3;
+        /// <summary>
+        /// Cooldown time before rock can flip again after landed
+        /// </summary>
+        public float landingCooldown = 2;
     }
 
 }
