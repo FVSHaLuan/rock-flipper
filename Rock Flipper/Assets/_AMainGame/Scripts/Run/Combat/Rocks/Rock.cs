@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace Agame.Run.Combat
 {
-    public class Rock : MonoBehaviour
+    public class Rock : ExtendedMonoBehaviourRun
     {
         public event System.Action OnStartedNewLife;
         public event System.Action OnHPChanged;
@@ -64,7 +64,8 @@ namespace Agame.Run.Combat
                 else
                 {
                     PoolHandler.TryReturnToPoolAndDeactivate();
-                    RunEntry.Instance.rockInstanceManager.SpawnAsReplacement(rockPoolHandler, transform.position);
+                    var newRockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, isNewRockPure);
+                    RunEntry.rockInstanceManager.SpawnAsReplacement(newRockPrototype.rockPoolHandler, transform.position);
                 }
             }
             else
