@@ -90,12 +90,16 @@ namespace Agame.Run.Combat
 
         private void EarnLandingCash()
         {
-            throw new System.NotImplementedException();
+            var stats = BuildStats.GetRockTierBuildStats(rockTier);
+            var amount = stats.landingCash * (isPure ? stats.purityCashMultiplier : 1);
+            RunData.AddCurrency(Currency.CASH, amount);
         }
 
         private void EarnBreakingCash()
         {
-            throw new System.NotImplementedException();
+            var stats = BuildStats.GetRockTierBuildStats(rockTier);
+            var amount = stats.breakingCash * (isPure ? stats.purityCashMultiplier : 1);
+            RunData.AddCurrency(Currency.CASH, amount);
         }
 
         private void Flippable_OnStartedFlipping()
