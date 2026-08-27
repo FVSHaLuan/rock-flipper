@@ -52,14 +52,14 @@ namespace Agame.Run.Combat
             CurrentHP--;
             if (CurrentHP <= 0)
             {
-                var isPure = Random.value <= Tier.GetPurityChance();
-                if (isPure)
+                var isNewRockPure = Random.value <= Tier.GetPurityChance();
+                if (isNewRockPure && isPure)
                 {
-
+                    StartNewLife();
                 }
                 else
                 {
-                    StartNewLife();
+                    RunEntry.Instance.rockInstanceManager.SpawnAsReplacement(rockPoolHandler, transform.position);
                 }
             }
             else
@@ -82,11 +82,19 @@ namespace Agame.Run.Combat
 
             ///
             OnStartedNewLife?.Invoke();
+
+            ///
+            PlayNewLifeEffect();
         }
 
         public void DoNewRockFlipping(Vector2 landingPosition)
         {
             flippable.ForceFlipping(newRockFlippingDuration, landingPosition, newRockFlippingHeight);
+        }
+
+        private void PlayNewLifeEffect()
+        {
+
         }
     }
 

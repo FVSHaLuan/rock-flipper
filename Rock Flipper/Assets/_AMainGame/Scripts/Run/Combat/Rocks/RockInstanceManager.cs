@@ -12,12 +12,29 @@ namespace Agame.Run.Combat
             return rock;
         }
 
+        /// <summary>
+        /// spawn a rock at the start of a new combat
+        /// </summary>
+        /// <param name="rockPoolHandler"></param>
+        /// <returns></returns>
         public Rock SpawnAsOldRock(RockPoolHandler rockPoolHandler)
         {
             var rock = Spawn(rockPoolHandler);
 
             ///
             rock.transform.position = Playfield.GetRandomPoint(Vector2.zero);
+            rock.StartNewLife();
+
+            ///
+            return rock;
+        }
+
+        public Rock SpawnAsReplacement(RockPoolHandler rockPoolHandler, Vector2 startPosition)
+        {
+            var rock = Spawn(rockPoolHandler);
+
+            ///
+            rock.transform.position = startPosition;
             rock.StartNewLife();
 
             ///
