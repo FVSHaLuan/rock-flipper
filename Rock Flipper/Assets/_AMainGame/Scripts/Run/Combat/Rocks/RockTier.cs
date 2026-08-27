@@ -25,5 +25,11 @@ namespace Agame.Run.Combat
         {
             return allTiers;
         }
+
+        public static float GetPurityChance(this RockTier rockTier)
+        {
+            var rockTierBuildStats = RunEntry.Instance.BuildStats.GetRockTierBuildStats(rockTier);
+            return rockTierBuildStats.purity;
+        }
     }
 }

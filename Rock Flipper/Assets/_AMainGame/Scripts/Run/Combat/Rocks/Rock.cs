@@ -52,7 +52,15 @@ namespace Agame.Run.Combat
             CurrentHP--;
             if (CurrentHP <= 0)
             {
-                StartNewLife();
+                var isPure = Random.value <= Tier.GetPurityChance();
+                if (isPure)
+                {
+
+                }
+                else
+                {
+                    StartNewLife();
+                }
             }
             else
             {
