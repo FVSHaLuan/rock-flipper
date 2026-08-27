@@ -6,7 +6,7 @@ namespace Agame.Run.Combat
     {
         private Rock Spawn(RockPoolHandler rockPoolHandler)
         {
-            var rock = CurrentSceneGeneralPool.TakeInstance(rockPoolHandler, this).Rock;
+            var rock = CurrentSceneGeneralPool.TakeInstance(rockPoolHandler, this).Rock;            
 
             ///
             return rock;
@@ -23,7 +23,7 @@ namespace Agame.Run.Combat
 
             ///
             rock.transform.position = Playfield.GetRandomPoint(Vector2.zero);
-            rock.StartNewLife();
+            rock.StartNewLife(false);
 
             ///
             return rock;
@@ -35,7 +35,7 @@ namespace Agame.Run.Combat
 
             ///
             rock.transform.position = startPosition;
-            rock.StartNewLife();
+            rock.StartNewLife(true);
 
             ///
             return rock;
@@ -46,7 +46,7 @@ namespace Agame.Run.Combat
             var rock = Spawn(rockPoolHandler);
 
             ///
-            rock.StartNewLife();
+            rock.StartNewLife(false);
 
             ///
             rock.transform.position = startPosition;            

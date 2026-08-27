@@ -35,6 +35,10 @@ namespace Agame.Run.Combat
         [SerializeField]
         private UnityEvent onFinishedFlipping;
 
+        [Header("Delegations")]
+        [SerializeField]
+        private UnityEvent newLifeEffectDelegation;
+
         public RockTier Tier => rockTier;
         public bool IsPure => isPure;
         public int MaxHP { get; private set; }
@@ -55,10 +59,11 @@ namespace Agame.Run.Combat
                 var isNewRockPure = Random.value <= Tier.GetPurityChance();
                 if (isNewRockPure && isPure)
                 {
-                    StartNewLife();
+                    StartNewLife(true);
                 }
                 else
                 {
+                    PoolHandler.TryReturnToPoolAndDeactivate();
                     RunEntry.Instance.rockInstanceManager.SpawnAsReplacement(rockPoolHandler, transform.position);
                 }
             }
@@ -75,16 +80,22 @@ namespace Agame.Run.Combat
         }
 
         [ContextMenu("Start New Life"), PlayModeOnly]
-        public void StartNewLife()
+        public void StartNewLife(bool playNewLifeEffect)
         {
             MaxHP = baseHP;
             CurrentHP = MaxHP;
 
             ///
+            gameObject.SetActive(true);
+
+            ///
             OnStartedNewLife?.Invoke();
 
             ///
-            PlayNewLifeEffect();
+            if (playNewLifeEffect)
+            {
+                PlayNewLifeEffect();
+            }
         }
 
         public void DoNewRockFlipping(Vector2 landingPosition)
@@ -94,7 +105,7 @@ namespace Agame.Run.Combat
 
         private void PlayNewLifeEffect()
         {
-
+            newLifeEffectDelegation?.Invoke();
         }
     }
 

@@ -82,6 +82,7 @@ SpriteAtlas:
     - 5860457a18a9ea84394bf780c43476e0: 21300000
     - acc6318b56a3e7c4a9350dd76272acd5: 21300000
     - 5efad1cbbf1e299429faa2a40a5bf214: 21300000
+    - 6546e83cd95a8a54aa3f37772fe0475d: 21300000
     - 498d264d71d1d6a45b936ba0f9acd768: 21300000
     - 7585506db33a9ab41998262750b69e85: 21300000
     - d9d6186d799e26443b73d038b9613934: 21300000
@@ -121,6 +122,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5860457a18a9ea84394bf780c43476e0, type: 3}
   - {fileID: 21300000, guid: acc6318b56a3e7c4a9350dd76272acd5, type: 3}
   - {fileID: 21300000, guid: 5efad1cbbf1e299429faa2a40a5bf214, type: 3}
+  - {fileID: 21300000, guid: 6546e83cd95a8a54aa3f37772fe0475d, type: 3}
   - {fileID: 21300000, guid: 498d264d71d1d6a45b936ba0f9acd768, type: 3}
   - {fileID: 21300000, guid: 7585506db33a9ab41998262750b69e85, type: 3}
   - {fileID: 21300000, guid: d9d6186d799e26443b73d038b9613934, type: 3}
@@ -159,6 +161,7 @@ SpriteAtlas:
   - P2
   - Monolith_3
   - P4 - Icon
+  - Rock debris
   - P6
   - noun-grass-7984216-FFFFFF
   - P8 - CutOff
