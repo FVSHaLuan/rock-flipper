@@ -582,6 +582,7 @@ namespace Agame.Run
             }
 
             ///
+            var savedLevel = state.level;
             state.level++;
 
             ///
@@ -594,7 +595,7 @@ namespace Agame.Run
             ///
             if (buildAgent != null)
             {
-                buildAgent.Apply(1, buildValue);
+                buildAgent.Apply(savedLevel, 1, buildValue);
             }
             else
             {
@@ -703,7 +704,7 @@ namespace Agame.Run
             ///
             if (buildAgent != null)
             {
-                buildAgent.Apply(Mathf.Clamp(Level, 0, LevelCount), buildValue);
+                buildAgent.Apply(0, Mathf.Clamp(Level, 0, LevelCount), buildValue);
             }
             else
             {

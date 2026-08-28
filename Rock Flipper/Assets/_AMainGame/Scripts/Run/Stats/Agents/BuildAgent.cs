@@ -9,12 +9,6 @@ namespace Agame.Run.Stats.Agents
         public string ExtraDescription => "<ExtraDescription not implemented>";
         public virtual bool RefundCost => false;
 
-        [System.Obsolete("Use the other overload instead!")]
-        public void Apply(int addingLevel, double buildValuePerLevel)
-        {
-            Debug.Log("Obsolete function! Use the other overload instead!");
-        }
-
         public abstract void Apply(int currentLevel, int addingLevel, double buildValuePerLevel);
 
         public virtual bool Verify(double buildValue, int maxLevel)
