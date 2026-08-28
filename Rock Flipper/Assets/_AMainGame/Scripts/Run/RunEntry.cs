@@ -244,8 +244,8 @@ namespace Agame.Run
 
         private void ApplyAllToBuildStats()
         {
-            Debug.LogError("Please apply Skill Tree to BuildStats");
             sideBarStatBuilder.Apply();
+            skillTree.ApplyToBuildStats();
         }
 
         protected void LateUpdate()
