@@ -8971,6 +8971,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 948271052}
+    - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948271057}
+    - targetCorrespondingSourceObject: {fileID: 5936968851189325072, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948271056}
   m_SourcePrefab: {fileID: 100100000, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
 --- !u!224 &948271050 stripped
 RectTransform:
@@ -9010,6 +9016,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbMaxLevelConfig
   maxLevel: 1
+--- !u!114 &948271056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948271051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46cb2ff0c1c4a5ea2fbe9b22ab27752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.UnlockSkillTree
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+--- !u!114 &948271057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948271051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef77942fe7d48b4da3aa329e9dba748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbBuildValueConfig
+  buildValue: 0
 --- !u!1001 &955882690
 PrefabInstance:
   m_ObjectHideFlags: 0

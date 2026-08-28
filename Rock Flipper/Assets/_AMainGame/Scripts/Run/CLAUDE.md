@@ -67,6 +67,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - `Stats/BuildStatsObject.cs` — the live mutable stat blob for the current run; rebuilt from base + skill tree + shop every prestige.
 - `Stats/Agents/BuildAgent.cs` — abstract base: `Apply(currentLevel, addingLevel, buildValuePerLevel)`. **`GetDescriptionText`/`TryToReportAchievement`/`TryToReportMaxedAchievement` are hard-stubbed** (`Debug.LogError`/fixed string) — not wired to real implementations despite being called from `SkillNode`.
 - `Stats/Agents/Implementations/Rocks/RockBuildAgent.cs` (abstract, tier-scoped) + `IncreaseRockCount.cs` (concrete) — **the pattern to copy for a new rock-tier upgrade agent.**
+- `Stats/Agents/Implementations/UnlockSkillTree.cs` — sets `BuildStatsObject.UnlockedSkillTree = true` (fires `OnUnlockedSkillTree`), which `Shop/SkillTreeButton.cs` uses to make the Shop's "open skill tree" button interactable. Wire this to a one-time Shop purchase (`StatBuilderButton`), not a skill-tree node — a node inside the tree can't unlock the tree it lives in.
 - `Stats/Agents/Skills/SkillBuildAgent.cs` is `[Obsolete]` but still has live subclasses (`...WithSimpleTooltip`, `...Percentage`) — legacy path, don't extend further.
 - `Stats/IStatBuilder.cs` — interface implemented by both `StatBuilderButton` and skill-tree classes so `SideBarStatBuilder.Apply()` can treat them uniformly.
 
