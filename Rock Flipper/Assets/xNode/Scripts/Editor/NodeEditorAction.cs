@@ -496,7 +496,7 @@ namespace XNodeEditor
         }
 
         /// <summary> Initiate a rename on the currently selected node </summary>
-        public void RenameSelectedNode()
+        public void RenameSelectedNode(string targetName = null)
         {
             if (Selection.objects.Length == 1 && Selection.activeObject is XNode.Node)
             {
@@ -504,11 +504,11 @@ namespace XNodeEditor
                 Vector2 size;
                 if (nodeSizes.TryGetValue(node, out size))
                 {
-                    RenamePopup.Show(Selection.activeObject, size.x);
+                    RenamePopup.Show(Selection.activeObject, targetName, size.x * 2);
                 }
                 else
                 {
-                    RenamePopup.Show(Selection.activeObject);
+                    RenamePopup.Show(Selection.activeObject, targetName);
                 }
             }
         }

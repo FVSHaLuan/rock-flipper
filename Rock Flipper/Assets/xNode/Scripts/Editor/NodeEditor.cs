@@ -140,7 +140,8 @@ namespace XNodeEditor
             {
                 XNode.Node node = Selection.activeObject as XNode.Node;
                 menu.AddItem(new GUIContent("Move To Top"), false, () => NodeEditorWindow.current.MoveNodeToTop(node));
-                menu.AddItem(new GUIContent("Rename"), false, NodeEditorWindow.current.RenameSelectedNode);
+                menu.AddItem(new GUIContent("Rename..."), false, () => { NodeEditorWindow.current.RenameSelectedNode(); });
+                menu.AddItem(new GUIContent("Rename to recommended..."), false, () => { NodeEditorWindow.current.RenameSelectedNode(node.RecommendedName); });
 
                 canRemove = NodeGraphEditor.GetEditor(node.graph, NodeEditorWindow.current).CanRemove(node);
             }

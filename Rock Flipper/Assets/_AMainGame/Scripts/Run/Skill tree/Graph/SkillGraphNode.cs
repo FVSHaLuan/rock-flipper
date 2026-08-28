@@ -73,6 +73,7 @@ namespace Agame.Run
         public Currency SecondaryCurrency => (costs_2 == null || costs_2.Count == 0) ? Currency.INVALID : costs_2[0].currency;
         public Currency ThirdCurrency => (costs_3 == null || costs_3.Count == 0) ? Currency.INVALID : costs_3[0].currency;
         public bool AttentionFlag { get => attentionFlag; }
+        public override string RecommendedName => buildAgent != null ? buildAgent.name : base.RecommendedName;
 
         public override object GetValue(NodePort port)
         {

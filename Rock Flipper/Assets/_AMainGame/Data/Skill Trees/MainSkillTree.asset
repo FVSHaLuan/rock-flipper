@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: s2
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: -250}
+  position: {x: 250, y: -250}
   ports:
     keys:
     - input
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: s2
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 250, y: -250}
+  position: {x: 0, y: -250}
   ports:
     keys:
     - input
