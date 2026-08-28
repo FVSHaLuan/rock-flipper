@@ -1,7 +1,9 @@
 using Agame.Run.Stats;
 using Agame.Run.Stats.Agents;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEngine.Assertions;
+#endif
 using UnityEngine.UI;
 
 namespace Agame.Run.Shop
@@ -138,6 +140,16 @@ namespace Agame.Run.Shop
             ///
             statBuilderButtonSpecific.HandleLeveledUp(levelCount);
         }
+
+#if UNITY_EDITOR
+        protected void OnValidate()
+        {
+            if (transform.parent?.parent?.parent != null)
+            {
+                Assert.IsFalse(string.IsNullOrWhiteSpace(buttonId), "Button ID can not be empty");
+            }
+        }
+#endif
     }
 
 }

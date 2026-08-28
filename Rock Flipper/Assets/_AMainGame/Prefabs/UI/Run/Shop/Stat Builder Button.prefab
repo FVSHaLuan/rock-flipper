@@ -54,7 +54,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  buttonIDAsset: {fileID: 0}
+  buttonId: 
   button: {fileID: 7324744912707199029}
   levelText: {fileID: 8932389786694323454}
   costText: {fileID: 2478063501818926089}
@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2828299816235121945, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2828299816235121945, guid: 1698ace0875ab6544b19b1fcfa766570, type: 3}
       propertyPath: m_LocalRotation.w
