@@ -6,6 +6,8 @@ namespace Agame.Run.Stats
 {
     public class BuildStatsObject : MonoBehaviourWithInit
     {
+        public bool unlockedSkillTree;
+
         [Header("Player Cursor")]
         public bool enabledPlayerCursorRadius = false;
         public float playerCursorRadius = 0.5f;
