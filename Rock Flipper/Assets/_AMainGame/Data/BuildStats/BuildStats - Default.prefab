@@ -48,9 +48,11 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
+  unlockedSkillTree: 0
   enabledPlayerCursorRadius: 0
   playerCursorRadius: 0.5
   rock_P0:
+    unlocked: 1
     count: 1
     maxCount: 10
     purity: 0.1
@@ -59,6 +61,7 @@ MonoBehaviour:
     purityCashMultiplier: 3
     landingCooldown: 0.5
   rock_P1:
+    unlocked: 0
     count: 0
     maxCount: 10
     purity: 0.1
@@ -67,6 +70,7 @@ MonoBehaviour:
     purityCashMultiplier: 3
     landingCooldown: 0.5
   rock_P2:
+    unlocked: 0
     count: 0
     maxCount: 10
     purity: 0.1
@@ -75,6 +79,7 @@ MonoBehaviour:
     purityCashMultiplier: 3
     landingCooldown: 0.5
   rock_P3:
+    unlocked: 0
     count: 0
     maxCount: 10
     purity: 0.1
