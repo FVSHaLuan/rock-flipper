@@ -3841,6 +3841,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359590951}
   m_CullTransparentMesh: 1
+--- !u!1 &362772837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3225608771684552337, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 2135111042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &362905009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4320365423265808409, guid: e851a25f298e9c849ad18a547776d045, type: 3}
@@ -5107,6 +5112,7 @@ MonoBehaviour:
   tutorialFlags: {fileID: 94795582}
   combatScreen: {fileID: 2010474143}
   skillTree: {fileID: 968288538}
+  skillTreeScreen: {fileID: 0}
   skillCostTracker: {fileID: 1691735333}
   rockInstanceManager: {fileID: 716291608}
   prototypeManager: {fileID: 11400000, guid: 67c76c0d57db1ed4b8fcac74a5a5155d, type: 2}
@@ -19690,13 +19696,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3225608771684552337, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2135111054}
   m_SourcePrefab: {fileID: 100100000, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
 --- !u!224 &2135111043 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3332114922633561600, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
   m_PrefabInstance: {fileID: 2135111042}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2135111051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 2135111042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362772837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f65f87c8ecbb04d9bebda53797e82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2135111054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362772837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 941226dc39dcdf6498ee3684135c8253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.SkillTreeButton
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  button: {fileID: 2135111051}
 --- !u!114 &1213067059207495264
 MonoBehaviour:
   m_ObjectHideFlags: 0

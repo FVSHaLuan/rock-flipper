@@ -6,7 +6,10 @@ namespace Agame.Run.Stats
 {
     public class BuildStatsObject : MonoBehaviourWithInit
     {
-        public bool unlockedSkillTree;
+        public static event System.Action OnUnlockedSkillTree;
+
+        [SerializeField]
+        private bool unlockedSkillTree;
 
         [Header("Player Cursor")]
         public bool enabledPlayerCursorRadius = false;
@@ -25,6 +28,19 @@ namespace Agame.Run.Stats
         [Header("Flipper Bots")]
         public float flipperBotFlippingInterval = 2.0f;
         public float flipperBotMovementSpeed = 3f;
+
+        public bool UnlockedSkillTree
+        {
+            get => unlockedSkillTree;
+            set
+            {
+                unlockedSkillTree = value;
+                if (value)
+                {
+                    OnUnlockedSkillTree?.Invoke();
+                }
+            }
+        }
 
         public RockTierBuildStats GetRockTierBuildStats(RockTier rockTier)
         {
