@@ -156,6 +156,9 @@ namespace Agame.Run
             Entry.ActiveGameScene = GameScene.Run;
 
             ///
+            skillTree.TryInit();
+
+            ///
             ApplyAllToBuildStats();
 
             ///
