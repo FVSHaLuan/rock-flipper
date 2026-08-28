@@ -37,7 +37,7 @@ namespace Agame.Run
         public TutorialFlags tutorialFlags;
         public UIScreen combatScreen;
         public SkillTree skillTree;
-        public UIScreen skillTreeScreen;
+        public SkillTreeScreen skillTreeScreen;
         public SkillCostTracker skillCostTracker;
         public RockInstanceManager rockInstanceManager;
         public PrototypeManager prototypeManager;

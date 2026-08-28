@@ -6,7 +6,7 @@ namespace Agame.Run
 {
     [DisallowMultipleComponent]
     public partial class SkillTree : ExtendedMonoBehaviourRun
-    {
+    {        
         [SerializeField]
         private SkillTreeGraph mainSkillTreeGraph;
         [SerializeField]

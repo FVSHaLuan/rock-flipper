@@ -5112,7 +5112,7 @@ MonoBehaviour:
   tutorialFlags: {fileID: 94795582}
   combatScreen: {fileID: 2010474143}
   skillTree: {fileID: 968288538}
-  skillTreeScreen: {fileID: 0}
+  skillTreeScreen: {fileID: 606770575}
   skillCostTracker: {fileID: 1691735333}
   rockInstanceManager: {fileID: 716291608}
   prototypeManager: {fileID: 11400000, guid: 67c76c0d57db1ed4b8fcac74a5a5155d, type: 2}
@@ -6374,7 +6374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 606770573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5574875b958f9945835efa22ba6b5ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c449b60740067146aa955b764597091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIScreen
   selfLog:
