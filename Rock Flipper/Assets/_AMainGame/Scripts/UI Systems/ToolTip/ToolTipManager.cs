@@ -17,6 +17,7 @@ namespace Agame.UI.ToolTips
         private ToolTipRequest currentRequest;
         private ToolTip currentToolTip;
 
+        public RectTransform Root => root;
         public int CurrentRequestId { get => currentRequestId; }
 
         public int Show(ToolTipRequest request)

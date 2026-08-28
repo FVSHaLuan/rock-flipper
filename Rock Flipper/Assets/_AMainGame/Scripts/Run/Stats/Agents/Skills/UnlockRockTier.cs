@@ -7,7 +7,10 @@ namespace Agame.Run.Stats.Agents
     {
         protected override void Apply(RockTierBuildStats rockTierBuildStats, int currentLevel, int addingLevel, double buildValuePerLevel)
         {
-            rockTierBuildStats.unlocked = (currentLevel + addingLevel) > 0;
+            if ((currentLevel + addingLevel) > 0)
+            {
+                rockTierBuildStats.unlocked = true;
+            }
         }
     }
 }

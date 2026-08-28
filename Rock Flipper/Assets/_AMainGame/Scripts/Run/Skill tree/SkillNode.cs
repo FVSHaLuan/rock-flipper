@@ -477,7 +477,7 @@ namespace Agame.Run
 
             ///
             activeToolTip = generalPool.TakeInstance(toolTipPrototype, this);
-            activeToolTip.transform.SetParent(CommonEntry.tooltipTransformParent);
+            activeToolTip.transform.SetParent(CommonEntry.toolTipManager.Root);
             activeToolTip.transform.localScale = Vector3.one;
             activeToolTip.ShowFor(this);
         }
