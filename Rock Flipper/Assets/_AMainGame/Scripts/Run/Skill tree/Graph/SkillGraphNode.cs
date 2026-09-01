@@ -29,6 +29,10 @@ namespace Agame.Run
         [Space]
         [SerializeField]
         private Sprite icon;
+        [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
+        private string titleGroup;
+        [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
+        private string title;
 
         [Header("-- Requirements")]
         [SerializeField, FormerlySerializedAs("unlockingRequirement"), Min(0), Tooltip("Total parents' depth required to unlock this node")]

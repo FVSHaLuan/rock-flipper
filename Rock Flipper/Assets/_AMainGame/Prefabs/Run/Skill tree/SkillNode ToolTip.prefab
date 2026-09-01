@@ -339,6 +339,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
+  titleText: {fileID: 4945813712055474858}
   descriptionText: {fileID: 1520705958585740407}
   extraDescriptionText: {fileID: 7726468749389696004}
   levelText: {fileID: 7346808889179314980}

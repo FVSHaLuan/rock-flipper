@@ -8,6 +8,8 @@ namespace Agame.Run
     public class SkillNodeToolTip : GeneralPoolMemberSimplified
     {
         [SerializeField]
+        private UnifiedText titleText;
+        [SerializeField]
         private UnifiedText descriptionText;
         [SerializeField]
         private UnifiedText extraDescriptionText;

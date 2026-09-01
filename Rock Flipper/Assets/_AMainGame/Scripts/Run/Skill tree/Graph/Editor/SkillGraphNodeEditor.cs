@@ -33,7 +33,9 @@ namespace Agame.Run
                         "costs_3",
                         "costFormulas",
                         "demoLimit",
-                        "skillNodePrototype"
+                        "skillNodePrototype",
+                        "titleGroup",
+                        "title"
                     };
                 }
 
