@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2444191515276537398}
   - component: {fileID: 7395222766092842589}
   m_Layer: 0
-  m_Name: Unlock Rock Tier I
+  m_Name: Unlock P0 Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

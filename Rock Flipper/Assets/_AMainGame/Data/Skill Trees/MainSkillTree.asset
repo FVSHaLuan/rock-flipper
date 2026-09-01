@@ -45,6 +45,8 @@ MonoBehaviour:
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
   icon: {fileID: 21300000, guid: 6546e83cd95a8a54aa3f37772fe0475d, type: 3}
+  titleGroup: P0 Rock
+  title: Max Count
   unlockingRequirement: 0
   minParentLevelEach: 0
   demoLimit: -1
@@ -140,6 +142,8 @@ MonoBehaviour:
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
   icon: {fileID: 21300000, guid: 50184a7102e58eb448f3d75482442e9f, type: 3}
+  titleGroup: P1 Rock
+  title: Max Count
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
