@@ -51,22 +51,6 @@ namespace Agame.Run.Combat
             PlayClickLoop(obj);
         }
 
-        [ContextMenu("PlayCoreHitByBall"), PlayModeOnly]
-        public void PlayCoreHitByBall()
-        {
-            ///
-            if (CurrentRunState != RunState.Combat)
-            {
-                return;
-            }
-
-            ///
-            UpdateCoreHitByBallVolume();
-
-            ///
-            playCoreHitByBallDelegate?.Invoke();
-        }
-
         [ContextMenu("PlayCoreDeath"), PlayModeOnly]
         public void PlayCoreDeath()
         {
@@ -105,11 +89,6 @@ namespace Agame.Run.Combat
             {
                 clickLoopPlayer.StopImmediately();
             }
-        }
-
-        public void UpdateCoreHitByBallVolume()
-        {
-            coreHitByBallPlayer.selfVolume = maxCoreHitByBallVolume * gameSetting.coreHitSoundEffectVolume;
         }
     }
 

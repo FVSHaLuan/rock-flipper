@@ -27,9 +27,6 @@ public class GameSetting
     public float coreHitSoundEffectVolume = 0.8f;
     public bool pauseWhenLostFocus = true;
     public bool enabledRewardedAds = true;
-    public bool holdToBlow = true;
-    public bool enabledCoreFloatingDamageEffect = true;
-    public bool enabledDamageLeaderboard = false;
 
     [Header("Graphics")]
     public bool enabledCard3DInspectorEffect = true;
