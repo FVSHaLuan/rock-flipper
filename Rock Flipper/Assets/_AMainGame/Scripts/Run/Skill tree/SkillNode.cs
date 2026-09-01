@@ -110,6 +110,8 @@ namespace Agame.Run
         public bool IsActivated { get; private set; }
         public string NodeId => graphNode.NodeId;
         public Sprite Icon => graphNode.Icon;
+        public string TitleGroup => graphNode.TitleGroup;
+        public string Title => graphNode.Title;
         public int OutputNodeCount => outputNodes.Count;
         public int ParentNodeCount => parents.Count;
         /// <summary>
