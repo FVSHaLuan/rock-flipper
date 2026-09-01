@@ -69,6 +69,10 @@ namespace Agame.Run
         [SerializeField]
         private Image borderImage;
         [SerializeField]
+        private Image subIconBorderImage;
+        [SerializeField]
+        private Image subIconImage;
+        [SerializeField]
         private Color notEnoughColor;
         [SerializeField]
         private Color enoughColor;
@@ -955,6 +959,8 @@ namespace Agame.Run
             ///
             borderImage.color = color;
             iconImage.color = iconImage.color.OverrideAlpha(iconAlpha);
+            subIconBorderImage.color = color;
+            subIconImage.color = subIconImage.color.OverrideAlpha(iconAlpha);
 
             ///
             maxedObject.SetActive(IsMaxed);
