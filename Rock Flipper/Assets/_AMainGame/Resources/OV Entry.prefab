@@ -354,7 +354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '...and them tell him:'
+  m_text: '...and them tell him (or her):'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f3ce6ddc99b3464192547e04b3a0017, type: 2}
   m_sharedMaterial: {fileID: 6003966653238131968, guid: 9f3ce6ddc99b3464192547e04b3a0017, type: 2}
@@ -1822,7 +1822,6 @@ GameObject:
   - component: {fileID: 2152144530411666077}
   - component: {fileID: 8107998862326330571}
   - component: {fileID: 3365463068987980237}
-  - component: {fileID: 5789293577038010424}
   m_Layer: 17
   m_Name: Story
   m_TagString: Untagged
@@ -1949,45 +1948,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5789293577038010424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992118869139173076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: Common/Story/Earth is under attack!
-  mTermSecondary: NotoSans-Black SDF
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  TermPrefix: 
-  TermSuffix: 
-  LocalizeOnAwake: 1
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  IgnoreNumbersInRTL: 1
-  CorrectAlignmentForRTL: 1
-  AddSpacesToJoinedLanguages: 0
-  AllowLocalizedParameters: 1
-  AllowParameters: 1
-  TranslatedObjects: []
-  LocalizeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  AlwaysForceLocalize: 0
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
-  mGUI_ShowReferences: 0
-  mGUI_ShowTems: 1
-  mGUI_ShowCallback: 0
-  mLocalizeTarget: {fileID: 0}
-  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &2246859792036251065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,54 +2023,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &2355490183175076469
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392507350383744389}
-  - component: {fileID: 946643624816715487}
-  m_Layer: 0
-  m_Name: CommonLocalizationParameterManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1392507350383744389
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2355490183175076469}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5008013402374441939}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &946643624816715487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2355490183175076469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd01cff23e6481b429ce4a0a7ecf26e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfLog:
-    enableLogger: 0
-    alsoLogToUnityConsole: 0
-    selfLogs: 
 --- !u!1 &2471232352798718248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,7 +2110,6 @@ GameObject:
   - component: {fileID: 3613905943109606275}
   - component: {fileID: 1397795585763481801}
   - component: {fileID: 7297128935877404594}
-  - component: {fileID: 5464623807574588165}
   - component: {fileID: 8536190228011836633}
   m_Layer: 17
   m_Name: Custom text
@@ -2326,45 +2237,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5464623807574588165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2570665433894832119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: '-'
-  mTermSecondary: NotoSans-Black SDF
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  TermPrefix: 
-  TermSuffix: 
-  LocalizeOnAwake: 1
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  IgnoreNumbersInRTL: 1
-  CorrectAlignmentForRTL: 1
-  AddSpacesToJoinedLanguages: 0
-  AllowLocalizedParameters: 1
-  AllowParameters: 1
-  TranslatedObjects: []
-  LocalizeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  AlwaysForceLocalize: 1
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
-  mGUI_ShowReferences: 0
-  mGUI_ShowTems: 1
-  mGUI_ShowCallback: 0
-  mLocalizeTarget: {fileID: 0}
-  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!114 &8536190228011836633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4734,7 +4606,6 @@ MonoBehaviour:
   playerDataObjectDemo: {fileID: 11400000, guid: 00c505cde31d6f1419c17aa054422d5c, type: 2}
   playerDataSaver: {fileID: 5008013402251270394}
   gameSettingObject: {fileID: 11400000, guid: 6327a8b58b2b8f54e9d3f36b4bbd64df, type: 2}
-  localizedStrings: {fileID: 11400000, guid: 2df95cb6a29f82542a99dfc5a52f64e0, type: 2}
   compatManager: {fileID: 11400000, guid: a1a5c5c4758b233469eff7b63b187631, type: 2}
   timeScaleManager: {fileID: 5008013400781487061}
   audioManager: {fileID: 5008013400737874755}
@@ -5883,7 +5754,6 @@ Transform:
   - {fileID: 5008013400781487060}
   - {fileID: 5008013402165838019}
   - {fileID: 5008013402670938750}
-  - {fileID: 1392507350383744389}
   - {fileID: 4066319418860259592}
   - {fileID: 7283935471740424488}
   - {fileID: 1900160571796750628}
@@ -7313,7 +7183,6 @@ GameObject:
   - component: {fileID: 3864736955521422099}
   - component: {fileID: 3870347202864475091}
   - component: {fileID: 5711170241249263779}
-  - component: {fileID: 5593912499997084883}
   m_Layer: 17
   m_Name: Home
   m_TagString: Untagged
@@ -7440,45 +7309,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5593912499997084883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5900160695975777072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: Home
-  mTermSecondary: NotoSans-Black SDF
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  TermPrefix: 
-  TermSuffix: 
-  LocalizeOnAwake: 1
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  IgnoreNumbersInRTL: 1
-  CorrectAlignmentForRTL: 1
-  AddSpacesToJoinedLanguages: 0
-  AllowLocalizedParameters: 1
-  AllowParameters: 1
-  TranslatedObjects: []
-  LocalizeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  AlwaysForceLocalize: 0
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
-  mGUI_ShowReferences: 0
-  mGUI_ShowTems: 1
-  mGUI_ShowCallback: 0
-  mLocalizeTarget: {fileID: 0}
-  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &5948362176428063820
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,7 +8470,6 @@ GameObject:
   - component: {fileID: 3435543734276347951}
   - component: {fileID: 1024043203686757783}
   - component: {fileID: 9011220829853346615}
-  - component: {fileID: 2941839912091251253}
   m_Layer: 17
   m_Name: Current wave
   m_TagString: Untagged
@@ -8767,45 +8596,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2941839912091251253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8651591881849398586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mTerm: Run/Wave_X
-  mTermSecondary: NotoSans-Black SDF
-  PrimaryTermModifier: 0
-  SecondaryTermModifier: 0
-  TermPrefix: 
-  TermSuffix: 
-  LocalizeOnAwake: 1
-  IgnoreRTL: 0
-  MaxCharactersInRTL: 0
-  IgnoreNumbersInRTL: 1
-  CorrectAlignmentForRTL: 1
-  AddSpacesToJoinedLanguages: 0
-  AllowLocalizedParameters: 1
-  AllowParameters: 1
-  TranslatedObjects: []
-  LocalizeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  AlwaysForceLocalize: 1
-  LocalizeCallBack:
-    Target: {fileID: 0}
-    MethodName: 
-  mGUI_ShowReferences: 0
-  mGUI_ShowTems: 1
-  mGUI_ShowCallback: 0
-  mLocalizeTarget: {fileID: 0}
-  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &8985927912576474856
 GameObject:
   m_ObjectHideFlags: 0
@@ -9086,7 +8876,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3465787790114145846, guid: ed6f64449b435534aa806320aac3068a, type: 3}
       propertyPath: m_SortingLayer
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3465787790114145846, guid: ed6f64449b435534aa806320aac3068a, type: 3}
       propertyPath: m_SortingLayerID
