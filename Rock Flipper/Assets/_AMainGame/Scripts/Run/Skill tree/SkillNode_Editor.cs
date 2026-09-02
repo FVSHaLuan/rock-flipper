@@ -31,6 +31,7 @@ namespace Agame.Run
             {
                 subIconWrapper.gameObject.SetActive(true);
                 subIconImage.sprite = graphNode.SubIcon;
+                subIconImage.color = iconImage.color;
             }
             else
             {

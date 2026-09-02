@@ -45,6 +45,7 @@ MonoBehaviour:
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
   icon: {fileID: 21300000, guid: 6546e83cd95a8a54aa3f37772fe0475d, type: 3}
+  subIcon: {fileID: 0}
   titleGroup: P0 Rock
   title: Max Count
   unlockingRequirement: 0
@@ -146,6 +147,7 @@ MonoBehaviour:
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
   icon: {fileID: 21300000, guid: 50184a7102e58eb448f3d75482442e9f, type: 3}
+  subIcon: {fileID: 21300000, guid: 3f57658b11e562a43b15560e8f492467, type: 3}
   titleGroup: P1 Rock
   title: Max Count
   unlockingRequirement: 1
@@ -205,6 +207,7 @@ MonoBehaviour:
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
   icon: {fileID: 21300000, guid: 50184a7102e58eb448f3d75482442e9f, type: 3}
+  subIcon: {fileID: 0}
   titleGroup: P1 Rock
   title: Max Count
   unlockingRequirement: 1

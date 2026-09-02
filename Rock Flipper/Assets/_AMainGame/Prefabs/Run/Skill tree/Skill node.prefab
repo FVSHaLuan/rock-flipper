@@ -1053,6 +1053,8 @@ MonoBehaviour:
   isSpecialEntry: 0
   overrider: {fileID: 0}
   iconImage: {fileID: 5203323267215111176}
+  subIconImage: {fileID: 6129644047614719403}
+  subIconWrapper: {fileID: 4366664554226524026}
   gradeText: {fileID: 1413548792539559826}
   toolTipPrototype: {fileID: 4863529024213764585, guid: 810b962cd1c5a420c81cf81404fe6e33, type: 3}
   toolTipTopRightAnchor: {fileID: 9114054168915920336}
@@ -1061,7 +1063,6 @@ MonoBehaviour:
   toolTipBottomLeftAnchor: {fileID: 2257609523841032178}
   borderImage: {fileID: 2814606124725743336}
   subIconBorderImage: {fileID: 3238532469284274791}
-  subIconImage: {fileID: 6129644047614719403}
   notEnoughColor: {r: 0.21176471, g: 0.2509804, b: 0.28627452, a: 1}
   enoughColor: {r: 0.16647384, g: 0.734095, b: 0.8207547, a: 1}
   maxedColor: {r: 0.69803923, g: 0.39215687, b: 0.13333334, a: 1}
