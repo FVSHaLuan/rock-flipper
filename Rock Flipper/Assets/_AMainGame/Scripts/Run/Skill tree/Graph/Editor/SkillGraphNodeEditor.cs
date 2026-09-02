@@ -23,6 +23,7 @@ namespace Agame.Run
                     {
                         "attentionFlag",
                         "icon",
+                        "subIcon",
                         "cashTier",
                         "buildAgent",
                         "buildValue",

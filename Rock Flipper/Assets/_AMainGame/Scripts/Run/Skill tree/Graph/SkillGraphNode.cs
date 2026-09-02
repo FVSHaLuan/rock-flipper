@@ -29,6 +29,8 @@ namespace Agame.Run
         [Space]
         [SerializeField]
         private Sprite icon;
+        [SerializeField]
+        private Sprite subIcon;
         [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
         private string titleGroup;
         [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
