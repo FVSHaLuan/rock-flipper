@@ -51,6 +51,10 @@ namespace Agame.Run
         [SerializeField]
         private Image iconImage;
         [SerializeField]
+        private Image subIconImage;
+        [SerializeField]
+        private GameObject subIconWrapper;
+        [SerializeField]
         private UnifiedText gradeText;
 
         [Space]
@@ -70,8 +74,6 @@ namespace Agame.Run
         private Image borderImage;
         [SerializeField]
         private Image subIconBorderImage;
-        [SerializeField]
-        private Image subIconImage;
         [SerializeField]
         private Color notEnoughColor;
         [SerializeField]

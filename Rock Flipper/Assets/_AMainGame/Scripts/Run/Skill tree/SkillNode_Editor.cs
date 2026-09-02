@@ -27,6 +27,17 @@ namespace Agame.Run
             costs_3 = new List<CurrencyAmount>(graphNode.costs_3);
 
             ///
+            if (graphNode.SubIcon != null)
+            {
+                subIconWrapper.gameObject.SetActive(true);
+                subIconImage.sprite = graphNode.SubIcon;
+            }
+            else
+            {
+                subIconWrapper.gameObject.SetActive(false);
+            }
+
+            ///
             editor_AttentionObject.SetActive(graphNode.AttentionFlag);
         }
 

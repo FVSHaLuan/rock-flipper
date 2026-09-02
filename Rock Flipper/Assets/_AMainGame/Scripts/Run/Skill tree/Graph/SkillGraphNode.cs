@@ -68,6 +68,7 @@ namespace Agame.Run
         public string NodeId => name;
         public SkillNode SkillNodePrototype => skillNodePrototype;
         public Sprite Icon { get => icon; }
+        public Sprite SubIcon => subIcon;
         public string TitleGroup { get => titleGroup; }
         public string Title { get => title; }
         public bool HasDemoLimit => demoLimit >= 0;
