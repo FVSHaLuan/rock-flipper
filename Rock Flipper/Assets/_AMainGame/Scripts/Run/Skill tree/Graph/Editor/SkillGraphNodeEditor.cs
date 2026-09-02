@@ -143,8 +143,23 @@ namespace Agame.Run
                 var sprite = node.Icon;
                 Rect spriteRect = sprite.textureRect;
                 Texture2D tex = sprite.texture;
+                Rect iconRect = spriteRect.FitCompletelyInside(rect);
                 GUI.color = node.Editor_GetCashTierColor();
-                GUI.DrawTextureWithTexCoords(spriteRect.FitCompletelyInside(rect), tex, new Rect(spriteRect.x / tex.width, spriteRect.y / tex.height, spriteRect.width / tex.width, spriteRect.height / tex.height));
+                GUI.DrawTextureWithTexCoords(iconRect, tex, new Rect(spriteRect.x / tex.width, spriteRect.y / tex.height, spriteRect.width / tex.width, spriteRect.height / tex.height));
+
+                if (node.SubIcon != null)
+                {
+                    GUI.color = Color.white;
+                    var subSprite = node.SubIcon;
+                    Rect subSpriteRect = subSprite.textureRect;
+                    Texture2D subTex = subSprite.texture;
+                    Rect subIconRect = subSpriteRect.FitCompletelyInside(rect);
+                    subIconRect.width *= 0.5f;
+                    subIconRect.height *= 0.5f;
+                    subIconRect.x = iconRect.xMax;
+                    subIconRect.y = iconRect.y + (iconRect.height - subIconRect.height) * 0.5f;
+                    GUI.DrawTextureWithTexCoords(subIconRect, subTex, new Rect(subSpriteRect.x / subTex.width, subSpriteRect.y / subTex.height, subSpriteRect.width / subTex.width, subSpriteRect.height / subTex.height));
+                }
             }
         }
 
