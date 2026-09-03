@@ -6,7 +6,7 @@ namespace Agame.Run.Combat
     {
         private Rock Spawn(RockPoolHandler rockPoolHandler)
         {
-            var rock = CurrentSceneGeneralPool.TakeInstance(rockPoolHandler, this).Rock;            
+            var rock = CurrentSceneGeneralPool.TakeInstance(rockPoolHandler, this).TargetObject;            
 
             ///
             return rock;

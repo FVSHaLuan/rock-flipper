@@ -4,12 +4,12 @@ using UnityEngine;
 namespace Agame.Run.Combat
 {
     [RequireComponent(typeof(Rock))]
-    public class RockPoolHandler : GeneralPoolMemberSimplified
+    public class RockPoolHandler : GeneralPoolMemberSimplifiedHandler<Rock>
     {
         [SerializeField, HideInNormalInspector]
         private Rock rock;
 
-        public Rock Rock => rock;
+        public override Rock TargetObject => rock;
 
 #if UNITY_EDITOR
         protected void Reset()
