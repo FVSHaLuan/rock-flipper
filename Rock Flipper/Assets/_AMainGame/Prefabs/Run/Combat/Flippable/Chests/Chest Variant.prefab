@@ -42,11 +42,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.67983
+      value: -3.05847
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24814
+      value: -2.31623
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -135,5 +135,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6657458593545727887}
+    - targetCorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2479223216025875822}
   m_SourcePrefab: {fileID: 100100000, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+--- !u!1 &1233632966399808367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+  m_PrefabInstance: {fileID: 5229889348792848458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6657458593545727887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233632966399808367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1ccc6fb93438946b1f9f3a10fb4595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Chest
+--- !u!114 &2479223216025875822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233632966399808367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740be33a465daf6438ea3ac5dcca2a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.ChestPoolHandler
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  chest: {fileID: 6657458593545727887}

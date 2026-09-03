@@ -1,16 +1,14 @@
 using UnityEngine;
 
-public class ChestRarity : MonoBehaviour
+namespace Agame.Run.Combat
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public enum ChestRarity
     {
-        
+        Common = 0,
+        Uncommon = 1,
+        Rare = 2,
+        Epic = 3,
+        Unique = 4,
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
