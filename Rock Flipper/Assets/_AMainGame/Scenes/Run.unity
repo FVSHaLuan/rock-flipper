@@ -4899,7 +4899,8 @@ MonoBehaviour:
   rockInstanceManager: {fileID: 716291608}
   prototypeManager: {fileID: 11400000, guid: 67c76c0d57db1ed4b8fcac74a5a5155d, type: 2}
   sideBarStatBuilder: {fileID: 2052955422}
-  combatBackgroundManager: {fileID: 0}
+  combatBackgroundManager: {fileID: 4075723}
+  chestInstanceManager: {fileID: 863627441}
 --- !u!4 &487646590
 Transform:
   m_ObjectHideFlags: 0
@@ -8082,6 +8083,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acaa006303ba6b48b15e5db19bda07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChestInstanceManager
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
 --- !u!1 &882980932
 GameObject:
   m_ObjectHideFlags: 0
