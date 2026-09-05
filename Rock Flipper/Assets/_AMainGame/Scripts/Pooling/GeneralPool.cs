@@ -36,7 +36,7 @@ public class GeneralPool : MultiPrototypesPool<GeneralPoolMemberSimplified>
         TryPushPrototype(prototype);
 
         ///
-        return TakeInstance(prototype.PrototypeId,true);
+        return TakeInstance(prototype.PrototypeId, requestedObject);
     }
 
     public GeneralPoolMemberSimplified TakeInstance(int prototypeId, object requestedObject)
@@ -47,10 +47,5 @@ public class GeneralPool : MultiPrototypesPool<GeneralPoolMemberSimplified>
 
         ///
         return instance;
-    }
-
-    public override GeneralPoolMemberSimplified TakeInstance(int prototypeId, bool forceCloning = true)
-    {
-        throw new System.Exception("");
     }
 }

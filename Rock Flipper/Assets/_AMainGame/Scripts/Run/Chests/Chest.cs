@@ -7,6 +7,12 @@ namespace Agame.Run.Combat
         [SerializeField]
         private ChestRarity rarity;
 
+        [Space]
+        [SerializeField]
+        private ChestPoolHandler chestPoolHandler;
+
+        public ChestPoolHandler PoolHandler => chestPoolHandler;
+
         public ChestRarity Rarity => rarity;
     }
 
