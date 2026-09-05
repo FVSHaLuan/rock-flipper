@@ -6,6 +6,8 @@ namespace Agame.Run.Combat
     {
         [SerializeField]
         private ChestRarity rarity;
+
+        public ChestRarity Rarity => rarity;
     }
 
 }
