@@ -1,4 +1,5 @@
 using Agame.Run;
+using Agame.Run.Combat;
 using Agame.Run.Dev;
 using GD;
 using System;
@@ -66,6 +67,10 @@ namespace Agame
         public bool visitedBackgroundShop;
         [SerializeField]
         private List<int> unlockedBackgroundIds = new List<int>() { 0 };
+
+        [Header("Other gameplay data (RESET)")]
+        [SerializeField]
+        private List<ChestState> chestStates;
 
         [Header("Other gameplay data (NO RESET)")]
         public bool showedDemoEnding = false;
@@ -474,9 +479,53 @@ namespace Agame
         }
         #endregion Stat builder states
 
-        #region Other Gameplay Data
+        #region Other Gameplay Data (RESET)
+        public int GetChestStateCount()
+        {
+            if (chestStates == null)
+            {
+                return 0;
+            }
+            ///
+            return chestStates.Count;
+        }
 
-        #endregion Other Gameplay Data
+        public ChestState GetChestState(int index)
+        {
+            if (chestStates == null || index < 0 || index >= chestStates.Count)
+            {
+                return new ChestState();
+            }
+
+            ///
+            return chestStates[index];
+        }
+
+        public void SetChestStates(List<ChestState> states)
+        {
+            if (chestStates == null)
+            {
+                chestStates = new List<ChestState>();
+            }
+
+            ///
+            if (states == null)
+            {
+                chestStates.Clear();
+                return;
+            }
+
+            ///
+            foreach (var state in states)
+            {
+                chestStates.Add(state);
+            }
+        }
+        #endregion Other Gameplay Data (RESET)
+
+        #region Other Gameplay Data (NO RESET)
+
+        #endregion Other Gameplay Data (NO RESET)
 
         #region Other
 
