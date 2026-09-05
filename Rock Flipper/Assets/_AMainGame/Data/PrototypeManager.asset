@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712cad6426be100439f0f914b46af47e, type: 3}
   m_Name: PrototypeManager
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.RockPrototypeManager
-  rocks:
+  rockPrototypes:
   - {fileID: 3295397204830722951, guid: 2ebe442c7fc1fcc45ae613264d9b986b, type: 3}
   - {fileID: 4243059286864769980, guid: 7d358b55b62d6f840a9c218c3ee7f663, type: 3}
   - {fileID: 3295397204830722951, guid: 385e0732715390c4381aba300771eef5, type: 3}
@@ -21,3 +21,9 @@ MonoBehaviour:
   - {fileID: 4243059286864769980, guid: 81ff0d8b65d226c47bf49b598adefd5e, type: 3}
   - {fileID: 3295397204830722951, guid: fcc8b715a7502944680d08871d30cc2d, type: 3}
   - {fileID: 4243059286864769980, guid: 1a28741d17365064aabc19ff24e123f8, type: 3}
+  chestPrototypes:
+  - {fileID: 6821560645841857734, guid: cc08369cd093c68449e31694c510ff47, type: 3}
+  - {fileID: 6821560645841857734, guid: 7d80426145319284d9ec404e9d02be77, type: 3}
+  - {fileID: 6821560645841857734, guid: b55a24f0379fb824e9560d0d4662fc0c, type: 3}
+  - {fileID: 6821560645841857734, guid: 1c33871969be99c4a9d4859eb3740fe1, type: 3}
+  - {fileID: 6821560645841857734, guid: c83ebdb470e4dfc4f86ebd2f4a0b06ca, type: 3}

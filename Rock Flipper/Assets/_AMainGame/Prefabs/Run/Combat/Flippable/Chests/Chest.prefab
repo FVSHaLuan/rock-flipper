@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_Name
-      value: Chest Variant
+      value: Chest
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -160,6 +160,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1ccc6fb93438946b1f9f3a10fb4595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Chest
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  rarity: 0
+  chestPoolHandler: {fileID: 2479223216025875822}
 --- !u!114 &2479223216025875822
 MonoBehaviour:
   m_ObjectHideFlags: 0
