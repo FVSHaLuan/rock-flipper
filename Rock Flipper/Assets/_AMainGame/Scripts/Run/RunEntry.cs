@@ -43,6 +43,7 @@ namespace Agame.Run
         public PrototypeManager prototypeManager;
         public SideBarStatBuilder sideBarStatBuilder;
         public CombatBackgroundManager combatBackgroundManager;
+        public ChestInstanceManager chestInstanceManager;
 
         private bool isUsingTestBuildStats;
         private string baseBuildStatsName = "";
