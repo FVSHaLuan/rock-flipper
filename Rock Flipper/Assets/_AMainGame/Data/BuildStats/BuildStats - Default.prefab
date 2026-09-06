@@ -87,5 +87,20 @@ MonoBehaviour:
     breakingCash: 5
     purityCashMultiplier: 3
     landingCooldown: 0.5
+  chest_Common:
+    weight: 100
+    maxHP: 2
+  chest_Uncommon:
+    weight: 100
+    maxHP: 2
+  chest_Rare:
+    weight: 100
+    maxHP: 2
+  chest_Epic:
+    weight: 100
+    maxHP: 2
+  chest_Unique:
+    weight: 100
+    maxHP: 2
   flipperBotFlippingInterval: 2
   flipperBotMovementSpeed: 1

@@ -165,6 +165,7 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   rarity: 0
+  flippable: {fileID: 3415425888969406621}
   chestPoolHandler: {fileID: 2479223216025875822}
 --- !u!114 &2479223216025875822
 MonoBehaviour:
@@ -183,3 +184,14 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   chest: {fileID: 6657458593545727887}
+--- !u!114 &3415425888969406621 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7490132037195802839, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+  m_PrefabInstance: {fileID: 5229889348792848458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233632966399808367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b01e34c3dfbc3418d46493fa179139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Flippable

@@ -25,7 +25,6 @@ namespace Agame.Run.Stats
         [SerializeField]
         private RockTierBuildStats rock_P3;
 
-
         [Header("Chests")]
         [SerializeField]
         private ChestRarityBuildStats chest_Common;
