@@ -8,6 +8,8 @@ namespace Agame.Run.Combat
         private List<Chest> activeChests = new List<Chest>();
         private List<ChestState> savedChestStates = new List<ChestState>();
 
+        public bool SpawnedSavedChests { get; private set; } = false;
+
         protected void Start()
         {
             entry.playerDataSaver.OnBeforeSave += PlayerDataSaver_OnBeforeSave;
@@ -15,10 +17,15 @@ namespace Agame.Run.Combat
 
         private void PlayerDataSaver_OnBeforeSave()
         {
-            if (CurrentRunState == RunState.Combat)
+            if (SpawnedSavedChests && CurrentRunState == RunState.Combat)
             {
                 SaveChestStates();
             }
+        }
+
+        public Chest Spawn(ChestState chestState)
+        {
+            return Spawn(chestState.rarity, chestState);
         }
 
         public Chest Spawn(ChestRarity chestRarity, ChestState? state = null)
@@ -33,6 +40,11 @@ namespace Agame.Run.Combat
             chest.gameObject.SetActive(true);
             activeChests.Add(chest);
             return chest;
+        }
+
+        public void SetSpawnedSavedChest()
+        {
+            SpawnedSavedChests = true;
         }
 
         private void SaveChestStates()

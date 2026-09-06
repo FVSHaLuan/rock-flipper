@@ -509,9 +509,11 @@ namespace Agame
             }
 
             ///
+            chestStates.Clear();
+
+            ///
             if (states == null)
             {
-                chestStates.Clear();
                 return;
             }
 
