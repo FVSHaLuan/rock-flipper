@@ -5,6 +5,9 @@ namespace Agame.Run.Combat
 {
     public class Chest : ExtendedMonoBehaviourRun
     {
+        public event System.Action OnStartedNewLife;
+        public event System.Action OnHPChanged;
+
         [SerializeField]
         private ChestRarity rarity;
 
@@ -39,9 +42,15 @@ namespace Agame.Run.Combat
         private void Flippable_OnFinishedFlipping()
         {
             CurrentHP--;
+
+            ///
             if (CurrentHP <= 0)
             {
                 Open();
+            }
+            else
+            {
+                OnHPChanged?.Invoke();
             }
         }
 
@@ -58,6 +67,9 @@ namespace Agame.Run.Combat
             var chestRarityBuildStats = BuildStats.GetChestRarityBuildStats(rarity);
             MaxHP = chestRarityBuildStats.maxHP;
             CurrentHP = MaxHP;
+
+            ///
+            OnStartedNewLife?.Invoke();
         }
 
         private void Open()

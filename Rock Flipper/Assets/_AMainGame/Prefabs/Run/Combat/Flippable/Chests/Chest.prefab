@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7436963267292017990, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.045
+      value: -0.125
       objectReference: {fileID: 0}
     - target: {fileID: 7436963267292017990, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -63,8 +63,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6403085483304794458, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5882431023783992093}
   m_SourcePrefab: {fileID: 100100000, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+--- !u!1 &1113141065916246893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1235047873039380916, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+  m_PrefabInstance: {fileID: 2184648901482207961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3730058316882071715 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3283892545967622778, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+  m_PrefabInstance: {fileID: 2184648901482207961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1d03b59d8361243bcc5ac0a7a96bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Helpers.UnityExtend::GD.TransformProgressBar
+--- !u!1 &5083784200358519683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6403085483304794458, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+  m_PrefabInstance: {fileID: 2184648901482207961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5882431023783992093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5083784200358519683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b532803f3a5efd94f833dd2c7bc07a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.ChestHPBar
+  chest: {fileID: 6657458593545727887}
+  wrapper: {fileID: 1113141065916246893}
+  hpProgressBar: {fileID: 3730058316882071715}
 --- !u!4 &8747125351556771743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7436963267292017990, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
