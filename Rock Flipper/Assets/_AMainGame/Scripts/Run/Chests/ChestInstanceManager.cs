@@ -23,6 +23,14 @@ namespace Agame.Run.Combat
             }
         }
 
+        public void RemoveActiveChest(Chest chest)
+        {
+            if (activeChests.Contains(chest))
+            {
+                activeChests.Remove(chest);
+            }
+        }
+
         public Chest Spawn(ChestState chestState)
         {
             return Spawn(chestState.rarity, chestState);
@@ -38,7 +46,12 @@ namespace Agame.Run.Combat
             }
             chest.transform.position = Playfield.GetRandomPoint(-Vector2.one);
             chest.gameObject.SetActive(true);
+            chest.StartNewLife();
+
+            ///
             activeChests.Add(chest);
+
+            ///
             return chest;
         }
 

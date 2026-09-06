@@ -6,7 +6,7 @@ namespace Agame.Run.Combat
     public class ChestRarityBuildStats
     {
         public float weight;
-        public int maxHp;
+        public int maxHP;
     }
 
 }
