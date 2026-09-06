@@ -25,6 +25,19 @@ namespace Agame.Run.Stats
         [SerializeField]
         private RockTierBuildStats rock_P3;
 
+
+        [Header("Chests")]
+        [SerializeField]
+        private ChestRarityBuildStats chest_Common;
+        [SerializeField]
+        private ChestRarityBuildStats chest_Uncommon;
+        [SerializeField]
+        private ChestRarityBuildStats chest_Rare;
+        [SerializeField]
+        private ChestRarityBuildStats chest_Epic;
+        [SerializeField]
+        private ChestRarityBuildStats chest_Unique;
+
         [Header("Flipper Bots")]
         public float flipperBotFlippingInterval = 2.0f;
         public float flipperBotMovementSpeed = 3f;
@@ -51,6 +64,19 @@ namespace Agame.Run.Stats
                 RockTier.P2 => rock_P2,
                 RockTier.P3 => rock_P3,
                 _ => throw new System.NotImplementedException($"RockTier {rockTier} is not implemented in BuildStatsObject."),
+            };
+        }
+
+        public ChestRarityBuildStats GetChestRarityBuildStats(ChestRarity chestRarity)
+        {
+            return chestRarity switch
+            {
+                ChestRarity.Common => chest_Common,
+                ChestRarity.Uncommon => chest_Uncommon,
+                ChestRarity.Rare => chest_Rare,
+                ChestRarity.Epic => chest_Epic,
+                ChestRarity.Unique => chest_Unique,
+                _ => throw new System.NotImplementedException($"ChestRarity {chestRarity} is not implemented in BuildStatsObject."),
             };
         }
     }
