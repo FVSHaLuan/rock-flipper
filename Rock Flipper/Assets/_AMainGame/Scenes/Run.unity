@@ -7070,6 +7070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725077161}
   - component: {fileID: 725077162}
+  - component: {fileID: 725077163}
   m_Layer: 5
   m_Name: Tab Buttons
   m_TagString: Untagged
@@ -7124,6 +7125,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &725077163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725077160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd69b02f4fc7e84299bf25e6e5e9a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Helpers.UnityExtend::TabGroup
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  defaultTab: {fileID: 1237825842}
 --- !u!1 &725099505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4320365423265808409, guid: 9e71c9bbe1803224d9196537d6b7eb92, type: 3}
@@ -7244,7 +7262,7 @@ GameObject:
   - component: {fileID: 743661335}
   - component: {fileID: 743661336}
   m_Layer: 5
-  m_Name: Things
+  m_Name: Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7602,6 +7620,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8160900520168656092, guid: ea99729bc19626641b98c989016e3341, type: 3}
   m_PrefabInstance: {fileID: 138052668}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &825950987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825950988}
+  m_Layer: 5
+  m_Name: Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &825950988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825950987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2052955419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -18.15}
+  m_SizeDelta: {x: -10, y: 744.35}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &828982431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9612,6 +9665,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 5427616939995343629, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: tab
+      value: 
+      objectReference: {fileID: 825950987}
     - target: {fileID: 6640589817164236442, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11982,6 +12039,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 5427616939995343629, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: tab
+      value: 
+      objectReference: {fileID: 743661334}
     - target: {fileID: 6640589817164236442, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12076,6 +12137,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6640589817164236442, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
   m_PrefabInstance: {fileID: 1237825840}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1237825842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427616939995343629, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+  m_PrefabInstance: {fileID: 1237825840}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc3942327b63154595f4b4d9a7162e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Helpers.UnityExtend::TabButton
 --- !u!1001 &1244565765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18152,6 +18224,7 @@ RectTransform:
   - {fileID: 2135111043}
   - {fileID: 725077161}
   - {fileID: 743661335}
+  - {fileID: 825950988}
   - {fileID: 1407118831}
   m_Father: {fileID: 1781608118}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
