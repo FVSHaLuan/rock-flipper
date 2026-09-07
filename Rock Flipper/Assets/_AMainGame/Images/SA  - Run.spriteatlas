@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!687078895 &4343727234628468602
 SpriteAtlas:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,98 +97,6 @@ SpriteAtlas:
     - 0c19e6be8f0b9bd459181b67aea2e580: 21300000
     - a95c781fa25edb34080af7f09f1c39c7: 21300000
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites:
-  - {fileID: 21300000, guid: 9b098930040d3064496ebf87eb060287, type: 3}
-  - {fileID: 21300000, guid: 66a231d0d7ea70e439d1b223d8b101cd, type: 3}
-  - {fileID: 21300000, guid: 629710012b80e904baeae0c7e8ad4195, type: 3}
-  - {fileID: 21300000, guid: ce0773b13c15b4542969a58f25b001b2, type: 3}
-  - {fileID: 21300000, guid: 9b3bc0e1610de2243905a86ca6fcebfe, type: 3}
-  - {fileID: 21300000, guid: 5e50f932679fd21469121a2d6a1c29da, type: 3}
-  - {fileID: 21300000, guid: 2e0739030fb6320438e5a7017bc2430f, type: 3}
-  - {fileID: 21300000, guid: 0d2be9c3999e49c49a2d398042d503d3, type: 3}
-  - {fileID: 21300000, guid: 5157ea34a12c01e40808337bc8a3ba1a, type: 3}
-  - {fileID: 21300000, guid: 07f65994bfd1dcd4b9de83398241e462, type: 3}
-  - {fileID: 21300000, guid: cbc9eda4f7454a845b97a777c473ca16, type: 3}
-  - {fileID: 21300000, guid: cf1738b51a92f784993dd5db7cc6e859, type: 3}
-  - {fileID: 21300000, guid: a951beb5631d53b48955caedb201faf4, type: 3}
-  - {fileID: 21300000, guid: e279f64659dfc1747b35c3b3f67372e4, type: 3}
-  - {fileID: 21300000, guid: 0ba4f8466e34d424bac6cabf3dbe2516, type: 3}
-  - {fileID: 21300000, guid: 025e215630c1fb441bae7d615680f38a, type: 3}
-  - {fileID: 21300000, guid: 632ce95622b0af447ac84f7dead564f2, type: 3}
-  - {fileID: 21300000, guid: 384225763ce0c244faad15f0ff19f8e2, type: 3}
-  - {fileID: 21300000, guid: 67a86dc670819b649998997b79aa501e, type: 3}
-  - {fileID: 21300000, guid: 079966d65464efd4682a929f8e4dc009, type: 3}
-  - {fileID: 21300000, guid: d1aeaa2756d40e24eb8c996caa6cad7a, type: 3}
-  - {fileID: 21300000, guid: a0e0f1477a655be4cb2ee8b1e2ec8f0b, type: 3}
-  - {fileID: 21300000, guid: 55f302671a107764e8cc9b3a7fd5fa01, type: 3}
-  - {fileID: 21300000, guid: 599d38c70e0abe94a91c265935230b2d, type: 3}
-  - {fileID: 21300000, guid: f9130de75a7171f4db9758b10af55bfd, type: 3}
-  - {fileID: 21300000, guid: a836f80882c7f9e4caaa373912363b79, type: 3}
-  - {fileID: 21300000, guid: 50b278180ff5e89449aee8ab53235038, type: 3}
-  - {fileID: 21300000, guid: b88f2b583b19d9b48847ad4e0209bf67, type: 3}
-  - {fileID: 21300000, guid: af0c6d3968b8b194dbc30c073f51302f, type: 3}
-  - {fileID: 21300000, guid: 3beef67987034de48b8cd944f59c35b3, type: 3}
-  - {fileID: 21300000, guid: 49c022c9674b15c4faf72bbbadfb9ead, type: 3}
-  - {fileID: 21300000, guid: ab62d70af0e48284b836be372b186664, type: 3}
-  - {fileID: 21300000, guid: ac7abd2a4a45cec47a1e63d3ec142ba2, type: 3}
-  - {fileID: 21300000, guid: 8f26ff2a91b29c24f907e9b403cf97c9, type: 3}
-  - {fileID: 21300000, guid: 5860457a18a9ea84394bf780c43476e0, type: 3}
-  - {fileID: 21300000, guid: acc6318b56a3e7c4a9350dd76272acd5, type: 3}
-  - {fileID: 21300000, guid: 5efad1cbbf1e299429faa2a40a5bf214, type: 3}
-  - {fileID: 21300000, guid: 6546e83cd95a8a54aa3f37772fe0475d, type: 3}
-  - {fileID: 21300000, guid: 4a513ffc42f8caa4b843742dd12c3d70, type: 3}
-  - {fileID: 21300000, guid: 498d264d71d1d6a45b936ba0f9acd768, type: 3}
-  - {fileID: 21300000, guid: 7585506db33a9ab41998262750b69e85, type: 3}
-  - {fileID: 21300000, guid: d9d6186d799e26443b73d038b9613934, type: 3}
-  - {fileID: 21300000, guid: 72e9d3cd7dad32d42b74b6a1ae83b556, type: 3}
-  - {fileID: 21300000, guid: 0c19e6be8f0b9bd459181b67aea2e580, type: 3}
-  - {fileID: 21300000, guid: a95c781fa25edb34080af7f09f1c39c7, type: 3}
-  m_PackedSpriteNamesToIndex:
-  - P0 - CutOff
-  - Rock 3
-  - P1 - CutOff
-  - noun_chest_5969385_FFFFFF_@512
-  - noun-stones-3804431-FFFFFF
-  - Flipper
-  - P4
-  - Rock 7
-  - noun_chest_6452965_FFFFFF_@512
-  - P7 - CutOff
-  - Rock 1
-  - noun_chest_6586241_FFFFFF_@512
-  - Rock 8
-  - P3
-  - Monolith_1
-  - P8
-  - Monolith_4
-  - Rock 4
-  - P7
-  - P4 - CutOff
-  - Monolith_5
-  - P5
-  - Rock 5
-  - Rock 6
-  - noun_chest_8426522_FFFFFF_@512
-  - P5 - Cutoff
-  - noun-grasses-7598358-FFFFFF
-  - P2 - CutOff
-  - noun_chest_8216507_FFFFFF_@512
-  - P1
-  - noun_chest_8255442_FFFFFF_@512
-  - noun-stones-1658460-FFFFFF
-  - Rock 2
-  - Monolith_6
-  - P2
-  - Monolith_3
-  - P4 - Icon
-  - Rock debris
-  - noun_chest_7055702_FFFFFF_@512
-  - P6
-  - noun-grass-7984216-FFFFFF
-  - P8 - CutOff
-  - Monolith_2
-  - noun-stones-4016845-FFFFFF
-  - noun-grass-6980873-FFFFFF
   m_RenderDataMap: {}
   m_Tag: SA  - Run
   m_IsVariant: 0
