@@ -71,6 +71,14 @@ namespace Agame
         [Header("Other gameplay data (RESET)")]
         [SerializeField]
         private List<ChestState> chestStates;
+        [SerializeField]
+        private int level;
+        [SerializeField]
+        private double levelProgress;
+        [SerializeField]
+        private int chestLevel;
+        [SerializeField]
+        private double chestLevelProgress;
 
         [Header("Other gameplay data (NO RESET)")]
         public bool showedDemoEnding = false;
