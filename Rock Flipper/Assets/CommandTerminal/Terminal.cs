@@ -333,10 +333,12 @@ namespace CommandTerminal
             {
                 command_text = History.Previous();
                 move_cursor = true;
+                Event.current.Use(); // Prevent falling through to TextField's native cursor-move handling, which crashes the editor (Unity 6000.6.0f1)
             }
             else if (Event.current.Equals(Event.KeyboardEvent("down")))
             {
                 command_text = History.Next();
+                Event.current.Use();
             }
             else if (Event.current.Equals(Event.KeyboardEvent(ToggleHotkey)))
             {
