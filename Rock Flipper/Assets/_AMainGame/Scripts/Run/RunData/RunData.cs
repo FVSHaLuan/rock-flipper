@@ -19,6 +19,10 @@ namespace Agame
         public event Action<int> OnActiveBackgroundIdChanged;
         [field: System.NonSerialized]
         public event Action<int> OnPreferredBackgroundIdChanged;
+        [field: System.NonSerialized]
+        public event Action<int> OnLeveledUp;
+        [field: System.NonSerialized]
+        public event Action<int> OnChestLeveledUp;
 
         [SerializeField]
         private int slotId;
@@ -510,11 +514,18 @@ namespace Agame
             ///
             var gameBalance = Entry.Instance.gameBalance;
             var requiredExp = gameBalance.GetRequiredExpForNextChestLevel(chestLevel);
+            var savedLevel = chestLevel;
             while (chestLevelExp >= requiredExp)
             {
                 chestLevelExp -= requiredExp;
                 chestLevel++;
                 requiredExp = gameBalance.GetRequiredExpForNextChestLevel(chestLevel);
+            }
+
+            ///
+            if (chestLevel > savedLevel)
+            {
+                OnChestLeveledUp?.Invoke(chestLevel - savedLevel);
             }
         }
 
@@ -532,11 +543,18 @@ namespace Agame
             ///
             var gameBalance = Entry.Instance.gameBalance;
             var requiredExp = gameBalance.GetRequiredExpForNextLevel(level);
+            var savedLevel = level;
             while (levelExp >= requiredExp)
             {
                 levelExp -= requiredExp;
                 level++;
                 requiredExp = gameBalance.GetRequiredExpForNextLevel(level);
+            }
+
+            ///
+            if (level > savedLevel)
+            {
+                OnLeveledUp?.Invoke(level - savedLevel);
             }
         }
 
