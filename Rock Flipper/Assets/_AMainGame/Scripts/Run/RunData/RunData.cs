@@ -74,11 +74,11 @@ namespace Agame
         [SerializeField]
         private int level;
         [SerializeField]
-        private double levelProgress;
+        private double levelExp;
         [SerializeField]
         private int chestLevel;
         [SerializeField]
-        private double chestLevelProgress;
+        private double chestLevelExp;
 
         [Header("Other gameplay data (NO RESET)")]
         public bool showedDemoEnding = false;
@@ -180,8 +180,16 @@ namespace Agame
         }
         public float PreferredBackgroundTimeElapsed { get => preferredBackgroundTimeElapsed; set => preferredBackgroundTimeElapsed = value; }
         public int UnlockedBackgroundCount => unlockedBackgroundIds == null ? 1 : unlockedBackgroundIds.Count;
+
         #endregion Background - Properties
 
+        #region Other gameplay data (RESET)
+        public int Level { get => level; }
+        public double LevelExp { get => levelExp; }
+        public int ChestLevel { get => chestLevel; }
+        public double ChestLevelExp { get => chestLevelExp; }
+
+        #endregion Other gameplay data (RESET)
 
         #region Initialization
         public void InitRun(int slotId)
@@ -488,6 +496,50 @@ namespace Agame
         #endregion Stat builder states
 
         #region Other Gameplay Data (RESET)
+        public void AddChestLevelExp(double exp)
+        {
+            ///
+            if (exp < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(exp), "Experience to add cannot be negative.");
+            }
+
+            ///
+            chestLevelExp += exp;
+
+            ///
+            var gameBalance = Entry.Instance.gameBalance;
+            var requiredExp = gameBalance.GetRequiredExpForNextChestLevel(chestLevel);
+            while (chestLevelExp >= requiredExp)
+            {
+                chestLevelExp -= requiredExp;
+                chestLevel++;
+                requiredExp = gameBalance.GetRequiredExpForNextChestLevel(chestLevel);
+            }
+        }
+
+        public void AddLevelExp(double exp)
+        {
+            ///
+            if (exp < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(exp), "Experience to add cannot be negative.");
+            }
+
+            ///
+            levelExp += exp;
+
+            ///
+            var gameBalance = Entry.Instance.gameBalance;
+            var requiredExp = gameBalance.GetRequiredExpForNextLevel(level);
+            while (levelExp >= requiredExp)
+            {
+                levelExp -= requiredExp;
+                level++;
+                requiredExp = gameBalance.GetRequiredExpForNextLevel(level);
+            }
+        }
+
         public int GetChestStateCount()
         {
             if (chestStates == null)
