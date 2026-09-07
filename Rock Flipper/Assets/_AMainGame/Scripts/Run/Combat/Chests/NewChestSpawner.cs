@@ -17,6 +17,7 @@ namespace Agame.Run.Combat
             }
         }
 
+        [ContextMenu("SpawnChest"), PlayModeOnly]
         private void SpawnChest()
         {
             var rarity = ChestUtilities.PickRarity();
