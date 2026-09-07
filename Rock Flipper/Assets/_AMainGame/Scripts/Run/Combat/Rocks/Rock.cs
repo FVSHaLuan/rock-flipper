@@ -59,6 +59,7 @@ namespace Agame.Run.Combat
             if (CurrentHP <= 0)
             {
                 ///
+                AddChestLevelExp();
                 EarnBreakingCash();
 
                 ///
@@ -67,6 +68,7 @@ namespace Agame.Run.Combat
             else
             {
                 ///
+                AddLevelExp();
                 EarnLandingCash();
 
                 ///
@@ -149,6 +151,17 @@ namespace Agame.Run.Combat
         {
             newLifeEffectDelegation?.Invoke();
         }
-    }
 
+        private void AddChestLevelExp()
+        {
+            var stats = BuildStats.GetRockTierBuildStats(rockTier);
+            RunData.AddChestLevelExp(stats.chestLevelExp);
+        }
+
+        private void AddLevelExp()
+        {
+            var stats = BuildStats.GetRockTierBuildStats(rockTier);
+            RunData.AddLevelExp(stats.levelExp);
+        }
+    }
 }
