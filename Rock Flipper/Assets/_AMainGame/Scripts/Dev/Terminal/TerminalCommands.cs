@@ -428,6 +428,20 @@ internal static partial class TerminalCommands
         RunEntry.Instance.RunData.ActiveBackgroundId = backgroundId;
         RunEntry.Instance.combatBackgroundManager.UpdateBackgroundForCurrentCombat();
     }
+
+    [RegisterCommand(Help = "double amount")]
+    private static void AddChestLevelExp(CommandArg[] args)
+    {
+        double amount = args[0].Double;
+        RunEntry.Instance.RunData.AddChestLevelExp(amount);
+    }
+
+    [RegisterCommand(Help = "double amount")]
+    private static void AddLevelExp(CommandArg[] args)
+    {
+        double amount = args[0].Double;
+        RunEntry.Instance.RunData.AddLevelExp(amount);
+    }
     #endregion Combat
 
     //[RegisterCommand(Help = "")]
