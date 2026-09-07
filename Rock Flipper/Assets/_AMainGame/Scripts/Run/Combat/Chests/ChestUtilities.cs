@@ -17,12 +17,13 @@ namespace Agame.Run.Combat
             }
         }
 
+        private static readonly ChestRarity[] allRarities = (ChestRarity[])System.Enum.GetValues(typeof(ChestRarity));
+        private static readonly WeightedChestRarity[] weightedRarities = new WeightedChestRarity[allRarities.Length];
+
         public static ChestRarity PickRarity(IRandomGenerator random = null)
         {
             random ??= UnityRandom.Default;
 
-            var allRarities = (ChestRarity[])System.Enum.GetValues(typeof(ChestRarity));
-            var weightedRarities = new WeightedChestRarity[allRarities.Length];
             for (int i = 0; i < allRarities.Length; i++)
             {
                 var rarity = allRarities[i];
