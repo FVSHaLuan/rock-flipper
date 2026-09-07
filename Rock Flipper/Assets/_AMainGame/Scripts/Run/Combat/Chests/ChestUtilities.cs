@@ -1,0 +1,38 @@
+using UnityEngine;
+using GD;
+
+namespace Agame.Run.Combat
+{
+    public static class ChestUtilities
+    {
+        private readonly struct WeightedChestRarity : IWeighted
+        {
+            public ChestRarity Rarity { get; }
+            public float Weight { get; }
+
+            public WeightedChestRarity(ChestRarity rarity, float weight)
+            {
+                Rarity = rarity;
+                Weight = weight;
+            }
+        }
+
+        public static ChestRarity PickRarity(IRandomGenerator random = null)
+        {
+            random ??= UnityRandom.Default;
+
+            var allRarities = (ChestRarity[])System.Enum.GetValues(typeof(ChestRarity));
+            var weightedRarities = new WeightedChestRarity[allRarities.Length];
+            for (int i = 0; i < allRarities.Length; i++)
+            {
+                var rarity = allRarities[i];
+                var buildStats = RunEntry.Instance.BuildStats.GetChestRarityBuildStats(rarity);
+                weightedRarities[i] = new WeightedChestRarity(rarity, buildStats.weight);
+            }
+
+            return WeightExtensions.PickOneIn(random, weightedRarities).Rarity;
+        }
+
+    }
+
+}

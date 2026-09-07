@@ -19,7 +19,8 @@ namespace Agame.Run.Combat
 
         private void SpawnChest()
         {
-
+            var rarity = ChestUtilities.PickRarity();
+            RunEntry.chestInstanceManager.Spawn(rarity);
         }
     }
 
