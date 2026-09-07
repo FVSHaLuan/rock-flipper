@@ -12492,6 +12492,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c479d4ce3df31c7428f3cf6a54ef584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewChestSpawner
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
 --- !u!1 &1251681730
 GameObject:
   m_ObjectHideFlags: 0

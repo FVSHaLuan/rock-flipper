@@ -5,6 +5,9 @@ namespace Agame.Run.Combat
 {
     public static class ChestUtilities
     {
+        private static readonly ChestRarity[] allRarities = (ChestRarity[])System.Enum.GetValues(typeof(ChestRarity));
+        private static readonly WeightedChestRarity[] weightedRarities = new WeightedChestRarity[allRarities.Length];
+
         private readonly struct WeightedChestRarity : IWeighted
         {
             public ChestRarity Rarity { get; }
@@ -16,9 +19,6 @@ namespace Agame.Run.Combat
                 Weight = weight;
             }
         }
-
-        private static readonly ChestRarity[] allRarities = (ChestRarity[])System.Enum.GetValues(typeof(ChestRarity));
-        private static readonly WeightedChestRarity[] weightedRarities = new WeightedChestRarity[allRarities.Length];
 
         public static ChestRarity PickRarity(IRandomGenerator random = null)
         {
