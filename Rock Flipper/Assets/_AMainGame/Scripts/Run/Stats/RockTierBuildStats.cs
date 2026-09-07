@@ -16,6 +16,8 @@ namespace Agame.Run.Stats
         /// Cooldown time before rock can flip again after landed
         /// </summary>
         public float landingCooldown = 0.5f;
+        public double chestLevelExp = 1;
+        public double levelExp = 1;
     }
 
 }
