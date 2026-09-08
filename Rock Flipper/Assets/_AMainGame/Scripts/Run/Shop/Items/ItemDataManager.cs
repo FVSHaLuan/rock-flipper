@@ -5,7 +5,7 @@ namespace Agame.Run.Shop
 {
     public class ItemDataManager : ScriptableObjectWithInit
     {
-        [SerializeField]
+        [SerializeField, UnityCustomArrayElementHeader]
         private List<ItemData> itemDataList = new List<ItemData>();
     }
 

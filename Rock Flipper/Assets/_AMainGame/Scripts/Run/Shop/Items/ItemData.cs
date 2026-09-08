@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Agame.Run.Shop
 {
     [System.Serializable]
-    public class ItemData
+    public class ItemData : IUnityCustomArrayElementHeader
     {
         [SerializeField]
         private string itemId;
@@ -19,6 +19,11 @@ namespace Agame.Run.Shop
         public string ItemName => itemName;
         public ChestRarity Rarity => rarity;
         public Sprite ItemIcon => itemIcon;
+
+        string IUnityCustomArrayElementHeader.GetHeader(int index)
+        {
+            return $"[{index}] - {rarity} - {itemName} - {itemId}";
+        }
     }
 
 }

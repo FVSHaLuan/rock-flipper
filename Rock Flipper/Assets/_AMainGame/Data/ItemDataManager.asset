@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: ItemDataManager
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.ItemDataManager
   itemDataList:
-  - itemId: 
-    itemName: 
-  - itemId: df
-    itemName: 
+  - itemId: test 1
+    itemName: test 1
+    rarity: 0
+    itemIcon: {fileID: 21300000, guid: b88115b06ed6bc04ea8170321b953515, type: 3}
+  - itemId: test 2
+    itemName: test 2
+    rarity: 0
+    itemIcon: {fileID: 21300000, guid: d0f955cf1d888094dbc2ece808bf50dd, type: 3}
