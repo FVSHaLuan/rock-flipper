@@ -30,10 +30,10 @@ namespace Agame.Run.Shop
         protected override bool Init()
         {
             ///
-            buildAgent = GetComponentInParent<BuildAgent>();
-            costConfig = GetComponentInParent<ICostConfig>();
-            buildValueConfig = GetComponentInParent<IBuildValueConfig>();
-            maxLevelConfig = GetComponentInParent<IMaxLevelConfig>();
+            buildAgent = GetComponentInParent<BuildAgent>(true);
+            costConfig = GetComponentInParent<ICostConfig>(true);
+            buildValueConfig = GetComponentInParent<IBuildValueConfig>(true);
+            maxLevelConfig = GetComponentInParent<IMaxLevelConfig>(true);
 
             ///
             Assert.IsNotNull(buildAgent, $"StatBuilderButton: {name} is missing BuildAgent component in parent.");
