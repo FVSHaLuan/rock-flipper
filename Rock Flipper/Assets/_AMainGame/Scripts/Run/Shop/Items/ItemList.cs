@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class ItemList : MonoBehaviour
+namespace Agame.Run.Shop
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class ItemList : ExtendedMonoBehaviourRun
     {
-        
+        [SerializeField]
+        private ItemView firstItemView;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
