@@ -28,6 +28,7 @@ namespace Agame.Run
         private BuildStatsObject buildStatsTutorial;
         public ShortHandManager shortHandManager;
         public CombatSoundEffectManager combatSoundEffectManager;
+        public ItemDataManager itemDataManager;
 
         [Header("Combat")]
         public Camera gameplayCamera;

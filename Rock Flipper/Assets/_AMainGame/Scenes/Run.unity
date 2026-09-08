@@ -6199,6 +6199,7 @@ MonoBehaviour:
   buildStatsTutorial: {fileID: 4242221089405626052, guid: 58165344c810ff142932d093de749307, type: 3}
   shortHandManager: {fileID: 11400000, guid: 8c88ddbdb57f1544696ac1bdb378ce99, type: 2}
   combatSoundEffectManager: {fileID: 1865691668}
+  itemDataManager: {fileID: 11400000, guid: b5f82b982b5ffc847891c6a779863c84, type: 2}
   gameplayCamera: {fileID: 1409307606}
   cameraShake: {fileID: 1427185514}
   playfield: {fileID: 881608}
