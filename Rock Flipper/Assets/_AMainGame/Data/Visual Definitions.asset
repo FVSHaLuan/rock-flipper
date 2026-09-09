@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalTextColor: {r: 0.6745098, g: 0.85882354, b: 0.93333334, a: 1}
   notEnoughTextColor: {r: 0.83137256, g: 0.39215687, b: 0.37254903, a: 1}
+  commonRarityForegroundColor: {r: 0.81960785, g: 0.5529412, b: 0.21176471, a: 1}
+  uncommonRarityForegroundColor: {r: 0.9137255, g: 0.89411765, b: 0.8666667, a: 1}
+  rareRarityForegroundColor: {r: 0.94509804, g: 0.7764706, b: 0.12156863, a: 1}
+  epicRarityForegroundColor: {r: 0.9254902, g: 0.24705882, b: 0.3254902, a: 1}
+  uniqueRarityForegroundColor: {r: 1, g: 0.27058825, b: 0.972549, a: 1}
