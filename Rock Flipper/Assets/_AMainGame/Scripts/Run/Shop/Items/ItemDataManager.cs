@@ -1,3 +1,4 @@
+using Agame.Run.Combat;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,38 @@ namespace Agame.Run.Shop
     {
         [SerializeField, UnityCustomArrayElementHeader]
         private List<ItemData> itemDataList = new List<ItemData>();
+
+        [System.NonSerialized]
+        private Dictionary<ChestRarity, List<ItemData>> itemDataDictionary;
+
+        public int AllItemCount => itemDataList.Count;
+
+        protected override void Init()
+        {
+            // fill the dictionary with the item data
+            itemDataDictionary = new Dictionary<ChestRarity, List<ItemData>>();
+            foreach (var itemData in itemDataList)
+            {
+                if (!itemDataDictionary.ContainsKey(itemData.Rarity))
+                {
+                    itemDataDictionary[itemData.Rarity] = new List<ItemData>();
+                }
+                itemDataDictionary[itemData.Rarity].Add(itemData);
+            }
+
+            ///
+            base.Init();
+        }
+
+        public ItemData GetItemByIndex(int index)
+        {
+            if (index < 0 || index >= itemDataList.Count)
+            {
+                Debug.LogError($"Index {index} is out of range for itemDataList.");
+                return null;
+            }
+            return itemDataList[index];
+        }
     }
 
 }
