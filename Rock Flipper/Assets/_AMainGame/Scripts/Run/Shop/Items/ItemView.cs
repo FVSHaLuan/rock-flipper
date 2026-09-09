@@ -75,7 +75,7 @@ namespace Agame.Run.Shop
                 lockedItemIcon.SetActive(false);
                 itemIconImage.gameObject.SetActive(true);
                 levelText.SetText($"Lv. {itemState.level}");
-                var expRequired = gameBalance.GetRequiredExpForNextItemLevel(itemState.level);
+                var expRequired = gameBalance.GetRequiredExpForNextItemLevel(itemData.Rarity, itemState.level);
                 progressBar.SetValue((float)itemState.exp / expRequired);
             }
         }

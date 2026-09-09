@@ -5,7 +5,7 @@ namespace Agame.Balancing
 {
     public partial class GameBalance : ScriptableObjectWithInit
     {
-        public int GetRequiredExpForNextItemLevel(int currentLevel)
+        public int GetRequiredExpForNextItemLevel(ChestRarity chestRarity, int currentLevel)
         {
             if (currentLevel < 0)
             {

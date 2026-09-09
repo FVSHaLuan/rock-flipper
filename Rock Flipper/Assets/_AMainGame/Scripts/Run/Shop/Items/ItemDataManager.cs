@@ -11,6 +11,8 @@ namespace Agame.Run.Shop
 
         [System.NonSerialized]
         private Dictionary<ChestRarity, List<ItemData>> itemDataDictionary;
+        [System.NonSerialized]
+        private Dictionary<string, ItemData> itemDataByIdDictionary;
 
         public int AllItemCount => itemDataList.Count;
 
@@ -39,6 +41,23 @@ namespace Agame.Run.Shop
                 return null;
             }
             return itemDataList[index];
+        }
+
+        public ItemData GetItemById(string itemId)
+        {
+            ///
+            TryInit();
+
+            ///
+            ItemData itemData;
+            if (itemDataByIdDictionary.TryGetValue(itemId, out itemData))
+            {
+                return itemData;
+            }
+            else
+            {
+                throw new System.Exception($"Item with ID {itemId} not found in itemDataByIdDictionary.");
+            }
         }
     }
 

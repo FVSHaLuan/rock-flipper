@@ -505,6 +505,47 @@ namespace Agame
         #endregion Stat builder states
 
         #region Other Gameplay Data (RESET)
+        public void AddItemExp(string itemId, int exp)
+        {
+            var itemState = GetItemState(itemId);
+            var newExp = itemState.exp + exp;
+            var newLevel = itemState.level;
+
+            ///
+            var itemData = RunEntry.Instance.itemDataManager.GetItemById(itemId);
+            var rarity = itemData.Rarity;
+
+            ///
+            var gameBalance = Entry.Instance.gameBalance;
+            var maxLevel = gameBalance.GetItemMaxLevel(rarity);
+            var requiredExp = gameBalance.GetRequiredExpForNextItemLevel(rarity, itemState.level);
+            while (newExp >= requiredExp && newLevel < maxLevel)
+            {
+                newExp -= requiredExp;
+                newLevel++;
+                requiredExp = gameBalance.GetRequiredExpForNextItemLevel(rarity, itemState.level);
+            }
+
+            ///
+            itemState.exp = newExp;
+            itemState.level = newLevel;
+            SetItemState(itemId, itemState);
+        }
+
+        private void SetItemState(string itemId, ItemState itemState)
+        {
+            if (itemStates == null)
+            {
+                itemStates = new ItemStateDictionary();
+            }
+
+            ///
+            itemStates[itemId] = itemState;
+
+            ///
+            OnItemStateChanged?.Invoke(itemState);
+        }
+
         public ItemState GetItemState(string itemId)
         {
             if (itemStates == null
