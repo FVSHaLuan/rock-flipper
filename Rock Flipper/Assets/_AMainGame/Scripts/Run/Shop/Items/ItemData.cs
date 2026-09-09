@@ -7,11 +7,11 @@ namespace Agame.Run.Shop
     public class ItemData : IUnityCustomArrayElementHeader
     {
         [SerializeField]
+        private ChestRarity rarity;
+        [SerializeField]
         private string itemId;
         [SerializeField]
-        private string itemName;
-        [SerializeField]
-        private ChestRarity rarity;
+        private string itemName;        
         [SerializeField]
         private Sprite itemIcon;
 
