@@ -10,7 +10,7 @@ namespace Agame.Run.Shop
         private List<ItemData> itemDataList = new List<ItemData>();
 
         [System.NonSerialized]
-        private Dictionary<ChestRarity, List<ItemData>> itemDataDictionary;
+        private Dictionary<ChestRarity, List<ItemData>> itemDataListByRarityDictionary;
         [System.NonSerialized]
         private Dictionary<string, ItemData> itemDataByIdDictionary;
 
@@ -19,14 +19,26 @@ namespace Agame.Run.Shop
         protected override void Init()
         {
             // fill the dictionary with the item data
-            itemDataDictionary = new Dictionary<ChestRarity, List<ItemData>>();
+            itemDataListByRarityDictionary = new Dictionary<ChestRarity, List<ItemData>>();
+            itemDataByIdDictionary = new Dictionary<string, ItemData>();
             foreach (var itemData in itemDataList)
             {
-                if (!itemDataDictionary.ContainsKey(itemData.Rarity))
+                // Rarity lists
+                if (!itemDataListByRarityDictionary.ContainsKey(itemData.Rarity))
                 {
-                    itemDataDictionary[itemData.Rarity] = new List<ItemData>();
+                    itemDataListByRarityDictionary[itemData.Rarity] = new List<ItemData>();
                 }
-                itemDataDictionary[itemData.Rarity].Add(itemData);
+                itemDataListByRarityDictionary[itemData.Rarity].Add(itemData);
+
+                // ID dictionary
+                if (!itemDataByIdDictionary.ContainsKey(itemData.ItemId))
+                {
+                    itemDataByIdDictionary[itemData.ItemId] = itemData;
+                }
+                else
+                {
+                    Debug.LogError($"Duplicate item ID found: {itemData.ItemId}. Each item ID must be unique.");
+                }
             }
 
             ///

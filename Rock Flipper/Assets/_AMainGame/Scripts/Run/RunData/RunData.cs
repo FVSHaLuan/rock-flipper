@@ -551,7 +551,10 @@ namespace Agame
             if (itemStates == null
                 || !itemStates.ContainsKey(itemId))
             {
-                return new ItemState();
+                return new ItemState()
+                {
+                    itemId = itemId,
+                };
             }
             ///
             return itemStates[itemId];

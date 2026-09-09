@@ -442,6 +442,14 @@ internal static partial class TerminalCommands
         double amount = args[0].Double;
         RunEntry.Instance.RunData.AddLevelExp(amount);
     }
+
+    [RegisterCommand(Help = "string itemId, int amount")]
+    private static void AddItemExp(CommandArg[] args)
+    {
+        string itemId = args[0].String;
+        int amount = args[1].Int;
+        RunEntry.Instance.RunData.AddItemExp(itemId, amount);
+    }
     #endregion Combat
 
     //[RegisterCommand(Help = "")]
