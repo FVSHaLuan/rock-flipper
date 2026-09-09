@@ -15,8 +15,23 @@ namespace Agame.Run.Shop
         private ProgressBar progressBar;
         [SerializeField]
         private GameObject maxedText;
+        [SerializeField]
+        private UnifiedText levelText;
 
         private ItemData itemData;
+
+        protected void Start()
+        {
+            RunData.OnItemStateChanged += RunData_OnItemStateChanged;
+        }
+
+        private void RunData_OnItemStateChanged(ItemState obj)
+        {
+            if (itemData != null && obj.itemId == itemData.ItemId)
+            {
+                ViewItemState();
+            }
+        }
 
         public void SetItemData(ItemData itemData)
         {
@@ -26,6 +41,14 @@ namespace Agame.Run.Shop
             ///
             itemIconImage.sprite = itemData.ItemIcon;
             itemIconImage.color = itemData.Rarity.GetForegroundColor();
+
+            ///
+            ViewItemState();
+        }
+
+        public void ViewItemState()
+        {
+            var itemState = RunData.GetItemState(itemData.ItemId);
         }
     }
 

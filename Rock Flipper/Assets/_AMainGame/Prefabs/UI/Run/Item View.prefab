@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 5480076970951559051}
   - component: {fileID: 3174179302857358943}
   - component: {fileID: 989232007514856166}
+  - component: {fileID: 425921884078203879}
   m_Layer: 5
   m_Name: Level
   m_TagString: Untagged
@@ -227,6 +228,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &425921884078203879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525110097247878633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19259f40394f1d40935e416a69b3313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FHC::UnifiedText
+  uguiText: {fileID: 0}
+  tmp_Text: {fileID: 989232007514856166}
 --- !u!1 &3343900304889551614
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +493,7 @@ MonoBehaviour:
   progressBarWrapper: {fileID: 5396027423121010315}
   progressBar: {fileID: 1494222431615462398}
   maxedText: {fileID: 7424722310289460307}
+  levelText: {fileID: 425921884078203879}
 --- !u!1 &7424722310289460307
 GameObject:
   m_ObjectHideFlags: 0

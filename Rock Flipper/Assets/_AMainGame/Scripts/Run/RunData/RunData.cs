@@ -1,6 +1,7 @@
 using Agame.Run;
 using Agame.Run.Combat;
 using Agame.Run.Dev;
+using Agame.Run.Shop;
 using GD;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace Agame
         public event Action<int> OnLeveledUp;
         [field: System.NonSerialized]
         public event Action<int> OnChestLeveledUp;
+        [field: System.NonSerialized]
+        public event System.Action<ItemState> OnItemStateChanged;
 
         [SerializeField]
         private int slotId;
@@ -83,6 +86,8 @@ namespace Agame
         private int chestLevel;
         [SerializeField]
         private double chestLevelExp;
+        [SerializeField]
+        private ItemStateDictionary itemStates;
 
         [Header("Other gameplay data (NO RESET)")]
         public bool showedDemoEnding = false;
@@ -500,6 +505,17 @@ namespace Agame
         #endregion Stat builder states
 
         #region Other Gameplay Data (RESET)
+        public ItemState GetItemState(string itemId)
+        {
+            if (itemStates == null
+                || !itemStates.ContainsKey(itemId))
+            {
+                return new ItemState();
+            }
+            ///
+            return itemStates[itemId];
+        }
+
         public void AddChestLevelExp(double exp)
         {
             ///
