@@ -11,6 +11,13 @@ namespace Agame
         public Color normalTextColor;
         public Color notEnoughTextColor;
 
+        [Space]
+        public Color commonRarityForegroundColor;
+        public Color uncommonRarityForegroundColor;
+        public Color rareRarityForegroundColor;
+        public Color epicRarityForegroundColor;
+        public Color uniqueRarityForegroundColor;
+
         public static VisualDefinitions Instance
         {
             get

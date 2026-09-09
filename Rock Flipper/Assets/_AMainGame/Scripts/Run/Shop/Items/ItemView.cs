@@ -1,3 +1,4 @@
+using Agame.Run.Combat;
 using GD;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +25,7 @@ namespace Agame.Run.Shop
 
             ///
             itemIconImage.sprite = itemData.ItemIcon;
+            itemIconImage.color = itemData.Rarity.GetForegroundColor();
         }
     }
 
