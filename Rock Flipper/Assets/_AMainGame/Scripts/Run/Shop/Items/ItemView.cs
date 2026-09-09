@@ -10,6 +10,8 @@ namespace Agame.Run.Shop
         [SerializeField]
         private Image itemIconImage;
         [SerializeField]
+        private GameObject lockedItemIcon;
+        [SerializeField]
         private GameObject progressBarWrapper;
         [SerializeField]
         private ProgressBar progressBar;
@@ -49,6 +51,33 @@ namespace Agame.Run.Shop
         public void ViewItemState()
         {
             var itemState = RunData.GetItemState(itemData.ItemId);
+            var maxLevel = gameBalance.GetItemMaxLevel(itemData.Rarity);
+
+            ///
+            if (itemState.level >= maxLevel)
+            {
+                progressBarWrapper.SetActive(false);
+                maxedText.SetActive(true);
+                lockedItemIcon.SetActive(false);
+                itemIconImage.gameObject.SetActive(true);
+            }
+            else if (itemState.level == 0 && itemState.exp == 0)
+            {
+                progressBarWrapper.SetActive(false);
+                maxedText.SetActive(false);
+                lockedItemIcon.SetActive(true);
+                itemIconImage.gameObject.SetActive(false);
+            }
+            else
+            {
+                progressBarWrapper.SetActive(true);
+                maxedText.SetActive(false);
+                lockedItemIcon.SetActive(false);
+                itemIconImage.gameObject.SetActive(true);
+                levelText.SetText($"Lv. {itemState.level}");
+                var expRequired = gameBalance.GetRequiredExpForNextItemLevel(itemState.level);
+                progressBar.SetValue((float)itemState.exp / expRequired);
+            }
         }
     }
 

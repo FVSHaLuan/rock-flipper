@@ -5,7 +5,7 @@ namespace Agame.Balancing
 {
     public partial class GameBalance : ScriptableObjectWithInit
     {
-        public int ItemRequiredExpForNextLevel(int currentLevel)
+        public int GetRequiredExpForNextItemLevel(int currentLevel)
         {
             if (currentLevel < 0)
             {
