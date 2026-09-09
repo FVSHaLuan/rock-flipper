@@ -13,11 +13,163 @@ MonoBehaviour:
   m_Name: ItemDataManager
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.ItemDataManager
   itemDataList:
-  - itemId: test 1
-    itemName: test 1
+  - itemId: item_9496a915
+    itemName: Cursed Fragment
+    rarity: 4
+    itemIcon: {fileID: 0}
+  - itemId: item_824bf716
+    itemName: Radiant Totem
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_01716b10
+    itemName: Radiant Ember
+    rarity: 4
+    itemIcon: {fileID: 0}
+  - itemId: item_9039e744
+    itemName: Shattered Idol
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_9d0c1d5c
+    itemName: Gleaming Shard
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_3833cc65
+    itemName: Rusty Totem
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_46cc1dd1
+    itemName: Shadow Sigil
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_50db479d
+    itemName: Shattered Relic
     rarity: 0
-    itemIcon: {fileID: 21300000, guid: b88115b06ed6bc04ea8170321b953515, type: 3}
-  - itemId: test 2
-    itemName: test 2
+    itemIcon: {fileID: 0}
+  - itemId: item_b0c1be6f
+    itemName: Silent Talisman
+    rarity: 4
+    itemIcon: {fileID: 0}
+  - itemId: item_8dd6fab5
+    itemName: Frozen Core
+    rarity: 4
+    itemIcon: {fileID: 0}
+  - itemId: item_c782655a
+    itemName: Golden Charm
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_4c59862e
+    itemName: Golden Talisman
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_d63144a2
+    itemName: Ancient Crystal
+    rarity: 4
+    itemIcon: {fileID: 0}
+  - itemId: item_f68479d6
+    itemName: Silent Totem
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_c1625b42
+    itemName: Gleaming Relic
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_4e95f8e4
+    itemName: Frozen Totem
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_f4a4e293
+    itemName: Rusty Idol
     rarity: 0
-    itemIcon: {fileID: 21300000, guid: d0f955cf1d888094dbc2ece808bf50dd, type: 3}
+    itemIcon: {fileID: 0}
+  - itemId: item_bd5292f4
+    itemName: Gleaming Talisman
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_a870021b
+    itemName: Glowing Totem
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_1f7f0900
+    itemName: Silent Rune
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_73662a89
+    itemName: Radiant Totem
+    rarity: 0
+    itemIcon: {fileID: 0}
+  - itemId: item_9a425e26
+    itemName: Rusty Rune
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_d8b0c859
+    itemName: Golden Relic
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_7f3b7a5a
+    itemName: Rusty Totem
+    rarity: 0
+    itemIcon: {fileID: 0}
+  - itemId: item_551cfb78
+    itemName: Rusty Core
+    rarity: 0
+    itemIcon: {fileID: 0}
+  - itemId: item_a5969fdb
+    itemName: Golden Fragment
+    rarity: 4
+    itemIcon: {fileID: 0}
+  - itemId: item_998e8250
+    itemName: Frozen Core
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_316a8992
+    itemName: Silent Rune
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_3749e347
+    itemName: Shadow Crystal
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_c5f3d174
+    itemName: Frozen Rune
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_e6a8ef43
+    itemName: Glowing Talisman
+    rarity: 0
+    itemIcon: {fileID: 0}
+  - itemId: item_4401a419
+    itemName: Frozen Talisman
+    rarity: 0
+    itemIcon: {fileID: 0}
+  - itemId: item_263bf582
+    itemName: Frozen Shard
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_9b739dd8
+    itemName: Glowing Totem
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_3839f621
+    itemName: Golden Sigil
+    rarity: 3
+    itemIcon: {fileID: 0}
+  - itemId: item_5fa1ea6c
+    itemName: Glowing Core
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_587c6174
+    itemName: Glowing Talisman
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_c00f946d
+    itemName: Radiant Relic
+    rarity: 2
+    itemIcon: {fileID: 0}
+  - itemId: item_8c2acc78
+    itemName: Shadow Crystal
+    rarity: 1
+    itemIcon: {fileID: 0}
+  - itemId: item_0f03f392
+    itemName: Golden Shard
+    rarity: 4
+    itemIcon: {fileID: 0}
