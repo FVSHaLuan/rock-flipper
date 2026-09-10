@@ -92,7 +92,7 @@ MonoBehaviour:
   - {fileID: 7812190648459034606}
   overlappedNodes: []
   rootNode: {fileID: -7525168557237096116}
-  compactModeWidth: 100
+  compactModeWidth: 140
   rootNodeHeaderColor: {r: 0.8901961, g: 0.29411766, b: 0.3647059, a: 1}
 --- !u!114 &2299989078838170068
 MonoBehaviour:
