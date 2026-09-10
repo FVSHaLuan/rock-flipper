@@ -208,7 +208,7 @@ namespace Agame.Run
         public Transform ToolTipTopLeftAnchor => toolTipTopLeftAnchor;
         public Transform ToolTipBottomLeftAnchor => toolTipBottomLeftAnchor;
         public Vector2Int NodePosition => nodePosition;
-        public CashTiers.CashTier CashTier => graphNode.CashTier;
+        public CashTier CashTier => graphNode.CashTier;
         public bool IsMaxable
         {
             get

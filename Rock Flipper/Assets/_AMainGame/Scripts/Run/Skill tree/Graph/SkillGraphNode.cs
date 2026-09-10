@@ -54,7 +54,7 @@ namespace Agame.Run
 
         [Header("-- Cost")]
         [SerializeField]
-        private CashTiers.CashTier cashTier = CashTiers.CashTier.NotSet;
+        private CashTier cashTier = CashTier.NotSet;
         [OneLineWithHeader]
         public List<CurrencyAmount> costs_1 = new List<CurrencyAmount>() { new CurrencyAmount() { currency = Currency.CASH, amount = 1 } };
         [OneLineWithHeader]
@@ -75,7 +75,7 @@ namespace Agame.Run
         public int DemoLimit { get => demoLimit; }
         public int UnlockingRequirement { get => unlockingRequirement; }
         public int MinParentLevelEach { get => minParentLevelEach; }
-        public CashTiers.CashTier CashTier { get => cashTier; }
+        public CashTier CashTier { get => cashTier; }
         public BuildAgent BuildAgent { get => buildAgent; }
         public double BuildValue { get => buildValue; }
         public int LevelCount => costs_1 == null ? 0 : costs_1.Count;
