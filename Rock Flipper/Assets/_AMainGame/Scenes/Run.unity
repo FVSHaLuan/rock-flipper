@@ -15599,6 +15599,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: prices.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: prices.Array.data[0].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: prices.Array.data[0].c
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: prices.Array.data[1].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: prices.Array.data[2].b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6150891681332403899, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
