@@ -48,10 +48,15 @@ namespace Agame.Run.Stats
         /// This keeps prices from compounding across every past cap increase.
         /// </summary>
         /// <param name="ownedCount">The tier's current total owned rock count.</param>
-        public int GetPriceLevelSinceLastCapIncrease(int ownedCount)
+        public int GetPriceLevelSinceLastCapIncrease(int ownedCount, out int priceSet)
         {
+            ///
+            priceSet = 0;
+
+            ///
             if (maxCountCapBreakpoints == null)
             {
+                priceSet = 0;
                 return ownedCount;
             }
 
@@ -63,6 +68,7 @@ namespace Agame.Run.Stats
                 if (ownedCount >= previousCapBreakpoint)
                 {
                     priceLevel = ownedCount - previousCapBreakpoint;
+                    priceSet++;
                 }
                 else
                 {

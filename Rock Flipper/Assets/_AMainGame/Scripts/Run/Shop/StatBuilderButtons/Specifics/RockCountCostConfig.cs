@@ -1,5 +1,6 @@
 using Agame.Balancing;
 using Agame.Run.Combat;
+using OneLine;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,14 +14,23 @@ namespace Agame.Run.Shop
         [Space]
         [SerializeField]
         private Currency currency;
-        [SerializeField]
+        [SerializeField, OneLineWithHeader]
         private List<TieredExponentialPrice> prices;
 
-        public Currency Currency => throw new System.NotImplementedException();
+        public Currency Currency => currency;
 
         public CurrencyAmount GetNextLevelCost(int currentLevel)
         {
-            throw new System.NotImplementedException();
+            var tierBuildStats = BuildStats.GetRockTierBuildStats(rockTier);
+            var priceLevel = tierBuildStats.GetPriceLevelSinceLastCapIncrease(currentLevel, out var priceSet);
+            if (priceSet >= prices.Count)
+            {
+                throw new System.Exception("Not enough prices config!");
+            }
+
+            ///
+            var amount = prices[priceSet].GetPrice(priceLevel);
+            return new CurrencyAmount(currency, amount);
         }
     }
 }
