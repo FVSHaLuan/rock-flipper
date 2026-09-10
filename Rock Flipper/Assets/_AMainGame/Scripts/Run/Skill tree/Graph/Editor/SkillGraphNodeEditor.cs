@@ -45,6 +45,19 @@ namespace Agame.Run
             }
         }
 
+        public override void OnHeaderGUI()
+        {
+            var skillTree = target.graph as SkillTreeGraph;
+            if ((skillTree != null) && skillTree.RootNode == target)
+            {
+                OnHeaderGUI($"[{target.name}]", skillTree.RootNodeHeaderColor);
+            }
+            else
+            {
+                base.OnHeaderGUI();
+            }
+        }
+
         public override void OnBodyGUI()
         {
             base.OnBodyGUI();

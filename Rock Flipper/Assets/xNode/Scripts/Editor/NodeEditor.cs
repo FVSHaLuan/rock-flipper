@@ -32,7 +32,19 @@ namespace XNodeEditor
 
         public virtual void OnHeaderGUI()
         {
-            GUILayout.Label(target.name, NodeEditorResources.styles.nodeHeader, GUILayout.Height(30));
+            OnHeaderGUI(target.name);
+        }
+
+        protected void OnHeaderGUI(string title)
+        {
+            GUILayout.Label(title, NodeEditorResources.styles.nodeHeader, GUILayout.Height(30));
+        }
+
+        protected void OnHeaderGUI(string title, Color color)
+        {
+            GUIStyle headerStyle = new GUIStyle(NodeEditorResources.styles.nodeHeader);
+            headerStyle.normal.textColor = color;
+            GUILayout.Label(title, headerStyle, GUILayout.Height(30));
         }
 
         /// <summary> Draws standard field editors for all public fields </summary>
