@@ -56,6 +56,8 @@ namespace Agame.Run
 
         [System.NonSerialized]
         private SkillMetaData skillMetaData;
+        [System.NonSerialized]
+        private SkillDescriptor skillDescriptor;
 
         public SkillMetaData SkillMetaData
         {
@@ -77,7 +79,26 @@ namespace Agame.Run
                 return skillMetaData;
             }
         }
+        public SkillDescriptor SkillDescriptor
+        {
+            get
+            {
+#if UNITY_EDITOR
+                if (!Application.isPlaying)
+                {
+                    skillDescriptor = GetSkillDescriptor();
+                }
+#endif
+                ///
+                if (skillDescriptor == null)
+                {
+                    skillDescriptor = GetSkillDescriptor();
+                }
 
+                ///
+                return skillDescriptor;
+            }
+        }
         public bool IsRoot => GetInputValue("isRoot", false);
         public string NodeId => name;
         public SkillNode SkillNodePrototype => skillNodePrototype;
@@ -147,6 +168,17 @@ namespace Agame.Run
 
             ///
             return buildAgent.GetComponent<SkillMetaData>();
+        }
+
+        private SkillDescriptor GetSkillDescriptor()
+        {
+            if (buildAgent == null)
+            {
+                return null;
+            }
+
+            ///
+            return buildAgent.GetComponent<SkillDescriptor>();
         }
 
 #if UNITY_EDITOR
