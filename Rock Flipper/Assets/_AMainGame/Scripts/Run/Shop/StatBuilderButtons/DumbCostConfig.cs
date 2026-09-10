@@ -1,3 +1,4 @@
+using Agame.Balancing;
 using OneLine;
 using UnityEngine;
 
@@ -5,14 +6,15 @@ namespace Agame.Run.Shop
 {
     public class DumbCostConfig : MonoBehaviour, ICostConfig
     {
-        [SerializeField, OneLine]
-        private CurrencyAmount cost;
+        [SerializeField]
+        private Currency currency;
+        [SerializeField, OneLineWithHeader]
+        private TieredExponentialPrice amount;
 
-        public Currency Currency => cost.currency;
-
+        public Currency Currency => currency;
         public CurrencyAmount GetNextLevelCost(int level)
         {
-            return cost;
+            return new CurrencyAmount(currency, amount.GetPrice(level + 1));
         }
     }
 

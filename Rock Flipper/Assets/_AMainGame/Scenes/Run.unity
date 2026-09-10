@@ -11098,9 +11098,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90087315e334bf749820080ebf7a4326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbCostConfig
-  cost:
-    currency: 0
-    amount: 1
+  currency: 0
+  amount:
+    cashTier: 0
+    a: 0
+    b: 0
+    c: 0
 --- !u!114 &948271053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15500,6 +15503,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 743661335}
     m_Modifications:
+    - target: {fileID: 2717975957100003730, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: amount.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2832534764579707891, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
