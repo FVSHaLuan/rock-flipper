@@ -42,14 +42,10 @@ MonoBehaviour:
   output: 0
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
-  icon: {fileID: 21300000, guid: 6546e83cd95a8a54aa3f37772fe0475d, type: 3}
-  subIcon: {fileID: 0}
-  titleGroup: P0 Rock
-  title: Max Count
   unlockingRequirement: 0
   minParentLevelEach: 0
   demoLimit: -1
-  buildAgent: {fileID: 7395222766092842589, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+  buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
   buildValue: 0
   cashTier: 0
   costs_1:
@@ -97,7 +93,7 @@ MonoBehaviour:
   overlappedNodes: []
   rootNode: {fileID: -7525168557237096116}
   compactModeWidth: 100
-  rootHeaderColor: {r: 0, g: 0, b: 0, a: 0}
+  rootNodeHeaderColor: {r: 0.8901961, g: 0.29411766, b: 0.3647059, a: 1}
 --- !u!114 &2299989078838170068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,14 +139,10 @@ MonoBehaviour:
   output: 0
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
-  icon: {fileID: 21300000, guid: 50184a7102e58eb448f3d75482442e9f, type: 3}
-  subIcon: {fileID: 21300000, guid: 3f57658b11e562a43b15560e8f492467, type: 3}
-  titleGroup: P1 Rock
-  title: Max Count
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
-  buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
+  buildAgent: {fileID: 7660703132443407574, guid: 9e9aa8b979e11bd459fbf4f6c11b75a3, type: 3}
   buildValue: 0
   cashTier: 0
   costs_1:
@@ -201,14 +193,10 @@ MonoBehaviour:
   output: 0
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
-  icon: {fileID: 21300000, guid: 50184a7102e58eb448f3d75482442e9f, type: 3}
-  subIcon: {fileID: 0}
-  titleGroup: P1 Rock
-  title: Max Count
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
-  buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
+  buildAgent: {fileID: 7660703132443407574, guid: 9e9aa8b979e11bd459fbf4f6c11b75a3, type: 3}
   buildValue: 0
   cashTier: 0
   costs_1:

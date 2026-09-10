@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 6546e83cd95a8a54aa3f37772fe0475d, type: 3}
+    - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+      propertyPath: title
+      value: Unlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+      propertyPath: subIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f57658b11e562a43b15560e8f492467, type: 3}
+    - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+      propertyPath: titleGroup
+      value: P1 Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 2444191515276537398, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4476014252699719964, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: m_Name
-      value: Unlock Rock Tier II
+      value: Unlock P1 Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7395222766092842589, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: rockTier

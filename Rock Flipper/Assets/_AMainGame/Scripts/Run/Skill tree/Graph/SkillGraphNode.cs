@@ -26,16 +26,6 @@ namespace Agame.Run
         [SerializeField]
         private bool attentionFlag;
 
-        [Space]
-        [SerializeField]
-        private Sprite icon;
-        [SerializeField]
-        private Sprite subIcon;
-        [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
-        private string titleGroup;
-        [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
-        private string title;
-
         [Header("-- Requirements")]
         [SerializeField, FormerlySerializedAs("unlockingRequirement"), Min(0), Tooltip("Total parents' depth required to unlock this node")]
         private int unlockingRequirement = 1;
@@ -64,13 +54,37 @@ namespace Agame.Run
         [SerializeField]
         private List<string> costFormulas = new List<string>();
 
+        [System.NonSerialized]
+        private SkillMetaData skillMetaData;
+
+        public SkillMetaData SkillMetaData
+        {
+            get
+            {
+#if UNITY_EDITOR
+                if (!Application.isPlaying)
+                {
+                    skillMetaData = GetSkillMetaData();
+                }
+#endif
+                ///
+                if (skillMetaData == null)
+                {
+                    skillMetaData = GetSkillMetaData();
+                }
+
+                ///
+                return skillMetaData;
+            }
+        }
+
         public bool IsRoot => GetInputValue("isRoot", false);
         public string NodeId => name;
         public SkillNode SkillNodePrototype => skillNodePrototype;
-        public Sprite Icon { get => icon; }
-        public Sprite SubIcon => subIcon;
-        public string TitleGroup { get => titleGroup; }
-        public string Title { get => title; }
+        public Sprite Icon { get => SkillMetaData?.Icon; }
+        public Sprite SubIcon => SkillMetaData?.SubIcon;
+        public string TitleGroup { get => SkillMetaData?.TitleGroup; }
+        public string Title { get => SkillMetaData?.Title; }
         public bool HasDemoLimit => demoLimit >= 0;
         public int DemoLimit { get => demoLimit; }
         public int UnlockingRequirement { get => unlockingRequirement; }
@@ -122,6 +136,17 @@ namespace Agame.Run
                 cm.amount = System.Math.Round(cm.amount, 0);
                 costList[i] = cm;
             }
+        }
+
+        private SkillMetaData GetSkillMetaData()
+        {
+            if (buildAgent == null)
+            {
+                return null;
+            }
+
+            ///
+            return buildAgent.GetComponent<SkillMetaData>();
         }
 
 #if UNITY_EDITOR
