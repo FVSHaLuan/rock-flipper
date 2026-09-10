@@ -6,7 +6,12 @@ namespace Agame.Run.Stats
     [System.Serializable]
     public class RockTierBuildStats
     {
-        private List<int> maxCountThresholds;
+        /// <summary>
+        /// History of previous <see cref="maxCount"/> values, snapshotted (via <see cref="RecordMaxCountCapBreakpoint"/>)
+        /// right before each cap increase. Used by <see cref="GetPriceLevelSinceLastCapIncrease"/> to reset the
+        /// shop price-scaling level after every cap increase, instead of letting it compound forever.
+        /// </summary>
+        private List<int> maxCountCapBreakpoints;
 
         public bool unlocked = false;
         public int count;
@@ -22,31 +27,42 @@ namespace Agame.Run.Stats
         public double chestLevelExp = 1;
         public double levelExp = 1;
 
-        public void AddNewMaxCountThreshold()
+        /// <summary>
+        /// Snapshots the current <see cref="maxCount"/> as a breakpoint. Call this right before raising
+        /// <see cref="maxCount"/> (e.g. from a skill/shop upgrade) so <see cref="GetPriceLevelSinceLastCapIncrease"/>
+        /// can later reset the price-scaling level relative to this cap.
+        /// </summary>
+        public void RecordMaxCountCapBreakpoint()
         {
-            if (maxCountThresholds == null)
+            if (maxCountCapBreakpoints == null)
             {
-                maxCountThresholds = new List<int>();
+                maxCountCapBreakpoints = new List<int>();
             }
-            maxCountThresholds.Add(maxCount);
+            maxCountCapBreakpoints.Add(maxCount);
         }
 
 
-        public int GetCountPriceLevel(int countLevel)
+        /// <summary>
+        /// Converts an absolute owned-count into the level to feed into the shop's price-scaling formula,
+        /// resetting the count relative to the most recent cap breakpoint the owned count has passed.
+        /// This keeps prices from compounding across every past cap increase.
+        /// </summary>
+        /// <param name="ownedCount">The tier's current total owned rock count.</param>
+        public int GetPriceLevelSinceLastCapIncrease(int ownedCount)
         {
-            if (maxCountThresholds == null)
+            if (maxCountCapBreakpoints == null)
             {
-                return countLevel;
+                return ownedCount;
             }
 
             ///
-            int priceLevel = countLevel;
-            for (int i = 1; i < maxCountThresholds.Count; i++)
+            int priceLevel = ownedCount;
+            for (int i = 1; i < maxCountCapBreakpoints.Count; i++)
             {
-                var previousMaxCountThreshold = maxCountThresholds[i - 1];
-                if (countLevel >= previousMaxCountThreshold)
+                var previousCapBreakpoint = maxCountCapBreakpoints[i - 1];
+                if (ownedCount >= previousCapBreakpoint)
                 {
-                    priceLevel = count - previousMaxCountThreshold;
+                    priceLevel = ownedCount - previousCapBreakpoint;
                 }
                 else
                 {
