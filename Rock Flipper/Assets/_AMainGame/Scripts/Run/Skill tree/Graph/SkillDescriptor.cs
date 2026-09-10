@@ -6,14 +6,23 @@ namespace Agame.Run
     [RequireComponent(typeof(BuildAgent))]
     public class SkillDescriptor : MonoBehaviour
     {
+        [SerializeField, TextArea]
+        private string descriptionFormat;
+        [SerializeField, TextArea]
+        private string extraDescription;
+
+        [Space]
+        [SerializeField]
+        private float buildValueMultiplier;
+
         public string GetDescription(double buildValue)
         {
-            throw new System.NotImplementedException();
+            return string.Format(descriptionFormat, buildValue * buildValueMultiplier);
         }
 
         public string GetExtraDescription()
         {
-            throw new System.NotImplementedException();
+            return extraDescription;
         }
 
     }

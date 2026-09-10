@@ -6,7 +6,6 @@ namespace Agame.Run.Stats.Agents
     [DisallowMultipleComponent]
     public abstract class BuildAgent : ExtendedMonoBehaviourRun
     {
-        public string ExtraDescription => "<ExtraDescription not implemented>";
         public virtual bool RefundCost => false;
 
         public abstract void Apply(int currentLevel, int addingLevel, double buildValuePerLevel);
@@ -15,11 +14,6 @@ namespace Agame.Run.Stats.Agents
         {
             ///
             return true;
-        }
-
-        public string GetDescriptionText(double buildValue)
-        {
-            return "<GetDescriptionText Not Implemented>";
         }
 
         public bool TryToReportAchievement()

@@ -167,13 +167,13 @@ namespace Agame.Run
                     || forceRebuild)
                 {
                     ///
-                    var buildAgent = graphNode.BuildAgent;
+                    var skillDescriptor = graphNode.SkillDescriptor;
                     var buildValue = graphNode.BuildValue;
 
                     ///
-                    if (buildAgent != null)
+                    if (skillDescriptor != null)
                     {
-                        description = buildAgent.GetDescriptionText(buildValue);
+                        description = skillDescriptor.GetDescription(buildValue);
                     }
                     else
                     {
@@ -190,12 +190,12 @@ namespace Agame.Run
             get
             {
                 ///
-                var buildAgent = graphNode.BuildAgent;
+                var skillDescriptor = graphNode.SkillDescriptor;
 
                 ///
-                if (buildAgent != null)
+                if (skillDescriptor != null)
                 {
-                    return buildAgent.ExtraDescription;
+                    return skillDescriptor.GetExtraDescription();
                 }
                 else
                 {
