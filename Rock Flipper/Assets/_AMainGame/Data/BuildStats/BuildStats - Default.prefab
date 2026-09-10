@@ -55,11 +55,13 @@ MonoBehaviour:
     unlocked: 1
     count: 1
     maxCount: 10
-    purity: 0.1
+    purity: 0
     landingCash: 1
-    breakingCash: 5
-    purityCashMultiplier: 3
+    breakingCash: 3
+    purityCashMultiplier: 2
     landingCooldown: 0.5
+    chestLevelExp: 1
+    levelExp: 1
   rock_P1:
     unlocked: 0
     count: 0
@@ -69,6 +71,8 @@ MonoBehaviour:
     breakingCash: 5
     purityCashMultiplier: 3
     landingCooldown: 0.5
+    chestLevelExp: 1
+    levelExp: 1
   rock_P2:
     unlocked: 0
     count: 0
@@ -78,6 +82,8 @@ MonoBehaviour:
     breakingCash: 5
     purityCashMultiplier: 3
     landingCooldown: 0.5
+    chestLevelExp: 1
+    levelExp: 1
   rock_P3:
     unlocked: 0
     count: 0
@@ -87,6 +93,8 @@ MonoBehaviour:
     breakingCash: 5
     purityCashMultiplier: 3
     landingCooldown: 0.5
+    chestLevelExp: 1
+    levelExp: 1
   chest_Common:
     weight: 100
     maxHP: 2
