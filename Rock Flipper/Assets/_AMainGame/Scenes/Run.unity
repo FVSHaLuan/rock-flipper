@@ -11109,7 +11109,7 @@ MonoBehaviour:
   currency: 0
   amount:
     cashTier: 0
-    a: 0
+    a: 100
     b: 0
     c: 0
 --- !u!114 &948271053
@@ -11153,7 +11153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef77942fe7d48b4da3aa329e9dba748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.DumbBuildValueConfig
-  buildValue: 0
+  buildValue: 1
 --- !u!1001 &949723164
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,7 +30,22 @@ namespace Agame.Run.Shop
 
             ///
             var amount = prices[priceSet].GetPrice(priceLevel);
-            return new CurrencyAmount(currency, amount);
+            return new CurrencyAmount(currency, System.Math.Round(amount));
         }
+
+#if UNITY_EDITOR
+        [ContextMenu("Editor_LogSampleCosts")]
+        private void Editor_LogSampleCosts()
+        {
+            for (int i = 0; i < prices.Count; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    var cost = prices[i].GetPrice(j);
+                    Debug.Log($"PriceSet: {i}, PriceLevel: {j}, Cost: {System.Math.Round(cost)}");
+                }
+            }
+        }
+#endif
     }
 }
