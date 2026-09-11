@@ -19,7 +19,6 @@ MonoBehaviour:
   cashTiers: {fileID: 11400000, guid: a186a0c83eb5bea41b21b5e730678353, type: 2}
   currencyConfigManager: {fileID: 11400000, guid: 4fdee545cd6ecb44485239414e84bbf9, type: 2}
   monoSpaceFont: {fileID: 12800000, guid: eb6bcb0e49f77b941873a3826aa745f9, type: 3}
-  languageSourceAsset: {fileID: 11400000, guid: 2afdc8d34051b41489676c33b1e49fb2, type: 2}
   visualDefinitions: {fileID: 11400000, guid: 594b6cfcfb776934d896dd7be678ba5e, type: 2}
   demoHub: {fileID: 11400000, guid: 5789dbd39fef6c741b314d8e10107b92, type: 2}
-  localizedStrings: {fileID: 11400000, guid: 2df95cb6a29f82542a99dfc5a52f64e0, type: 2}
+  localizedStrings: {fileID: 11400000, guid: 32b76629aeabd254b8616ecdb35a605d, type: 2}
