@@ -18,7 +18,7 @@ namespace Agame.Run.Stats
         public int maxCount = 10;
         public float purity = 0.1f;
         public double landingCash = 1;
-        public double breakingCash = 5;
+        public double breakingCashMultiplier = 2;
         public float purityCashMultiplier = 3;
         /// <summary>
         /// Cooldown time before rock can flip again after landed

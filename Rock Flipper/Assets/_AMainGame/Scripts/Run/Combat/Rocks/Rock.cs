@@ -60,7 +60,7 @@ namespace Agame.Run.Combat
             {
                 ///
                 AddChestLevelExp();
-                EarnBreakingCash();
+                EarnCash(true);
 
                 ///
                 BreakCurrentRockAndSpawnNewOne();
@@ -69,7 +69,7 @@ namespace Agame.Run.Combat
             {
                 ///
                 AddLevelExp();
-                EarnLandingCash();
+                EarnCash(false);
 
                 ///
                 UpdateLandingCooldown();
@@ -101,17 +101,10 @@ namespace Agame.Run.Combat
             }
         }
 
-        private void EarnLandingCash()
+        private void EarnCash(bool isBreaking)
         {
             var stats = BuildStats.GetRockTierBuildStats(rockTier);
-            var amount = stats.landingCash * (isPure ? stats.purityCashMultiplier : 1);
-            RunData.AddCurrency(Currency.CASH, amount);
-        }
-
-        private void EarnBreakingCash()
-        {
-            var stats = BuildStats.GetRockTierBuildStats(rockTier);
-            var amount = stats.breakingCash * (isPure ? stats.purityCashMultiplier : 1);
+            var amount = stats.landingCash * (isBreaking ? stats.breakingCashMultiplier : 1) * (isPure ? stats.purityCashMultiplier : 1);
             RunData.AddCurrency(Currency.CASH, amount);
         }
 
