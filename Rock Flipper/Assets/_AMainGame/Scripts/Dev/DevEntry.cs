@@ -4,6 +4,7 @@ using UnityEngine;
 using Agame.Run;
 using Agame.Balancing;
 using Agame.Demo;
+using Agame.Localization;
 
 namespace Agame.Dev
 {
@@ -24,6 +25,7 @@ namespace Agame.Dev
         public Font monoSpaceFont;
         public VisualDefinitions visualDefinitions;
         public DemoHub demoHub;
+        public LocalizedStrings localizedStrings;
 
 #if UNITY_EDITOR
         [NonSerialized]

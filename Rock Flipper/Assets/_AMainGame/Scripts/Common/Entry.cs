@@ -13,6 +13,8 @@ using Agame.Steamworks;
 using Agame.GamePlatform;
 using Agame.Marketing;
 using Agame.Run;
+using BT.Localization;
+using Agame.Localization;
 
 public partial class Entry : MonoBehaviour
 {
@@ -76,6 +78,8 @@ public partial class Entry : MonoBehaviour
     public PlayerDataSaver playerDataSaver;
     public GameSettingObject gameSettingObject;
     public CompatManager compatManager;
+    public LocalizedStrings localizedStrings;
+    public SpecificLocalizedStrings specificLocalizedStrings;
 
     [Header("1. Time")]
     public TimeScaleManager timeScaleManager;
