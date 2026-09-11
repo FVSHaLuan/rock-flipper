@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 0}
-  subIcon: {fileID: 0}
+  subIcon: {fileID: 21300000, guid: 830ff96c674279845ab42126140476b6, type: 3}
   titleGroup: 
   localizedTitleGroup:
     m_TableReference:
