@@ -66,7 +66,28 @@ MonoBehaviour:
   icon: {fileID: 0}
   subIcon: {fileID: 0}
   titleGroup: 
+  localizedTitleGroup:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 7059745456128
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   title: 
+  localizedTitle:
+    m_TableReference:
+      m_TableCollectionName: GUID:7da8669fdb0c01b47a5b9e567d12a3f1
+    m_TableEntryReference:
+      m_KeyId: 14470836574404608
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &3274946891252261634
 MonoBehaviour:
   m_ObjectHideFlags: 0

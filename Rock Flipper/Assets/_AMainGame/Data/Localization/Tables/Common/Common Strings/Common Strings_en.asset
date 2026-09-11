@@ -32,15 +32,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: You may need to restart the game if it won't fully change to the
-      new language.
+    m_Localized: You may need to restart the game if it won't fully change to the new language.
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
     m_Localized: 'Languages other than English have been translated using AI.
 
-      Some
-      text may contain errors or sound less natural.'
+      Some text may contain errors or sound less natural.'
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -392,6 +390,10 @@ MonoBehaviour:
       - rid: 323497456254058608
   - m_Id: 3274599526469632
     m_Localized: Won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Unlock
     m_Metadata:
       m_Items: []
   references:

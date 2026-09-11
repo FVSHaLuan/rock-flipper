@@ -13,16 +13,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 51dda355c141ca04a8eae9d12e6a915f, type: 3}
     - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
-      propertyPath: title
-      value: Unlock
-      objectReference: {fileID: 0}
-    - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: subIcon
       value: 
       objectReference: {fileID: 21300000, guid: fd6a72174ce7e8b419e5ca6464796d54, type: 3}
     - target: {fileID: 937801006365747645, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
-      propertyPath: titleGroup
-      value: P2 Rock
+      propertyPath: localizedTitleGroup.m_TableEntryReference.m_KeyId
+      value: 7173725667328
       objectReference: {fileID: 0}
     - target: {fileID: 2444191515276537398, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: m_LocalPosition.x
