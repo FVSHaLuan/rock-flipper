@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Localization;
 
-namespace BT.Localization
+namespace Agame.Localization
 {
     public class SpecificLocalizedStrings : ScriptableObjectWithInit
     {

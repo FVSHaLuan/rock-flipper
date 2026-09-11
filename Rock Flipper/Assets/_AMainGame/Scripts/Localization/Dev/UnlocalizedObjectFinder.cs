@@ -6,7 +6,7 @@ using OneLine;
 using UnityEditor;
 #endif
 
-namespace BT.Localization.Dev
+namespace Agame.Localization.Dev
 {
     public class UnlocalizedObjectFinder : ScriptableObject
     {

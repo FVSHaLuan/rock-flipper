@@ -13,7 +13,6 @@ using Agame.Steamworks;
 using Agame.GamePlatform;
 using Agame.Marketing;
 using Agame.Run;
-using BT.Localization;
 using Agame.Localization;
 
 public partial class Entry : MonoBehaviour

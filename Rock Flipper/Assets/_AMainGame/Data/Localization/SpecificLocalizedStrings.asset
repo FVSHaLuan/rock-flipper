@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1021da2e14415144b5af3f8bf1182c8, type: 3}
   m_Name: SpecificLocalizedStrings
-  m_EditorClassIdentifier: Assembly-CSharp::BT.Localization.SpecificLocalizedStrings
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Localization.SpecificLocalizedStrings
   freeTag:
     m_TableReference:
       m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
