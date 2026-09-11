@@ -6,7 +6,7 @@ namespace Agame.Run
 {
     [DisallowMultipleComponent]
     public partial class SkillTree : ExtendedMonoBehaviourRun
-    {        
+    {
         [SerializeField]
         private SkillTreeGraph mainSkillTreeGraph;
         [SerializeField]
@@ -268,7 +268,7 @@ namespace Agame.Run
 
         public void TryToTriggerMaxedSkillTreeAchievement()
         {
-            if (maxableSkills.Count == 0)
+            if (maxableSkills.Count == 0 && maxedSkillTreeAchievementConfig.IsValid())
             {
                 entry.achievementReporter.Report(maxedSkillTreeAchievementConfig);
             }
