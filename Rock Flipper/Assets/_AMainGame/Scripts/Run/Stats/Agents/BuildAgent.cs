@@ -15,17 +15,5 @@ namespace Agame.Run.Stats.Agents
             ///
             return true;
         }
-
-        public bool TryToReportAchievement()
-        {
-            Debug.LogError("TryToReportAchievement not implemented!");
-            return false;
-        }
-
-        public bool TryToReportMaxedAchievement()
-        {
-            Debug.LogError("TryToReportMaxedAchievement not implemented!");
-            return false;
-        }
     }
 }

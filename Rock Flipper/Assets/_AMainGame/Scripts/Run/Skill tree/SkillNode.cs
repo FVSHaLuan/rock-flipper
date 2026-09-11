@@ -634,10 +634,11 @@ namespace Agame.Run
             entry.playerDataSaver.SetSaveThisFrame();
 
             ///
-            buildAgent.TryToReportAchievement();
+            // buildAgent.TryToReportAchievement();
+            Debug.LogWarning("TryToReportAchievement for unlocking skill");
             if (IsMaxed)
             {
-                buildAgent.TryToReportMaxedAchievement();
+                Debug.LogWarning("TryToReportAchievement for maxing skill");
             }
         }
 
