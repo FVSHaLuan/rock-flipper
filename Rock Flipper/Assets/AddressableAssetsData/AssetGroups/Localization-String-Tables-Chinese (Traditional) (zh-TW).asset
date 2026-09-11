@@ -15,6 +15,18 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Chinese (Traditional) (zh-TW)
   m_GUID: b4153931aaeac624b9ae07bd9f28d3e3
   m_SerializeEntries:
+  - m_GUID: 2347127c1d1606a4faa164b23f579924
+    m_Address: Rock Flipper Skill Strings_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5753811fe8be543418ff14e648400544
+    m_Address: Rock Flipper Strings_zh-TW
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f724e3e706247b4cb73d048f23aabd0
     m_Address: Common Strings_zh-TW
     m_ReadOnly: 1

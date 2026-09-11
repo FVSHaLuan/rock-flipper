@@ -27,6 +27,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-pl
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b05e574d1787f6d49b6a7a4a429c1c68
+    m_Address: Rock Flipper Skill Strings_pl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pl
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6ec23054dcc4674fa9fb1ca07fa5c30
+    m_Address: Rock Flipper Strings_pl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pl
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7ea615a24b56fc842a14450a7782461b, type: 2}
   m_SchemaSet:

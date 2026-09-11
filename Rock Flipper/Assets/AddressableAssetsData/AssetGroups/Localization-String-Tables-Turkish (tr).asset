@@ -21,6 +21,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-tr
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27e43b6f002e26645b6d74de693ddf30
+    m_Address: Rock Flipper Skill Strings_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84581f227d0a9c24989377a381345305
+    m_Address: Rock Flipper Strings_tr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-tr
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dd6f050694c9d5646bd3c772340f89a5
     m_Address: Test Strings_tr
     m_ReadOnly: 1

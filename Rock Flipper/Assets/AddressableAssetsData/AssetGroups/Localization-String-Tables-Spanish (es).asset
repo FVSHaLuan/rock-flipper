@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Spanish (es)
   m_GUID: db0cb6d5de047264784e6af0ae70cfac
   m_SerializeEntries:
+  - m_GUID: 2c6ebc7295b08ca45938349e5d3b29ac
+    m_Address: Rock Flipper Strings_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 761a99f5bd1a83449a1e5f0cef459511
     m_Address: Test Strings_es
     m_ReadOnly: 1
@@ -23,6 +29,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a60f9498f9c6ae14b84e0f928e92e513
     m_Address: Common Strings_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff9d56bcccb1bf946abe8f1134249649
+    m_Address: Rock Flipper Skill Strings_es
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es

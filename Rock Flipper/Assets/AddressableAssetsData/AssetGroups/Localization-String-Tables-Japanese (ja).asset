@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Japanese (ja)
   m_GUID: ca63b33e79873914c8edcfec46892ff5
   m_SerializeEntries:
+  - m_GUID: 42d3fa3a11c8fac47b22591f878fadc2
+    m_Address: Rock Flipper Strings_ja
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 464197143f923ee4cb9ff46ef0c113bd
     m_Address: Test Strings_ja
     m_ReadOnly: 1
@@ -23,6 +29,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4e4c803a95689cd45b873ea4fcec60a8
     m_Address: Common Strings_ja
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d80989ea8f656ac47be03168ae0a4c44
+    m_Address: Rock Flipper Skill Strings_ja
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ja

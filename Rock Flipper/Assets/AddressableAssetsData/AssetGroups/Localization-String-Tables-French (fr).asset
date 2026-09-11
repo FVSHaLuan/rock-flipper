@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-French (fr)
   m_GUID: 1cb065762cd0eae4f9a1fd4ab94e0e40
   m_SerializeEntries:
+  - m_GUID: 089aa605126d11148b3c1d14d0d51be4
+    m_Address: Rock Flipper Strings_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 736f36c4bb2b45b47a821905cdfb4787
     m_Address: Common Strings_fr
     m_ReadOnly: 1
@@ -23,6 +29,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c1ba1662c39025f4f9e0336321dfbb5c
     m_Address: Test Strings_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca61b7c6076e90043a8977d176b367e3
+    m_Address: Rock Flipper Skill Strings_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr

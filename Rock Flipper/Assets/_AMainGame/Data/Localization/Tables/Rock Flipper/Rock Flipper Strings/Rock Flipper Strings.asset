@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Rock Flipper Strings
+  m_EditorClassIdentifier: Unity.Localization.Editor::UnityEditor.Localization.StringTableCollection
+  m_SharedTableData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 51e8031837dd564488b5bc9070bd9abb, type: 2}
+  - {fileID: 11400000, guid: 866cffcb83c2dc04992ac3727e032207, type: 2}
+  - {fileID: 11400000, guid: 9df6dd803e84e79419327a861871cde7, type: 2}
+  - {fileID: 11400000, guid: c0b0bab06642fd14482fb199f06a3cd6, type: 2}
+  - {fileID: 11400000, guid: 09309bf1aa87eaa4891d8b0cc7e9645b, type: 2}
+  - {fileID: 11400000, guid: 42d3fa3a11c8fac47b22591f878fadc2, type: 2}
+  - {fileID: 11400000, guid: 8ef0475f1394a5c4a855958b60a37a99, type: 2}
+  - {fileID: 11400000, guid: 2c6ebc7295b08ca45938349e5d3b29ac, type: 2}
+  - {fileID: 11400000, guid: 089aa605126d11148b3c1d14d0d51be4, type: 2}
+  - {fileID: 11400000, guid: 84581f227d0a9c24989377a381345305, type: 2}
+  - {fileID: 11400000, guid: 5753811fe8be543418ff14e648400544, type: 2}
+  - {fileID: 11400000, guid: d6ec23054dcc4674fa9fb1ca07fa5c30, type: 2}
+  - {fileID: 11400000, guid: 97c3df637523ff34595e5c53e21e83c2, type: 2}
+  - {fileID: 11400000, guid: 50aa6c71514506f44a5b2daf5bda069d, type: 2}
+  - {fileID: 11400000, guid: e9b15faf87eb0954bbc48b1c30ae6cf2, type: 2}
+  - {fileID: 11400000, guid: 9911b61eb1fabdf44826fa8dbfe78eb4, type: 2}
+  - {fileID: 11400000, guid: 273be9326975bce40b050c93a555256c, type: 2}
+  m_Extensions: []
+  m_Group: Rock Flipper
+  references:
+    version: 2
+    RefIds: []

@@ -15,8 +15,20 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Vietnamese (vi)
   m_GUID: 1986e2e9037b518498349d5941e627c1
   m_SerializeEntries:
+  - m_GUID: 273be9326975bce40b050c93a555256c
+    m_Address: Rock Flipper Strings_vi
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-vi
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 36f6d66a12e95834086747ac71d8bd79
     m_Address: Test Strings_vi
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-vi
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b7c0bec5f29f8a4884793eb0dfea9cc
+    m_Address: Rock Flipper Skill Strings_vi
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-vi

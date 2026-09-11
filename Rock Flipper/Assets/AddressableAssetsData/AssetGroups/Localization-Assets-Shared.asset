@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_Address: Assets/_AMainGame/Data/Localization/Tables/Rock Flipper/Rock Flipper Strings/Rock Flipper Strings Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7da8669fdb0c01b47a5b9e567d12a3f1
     m_Address: Assets/_AMainGame/Data/Localization/Tables/Common/Common Strings/Common Strings Shared Data.asset
     m_ReadOnly: 1
@@ -27,6 +32,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e8641deda4657724dad79e857e19cbe9
     m_Address: Assets/_AMainGame/Data/Localization/Tables/Common/Test Strings/Test Strings Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed5a504acb0168d4fa400bc0317dac45
+    m_Address: Assets/_AMainGame/Data/Localization/Tables/Rock Flipper/Rock Flipper Skill Strings/Rock Flipper Skill Strings Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
