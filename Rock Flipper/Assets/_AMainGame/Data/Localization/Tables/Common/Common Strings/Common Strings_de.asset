@@ -1,0 +1,400 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Common Strings_de
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 7da8669fdb0c01b47a5b9e567d12a3f1, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 323497291381473717
+  m_TableData:
+  - m_Id: 2004501839872
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186187592019968
+    m_Localized: Deutsch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500106160287744
+    m_Localized: Steam Deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514730469404672
+    m_Localized: Spielzeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156459602587648
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156586840993792
+    m_Localized: Beenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304893903024128
+    m_Localized: "Alle Sprachen au\xDFer Englisch wurden mit KI \xFCbersetzt.\nEinige
+      Texte k\xF6nnen Fehler enthalten oder unnat\xFCrlich klingen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304941520957440
+    m_Localized: "M\xF6glicherweise musst du das Spiel neu starten, wenn die Sprache
+      nicht vollst\xE4ndig wechselt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357107782692864
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357156944130048
+    m_Localized: Einstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357334509989888
+    m_Localized: Feedback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357913294581760
+    m_Localized: Folge mir auf Steam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501445913260032
+    m_Localized: "M\xF6chtest du wirklich beenden?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512897407561728
+    m_Localized: Wird abgespielt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514236262952960
+    m_Localized: "Speicherplatz w\xE4hlen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514308245598208
+    m_Localized: Nicht kompatibel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514586902573056
+    m_Localized: Slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514966227038208
+    m_Localized: "F\xE4higkeitspunkte"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 515050083758080
+    m_Localized: Boss-Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516184986923008
+    m_Localized: Keine Daten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516414255968256
+    m_Localized: "M\xF6chtest du diesen Speicherplatz wirklich l\xF6schen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521668297011200
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654707427033088
+    m_Localized: _Dumb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670834953732096
+    m_Localized: Du hast kein(e) {stuff}
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473717
+  - m_Id: 627024978690048
+    m_Localized: Maximal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647029921333248
+    m_Localized: Wird geladen...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656417843232768
+    m_Localized: Ein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656650740350976
+    m_Localized: Aus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708993192214528
+    m_Localized: Stufe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708998388957184
+    m_Localized: Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709138520653824
+    m_Localized: Geschwindigkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709163434819584
+    m_Localized: Klick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714832720347136
+    m_Localized: Kaufen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 716855255678976
+    m_Localized: Ladung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952955341553664
+    m_Localized: '{0}{1}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473717
+  - m_Id: 1341533422796800
+    m_Localized: Weltraum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1584504533598208
+    m_Localized: ({0})
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473717
+  - m_Id: 1582340725719040
+    m_Localized: '{0}{1}{2}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473717
+  - m_Id: 887550585520128
+    m_Localized: Perks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 896385895284736
+    m_Localized: Nicht freigeschaltet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 948415242354688
+    m_Localized: "F\xE4higkeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 950167819698176
+    m_Localized: Prestige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953394493571072
+    m_Localized: Multiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953447144669184
+    m_Localized: Exponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 995359390089216
+    m_Localized: Geld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997772515786752
+    m_Localized: Anzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1020049747787776
+    m_Localized: Aktuell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096380716072960
+    m_Localized: Ausgeben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231290034470912
+    m_Localized: Final
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231838494244864
+    m_Localized: Besiege alle Bosse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333564345860096
+    m_Localized: Los!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336217293471744
+    m_Localized: System
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336554939138048
+    m_Localized: Fortsetzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336692470366208
+    m_Localized: Titelbildschirm...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340433680482304
+    m_Localized: Holen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340522348068864
+    m_Localized: Nutzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340900959502336
+    m_Localized: Standard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341061353881600
+    m_Localized: Rock Crusher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341312127123456
+    m_Localized: Tier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341432210046976
+    m_Localized: Essen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341509406212096
+    m_Localized: Fantasy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1361785338642432
+    m_Localized: Nur lesen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370296898469888
+    m_Localized: Ausgegeben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370667683332096
+    m_Localized: "Verf\xFCgbar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1372195852828672
+    m_Localized: Stufe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433818122600448
+    m_Localized: Kosten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1452970635870208
+    m_Localized: Anwenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453112847941632
+    m_Localized: Erstatten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1585708152045568
+    m_Localized: Deine Daten wurden gespeichert!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631136356679680
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635077985972224
+    m_Localized: "Gesamtlautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635742611189760
+    m_Localized: "Musiklautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1636319181189120
+    m_Localized: "Effektlautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778153123524608
+    m_Localized: "UI-Lautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778314893635584
+    m_Localized: Gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778737583009792
+    m_Localized: Bildschirm-Wackeleffekt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778884614336512
+    m_Localized: Grafik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779246696017920
+    m_Localized: Ziel-Bildrate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779403512655872
+    m_Localized: Fenstermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779626494439424
+    m_Localized: "Aufl\xF6sung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779845445496832
+    m_Localized: "Die neue Aufl\xF6sung wird \xFCbernommen, wenn du dieses Einstellungsfenster
+      schlie\xDFt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782616336936960
+    m_Localized: Empfohlen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789794439442432
+    m_Localized: Wird beendet...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809545551196160
+    m_Localized: Abklingleiste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1823941297356800
+    m_Localized: "M\xF6chtest du wirklich zum Titelbildschirm zur\xFCckkehren?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948955904065536
+    m_Localized: Endboss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2949359442247680
+    m_Localized: Boss {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272637795962880
+    m_Localized: "K\xE4mpfen!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274314640953344
+    m_Localized: Verloren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274599526469632
+    m_Localized: Gewonnen
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 323497291381473717
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 670834953732096
+        - id: 952955341553664
+        - id: 1584504533598208
+        - id: 1582340725719040

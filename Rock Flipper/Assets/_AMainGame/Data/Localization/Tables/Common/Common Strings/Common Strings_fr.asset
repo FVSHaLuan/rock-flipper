@@ -1,0 +1,400 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Common Strings_fr
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 7da8669fdb0c01b47a5b9e567d12a3f1, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 323497291381473721
+  m_TableData:
+  - m_Id: 2004501839872
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186187592019968
+    m_Localized: "Fran\xE7ais"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500106160287744
+    m_Localized: Steam Deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514730469404672
+    m_Localized: Temps de jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156459602587648
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156586840993792
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304893903024128
+    m_Localized: "Les langues autres que l'anglais ont \xE9t\xE9 traduites par IA.\nCertains
+      textes peuvent contenir des erreurs ou sembler peu naturels."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304941520957440
+    m_Localized: "Il se peut que vous deviez red\xE9marrer le jeu si la langue ne
+      change pas compl\xE8tement."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357107782692864
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357156944130048
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357334509989888
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357913294581760
+    m_Localized: Suivez-moi sur Steam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501445913260032
+    m_Localized: Voulez-vous vraiment quitter ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512897407561728
+    m_Localized: Lecture en cours
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514236262952960
+    m_Localized: "S\xE9lectionner un emplacement"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514308245598208
+    m_Localized: Incompatible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514586902573056
+    m_Localized: Emplacement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514966227038208
+    m_Localized: "Points de comp\xE9tence"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 515050083758080
+    m_Localized: Niveau de boss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516184986923008
+    m_Localized: "Aucune donn\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516414255968256
+    m_Localized: Voulez-vous vraiment supprimer cet emplacement de sauvegarde ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521668297011200
+    m_Localized: "\xC9tape"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654707427033088
+    m_Localized: _Dumb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670834953732096
+    m_Localized: Vous n'avez pas de {stuff}
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473721
+  - m_Id: 627024978690048
+    m_Localized: Maximum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647029921333248
+    m_Localized: Chargement...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656417843232768
+    m_Localized: "Activ\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656650740350976
+    m_Localized: "D\xE9sactiv\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708993192214528
+    m_Localized: Niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708998388957184
+    m_Localized: "D\xE9g\xE2ts"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709138520653824
+    m_Localized: Vitesse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709163434819584
+    m_Localized: Clic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714832720347136
+    m_Localized: Acheter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 716855255678976
+    m_Localized: Charge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952955341553664
+    m_Localized: '{0}{1}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473721
+  - m_Id: 1341533422796800
+    m_Localized: Espace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1584504533598208
+    m_Localized: ({0})
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473721
+  - m_Id: 1582340725719040
+    m_Localized: '{0}{1}{2}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473721
+  - m_Id: 887550585520128
+    m_Localized: Bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 896385895284736
+    m_Localized: "Non d\xE9bloqu\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 948415242354688
+    m_Localized: "Comp\xE9tences"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 950167819698176
+    m_Localized: Prestige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953394493571072
+    m_Localized: Multiplicateur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953447144669184
+    m_Localized: Exposant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 995359390089216
+    m_Localized: Argent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997772515786752
+    m_Localized: Nombre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1020049747787776
+    m_Localized: Actuel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096380716072960
+    m_Localized: "D\xE9penser"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231290034470912
+    m_Localized: Final
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231838494244864
+    m_Localized: Vaincre tous les Boss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333564345860096
+    m_Localized: Valider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336217293471744
+    m_Localized: "Syst\xE8me"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336554939138048
+    m_Localized: Reprendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336692470366208
+    m_Localized: "\xC9cran titre..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340433680482304
+    m_Localized: Obtenir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340522348068864
+    m_Localized: Utiliser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340900959502336
+    m_Localized: "D\xE9faut"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341061353881600
+    m_Localized: Rock Crusher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341312127123456
+    m_Localized: Animal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341432210046976
+    m_Localized: Nourriture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341509406212096
+    m_Localized: Fantaisie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1361785338642432
+    m_Localized: Lecture seule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370296898469888
+    m_Localized: "D\xE9pens\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370667683332096
+    m_Localized: Disponible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1372195852828672
+    m_Localized: Palier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433818122600448
+    m_Localized: "Co\xFBt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1452970635870208
+    m_Localized: Appliquer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453112847941632
+    m_Localized: Rembourser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1585708152045568
+    m_Localized: "Vos donn\xE9es ont \xE9t\xE9 enregistr\xE9es !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631136356679680
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635077985972224
+    m_Localized: "Volume g\xE9n\xE9ral"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635742611189760
+    m_Localized: Volume de la musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1636319181189120
+    m_Localized: Volume des effets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778153123524608
+    m_Localized: Volume de l'interface
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778314893635584
+    m_Localized: Gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778737583009792
+    m_Localized: "Effet de tremblement d'\xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778884614336512
+    m_Localized: Graphismes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779246696017920
+    m_Localized: FPS cible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779403512655872
+    m_Localized: "Mode fen\xEAtr\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779626494439424
+    m_Localized: "R\xE9solution"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779845445496832
+    m_Localized: "La nouvelle r\xE9solution sera appliqu\xE9e \xE0 la fermeture de
+      cet \xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782616336936960
+    m_Localized: "Recommand\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789794439442432
+    m_Localized: Fermeture...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809545551196160
+    m_Localized: "Barre de d\xE9lai"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1823941297356800
+    m_Localized: "Voulez-vous vraiment retourner \xE0 l'\xE9cran titre ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948955904065536
+    m_Localized: Boss Final
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2949359442247680
+    m_Localized: Boss {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272637795962880
+    m_Localized: Combattre !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274314640953344
+    m_Localized: "D\xE9faite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274599526469632
+    m_Localized: Victoire
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 323497291381473721
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 670834953732096
+        - id: 952955341553664
+        - id: 1584504533598208
+        - id: 1582340725719040

@@ -1,0 +1,399 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Common Strings_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 7da8669fdb0c01b47a5b9e567d12a3f1, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 323497291381473720
+  m_TableData:
+  - m_Id: 2004501839872
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186187592019968
+    m_Localized: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500106160287744
+    m_Localized: Steam Deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514730469404672
+    m_Localized: Tiempo de juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156459602587648
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156586840993792
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304893903024128
+    m_Localized: "Los idiomas distintos del ingl\xE9s se tradujeron con IA.\nAlg\xFAn
+      texto puede contener errores o sonar poco natural."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304941520957440
+    m_Localized: Puede que debas reiniciar el juego si el idioma no cambia por completo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357107782692864
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357156944130048
+    m_Localized: Ajustes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357334509989888
+    m_Localized: Comentarios
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357913294581760
+    m_Localized: "S\xEDgueme en Steam"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501445913260032
+    m_Localized: "\xBFSeguro que quieres salir?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512897407561728
+    m_Localized: Reproduciendo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514236262952960
+    m_Localized: Seleccionar ranura de guardado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514308245598208
+    m_Localized: No compatible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514586902573056
+    m_Localized: Ranura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514966227038208
+    m_Localized: Puntos de Habilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 515050083758080
+    m_Localized: Nivel de Jefe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516184986923008
+    m_Localized: Sin Datos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516414255968256
+    m_Localized: "\xBFSeguro que quieres eliminar esta ranura de guardado?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521668297011200
+    m_Localized: Etapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654707427033088
+    m_Localized: _Dumb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670834953732096
+    m_Localized: No tienes {stuff}
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473720
+  - m_Id: 627024978690048
+    m_Localized: "M\xE1ximo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647029921333248
+    m_Localized: Cargando...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656417843232768
+    m_Localized: Activado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656650740350976
+    m_Localized: Desactivado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708993192214528
+    m_Localized: Nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708998388957184
+    m_Localized: "Da\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709138520653824
+    m_Localized: Velocidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709163434819584
+    m_Localized: Clic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714832720347136
+    m_Localized: Comprar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 716855255678976
+    m_Localized: Carga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952955341553664
+    m_Localized: '{0}{1}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473720
+  - m_Id: 1341533422796800
+    m_Localized: Espacio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1584504533598208
+    m_Localized: ({0})
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473720
+  - m_Id: 1582340725719040
+    m_Localized: '{0}{1}{2}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473720
+  - m_Id: 887550585520128
+    m_Localized: Ventajas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 896385895284736
+    m_Localized: No desbloqueado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 948415242354688
+    m_Localized: Habilidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 950167819698176
+    m_Localized: Prestigio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953394493571072
+    m_Localized: Multiplicador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953447144669184
+    m_Localized: Exponente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 995359390089216
+    m_Localized: Dinero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997772515786752
+    m_Localized: Cantidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1020049747787776
+    m_Localized: Actual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096380716072960
+    m_Localized: Gastar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231290034470912
+    m_Localized: Final
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231838494244864
+    m_Localized: Derrota a Todos los Jefes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333564345860096
+    m_Localized: Hazlo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336217293471744
+    m_Localized: Sistema
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336554939138048
+    m_Localized: Reanudar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336692470366208
+    m_Localized: "Pantalla de t\xEDtulo..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340433680482304
+    m_Localized: Obtener
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340522348068864
+    m_Localized: Usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340900959502336
+    m_Localized: Predeterminado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341061353881600
+    m_Localized: Rock Crusher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341312127123456
+    m_Localized: Animal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341432210046976
+    m_Localized: Comida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341509406212096
+    m_Localized: "Fantas\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1361785338642432
+    m_Localized: Solo lectura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370296898469888
+    m_Localized: Gastado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370667683332096
+    m_Localized: Disponible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1372195852828672
+    m_Localized: Grado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433818122600448
+    m_Localized: Costo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1452970635870208
+    m_Localized: Aplicar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453112847941632
+    m_Localized: Reembolsar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1585708152045568
+    m_Localized: "\xA1Tus datos se han guardado!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631136356679680
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635077985972224
+    m_Localized: Volumen general
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635742611189760
+    m_Localized: "Volumen de m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1636319181189120
+    m_Localized: Volumen de efectos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778153123524608
+    m_Localized: Volumen de IU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778314893635584
+    m_Localized: Jugabilidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778737583009792
+    m_Localized: "Vibraci\xF3n de pantalla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778884614336512
+    m_Localized: "Gr\xE1ficos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779246696017920
+    m_Localized: FPS objetivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779403512655872
+    m_Localized: Modo ventana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779626494439424
+    m_Localized: "Resoluci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779845445496832
+    m_Localized: "La nueva resoluci\xF3n se aplicar\xE1 al cerrar esta pantalla de
+      Ajustes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782616336936960
+    m_Localized: Recomendado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789794439442432
+    m_Localized: Saliendo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809545551196160
+    m_Localized: Barra de enfriamiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1823941297356800
+    m_Localized: "\xBFSeguro que quieres ir a la pantalla de t\xEDtulo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948955904065536
+    m_Localized: Jefe Final
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2949359442247680
+    m_Localized: Jefe {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272637795962880
+    m_Localized: "\xA1Pelea!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274314640953344
+    m_Localized: Derrota
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274599526469632
+    m_Localized: Victoria
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 323497291381473720
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 670834953732096
+        - id: 952955341553664
+        - id: 1584504533598208
+        - id: 1582340725719040

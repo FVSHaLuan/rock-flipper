@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Common Strings Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Common Strings
+  m_TableCollectionNameGuidString: 7da8669fdb0c01b47a5b9e567d12a3f1
+  m_Entries:
+  - m_Id: 156586840993792
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2004501839872
+    m_Key: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156459602587648
+    m_Key: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186187592019968
+    m_Key: LanguageName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304893903024128
+    m_Key: AI translated notice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304941520957440
+    m_Key: Reset to apply translation notice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357107782692864
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357156944130048
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357334509989888
+    m_Key: Feedback
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357913294581760
+    m_Key: Follow me on Steam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500106160287744
+    m_Key: Steam Deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501445913260032
+    m_Key: Are you sure you want to quit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512897407561728
+    m_Key: Now Playing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514236262952960
+    m_Key: Select save slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514308245598208
+    m_Key: Not compatible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514586902573056
+    m_Key: Slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514730469404672
+    m_Key: Play time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514966227038208
+    m_Key: Skill Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 515050083758080
+    m_Key: Boss Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516184986923008
+    m_Key: No Data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516414255968256
+    m_Key: Are you sure you want to delete this save slot?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521668297011200
+    m_Key: Stage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 627024978690048
+    m_Key: Maxed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647029921333248
+    m_Key: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654707427033088
+    m_Key: _Dumb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656417843232768
+    m_Key: On
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531227
+  - m_Id: 656650740350976
+    m_Key: Off
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531228
+  - m_Id: 670834953732096
+    m_Key: You don't have any X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708993192214528
+    m_Key: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708998388957184
+    m_Key: Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709138520653824
+    m_Key: Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709163434819584
+    m_Key: Click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714832720347136
+    m_Key: Buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 716855255678976
+    m_Key: Charge (noun)
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531229
+  - m_Id: 887550585520128
+    m_Key: Perks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 896385895284736
+    m_Key: Not unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 948415242354688
+    m_Key: Skills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 950167819698176
+    m_Key: Prestige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952955341553664
+    m_Key: PlaceHolders.2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953394493571072
+    m_Key: Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953447144669184
+    m_Key: Exponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 995359390089216
+    m_Key: Cash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997772515786752
+    m_Key: Count
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531230
+  - m_Id: 1020049747787776
+    m_Key: Current
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096380716072960
+    m_Key: Spend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231290034470912
+    m_Key: Final
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531231
+  - m_Id: 1231838494244864
+    m_Key: Beat All Bosses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333564345860096
+    m_Key: Do It
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336217293471744
+    m_Key: System
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336554939138048
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336692470366208
+    m_Key: Title screen...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340433680482304
+    m_Key: Get
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340522348068864
+    m_Key: Use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340900959502336
+    m_Key: Default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341061353881600
+    m_Key: game.Rock Crusher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341312127123456
+    m_Key: Animal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341432210046976
+    m_Key: Food
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341509406212096
+    m_Key: Fantasy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341533422796800
+    m_Key: Space
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531232
+  - m_Id: 1361785338642432
+    m_Key: Read Only
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370296898469888
+    m_Key: Spent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370667683332096
+    m_Key: Available
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1372195852828672
+    m_Key: Tier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433818122600448
+    m_Key: Cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1452970635870208
+    m_Key: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453112847941632
+    m_Key: Refund
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1582340725719040
+    m_Key: PlaceHolders.3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1584504533598208
+    m_Key: Encapped ()
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1585708152045568
+    m_Key: Your data has been saved!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631136356679680
+    m_Key: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635077985972224
+    m_Key: Master volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635742611189760
+    m_Key: Music volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1636319181189120
+    m_Key: Effect volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778153123524608
+    m_Key: UI volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778314893635584
+    m_Key: Gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778737583009792
+    m_Key: Screen Shaking Effect
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778884614336512
+    m_Key: Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779246696017920
+    m_Key: Target frame rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779403512655872
+    m_Key: Windowed mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779626494439424
+    m_Key: Resolution
+    m_Metadata:
+      m_Items:
+      - rid: 323497407306531233
+  - m_Id: 1779845445496832
+    m_Key: New resolution will be applied
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782616336936960
+    m_Key: Recommended
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789794439442432
+    m_Key: Quitting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809545551196160
+    m_Key: Cooldown bar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1823941297356800
+    m_Key: Are you sure you want to go to title screen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948955904065536
+    m_Key: Final Boss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2949359442247680
+    m_Key: Boss {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272637795962880
+    m_Key: Fight! (verb)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274314640953344
+    m_Key: Lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274599526469632
+    m_Key: Won
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 323497272249679872
+  references:
+    version: 2
+    RefIds:
+    - rid: 323497272249679872
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1785687312212
+    - rid: 323497407306531227
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: as in On and Off
+    - rid: 323497407306531228
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: as in On and Off
+    - rid: 323497407306531229
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: noun, as a consumable currency
+    - rid: 323497407306531230
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: noun, meaning "the number of"
+    - rid: 323497407306531231
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Like in "final boss"
+    - rid: 323497407306531232
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: as in "outer space"
+    - rid: 323497407306531233
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Screen resolution

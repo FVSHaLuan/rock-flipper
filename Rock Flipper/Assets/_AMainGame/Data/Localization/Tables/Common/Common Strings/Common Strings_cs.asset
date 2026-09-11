@@ -1,0 +1,399 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Common Strings_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 7da8669fdb0c01b47a5b9e567d12a3f1, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 323497291381473728
+  m_TableData:
+  - m_Id: 2004501839872
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186187592019968
+    m_Localized: "\u010Ce\u0161tina"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500106160287744
+    m_Localized: Steam Deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514730469404672
+    m_Localized: "Doba hran\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156459602587648
+    m_Localized: "Zru\u0161it"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156586840993792
+    m_Localized: Konec
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304893903024128
+    m_Localized: "Jazyky krom\u011B angli\u010Dtiny byly p\u0159elo\u017Eeny pomoc\xED
+      AI.\nN\u011Bkter\xFD text m\u016F\u017Ee obsahovat chyby nebo zn\xEDt nep\u0159irozen\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304941520957440
+    m_Localized: "Mo\u017En\xE1 budete muset hru restartovat, pokud se jazyk nezm\u011Bn\xED
+      \xFApln\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357107782692864
+    m_Localized: "Hr\xE1t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357156944130048
+    m_Localized: "Nastaven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357334509989888
+    m_Localized: "Zp\u011Btn\xE1 vazba"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357913294581760
+    m_Localized: "Sledujte m\u011B na Steamu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501445913260032
+    m_Localized: "Opravdu chcete ukon\u010Dit hru?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512897407561728
+    m_Localized: "P\u0159ehr\xE1v\xE1 se"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514236262952960
+    m_Localized: "Vyberte pozici ulo\u017Een\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514308245598208
+    m_Localized: "Nekompatibiln\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514586902573056
+    m_Localized: Pozice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514966227038208
+    m_Localized: "Body dovednost\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 515050083758080
+    m_Localized: "\xDArove\u0148 bosse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516184986923008
+    m_Localized: "\u017D\xE1dn\xE1 data"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516414255968256
+    m_Localized: "Opravdu chcete smazat tuto pozici ulo\u017Een\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521668297011200
+    m_Localized: "F\xE1ze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654707427033088
+    m_Localized: _Dumb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670834953732096
+    m_Localized: "Nem\xE1te \u017E\xE1dn\xE9 {stuff}"
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473728
+  - m_Id: 627024978690048
+    m_Localized: Max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647029921333248
+    m_Localized: "Na\u010D\xEDt\xE1n\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656417843232768
+    m_Localized: Zapnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656650740350976
+    m_Localized: Vypnuto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708993192214528
+    m_Localized: "\xDArove\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708998388957184
+    m_Localized: "Po\u0161kozen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709138520653824
+    m_Localized: Rychlost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709163434819584
+    m_Localized: Klik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714832720347136
+    m_Localized: Koupit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 716855255678976
+    m_Localized: "N\xE1boj"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952955341553664
+    m_Localized: '{0}{1}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473728
+  - m_Id: 1341533422796800
+    m_Localized: "Vesm\xEDr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1584504533598208
+    m_Localized: ({0})
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473728
+  - m_Id: 1582340725719040
+    m_Localized: '{0}{1}{2}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473728
+  - m_Id: 887550585520128
+    m_Localized: Perky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 896385895284736
+    m_Localized: "Neodem\u010Deno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 948415242354688
+    m_Localized: Dovednosti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 950167819698176
+    m_Localized: "Presti\u017E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953394493571072
+    m_Localized: "N\xE1sobitel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953447144669184
+    m_Localized: Exponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 995359390089216
+    m_Localized: Hotovost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997772515786752
+    m_Localized: "Po\u010Det"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1020049747787776
+    m_Localized: "Aktu\xE1ln\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096380716072960
+    m_Localized: Utratit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231290034470912
+    m_Localized: "Fin\xE1ln\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231838494244864
+    m_Localized: "Porazit v\u0161echny bossy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333564345860096
+    m_Localized: Do toho!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336217293471744
+    m_Localized: "Syst\xE9m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336554939138048
+    m_Localized: "Pokra\u010Dovat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336692470366208
+    m_Localized: "Tituln\xED obrazovka..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340433680482304
+    m_Localized: "Z\xEDskat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340522348068864
+    m_Localized: "Pou\u017E\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340900959502336
+    m_Localized: "V\xFDchoz\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341061353881600
+    m_Localized: Rock Crusher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341312127123456
+    m_Localized: "Zv\xED\u0159e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341432210046976
+    m_Localized: "J\xEDdlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341509406212096
+    m_Localized: Fantasy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1361785338642432
+    m_Localized: "Pouze pro \u010Dten\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370296898469888
+    m_Localized: Utraceno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370667683332096
+    m_Localized: "Dostupn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1372195852828672
+    m_Localized: "Stupe\u0148"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433818122600448
+    m_Localized: Cena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1452970635870208
+    m_Localized: "Pou\u017E\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453112847941632
+    m_Localized: "Vr\xE1tit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1585708152045568
+    m_Localized: "Va\u0161e data byla ulo\u017Eena!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631136356679680
+    m_Localized: Zvuk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635077985972224
+    m_Localized: "Hlavn\xED hlasitost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635742611189760
+    m_Localized: Hlasitost hudby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1636319181189120
+    m_Localized: "Hlasitost efekt\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778153123524608
+    m_Localized: Hlasitost UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778314893635584
+    m_Localized: Hratelnost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778737583009792
+    m_Localized: "Efekt t\u0159esen\xED obrazovky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778884614336512
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779246696017920
+    m_Localized: "C\xEDlov\xE9 FPS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779403512655872
+    m_Localized: "Okenn\xED re\u017Eim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779626494439424
+    m_Localized: "Rozli\u0161en\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779845445496832
+    m_Localized: "Nov\xE9 rozli\u0161en\xED se pou\u017Eije po zav\u0159en\xED Nastaven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782616336936960
+    m_Localized: "Doporu\u010Deno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789794439442432
+    m_Localized: "Ukon\u010Dov\xE1n\xED..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809545551196160
+    m_Localized: "Ukazatel nab\xEDjen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1823941297356800
+    m_Localized: "Opravdu chcete p\u0159ej\xEDt na tituln\xED obrazovku?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948955904065536
+    m_Localized: "Fin\xE1ln\xED Boss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2949359442247680
+    m_Localized: Boss {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272637795962880
+    m_Localized: Bojovat!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274314640953344
+    m_Localized: Prohra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274599526469632
+    m_Localized: "V\xFDhra"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 323497291381473728
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 670834953732096
+        - id: 952955341553664
+        - id: 1584504533598208
+        - id: 1582340725719040

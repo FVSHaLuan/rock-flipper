@@ -1,0 +1,401 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Common Strings_pl
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: pl
+  m_SharedData: {fileID: 11400000, guid: 7da8669fdb0c01b47a5b9e567d12a3f1, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 323497291381473724
+  m_TableData:
+  - m_Id: 2004501839872
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186187592019968
+    m_Localized: Polski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500106160287744
+    m_Localized: Steam Deck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514730469404672
+    m_Localized: Czas gry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156459602587648
+    m_Localized: Anuluj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 156586840993792
+    m_Localized: "Wyjd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304893903024128
+    m_Localized: "J\u0119zyki inne ni\u017C angielski zosta\u0142y przet\u0142umaczone
+      przez AI.\nNiekt\xF3re teksty mog\u0105 zawiera\u0107 b\u0142\u0119dy lub brzmie\u0107
+      nienaturalnie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304941520957440
+    m_Localized: "Mo\u017Ce by\u0107 konieczne ponowne uruchomienie gry, je\u015Bli
+      j\u0119zyk nie zmieni si\u0119 w pe\u0142ni."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357107782692864
+    m_Localized: Graj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357156944130048
+    m_Localized: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357334509989888
+    m_Localized: Opinie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357913294581760
+    m_Localized: Obserwuj mnie na Steam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 501445913260032
+    m_Localized: "Czy na pewno chcesz wyj\u015B\u0107?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512897407561728
+    m_Localized: Teraz odtwarzane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514236262952960
+    m_Localized: Wybierz slot zapisu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514308245598208
+    m_Localized: Niezgodne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514586902573056
+    m_Localized: Slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514966227038208
+    m_Localized: "Punkty Umiej\u0119tno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 515050083758080
+    m_Localized: Poziom Bossa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516184986923008
+    m_Localized: Brak danych
+    m_Metadata:
+      m_Items: []
+  - m_Id: 516414255968256
+    m_Localized: "Czy na pewno chcesz usun\u0105\u0107 ten slot zapisu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521668297011200
+    m_Localized: Etap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 654707427033088
+    m_Localized: _Dumb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 670834953732096
+    m_Localized: Nie masz {stuff}
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473724
+  - m_Id: 627024978690048
+    m_Localized: Max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 647029921333248
+    m_Localized: Wczytywanie...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656417843232768
+    m_Localized: "W\u0142."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 656650740350976
+    m_Localized: "Wy\u0142."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708993192214528
+    m_Localized: Poziom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708998388957184
+    m_Localized: "Obra\u017Cenia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709138520653824
+    m_Localized: "Pr\u0119dko\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709163434819584
+    m_Localized: Kliknij
+    m_Metadata:
+      m_Items: []
+  - m_Id: 714832720347136
+    m_Localized: Kup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 716855255678976
+    m_Localized: "\u0141adunek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 952955341553664
+    m_Localized: '{0}{1}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473724
+  - m_Id: 1341533422796800
+    m_Localized: Kosmos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1584504533598208
+    m_Localized: ({0})
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473724
+  - m_Id: 1582340725719040
+    m_Localized: '{0}{1}{2}'
+    m_Metadata:
+      m_Items:
+      - rid: 323497291381473724
+  - m_Id: 887550585520128
+    m_Localized: Perki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 896385895284736
+    m_Localized: Nieodblokowane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 948415242354688
+    m_Localized: "Umiej\u0119tno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 950167819698176
+    m_Localized: "Presti\u017C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953394493571072
+    m_Localized: "Mno\u017Cnik"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953447144669184
+    m_Localized: "Wyk\u0142adnik"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 995359390089216
+    m_Localized: "Got\xF3wka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 997772515786752
+    m_Localized: Liczba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1020049747787776
+    m_Localized: Obecne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096380716072960
+    m_Localized: Wydaj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231290034470912
+    m_Localized: "Fina\u0142owy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1231838494244864
+    m_Localized: "Pokonaj Wszystkich Boss\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333564345860096
+    m_Localized: "Zr\xF3b to"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336217293471744
+    m_Localized: System
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336554939138048
+    m_Localized: "Wzn\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1336692470366208
+    m_Localized: "Ekran tytu\u0142owy..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340433680482304
+    m_Localized: "Zdob\u0105d\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340522348068864
+    m_Localized: "U\u017Cyj"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1340900959502336
+    m_Localized: "Domy\u015Blne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341061353881600
+    m_Localized: Rock Crusher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341312127123456
+    m_Localized: "Zwierz\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341432210046976
+    m_Localized: Jedzenie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1341509406212096
+    m_Localized: Fantasy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1361785338642432
+    m_Localized: Tylko do odczytu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370296898469888
+    m_Localized: Wydane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1370667683332096
+    m_Localized: "Dost\u0119pne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1372195852828672
+    m_Localized: Ranga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1433818122600448
+    m_Localized: Koszt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1452970635870208
+    m_Localized: Zastosuj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1453112847941632
+    m_Localized: Zwrot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1585708152045568
+    m_Localized: "Twoje dane zosta\u0142y zapisane!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1631136356679680
+    m_Localized: "D\u017Awi\u0119k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635077985972224
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 g\u0142\xF3wna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1635742611189760
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 muzyki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1636319181189120
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 efekt\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778153123524608
+    m_Localized: "G\u0142o\u015Bno\u015B\u0107 UI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778314893635584
+    m_Localized: Rozgrywka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778737583009792
+    m_Localized: "Efekt trz\u0119sienia ekranu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1778884614336512
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779246696017920
+    m_Localized: Docelowe FPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779403512655872
+    m_Localized: Tryb okna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779626494439424
+    m_Localized: "Rozdzielczo\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779845445496832
+    m_Localized: "Nowa rozdzielczo\u015B\u0107 zostanie zastosowana po zamkni\u0119ciu
+      Ustawie\u0144"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782616336936960
+    m_Localized: Zalecane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789794439442432
+    m_Localized: Zamykanie...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809545551196160
+    m_Localized: Pasek odnowienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1823941297356800
+    m_Localized: "Czy na pewno chcesz wr\xF3ci\u0107 do ekranu tytu\u0142owego?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2948955904065536
+    m_Localized: "Boss Fina\u0142owy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2949359442247680
+    m_Localized: Boss {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3272637795962880
+    m_Localized: Walcz!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274314640953344
+    m_Localized: Przegrana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3274599526469632
+    m_Localized: Wygrana
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 323497291381473724
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 670834953732096
+        - id: 952955341553664
+        - id: 1584504533598208
+        - id: 1582340725719040

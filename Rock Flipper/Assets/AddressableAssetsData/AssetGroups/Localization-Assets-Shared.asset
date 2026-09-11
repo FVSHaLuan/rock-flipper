@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Localization-Assets-Shared
+  m_GUID: 236f1239c27d86d479914084a00b4b05
+  m_SerializeEntries:
+  - m_GUID: 42be09e5f9a0b054a8d9788d7425a879
+    m_Address: Assets/_AMainGame/Data/Localization/Tables/Common/Common Assets/Common Assets Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7da8669fdb0c01b47a5b9e567d12a3f1
+    m_Address: Assets/_AMainGame/Data/Localization/Tables/Common/Common Strings/Common Strings Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8641deda4657724dad79e857e19cbe9
+    m_Address: Assets/_AMainGame/Data/Localization/Tables/Common/Test Strings/Test Strings Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 7ea615a24b56fc842a14450a7782461b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 15fbf72dce34d8d44aeb79cb251822e8, type: 2}
+    - {fileID: 11400000, guid: ba738397fcc1c51408620e35f14ce6e7, type: 2}
+    - {fileID: 11400000, guid: 47e834ae1ccd05a4d9b313e9c9f619fd, type: 2}
