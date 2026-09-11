@@ -26,6 +26,7 @@ namespace Agame.Run.Stats
         public float landingCooldown = 0.5f;
         public double chestLevelExp = 1;
         public double levelExp = 1;
+        public float flippingSpeedFactor = 1;
 
         /// <summary>
         /// Snapshots the current <see cref="maxCount"/> as a breakpoint. Call this right before raising
