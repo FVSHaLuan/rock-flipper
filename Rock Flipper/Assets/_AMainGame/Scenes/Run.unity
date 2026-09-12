@@ -1843,6 +1843,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 3189911321645825766, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d798c44ec3f16924f861094ae40a1bd8, type: 3}
     - target: {fileID: 3748804516608637694, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3647,6 +3651,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 3189911321645825766, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2115db3d639ec58409caee5c94e13fa6, type: 3}
     - target: {fileID: 3748804516608637694, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11159,6 +11167,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 1093690664140825842, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0fe6cbfe600ddf54a83867343a1775b7, type: 3}
     - target: {fileID: 1688616179500982506, guid: e8a4af94cb6af0646b011947cd4340fc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15931,6 +15943,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 3189911321645825766, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8547e922d2bbb164b8446461d3db8abc, type: 3}
     - target: {fileID: 3748804516608637694, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -17708,6 +17724,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
       objectReference: {fileID: 0}
+    - target: {fileID: 3189911321645825766, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 898c1f499fa34934e9fa251debd014d4, type: 3}
     - target: {fileID: 3748804516608637694, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
