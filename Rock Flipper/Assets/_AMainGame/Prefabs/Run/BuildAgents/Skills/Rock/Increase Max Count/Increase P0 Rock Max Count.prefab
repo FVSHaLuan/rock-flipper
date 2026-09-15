@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7033856927510863441}
-  - component: {fileID: 7713022197945105557}
+  - component: {fileID: 1707816729240837852}
   - component: {fileID: 6238146525533148067}
   - component: {fileID: 381521938923219142}
   m_Layer: 0
@@ -34,7 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7713022197945105557
+--- !u!114 &1707816729240837852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,10 +43,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2567235487356618235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732f10dc724d60141acb1fd127bbaaa7, type: 3}
+  m_Script: {fileID: 11500000, guid: c7b3f4c0339f0894a8471efe971451c8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Agame.Dev.BuildAgentScriptPlaceholder
-  scriptReference: {fileID: 11500000, guid: c7b3f4c0339f0894a8471efe971451c8, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.IncreaseRockMaxCount
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  rockTier: 0
 --- !u!114 &6238146525533148067
 MonoBehaviour:
   m_ObjectHideFlags: 0
