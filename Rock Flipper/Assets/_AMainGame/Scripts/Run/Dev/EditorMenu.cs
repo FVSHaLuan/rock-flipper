@@ -11,7 +11,7 @@ public static class EditorMenu
     private static void SelectSkillTree()
     {
         // select the skill tree in the hierarchy
-        var skillTree = GameObject.FindAnyObjectByType<Agame.Run.SkillTree>();
+        var skillTree = GameObject.FindAnyObjectByType<Agame.Run.SkillTree>(FindObjectsInactive.Include);
         if (skillTree != null)
         {
             Selection.activeGameObject = skillTree.gameObject;
