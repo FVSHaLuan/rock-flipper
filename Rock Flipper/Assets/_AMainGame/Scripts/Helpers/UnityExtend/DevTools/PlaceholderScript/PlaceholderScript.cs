@@ -77,7 +77,7 @@ public class PlaceholderScript : MonoBehaviour
             return;
         }
 
-        if (scriptReference.GetClass().IsSubclassOf(typeof(Component)))
+        if (!scriptReference.GetClass().IsSubclassOf(typeof(Component)))
         {
             Debug.LogWarning("The referenced script is not a subclass of Component.");
             scriptReference = null;

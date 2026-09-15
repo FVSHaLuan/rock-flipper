@@ -5,7 +5,7 @@ using UnityEngine.Localization;
 
 namespace Agame.Run
 {
-    [RequireComponent(typeof(BuildAgent))]
+    [DisallowMultipleComponent]
     public class SkillMetaData : MonoBehaviour
     {
         [Space]

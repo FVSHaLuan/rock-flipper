@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Agame.Run
 {
-    [RequireComponent(typeof(BuildAgent))]
+    [DisallowMultipleComponent]
     public class SkillDescriptor : MonoBehaviour
     {
         [SerializeField, TextArea]
