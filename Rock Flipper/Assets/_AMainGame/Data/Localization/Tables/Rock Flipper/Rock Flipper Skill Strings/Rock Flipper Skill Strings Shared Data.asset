@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
   m_TableCollectionName: Rock Flipper Skill Strings
   m_TableCollectionNameGuidString: ed5a504acb0168d4fa400bc0317dac45
-  m_Entries: []
+  m_Entries:
+  - m_Id: 1318490279829504
+    m_Key: Max Rock Count
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

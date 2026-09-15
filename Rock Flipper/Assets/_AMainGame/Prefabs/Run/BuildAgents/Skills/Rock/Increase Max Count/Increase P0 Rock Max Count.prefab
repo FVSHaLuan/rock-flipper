@@ -68,9 +68,9 @@ MonoBehaviour:
   titleGroup: 
   localizedTitleGroup:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 7059745456128
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -78,9 +78,9 @@ MonoBehaviour:
   title: 
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 1318490279829504
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
