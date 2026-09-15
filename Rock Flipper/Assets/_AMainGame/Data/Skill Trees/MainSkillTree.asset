@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Unlock P1 Rock
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 0}
+  position: {x: 250, y: -250}
   ports:
     keys:
     - input
@@ -22,7 +22,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -7525168557237096116}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 7332991121257117244}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -42,7 +45,7 @@ MonoBehaviour:
   output: 0
   skillNodePrototype: {fileID: 0}
   attentionFlag: 0
-  unlockingRequirement: 0
+  unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
@@ -72,8 +75,9 @@ MonoBehaviour:
   - {fileID: -7525168557237096116}
   - {fileID: 2299989078838170068}
   - {fileID: 2375330221305776675}
+  - {fileID: 7332991121257117244}
   overlappedNodes: []
-  rootNode: {fileID: -7525168557237096116}
+  rootNode: {fileID: 7332991121257117244}
   compactModeWidth: 140
   rootNodeHeaderColor: {r: 0.8901961, g: 0.29411766, b: 0.3647059, a: 1}
 --- !u!114 &2299989078838170068
@@ -180,6 +184,60 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: 110de14ea1ddcbd47b99c0102fd55d1d, type: 3}
   buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
+--- !u!114 &7332991121257117244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P0 Max Count
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 0, y: 0}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 7332991121257117244}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 7332991121257117244}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -7525168557237096116}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 0
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 1707816729240837852, guid: e44baff445c376546a4c0e3eba09b63d, type: 3}
+  buildValue: 10
   cashTier: 0
   costs_1:
   - currency: 0

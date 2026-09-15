@@ -98,4 +98,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
   descriptionFormat: 'BuildValue: {0}'
   extraDescription: 
-  buildValueMultiplier: 0
+  buildValueMultiplier: 1

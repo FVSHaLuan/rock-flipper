@@ -13,7 +13,7 @@ namespace Agame.Run
 
         [Space]
         [SerializeField]
-        private float buildValueMultiplier;
+        private float buildValueMultiplier = 1;
 
         public string GetDescription(double buildValue)
         {
