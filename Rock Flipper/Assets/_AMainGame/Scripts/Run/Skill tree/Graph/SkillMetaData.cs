@@ -9,9 +9,9 @@ namespace Agame.Run
     public class SkillMetaData : MonoBehaviour
     {
         [Space]
-        [SerializeField]
+        [SerializeField, Tooltip("The icon representing the object the skill applies to")]
         private Sprite icon;
-        [SerializeField]
+        [SerializeField, Tooltip("The sub-icon for the skill, hints at the skill's functionality or category")]
         private Sprite subIcon;
         [SerializeField, Tooltip("Skill's title will be displayed as [titleGroup] - [title]")]
         private string titleGroup;
