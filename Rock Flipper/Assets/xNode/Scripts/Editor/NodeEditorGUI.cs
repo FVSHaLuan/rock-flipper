@@ -158,6 +158,53 @@ namespace XNodeEditor
             Handles.DrawAAPolyLine(thickness, polyLineTempArray);
         }
 
+        /// <summary> Draws a small triangular arrowhead at position, oriented along direction, to indicate connection flow </summary>
+        private static void DrawNoodleArrow(Vector2 position, Vector2 direction, Color color)
+        {
+            if (direction.sqrMagnitude < 0.0001f) return;
+            direction.Normalize();
+            Vector2 normal = new Vector2(-direction.y, direction.x);
+            const float arrowLength = 12f;
+            const float arrowWidth = 8f;
+            Vector2 tip = position + direction * (arrowLength * 0.5f);
+            Vector2 baseCenter = position - direction * (arrowLength * 0.5f);
+            Vector2 baseA = baseCenter + normal * (arrowWidth * 0.5f);
+            Vector2 baseB = baseCenter - normal * (arrowWidth * 0.5f);
+
+            Color originalColor = Handles.color;
+            Handles.color = color;
+            Handles.DrawAAConvexPolygon(tip, baseA, baseB);
+            Handles.color = originalColor;
+        }
+
+        /// <summary> Finds the point roughly halfway along the noodle (by arc length of its straight segments) and draws a direction arrow there </summary>
+        private static void DrawMidpointArrow(List<Vector2> gridPoints, Gradient gradient)
+        {
+            int segCount = gridPoints.Count - 1;
+            if (segCount <= 0) return;
+
+            float totalLength = 0f;
+            for (int i = 0; i < segCount; i++)
+                totalLength += Vector2.Distance(gridPoints[i], gridPoints[i + 1]);
+            if (totalLength <= 0f) return;
+
+            float target = totalLength * 0.5f;
+            float accum = 0f;
+            for (int i = 0; i < segCount; i++)
+            {
+                float segLength = Vector2.Distance(gridPoints[i], gridPoints[i + 1]);
+                if (accum + segLength >= target || i == segCount - 1)
+                {
+                    float t = segLength > 0f ? Mathf.Clamp01((target - accum) / segLength) : 0.5f;
+                    Vector2 arrowPos = Vector2.Lerp(gridPoints[i], gridPoints[i + 1], t);
+                    Vector2 arrowDir = gridPoints[i + 1] - gridPoints[i];
+                    DrawNoodleArrow(arrowPos, arrowDir, gradient.Evaluate(0.5f));
+                    return;
+                }
+                accum += segLength;
+            }
+        }
+
         /// <summary> Draw a bezier from output to input in grid coordinates </summary>
         public void DrawNoodle(Gradient gradient, NoodlePath path, NoodleStroke stroke, float thickness, List<Vector2> gridPoints)
         {
@@ -352,6 +399,10 @@ namespace XNodeEditor
                     gridPoints[length - 1] = end;
                     break;
             }
+
+            // Draw an arrow at the noodle's midpoint to indicate direction: output -> input
+            DrawMidpointArrow(gridPoints, gradient);
+
             Handles.color = originalHandlesColor;
         }
 
