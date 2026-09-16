@@ -1,3 +1,4 @@
+using Agame.Run.Stats.Agents;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ namespace Agame.Run
 
         private List<SkillNode> editor_SkillNodes = new List<SkillNode>();
         private Dictionary<SkillGraphNode, SkillNode> editor_SkillGraphNodeDictionary = new Dictionary<SkillGraphNode, SkillNode>();
-        private Dictionary<Sprite, List<SkillNode>> editor_SkillIconDictionary = new Dictionary<Sprite, List<SkillNode>>();
+        private Dictionary<BuildAgent, List<SkillNode>> editor_SkillBuildAgentDictionary = new Dictionary<BuildAgent, List<SkillNode>>();
 #if UNITY_EDITOR
         [ContextMenu("Editor_ImportFromGraph (Dirty)"), EditorModeOnly]
         private void Editor_ImportFromGraph()
@@ -175,20 +176,20 @@ namespace Agame.Run
             GetComponentsInChildren<SkillNode>(editor_SkillNodes);
 
             ///
-            if (editor_SkillIconDictionary == null)
+            if (editor_SkillBuildAgentDictionary == null)
             {
-                editor_SkillIconDictionary = new Dictionary<Sprite, List<SkillNode>>();
+                editor_SkillBuildAgentDictionary = new Dictionary<BuildAgent, List<SkillNode>>();
             }
-            editor_SkillIconDictionary.Clear();
+            editor_SkillBuildAgentDictionary.Clear();
 
             ///
             foreach (var item in editor_SkillNodes)
             {
                 List<SkillNode> list;
-                if (!editor_SkillIconDictionary.TryGetValue(item.GraphNode.Icon, out list))
+                if (!editor_SkillBuildAgentDictionary.TryGetValue(item.GraphNode.BuildAgent, out list))
                 {
                     list = new List<SkillNode>();
-                    editor_SkillIconDictionary[item.GraphNode.Icon] = list;
+                    editor_SkillBuildAgentDictionary[item.GraphNode.BuildAgent] = list;
                 }
 
                 ///
@@ -196,7 +197,7 @@ namespace Agame.Run
             }
 
             ///
-            foreach (var item in editor_SkillIconDictionary.Values)
+            foreach (var item in editor_SkillBuildAgentDictionary.Values)
             {
                 if (item.Count == 0)
                 {
