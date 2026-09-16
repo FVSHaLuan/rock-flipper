@@ -17688,22 +17688,6 @@ PrefabInstance:
       propertyPath: prices.Array.data[2].b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.a
-      value: 0.78039217
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.b
-      value: 0.1509434
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.g
-      value: 0.1509434
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.r
-      value: 0.1509434
-      objectReference: {fileID: 0}
     - target: {fileID: 6150891681332403899, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 8.02002
@@ -19684,22 +19668,6 @@ PrefabInstance:
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: rockTier
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.a
-      value: 0.78039217
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.b
-      value: 0.14901961
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.g
-      value: 0.14901961
-      objectReference: {fileID: 0}
-    - target: {fileID: 5102576315651291681, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: m_Colors.m_NormalColor.r
-      value: 0.14901961
       objectReference: {fileID: 0}
     - target: {fileID: 6119372488163055205, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: tier
