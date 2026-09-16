@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7923046632407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11893504549654}
+  - component: {fileID: 14669033888569}
+  - component: {fileID: 11336024598968}
+  - component: {fileID: 20375154493677}
+  m_Layer: 0
+  m_Name: Increase P0 Rock Purity Cash Multiplier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11893504549654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923046632407}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14669033888569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923046632407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6ba86b7f994b128e0ff1c6399af0d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.IncreaseRockPurityCashMultiplier
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs:
+  rockTier: 0
+--- !u!114 &11336024598968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923046632407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4bf1e32759ce7f4db1e56f71718cd5b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
+  icon: {fileID: 21300000, guid: 41a5df103cab4ea4db0376d41959b919, type: 3}
+  subIcon: {fileID: 21300000, guid: 828d40b2d97c60d4abc2a4d389b18e1c, type: 3}
+  titleGroup:
+  localizedTitleGroup:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 7059745456128
+      m_Key:
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  title: Purity Cash Multiplier
+  localizedTitle:
+    m_TableReference:
+      m_TableCollectionName:
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key:
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &20375154493677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923046632407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
+  descriptionFormat: +{0} P0 Rock Purity Cash Multiplier
+  extraDescription:
+  buildValueMultiplier: 1

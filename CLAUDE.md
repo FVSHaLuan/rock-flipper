@@ -17,6 +17,10 @@ This repo is **two things at once**:
 - Everything else under `Assets/` (Epic Toon FX, EnhancedScroller v2, xNode, TextMesh Pro, Steamworks.NET package, Controller Icons Pack, Shaper2D, CommandTerminal, etc.) is **third-party/vendored** — don't expect project-specific documentation for these; treat them as black-box dependencies unless you find evidence they've been modified in place.
 - `Library/`, `Temp/`, `Logs/`, `obj/`, `.vs/`, `UserSettings/` — Unity/IDE-generated, not source.
 
+## Tooling
+
+- Use the `unity-cli` skill for any interaction with the Unity Editor or this Unity project: inspecting/editing the scene hierarchy, creating or modifying GameObjects, editing prefabs/assets, running C# in a live connected Editor, or building/testing the project. Prefer it over hand-editing `.unity`/`.prefab`/`.asset` YAML files directly whenever a live or CLI-driven Editor operation can do the job.
+
 ## Conventions that apply project-wide
 
 - Base-class chain for almost every gameplay/UI script: `MonoBehaviourWithInit` (FHC) → `ExtendedMonoBehaviour` (`Scripts/Common`) → scene-scoped subclass (`ExtendedMonoBehaviourRun`, `ExtendedMonoBehaviourHome`) → concrete class. See [Scripts/Common/CLAUDE.md](Rock%20Flipper/Assets/_AMainGame/Scripts/Common/CLAUDE.md) for the exact lazy-init mechanics.
