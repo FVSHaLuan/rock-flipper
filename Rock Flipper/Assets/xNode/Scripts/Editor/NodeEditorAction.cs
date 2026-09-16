@@ -71,6 +71,12 @@ namespace XNodeEditor
                             {
                                 draggedOutputTarget = hoveredPort;
                             }
+                            else if (!IsHoveringPort && IsHoveringNode)
+                            {
+                                // Not hovering a specific port, but hovering a node - if it has exactly one
+                                // compatible input, snap to it without requiring the cursor over the port itself.
+                                draggedOutputTarget = GetSingleCompatibleInput(hoveredNode);
+                            }
                             else
                             {
                                 draggedOutputTarget = null;
@@ -436,6 +442,22 @@ namespace XNodeEditor
                     }
                     break;
             }
+        }
+
+        /// <summary> Finds the only input port on <paramref name="node"/> that <see cref="draggedOutput"/> can connect to.
+        /// Returns null if there isn't exactly one compatible candidate, so hovering the node body only
+        /// auto-connects when the target is unambiguous. </summary>
+        private XNode.NodePort GetSingleCompatibleInput(XNode.Node node)
+        {
+            if (node == null || draggedOutput == null) return null;
+            XNode.NodePort match = null;
+            foreach (XNode.NodePort input in node.Inputs)
+            {
+                if (draggedOutput.IsConnectedTo(input) || !draggedOutput.CanConnectTo(input)) continue;
+                if (match != null) return null;
+                match = input;
+            }
+            return match;
         }
 
         private void RecalculateDragOffsets(Event current)
