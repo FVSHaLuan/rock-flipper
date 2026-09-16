@@ -100,6 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: +{0} Max P0 Rock Count
+  descriptionFormat: +{0} Max Rock Count
   extraDescription: 
   buildValueMultiplier: 1

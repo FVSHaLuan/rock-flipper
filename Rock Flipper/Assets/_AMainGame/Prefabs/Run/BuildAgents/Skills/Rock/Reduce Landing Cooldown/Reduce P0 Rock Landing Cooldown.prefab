@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69f90339717e43189d1d2defa06fd570, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.ReduceRockLandingCooldown
   selfLog:
     enableLogger: 0
     alsoLogToUnityConsole: 0
-    selfLogs:
+    selfLogs: 
   rockTier: 0
 --- !u!114 &24539256163814
 MonoBehaviour:
@@ -61,27 +61,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4bf1e32759ce7f4db1e56f71718cd5b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 21300000, guid: 41a5df103cab4ea4db0376d41959b919, type: 3}
   subIcon: {fileID: 0}
-  titleGroup:
+  titleGroup: 
   localizedTitleGroup:
     m_TableReference:
       m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
       m_KeyId: 7059745456128
-      m_Key:
+      m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   title: Landing Cooldown
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName:
+      m_TableCollectionName: 
     m_TableEntryReference:
       m_KeyId: 0
-      m_Key:
+      m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: -{0} P0 Rock Landing Cooldown
-  extraDescription:
+  descriptionFormat: -{0}s before rock can flip again after landing
+  extraDescription: 
   buildValueMultiplier: 1

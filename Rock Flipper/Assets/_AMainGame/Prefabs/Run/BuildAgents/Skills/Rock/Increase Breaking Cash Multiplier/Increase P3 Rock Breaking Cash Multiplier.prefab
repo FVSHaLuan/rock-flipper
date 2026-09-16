@@ -8,18 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 18494900544696, guid: 2d856b6175980a675ea18212425a8cca, type: 3}
-      propertyPath: icon
-      value:
-      objectReference: {fileID: 21300000, guid: 5fed70debe36b864ea18ee9eb9265898, type: 3}
     - target: {fileID: 17053646723936, guid: 2d856b6175980a675ea18212425a8cca, type: 3}
       propertyPath: rockTier
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 24009862559476, guid: 2d856b6175980a675ea18212425a8cca, type: 3}
-      propertyPath: descriptionFormat
-      value: +{0} P3 Rock Breaking Cash Multiplier
-      objectReference: {fileID: 0}
+    - target: {fileID: 18494900544696, guid: 2d856b6175980a675ea18212425a8cca, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 5fed70debe36b864ea18ee9eb9265898, type: 3}
     - target: {fileID: 19268821538361, guid: 2d856b6175980a675ea18212425a8cca, type: 3}
       propertyPath: m_Name
       value: Increase P3 Rock Breaking Cash Multiplier

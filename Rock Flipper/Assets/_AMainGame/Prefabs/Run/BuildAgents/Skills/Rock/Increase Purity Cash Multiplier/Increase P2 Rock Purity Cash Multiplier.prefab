@@ -8,22 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11336024598968, guid: f754d022145ea8e51813f926f86c0499, type: 3}
-      propertyPath: icon
-      value:
-      objectReference: {fileID: 21300000, guid: d65f34d1d7f701b4b93523b5de1521b6, type: 3}
-    - target: {fileID: 14669033888569, guid: f754d022145ea8e51813f926f86c0499, type: 3}
-      propertyPath: rockTier
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 20375154493677, guid: f754d022145ea8e51813f926f86c0499, type: 3}
-      propertyPath: descriptionFormat
-      value: +{0} P2 Rock Purity Cash Multiplier
-      objectReference: {fileID: 0}
     - target: {fileID: 7923046632407, guid: f754d022145ea8e51813f926f86c0499, type: 3}
       propertyPath: m_Name
       value: Increase P2 Rock Purity Cash Multiplier
       objectReference: {fileID: 0}
+    - target: {fileID: 11336024598968, guid: f754d022145ea8e51813f926f86c0499, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: d65f34d1d7f701b4b93523b5de1521b6, type: 3}
     - target: {fileID: 11893504549654, guid: f754d022145ea8e51813f926f86c0499, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -63,6 +55,10 @@ PrefabInstance:
     - target: {fileID: 11893504549654, guid: f754d022145ea8e51813f926f86c0499, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 14669033888569, guid: f754d022145ea8e51813f926f86c0499, type: 3}
+      propertyPath: rockTier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

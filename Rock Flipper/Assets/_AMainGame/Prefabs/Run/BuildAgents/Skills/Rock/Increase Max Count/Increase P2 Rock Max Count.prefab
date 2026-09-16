@@ -12,10 +12,6 @@ PrefabInstance:
       propertyPath: rockTier
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 381521938923219142, guid: e44baff445c376546a4c0e3eba09b63d, type: 3}
-      propertyPath: descriptionFormat
-      value: +{0} Max P2 Rock Count
-      objectReference: {fileID: 0}
     - target: {fileID: 2567235487356618235, guid: e44baff445c376546a4c0e3eba09b63d, type: 3}
       propertyPath: m_Name
       value: Increase P2 Rock Max Count

@@ -8,18 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 17154133051039, guid: 6f52895c04c33c65aad02f2b2534106d, type: 3}
-      propertyPath: icon
-      value:
-      objectReference: {fileID: 21300000, guid: f946ec705791946439828dad9aa89618, type: 3}
     - target: {fileID: 2730550051412, guid: 6f52895c04c33c65aad02f2b2534106d, type: 3}
       propertyPath: rockTier
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 32400535459864, guid: 6f52895c04c33c65aad02f2b2534106d, type: 3}
-      propertyPath: descriptionFormat
-      value: +{0} P1 Rock Chest Level Exp
-      objectReference: {fileID: 0}
+    - target: {fileID: 17154133051039, guid: 6f52895c04c33c65aad02f2b2534106d, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: f946ec705791946439828dad9aa89618, type: 3}
     - target: {fileID: 20342889337391, guid: 6f52895c04c33c65aad02f2b2534106d, type: 3}
       propertyPath: m_Name
       value: Increase P1 Rock Chest Level Exp
