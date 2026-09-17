@@ -27,6 +27,7 @@ namespace Agame.Run.Combat
         private Vector2 flippingStartPosition;
         private Vector2 flippingEndPosition;
 
+        public float FlippingSpeedFactor { get; set; } = 1f;
         public bool IsFlipping { get; private set; }
         public float FlippingProgress { get; private set; }
         public float FlippingHeightProgress { get; private set; }
@@ -58,7 +59,7 @@ namespace Agame.Run.Combat
         private void GetRandomFlippingParameters(out float duration, out Vector2 landingPosition, out float height)
         {
             ///
-            duration = baseDuration;
+            duration = baseDuration / FlippingSpeedFactor;
 
             ///            
             landingPosition = GetRandomLandingPosition();

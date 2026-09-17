@@ -212,7 +212,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -220,6 +220,24 @@ MonoBehaviour:
   buildValue: 1
   cashTier: 0
   costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
   - currency: 0
     amount: 1
   costs_2: []
@@ -605,6 +623,24 @@ MonoBehaviour:
   buildValue: 1
   cashTier: 0
   costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
   - currency: 0
     amount: 1
   costs_2: []

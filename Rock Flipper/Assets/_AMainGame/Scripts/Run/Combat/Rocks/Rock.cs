@@ -47,10 +47,31 @@ namespace Agame.Run.Combat
         public int CurrentHP { get; private set; }
         public RockPoolHandler PoolHandler => rockPoolHandler;
 
+        protected void OnDisable()
+        {
+            RunEntry.skillTreeScreen.OnClosed -= SkillTreeScreen_OnClosed;
+        }
+
+        protected void OnEnable()
+        {
+            RunEntry.skillTreeScreen.OnClosed += SkillTreeScreen_OnClosed;
+        }
+
         protected void Start()
         {
             flippable.OnStartedFlipping += Flippable_OnStartedFlipping;
             flippable.OnFinishedFlipping += Flippable_OnFinishedFlipping;
+        }
+
+        private void SkillTreeScreen_OnClosed()
+        {
+            ApplyFromBuildStats();
+        }
+
+        private void ApplyFromBuildStats()
+        {
+            var stats = BuildStats.GetRockTierBuildStats(Tier);
+            flippable.FlippingSpeedFactor = stats.flippingSpeedFactor;
         }
 
         private void Flippable_OnFinishedFlipping()
@@ -124,6 +145,9 @@ namespace Agame.Run.Combat
 
             ///
             gameObject.SetActive(true);
+
+            ///
+            ApplyFromBuildStats();
 
             ///
             OnStartedNewLife?.Invoke();
