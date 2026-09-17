@@ -13,10 +13,6 @@ namespace Agame.Run.Combat
         [SerializeField]
         private bool isPure = false;
 
-        [Space]
-        [SerializeField]
-        private int baseHP = 5;
-
         [Header("New rock flipping")]
         [SerializeField]
         private float newRockFlippingDuration = 1f;
@@ -104,7 +100,7 @@ namespace Agame.Run.Combat
 
         private void UpdateLandingCooldown()
         {
-            flippableByPlayerCursor.LastTimeLanded = Time.time;           
+            flippableByPlayerCursor.LastTimeLanded = Time.time;
         }
 
         private void BreakCurrentRockAndSpawnNewOne()
@@ -137,7 +133,11 @@ namespace Agame.Run.Combat
         [ContextMenu("Start New Life"), PlayModeOnly]
         public void StartNewLife(bool playNewLifeEffect)
         {
-            MaxHP = baseHP;
+            ///
+            var tierStats = BuildStats.GetRockTierBuildStats(rockTier);
+
+            ///
+            MaxHP = tierStats.maxHp;
             CurrentHP = MaxHP;
 
             ///

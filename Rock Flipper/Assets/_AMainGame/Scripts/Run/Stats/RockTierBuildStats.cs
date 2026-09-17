@@ -16,6 +16,7 @@ namespace Agame.Run.Stats
         public bool unlocked = false;
         public int count;
         public int maxCount = 10;
+        public int maxHp = 5;
         public float purity = 0.1f;
         public double landingCash = 1;
         public double breakingCashMultiplier = 2;
