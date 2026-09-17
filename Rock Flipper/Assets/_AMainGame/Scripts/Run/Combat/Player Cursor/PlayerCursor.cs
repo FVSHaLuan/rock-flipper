@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Agame.Run.Combat
 {
@@ -15,13 +16,14 @@ namespace Agame.Run.Combat
 
         protected void LateUpdate()
         {
-            if (BuildStats.enabledPlayerCursorRadius)
+            flippableHits.Clear();
+            if (BuildStats.enabledPlayerCursorHover)
             {
-                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.playerCursorRadius, true, flippableHits);
+                FindHitsByHovering();
             }
             else
             {
-                SimpleCast2D.PointCast(transformHandle.position, true, flippableHits);
+                FindHitsByClicking();
             }
 
             ///
@@ -31,6 +33,26 @@ namespace Agame.Run.Combat
                 {
                     item.Flippable.TryFlipping();
                 }
+            }
+        }
+
+        private void FindHitsByHovering()
+        {
+            if (BuildStats.enabledPlayerCursorRadius)
+            {
+                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.playerCursorRadius, true, flippableHits);
+            }
+            else
+            {
+                SimpleCast2D.PointCast(transformHandle.position, true, flippableHits);
+            }
+        }
+
+        private void FindHitsByClicking()
+        {
+            if (Mouse.current.leftButton.wasPressedThisFrame)
+            {
+                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.playerCursorRadius, true, flippableHits);
             }
         }
     }

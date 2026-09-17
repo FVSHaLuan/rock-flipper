@@ -12,6 +12,7 @@ namespace Agame.Run.Stats
         private bool unlockedSkillTree;
 
         [Header("Player Cursor")]
+        public bool enabledPlayerCursorHover = false;
         public bool enabledPlayerCursorRadius = false;
         public float playerCursorRadius = 0.5f;
 
