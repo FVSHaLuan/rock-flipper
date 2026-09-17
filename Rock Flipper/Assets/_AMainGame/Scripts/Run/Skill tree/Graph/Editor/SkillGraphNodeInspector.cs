@@ -7,6 +7,23 @@ namespace Agame.Run
     [CustomEditor(typeof(SkillGraphNode))]
     public class SkillGraphNodeInspector : GlobalNodeEditor
     {
+        // EditorUtility.OpenPropertyEditor doesn't return the window it creates and always
+        // spawns a new one, so we find any already-open one by title to focus instead of duplicating it.
+        private static EditorWindow FindOpenPropertyEditorWindow(string title)
+        {
+            var windows = Resources.FindObjectsOfTypeAll<EditorWindow>();
+
+            foreach (var window in windows)
+            {
+                if (window.GetType().Name == "PropertyEditor" && window.titleContent.text == title)
+                {
+                    return window;
+                }
+            }
+
+            return null;
+        }
+
         protected override void DrawTopButtons()
         {
             ///
@@ -32,7 +49,17 @@ namespace Agame.Run
             {
                 if (GUILayout.Button("View Build Agent", GUILayout.Height(40)))
                 {
-                    EditorUtility.OpenPropertyEditor(skillGraphNode.BuildAgent.gameObject);
+                    var buildAgentObject = skillGraphNode.BuildAgent.gameObject;
+                    var existingWindow = FindOpenPropertyEditorWindow(buildAgentObject.name);
+
+                    if (existingWindow != null)
+                    {
+                        existingWindow.Focus();
+                    }
+                    else
+                    {
+                        EditorUtility.OpenPropertyEditor(buildAgentObject);
+                    }
                 }
             }
         }
