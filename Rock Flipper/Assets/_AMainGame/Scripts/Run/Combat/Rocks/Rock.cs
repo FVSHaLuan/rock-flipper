@@ -72,6 +72,7 @@ namespace Agame.Run.Combat
         {
             var stats = BuildStats.GetRockTierBuildStats(Tier);
             flippable.FlippingSpeedFactor = stats.flippingSpeedFactor;
+            flippableByPlayerCursor.LandingCooldownTime = stats.landingCooldown;
         }
 
         private void Flippable_OnFinishedFlipping()
@@ -103,8 +104,7 @@ namespace Agame.Run.Combat
 
         private void UpdateLandingCooldown()
         {
-            flippableByPlayerCursor.LastTimeLanded = Time.time;
-            flippableByPlayerCursor.LandingCooldownTime = BuildStats.GetRockTierBuildStats(Tier).landingCooldown;
+            flippableByPlayerCursor.LastTimeLanded = Time.time;           
         }
 
         private void BreakCurrentRockAndSpawnNewOne()

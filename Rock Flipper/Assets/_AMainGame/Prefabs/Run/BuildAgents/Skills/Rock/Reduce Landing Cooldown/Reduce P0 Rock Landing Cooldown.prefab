@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 21300000, guid: 41a5df103cab4ea4db0376d41959b919, type: 3}
-  subIcon: {fileID: 0}
+  subIcon: {fileID: 21300000, guid: c5f0dc8ab77120c49966f5c264aacb28, type: 3}
   titleGroup: 
   localizedTitleGroup:
     m_TableReference:
@@ -100,6 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: -{0}s before rock can flip again after landing
+  descriptionFormat: -{0}s before a rock can flip again after landing
   extraDescription: 
   buildValueMultiplier: 1

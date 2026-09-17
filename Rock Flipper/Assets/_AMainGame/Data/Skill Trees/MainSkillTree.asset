@@ -44,14 +44,32 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 16704901452079, guid: 18dabe94363a1a67a45311a2edb0dbff, type: 3}
-  buildValue: 1
+  buildValue: 0.1
   cashTier: 0
   costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
   - currency: 0
     amount: 1
   costs_2: []
