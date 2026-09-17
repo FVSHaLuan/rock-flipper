@@ -44,7 +44,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -98,7 +98,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -152,7 +152,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -212,7 +212,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -266,7 +266,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -323,7 +323,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -363,6 +363,7 @@ MonoBehaviour:
   - {fileID: -4136169015872291085}
   - {fileID: 3442198302497414556}
   - {fileID: -4978227826005627924}
+  - {fileID: 2924530091197895905}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
@@ -414,7 +415,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -468,11 +469,62 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: 110de14ea1ddcbd47b99c0102fd55d1d, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
+--- !u!114 &2924530091197895905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: Unlock P3 Rock
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 518.1225, y: -459.80627}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 2924530091197895905}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 2924530091197895905}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 1
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 0}
   buildValue: 1
   cashTier: 0
   costs_1:
@@ -537,7 +589,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -597,7 +649,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -651,7 +703,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -705,7 +757,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 0
+  attentionFlag: 1
   unlockingRequirement: 0
   minParentLevelEach: 0
   demoLimit: -1
