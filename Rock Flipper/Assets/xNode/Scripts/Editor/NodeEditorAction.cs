@@ -67,7 +67,7 @@ namespace XNodeEditor
                         if (IsDraggingPort)
                         {
                             // Set target even if we can't connect, so as to prevent auto-conn menu from opening erroneously
-                            if (IsHoveringPort && hoveredPort.IsInput && !draggedOutput.IsConnectedTo(hoveredPort))
+                            if (IsHoveringPort && hoveredPort.IsInput && hoveredPort.node != draggedOutput.node && !draggedOutput.IsConnectedTo(hoveredPort))
                             {
                                 draggedOutputTarget = hoveredPort;
                             }
@@ -263,7 +263,7 @@ namespace XNodeEditor
                         if (IsDraggingPort)
                         {
                             // If connection is valid, save it
-                            if (draggedOutputTarget != null && draggedOutput.CanConnectTo(draggedOutputTarget))
+                            if (draggedOutputTarget != null && draggedOutputTarget.node != draggedOutput.node && draggedOutput.CanConnectTo(draggedOutputTarget))
                             {
                                 XNode.Node node = draggedOutputTarget.node;
                                 if (graph.nodes.Count != 0) draggedOutput.Connect(draggedOutputTarget);
@@ -449,7 +449,7 @@ namespace XNodeEditor
         /// auto-connects when the target is unambiguous. </summary>
         private XNode.NodePort GetSingleCompatibleInput(XNode.Node node)
         {
-            if (node == null || draggedOutput == null) return null;
+            if (node == null || draggedOutput == null || node == draggedOutput.node) return null;
             XNode.NodePort match = null;
             foreach (XNode.NodePort input in node.Inputs)
             {

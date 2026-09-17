@@ -24,6 +24,9 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
+        node: {fileID: 3442198302497414556}
+        reroutePoints: []
+      - fieldName: output
         node: {fileID: -6214745156599126537}
         reroutePoints: []
       _direction: 0
@@ -199,9 +202,6 @@ MonoBehaviour:
       _node: {fileID: -6214745156599126537}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: input
-        node: {fileID: -6214745156599126537}
-        reroutePoints: []
       - fieldName: input
         node: {fileID: -8983788205192866597}
         reroutePoints: []
@@ -526,6 +526,9 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: input
         node: {fileID: 7332991121257117244}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -8983788205192866597}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
