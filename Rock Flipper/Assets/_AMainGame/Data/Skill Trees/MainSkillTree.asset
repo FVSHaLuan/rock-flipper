@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: P0 Landing Cooldown
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: -250}
+  position: {x: 0, y: -500}
   ports:
     keys:
     - input
@@ -24,7 +24,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 7332991121257117244}
+        node: {fileID: -6214745156599126537}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -33,10 +33,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -8983788205192866597}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 7208314523899227332}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -70,7 +67,7 @@ MonoBehaviour:
   m_Name: P0 Rock Chest Exp
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: -500, y: -500}
+  position: {x: -250, y: -500}
   ports:
     keys:
     - input
@@ -90,10 +87,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -7897297671128024798}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: -6214745156599126537}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -138,7 +132,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 7332991121257117244}
+        node: {fileID: 2299989078838170068}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -147,10 +141,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -7525168557237096116}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 2299989078838170068}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -184,7 +175,7 @@ MonoBehaviour:
   m_Name: P0 Flipping Speed
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: -250, y: -500}
+  position: {x: 0, y: -250}
   ports:
     keys:
     - input
@@ -195,7 +186,10 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: -7897297671128024798}
+        node: {fileID: 5352181967948316995}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -6214745156599126537}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -206,7 +200,10 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: 5352181967948316995}
+        node: {fileID: -6214745156599126537}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -8983788205192866597}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -241,7 +238,7 @@ MonoBehaviour:
   m_Name: P0 Level Exp
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: -750, y: -250}
+  position: {x: -500, y: -250}
   ports:
     keys:
     - input
@@ -252,7 +249,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: -4136169015872291085}
+        node: {fileID: 3442198302497414556}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -261,10 +258,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -4978227826005627924}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 3442198302497414556}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -298,7 +292,7 @@ MonoBehaviour:
   m_Name: P0 Purity
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: -500, y: -250}
+  position: {x: -500, y: -500}
   ports:
     keys:
     - input
@@ -309,7 +303,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 7208314523899227332}
+        node: {fileID: 3442198302497414556}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -320,7 +314,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: -4978227826005627924}
+        node: {fileID: 7208314523899227332}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -370,7 +364,7 @@ MonoBehaviour:
   - {fileID: 3442198302497414556}
   - {fileID: -4978227826005627924}
   overlappedNodes: []
-  rootNode: {fileID: 7332991121257117244}
+  rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
   rootNodeHeaderColor: {r: 0.8901961, g: 0.29411766, b: 0.3647059, a: 1}
 --- !u!114 &2299989078838170068
@@ -397,7 +391,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: -7525168557237096116}
+        node: {fileID: 5352181967948316995}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -409,6 +403,9 @@ MonoBehaviour:
       connections:
       - fieldName: input
         node: {fileID: 2375330221305776675}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -7525168557237096116}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -497,7 +494,7 @@ MonoBehaviour:
   m_Name: P0 Breaking Cash Mult
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: -750, y: -500}
+  position: {x: -250, y: -250}
   ports:
     keys:
     - input
@@ -508,7 +505,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: -4978227826005627924}
+        node: {fileID: 5352181967948316995}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -519,7 +516,16 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
+        node: {fileID: -4136169015872291085}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -4978227826005627924}
+        reroutePoints: []
+      - fieldName: input
         node: {fileID: -7897297671128024798}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 7332991121257117244}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -554,7 +560,7 @@ MonoBehaviour:
   m_Name: P0 Landing Cash
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: -500}
+  position: {x: 0, y: 0}
   ports:
     keys:
     - input
@@ -563,10 +569,7 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: 5352181967948316995}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: -6214745156599126537}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -574,7 +577,16 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 5352181967948316995}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 3442198302497414556}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -6214745156599126537}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 2299989078838170068}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -608,7 +620,7 @@ MonoBehaviour:
   m_Name: P0 Pure Cash Mult
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: -250, y: -250}
+  position: {x: -750, y: -500}
   ports:
     keys:
     - input
@@ -619,7 +631,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: -8983788205192866597}
+        node: {fileID: -4136169015872291085}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -628,10 +640,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 7208314523899227332}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: -4136169015872291085}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -665,7 +674,7 @@ MonoBehaviour:
   m_Name: P0 Max Count
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 0}
+  position: {x: -500, y: 0}
   ports:
     keys:
     - input
@@ -674,7 +683,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: 7332991121257117244}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 3442198302497414556}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -682,13 +694,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 7332991121257117244}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: -7525168557237096116}
-        reroutePoints: []
-      - fieldName: input
-        node: {fileID: -8983788205192866597}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
