@@ -15,6 +15,10 @@ namespace GD
         [SerializeField]
         private Vector2 emptyScale;
 
+        [Header("Debug")]
+        [SerializeField, Range(0f, 1f)]
+        private float testValue;
+
         private float value;
 
         public override float Value
@@ -72,9 +76,15 @@ namespace GD
             ///
             emptyPosition = transform.localPosition;
             emptyScale = transform.localScale;
-            
+
             ///
             UnityEditor.EditorUtility.SetDirty(this);
+        }
+
+        [ContextMenu("Editor_ViewTestValue")]
+        private void Editor_ViewTestValue()
+        {
+            DisplayValue(testValue);
         }
 #endif
     }
