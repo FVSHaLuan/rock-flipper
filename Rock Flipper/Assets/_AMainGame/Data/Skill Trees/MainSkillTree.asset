@@ -170,7 +170,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -450,7 +450,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -504,7 +504,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -573,7 +573,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
