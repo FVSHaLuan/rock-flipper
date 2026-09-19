@@ -41,7 +41,7 @@ namespace Agame.Run.Stats
         [Header("Flipper Bots")]
         public int flipperBotCount = 0;
         public float flipperBotFlippingInterval = 2.0f;
-        public float flipperBotMovementSpeed = 3f;
+        public float flipperBotMovementSpeedFactor = 1f;
 
         public bool UnlockedSkillTree
         {

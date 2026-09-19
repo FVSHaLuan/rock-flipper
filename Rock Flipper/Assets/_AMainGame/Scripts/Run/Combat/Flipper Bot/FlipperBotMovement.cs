@@ -4,7 +4,10 @@ namespace Agame.Run.Combat
 {
     public class FlipperBotMovement : ExtendedMonoBehaviourRun
     {
-        private float Speed => BuildStats.flipperBotMovementSpeed;
+        [SerializeField]
+        private float baseSpeed = 3f;
+
+        private float Speed => baseSpeed * BuildStats.flipperBotMovementSpeedFactor;
 
         private Vector2 currentTarget;
         private bool hasTarget;
