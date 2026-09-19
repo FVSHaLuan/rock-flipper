@@ -4,7 +4,7 @@ namespace Agame.Run.Stats
 {
     [System.Serializable]
     public class RockTierBuildStats
-    {
+    {        
         private MaxCountCapBreakpoints maxCountCapBreakpoints = new MaxCountCapBreakpoints();
 
         public bool unlocked = false;

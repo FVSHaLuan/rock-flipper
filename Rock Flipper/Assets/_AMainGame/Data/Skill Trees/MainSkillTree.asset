@@ -983,6 +983,10 @@ MonoBehaviour:
   costs_1:
   - currency: 0
     amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
   costs_2: []
   costs_3: []
   costFormulas: []

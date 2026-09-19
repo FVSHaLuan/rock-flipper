@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Agame.Run.Stats
 {
@@ -39,7 +40,7 @@ namespace Agame.Run.Stats
             priceSet = 0;
 
             ///
-            if (breakpoints == null)
+            if (breakpoints == null || breakpoints.Count == 0)
             {
                 priceSet = 0;
                 return ownedCount;
@@ -47,12 +48,12 @@ namespace Agame.Run.Stats
 
             ///
             int priceLevel = ownedCount;
-            for (int i = 1; i < breakpoints.Count; i++)
+            for (int i = 0; i < breakpoints.Count; i++)
             {
-                var previousCapBreakpoint = breakpoints[i - 1];
-                if (ownedCount >= previousCapBreakpoint)
+                var capBreakpoint = breakpoints[i];
+                if (ownedCount >= capBreakpoint)
                 {
-                    priceLevel = ownedCount - previousCapBreakpoint;
+                    priceLevel = ownedCount - capBreakpoint;
                     priceSet++;
                 }
                 else
