@@ -17,6 +17,12 @@ This repo is **two things at once**:
 - Everything else under `Assets/` (Epic Toon FX, EnhancedScroller v2, xNode, TextMesh Pro, Steamworks.NET package, Controller Icons Pack, Shaper2D, CommandTerminal, etc.) is **third-party/vendored** — don't expect project-specific documentation for these; treat them as black-box dependencies unless you find evidence they've been modified in place.
 - `Library/`, `Temp/`, `Logs/`, `obj/`, `.vs/`, `UserSettings/` — Unity/IDE-generated, not source.
 
+## Committing changes
+
+- Before committing, check every newly created asset file (scripts, prefabs, scenes, assets, folders, etc. under `Rock Flipper/Assets/`) for a matching `.meta` file. Unity only generates `.meta` files when the Editor has focus and detects the new file on disk — if a file was created (e.g. by Claude) while Unity wasn't focused/running, its `.meta` may not exist yet.
+- If a `.meta` file is missing for a new asset, do not commit the asset without it: bring Unity Editor focus to the project (or use the `unity-cli` skill) so Unity generates the `.meta`, then verify it exists before staging/committing. Committing an asset without its `.meta` breaks Unity's GUID references for anyone else who pulls the change.
+- This check applies to new files only — modified/deleted existing files already have (or correctly lack) `.meta` files.
+
 ## Tooling
 
 - Use the `unity-cli` skill for any interaction with the Unity Editor or this Unity project: inspecting/editing the scene hierarchy, creating or modifying GameObjects, editing prefabs/assets, running C# in a live connected Editor, or building/testing the project. Prefer it over hand-editing `.unity`/`.prefab`/`.asset` YAML files directly whenever a live or CLI-driven Editor operation can do the job.
