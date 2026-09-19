@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: 
+  descriptionFormat: Enable Mouse Radius
   extraDescription: 
   buildValueMultiplier: 1
 --- !u!114 &-3273421152362287426
