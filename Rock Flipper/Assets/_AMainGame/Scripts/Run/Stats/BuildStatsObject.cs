@@ -39,6 +39,7 @@ namespace Agame.Run.Stats
         private ChestRarityBuildStats chest_Unique;
 
         [Header("Flipper Bots")]
+        public int flipperBotMaxCount = 5;
         public int flipperBotCount = 0;
         public float flipperBotFlippingInterval = 2.0f;
         public float flipperBotMovementSpeedFactor = 1f;

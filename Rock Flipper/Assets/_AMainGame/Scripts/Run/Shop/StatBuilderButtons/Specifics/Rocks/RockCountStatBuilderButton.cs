@@ -21,7 +21,7 @@ namespace Agame.Run.Shop
             var regularRockPrototype = RunEntry.prototypeManager.GetRockPrototype(Tier, false);
             var pureRockPrototype = RunEntry.prototypeManager.GetRockPrototype(Tier, true);
 
-            /// Update the max level text
+            /// 
             for (int i = 0; i < levelCount; i++)
             {
                 bool isPure = Random.value <= tierBuildStats.purity;
