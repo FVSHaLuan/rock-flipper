@@ -17,7 +17,7 @@ namespace Agame.Run.Combat
         protected void LateUpdate()
         {
             flippableHits.Clear();
-            if (BuildStats.enabledPlayerCursorHover)
+            if (BuildStats.enabledMouseHover)
             {
                 FindHitsByHovering();
             }
@@ -38,9 +38,9 @@ namespace Agame.Run.Combat
 
         private void FindHitsByHovering()
         {
-            if (BuildStats.enabledPlayerCursorRadius)
+            if (BuildStats.enabledMouseRadius)
             {
-                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.playerCursorRadius, true, flippableHits);
+                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.mouseRadius, true, flippableHits);
             }
             else
             {
@@ -52,7 +52,7 @@ namespace Agame.Run.Combat
         {
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.playerCursorRadius, true, flippableHits);
+                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.mouseRadius, true, flippableHits);
             }
         }
     }

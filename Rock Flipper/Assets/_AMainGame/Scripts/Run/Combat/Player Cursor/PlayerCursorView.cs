@@ -21,13 +21,13 @@ namespace Agame.Run.Combat
 
         protected void UpdateView()
         {
-            if (BuildStats.enabledPlayerCursorRadius)
+            if (BuildStats.enabledMouseRadius)
             {
                 noRadiusView.SetActive(false);
                 radiusView.SetActive(true);
 
                 ///
-                radiusView.transform.localScale = Vector3.one * BuildStats.playerCursorRadius * 2;
+                radiusView.transform.localScale = Vector3.one * BuildStats.mouseRadius * 2;
             }
             else
             {

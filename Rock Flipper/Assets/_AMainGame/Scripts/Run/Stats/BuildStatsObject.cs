@@ -11,10 +11,10 @@ namespace Agame.Run.Stats
         [SerializeField]
         private bool unlockedSkillTree;
 
-        [Header("Player Cursor")]
-        public bool enabledPlayerCursorHover = false;
-        public bool enabledPlayerCursorRadius = false;
-        public float playerCursorRadius = 0.5f;
+        [Header("Mouse")]
+        public bool enabledMouseHover = false;
+        public bool enabledMouseRadius = false;
+        public float mouseRadius = 0.5f;
 
         [Header("Rocks")]
         [SerializeField]
