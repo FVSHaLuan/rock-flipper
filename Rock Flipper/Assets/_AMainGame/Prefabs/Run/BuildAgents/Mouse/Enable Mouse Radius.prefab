@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 21300000, guid: 3cac02798d4249b488408c4e5058c97b, type: 3}
-  subIcon: {fileID: 0}
+  subIcon: {fileID: 21300000, guid: c32d2e2fc82a6804aa80c30e187ea243, type: 3}
   titleGroup: Mouse
   localizedTitleGroup:
     m_TableReference:
