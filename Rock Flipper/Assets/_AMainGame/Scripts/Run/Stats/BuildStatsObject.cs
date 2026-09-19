@@ -43,6 +43,7 @@ namespace Agame.Run.Stats
         public int flipperBotCount = 0;
         public float flipperBotFlippingInterval = 2.0f;
         public float flipperBotMovementSpeedFactor = 1f;
+        private MaxCountCapBreakpoints flipperBotMaxCountCapBreakpoints = new MaxCountCapBreakpoints();
 
         public bool UnlockedSkillTree
         {
@@ -67,6 +68,26 @@ namespace Agame.Run.Stats
                 RockTier.P3 => rock_P3,
                 _ => throw new System.NotImplementedException($"RockTier {rockTier} is not implemented in BuildStatsObject."),
             };
+        }
+
+        /// <summary>
+        /// Snapshots the current <see cref="flipperBotMaxCount"/> as a breakpoint. Call this right before
+        /// raising <see cref="flipperBotMaxCount"/> (e.g. from a skill/shop upgrade) so
+        /// <see cref="GetFlipperBotCountPriceLevelSinceLastCapIncrease"/> can later reset the price-scaling
+        /// level relative to this cap.
+        /// </summary>
+        public void RecordFlipperBotMaxCountCapBreakpoint()
+        {
+            flipperBotMaxCountCapBreakpoints.RecordBreakpoint(flipperBotMaxCount);
+        }
+
+        /// <summary>
+        /// Converts an absolute owned flipper bot count into the level to feed into the shop's price-scaling
+        /// formula, resetting the count relative to the most recent cap breakpoint the owned count has passed.
+        /// </summary>
+        public int GetFlipperBotCountPriceLevelSinceLastCapIncrease(int ownedCount, out int priceSet)
+        {
+            return flipperBotMaxCountCapBreakpoints.GetPriceLevelSinceLastCapIncrease(ownedCount, out priceSet);
         }
 
         public ChestRarityBuildStats GetChestRarityBuildStats(ChestRarity chestRarity)
