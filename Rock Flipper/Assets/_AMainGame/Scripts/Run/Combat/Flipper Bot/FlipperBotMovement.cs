@@ -9,12 +9,21 @@ namespace Agame.Run.Combat
 
         private float Speed => baseSpeed * BuildStats.flipperBotMovementSpeedFactor;
 
+        private FlipperBot flipperBot;
         private Vector2 currentTarget;
         private bool hasTarget;
 
+        protected override void ExtendedAwake()
+        {
+            flipperBot = GetComponent<FlipperBot>();
+        }
+
         protected void Update()
         {
-            ChaseTarget();
+            if (flipperBot.State == FlipperBot.FlipperBotState.Active)
+            {
+                ChaseTarget();
+            }
         }
 
         private void ChaseTarget()

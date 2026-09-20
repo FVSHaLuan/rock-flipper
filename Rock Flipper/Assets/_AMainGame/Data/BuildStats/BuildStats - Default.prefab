@@ -49,52 +49,61 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   unlockedSkillTree: 0
-  enabledPlayerCursorRadius: 0
-  playerCursorRadius: 0.5
+  enabledMouseHover: 0
+  enabledMouseRadius: 0
+  mouseRadius: 0.5
   rock_P0:
     unlocked: 1
     count: 1
     maxCount: 10
+    maxHp: 5
     purity: 0
     landingCash: 1
-    breakingCash: 3
+    breakingCashMultiplier: 2
     purityCashMultiplier: 2
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
+    flippingSpeedFactor: 1
   rock_P1:
     unlocked: 0
     count: 0
     maxCount: 10
+    maxHp: 5
     purity: 0.1
     landingCash: 1
-    breakingCash: 5
+    breakingCashMultiplier: 2
     purityCashMultiplier: 3
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
+    flippingSpeedFactor: 1
   rock_P2:
     unlocked: 0
     count: 0
     maxCount: 10
+    maxHp: 5
     purity: 0.1
     landingCash: 1
-    breakingCash: 5
+    breakingCashMultiplier: 2
     purityCashMultiplier: 3
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
+    flippingSpeedFactor: 1
   rock_P3:
     unlocked: 0
     count: 0
     maxCount: 10
+    maxHp: 5
     purity: 0.1
     landingCash: 1
-    breakingCash: 5
+    breakingCashMultiplier: 2
     purityCashMultiplier: 3
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
+    flippingSpeedFactor: 1
   chest_Common:
     weight: 100
     maxHP: 2
@@ -110,5 +119,9 @@ MonoBehaviour:
   chest_Unique:
     weight: 100
     maxHP: 2
+  flipperBotMaxCount: 5
+  flipperBotCount: 0
   flipperBotFlippingInterval: 2
-  flipperBotMovementSpeed: 1
+  flipperBotMovementSpeedFactor: 0.2
+  flipperBotActiveTime: 10
+  flipperBotIdleTime: 5
