@@ -7,16 +7,16 @@ namespace Agame.Run.Shop
     {
         public int MaxLevel => BuildStats.flipperBotMaxCount;
 
-        public override void HandleLeveledUp(int levelCount)
-        {
-            base.HandleLeveledUp(levelCount);
+        //public override void HandleLeveledUp(int levelCount)
+        //{
+        //    base.HandleLeveledUp(levelCount);
 
-            ///
-            for (int i = 0; i < levelCount; i++)
-            {
-                // Spawn a new Flipper Bot
-            }
-        }
+        //    ///
+        //    for (int i = 0; i < levelCount; i++)
+        //    {
+        //        // Spawn a new Flipper Bot
+        //    }
+        //}
     }
 
 }

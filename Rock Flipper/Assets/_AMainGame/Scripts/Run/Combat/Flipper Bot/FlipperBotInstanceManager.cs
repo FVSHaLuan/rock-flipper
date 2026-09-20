@@ -1,9 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Agame.Run.Combat
 {
     public class FlipperBotInstanceManager : ExtendedMonoBehaviourRun
     {
+        private List<FlipperBot> activeFlipperBots = new List<FlipperBot>();
+
+        public int ActiveFlipperBotCount => activeFlipperBots.Count;
+
         [ContextMenu("Spawn Flipper Bot"), PlayModeOnly]
         public FlipperBot SpawnFlipperBot()
         {
@@ -17,6 +22,9 @@ namespace Agame.Run.Combat
             ///
             flipperBot.transform.position = Playfield.GetRandomPoint(-Vector2.one);
             flipperBot.gameObject.SetActive(true);
+
+            ///
+            activeFlipperBots.Add(flipperBot);
 
             ///
             return flipperBot;
