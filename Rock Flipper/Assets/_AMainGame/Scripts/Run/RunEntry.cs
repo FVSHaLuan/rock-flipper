@@ -29,6 +29,7 @@ namespace Agame.Run
         public ShortHandManager shortHandManager;
         public CombatSoundEffectManager combatSoundEffectManager;
         public ItemDataManager itemDataManager;
+        public FlipperBotInstanceManager flipperBotInstanceManager;
 
         [Header("Combat")]
         public Camera gameplayCamera;
