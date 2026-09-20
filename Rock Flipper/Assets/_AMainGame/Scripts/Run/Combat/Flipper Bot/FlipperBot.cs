@@ -7,8 +7,12 @@ namespace Agame.Run.Combat
         [Header("Components")]
         [SerializeField]
         private FlipperBotFlipper flipper;
+        [SerializeField]
+        private FlipperBotPoolHandler poolHandler;
 
         private CooldownObject flipCooldown;
+
+        public FlipperBotPoolHandler PoolHandler => poolHandler;
 
         protected void Start()
         {

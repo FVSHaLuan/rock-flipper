@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 8886045293766071949}
   - component: {fileID: 8627410450616663833}
   - component: {fileID: 139498848426998875}
+  - component: {fileID: 1609522718298335245}
   m_Layer: 0
   m_Name: Flipper Bot
   m_TagString: Untagged
@@ -287,6 +288,24 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
+  baseSpeed: 3
+--- !u!114 &1609522718298335245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220183543597905602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40f5b1ee7f16e645a29649b9515d0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.FlipperBotPoolHandler
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  flipperBot: {fileID: 3972022116171283037}
 --- !u!1 &5361135190069971290
 GameObject:
   m_ObjectHideFlags: 0
