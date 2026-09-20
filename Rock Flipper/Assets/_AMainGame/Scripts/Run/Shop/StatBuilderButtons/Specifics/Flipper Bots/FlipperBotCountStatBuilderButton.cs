@@ -7,6 +7,24 @@ namespace Agame.Run.Shop
     {
         public int MaxLevel => BuildStats.flipperBotMaxCount;
 
+        protected void Start()
+        {
+            UpdateVisibility();
+
+            ///
+            RunEntry.skillTreeScreen.OnClosed += SkillTreeScreen_OnClosed;
+        }
+
+        private void SkillTreeScreen_OnClosed()
+        {
+            UpdateVisibility();
+        }
+
+        private void UpdateVisibility()
+        {
+            gameObject.SetActive(BuildStats.flipperBotsEnabled);
+        }
+
         //public override void HandleLeveledUp(int levelCount)
         //{
         //    base.HandleLeveledUp(levelCount);
