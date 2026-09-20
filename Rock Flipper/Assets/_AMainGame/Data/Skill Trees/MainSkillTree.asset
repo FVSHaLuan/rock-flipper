@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FlipBot Idle Time
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 750}
+  position: {x: 0, y: 1000}
   ports:
     keys:
     - input
@@ -390,6 +390,63 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &-5280188213446210041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: FlipBot Enable
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 0, y: 500}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -5280188213446210041}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 3449549515527872826}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5280188213446210041}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -4620618385319408184}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 6383707989917667417, guid: 9fde276c6698d41429db88f22def70ee, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &-4978227826005627924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,7 +514,7 @@ MonoBehaviour:
   m_Name: FlipBot Active Time
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1000}
+  position: {x: 0, y: 1250}
   ports:
     keys:
     - input
@@ -514,7 +571,7 @@ MonoBehaviour:
   m_Name: FlipBot Max Count
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 500}
+  position: {x: 0, y: 750}
   ports:
     keys:
     - input
@@ -525,7 +582,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 3449549515527872826}
+        node: {fileID: -5280188213446210041}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -571,7 +628,7 @@ MonoBehaviour:
   m_Name: FlipBot Flip Interval
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1500}
+  position: {x: 0, y: 1750}
   ports:
     keys:
     - input
@@ -723,6 +780,7 @@ MonoBehaviour:
   - {fileID: -4888477715943952057}
   - {fileID: 5938386169034562701}
   - {fileID: -4163678286576885277}
+  - {fileID: -5280188213446210041}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
@@ -1005,7 +1063,7 @@ MonoBehaviour:
         node: {fileID: 809505434402096920}
         reroutePoints: []
       - fieldName: input
-        node: {fileID: -4620618385319408184}
+        node: {fileID: -5280188213446210041}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1124,7 +1182,7 @@ MonoBehaviour:
   m_Name: FlipBot Move Speed
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1250}
+  position: {x: 0, y: 1500}
   ports:
     keys:
     - input
