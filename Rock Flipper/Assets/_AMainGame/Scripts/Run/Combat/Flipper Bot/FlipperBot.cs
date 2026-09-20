@@ -35,6 +35,14 @@ namespace Agame.Run.Combat
                 flipCooldown.StartCoolingDown();
             }
         }
+
+#if UNITY_EDITOR
+        [ContextMenu("Spawn Flipper Bot"), PlayModeOnly]
+        private void Editor_Spawn()
+        {
+            RunEntry.flipperBotInstanceManager.SpawnFlipperBot(poolHandler);
+        }
+#endif
     }
 
 }

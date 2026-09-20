@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 712cad6426be100439f0f914b46af47e, type: 3}
   m_Name: PrototypeManager
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.RockPrototypeManager
+  flipperBotPrototype: {fileID: 1609522718298335245, guid: 0dea9182720dede46985cdebd90e7670, type: 3}
   rockPrototypes:
   - {fileID: 3295397204830722951, guid: 2ebe442c7fc1fcc45ae613264d9b986b, type: 3}
   - {fileID: 4243059286864769980, guid: 7d358b55b62d6f840a9c218c3ee7f663, type: 3}

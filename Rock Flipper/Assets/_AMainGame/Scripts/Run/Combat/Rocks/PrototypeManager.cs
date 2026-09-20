@@ -6,6 +6,10 @@ namespace Agame.Run.Combat
 {
     public class PrototypeManager : ScriptableObjectWithInit
     {
+        [SerializeField]
+        private FlipperBotPoolHandler flipperBotPrototype;
+
+        [Space]
         [SerializeField, FormerlySerializedAs("rocks")]
         private List<Rock> rockPrototypes = new List<Rock>();
         [SerializeField]
@@ -17,6 +21,8 @@ namespace Agame.Run.Combat
         private Dictionary<RockTier, Rock> pureRockDictionary;
         [System.NonSerialized]
         private Dictionary<ChestRarity, Chest> chestDictionary;
+
+        public FlipperBotPoolHandler FlipperBotPrototype => flipperBotPrototype;
 
         protected override void Init()
         {
