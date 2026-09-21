@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// on enabled, animation starts from the gameobject's current position
 /// </summary>
-public class FloatingDamageAnimation : MonoBehaviour
+public class FloatingTextAnimation : MonoBehaviour
 {
     [SerializeField, Tooltip("scale from 0 to 1")]
     private float appearDuration = 0.2f;
