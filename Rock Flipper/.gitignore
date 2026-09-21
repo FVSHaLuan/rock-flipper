@@ -80,3 +80,4 @@ TPS_cache/
 /.vscode/
 /Incoremental.slnx
 /TestBuilds/
+*.slnx
