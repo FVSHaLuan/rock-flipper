@@ -228,9 +228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca66dd04186b074e87c27a98b4825e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Helpers.UnityExtend::FloatingDamageAnimation
-  appearDuration: 0.2
-  idleDuration: 0.1
+  appearDuration: 0.35
+  idleDuration: 0.2
   exitDuration: 0.5
   yDistance: 1
-  xMaxDelta: 0.1
+  xMaxDelta: 0.06
+  wiggleFrequency: 0.8
   textMeshPro: {fileID: 5996339766255820192}
+  poolMember: {fileID: 0}

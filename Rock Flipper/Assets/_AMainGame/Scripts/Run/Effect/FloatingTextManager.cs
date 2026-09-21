@@ -6,11 +6,11 @@ namespace Agame.Run.Combat
     public class FloatingTextManager : FloatingTextManagerBase
     {
         [SerializeField]
-        private GeneralPoolMemberSimplifiedEffect prototype_1;
+        private GeneralPoolMemberSimplifiedEffect prototype_0;
 
         public void Spawn(int prototypeId, Vector2 position, string text)
         {
-            Spawn(prototype_1, position, text);
+            Spawn(prototype_0, position, text);
         }
 
         private void Spawn(GeneralPoolMemberSimplifiedEffect prototype, Vector2 position, string text)
