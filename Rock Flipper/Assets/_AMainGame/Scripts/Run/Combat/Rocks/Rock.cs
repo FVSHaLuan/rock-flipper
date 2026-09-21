@@ -1,3 +1,4 @@
+using FH.Core.Architecture.Pool;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -26,6 +27,20 @@ namespace Agame.Run.Combat
         private Flippable flippable;
         [SerializeField]
         private FlippableByPlayerCursor flippableByPlayerCursor;
+
+        [Header("Effects")]
+        [SerializeField]
+        private Vector2 floatingTextOffset;
+        [SerializeField]
+        private float floatingTextRandomRadius = 0.3f;
+        [SerializeField]
+        private GeneralPoolMemberSimplifiedEffect normalLandingCashFloatingTextPrototype;
+        [SerializeField]
+        private GeneralPoolMemberSimplifiedEffect pureLandingCashFloatingTextPrototype;
+        [SerializeField]
+        private GeneralPoolMemberSimplifiedEffect normalBreakingCashFloatingTextPrototype;
+        [SerializeField]
+        private GeneralPoolMemberSimplifiedEffect pureBreakingCashFloatingTextPrototype;
 
         [Header("Events")]
         [SerializeField]
@@ -123,6 +138,29 @@ namespace Agame.Run.Combat
             var stats = BuildStats.GetRockTierBuildStats(rockTier);
             var amount = stats.landingCash * (isBreaking ? stats.breakingCashMultiplier : 1) * (isPure ? stats.purityCashMultiplier : 1);
             RunData.AddCurrency(Currency.CASH, amount);
+
+            ///
+            PlayFloatingTextEffect(amount, isBreaking);
+        }
+
+        private void PlayFloatingTextEffect(double amount, bool isBreaking)
+        {
+            var prototype = GetFloatingTextPrototype(isBreaking);
+            var text = entry.currencyConfigManager.GetConfig(Currency.CASH).CurrencyName + amount.ToLargeNumberString();
+            var position = (Vector2)transform.position + floatingTextOffset + Random.insideUnitCircle * floatingTextRandomRadius;
+            RunEntry.floatingTextManager.Spawn(prototype, position, text);
+        }
+
+        private GeneralPoolMemberSimplifiedEffect GetFloatingTextPrototype(bool isBreaking)
+        {
+            if (isBreaking)
+            {
+                return IsPure ? pureBreakingCashFloatingTextPrototype : normalBreakingCashFloatingTextPrototype;
+            }
+            else
+            {
+                return IsPure ? pureLandingCashFloatingTextPrototype : normalLandingCashFloatingTextPrototype;
+            }
         }
 
         private void Flippable_OnStartedFlipping()

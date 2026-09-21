@@ -11031,12 +11031,17 @@ MonoBehaviour:
     selfLogs: 
   rockTier: 0
   isPure: 0
-  baseHP: 5
   newRockFlippingDuration: 1
   newRockFlippingHeight: 2
   rockPoolHandler: {fileID: 6063040817023332797}
   flippable: {fileID: 7931788272956034127}
   flippableByPlayerCursor: {fileID: 8378381129742385243}
+  floatingTextOffset: {x: 0, y: 0.3}
+  floatingTextRandomRadius: 0
+  normalLandingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: 3b9303021996c514399140d9a8e469c7, type: 3}
+  pureLandingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: 24ef9bc6e2ae0344c8f65a3a8c5d9748, type: 3}
+  normalBreakingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: b6afcbf879184bc4089a440d4c3455ed, type: 3}
+  pureBreakingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: e46ea368778c1d148b71c6354a6fa40c, type: 3}
   onStartedFlipping:
     m_PersistentCalls:
       m_Calls:

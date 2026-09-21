@@ -4492,7 +4492,6 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  prototype_0: {fileID: 1108723600324557242, guid: 2d9f46d2cd99dc247b3b57b0efaaf773, type: 3}
 --- !u!1001 &315007370
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5996339766255820192}
   - component: {fileID: 8708549639163644724}
   - component: {fileID: 2830988324569924352}
+  - component: {fileID: 35468561002859635}
   m_Layer: 0
   m_Name: Floating Text
   m_TagString: Untagged
@@ -228,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca66dd04186b074e87c27a98b4825e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Helpers.UnityExtend::FloatingDamageAnimation
-  appearDuration: 0.35
+  appearDuration: 0.2
   idleDuration: 0.2
   exitDuration: 0.5
   yDistance: 1
@@ -236,3 +237,16 @@ MonoBehaviour:
   wiggleFrequency: 0.8
   textMeshPro: {fileID: 5996339766255820192}
   poolMember: {fileID: 0}
+--- !u!210 &35468561002859635
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4248875916178349844}
+  m_Enabled: 1
+  m_SortingLayerID: 285969491
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0

@@ -57,6 +57,9 @@ TagManager:
   - name: GroundFlippable
     uniqueID: 4041123597
     locked: 0
+  - name: Floating Texts
+    uniqueID: 285969491
+    locked: 0
   - name: AirFlippable
     uniqueID: 3888830043
     locked: 0
@@ -71,9 +74,6 @@ TagManager:
     locked: 0
   - name: Combat UI Effect
     uniqueID: 1414876891
-    locked: 0
-  - name: Floating Numbers
-    uniqueID: 1425206213
     locked: 0
   - name: UI
     uniqueID: 1568848067
