@@ -4444,6 +4444,55 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7232604576085385154, guid: 38c5182da550d42458c9d5a03bafb802, type: 3}
   m_PrefabInstance: {fileID: 292592382}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &311759378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311759379}
+  - component: {fileID: 311759380}
+  m_Layer: 0
+  m_Name: FloatingTextManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &311759379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311759378}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 731004323}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &311759380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311759378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905a84726faf3624c9abc34db7defe9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.FloatingTextManager
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  prototype_1: {fileID: 1108723600324557242, guid: 2d9f46d2cd99dc247b3b57b0efaaf773, type: 3}
 --- !u!1001 &315007370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7396,6 +7445,7 @@ MonoBehaviour:
   sideBarStatBuilder: {fileID: 2052955422}
   combatBackgroundManager: {fileID: 4075723}
   chestInstanceManager: {fileID: 863627441}
+  floatingTextManager: {fileID: 0}
 --- !u!4 &487646590
 Transform:
   m_ObjectHideFlags: 0
@@ -10863,6 +10913,7 @@ Transform:
   - {fileID: 863627440}
   - {fileID: 1250489831}
   - {fileID: 1580671887}
+  - {fileID: 311759379}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &731284647
