@@ -10,7 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2310131119459503973, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
       propertyPath: m_Name
-      value: Rock Floating Text
+      value: Breaking Cash - Pure
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318594060511497681, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
+      propertyPath: m_fontSize
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318594060511497681, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.38768244
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318594060511497681, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.41734767
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318594060511497681, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318594060511497681, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318594060511497681, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4280693465
       objectReference: {fileID: 0}
     - target: {fileID: 6798799424772773836, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
       propertyPath: m_Pivot.x
@@ -74,11 +98,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798799424772773836, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.03687
+      value: -2.06655
       objectReference: {fileID: 0}
     - target: {fileID: 6798799424772773836, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.49533
+      value: 0.72941
       objectReference: {fileID: 0}
     - target: {fileID: 6798799424772773836, guid: 8a2d1055227dffb4792b905d6d7fcb19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
