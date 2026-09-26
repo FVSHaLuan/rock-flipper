@@ -7,4 +7,4 @@
 * Star:
   * Symbol: ST, e.g: ST275
   * Earning sources: from leveling up
-  * Usage: buy a few rare upgrades
+  * Usage: buy a few rare upgrades, and so stars are designed to hard to earn (see [Levels](./Levels.md))  
