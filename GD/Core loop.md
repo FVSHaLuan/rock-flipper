@@ -6,4 +6,4 @@ There's no sessions, everythings are just on the playfield, in the early game yo
 
 You can buy any upgrades as long as they are unlocked and you have enough currencies.
 
-The game ends when there's no upgrades left to buy.
+The game ends when there's no upgrades left to buy and all items are at their max levels.
