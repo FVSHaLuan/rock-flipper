@@ -7,3 +7,4 @@
 * **Intended device**: PC with mouse and keyboard
 * **Art style**: 2D, minimalistic, float
 * **Target play time**: 5-7 hours
+* **Offline progress**: none; nothing progresses while the game is closed
