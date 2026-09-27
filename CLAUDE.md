@@ -6,7 +6,7 @@ This repo is **two things at once**:
 
 ## Layout
 
-- **`GD/`** — game design documents for Rock Flipper (e.g. [Rock Flipper - GDD.md](GD/Rock%20Flipper%20-%20GDD.md)). See [Game design documents](#game-design-documents-gd) below for when to load them.
+- **`GD/`** — game design documents for Rock Flipper. See [Game design documents](#game-design-documents-gd) below for when to load them.
 - **`Rock Flipper/`** — the Unity project itself (Unity project root: `.sln`, `Assets/`, `ProjectSettings/`, `Packages/`, etc.).
 
 ## Game design documents (`GD/`)
