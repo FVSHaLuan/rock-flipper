@@ -24,5 +24,6 @@ Pure rocks earn a multiplied cash income.
 
 # Tiers
 Rocks come with different tiers. The tiers are named: P0, P1, P2,...
+Rocks in the same tier share tier-specific stats like max HP, landing cash, breaking cash multiplier,...
 
 [WIP: P0 are just ordinary rocks, other tiers are being developed, but they generally have better qualities, could have special abilities, and cost more to buy and upgrade]
