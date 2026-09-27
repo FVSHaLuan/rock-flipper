@@ -32,4 +32,6 @@ UI elements are on top of everthing else on this screen.
 # Side bar
 - **Skill Tree button**: on the top, to open **Skill Tree screen**
 - **System Menu button**: on the bottom, to open **System Menu screen**
-- Middle buttons: buy more rocks of each tier
+- Middle buttons: 
+  - buy more rocks of each tier
+  - buy more Flipper Bots
