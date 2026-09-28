@@ -42,15 +42,50 @@ If a proposal breaks one of these constraints, say so explicitly rather than qui
 
 ## How to collaborate
 
+This GDD is a design-exploration document, not an implementation spec. The owner (FVS) owns implementation and handles bounds, clamping, validation, rounding, overflow and other engineering details.
+
 - **The owner decides.** Existing text is the owner's decision unless it's marked as a proposal or an open question. Don't rewrite or "improve" decided content without being asked.
-- **Don't fill gaps silently.** If a task needs something the docs don't define, either ask, or write it as a clearly marked proposal:
+- **Proposals are marked.** When you add something the docs don't define and it's a real design choice, write it as:
   `> **[Proposal]** ...`
   The owner accepts a proposal by removing the marker.
-- **Record open questions** in the doc's `## Open questions` section instead of guessing. When a question is answered, move the answer into the body and log it under `## Decisions`.
 - **Precise rules, no balance values.** Replace vague words ("some", "harder") with a precise rule: what the value depends on and in which direction it moves (e.g. "Cash per flip increases with rock tier"). Leave the actual values `TBD` (see [Scope](#scope-elements-and-rules-not-balancing)). Structural numbers you suggest must be marked as proposals.
-- **Check the ripple effects.** After changing a system, search the other docs for its terms and list any docs that now conflict or need updating. Fix them only if asked.
 - **Flag contradictions** between docs rather than choosing a side.
 - Keep answers and edits concise. The docs are working specs, not prose.
+
+### Level of detail
+
+- Write at the level of intent: what a system is for, how it feels, and how it interacts with other systems.
+- Assume sane bounds. Stats never hit 0 or illegal values, percentages don't exceed what makes sense, and nothing divides by zero. Don't document, ask about, or add guard rules for these.
+- Don't add edge-case sections, validation rules, or "note:" caveats unless asked.
+
+### When to raise something
+
+Only raise a concern if it passes at least one of these tests:
+1. **Design contradiction**: it conflicts with another system, rule, or the game's pillars (e.g. a new upgrade makes an existing mechanic pointless).
+2. **Player-facing consequence**: it changes how the game plays or feels in a way the owner may not have intended (e.g. a dominant strategy, a degenerate loop, a balance cliff).
+3. **Missing decision that blocks the design**: something the owner can't reasonably fill in at implementation time.
+
+If it only matters to the programmer, skip it.
+
+### Questions
+
+- Make a reasonable assumption and keep going instead of asking. State the assumption in one line only if it's a real design choice (and mark it as a proposal in the doc).
+- At most 2–3 questions per reply, and only ones that pass the tests above.
+- Never ask for confirmation or "assurance" on something the owner already said.
+
+### Examples
+
+- "Add Max HP as an upgradable stat; the upgrade lowers it."
+  ✗ Asking whether Max HP can reach 0.
+  ✓ Noting that if it's a trade-off upgrade, it needs a clear payoff, and asking what that payoff is.
+- "Add a Critical stat."
+  ✗ Worrying about crit ≥ 100%.
+  ✓ Pointing out if it overlaps with an existing damage mechanic.
+
+### Keeping it coherent
+
+- When adding or changing something, check it against existing systems: search the other docs for its terms and update any section it affects so the GDD never contradicts itself. List the docs you touched.
+- Each doc keeps a short `## Open questions` section for real unresolved design decisions only. When one is decided, remove it, move the answer into the body and log it under `## Decisions`.
 
 ## Doc conventions
 
