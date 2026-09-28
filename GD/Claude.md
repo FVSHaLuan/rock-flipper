@@ -109,4 +109,5 @@ Apply these when creating a doc or making substantial edits to one. Don't mass-r
 
 ## Git
 
-Don't commit unless asked.
+- Don't commit unless asked.
+- Don't look into the commit history (log, diffs, blame) to work out how a doc evolved or why. Work with the GDD as it currently is.
