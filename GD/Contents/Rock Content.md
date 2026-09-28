@@ -16,8 +16,20 @@
 | Pure multiplier | Cash multiplier for pure rocks | Increases | [Rocks](../Systems/Rocks.md) |
 | Chest exp per landing | Chest exp added to the chest bar per landing | Increases | [Chests](../Systems/Chests.md) |
 | Level exp per landing | Level exp added to the level bar per landing | Increases | [Levels](../Systems/Levels.md) |
+| Max rock count | The most rocks that can be owned; rock purchases stop at this cap | Increases | This doc |
+| Critical landing chance | Chance that a landing is a critical landing | Increases | This doc |
+| Critical landing multiplier | Landing cash multiplier on a critical landing | Increases | This doc |
+| Critical landing damage | HP a rock loses on a critical landing (a normal landing loses 1) | Increases (rocks break more often, so breaking cash comes more often) | This doc |
 
-Rock count is not a stat, but it also grows: more rocks of each tier are bought from the [Combat Screen](../Layouts/Combat%20Screen.md) side bar.
+Rock count is not a stat, but it also grows: more rocks of each tier are bought from the [Combat Screen](../Layouts/Combat%20Screen.md) side bar, up to the max rock count.
+
+### Critical landing
+
+Each landing has a chance, set by critical landing chance, to be a **critical landing**. A critical landing:
+- earns landing cash × critical landing multiplier, and
+- makes the rock lose critical landing damage HP instead of 1.
+
+Critical landing damage is an integer, since HP is an integer.
 
 ## Parameters
 
@@ -28,6 +40,7 @@ Rock count is not a stat, but it also grows: more rocks of each tier are bought 
 | Max upgrade level, per stat, per tier | When the upgrade is maxed (needed for the ending) |
 | Upgrade cost, per level | Cost of the next level (TBD) |
 | Rock purchase cost, per tier | Cost of the next rock of that tier (TBD) |
+| Base max rock count | Max rock count before any upgrade |
 
 All values `TBD`.
 
@@ -38,7 +51,17 @@ All values `TBD`.
 - Which currency pays for each upgrade: Cash, Star, or depends on the stat?
 - Can [Items](../Systems/Items.md) effects or the [Backgrounds](../Systems/Backgrounds.md) Preferred Multiplier also boost these stats? If so, do they stack with upgrades additively or multiplicatively?
 - Do higher tiers add tier-specific upgradable stats (e.g. for special abilities)?
+- Max rock count: one cap per tier, or one cap shared by all tiers? (The per-tier proposal above assumes per tier.)
+- Max rock count: can the player hit the cap before the upgrade is available? If so, what does the side bar buy button show at the cap?
+- Critical landing chance: capped at 100%, or does the upgrade stop earlier?
+- Critical landing multiplier: does it stack with the pure multiplier on a pure rock? Additively or multiplicatively?
+- Critical landing that breaks the rock: does the critical landing multiplier also apply to the breaking cash?
+- Critical landing damage greater than the rock's remaining HP: the rock breaks at 0; is the extra damage just lost?
+- Does a critical landing also multiply chest exp and level exp per landing?
+- Does a critical landing get its own feedback (visual/sound/text) on the [Combat Screen](../Layouts/Combat%20Screen.md)?
 
 ## Decisions
 
 - Max HP upgrades lower Max HP: rocks break more often, giving more frequent breaking cash.
+- Max rock count is upgradable: rock purchases are capped, and the cap increases with upgrades.
+- Critical landings exist, with three upgradable stats: critical landing chance, critical landing multiplier and critical landing damage.
