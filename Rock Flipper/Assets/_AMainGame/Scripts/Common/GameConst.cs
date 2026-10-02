@@ -29,9 +29,9 @@ public static class GameConst
     public const int MaxStage = 131;
 
     // Steam    
-    public static uint MainSteamAppId => 3957050U;
-    public static uint PlayTestSteamAppId => 4192550U;
-    public static uint DemoSteamAppId => 4192520U;
+    public static uint MainSteamAppId => 5151920U;
+    public static uint PlayTestSteamAppId => 5186480U;
+    public static uint DemoSteamAppId => 5373190U;
     public static uint SteamAppId
     {
         get
@@ -61,13 +61,13 @@ public static class GameConst
     public const string PremiumProductId = "premium";
 
     // URLs
-    public const string SteamPageUrl = "https://store.steampowered.com/app/3957050?utm_source=ingame";
+    public static string SteamPageUrl => $"https://store.steampowered.com/app/{MainSteamAppId}?utm_source=ingame";
 #if UNITY_ANDROID
-    public const string SteamPageUrlMobile = "https://store.steampowered.com/app/3957050?utm_source=ingame_android";
+    public static string SteamPageUrlMobile => $"https://store.steampowered.com/app/{MainSteamAppId}?utm_source=ingame_android";
 #elif UNITY_IOS
-    public const string SteamPageUrlMobile = "https://store.steampowered.com/app/3957050?utm_source=ingame_ios";
+    public static string SteamPageUrlMobile => $"https://store.steampowered.com/app/{MainSteamAppId}?utm_source=ingame_ios";
 #else
-    public const string SteamPageUrlMobile = "https://store.steampowered.com/app/3957050?utm_source=ingame_mobile";
+    public static string SteamPageUrlMobile => $"https://store.steampowered.com/app/{MainSteamAppId}?utm_source=ingame_mobile";
 #endif
     public const string NewsletterUrl = "https://minifun.games/newsletter/";
 }

@@ -6435,7 +6435,7 @@ SortingGroup:
   m_GameObject: {fileID: 409846645}
   m_Enabled: 1
   m_SortingLayerID: 5382387
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -9691,7 +9691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3684296916933343252, guid: ed0beb595808c4345b28c80f25bf617e, type: 3}
       propertyPath: m_text
-      value: Let's ball
+      value: OK, Flip It!
       objectReference: {fileID: 0}
     - target: {fileID: 3684296916933343252, guid: ed0beb595808c4345b28c80f25bf617e, type: 3}
       propertyPath: m_fontSize
@@ -9707,7 +9707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6118203482930952115, guid: ed0beb595808c4345b28c80f25bf617e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 131.83
+      value: 141.26
       objectReference: {fileID: 0}
     - target: {fileID: 6118203482930952115, guid: ed0beb595808c4345b28c80f25bf617e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -17484,10 +17484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You''re playing the demo version of Ballatory. This <b>demo</b> <b>limits</b> the maximum <b>stage</b> you can reach and the number of <b>skill points</b> you can obtain.
-
-
-    Get the full game to unlock all content and play at the intended pace.'
+  m_text: You're playing the <b>demo</b> version of <b>Rock Flipper</b>. This demo <b>limits</b> skills and items you and have.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f3ce6ddc99b3464192547e04b3a0017, type: 2}
   m_sharedMaterial: {fileID: 6003966653238131968, guid: 9f3ce6ddc99b3464192547e04b3a0017, type: 2}
