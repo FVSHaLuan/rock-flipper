@@ -14,13 +14,6 @@ public class BranchedBuilder : IPreprocessBuildWithReport, IPostprocessBuildWith
     public void OnPostprocessBuild(BuildReport report)
     {
         ///
-        //if (Instance == null)
-        //{
-        //    EditorUtility.DisplayDialog("Error", $"BranchedBuildConfig instance not found at {AssetPath}", "OK");
-        //    throw new BuildFailedException($"BranchedBuildConfig instance not found at {AssetPath}");
-        //}
-
-        ///
         StringBuilder sb = new StringBuilder();
         sb.AppendLine($"version = {PlayerSettings.bundleVersion}");
         sb.AppendLine($"branch = {VersionBranchInfo.Current}");
@@ -52,7 +45,7 @@ public class BranchedBuilder : IPreprocessBuildWithReport, IPostprocessBuildWith
         ///
         if (!BranchedBuildConfig.CheckInitiatedBuild())
         {
-            bool allowed = true;
+            bool allowed = false;
             if (!allowed)
             {
                 EditorUtility.DisplayDialog("Error", "Must initiate build from BranchedBuildConfig", "Cancel Build");
