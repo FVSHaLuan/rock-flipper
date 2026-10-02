@@ -143,10 +143,10 @@ namespace Agame.Home
 
         private void ViewDataCounting(RunData runData, float progress)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
             ///
-            //var playTime = Mathf.Lerp(0, runData.PlayTime, progress);
-            //playTimeText.Text = TimeStringHelper.GetStringFromSeconds(playTime);
+            var playTime = Mathf.Lerp(0, runData.PlayTime, progress);
+            playTimeText.Text = TimeStringHelper.GetStringFromSeconds(playTime);
 
             /////
             //var skillPoints = (int)Mathf.Lerp(0, runData.lastCalculatedTotalSkillPoints, progress);

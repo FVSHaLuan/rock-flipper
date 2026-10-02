@@ -68,7 +68,7 @@ namespace Agame.Meta
         public void LaunchMFGSteamPage_Ending()
         {
             ///
-            var url = @"https://store.steampowered.com/publisher/MiniFunGames?utm_source=ballatory_ending";
+            var url = @"https://store.steampowered.com/publisher/MiniFunGames?utm_source=rockflipper_ending";
 
             ///
             TryOpenUrlWithSteam(url);
@@ -77,7 +77,7 @@ namespace Agame.Meta
         public void LaunchRockCrusherSteamPage_Ending()
         {
             ///
-            var url = @"https://store.steampowered.com/app/3456800/Rock_Crusher?utm_source=ballatory_ending";
+            var url = @"https://store.steampowered.com/app/3456800/Rock_Crusher?utm_source=rockflipper_ending";
 
             ///
             TryOpenUrlWithSteam(url);
@@ -86,7 +86,7 @@ namespace Agame.Meta
         public void LaunchRockCrusherSteamPage()
         {
             ///
-            var url = @"https://store.steampowered.com/app/3456800/Rock_Crusher?utm_source=ballatory_main";
+            var url = @"https://store.steampowered.com/app/3456800/Rock_Crusher?utm_source=rockflipper_main";
 
             ///
             TryOpenUrlWithSteam(url);
