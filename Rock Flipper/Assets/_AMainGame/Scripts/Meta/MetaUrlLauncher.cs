@@ -26,8 +26,8 @@ namespace Agame.Meta
         [ContextMenu("LaunchDemoFeedback")]
         public void LaunchDemoFeedback()
         {
-            var demoUrl = @"https://docs.google.com/forms/d/e/1FAIpQLSeQZwzlQOmOc0rXtCNHwbJECFe1wQKq3OZ7z16li7pM25n1kg/viewform";
-            var fullGameUrl = @"https://docs.google.com/forms/d/e/1FAIpQLSfFVGbGf7-Epiv0F5zdzsfLVWCf2-F15Rw-JKAX4aJhHMfchw/viewform";
+            var demoUrl = @"https://docs.google.com/forms/d/e/1FAIpQLSdJB9Bkaq685DxxPbFlrVn4i9CIqjl0MnIN8r3rCDJxQs4uPQ/viewform";
+            var fullGameUrl = @"https://docs.google.com/forms/d/e/1FAIpQLSeGozDZ8lhi5sdSxsQ7im_uSwb0WrxCjxiLyLUy8CiCwXX1kQ/viewform";
 
             ///
             var url = VersionBranchInfo.IsFullGame ? fullGameUrl : demoUrl;

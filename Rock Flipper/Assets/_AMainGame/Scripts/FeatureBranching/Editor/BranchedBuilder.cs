@@ -66,6 +66,22 @@ public class BranchedBuilder : IPreprocessBuildWithReport, IPostprocessBuildWith
             throw new BuildFailedException($"Product Name Must Include Build Executable Name: {config.BuildExecutableNameBase} (Current: {PlayerSettings.productName})");
         }
 
+        ///
+        bool isExactName = PlayerSettings.productName.Trim().ToLower() == config.BuildExecutableNameBase.Trim().ToLower();
+        if (isExactName && VersionBranchInfo.Current != VersionBranch.Full)
+        {
+            if (!EditorUtility.DisplayDialog("Warning", "Product Name is the EXACT Build Executable Name", "That's fine", "Cancel Build"))
+            {
+                throw new BuildFailedException($"Product Name Must Not Be Exactly Build Executable Name: {config.BuildExecutableNameBase} (Current: {PlayerSettings.productName})");
+            }
+        }
+        else if (!isExactName && VersionBranchInfo.Current == VersionBranch.Full)
+        {
+            EditorUtility.DisplayDialog("Error", "Product Name is NOT the EXACT Build Executable Name", "Cancel Build");
+
+            throw new BuildFailedException($"Product Name Must Be Exactly Build Executable Name: {config.BuildExecutableNameBase} (Current: {PlayerSettings.productName})");
+        }
+
         // Correct version
         if (Application.version != config.Version)
         {
