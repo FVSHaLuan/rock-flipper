@@ -38,6 +38,19 @@ namespace Agame.Run.Combat
 
         private void FindHitsByHovering()
         {
+            FindHits();
+        }        
+
+        private void FindHitsByClicking()
+        {
+            if (Mouse.current.leftButton.wasPressedThisFrame)
+            {
+                FindHits();
+            }
+        }
+
+        private void FindHits()
+        {
             if (BuildStats.enabledMouseRadius)
             {
                 SimpleCast2D.CircleCast(transformHandle.position, BuildStats.mouseRadius, true, flippableHits);
@@ -45,14 +58,6 @@ namespace Agame.Run.Combat
             else
             {
                 SimpleCast2D.PointCast(transformHandle.position, true, flippableHits);
-            }
-        }
-
-        private void FindHitsByClicking()
-        {
-            if (Mouse.current.leftButton.wasPressedThisFrame)
-            {
-                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.mouseRadius, true, flippableHits);
             }
         }
     }
