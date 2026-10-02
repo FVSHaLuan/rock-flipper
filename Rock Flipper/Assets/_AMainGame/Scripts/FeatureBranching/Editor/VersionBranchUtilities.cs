@@ -14,7 +14,7 @@ namespace Agame.FeatureBranching
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            bool skipCheck = true;
+            bool skipCheck = false;
 
             // Check output path
             if (!skipCheck)
