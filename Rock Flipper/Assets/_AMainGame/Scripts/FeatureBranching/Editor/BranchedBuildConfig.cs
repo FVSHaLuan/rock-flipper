@@ -42,8 +42,8 @@ public class BranchedBuildConfig : ScriptableObject
     [ReadOnly]
 #endif
     private string macBuildFolder = "D:\\Builds\\BT Builds";
-    [SerializeField]
-    private string buildExecutableName = "Ballatory";
+    [SerializeField, FormerlySerializedAs("buildExecutableName")]
+    private string buildExecutableNameBase = "Ballatory";
 
     private string buildFolder
     {
@@ -60,7 +60,7 @@ public class BranchedBuildConfig : ScriptableObject
         }
     }
     public string Version => version;
-    public string BuildExecutableName => buildExecutableName;
+    public string BuildExecutableNameBase => buildExecutableNameBase;
 
     [ContextMenu("Open Build Folder")]
     private void OpenBuildFolder()
@@ -147,19 +147,20 @@ public class BranchedBuildConfig : ScriptableObject
         string branchFolder = VersionBranchInfo.Current == VersionBranch.Full ? "Release" : VersionBranchInfo.Current.ToString();
         string platformFolder;
         string targetName;
+        string fileNameExtender = VersionBranchInfo.Current == VersionBranch.Full ? "" : " " + VersionBranchInfo.Current.ToString();
         switch (PlatformBranchInfo.Current)
         {
             case PlatformBranch.PC:
                 platformFolder = "Windows";
-                targetName = Instance.buildExecutableName + ".exe";
+                targetName = $"{Instance.buildExecutableNameBase}{fileNameExtender}.exe";
                 break;
             case PlatformBranch.Mac:
                 platformFolder = "Mac";
-                targetName = $"{Instance.buildExecutableName}.app";
+                targetName = $"{Instance.buildExecutableNameBase}{fileNameExtender}.app";
                 break;
             case PlatformBranch.Linux:
                 platformFolder = "Linux";
-                targetName = $"{Instance.buildExecutableName}.x86_64";
+                targetName = $"{Instance.buildExecutableNameBase}{fileNameExtender}.x86_64";
                 break;
             case PlatformBranch.Web:
                 platformFolder = "Web";

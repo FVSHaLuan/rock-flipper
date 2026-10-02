@@ -60,10 +60,10 @@ public class BranchedBuilder : IPreprocessBuildWithReport, IPostprocessBuildWith
         }
 
         // Validate product name
-        if (!PlayerSettings.productName.Contains(config.BuildExecutableName))
+        if (!PlayerSettings.productName.Contains(config.BuildExecutableNameBase))
         {
             EditorUtility.DisplayDialog("Error", "Product Name Must Include Build Executable Name", "Cancel Build");
-            throw new BuildFailedException($"Product Name Must Include Build Executable Name: {config.BuildExecutableName} (Current: {PlayerSettings.productName})");
+            throw new BuildFailedException($"Product Name Must Include Build Executable Name: {config.BuildExecutableNameBase} (Current: {PlayerSettings.productName})");
         }
 
         // Correct version
