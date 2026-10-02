@@ -1,9 +1,7 @@
 using Agame.Run.Stats;
 using Agame.Run.Stats.Agents;
 using UnityEngine;
-#if UNITY_EDITOR
 using UnityEngine.Assertions;
-#endif
 using UnityEngine.UI;
 
 namespace Agame.Run.Shop

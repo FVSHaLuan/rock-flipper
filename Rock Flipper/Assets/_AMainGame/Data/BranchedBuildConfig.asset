@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3f2e55a15148245bb955fecc37693c, type: 3}
   m_Name: BranchedBuildConfig
   m_EditorClassIdentifier: Assembly-CSharp-Editor::BranchedBuildConfig
-  version: 0.9.30
+  version: 0.0.1
   windowsBuildFolder: D:\Builds\RF Builds
   macBuildFolder: TestBuilds
-  buildExecutableName: Ballatory
+  buildExecutableName: Rock Flipper

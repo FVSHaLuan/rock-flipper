@@ -1,8 +1,11 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class TypedPlaceholderScript<T> : PlaceholderScript where T : Component
 {
+#if UNITY_EDITOR
     protected override bool ValidateScriptReference(MonoScript scriptReference)
     {
         /// Check if the script reference is a subclass of T
@@ -14,5 +17,6 @@ public class TypedPlaceholderScript<T> : PlaceholderScript where T : Component
 
         ///
         return base.ValidateScriptReference(scriptReference);
-    }
+    } 
+#endif
 }
