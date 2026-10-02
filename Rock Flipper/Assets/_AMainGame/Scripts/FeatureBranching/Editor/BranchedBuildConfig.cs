@@ -60,6 +60,7 @@ public class BranchedBuildConfig : ScriptableObject
         }
     }
     public string Version => version;
+    public string BuildExecutableName => buildExecutableName;
 
     [ContextMenu("Open Build Folder")]
     private void OpenBuildFolder()
