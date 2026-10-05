@@ -4,7 +4,7 @@ All of Rock Flipper's own content lives here. See the root [CLAUDE.md](../../../
 
 ## Game in one paragraph
 
-Idle/incremental: rocks spawn on screen; the player clicks/hovers to "flip" them (early game) or autonomous **Flipper Bots** do it (mid/late game). A rock goes up, falls, lands, earns Cash, loses HP. Rocks have **Tiers** and a rarer **Pure Rock** variant (multiplied cash). Progression is via a node-based **Skill Tree** and a **Shop** (buy rock counts/upgrades). Design doc also describes Biomes, Monoliths, The Rift, and Prestige as major systems — **check [Scripts/Run/CLAUDE.md](Scripts/Run/CLAUDE.md)'s maturity section before assuming any of these exist in code; most don't yet.**
+Idle/incremental: rocks spawn on screen; the player clicks/hovers to "flip" them (early game) or autonomous **Flipper Bots** do it (mid/late game). A rock goes up, falls, lands, earns Cash, loses HP. Rocks have **Tiers** and a rarer **Pure Rock** variant (multiplied cash). Progression is via a node-based **Skill Tree** and a **Shop** (buy rock counts/upgrades). The intended design lives in the GDD ([GDD/README.md](../../../GDD/README.md)); it also describes Chests, Items, Levels, Monoliths and The Rift, and its naming and rules don't always match the code (see the root [CLAUDE.md](../../../CLAUDE.md#game-design-gdd)). **Check [Scripts/Run/CLAUDE.md](Scripts/Run/CLAUDE.md)'s maturity section before assuming a GDD system exists in code.**
 
 ## Folders
 

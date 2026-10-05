@@ -7,6 +7,31 @@ This repo is **two things at once**:
 ## Layout
 
 - **`Rock Flipper/`** — the Unity project itself (Unity project root: `.sln`, `Assets/`, `ProjectSettings/`, `Packages/`, etc.).
+- **`GDD/`** — the game design document (Markdown), maintained by the owner, previously in a separate repo. Describes the *intended* design of Rock Flipper. See [Game design (GDD)](#game-design-gdd) below.
+
+## Game design (GDD)
+
+Use the GDD to understand what a feature is *supposed* to do and what it's called in design terms. It does not describe the code.
+
+**Where to look**
+- [GDD/README.md](GDD/README.md) — index of every doc. Start here.
+- [GDD/Glossary.md](GDD/Glossary.md) — one line per game term, linking to the doc that owns it. Fastest way to resolve a design term the user mentions.
+- [GDD/Pillars.md](GDD/Pillars.md) — metadata, vibe, core loop (flip → earn cash → upgrade; no offline progress; game ends when everything is maxed).
+- `GDD/Systems/*.md` — rules per system (Rocks, Currencies, Backgrounds, Chests, Items, Flipper Bots, Levels, Mouse, Skill Tree, Monoliths, The Rift).
+- `GDD/Stats/*.md` — every stat of a system, with scope (global / per tier / per rarity…) and upgrade direction. Useful when adding a stat or `BuildAgent`.
+- `GDD/Content/*.md` — instances that differ in rules (e.g. rock tiers P1 Bouncy, P2 Restless; individual monoliths).
+- `GDD/Screens/*.md` — screen layout (main screen: playfield, side bar, overlay UI).
+
+**What counts as design.** Only a doc's body text is the design. These sections are *not* adopted design, so don't implement from them: `## Brainstorm`, `## Parked Ideas`, `## Creative Guidance`, and `Brainstorm.md`. `## Open Questions` marks undecided rules: ask the user rather than picking an answer in code. `## Decisions` records choices and rejected alternatives: don't implement a rejected one.
+
+**GDD vs. code: expect drift.** The code doesn't necessarily match the GDD, in naming or in rules:
+- The **code** is the source of truth for current behavior. The **GDD** is the source of truth for intent.
+- GDD terms often have different names in code, or no counterpart yet. Search for the concept, not only the GDD word. Known mappings: Mouse → `Combat/Player Cursor/`; Pure/Purity → `Rock.IsPure`, `RockTier.GetPurityChance()`, `purityCashMultiplier`; tier abilities (Bouncy, Restless) → `Combat/Rocks/Abilities/`; Preferred background → `RunData.PreferredBackgroundId`; Monoliths → no implementation (closest analog: Special Crusher sub-trees in `Skill tree/`).
+- The reverse also holds: the code has systems the GDD doesn't cover (Shop, Prestige, extra `Currency` enum values, tutorials). Don't remove or reshape them just because the GDD is silent.
+- When a task touches something where code and GDD disagree, point out the mismatch and ask which to follow. Don't silently "fix" code to match the GDD, and don't rename code identifiers to GDD terms unless asked.
+- The folder `CLAUDE.md` files under `_AMainGame/` describe the code as it is. Some of their remarks about the design may be out of date; trust the GDD for design and the code for behavior.
+
+**Editing the GDD.** Coding tasks don't edit the GDD unless the user asks. GDD work follows its own rules in [GDD/CLAUDE.md](GDD/CLAUDE.md): document only what the user says, put unknowns under `## Open Questions`, keep the glossary in sync, and run the `idea-critic` subagent on non-trivial proposals. That subagent lives in `GDD/.claude/agents/`, so it's only available when the session is started from `GDD/`.
 
 ## Inside `Rock Flipper/`
 

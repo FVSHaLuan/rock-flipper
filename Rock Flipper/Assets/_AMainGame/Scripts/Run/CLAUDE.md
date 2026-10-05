@@ -92,7 +92,9 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 **Scaffolded but incomplete**: **Prestige** — `RunStateManager` has full state transitions/events but the actual data-reset calls are **commented out** (`// RunData.Prestige();` etc. in `RunStateManager.cs`); `RunData.CorrectData` is an empty stub. Don't assume Prestige resets anything without verifying. Also: `GameAchievementsReporter` (empty), several `BuildAgent` description/achievement hooks (hardcoded stubs), `GameBalance`/`ShortHandManager` (empty).
 
-**Not present at all in code**: Biomes, Monoliths, The Rift, per-tier unique abilities. Confirmed via repo-wide search — pure design-doc concepts with zero implementation.
+**Not present at all in code**: Monoliths, The Rift. Pure design-doc concepts with zero implementation (see `GDD/Systems/`).
+
+**Per-tier unique abilities** exist for Bouncy (P1) and Restless (P2) under `Combat/Rocks/Abilities/`.
 
 ## Conventions & gotchas
 

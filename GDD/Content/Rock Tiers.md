@@ -1,0 +1,42 @@
+# Rock Tiers
+
+All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in rules.
+
+| Tier | Name | Unique rules / abilities |
+|---|---|---|
+| P0 | | None: P0 rocks are just ordinary rocks. |
+| P1 | [Bouncy](#p1-bouncy) | Has a chance to bounce and land once more after landing. |
+| P2 | [Restless](#p2-restless) | Flips itself after a duration on the ground. |
+
+## P1: Bouncy
+**Bouncy** is the P1 tier. After landing, a Bouncy rock has a **bounce chance** to **bounce**: it lands once more. Bounce chance is upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#bouncy-p1)).
+* A bounce landing is just like a normal landing, so it can bounce again.
+* A Bouncy rock that breaks can't bounce.
+
+## P2: Restless
+**Restless** is the P2 tier. After a Restless rock has been on the ground for its **self-flip delay**, it **self-flips**: it flips itself, with no [mouse](../Systems/Mouse.md) or [Flipper Bot](../Systems/FlipperBots.md) needed. Self-flip delay is upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#restless-p2)).
+
+## Decisions
+* Restless rocks self-flip after a duration on the ground, not at a regular interval.
+
+## Open Questions
+* What special abilities can higher tiers have?
+* Is bounce chance capped at 100%, or does anything happen beyond it?
+* Restless: when does the self-flip delay start counting (e.g. on landing, when a replacement rock appears), and does it restart when the mouse or a Flipper Bot flips the rock before the delay ends?
+
+## Parked Ideas
+| Tier | Name | Unique rules / abilities |
+|---|---|---|
+| P3 | Shockwave | Each landing from a primary flip flips the ground rocks around it. It's the only tier that flips other rocks. |
+| P4 | Purifier | Each landing from a primary flip makes lower-tier ground rocks around it glow, which makes them pure for a while. |
+| P5 | Giant | Oversized. Each landing from a primary flip causes a quake: every other ground rock loses 1 HP, and rocks that reach 0 HP break normally. |
+| ? | Ember | A critical landing from a primary flip sets it on fire: its next landings are all critical, each with a bigger critical cash multiplier than the last; landings on fire don't relight it, and the fire and its escalation pass to the replacement rock. Adds new stats, burn length, (+), and burn step, (+). |
+| ? | Geode | Each landing from a primary flip has a chance to crack it: it breaks immediately, whatever its HP, and its breaking cash is multiplied by a jackpot multiplier. Adds new stats, crack chance (capped below 100%), (+), and jackpot multiplier, (+). |
+| ? | Shatter | On breaking, it bursts into fragments that each land once, earning this tier's landing cash (pure multiplier included, can be critical) but no chest exp or level exp, then vanish; fragments aren't rocks. Adds a new stat, fragment count, (+). |
+| ? | Flock | Each landing earns extra landing cash for every other rock of this tier thrown by the same flip; the bonus is part of landing cash, so critical landings and purity multiply it. Adds a new stat, flock bonus, (+). |
+| ? | Crowbar | Each landing from a primary flip makes chests on the ground within range lose 1 HP. Only worth it if Flipper Bots can't flip chests. Adds a new stat, pry range, (+). |
+
+## Creative Guidance
+The higher tier should feel better than the lower ones.
+
+## Brainstorm
