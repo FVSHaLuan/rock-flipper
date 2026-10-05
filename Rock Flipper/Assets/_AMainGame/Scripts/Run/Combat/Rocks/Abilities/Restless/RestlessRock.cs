@@ -40,7 +40,7 @@ namespace Agame.Run.Combat
 
         private void SelfFlip()
         {
-            Rock.Flippable.TryFlipping();
+            Rock.Flippable.TryFlipping(FlipSource.SelfFlip);
         }
     }
 

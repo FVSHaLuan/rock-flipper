@@ -5,6 +5,7 @@ namespace Agame.Run.Combat
 {
     /// <summary>
     /// Gives the rock a chance to automatically flip again after it lands (and survives the landing)
+    /// (landings from a bounce only once Rebound is enabled)
     /// </summary>
     public class BouncyRock : RockExtender
     {
@@ -22,6 +23,10 @@ namespace Agame.Run.Combat
 
         private void Rock_OnLanded()
         {
+            if (!CanBounceAfter(Rock.Flippable.LastFlipSource))
+                return;
+
+            ///
             if (Random.value >= BuildStats.bouncyRockBounceChance)
                 return;
 
@@ -41,6 +46,15 @@ namespace Agame.Run.Combat
             bounceCoroutine = StartCoroutine(BounceAfterDelay(bounceDelay));
         }
 
+        private bool CanBounceAfter(FlipSource landedFlipSource)
+        {
+            if (landedFlipSource == FlipSource.Bounce)
+                return BuildStats.enabledBouncyRockRebound;
+
+            ///
+            return true;
+        }
+
         private IEnumerator BounceAfterDelay(float bounceDelay)
         {
             yield return new WaitForSeconds(bounceDelay);
@@ -52,7 +66,7 @@ namespace Agame.Run.Combat
 
         private void Bounce()
         {
-            Rock.Flippable.TryFlipping();
+            Rock.Flippable.TryFlipping(FlipSource.Bounce);
         }
     }
 

@@ -54,6 +54,7 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Preferred Multiplier**: the cash income multiplier for using the Preferred background as the active background. → [Backgrounds](Systems/Backgrounds.md#preferred-background)
 * **Pure / Purity**: a pure rock earns a multiplied cash income. → [Rocks](Systems/Rocks.md#purity)
 * **Rarity**: a chest or item category (Common, Uncommon, Rare, Epic, Unique). → [Chests](Systems/Chests.md#rarity), [Items](Systems/Items.md#rarity)
+* **Rebound**: the unlockable ability for a Bouncy rock's bounce landing to bounce again. → [Rock Tiers](Content/Rock%20Tiers.md#p1-bouncy)
 * **Restless**: the P2 rock tier. → [Rock Tiers](Content/Rock%20Tiers.md#p2-restless)
 * **Rock**: an object lying around the playfield, flipped to earn cash. → [Rocks](Systems/Rocks.md)
 * **Root skill**: the only skill with no parent skills. → [Skill Tree](Systems/SkillTree.md#structure)

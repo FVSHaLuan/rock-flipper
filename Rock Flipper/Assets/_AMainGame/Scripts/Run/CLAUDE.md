@@ -18,7 +18,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Balancing/` | `GameBalance.cs` (empty placeholder ScriptableObject), `CashTiers.cs` (cost-tier presets + UI color), `StageConfig.cs` (looks like unused/legacy HP-scaling formula). |
 | `Combat/` | The gameplay scene root — see subsystems below. |
 | `Combat/Background/`, `Boundary/`, `Explosion/`, `Sfx/` | Background selection, playfield walls, pooled explosion VFX, sound. |
-| `Combat/Flippable/` | `Flippable.cs` — the generic flip-animation state machine used by rocks (`TryFlipping`/`ForceFlipping`, arc motion via `Mathf.Sin`, fires `OnStartedFlipping`/`OnFinishedFlipping`/`OnUpdatedFlipping`). Plus rotator/shadow/sorting cosmetic add-ons. |
+| `Combat/Flippable/` | `Flippable.cs` — the generic flip-animation state machine used by rocks (`TryFlipping`/`ForceFlipping`, arc motion via `Mathf.Sin`, fires `OnStartedFlipping`/`OnFinishedFlipping`/`OnUpdatedFlipping`). Every flip is tagged with a `FlipSource` (mouse, Flipper Bot, bounce, self-flip, new rock), readable as `LastFlipSource` until the next flip; abilities use it to react only to some flips. Plus rotator/shadow/sorting cosmetic add-ons. |
 | `Combat/Flipper Bot/` | `FlipperBot.cs`, `FlipperBotFlipper.cs` (circle-cast + flip), `FlipperBotMovement.cs` (wanders via `Vector2.MoveTowards`). |
 | `Combat/Player Cursor/` | `PlayerCursor.cs` + `FlippableByPlayerCursor.cs` — click/hover-to-flip, circle/point cast each `LateUpdate`, per-object landing cooldown. |
 | `Combat/Playfield/` | `Playfield.cs` (partial class — bounds math, clamping, random points, edges). |

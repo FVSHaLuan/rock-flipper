@@ -206,7 +206,7 @@ namespace Agame.Run.Combat
 
         public void DoNewRockFlipping(Vector2 landingPosition)
         {
-            flippable.ForceFlipping(newRockFlippingDuration, landingPosition, newRockFlippingHeight);
+            flippable.ForceFlipping(newRockFlippingDuration, landingPosition, newRockFlippingHeight, FlipSource.NewRock);
         }
 
         private void PlayNewLifeEffect()

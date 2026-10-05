@@ -22,7 +22,7 @@ namespace Agame.Run.Combat
             ///
             foreach (var flippable in flippables)
             {
-                flippable.TryFlipping();
+                flippable.TryFlipping(FlipSource.FlipperBot);
             }
 
             ///

@@ -31,7 +31,7 @@ namespace Agame.Run.Combat
             {
                 if (item.isActiveAndEnabled && item.CooledDown)
                 {
-                    item.Flippable.TryFlipping();
+                    item.Flippable.TryFlipping(FlipSource.Mouse);
                 }
             }
         }

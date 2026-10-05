@@ -10,7 +10,8 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 
 ## P1: Bouncy
 **Bouncy** is the P1 tier. After landing, a Bouncy rock has a **bounce chance** to **bounce**: it lands once more. Bounce chance is upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#bouncy-p1)).
-* A bounce landing is just like a normal landing, so it can bounce again.
+* A landing from any flip (e.g. by the [mouse](../Systems/Mouse.md) or a [Flipper Bot](../Systems/FlipperBots.md)) can bounce. A bounce landing is just like a normal landing, except that initially it can't bounce again.
+* **Rebound** is the unlockable ability for a bounce landing to bounce again. Once Rebound is unlocked, a bounce landing has the same bounce chance to bounce again.
 * A Bouncy rock that breaks can't bounce.
 
 ## P2: Restless

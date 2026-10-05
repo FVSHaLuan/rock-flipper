@@ -32,8 +32,12 @@ namespace Agame.Run.Combat
         public float FlippingProgress { get; private set; }
         public float FlippingHeightProgress { get; private set; }
         public Vector2 FlippingGroundPosition { get; private set; }
+        /// <summary>
+        /// Source of the current flip, or of the last one once landed
+        /// </summary>
+        public FlipSource LastFlipSource { get; private set; }
 
-        public bool TryFlipping()
+        public bool TryFlipping(FlipSource source)
         {
             ///
             if (IsFlipping)
@@ -41,19 +45,19 @@ namespace Agame.Run.Combat
 
             ///
             GetRandomFlippingParameters(out var duration, out var landingPosition, out var height);
-            StartFlipping(duration, landingPosition, height);
+            StartFlipping(duration, landingPosition, height, source);
 
             ///
             return true;
         }
 
-        public void ForceFlipping(float duration, Vector2 landingPosition, float height)
+        public void ForceFlipping(float duration, Vector2 landingPosition, float height, FlipSource source)
         {
             ///
             ResetFlippingState();
 
             ///
-            StartFlipping(duration, landingPosition, height);
+            StartFlipping(duration, landingPosition, height, source);
         }
 
         private void GetRandomFlippingParameters(out float duration, out Vector2 landingPosition, out float height)
@@ -123,11 +127,12 @@ namespace Agame.Run.Combat
             return landingPosition;
         }
 
-        private void StartFlipping(float duration, Vector2 landingPosition, float height)
+        private void StartFlipping(float duration, Vector2 landingPosition, float height, FlipSource source)
         {
             ///
             IsFlipping = true;
             flippingTimeElapsed = 0;
+            LastFlipSource = source;
 
             ///
             flippingDuration = duration;
@@ -205,7 +210,7 @@ namespace Agame.Run.Combat
         [ContextMenu("Editor_Try Flipping"), PlayModeOnly]
         private void Editor_TryFlipping()
         {
-            Debug.Log($"Try flipping: {TryFlipping()}");
+            Debug.Log($"Try flipping: {TryFlipping(FlipSource.Mouse)}");
         }
 #endif
     }

@@ -28,6 +28,7 @@ namespace Agame.Run.Stats
 
         [Header("Bouncy Rocks")]
         public float bouncyRockBounceChance = 0.1f;
+        public bool enabledBouncyRockRebound = false;
 
         [Header("Restless Rocks")]
         public float restlessRockSelfFlipDelay = 5f;
