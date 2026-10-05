@@ -28,6 +28,8 @@ Rocks come in different **tiers**, named P0, P1, P2,... Rocks in the same tier s
 
 Each tier has a **max count**: the maximum number of rocks of that tier.
 
+There are no upgrades for an individual rock.
+
 All tiers are listed in [Rock Tiers](../Content/Rock%20Tiers.md).
 
 > WIP: Tiers other than P0 are still being developed, but they generally:

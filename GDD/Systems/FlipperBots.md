@@ -1,6 +1,6 @@
 # Flipper Bots
 
-**Flipper Bots** are floating robots, bought from the [side bar](../Screens/MainScreen.md#side-bar), that move randomly around the playfield and [flip](Rocks.md#flipping) rocks. A Flipper Bot is always in one of two states, Inactive or Active, switching between them after some time. All Flipper Bot stats are listed in [Flipper Bot Stats](../Stats/Flipper%20Bot%20Stats.md). Flipper Bots have a [max count](Rocks.md#tiers): the maximum number of Flipper Bots.
+**Flipper Bots** are floating robots, bought from the [side bar](../Screens/MainScreen.md#side-bar), that move randomly around the playfield and [flip](Rocks.md#flipping) rocks. A Flipper Bot is always in one of two states, Inactive or Active, switching between them after some time. All Flipper Bot stats are listed in [Flipper Bot Stats](../Stats/Flipper%20Bot%20Stats.md). Flipper Bots have a [max count](Rocks.md#tiers): the maximum number of Flipper Bots. There are no upgrades for an individual Flipper Bot.
 
 ## Purpose
 Flipper Bots are the main idle device of the game.

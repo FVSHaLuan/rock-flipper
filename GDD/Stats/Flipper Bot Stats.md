@@ -4,12 +4,12 @@ All stats of [Flipper Bots](../Systems/FlipperBots.md).
 
 | Stat | Scope | Upgrade Direction |
 |---|---|---|
-| Inactive duration | _Global_ | _(-)_ |
-| Active duration | _Global_ | _(+)_ |
-| Flip interval | _Global_ | _(-)_ |
-| Flip range | _Global_ | _(+)_ |
-| Max count | _Global_ | _(+)_ |
-| Move speed | _Global_ | _(+)_ |
+| Inactive duration | Global | _(-)_ |
+| Active duration | Global | _(+)_ |
+| Flip interval | Global | _(-)_ |
+| Flip range | Global | _(+)_ |
+| Max count | Global | _(+)_ |
+| Move speed | Global | _(+)_ |
 
 ## Parked Ideas
 

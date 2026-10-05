@@ -22,25 +22,22 @@ Stats only [Bouncy](../Content/Rock%20Tiers.md#p1-bouncy) rocks have.
 
 | Stat | Scope | Upgrade Direction |
 |---|---|---|
-| Bounce chance | _Per tier_ | _(+)_ |
-| Rebound | _Per tier_ | (\*) |
+| Bounce chance | Per tier | _(+)_ |
+| Rebound | Per tier | (\*) |
 
 ## Restless (P2)
 Stats only [Restless](../Content/Rock%20Tiers.md#p2-restless) rocks have.
 
 | Stat | Scope | Upgrade Direction |
 |---|---|---|
-| Self-flip delay | _Per tier_ | (-) |
-| Self-flip chance | _Per tier_ | _(+)_ |
+| Self-flip delay | Per tier | (-) |
+| Self-flip chance | Per tier | _(+)_ |
 
 ## Shockwave (P3)
 Stats only [Shockwave](../Content/Rock%20Tiers.md#p3-shockwave) rocks have.
 
 | Stat | Scope | Upgrade Direction |
 |---|---|---|
-| Shockwave chance | _Per tier_ | _(+)_ |
-| Shockwave radius | _Per tier_ | _(+)_ |
-| Max shockwave flips | _Per tier_ | _(+)_ |
-
-## Open Questions
-* Are upgrades to tier-specific stats applied per tier or per individual rock?
+| Shockwave chance | Per tier | _(+)_ |
+| Shockwave radius | Per tier | _(+)_ |
+| Max shockwave flips | Per tier | _(+)_ |
