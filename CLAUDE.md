@@ -6,13 +6,7 @@ This repo is **two things at once**:
 
 ## Layout
 
-- **`GD/`** — game design documents for Rock Flipper. See [Game design documents](#game-design-documents-gd) below for when to load them.
 - **`Rock Flipper/`** — the Unity project itself (Unity project root: `.sln`, `Assets/`, `ProjectSettings/`, `Packages/`, etc.).
-
-## Game design documents (`GD/`)
-
-- **Only load `GD/` files when the task is developing the design documents themselves** (writing, revising, or reviewing the GDD or other design docs).
-- **When working on code, don't read `GD/` and don't let it shape your decisions** unless the user explicitly tells you to use it. The code and the user's instructions are the source of truth for implementation. The design docs describe planned or aspirational systems (e.g. Biomes, Monoliths, The Rift, per-tier unique abilities) that may not exist in code or may differ from it.
 
 ## Inside `Rock Flipper/`
 

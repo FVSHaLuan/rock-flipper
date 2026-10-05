@@ -1,6 +1,6 @@
 # _AMainGame
 
-All of Rock Flipper's own content lives here. See the root [CLAUDE.md](../../../CLAUDE.md) for the repo-wide picture and [GD/Rock Flipper - GDD.md](../../../GD/Rock%20Flipper%20-%20GDD.md) for the design doc.
+All of Rock Flipper's own content lives here. See the root [CLAUDE.md](../../../CLAUDE.md) for the repo-wide picture.
 
 ## Game in one paragraph
 

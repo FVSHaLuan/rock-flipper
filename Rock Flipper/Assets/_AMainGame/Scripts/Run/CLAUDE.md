@@ -35,24 +35,24 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 ## Rocks / Tiers / Pure Rocks
 
 - `Combat/Rocks/Rock.cs` — per-rock MonoBehaviour: HP, tier, `IsPure`, cash-on-land/break, re-roll (`BreakCurrentRockAndSpawnNewOne`).
-- `Combat/Rocks/RockTier.cs` — enum **`{ P0, P1, P2, P3 }`** — 4 tiers implemented. **Map "Tier I"→`P0`, "Tier II"→`P1`, etc. when talking to the designer** (design doc uses Roman numerals, code doesn't).
+- `Combat/Rocks/RockTier.cs` — enum **`{ P0, P1, P2, P3 }`** — 4 tiers implemented. **Map "Tier I"→`P0`, "Tier II"→`P1`, etc.** when tiers are referred to by Roman numerals.
 - `Combat/Rocks/PrototypeManager.cs` — ScriptableObject: rock prefabs per (tier, isPure); `GetRockPrototype(tier, isPure)`; validated via `PrototypeManager.Validate()` in editor (rejects duplicate/null/"Rock"-named prototypes).
 - `Combat/Rocks/RockInstanceManager.cs` — spawn API: `SpawnAsOldRock` (combat start), `SpawnAsReplacement` (HP-hit-0 re-roll), `SpawnAsNewRock` (shop purchase).
 - `Combat/Rocks/RockPoolHandler.cs` — pooling via `FH.Core.Architecture.Pool.GeneralPoolMemberSimplified`.
 - `Combat/Rocks/RocksSpawner.cs` — spawns initial rock counts per tier at combat start.
 - `Stats/RockTierBuildStats.cs` — per-tier tunables: `count`, `maxCount`, `purity`, `landingCash`, `breakingCash`, `purityCashMultiplier`, `landingCooldown`.
-- **No per-tier "unique ability" classes exist** — tiers currently differ only by numeric stats. The design doc's "each tier has a unique ability" is **not implemented**.
+- **No per-tier "unique ability" classes exist** — tiers currently differ only by numeric stats.
 - **Pure Rocks**: purity is a per-tier chance (`RockTierBuildStats.purity`), rolled on spawn (`RocksSpawner`, `RockCountStatBuilderButton`) and on re-roll (`Rock.BreakCurrentRockAndSpawnNewOne` via `RockTier.GetPurityChance()`). It's a `bool isPure` flag + separate prototype prefab per tier — no separate "PureRock" class. Cash multiplied via `purityCashMultiplier`.
 
 **To add a new Rock Tier**: extend `RockTier` enum → add a case to `BuildStatsObject.GetRockTierBuildStats` → add prototype prefabs (regular + pure) registered in `PrototypeManager` (run `Validate()`) → add rock-count/upgrade shop buttons + skill nodes wired to a `RockBuildAgent` subclass (see `Stats/Agents/Implementations/Rocks/IncreaseRockCount.cs` as the template).
 
 ## Flipping (player + bots)
 
-- Flipper Bot upgradable stats today: only `flipperBotMovementSpeed` / `flipperBotFlippingInterval`. Design doc's charging time/battery/range/strength/smart-targeting are **not implemented**.
+- Flipper Bot upgradable stats today: only `flipperBotMovementSpeed` / `flipperBotFlippingInterval`.
 
 ## Currencies
 
-- `Currencies/Currency.cs` — enum: `CASH, BLANK_BALL, RAW_PRESTIGE, PRESTIGE, BUCKET, FREE, AURA, BOSS, P7`. **Gotcha**: design doc says Cash-only; treat everything besides `CASH` as legacy/reserved (likely vestigial from a shared template) unless you find real usage.
+- `Currencies/Currency.cs` — enum: `CASH, BLANK_BALL, RAW_PRESTIGE, PRESTIGE, BUCKET, FREE, AURA, BOSS, P7`. **Gotcha**: the game is Cash-only; treat everything besides `CASH` as legacy/reserved (likely vestigial from a shared template) unless you find real usage.
 - `Currencies/CurrencyConfigManager.cs`/`CurrencyConfigAsset.cs` — ScriptableObject-per-currency config, `Editor_Sync` context menu auto-generates missing assets under `Assets/_AMainGame/Data/Currency Configs`.
 - Project convention: `XxxDictionary` classes wrap Unity-serializable dictionaries (`CurrencyValueDictionary`, `CurrencyStateDictionary`).
 
