@@ -331,5 +331,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5794978290778122173, guid: ed37500b8e54fa34c9add81838ee1f1c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2172067914405347139}
   m_SourcePrefab: {fileID: 100100000, guid: ed37500b8e54fa34c9add81838ee1f1c, type: 3}
+--- !u!1 &5054803772876323272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5794978290778122173, guid: ed37500b8e54fa34c9add81838ee1f1c, type: 3}
+  m_PrefabInstance: {fileID: 1607120079826640501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-2172067914405347139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5054803772876323272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369f1fdf90cffda4da503e768a7f4bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.RestlessRock
