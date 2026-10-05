@@ -23,6 +23,7 @@ This list all effects, mechanics, things...I think we can add to the game. Use t
 - Rock merge
 - Chests that do not have item but do something
 - Chests that spawn another chest after opened
+- Clone chest
 
 ## System ideas
 Ideas for systems to be added to the game.
