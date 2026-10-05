@@ -91,5 +91,27 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8171674314610655772, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3396419009795428742}
   m_SourcePrefab: {fileID: 100100000, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+--- !u!1 &5872553740890264051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171674314610655772, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+  m_PrefabInstance: {fileID: 2312632480708596719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3396419009795428742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872553740890264051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807839f2f86b43c47aa3ee8c0ec8c7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.BouncyRock
+  bounceChance: 0.826
+  bounceDelay: 0

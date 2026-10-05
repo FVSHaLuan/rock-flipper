@@ -1,6 +1,7 @@
 using FH.Core.Architecture.Pool;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Agame.Run.Combat
 {
@@ -8,6 +9,10 @@ namespace Agame.Run.Combat
     {
         public event System.Action OnStartedNewLife;
         public event System.Action OnHPChanged;
+        /// <summary>
+        /// Fired when the rock lands and survives (not fired when the landing breaks it)
+        /// </summary>
+        public event System.Action OnLanded;
 
         [SerializeField]
         private RockTier rockTier = RockTier.P0;
@@ -45,8 +50,8 @@ namespace Agame.Run.Combat
         [Header("Events")]
         [SerializeField]
         private UnityEvent onStartedFlipping;
-        [SerializeField]
-        private UnityEvent onFinishedFlipping;
+        [SerializeField, FormerlySerializedAs("onFinishedFlipping")]
+        private UnityEvent onLanded;
 
         [Header("Delegations")]
         [SerializeField]
@@ -57,6 +62,7 @@ namespace Agame.Run.Combat
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
         public RockPoolHandler PoolHandler => rockPoolHandler;
+        public Flippable Flippable => flippable;
 
         protected void OnDisable()
         {
@@ -108,8 +114,9 @@ namespace Agame.Run.Combat
                 UpdateLandingCooldown();
 
                 ///
-                onFinishedFlipping?.Invoke();
+                onLanded?.Invoke();
                 OnHPChanged?.Invoke();
+                OnLanded?.Invoke();
             }
         }
 
