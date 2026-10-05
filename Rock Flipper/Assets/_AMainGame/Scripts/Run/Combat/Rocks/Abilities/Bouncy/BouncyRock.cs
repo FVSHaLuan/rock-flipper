@@ -8,11 +8,6 @@ namespace Agame.Run.Combat
     /// </summary>
     public class BouncyRock : RockExtender
     {
-        [SerializeField, Range(0f, 1f)]
-        private float bounceChance = 0.25f;
-        [SerializeField, Min(0f)]
-        private float bounceDelay = 0f;
-
         private Coroutine bounceCoroutine;
 
         protected void Start()
@@ -27,8 +22,11 @@ namespace Agame.Run.Combat
 
         private void Rock_OnLanded()
         {
-            if (Random.value >= bounceChance)
+            if (Random.value >= BuildStats.bouncyRockBounceChance)
                 return;
+
+            ///
+            var bounceDelay = TierStats.landingCooldown;
 
             ///
             if (bounceDelay <= 0f)
@@ -40,10 +38,10 @@ namespace Agame.Run.Combat
             ///
             if (bounceCoroutine != null)
                 StopCoroutine(bounceCoroutine);
-            bounceCoroutine = StartCoroutine(BounceAfterDelay());
+            bounceCoroutine = StartCoroutine(BounceAfterDelay(bounceDelay));
         }
 
-        private IEnumerator BounceAfterDelay()
+        private IEnumerator BounceAfterDelay(float bounceDelay)
         {
             yield return new WaitForSeconds(bounceDelay);
 

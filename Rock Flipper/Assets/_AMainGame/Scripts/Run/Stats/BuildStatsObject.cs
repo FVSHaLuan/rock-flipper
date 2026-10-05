@@ -26,6 +26,9 @@ namespace Agame.Run.Stats
         [SerializeField]
         private RockTierBuildStats rock_P3;
 
+        [Header("Bouncy Rocks")]
+        public float bouncyRockBounceChance = 0.1f;
+
         [Header("Chests")]
         [SerializeField]
         private ChestRarityBuildStats chest_Common;

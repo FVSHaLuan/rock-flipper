@@ -1,3 +1,4 @@
+using Agame.Run.Stats;
 using UnityEngine;
 
 namespace Agame.Run.Combat
@@ -15,6 +16,9 @@ namespace Agame.Run.Combat
                 return rock;
             }
         }
+
+        protected BuildStatsObject BuildStats => RunEntry.Instance.BuildStats;
+        protected RockTierBuildStats TierStats => BuildStats.GetRockTierBuildStats(Rock.Tier);
     }
 
 }
