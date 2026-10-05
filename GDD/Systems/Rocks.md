@@ -38,7 +38,7 @@ All tiers are listed in [Rock Tiers](../Content/Rock%20Tiers.md).
 ## Decisions
 
 ## Open Questions
-* Can anything besides the [mouse](Mouse.md), [Flipper Bots](FlipperBots.md) and [Restless](../Content/Rock%20Tiers.md#p2-restless) self-flips flip rocks? Can a rock be flipped while already in the air?
+* Can anything besides the [mouse](Mouse.md), [Flipper Bots](FlipperBots.md) and [Restless](../Content/Rock%20Tiers.md#p2-restless) self-flips and [Shockwave](../Content/Rock%20Tiers.md#p3-shockwave) shockwaves flip rocks? Can a rock be flipped while already in the air?
 * Is a rock's landing position constrained to the playfield? Can it land on / under or overlap other elements (e.g. [monoliths](Monoliths.md))?
 * On the breaking landing, does the rock earn both landing cash and breaking cash, or only breaking cash?
 * Critical landing:

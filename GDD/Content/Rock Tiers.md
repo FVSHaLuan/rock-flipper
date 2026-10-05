@@ -7,6 +7,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 | P0 | | None: P0 rocks are just ordinary rocks. |
 | P1 | [Bouncy](#p1-bouncy) | Has a chance to bounce and land once more after landing. |
 | P2 | [Restless](#p2-restless) | Has a chance to flip itself after a duration on the ground. |
+| P3 | [Shockwave](#p3-shockwave) | Has a chance to trigger a shockwave on landing, which flips ground rocks around it. |
 
 ## P1: Bouncy
 **Bouncy** is the P1 tier. After landing, a Bouncy rock has a **bounce chance** to **bounce**: it lands once more. Bounce chance is upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#bouncy-p1)).
@@ -20,17 +21,26 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 * If the self-flip chance fails, the count restarts, and the rock tries again after another self-flip delay on the ground.
 * A self-flip is a normal flip.
 
+## P3: Shockwave
+**Shockwave** is the P3 tier. On landing, a Shockwave rock has a **shockwave chance** to trigger a **shockwave**: it flips the rocks on the ground within the **shockwave radius** around it, up to **max shockwave flips** rocks. Shockwave chance, shockwave radius and max shockwave flips are upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#shockwave-p3)).
+* It's the only tier that flips other rocks.
+
 ## Decisions
 * Restless rocks self-flip after a duration on the ground, not at a regular interval.
+* A Shockwave rock triggers a shockwave on a chance, not on every landing.
 
 ## Open Questions
 * What special abilities can higher tiers have?
-* Is bounce chance capped at 100%, or does anything happen beyond it?
+* Are bounce chance and shockwave chance capped at 100%, or does anything happen beyond it?
+* Shockwave:
+  * When more rocks are within the shockwave radius than max shockwave flips, which ones are flipped?
+  * Is a flip by a shockwave a normal flip (landing cash, HP loss, critical landing, bounce)?
+  * Can a Shockwave rock flipped by a shockwave trigger a shockwave itself (chain reaction)?
+  * Does any landing trigger a shockwave chance, whatever flipped the rock (mouse, Flipper Bot, shockwave), including the landing that breaks it?
 
 ## Parked Ideas
 | Tier | Name | Unique rules / abilities |
 |---|---|---|
-| P3 | Shockwave | Each landing from a primary flip flips the ground rocks around it. It's the only tier that flips other rocks. |
 | P4 | Purifier | Each landing from a primary flip makes lower-tier ground rocks around it glow, which makes them pure for a while. |
 | P5 | Giant | Oversized. Each landing from a primary flip causes a quake: every other ground rock loses 1 HP, and rocks that reach 0 HP break normally. |
 | ? | Ember | A critical landing from a primary flip sets it on fire: its next landings are all critical, each with a bigger critical cash multiplier than the last; landings on fire don't relight it, and the fire and its escalation pass to the replacement rock. Adds new stats, burn length, (+), and burn step, (+). |
