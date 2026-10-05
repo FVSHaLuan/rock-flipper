@@ -24,6 +24,10 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 ## P3: Shockwave
 **Shockwave** is the P3 tier. On landing, a Shockwave rock has a **shockwave chance** to trigger a **shockwave**: it flips the rocks on the ground within the **shockwave radius** around it, up to **max shockwave flips** rocks. Shockwave chance, shockwave radius and max shockwave flips are upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#shockwave-p3)).
 * It's the only tier that flips other rocks.
+* A landing from any flip can trigger a shockwave, including a flip by a shockwave: a Shockwave rock flipped by a shockwave can trigger a shockwave itself, so shockwaves can chain.
+* A Shockwave rock that breaks can't trigger a shockwave.
+* When more rocks are within the shockwave radius than max shockwave flips, the rocks to flip are picked at random.
+* A flip by a shockwave is a normal flip.
 
 ## Decisions
 * Restless rocks self-flip after a duration on the ground, not at a regular interval.
@@ -32,11 +36,6 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 ## Open Questions
 * What special abilities can higher tiers have?
 * Are bounce chance and shockwave chance capped at 100%, or does anything happen beyond it?
-* Shockwave:
-  * When more rocks are within the shockwave radius than max shockwave flips, which ones are flipped?
-  * Is a flip by a shockwave a normal flip (landing cash, HP loss, critical landing, bounce)?
-  * Can a Shockwave rock flipped by a shockwave trigger a shockwave itself (chain reaction)?
-  * Does any landing trigger a shockwave chance, whatever flipped the rock (mouse, Flipper Bot, shockwave), including the landing that breaks it?
 
 ## Parked Ideas
 | Tier | Name | Unique rules / abilities |

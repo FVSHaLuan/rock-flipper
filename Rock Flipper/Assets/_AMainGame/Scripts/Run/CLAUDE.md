@@ -18,7 +18,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Balancing/` | `GameBalance.cs` (empty placeholder ScriptableObject), `CashTiers.cs` (cost-tier presets + UI color), `StageConfig.cs` (looks like unused/legacy HP-scaling formula). |
 | `Combat/` | The gameplay scene root — see subsystems below. |
 | `Combat/Background/`, `Boundary/`, `Explosion/`, `Sfx/` | Background selection, playfield walls, pooled explosion VFX, sound. |
-| `Combat/Flippable/` | `Flippable.cs` — the generic flip-animation state machine used by rocks (`TryFlipping`/`ForceFlipping`, arc motion via `Mathf.Sin`, fires `OnStartedFlipping`/`OnFinishedFlipping`/`OnUpdatedFlipping`). Every flip is tagged with a `FlipSource` (mouse, Flipper Bot, bounce, self-flip, new rock), readable as `LastFlipSource` until the next flip; abilities use it to react only to some flips. Plus rotator/shadow/sorting cosmetic add-ons. |
+| `Combat/Flippable/` | `Flippable.cs` — the generic flip-animation state machine used by rocks (`TryFlipping`/`ForceFlipping`, arc motion via `Mathf.Sin`, fires `OnStartedFlipping`/`OnFinishedFlipping`/`OnUpdatedFlipping`). Every flip is tagged with a `FlipSource` (mouse, Flipper Bot, bounce, self-flip, new rock, shockwave), readable as `LastFlipSource` until the next flip; abilities use it to react only to some flips. Plus rotator/shadow/sorting cosmetic add-ons. |
 | `Combat/Flipper Bot/` | `FlipperBot.cs`, `FlipperBotFlipper.cs` (circle-cast + flip), `FlipperBotMovement.cs` (wanders via `Vector2.MoveTowards`). |
 | `Combat/Player Cursor/` | `PlayerCursor.cs` + `FlippableByPlayerCursor.cs` — click/hover-to-flip, circle/point cast each `LateUpdate`, per-object landing cooldown. |
 | `Combat/Playfield/` | `Playfield.cs` (partial class — bounds math, clamping, random points, edges). |
@@ -41,7 +41,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - `Combat/Rocks/RockPoolHandler.cs` — pooling via `FH.Core.Architecture.Pool.GeneralPoolMemberSimplified`.
 - `Combat/Rocks/RocksSpawner.cs` — spawns initial rock counts per tier at combat start.
 - `Stats/RockTierBuildStats.cs` — per-tier tunables: `count`, `maxCount`, `purity`, `landingCash`, `breakingCash`, `purityCashMultiplier`, `landingCooldown`.
-- **No per-tier "unique ability" classes exist** — tiers currently differ only by numeric stats.
+- Per-tier unique abilities live in `Combat/Rocks/Abilities/` (see Maturity below).
 - **Pure Rocks**: purity is a per-tier chance (`RockTierBuildStats.purity`), rolled on spawn (`RocksSpawner`, `RockCountStatBuilderButton`) and on re-roll (`Rock.BreakCurrentRockAndSpawnNewOne` via `RockTier.GetPurityChance()`). It's a `bool isPure` flag + separate prototype prefab per tier — no separate "PureRock" class. Cash multiplied via `purityCashMultiplier`.
 
 **To add a new Rock Tier**: extend `RockTier` enum → add a case to `BuildStatsObject.GetRockTierBuildStats` → add prototype prefabs (regular + pure) registered in `PrototypeManager` (run `Validate()`) → add rock-count/upgrade shop buttons + skill nodes wired to a `RockBuildAgent` subclass (see `Stats/Agents/Implementations/Rocks/IncreaseRockCount.cs` as the template).
@@ -94,7 +94,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 **Not present at all in code**: Monoliths, The Rift. Pure design-doc concepts with zero implementation (see `GDD/Systems/`).
 
-**Per-tier unique abilities** exist for Bouncy (P1) and Restless (P2) under `Combat/Rocks/Abilities/`.
+**Per-tier unique abilities** exist for Bouncy (P1), Restless (P2) and Shockwave (P3) under `Combat/Rocks/Abilities/` (each a `RockExtender` on the tier's prefabs, tuned by `BuildStatsObject` fields).
 
 ## Conventions & gotchas
 

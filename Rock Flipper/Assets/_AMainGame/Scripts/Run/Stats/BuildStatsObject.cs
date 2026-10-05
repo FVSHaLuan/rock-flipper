@@ -34,6 +34,11 @@ namespace Agame.Run.Stats
         public float restlessRockSelfFlipDelay = 5f;
         public float restlessRockSelfFlipChance = 0.5f;
 
+        [Header("Shockwave Rocks")]
+        public float shockwaveRockShockwaveChance = 0.2f;
+        public float shockwaveRockShockwaveRadius = 0.5f;
+        public int shockwaveRockMaxShockwaveFlips = 3;
+
         [Header("Chests")]
         [SerializeField]
         private ChestRarityBuildStats chest_Common;
