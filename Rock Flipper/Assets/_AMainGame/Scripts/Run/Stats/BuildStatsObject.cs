@@ -29,6 +29,9 @@ namespace Agame.Run.Stats
         [Header("Bouncy Rocks")]
         public float bouncyRockBounceChance = 0.1f;
 
+        [Header("Restless Rocks")]
+        public float restlessRockSelfFlipDelay = 5f;
+
         [Header("Chests")]
         [SerializeField]
         private ChestRarityBuildStats chest_Common;
