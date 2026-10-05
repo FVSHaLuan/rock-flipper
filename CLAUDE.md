@@ -31,7 +31,9 @@ Use the GDD to understand what a feature is *supposed* to do and what it's calle
 - When a task touches something where code and GDD disagree, point out the mismatch and ask which to follow. Don't silently "fix" code to match the GDD, and don't rename code identifiers to GDD terms unless asked.
 - The folder `CLAUDE.md` files under `_AMainGame/` describe the code as it is. Some of their remarks about the design may be out of date; trust the GDD for design and the code for behavior.
 
-**Editing the GDD.** Coding tasks don't edit the GDD unless the user asks. GDD work follows its own rules in [GDD/CLAUDE.md](GDD/CLAUDE.md): document only what the user says, put unknowns under `## Open Questions`, keep the glossary in sync, and run the `idea-critic` subagent on non-trivial proposals. That subagent lives in `GDD/.claude/agents/`, so it's only available when the session is started from `GDD/`.
+**Keeping the GDD in sync with design changes.** When the user asks to implement a design change (a new or changed mechanic, rule, stat, system, content instance or game term), update the GDD in the same task. Read [GDD/CLAUDE.md](GDD/CLAUDE.md) first and follow it: document only what the user stated, ask about rule-level choices made during implementation instead of writing them in, and keep the glossary, stat files and content files in sync. Mention the GDD edits in the final summary. Code-only tasks (refactors, bug fixes that restore intended behavior, tooling, UI plumbing) don't touch the GDD. Otherwise, coding tasks don't edit the GDD unless the user asks.
+
+**Editing the GDD.** GDD work follows its own rules in [GDD/CLAUDE.md](GDD/CLAUDE.md): document only what the user says, put unknowns under `## Open Questions`, keep the glossary in sync, and run the `idea-critic` subagent on non-trivial proposals. That subagent lives in `GDD/.claude/agents/`, so it's only available when the session is started from `GDD/`.
 
 ## Inside `Rock Flipper/`
 

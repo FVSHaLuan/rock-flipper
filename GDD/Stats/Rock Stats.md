@@ -30,6 +30,7 @@ Stats only [Restless](../Content/Rock%20Tiers.md#p2-restless) rocks have.
 | Stat | Scope | Upgrade Direction |
 |---|---|---|
 | Self-flip delay | _Per tier_ | (-) |
+| Self-flip chance | _Per tier_ | _(+)_ |
 
 ## Open Questions
 * Are upgrades to tier-specific stats applied per tier or per individual rock?

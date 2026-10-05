@@ -10,6 +10,14 @@ When I ask you to document something, write down only what I said. Rewording, fi
 
 When do tasks required inventing new things, propose in the chat first before making any changes.
 
+## Relation to the Code
+The GDD lives in the game's repo, at `GDD/`, next to the Unity project (`Rock Flipper/`). It describes the intended design. The code doesn't necessarily match it in naming or rules.
+- The code is not a source for the GDD. Don't document code behavior or code names into the GDD unless I say so. If you notice a mismatch, mention it in chat; don't edit the GDD to "fix" it.
+- When I ask to implement a design change in code, update the GDD in the same task, following every rule in this file:
+  - The change I asked for is my instruction to replace the affected body text. Everything else in the body text stays protected by [Body Text](#body-text).
+  - Document only what I stated. If implementing it required a rule-level choice I didn't state, don't write it into the GDD. List it in chat and ask whether to add it to the design or to `## Open Questions`.
+  - Keep the glossary, stat files and content files in sync, as for any other GDD edit.
+
 ### Creative Tasks
 For any creative task (proposing ideas, inventing content, brainstorming, naming, etc.), **use ALL the info available in the GDD**, not just the doc being worked on:
 - Body text of every related doc, plus the glossary, so ideas fit the existing design.
@@ -95,7 +103,7 @@ Every system doc has a `## Creative Guidance` section, placed right before its `
 - **Entries define, they don't explain.** One clause saying what the term *is*; rules and details stay in the owning doc behind the link.
 
 ## Git History
-Do not look at git commit history (e.g. `git log`, `git show`, `git blame`, `git diff` against past commits). The current files are the single source of truth for the GDD.
+Do not look at git commit history (e.g. `git log`, `git show`, `git blame`, `git diff` against past commits) of GDD files. The current files are the single source of truth for the GDD. This rule doesn't restrict using git for code work in the rest of the repo.
 
 ## Scope
 This GDD focuses on the concepts and rules, so

@@ -3,7 +3,8 @@ using UnityEngine;
 namespace Agame.Run.Combat
 {
     /// <summary>
-    /// Makes the rock flip by itself once it has stayed on the ground for long enough
+    /// Gives the rock a chance to flip by itself each time it has stayed on the ground for long enough
+    /// (on a failed roll, the countdown restarts)
     /// </summary>
     public class RestlessRock : RockExtender
     {
@@ -30,6 +31,10 @@ namespace Agame.Run.Combat
 
             ///
             groundedTime = 0f;
+            if (Random.value >= BuildStats.restlessRockSelfFlipChance)
+                return;
+
+            ///
             SelfFlip();
         }
 

@@ -31,6 +31,7 @@ namespace Agame.Run.Stats
 
         [Header("Restless Rocks")]
         public float restlessRockSelfFlipDelay = 5f;
+        public float restlessRockSelfFlipChance = 0.5f;
 
         [Header("Chests")]
         [SerializeField]

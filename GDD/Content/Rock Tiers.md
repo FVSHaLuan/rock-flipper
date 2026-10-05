@@ -6,7 +6,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 |---|---|---|
 | P0 | | None: P0 rocks are just ordinary rocks. |
 | P1 | [Bouncy](#p1-bouncy) | Has a chance to bounce and land once more after landing. |
-| P2 | [Restless](#p2-restless) | Flips itself after a duration on the ground. |
+| P2 | [Restless](#p2-restless) | Has a chance to flip itself after a duration on the ground. |
 
 ## P1: Bouncy
 **Bouncy** is the P1 tier. After landing, a Bouncy rock has a **bounce chance** to **bounce**: it lands once more. Bounce chance is upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#bouncy-p1)).
@@ -14,7 +14,10 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 * A Bouncy rock that breaks can't bounce.
 
 ## P2: Restless
-**Restless** is the P2 tier. After a Restless rock has been on the ground for its **self-flip delay**, it **self-flips**: it flips itself, with no [mouse](../Systems/Mouse.md) or [Flipper Bot](../Systems/FlipperBots.md) needed. Self-flip delay is upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#restless-p2)).
+**Restless** is the P2 tier. After a Restless rock has been on the ground for its **self-flip delay**, it has a **self-flip chance** to **self-flip**: it flips itself, with no [mouse](../Systems/Mouse.md) or [Flipper Bot](../Systems/FlipperBots.md) needed. Self-flip delay and self-flip chance are upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#restless-p2)).
+* Only continuous time on the ground counts: whenever the rock is in the air, whatever flipped it, the count restarts from zero.
+* If the self-flip chance fails, the count restarts, and the rock tries again after another self-flip delay on the ground.
+* A self-flip is a normal flip.
 
 ## Decisions
 * Restless rocks self-flip after a duration on the ground, not at a regular interval.
@@ -22,7 +25,6 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 ## Open Questions
 * What special abilities can higher tiers have?
 * Is bounce chance capped at 100%, or does anything happen beyond it?
-* Restless: when does the self-flip delay start counting (e.g. on landing, when a replacement rock appears), and does it restart when the mouse or a Flipper Bot flips the rock before the delay ends?
 
 ## Parked Ideas
 | Tier | Name | Unique rules / abilities |
