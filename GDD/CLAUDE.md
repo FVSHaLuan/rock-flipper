@@ -101,6 +101,7 @@ Every system doc has a `## Creative Guidance` section, placed right before its `
 - **Update in the same change.** Whenever a term is added, renamed, removed, or gets its own doc, update the glossary (entry and link) in the same edit.
 - **Use glossary terms exactly** in all docs; don't introduce synonyms. If I use a different word for an existing term, ask whether it's a rename or a new concept.
 - **Entries define, they don't explain.** One clause saying what the term *is*; rules and details stay in the owning doc behind the link.
+- **Internal names get their own entry.** A development-only name (not shown to players) is listed as its own term, marked development-only, and points to the player-facing term it stands for (e.g. "**Prism**: the development-only name of L VIII; not shown to players."). It's the one allowed synonym of a term; docs still use the player-facing term.
 
 ## Git History
 Do not look at git commit history (e.g. `git log`, `git show`, `git blame`, `git diff` against past commits) of GDD files. The current files are the single source of truth for the GDD. This rule doesn't restrict using git for code work in the rest of the repo.

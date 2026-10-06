@@ -1,16 +1,25 @@
 # Monoliths
 
-All [monoliths](../Systems/Monoliths.md) and their unique [abilities](../Systems/Monoliths.md#ability). No monoliths are documented yet.
+All [monoliths](../Systems/Monoliths.md) and their unique [abilities](../Systems/Monoliths.md#ability).
+
+| Monolith | Internal Name | Ability |
+|---|---|---|
+| [L VIII](#l-viii) | Prism | Periodically fires lasers at random airborne rocks. |
+
+## L VIII
+**L VIII** is a monolith that periodically fires lasers at random airborne [rocks](../Systems/Rocks.md). How often it fires is its **shooting interval**. L VIII is unlocked, and its shooting interval upgraded, in the [Skill Tree](../Systems/SkillTree.md) (see [Monolith Stats](../Stats/Monolith%20Stats.md#l-viii)).
+* Internal name: Prism (development-only, not shown to players).
 
 ## Decisions
 
 ## Open Questions
 * What are the monoliths' abilities?
+* L VIII: what does a laser hit do to the rock it hits?
+* L VIII: how many lasers does it fire, and at how many rocks, each time it shoots?
 
 ## Parked Ideas
 | Monolith | Ability |
 |---|---|
-| Prism | Periodically fires lasers at random airborne rocks; each hit earns a multiple of that rock's landing cash and removes 1 HP, and a rock lasered to 0 HP breaks when it lands. |
 | Fuser | Two same-tier rocks that land touching may fuse into one fused rock whose landings pay both parts' landing cash, exp and ability rolls × a fusion multiplier; it splits back into two fresh rocks when it breaks. |
 | Jackpot | Landings fill a meter on the monolith; when full, it auto-spins a slot machine paying a cash burst or a temporary cash multiplier, and a triple match pays a bigger burst. |
 | Orbit | A rock whose flight crosses the monolith circle may get caught and orbit it for a few laps before landing, earning lap cash each lap with no HP loss. |

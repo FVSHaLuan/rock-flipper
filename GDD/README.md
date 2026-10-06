@@ -22,6 +22,7 @@
   * [Background Stats](Stats/Background%20Stats.md)
   * [Chest Stats](Stats/Chest%20Stats.md)
   * [Flipper Bot Stats](Stats/Flipper%20Bot%20Stats.md)
+  * [Monolith Stats](Stats/Monolith%20Stats.md)
   * [Mouse Stats](Stats/Mouse%20Stats.md)
   * [Rock Stats](Stats/Rock%20Stats.md)
 * **Content** — instances of a system that differ in rules

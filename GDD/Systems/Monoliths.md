@@ -7,7 +7,7 @@
 * Add new systems to the game, in the form of each monolith's ability.
 
 ## Ability
-Each monolith has a unique **ability**, upgradable in the Skill Tree. All monoliths are listed in [Monoliths](../Content/Monoliths.md).
+Each monolith has a unique **ability**, upgradable in the Skill Tree. All monoliths are listed in [Monoliths](../Content/Monoliths.md), and their stats in [Monolith Stats](../Stats/Monolith%20Stats.md).
 
 ## Decisions
 * The monoliths' circle is their own; its layout is unrelated to [the Rift](TheRift.md).
