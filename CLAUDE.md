@@ -4,23 +4,13 @@ This repo is **two things at once**:
 1. A specific game: **Rock Flipper**, a 2D casual/idle "flipping" incremental game shipping on Steam (one-time purchase).
 2. A general toolkit: most of the code here is written to be reused across the owner's *future* games, not just this one. When editing, default to asking "does this belong to Rock Flipper specifically, or to the reusable toolkit?" — see the folder-level `CLAUDE.md` files for exactly where that line falls in each area.
 
-## Layout
-
-- **`Rock Flipper/`** — the Unity project itself (Unity project root: `.sln`, `Assets/`, `ProjectSettings/`, `Packages/`, etc.).
-- **`GDD/`** — the game design document (Markdown), maintained by the owner, previously in a separate repo. Describes the *intended* design of Rock Flipper. See [Game design (GDD)](#game-design-gdd) below.
+Two top-level folders: **`GDD/`**, the owner's game design document in Markdown (see [Game design (GDD)](#game-design-gdd)), and **`Rock Flipper/`**, the Unity project root (see [Inside `Rock Flipper/`](#inside-rock-flipper)).
 
 ## Game design (GDD)
 
 Use the GDD to understand what a feature is *supposed* to do and what it's called in design terms. It does not describe the code.
 
-**Where to look**
-- [GDD/README.md](GDD/README.md) — index of every doc. Start here.
-- [GDD/Glossary.md](GDD/Glossary.md) — one line per game term, linking to the doc that owns it. Fastest way to resolve a design term the user mentions.
-- [GDD/Pillars.md](GDD/Pillars.md) — metadata, vibe, core loop (flip → earn cash → upgrade; no offline progress; game ends when everything is maxed).
-- `GDD/Systems/*.md` — rules per system (Rocks, Currencies, Backgrounds, Chests, Items, Flipper Bots, Levels, Mouse, Skill Tree, Monoliths, The Rift).
-- `GDD/Stats/*.md` — every stat of a system, with scope (global / per tier / per rarity…) and upgrade direction. Useful when adding a stat or `BuildAgent`.
-- `GDD/Content/*.md` — instances that differ in rules (e.g. rock tiers P1 Bouncy, P2 Restless; individual monoliths).
-- `GDD/Screens/*.md` — screen layout (main screen: playfield, side bar, overlay UI).
+**Where to look.** Start at [GDD/README.md](GDD/README.md), the index of every doc. To resolve a design term the user mentions, use [GDD/Glossary.md](GDD/Glossary.md): one line per term, linking to the doc that owns it.
 
 **What counts as design.** Only a doc's body text is the design. These sections are *not* adopted design, so don't implement from them: `## Brainstorm`, `## Parked Ideas`, `## Creative Guidance`, and `Brainstorm.md`. `## Open Questions` marks undecided rules: ask the user rather than picking an answer in code. `## Decisions` records choices and rejected alternatives: don't implement a rejected one.
 
@@ -33,11 +23,11 @@ Use the GDD to understand what a feature is *supposed* to do and what it's calle
 
 **Keeping the GDD in sync with design changes.** When the user asks to implement a design change (a new or changed mechanic, rule, stat, system, content instance or game term), update the GDD in the same task. Read [GDD/CLAUDE.md](GDD/CLAUDE.md) first and follow it: document only what the user stated, ask about rule-level choices made during implementation instead of writing them in, and keep the glossary, stat files and content files in sync. Mention the GDD edits in the final summary. Code-only tasks (refactors, bug fixes that restore intended behavior, tooling, UI plumbing) don't touch the GDD. Otherwise, coding tasks don't edit the GDD unless the user asks.
 
-**Editing the GDD.** GDD work follows its own rules in [GDD/CLAUDE.md](GDD/CLAUDE.md): document only what the user says, put unknowns under `## Open Questions`, keep the glossary in sync, and run the `idea-critic` subagent on non-trivial proposals. That subagent lives in `GDD/.claude/agents/`, so it's only available when the session is started from `GDD/`.
+**Editing the GDD.** Any GDD work follows [GDD/CLAUDE.md](GDD/CLAUDE.md). Its `idea-critic` subagent lives in `GDD/.claude/agents/`, so it's only available when the session is started from `GDD/`.
 
 ## Inside `Rock Flipper/`
 
-- **`Assets/_AMainGame/`** — all of this game's specific content and scripts. See [Rock Flipper/Assets/_AMainGame/CLAUDE.md](Rock%20Flipper/Assets/_AMainGame/CLAUDE.md).
+- **`Assets/_AMainGame/`** — all of this game's specific content and scripts. See [its CLAUDE.md](Rock%20Flipper/Assets/_AMainGame/CLAUDE.md).
 - **`Assets/_Exp/`** — gitignored scratch/experiment folder. Ignore for any real task; nothing here is shipped or meaningful long-term.
 - **`Assets/FHC/`** — the shared in-house Unity framework (`FH.Core.Architecture.*` namespace: pooling, `WritableScriptableObject` save-data base, `MonoBehaviourWithInit`/`ScriptableObjectWithInit`, `Balancer`/`BalancerWithObjects` reference-counted lock pattern). Many `_AMainGame/Scripts` systems build directly on top of this — if you're chasing a base class like `MonoBehaviourWithInit` or `WritableScriptableObject<T>` and it's not in `_AMainGame`, look here.
 - Everything else under `Assets/` (Epic Toon FX, EnhancedScroller v2, xNode, TextMesh Pro, Steamworks.NET package, Controller Icons Pack, Shaper2D, CommandTerminal, etc.) is **third-party/vendored** — don't expect project-specific documentation for these; treat them as black-box dependencies unless you find evidence they've been modified in place.
