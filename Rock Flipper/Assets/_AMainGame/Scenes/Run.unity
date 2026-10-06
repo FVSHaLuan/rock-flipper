@@ -666,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.13363297
       objectReference: {fileID: 0}
+    - target: {fileID: 8519339300455517639, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+      propertyPath: monolithType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8795972602562659925, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10008,6 +10012,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8519339300455517639, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+      propertyPath: monolithType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8795972602562659925, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -14591,6 +14599,10 @@ PrefabInstance:
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Color.r
       value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519339300455517639, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+      propertyPath: monolithType
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8795972602562659925, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_LocalScale.x
@@ -24259,6 +24271,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9150943
       objectReference: {fileID: 0}
+    - target: {fileID: 8519339300455517639, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+      propertyPath: monolithType
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8795972602562659925, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -25597,7 +25613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1771937470
 Transform:
   m_ObjectHideFlags: 0
@@ -25873,7 +25889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20.000011, y: -90}
+  m_AnchoredPosition: {x: 20, y: -90}
   m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1790407571
@@ -32520,6 +32536,10 @@ PrefabInstance:
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Color.r
       value: 0.14978641
+      objectReference: {fileID: 0}
+    - target: {fileID: 8519339300455517639, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+      propertyPath: monolithType
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8795972602562659925, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_LocalScale.x

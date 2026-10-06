@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1224208660139863463}
   - component: {fileID: 9127964781408777400}
   - component: {fileID: 3798937081010692288}
+  - component: {fileID: 8519339300455517639}
   m_Layer: 0
   m_Name: Monolith Base
   m_TagString: Untagged
@@ -66,6 +67,23 @@ MonoBehaviour:
   shadowTransform: {fileID: 1081732628723524652}
   objectTransform: {fileID: 4502367037841009169}
   shadowScalePerDistance: 1
+--- !u!114 &8519339300455517639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729952183267702846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db1f19fd7acd6e41bc9cb30587aba3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Monolith
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  monolithType: 0
 --- !u!1 &5918927590841747839
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +219,7 @@ SortingGroup:
   m_GameObject: {fileID: 6004593797335463000}
   m_Enabled: 1
   m_SortingLayerID: -406137253
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
