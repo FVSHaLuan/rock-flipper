@@ -75,6 +75,7 @@ Keep the docs concise:
   - Only list an instance for what makes it differ in rules (e.g. a unique ability). Instances that differ only in numbers or presentation get no entry.
   - Open questions about a specific instance go in the content file. Questions about the system as a whole stay in the system doc.
   - Create a content file only once a system has instance-specific content.
+  - Once any instance of a kind (e.g. monoliths) has an internal name (see [Glossary](#glossary)), every table in the body text that lists instances of that kind has an `Internal Name` column, right after the name column. Leave the cell empty for instances without one.
 - **Bold only marks a definition.** Bold a glossary term once, where it's defined in its owning doc. Don't bold anything else.
 - **Link a term once per doc**, on its first mention.
 - **Minimal scaffolding.**
