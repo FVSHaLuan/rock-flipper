@@ -21,6 +21,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Combat/Flippable/` | `Flippable.cs` — the generic flip-animation state machine used by rocks (`TryFlipping`/`ForceFlipping`, arc motion via `Mathf.Sin`, fires `OnStartedFlipping`/`OnFinishedFlipping`/`OnUpdatedFlipping`). Every flip is tagged with a `FlipSource` (mouse, Flipper Bot, bounce, self-flip, new rock, shockwave), readable as `LastFlipSource` until the next flip; abilities use it to react only to some flips. Plus rotator/shadow/sorting cosmetic add-ons. |
 | `Combat/Flipper Bot/` | `FlipperBot.cs`, `FlipperBotFlipper.cs` (circle-cast + flip), `FlipperBotMovement.cs` (wanders via `Vector2.MoveTowards`). |
 | `Combat/Player Cursor/` | `PlayerCursor.cs` + `FlippableByPlayerCursor.cs` — click/hover-to-flip, circle/point cast each `LateUpdate`, per-object landing cooldown. |
+| `Combat/Monoliths/` | Early stub: `Monolith.cs` (`ExtendedMonoBehaviourRun` holding a serialized `MonolithType`, no behavior yet) + `MonolithType.cs` enum (`LII, LIV, LVI, LVIII, LX, LXII`). Used by `Prefabs/Run/Combat/Monolith/Monolith Base.prefab`. |
 | `Combat/Playfield/` | `Playfield.cs` (partial class — bounds math, clamping, random points, edges). |
 | `Combat/Rocks/` | The Rock system core — see below. |
 | `Combat/Tutorials/` | Sequential onboarding task system (`TutorialTaskManager`/`Controller`). |
@@ -83,7 +84,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - `Skill tree/Graph/SkillTreeGraph.cs`/`SkillGraphNode.cs` — **XNode**-based node-graph asset (edited via `Skill tree/Graph/Editor/*`): costs (`costs_1/2/3`, up to 3 currencies), `BuildAgent` ref + `buildValue`, unlock requirements, demo-build limits.
 - `Skill tree/SkillNode.cs` — runtime `MonoBehaviour` counterpart of a graph node; click-to-upgrade, spends via `RunData.SpendCurrency`, unlocks children.
 - `Skill tree/SkillTree.cs` — owns 3 parallel graphs (`mainSkillTreeGraph`, `laserSkillTreeGraph`, `lightningSkillTreeGraph`).
-- `Skill tree/Special Crusher Configs/` — a **branching alternate sub-tree mechanic** ("Special Crusher": `SpecialCrusherId { Demo, None, Laser, Lightning }`, `SkillTree.SetActiveSpecialTree`). **This is the closest existing analog to design-doc "Monoliths"** — a reasonable template if asked to implement Monoliths, though currently only 2 variants exist.
+- `Skill tree/Special Crusher Configs/` — a **branching alternate sub-tree mechanic** ("Special Crusher": `SpecialCrusherId { Demo, None, Laser, Lightning }`, `SkillTree.SetActiveSpecialTree`). Currently only 2 variants exist. Not connected to the `Combat/Monoliths/` stub.
 - `Skill tree/SkillNodeOverrider.cs` — abstract hook to override max-ability/cost/click behavior for non-standard nodes; all virtuals default to "no override".
 
 ## Maturity — what's actually implemented
@@ -92,7 +93,9 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 **Scaffolded but incomplete**: **Prestige** — `RunStateManager` has full state transitions/events but the actual data-reset calls are **commented out** (`// RunData.Prestige();` etc. in `RunStateManager.cs`); `RunData.CorrectData` is an empty stub. Don't assume Prestige resets anything without verifying. Also: `GameAchievementsReporter` (empty), several `BuildAgent` description/achievement hooks (hardcoded stubs), `GameBalance`/`ShortHandManager` (empty).
 
-**Not present at all in code**: Monoliths, The Rift. Pure design-doc concepts with zero implementation (see `GDD/Systems/`).
+**Stub only**: Monoliths — `Combat/Monoliths/` has a `Monolith` component + `MonolithType` enum and a base prefab, but no rules or behavior from `GDD/Systems/Monoliths.md` yet.
+
+**Not present at all in code**: The Rift. Pure design-doc concept with zero implementation (see `GDD/Systems/`).
 
 **Per-tier unique abilities** exist for Bouncy (P1), Restless (P2) and Shockwave (P3) under `Combat/Rocks/Abilities/` (each a `RockExtender` on the tier's prefabs, tuned by `BuildStatsObject` fields).
 
