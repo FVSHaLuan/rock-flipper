@@ -27,4 +27,11 @@ All [monoliths](../Systems/Monoliths.md) and their unique [abilities](../Systems
 - A monolith should feel like a powerful unlock, like unlocking a whole new system with many related upgrades.
 
 ## Brainstorm
-Monolith can summnon some thing periodically?
+- Monolith can summnon some thing periodically?
+- Shoot at flying rocks
+- Shoot at ground rocks
+- Shoot at Flipper bots
+- Time warp
+- Shoot at chests
+- Summon
+- Merge rocks (paid DLC?)
