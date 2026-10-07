@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: rockTier
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5142866534733488078, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: originalColor.b
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142866534733488078, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: originalColor.g
+      value: 0.8666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142866534733488078, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: originalColor.r
+      value: 0.8627451
+      objectReference: {fileID: 0}
     - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Size.y
       value: 4.462062

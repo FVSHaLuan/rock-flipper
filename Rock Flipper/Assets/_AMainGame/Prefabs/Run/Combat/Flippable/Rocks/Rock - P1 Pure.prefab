@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: rockTier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5142866534733488078, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: originalColor.b
+      value: 0.9254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142866534733488078, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: originalColor.g
+      value: 0.9137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142866534733488078, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
+      propertyPath: originalColor.r
+      value: 0.7019608
+      objectReference: {fileID: 0}
     - target: {fileID: 5184773700375207144, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Size.y
       value: 4.810715
@@ -72,18 +84,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ac7abd2a4a45cec47a1e63d3ec142ba2, type: 3}
-    - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9137255
-      objectReference: {fileID: 0}
-    - target: {fileID: 7319657065525283971, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
-      propertyPath: m_Color.r
-      value: 0.7019608
-      objectReference: {fileID: 0}
     - target: {fileID: 8171674314610655772, guid: 6b13cb3f8a0e7514e92944be0b21c74c, type: 3}
       propertyPath: m_Name
       value: Rock - P1 Pure
@@ -113,5 +113,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807839f2f86b43c47aa3ee8c0ec8c7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.BouncyRock
-  bounceChance: 0.826
-  bounceDelay: 0
