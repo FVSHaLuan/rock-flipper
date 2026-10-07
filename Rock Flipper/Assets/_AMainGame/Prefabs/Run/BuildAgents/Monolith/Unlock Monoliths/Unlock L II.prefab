@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 0}
   subIcon: {fileID: 0}
-  titleGroup: L II
+  titleGroup: Monolith L II
   localizedTitleGroup:
     m_TableReference:
       m_TableCollectionName: 
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: Unlock L II
+  descriptionFormat: Unlock Monolith L II
   extraDescription: 
   buildValueMultiplier: 1
 --- !u!114 &2867417085295502336

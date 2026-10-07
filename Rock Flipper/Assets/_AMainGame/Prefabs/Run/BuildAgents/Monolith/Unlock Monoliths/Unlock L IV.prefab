@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 381521938923219142, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: descriptionFormat
-      value: Unlock L IV
+      value: Unlock Monolith L IV
       objectReference: {fileID: 0}
     - target: {fileID: 2567235487356618235, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: m_Name
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6238146525533148067, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: titleGroup
-      value: L IV
+      value: Monolith L IV
       objectReference: {fileID: 0}
     - target: {fileID: 7033856927510863441, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: m_LocalPosition.x
