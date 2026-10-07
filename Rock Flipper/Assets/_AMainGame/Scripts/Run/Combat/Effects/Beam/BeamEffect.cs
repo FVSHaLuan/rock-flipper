@@ -1,3 +1,4 @@
+using FH.Core.Architecture.Pool;
 using UnityEngine;
 
 namespace Agame.Run.Combat
@@ -5,7 +6,7 @@ namespace Agame.Run.Combat
     /// <summary>
     /// A visual effect that represents a beam between two points in the game world.
     /// </summary>
-    public class BeamEffect : MonoBehaviour
+    public class BeamEffect : GeneralPoolMemberSimplified
     {
         [SerializeField]
         private GameObject startPointView;

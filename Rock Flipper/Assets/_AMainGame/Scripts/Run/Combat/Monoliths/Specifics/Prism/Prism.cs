@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Agame.Run.Combat
 {
@@ -11,8 +12,8 @@ namespace Agame.Run.Combat
     /// </summary>
     public class Prism : ExtendedMonoBehaviourRun
     {
-        [SerializeField]
-        private BeamEffect beam;
+        [SerializeField, FormerlySerializedAs("beam")]
+        private BeamEffect beamPrototype;
         [SerializeField]
         private Transform beamOrigin;
         [SerializeField]
@@ -21,19 +22,21 @@ namespace Agame.Run.Combat
         private UnityEvent onShot;
 
         private float shootingTimer;
-        private Coroutine beamCoroutine;
 
         private readonly List<Rock> candidates = new List<Rock>();
+        private readonly List<BeamEffect> activeBeams = new List<BeamEffect>();
 
         protected void OnEnable()
         {
             shootingTimer = 0f;
-            beam.gameObject.SetActive(false);
         }
 
         protected void OnDisable()
         {
-            beamCoroutine = null;
+            // the beam coroutines die with this component, so their beams have to go back to the pool here
+            foreach (var beam in activeBeams)
+                beam.TryReturnToPoolAndDeactivate();
+            activeBeams.Clear();
         }
 
         protected void Update()
@@ -76,9 +79,7 @@ namespace Agame.Run.Combat
         private void Shoot(Rock target)
         {
             ///
-            if (beamCoroutine != null)
-                StopCoroutine(beamCoroutine);
-            beamCoroutine = StartCoroutine(ShowBeam(target));
+            StartCoroutine(ShowBeam(target));
 
             ///
             ZapRock(target);
@@ -89,6 +90,8 @@ namespace Agame.Run.Combat
 
         private IEnumerator ShowBeam(Rock target)
         {
+            var beam = CurrentGeneralPool.TakeInstance(beamPrototype, this);
+            activeBeams.Add(beam);
             beam.gameObject.SetActive(true);
 
             ///
@@ -104,8 +107,8 @@ namespace Agame.Run.Combat
             }
 
             ///
-            beam.gameObject.SetActive(false);
-            beamCoroutine = null;
+            activeBeams.Remove(beam);
+            beam.TryReturnToPoolAndDeactivate();
         }
 
         private Vector3 BeamOriginPosition => beamOrigin != null ? beamOrigin.position : transform.position;
