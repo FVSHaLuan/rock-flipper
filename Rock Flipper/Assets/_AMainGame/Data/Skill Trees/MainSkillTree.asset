@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: Unlock L X
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 1750, y: 0}
+  position: {x: 1500, y: 0}
   ports:
     keys:
     - input
@@ -471,7 +471,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: -4968184747821918782}
+        node: {fileID: 6704568998710670713}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Name: Unlock L VIII
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 1500, y: 0}
+  position: {x: 750, y: -250}
   ports:
     keys:
     - input
@@ -639,7 +639,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 6704568998710670713}
+        node: {fileID: 2375330221305776675}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -648,10 +648,7 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -4968184747821918782}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: -5281263294261801891}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -928,7 +925,7 @@ MonoBehaviour:
   m_Name: Unlock L XII
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 2000, y: 0}
+  position: {x: 1750, y: 0}
   ports:
     keys:
     - input
@@ -1226,6 +1223,9 @@ MonoBehaviour:
       connections:
       - fieldName: input
         node: {fileID: -7420654112859997324}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -4968184747821918782}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1552,7 +1552,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: -4968184747821918782}
+        node: {fileID: -5281263294261801891}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
