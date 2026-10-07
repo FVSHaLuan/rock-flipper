@@ -12,10 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prism Beam
       objectReference: {fileID: 0}
-    - target: {fileID: 2992617374347252452, guid: 5826606e24feeee43b4254e968661c71, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5372306905848325721, guid: 5826606e24feeee43b4254e968661c71, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
