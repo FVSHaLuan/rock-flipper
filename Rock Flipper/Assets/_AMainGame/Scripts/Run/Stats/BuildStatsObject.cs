@@ -55,6 +55,8 @@ namespace Agame.Run.Stats
 
         [Header("Monoliths - L VIII (Prism)")]
         public float prismShootingInterval = 5f;
+        public int prismMinBeamCount = 1;
+        public int prismMaxBeamCount = 1;
 
         [Header("Chests")]
         [SerializeField]

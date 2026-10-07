@@ -7,8 +7,9 @@ using UnityEngine.Serialization;
 namespace Agame.Run.Combat
 {
     /// <summary>
-    /// L VIII: fires a laser at a random airborne rock every shooting interval
-    /// (if no rock is airborne when the interval is up, it fires at the first one that is)
+    /// L VIII: every shooting interval, fires a random number of beams (between min and max beam count, max if min > max)
+    /// at distinct random airborne rocks, capped by how many rocks are airborne
+    /// (if no rock is airborne when the interval is up, it fires as soon as one is)
     /// </summary>
     public class Prism : ExtendedMonoBehaviourRun
     {
@@ -46,43 +47,51 @@ namespace Agame.Run.Combat
                 return;
 
             ///
-            if (!TryPickAirborneRock(out var target))
+            CollectAirborneRocks();
+            if (candidates.Count == 0)
                 return;
 
             ///
             shootingTimer = 0f;
-            Shoot(target);
+            Shoot(Mathf.Min(RollBeamCount(), candidates.Count));
         }
 
-        private bool TryPickAirborneRock(out Rock target)
+        private void CollectAirborneRocks()
         {
-            ///
             candidates.Clear();
             foreach (var rock in RunEntry.rockInstanceManager.ActiveRocks)
             {
                 if (rock.Flippable.IsFlipping)
                     candidates.Add(rock);
             }
-
-            ///
-            if (candidates.Count == 0)
-            {
-                target = null;
-                return false;
-            }
-
-            ///
-            target = candidates[Random.Range(0, candidates.Count)];
-            return true;
         }
 
-        private void Shoot(Rock target)
+        private int RollBeamCount()
         {
-            ///
-            StartCoroutine(ShowBeam(target));
+            var min = BuildStats.prismMinBeamCount;
+            var max = BuildStats.prismMaxBeamCount;
+            return min > max ? max : Random.Range(min, max + 1);
+        }
+
+        /// <summary>
+        /// Each beam hits a different rock, picked at random from <see cref="candidates"/>
+        /// </summary>
+        private void Shoot(int beamCount)
+        {
+            if (beamCount <= 0)
+                return;
 
             ///
-            ZapRock(target);
+            for (var i = 0; i < beamCount; i++)
+            {
+                // partial Fisher-Yates: move a random remaining candidate to slot i
+                var pick = Random.Range(i, candidates.Count);
+                (candidates[i], candidates[pick]) = (candidates[pick], candidates[i]);
+
+                var target = candidates[i];
+                StartCoroutine(ShowBeam(target));
+                ZapRock(target);
+            }
 
             ///
             onShot?.Invoke();
@@ -114,7 +123,7 @@ namespace Agame.Run.Combat
         private Vector3 BeamOriginPosition => beamOrigin != null ? beamOrigin.position : transform.position;
 
         /// <summary>
-        /// What a laser hit does to the rock (undecided in the GDD, intentionally left empty for now)
+        /// What a beam hit does to the rock (undecided in the GDD, intentionally left empty for now)
         /// </summary>
         private void ZapRock(Rock rock)
         {
