@@ -21,6 +21,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6238146525533148067, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: fc67561a2de50c343852ec5e8a51c5b7, type: 3}
+    - target: {fileID: 6238146525533148067, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: titleGroup
       value: Monolith L XII
       objectReference: {fileID: 0}
