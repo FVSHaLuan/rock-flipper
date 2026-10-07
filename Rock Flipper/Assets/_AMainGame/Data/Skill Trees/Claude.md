@@ -13,6 +13,8 @@ Every skill is represented **twice**, and both must exist and agree:
 
 Editing the graph and forgetting to regenerate #2 is the most common way to silently break the skill tree — the Run scene will still show the old layout/costs until re-imported.
 
+**Scope rule: a request to edit the graph asset touches only the graph asset.** When the user asks to modify `MainSkillTree.asset` (add/remove/move/rewire nodes, change costs, etc.), do **not** regenerate or otherwise change the runtime tree in `Scenes/Run.unity` (no `Editor_ImportFromGraph`, no `SkillNode` edits, no scene save) unless the user explicitly asks for it. Instead, mention in the final summary that the scene's tree is now out of sync and still needs a re-import. The re-import steps below ("step 8") apply only when the user has asked for the scene to be updated.
+
 ## Anatomy of one `SkillGraphNode`
 
 Each node in `MainSkillTree.asset` is a YAML `MonoBehaviour` block (`m_Script` guid `1dbf462afc3fc1845a809a21d023fc7f`). Key fields:
@@ -81,8 +83,8 @@ So to find "what does node X actually do in gameplay": open `MainSkillTree.asset
    - assigns Roman-numeral grade labels (I, II, III…) to nodes sharing the same `buildAgent` (tiered upgrades of the same effect, sorted by depth),
    - checks for duplicate node ids/positions and logs errors if found,
    - resizes the scroll rect to fit the tree and spawns debug overlay nodes.
-   **This step is mandatory after any graph edit** — the Run scene's visible skill tree is a snapshot, not a live view of the graph asset.
-9. Save the scene. Commit both `MainSkillTree.asset` and the `Run.unity` scene diff together, plus any new/changed build agent prefabs (with their `.meta` files).
+   The Run scene's visible skill tree is a snapshot, not a live view of the graph asset, so it must be re-imported before the graph edit shows up in-game. **Only do this step when the user asks for the scene to be updated** (see the scope rule at the top); otherwise stop after the graph edit and point out that the scene is now stale.
+9. If you re-imported: save the scene. Commit both `MainSkillTree.asset` and the `Run.unity` scene diff together, plus any new/changed build agent prefabs (with their `.meta` files).
 
 ## The runtime layout is a direction-only unit grid — separate from the asset's pixel grid
 
@@ -119,7 +121,7 @@ For bulk/structured edits (e.g. "create N nodes for these build agents"), drivin
   ```
 - **`SkillGraphNode`'s fields are all private `[SerializeField]`s** — set them through `UnityEditor.SerializedObject`/`SerializedProperty`, not direct field access. `buildAgent` takes an `objectReferenceValue` (the `BuildAgent` component on the prefab, found via `prefab.GetComponent<Agame.Run.Stats.Agents.BuildAgent>()`), `costs_1` is an array property (`ClearArray()`/`InsertArrayElementAtIndex`/`GetArrayElementAtIndex(i).FindPropertyRelative("currency"|"amount")`), enum fields (`cashTier`) can be set directly via `.intValue` using the enum's underlying int (e.g. `Currency.CASH == 0`, `CashTier.Tier0 == 0`) without worrying about `enumValueIndex` ordering. Call `so.ApplyModifiedProperties()` at the end.
 - **Connect ports** with `child.GetInputPort("input").Connect(parent.GetOutputPort("output"))` (xNode `NodePort.Connect`).
-- **`Editor_ImportFromGraph`** (the mandatory step 8 in the workflow above) is `private` and only exposed via `[ContextMenu]` — invoke it through reflection:
+- **`Editor_ImportFromGraph`** (step 8 in the workflow above; only when the user asked for the scene to be updated) is `private` and only exposed via `[ContextMenu]` — invoke it through reflection:
   ```csharp
   var skillTree = UnityEngine.Object.FindFirstObjectByType<Agame.Run.SkillTree>(UnityEngine.FindObjectsInactive.Include);
   var method = typeof(Agame.Run.SkillTree).GetMethod("Editor_ImportFromGraph", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
@@ -133,7 +135,8 @@ For bulk/structured edits (e.g. "create N nodes for these build agents"), drivin
 ## Common pitfalls
 
 - Editing `MainSkillTree.asset` YAML directly (e.g. via search-and-replace) without going through the xNode window risks breaking the `nodes` list / connection fileID references — prefer the `unity-cli` skill or the graph window over hand-editing this YAML.
-- Forgetting step 8 (re-import) — the Run scene will keep showing stale nodes/costs/links.
+- Leaving the scene stale without saying so — if the user didn't ask for step 8 (re-import), don't run it, but do tell them the Run scene still shows the old nodes/costs/links.
+- Running step 8 (re-import) when the user only asked to edit the graph asset — it rewrites `Run.unity`, which they didn't ask to change.
 - Two nodes with the same `m_Name` — breaks `NodeId` uniqueness (save-data lookups key on it via `RunData.GetSkillNodeState(NodeId)`), and the importer logs a hard error.
 - Placing a new node off the 250-grid, overlapping an existing node, or not axis/diagonally aligned to its parent — grid misalignment/overlap makes nodes hide each other or drift from the grid over successive edits (run the graph's "Check overlap" context action to catch it), and the connector-direction snap (`SnapThreshold = 100`) silently fails to find a matching connector sprite if not axis/diagonally aligned.
 - Leaving `attentionFlag` true or icon/title/agent unset on a node you intend to ship — these are surfaced as editor errors, not silent failures, but easy to miss if you don't scroll the graph.
