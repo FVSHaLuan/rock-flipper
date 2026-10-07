@@ -342,9 +342,14 @@ namespace Agame.Run
             GetComponentsInChildren<SkillNode>(editor_SkillNodes);
 
             ///
+            // hide everything first, since a node can show a connector owned by its decorative output node
             foreach (var item in editor_SkillNodes)
             {
-                item.Editor_MatchOutputNodesToConnectors();
+                item.Editor_HideAllConnectors();
+            }
+            foreach (var item in editor_SkillNodes)
+            {
+                item.Editor_AssignOutputNodeConnectors();
             }
         }
 

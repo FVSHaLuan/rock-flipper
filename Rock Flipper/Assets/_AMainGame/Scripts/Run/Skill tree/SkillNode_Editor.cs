@@ -87,12 +87,23 @@ namespace Agame.Run
         [ContextMenu("Editor_MatchOutputNodesToConnectors")]
         public void Editor_MatchOutputNodesToConnectors()
         {
-            ///
+            Editor_HideAllConnectors();
+            Editor_AssignOutputNodeConnectors();
+        }
+
+        public void Editor_HideAllConnectors()
+        {
             foreach (var item in allConnectors)
             {
                 item.gameObject.SetActive(false);
             }
+        }
 
+        /// <summary>
+        /// Doesn't hide unused connectors first: a decorative output node's connector may already have been shown by its other parents
+        /// </summary>
+        public void Editor_AssignOutputNodeConnectors()
+        {
             ///
             if (connectors == null)
             {
@@ -211,7 +222,21 @@ namespace Agame.Run
             }
 
             ///
+            if (Editor_UsesOutputNodeConnector(outputNode))
+            {
+                return outputNode.GetConnector(-d.x, -d.y);
+            }
+
+            ///
             return GetConnector(d.x, d.y);
+        }
+
+        /// <summary>
+        /// Between a decorative node and a normal one, the connector is the decorative node's
+        /// </summary>
+        private bool Editor_UsesOutputNodeConnector(SkillNode outputNode)
+        {
+            return !isDecorative && outputNode.isDecorative;
         }
 
         public void Editor_SnapOutputNodes(float distance)
@@ -229,6 +254,11 @@ namespace Agame.Run
 
                 ///
                 connector.Direction.GetVector(out int x, out int y);
+                if (Editor_UsesOutputNodeConnector(node))
+                {
+                    x = -x;
+                    y = -y;
+                }
                 Vector2 d = new Vector2(x * distance, y * distance);
                 node.transform.position = transform.position + (Vector3)d;
 
