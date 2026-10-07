@@ -465,8 +465,10 @@ namespace Agame.Run
                         Debug.LogError(otherNode.name, otherNode);
                     }
 
-                    // Id
-                    if (node.NodeId == otherNode.NodeId)
+                    // Id (decorative nodes don't save any state, so their ids can collide)
+                    if (!node.IsDecorative
+                        && !otherNode.IsDecorative
+                        && node.NodeId == otherNode.NodeId)
                     {
                         Debug.LogError("Those nodes have the same id:");
                         Debug.LogError(node.name, node);
