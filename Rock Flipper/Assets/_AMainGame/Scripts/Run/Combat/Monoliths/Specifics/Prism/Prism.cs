@@ -6,7 +6,7 @@ using UnityEngine.Events;
 namespace Agame.Run.Combat
 {
     /// <summary>
-    /// L VIII: once unlocked, fires a laser at a random airborne rock every shooting interval
+    /// L VIII: fires a laser at a random airborne rock every shooting interval
     /// (if no rock is airborne when the interval is up, it fires at the first one that is)
     /// </summary>
     public class Prism : ExtendedMonoBehaviourRun
@@ -38,10 +38,6 @@ namespace Agame.Run.Combat
 
         protected void Update()
         {
-            if (!BuildStats.GetMonolithBuildStats(MonolithType.LVIII).unlocked)
-                return;
-
-            ///
             shootingTimer += Time.deltaTime;
             if (shootingTimer < BuildStats.prismShootingInterval)
                 return;
