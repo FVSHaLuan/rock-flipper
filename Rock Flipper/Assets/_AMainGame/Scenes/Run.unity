@@ -12292,6 +12292,8 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
+  nearCenterRockCount: 3
+  nearCenterRadius: 2.5
 --- !u!1 &719949131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4320365423265808409, guid: e3f5b5c3c0d565a4ca6db69c59a7438f, type: 3}

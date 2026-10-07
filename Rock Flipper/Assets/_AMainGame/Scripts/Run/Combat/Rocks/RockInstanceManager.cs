@@ -5,6 +5,10 @@ namespace Agame.Run.Combat
 {
     public class RockInstanceManager : ExtendedMonoBehaviourRun
     {
+        [Tooltip("The first this-many rocks on the playfield spawn near its center")]
+        [SerializeField] private int nearCenterRockCount = 3;
+        [SerializeField] private float nearCenterRadius = 1.5f;
+
         private readonly List<Rock> activeRocks = new List<Rock>();
 
         /// <summary>
@@ -19,6 +23,19 @@ namespace Agame.Run.Combat
             ///
             activeRocks.Add(rock);
             return rock;
+        }
+
+        /// <summary>
+        /// where a rock spawns (or lands, for a new rock): near the center for the first few rocks on the playfield, anywhere otherwise
+        /// </summary>
+        private Vector2 GetSpawnPoint()
+        {
+            if (activeRocks.Count <= nearCenterRockCount)
+            {
+                return Playfield.CenterPoint + Random.insideUnitCircle * nearCenterRadius;
+            }
+
+            return Playfield.GetRandomPoint(Vector2.zero);
         }
 
         public void Despawn(Rock rock)
@@ -37,7 +54,7 @@ namespace Agame.Run.Combat
             var rock = Spawn(rockPoolHandler);
 
             ///
-            rock.transform.position = Playfield.GetRandomPoint(Vector2.zero);
+            rock.transform.position = GetSpawnPoint();
             rock.StartNewLife(false);
 
             ///
@@ -65,7 +82,7 @@ namespace Agame.Run.Combat
 
             ///
             rock.transform.position = startPosition;            
-            rock.DoNewRockFlipping(Playfield.GetRandomPoint(Vector2.zero));            
+            rock.DoNewRockFlipping(GetSpawnPoint());            
 
             ///
             return rock;
