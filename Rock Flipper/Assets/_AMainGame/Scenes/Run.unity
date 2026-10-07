@@ -648,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Name
-      value: Monolith_5
+      value: Monolith - II
       objectReference: {fileID: 0}
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Sprite
@@ -1733,7 +1733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Name
-      value: Monolith_2
+      value: Monolith - XII
       objectReference: {fileID: 0}
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Sprite
@@ -4345,6 +4345,11 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5645279952020925408, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
   m_PrefabInstance: {fileID: 282649476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &287402555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+  m_PrefabInstance: {fileID: 8152388141285890298}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &292592382
 PrefabInstance:
@@ -9994,7 +9999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Name
-      value: Monolith_1
+      value: Monolith - IV
       objectReference: {fileID: 0}
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Sprite
@@ -13405,6 +13410,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1224208660139863463, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
   m_PrefabInstance: {fileID: 8152388141285890298}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &919621834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287402555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284acf1bf231ed54ea1abacf1b51677d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Combat.Prism
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
 --- !u!1 &923603910
 GameObject:
   m_ObjectHideFlags: 0
@@ -14582,7 +14603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Name
-      value: Monolith_3
+      value: Monolith - VI
       objectReference: {fileID: 0}
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Sprite
@@ -24253,7 +24274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Name
-      value: Monolith_4
+      value: Monolith - X
       objectReference: {fileID: 0}
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Sprite
@@ -25628,12 +25649,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 84456766}
-  - {fileID: 919621830}
-  - {fileID: 629059271}
   - {fileID: 135207565}
-  - {fileID: 974707272}
-  - {fileID: 1700980316}
   - {fileID: 43378995}
+  - {fileID: 629059271}
+  - {fileID: 974707272}
+  - {fileID: 919621830}
+  - {fileID: 1700980316}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1777091363
@@ -32519,7 +32540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Name
-      value: Monolith
+      value: Monolith - VIII - Prism
       objectReference: {fileID: 0}
     - target: {fileID: 7894522789143493657, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
       propertyPath: m_Sprite
@@ -32552,7 +32573,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2729952183267702846, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 919621834}
   m_SourcePrefab: {fileID: 100100000, guid: c2c704e84b5d2824eb30c746cad36191, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
