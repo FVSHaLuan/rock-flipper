@@ -39,6 +39,10 @@ namespace Agame.Run.Stats
         public float shockwaveRockShockwaveRadius = 0.5f;
         public int shockwaveRockMaxShockwaveFlips = 3;
 
+        [Header("Monoliths - L VIII (Prism)")]
+        public bool prismUnlocked = false;
+        public float prismShootingInterval = 5f;
+
         [Header("Chests")]
         [SerializeField]
         private ChestRarityBuildStats chest_Common;

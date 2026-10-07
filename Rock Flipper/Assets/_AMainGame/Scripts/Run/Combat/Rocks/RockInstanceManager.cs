@@ -1,15 +1,30 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Agame.Run.Combat
 {
     public class RockInstanceManager : ExtendedMonoBehaviourRun
     {
+        private readonly List<Rock> activeRocks = new List<Rock>();
+
+        /// <summary>
+        /// All rocks currently on the playfield (spawned and not yet despawned)
+        /// </summary>
+        public IReadOnlyList<Rock> ActiveRocks => activeRocks;
+
         private Rock Spawn(RockPoolHandler rockPoolHandler)
         {
             var rock = CurrentSceneGeneralPool.TakeInstance(rockPoolHandler, this).TargetObject;            
 
             ///
+            activeRocks.Add(rock);
             return rock;
+        }
+
+        public void Despawn(Rock rock)
+        {
+            activeRocks.Remove(rock);
+            rock.PoolHandler.TryReturnToPoolAndDeactivate();
         }
 
         /// <summary>

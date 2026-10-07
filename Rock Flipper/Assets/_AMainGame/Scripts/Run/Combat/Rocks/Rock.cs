@@ -134,7 +134,7 @@ namespace Agame.Run.Combat
             }
             else
             {
-                PoolHandler.TryReturnToPoolAndDeactivate();
+                RunEntry.rockInstanceManager.Despawn(this);
                 var newRockPrototype = RunEntry.prototypeManager.GetRockPrototype(rockTier, isNewRockPure);
                 RunEntry.rockInstanceManager.SpawnAsReplacement(newRockPrototype.rockPoolHandler, transform.position);
             }
