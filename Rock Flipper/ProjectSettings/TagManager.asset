@@ -63,6 +63,9 @@ TagManager:
   - name: AirFlippable
     uniqueID: 3888830043
     locked: 0
+  - name: Beams
+    uniqueID: 437645115
+    locked: 0
   - name: Combat particle effect
     uniqueID: 3661504733
     locked: 0
