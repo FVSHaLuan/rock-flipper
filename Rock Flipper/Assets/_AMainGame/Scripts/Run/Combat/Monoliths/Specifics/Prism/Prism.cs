@@ -111,6 +111,9 @@ namespace Agame.Run.Combat
                 beam.SetEndPoint(target.transform.position);
 
                 ///
+                target.PlayZappedEffect();
+
+                ///
                 yield return null;
                 elapsed += Time.deltaTime;
             }

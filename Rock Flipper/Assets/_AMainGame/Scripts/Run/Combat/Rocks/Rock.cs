@@ -47,6 +47,10 @@ namespace Agame.Run.Combat
         [SerializeField]
         private GeneralPoolMemberSimplifiedEffect pureBreakingCashFloatingTextPrototype;
 
+        [Header("Effect delegations")]
+        [SerializeField]
+        private UnityEvent zappedEffectDelegate;
+
         [Header("Events")]
         [SerializeField]
         private UnityEvent onStartedFlipping;
@@ -224,6 +228,12 @@ namespace Agame.Run.Combat
         {
             var stats = BuildStats.GetRockTierBuildStats(rockTier);
             RunData.AddLevelExp(stats.levelExp);
+        }
+
+        [ContextMenu("Play Zapped Effect"), PlayModeOnly]
+        public void PlayZappedEffect()
+        {
+            zappedEffectDelegate?.Invoke();
         }
     }
 }

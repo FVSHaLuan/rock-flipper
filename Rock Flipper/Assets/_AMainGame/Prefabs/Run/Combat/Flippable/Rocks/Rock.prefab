@@ -10887,11 +10887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.904
+      value: -5.89251
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.578
+      value: -0.0037
       objectReference: {fileID: 0}
     - target: {fileID: 7317944234808884923, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11002,12 +11002,54 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6063040817023332797}
+    - targetCorrespondingSourceObject: {fileID: 4306470765259402059, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 665001775444189887}
+    - targetCorrespondingSourceObject: {fileID: 4306470765259402059, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7373335620982930031}
   m_SourcePrefab: {fileID: 100100000, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
 --- !u!4 &1427343685690768029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1886979152495369733, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
   m_PrefabInstance: {fileID: 711872273693500568}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3612656935235964883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4306470765259402059, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
+  m_PrefabInstance: {fileID: 711872273693500568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &665001775444189887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612656935235964883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a048da1eb9a194641834fdf867b54670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Helpers.UnityExtend::UnifiedSpriteRenderer
+  color: {r: 0.5411765, g: 0.70980394, b: 0.8, a: 1}
+  tint: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
+--- !u!114 &7373335620982930031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612656935235964883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f939d543cdf63c4aaf72a3ad536a5b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Helpers.UnityExtend::ColorTintBouncer
+  tintColor: {r: 1, g: 1, b: 1, a: 1}
+  recoverSpeed: 3
+  maxAcceptantTintAmount: 0
+  overrideMode: 1
+  originalColor: {r: 0.5411765, g: 0.70980394, b: 0.8, a: 1}
 --- !u!1 &5794978290778122173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6452235509922874149, guid: 34734d84f55e56748be2392142bd9fee, type: 3}
@@ -11042,6 +11084,21 @@ MonoBehaviour:
   pureLandingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: 24ef9bc6e2ae0344c8f65a3a8c5d9748, type: 3}
   normalBreakingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: b6afcbf879184bc4089a440d4c3455ed, type: 3}
   pureBreakingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: e46ea368778c1d148b71c6354a6fa40c, type: 3}
+  zappedEffectDelegate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7373335620982930031}
+        m_TargetAssemblyTypeName: ColorTintBouncer, Helpers.UnityExtend
+        m_MethodName: Tint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onStartedFlipping:
     m_PersistentCalls:
       m_Calls:
