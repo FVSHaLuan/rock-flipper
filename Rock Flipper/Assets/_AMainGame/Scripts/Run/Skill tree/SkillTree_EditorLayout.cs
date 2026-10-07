@@ -21,6 +21,7 @@ namespace Agame.Run
         private List<SkillNode> editor_SkillNodes = new List<SkillNode>();
         private Dictionary<SkillGraphNode, SkillNode> editor_SkillGraphNodeDictionary = new Dictionary<SkillGraphNode, SkillNode>();
         private Dictionary<BuildAgent, List<SkillNode>> editor_SkillBuildAgentDictionary = new Dictionary<BuildAgent, List<SkillNode>>();
+        private List<SkillGraphNode> editor_UnconnectedGraphNodes = new List<SkillGraphNode>();
 #if UNITY_EDITOR
         [ContextMenu("Editor_ImportFromGraph (Dirty)"), EditorModeOnly]
         private void Editor_ImportFromGraph()
@@ -37,6 +38,7 @@ namespace Agame.Run
 
             // Prepare to spawn nodes
             editor_SkillGraphNodeDictionary.Clear();
+            editor_UnconnectedGraphNodes.Clear();
 
             // Spawn nodes
             Editor_SpawnNodes(mainSkillTreeGraph, ref mainSkillNodes, ref mainRootNode, mainTreeRoot);
@@ -65,6 +67,7 @@ namespace Agame.Run
             if (mainRootNode == null)
             {
                 Debug.LogError("No RootNode found!");
+                Editor_LogUnconnectedNodes();
                 return;
             }
 
@@ -95,6 +98,60 @@ namespace Agame.Run
 
             ///
             Debug.Log("Done!");
+            Editor_LogUnconnectedNodes();
+        }
+
+        private void Editor_LogUnconnectedNodes()
+        {
+            if (editor_UnconnectedGraphNodes.Count == 0)
+            {
+                return;
+            }
+
+            ///
+            Debug.LogWarningFormat("{0} skill graph node(s) are not connected to their tree's root and were ignored:", editor_UnconnectedGraphNodes.Count);
+            foreach (var item in editor_UnconnectedGraphNodes)
+            {
+                Debug.LogWarningFormat(item, "Unconnected skill graph node: {0} ({1})", item.name, item.graph.name);
+            }
+        }
+
+        private HashSet<SkillGraphNode> Editor_GetConnectedGraphNodes(SkillTreeGraph treeGraph)
+        {
+            var connectedNodes = new HashSet<SkillGraphNode>();
+            if (treeGraph.RootNode == null)
+            {
+                return connectedNodes;
+            }
+
+            ///
+            var pendingNodes = new Queue<SkillGraphNode>();
+            connectedNodes.Add(treeGraph.RootNode);
+            pendingNodes.Enqueue(treeGraph.RootNode);
+            while (pendingNodes.Count > 0)
+            {
+                var node = pendingNodes.Dequeue();
+                foreach (var port in node.Ports)
+                {
+                    if (port.IsInput)
+                    {
+                        continue;
+                    }
+
+                    ///
+                    for (int i = 0; i < port.ConnectionCount; i++)
+                    {
+                        var outputNode = port.GetConnection(i)?.node as SkillGraphNode;
+                        if (outputNode != null && connectedNodes.Add(outputNode))
+                        {
+                            pendingNodes.Enqueue(outputNode);
+                        }
+                    }
+                }
+            }
+
+            ///
+            return connectedNodes;
         }
 
         private void Editor_SpawnNodes(SkillTreeGraph treeGraph, ref List<SkillNode> nodeList, ref SkillNode rootNode, Transform rootTransform)
@@ -106,6 +163,9 @@ namespace Agame.Run
             nodeList.Clear();
 
             ///
+            var connectedNodes = Editor_GetConnectedGraphNodes(treeGraph);
+
+            ///
             foreach (var item in treeGraph.nodes)
             {
                 var graphNode = item as SkillGraphNode;
@@ -113,6 +173,13 @@ namespace Agame.Run
                 ///
                 if (graphNode == null)
                 {
+                    continue;
+                }
+
+                // Ignore nodes not reachable from the root
+                if (!connectedNodes.Contains(graphNode))
+                {
+                    editor_UnconnectedGraphNodes.Add(graphNode);
                     continue;
                 }
 
@@ -149,6 +216,12 @@ namespace Agame.Run
             {
                 if (item is SkillGraphNode && item.name == "SpecialEntry")
                 {
+                    // Unconnected nodes were not spawned
+                    if (!editor_SkillGraphNodeDictionary.ContainsKey(item as SkillGraphNode))
+                    {
+                        continue;
+                    }
+
                     if (specialEntryNode != null)
                     {
                         Debug.LogError("There are more than 1 SpecialEntryNode", item);
