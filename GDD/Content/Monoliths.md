@@ -4,18 +4,19 @@ All [monoliths](../Systems/Monoliths.md) and their unique [abilities](../Systems
 
 | Monolith | Internal Name | Ability |
 |---|---|---|
-| [L VIII](#l-viii) | Prism | Periodically fires lasers at random airborne rocks. |
+| [L VIII](#l-viii) | Prism | Periodically fires beams at random airborne rocks. |
 
 ## L VIII
-**L VIII** is a monolith that periodically fires lasers at random airborne [rocks](../Systems/Rocks.md). How often it fires is its **shooting interval**. L VIII is unlocked, and its shooting interval upgraded, in the [Skill Tree](../Systems/SkillTree.md) (see [Monolith Stats](../Stats/Monolith%20Stats.md#l-viii)).
+**L VIII** is a monolith that periodically fires **beams** (laser beams) at random airborne [rocks](../Systems/Rocks.md). How often it fires is its **shooting interval**. L VIII is unlocked, and its shooting interval, min beam count and max beam count upgraded, in the [Skill Tree](../Systems/SkillTree.md) (see [Monolith Stats](../Stats/Monolith%20Stats.md#l-viii)).
+* Each time L VIII shoots, the number of beams it fires is random between its **min beam count** and its **max beam count**. If the min beam count is greater than the max beam count, it fires the max beam count.
 * Internal name: Prism (development-only, not shown to players).
 
 ## Decisions
 
 ## Open Questions
 * What are the monoliths' abilities?
-* L VIII: what does a laser hit do to the rock it hits?
-* L VIII: how many lasers does it fire, and at how many rocks, each time it shoots?
+* L VIII: what does a beam hit do to the rock it hits?
+* L VIII: at how many rocks do a shot's beams fire (one rock per beam, or can several beams hit the same rock)?
 
 ## Parked Ideas
 | Monolith | Ability |
