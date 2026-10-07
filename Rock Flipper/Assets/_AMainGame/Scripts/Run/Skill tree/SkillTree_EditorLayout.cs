@@ -258,6 +258,13 @@ namespace Agame.Run
             ///
             foreach (var item in editor_SkillNodes)
             {
+                ///
+                if (item.GraphNode.IsDecorative)
+                {
+                    continue;
+                }
+
+                ///
                 List<SkillNode> list;
                 if (!editor_SkillBuildAgentDictionary.TryGetValue(item.GraphNode.BuildAgent, out list))
                 {

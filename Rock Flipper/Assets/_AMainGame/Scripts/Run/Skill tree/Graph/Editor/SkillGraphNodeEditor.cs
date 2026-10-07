@@ -82,21 +82,24 @@ namespace Agame.Run
 
             // Error
             string error = "";
-            if (node.Icon == null)
+            if (!node.IsDecorative)
             {
-                error += "No icon\r\n";
-            }
-            if (string.IsNullOrWhiteSpace(node.TitleGroup))
-            {
-                error += "No title group\r\n";
-            }
-            if (string.IsNullOrWhiteSpace(node.Title))
-            {
-                error += "No title\r\n";
-            }
-            if (node.BuildAgent == null)
-            {
-                error += "No agent\r\n";
+                if (node.Icon == null)
+                {
+                    error += "No icon\r\n";
+                }
+                if (string.IsNullOrWhiteSpace(node.TitleGroup))
+                {
+                    error += "No title group\r\n";
+                }
+                if (string.IsNullOrWhiteSpace(node.Title))
+                {
+                    error += "No title\r\n";
+                }
+                if (node.BuildAgent == null)
+                {
+                    error += "No agent\r\n";
+                }
             }
             if (node.name == "Skill Graph")
             {
@@ -140,6 +143,10 @@ namespace Agame.Run
             if (skillTree == null || !skillTree.CompactMode)
             {
                 string info = "";
+                if (node.IsDecorative)
+                {
+                    info += "Decorative\r\n";
+                }
                 info += "Agent: " + (node.BuildAgent != null ? node.BuildAgent.name : "<NONE>") + "\r\n";
                 info += "Build value: " + node.BuildValue + "\r\n";
                 info += "Level: " + node.LevelCount + "\r\n";

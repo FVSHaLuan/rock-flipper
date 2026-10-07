@@ -240,6 +240,63 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &-7618076847193261077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: Decorative
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 250, y: -250}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -7618076847193261077}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 5352181967948316995}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -7618076847193261077}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -7525168557237096116}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 7738089975388807310, guid: 808bcf63a820ade49923676556a9e42a, type: 3}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &-7525168557237096116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +310,7 @@ MonoBehaviour:
   m_Name: Unlock P1 Rock
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 250, y: -250}
+  position: {x: 500, y: -500}
   ports:
     keys:
     - input
@@ -262,7 +319,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -7525168557237096116}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: -7618076847193261077}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -270,7 +330,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -7525168557237096116}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -6214745156599126537}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -355,7 +418,7 @@ MonoBehaviour:
   m_Name: P0 Flipping Speed
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: -250}
+  position: {x: 750, y: -750}
   ports:
     keys:
     - input
@@ -364,7 +427,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -6214745156599126537}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: -7525168557237096116}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -931,6 +997,7 @@ MonoBehaviour:
   - {fileID: -4968184747821918782}
   - {fileID: -5281263294261801891}
   - {fileID: -1834753400696216170}
+  - {fileID: -7618076847193261077}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
@@ -1271,7 +1338,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 5352181967948316995}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -7618076847193261077}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2

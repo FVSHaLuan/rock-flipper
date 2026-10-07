@@ -42,6 +42,10 @@ namespace Agame.Run
         [SerializeField, ReadOnly]
         private bool isSpecialEntry;
 
+        [Header("Decorative")]
+        [SerializeField, Tooltip("Not a real skill: no tooltip, no click, never sets its visuals (hide them in the prefab), always acts as a maxed 1/1 skill. Used to shape the tree.")]
+        private bool isDecorative;
+
         [Header("Overrider")]
         [SerializeField]
         private SkillNodeOverrider overrider;
@@ -112,6 +116,7 @@ namespace Agame.Run
 
         public SkillTree SkillTree { get => skillTree; }
         public bool IsSpecialEntry { get => isSpecialEntry; }
+        public bool IsDecorative => isDecorative;
         public SkillGraphNode GraphNode => graphNode;
         public bool IsActivated { get; private set; }
         public string NodeId => graphNode.NodeId;
@@ -129,6 +134,12 @@ namespace Agame.Run
             get
             {
                 ///
+                if (isDecorative)
+                {
+                    return LevelCount;
+                }
+
+                ///
                 TryInit();
 
                 ///
@@ -139,6 +150,12 @@ namespace Agame.Run
         {
             get
             {
+                ///
+                if (isDecorative)
+                {
+                    return 1;
+                }
+
                 ///
                 if (overrider != null && overrider.GetLevelCount(out var rs))
                 {
@@ -214,6 +231,12 @@ namespace Agame.Run
             get
             {
                 ///
+                if (isDecorative)
+                {
+                    return false;
+                }
+
+                ///
                 if (overrider != null && overrider.GetIsMaxable(out var result))
                 {
                     return result;
@@ -228,7 +251,7 @@ namespace Agame.Run
         {
             get
             {
-                return !IsSpecialEntry;
+                return !IsSpecialEntry && !isDecorative;
             }
         }
 
@@ -237,7 +260,7 @@ namespace Agame.Run
             get
             {
                 ///
-                if (!VersionBranchInfo.IsPlaytestOrDemo)
+                if (isDecorative || !VersionBranchInfo.IsPlaytestOrDemo)
                 {
                     return false;
                 }
@@ -289,6 +312,12 @@ namespace Agame.Run
             CountCurrencies();
 
             ///
+            if (isDecorative)
+            {
+                return;
+            }
+
+            ///
 #if UNITY_EDITOR
             iconImage.sprite = graphNode.Icon;
             iconImage.color = graphNode.Editor_GetCashTierColor();
@@ -314,7 +343,10 @@ namespace Agame.Run
         protected void OnDisable()
         {
             ///
-            upgradeFxObject.SetActive(false);
+            if (!IsDecorative)
+            {
+                upgradeFxObject.SetActive(false);
+            }
 
             ///
             RunData.OnCurrencyValueModified -= RunData_OnCurrencyValueModified;
@@ -478,7 +510,7 @@ namespace Agame.Run
         [ContextMenu("ShowToolTip"), PlayModeOnly]
         public void ShowToolTip()
         {
-            if (activeToolTip != null)
+            if (isDecorative || activeToolTip != null)
             {
                 return;
             }
@@ -505,6 +537,12 @@ namespace Agame.Run
 
         public void HandleClick()
         {
+            ///
+            if (isDecorative)
+            {
+                return;
+            }
+
             ///
             TryInit();
 
@@ -707,6 +745,13 @@ namespace Agame.Run
 
         public void ApplyToBuildStats()
         {
+            ///
+            if (isDecorative)
+            {
+                return;
+            }
+
+            ///
             var buildAgent = graphNode.BuildAgent;
             var buildValue = graphNode.BuildValue;
 
@@ -724,7 +769,7 @@ namespace Agame.Run
         public void Activate(bool applyToBuildStats, bool resetState)
         {
 #if UNITY_EDITOR
-            if (editor_AttentionObject.activeSelf != graphNode.AttentionFlag)
+            if (!isDecorative && editor_AttentionObject.activeSelf != graphNode.AttentionFlag)
             {
                 editor_AttentionObject.SetActive(graphNode.AttentionFlag);
                 Debug.LogError("The Skill Tree needs to be re-imported");
@@ -848,6 +893,12 @@ namespace Agame.Run
         public bool IsEnoughCurrencyToLevelUp()
         {
             ///
+            if (isDecorative)
+            {
+                return false;
+            }
+
+            ///
             if (overrider != null && overrider.IsEnoughCurrencyToLevelUp(out var result))
             {
                 return result;
@@ -941,6 +992,13 @@ namespace Agame.Run
 
         public void UpdateLevelRelatedVisuals()
         {
+            ///
+            if (isDecorative)
+            {
+                return;
+            }
+
+            ///
             Color color;
 
             ///

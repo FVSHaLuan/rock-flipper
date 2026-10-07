@@ -19,12 +19,20 @@ namespace Agame.Run
             skillGraphNode.Editor_GetOutputNodes(outputNodes, GetComponentInParent<SkillTree>(true));
 
             ///
-            iconImage.sprite = graphNode.Icon;
-            iconImage.color = skillGraphNode.Editor_GetCashTierColor();
-            upgradeFxImage.sprite = graphNode.Icon;
             costs_1 = new List<CurrencyAmount>(graphNode.costs_1);
             costs_2 = new List<CurrencyAmount>(graphNode.costs_2);
             costs_3 = new List<CurrencyAmount>(graphNode.costs_3);
+
+            ///
+            if (isDecorative)
+            {
+                return;
+            }
+
+            ///
+            iconImage.sprite = graphNode.Icon;
+            iconImage.color = skillGraphNode.Editor_GetCashTierColor();
+            upgradeFxImage.sprite = graphNode.Icon;
 
             ///
             if (graphNode.SubIcon != null)
@@ -116,6 +124,12 @@ namespace Agame.Run
 
         public void Editor_SetGradeText(string grade)
         {
+            if (isDecorative)
+            {
+                return;
+            }
+
+            ///
             gradeText.Text = grade;
         }
 

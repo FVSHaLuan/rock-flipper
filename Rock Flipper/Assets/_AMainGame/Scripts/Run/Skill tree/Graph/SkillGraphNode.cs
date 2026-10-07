@@ -102,22 +102,26 @@ namespace Agame.Run
         public bool IsRoot => GetInputValue("isRoot", false);
         public string NodeId => name;
         public SkillNode SkillNodePrototype => skillNodePrototype;
+        /// <summary>
+        /// Uses a decorative SkillNode prototype: no build agent, no demo limit, always 1 level
+        /// </summary>
+        public bool IsDecorative => skillNodePrototype != null && skillNodePrototype.IsDecorative;
         public Sprite Icon { get => SkillMetaData?.Icon; }
         public Sprite SubIcon => SkillMetaData?.SubIcon;
         public string TitleGroup { get => SkillMetaData?.TitleGroup; }
         public string Title { get => SkillMetaData?.Title; }
-        public bool HasDemoLimit => demoLimit >= 0;
+        public bool HasDemoLimit => !IsDecorative && demoLimit >= 0;
         public int DemoLimit { get => demoLimit; }
         public int UnlockingRequirement { get => unlockingRequirement; }
         public int MinParentLevelEach { get => minParentLevelEach; }
         public CashTier CashTier { get => cashTier; }
-        public BuildAgent BuildAgent { get => buildAgent; }
+        public BuildAgent BuildAgent { get => IsDecorative ? null : buildAgent; }
         public double BuildValue { get => buildValue; }
-        public int LevelCount => costs_1 == null ? 0 : costs_1.Count;
+        public int LevelCount => IsDecorative ? 1 : (costs_1 == null ? 0 : costs_1.Count);
         public Currency SecondaryCurrency => (costs_2 == null || costs_2.Count == 0) ? Currency.INVALID : costs_2[0].currency;
         public Currency ThirdCurrency => (costs_3 == null || costs_3.Count == 0) ? Currency.INVALID : costs_3[0].currency;
         public bool AttentionFlag { get => attentionFlag; }
-        public override string RecommendedName => buildAgent != null ? buildAgent.name : base.RecommendedName;
+        public override string RecommendedName => IsDecorative ? "Decorative" : (buildAgent != null ? buildAgent.name : base.RecommendedName);
 
         public override object GetValue(NodePort port)
         {
@@ -161,24 +165,24 @@ namespace Agame.Run
 
         private SkillMetaData GetSkillMetaData()
         {
-            if (buildAgent == null)
+            if (BuildAgent == null)
             {
                 return null;
             }
 
             ///
-            return buildAgent.GetComponent<SkillMetaData>();
+            return BuildAgent.GetComponent<SkillMetaData>();
         }
 
         private SkillDescriptor GetSkillDescriptor()
         {
-            if (buildAgent == null)
+            if (BuildAgent == null)
             {
                 return null;
             }
 
             ///
-            return buildAgent.GetComponent<SkillDescriptor>();
+            return BuildAgent.GetComponent<SkillDescriptor>();
         }
 
 #if UNITY_EDITOR
@@ -213,7 +217,8 @@ namespace Agame.Run
         public Color Editor_GetCashTierColor()
         {
             ///
-            if (costs_1 == null
+            if (IsDecorative
+                || costs_1 == null
                 || costs_1.Count == 0
                 || (costs_1[0].currency != Currency.CASH && costs_1[0].currency != Currency.BOSS && costs_1[0].currency != Currency.P7)
                 )
@@ -244,7 +249,8 @@ namespace Agame.Run
         public void Editor_FillCosts()
         {
             ///
-            if (costFormulas == null)
+            if (IsDecorative
+                || costFormulas == null)
             {
                 return;
             }

@@ -39,9 +39,12 @@ namespace Agame.Run
             }
 
             ///
-            if (GUILayout.Button("Fill costs", GUILayout.Height(40)))
+            using (new EditorGUI.DisabledGroupScope(skillGraphNode.IsDecorative))
             {
-                skillGraphNode.Editor_FillCosts();
+                if (GUILayout.Button("Fill costs", GUILayout.Height(40)))
+                {
+                    skillGraphNode.Editor_FillCosts();
+                }
             }
 
             ///
