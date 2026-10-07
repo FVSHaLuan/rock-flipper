@@ -38,7 +38,7 @@ namespace Agame.Run.Combat
 
         protected void Update()
         {
-            if (!BuildStats.prismUnlocked)
+            if (!BuildStats.GetMonolithBuildStats(MonolithType.LVIII).unlocked)
                 return;
 
             ///

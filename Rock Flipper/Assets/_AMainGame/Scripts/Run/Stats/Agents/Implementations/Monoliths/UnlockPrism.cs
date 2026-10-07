@@ -1,3 +1,4 @@
+using Agame.Run.Combat;
 using UnityEngine;
 
 namespace Agame.Run.Stats.Agents
@@ -8,7 +9,7 @@ namespace Agame.Run.Stats.Agents
         {
             if (currentLevel + addingLevel > 0)
             {
-                BuildStats.prismUnlocked = true;
+                BuildStats.GetMonolithBuildStats(MonolithType.LVIII).unlocked = true;
             }
         }
     }

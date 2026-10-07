@@ -39,8 +39,21 @@ namespace Agame.Run.Stats
         public float shockwaveRockShockwaveRadius = 0.5f;
         public int shockwaveRockMaxShockwaveFlips = 3;
 
+        [Header("Monoliths")]
+        [SerializeField]
+        private MonolithBuildStats monolith_LII;
+        [SerializeField]
+        private MonolithBuildStats monolith_LIV;
+        [SerializeField]
+        private MonolithBuildStats monolith_LVI;
+        [SerializeField]
+        private MonolithBuildStats monolith_LVIII;
+        [SerializeField]
+        private MonolithBuildStats monolith_LX;
+        [SerializeField]
+        private MonolithBuildStats monolith_LXII;
+
         [Header("Monoliths - L VIII (Prism)")]
-        public bool prismUnlocked = false;
         public float prismShootingInterval = 5f;
 
         [Header("Chests")]
@@ -87,6 +100,20 @@ namespace Agame.Run.Stats
                 RockTier.P2 => rock_P2,
                 RockTier.P3 => rock_P3,
                 _ => throw new System.NotImplementedException($"RockTier {rockTier} is not implemented in BuildStatsObject."),
+            };
+        }
+
+        public MonolithBuildStats GetMonolithBuildStats(MonolithType monolithType)
+        {
+            return monolithType switch
+            {
+                MonolithType.LII => monolith_LII,
+                MonolithType.LIV => monolith_LIV,
+                MonolithType.LVI => monolith_LVI,
+                MonolithType.LVIII => monolith_LVIII,
+                MonolithType.LX => monolith_LX,
+                MonolithType.LXII => monolith_LXII,
+                _ => throw new System.NotImplementedException($"MonolithType {monolithType} is not implemented in BuildStatsObject."),
             };
         }
 
