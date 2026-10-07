@@ -15119,7 +15119,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  beam: {fileID: 5685105166493525496, guid: 20a2c7f7c4998c045b2635f51e256471, type: 3}
+  beamPrototype: {fileID: 5685105166493525496, guid: 20a2c7f7c4998c045b2635f51e256471, type: 3}
   beamOrigin: {fileID: 523433628}
   beamDuration: 0.15
   onShot:
