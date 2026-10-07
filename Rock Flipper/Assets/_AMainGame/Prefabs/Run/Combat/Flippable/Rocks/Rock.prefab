@@ -11069,7 +11069,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onFinishedFlipping:
+  onLanded:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3189410286389863677}
@@ -11155,6 +11155,18 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2774147383824926795, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6603774
+      objectReference: {fileID: 0}
+    - target: {fileID: 2774147383824926795, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6603774
+      objectReference: {fileID: 0}
+    - target: {fileID: 2774147383824926795, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6603774
+      objectReference: {fileID: 0}
     - target: {fileID: 3283892545967622778, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
       propertyPath: testValue
       value: 1
@@ -11190,6 +11202,18 @@ PrefabInstance:
     - target: {fileID: 6403085483304794458, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
       propertyPath: m_Name
       value: Health Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520796002730178324, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.29169634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520796002730178324, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.29169634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520796002730178324, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8962264
       objectReference: {fileID: 0}
     - target: {fileID: 7436963267292017990, guid: 4c5e46da2fe18ac4dbc04d3d9d5570d0, type: 3}
       propertyPath: m_LocalPosition.x
