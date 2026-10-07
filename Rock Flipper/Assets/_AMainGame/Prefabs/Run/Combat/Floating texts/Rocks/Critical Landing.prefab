@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2830988324569924352, guid: 2d9f46d2cd99dc247b3b57b0efaaf773, type: 3}
+      propertyPath: exitDuration
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830988324569924352, guid: 2d9f46d2cd99dc247b3b57b0efaaf773, type: 3}
+      propertyPath: idleDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4248875916178349844, guid: 2d9f46d2cd99dc247b3b57b0efaaf773, type: 3}
       propertyPath: m_Name
       value: Critical Landing

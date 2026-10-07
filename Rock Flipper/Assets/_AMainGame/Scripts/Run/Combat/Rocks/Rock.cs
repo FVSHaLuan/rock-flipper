@@ -46,6 +46,10 @@ namespace Agame.Run.Combat
         private GeneralPoolMemberSimplifiedEffect normalBreakingCashFloatingTextPrototype;
         [SerializeField]
         private GeneralPoolMemberSimplifiedEffect pureBreakingCashFloatingTextPrototype;
+        [SerializeField]
+        private Vector2 criticalFloatingTextOffset;
+        [SerializeField]
+        private GeneralPoolMemberSimplifiedEffect criticalLandingFloatingTextPrototype;
 
         [Header("Effect delegations")]
         [SerializeField]
@@ -155,15 +159,22 @@ namespace Agame.Run.Combat
             RunData.AddCurrency(Currency.CASH, amount);
 
             ///
-            PlayFloatingTextEffect(amount, isBreaking);
+            PlayFloatingTextEffect(amount, isBreaking, isCritical);
         }
 
-        private void PlayFloatingTextEffect(double amount, bool isBreaking)
+        private void PlayFloatingTextEffect(double amount, bool isBreaking, bool isCritical)
         {
             var prototype = GetFloatingTextPrototype(isBreaking);
             var text = entry.currencyConfigManager.GetConfig(Currency.CASH).CurrencyName + amount.ToLargeNumberString();
             var position = (Vector2)transform.position + floatingTextOffset + Random.insideUnitCircle * floatingTextRandomRadius;
             RunEntry.floatingTextManager.Spawn(prototype, position, text);
+
+            ///
+            if (isCritical)
+            {
+                var criticalPosition = (Vector2)transform.position + criticalFloatingTextOffset + Random.insideUnitCircle * floatingTextRandomRadius;
+                RunEntry.floatingTextManager.Spawn(criticalLandingFloatingTextPrototype, criticalPosition);
+            }
         }
 
         private GeneralPoolMemberSimplifiedEffect GetFloatingTextPrototype(bool isBreaking)

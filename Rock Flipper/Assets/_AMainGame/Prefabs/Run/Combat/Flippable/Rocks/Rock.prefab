@@ -11084,6 +11084,8 @@ MonoBehaviour:
   pureLandingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: 24ef9bc6e2ae0344c8f65a3a8c5d9748, type: 3}
   normalBreakingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: b6afcbf879184bc4089a440d4c3455ed, type: 3}
   pureBreakingCashFloatingTextPrototype: {fileID: 113890639245023093, guid: e46ea368778c1d148b71c6354a6fa40c, type: 3}
+  criticalFloatingTextOffset: {x: 0, y: 0.6}
+  criticalLandingFloatingTextPrototype: {fileID: 4416745968113796627, guid: 425928949c0303043a6f63437c2dc314, type: 3}
   zappedEffectDelegate:
     m_PersistentCalls:
       m_Calls:

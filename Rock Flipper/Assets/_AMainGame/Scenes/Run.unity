@@ -7769,7 +7769,7 @@ SortingGroup:
   m_GameObject: {fileID: 409846645}
   m_Enabled: 1
   m_SortingLayerID: 5382387
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
