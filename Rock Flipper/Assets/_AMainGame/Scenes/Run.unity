@@ -15475,7 +15475,7 @@ MonoBehaviour:
   currency: 0
   amount:
     cashTier: 0
-    a: 100
+    a: 40
     b: 0
     c: 0
 --- !u!114 &948271053
@@ -20406,19 +20406,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: prices.Array.data[0].a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
-      propertyPath: prices.Array.data[0].b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
+      propertyPath: prices.Array.data[0].b
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: prices.Array.data[0].c
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: prices.Array.data[1].a
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: prices.Array.data[1].b
@@ -20430,7 +20430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: prices.Array.data[2].a
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5030586556300968574, guid: 109f7aada7344444d8f1ebb486efd787, type: 3}
       propertyPath: prices.Array.data[2].b
