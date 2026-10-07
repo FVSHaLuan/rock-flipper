@@ -65,6 +65,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 ## Stats / BuildAgent framework (shared by Skill Tree + Shop)
 
+- **Only create a new `BuildAgent` subclass when the user explicitly asks for one.** When a feature needs a tunable stat, add the `BuildStatsObject` field (and read it in gameplay code), but leave the agent that upgrades it, and its wiring to Shop buttons or skill nodes, for the user to request.
 - `Stats/BuildStatsObject.cs` — the live mutable stat blob for the current run; rebuilt from base + skill tree + shop every prestige.
 - `Stats/Agents/BuildAgent.cs` — abstract base: `Apply(currentLevel, addingLevel, buildValuePerLevel)`. **`GetDescriptionText`/`TryToReportAchievement`/`TryToReportMaxedAchievement` are hard-stubbed** (`Debug.LogError`/fixed string) — not wired to real implementations despite being called from `SkillNode`.
 - `Stats/Agents/Implementations/Rocks/RockBuildAgent.cs` (abstract, tier-scoped) + `IncreaseRockCount.cs` (concrete) — **the pattern to copy for a new rock-tier upgrade agent.**
