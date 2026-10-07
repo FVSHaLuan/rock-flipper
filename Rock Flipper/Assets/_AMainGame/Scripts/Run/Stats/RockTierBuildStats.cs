@@ -16,6 +16,14 @@ namespace Agame.Run.Stats
         public double breakingCashMultiplier = 2;
         public float purityCashMultiplier = 3;
         /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalCriticalLandingChance"/>
+        /// </summary>
+        public float criticalLandingChance = 0;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalCriticalCashMultiplier"/>
+        /// </summary>
+        public float criticalCashMultiplier = 1.5f;
+        /// <summary>
         /// Cooldown time before rock can flip again after landed
         /// </summary>
         public float landingCooldown = 0.5f;

@@ -14,6 +14,8 @@ All stats of [rocks](../Systems/Rocks.md).
 | Level exp per landing | Per tier | _(+)_ |
 | Critical landing chance | Per tier | _(+)_ |
 | Critical cash multiplier | Per tier | _(+)_ |
+| Critical landing chance | Global | _(+)_ |
+| Critical cash multiplier | Global | _(+)_ |
 | Flipping speed | Per tier | _(+)_ |
 | ... | | |
 

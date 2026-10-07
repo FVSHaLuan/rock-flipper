@@ -14,6 +14,8 @@ Rocks have integer **HP**.
 
 ### Critical Landing
 Each time a rock lands, there is a **critical landing chance** that the landing is a **critical landing**, which earns landing cash multiplied by the **critical cash multiplier**.
+* Critical landing chance and critical cash multiplier each have a per-tier value and a global value; a rock uses the sum of its tier's value and the global value.
+* The landing that breaks a rock can be a critical landing; its breaking cash is then also multiplied by the critical cash multiplier.
 
 ### Breaking
 * Each time a rock lands, it loses 1 HP.
@@ -44,7 +46,6 @@ All tiers are listed in [Rock Tiers](../Content/Rock%20Tiers.md).
 * Is a rock's landing position constrained to the playfield? Can it land on / under or overlap other elements (e.g. [monoliths](Monoliths.md))?
 * On the breaking landing, does the rock earn both landing cash and breaking cash, or only breaking cash?
 * Critical landing:
-  * If the landing that breaks a rock is a critical landing, is breaking cash also multiplied?
   * Is the critical landing chance the same for rocks flipped by the mouse and by Flipper Bots?
   * Is critical landing chance capped at 100%, or does anything happen beyond it?
   * Does a critical landing do anything besides multiplying landing cash?

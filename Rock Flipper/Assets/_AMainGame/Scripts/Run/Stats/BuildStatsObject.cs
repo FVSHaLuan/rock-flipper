@@ -26,6 +26,16 @@ namespace Agame.Run.Stats
         [SerializeField]
         private RockTierBuildStats rock_P3;
 
+        [Header("Rocks - Global")]
+        /// <summary>
+        /// Added to every tier's <see cref="RockTierBuildStats.criticalLandingChance"/>
+        /// </summary>
+        public float globalCriticalLandingChance = 0;
+        /// <summary>
+        /// Added to every tier's <see cref="RockTierBuildStats.criticalCashMultiplier"/>
+        /// </summary>
+        public float globalCriticalCashMultiplier = 0;
+
         [Header("Bouncy Rocks")]
         public float bouncyRockBounceChance = 0.1f;
         public bool enabledBouncyRockRebound = false;
@@ -103,6 +113,16 @@ namespace Agame.Run.Stats
                 RockTier.P3 => rock_P3,
                 _ => throw new System.NotImplementedException($"RockTier {rockTier} is not implemented in BuildStatsObject."),
             };
+        }
+
+        public float GetCriticalLandingChance(RockTier rockTier)
+        {
+            return GetRockTierBuildStats(rockTier).criticalLandingChance + globalCriticalLandingChance;
+        }
+
+        public float GetCriticalCashMultiplier(RockTier rockTier)
+        {
+            return GetRockTierBuildStats(rockTier).criticalCashMultiplier + globalCriticalCashMultiplier;
         }
 
         public MonolithBuildStats GetMonolithBuildStats(MonolithType monolithType)
