@@ -6,6 +6,14 @@ This repo is **two things at once**:
 
 Two top-level folders: **`GDD/`**, the owner's game design document in Markdown (see [Game design (GDD)](#game-design-gdd)), and **`Rock Flipper/`**, the Unity project root (see [Inside `Rock Flipper/`](#inside-rock-flipper)).
 
+## Implement or investigate? Ask when unclear
+
+The owner often writes a feature request as a bare statement of the desired behavior, with no verb. For example, "first few rocks always spawned near the playfield's center" meant *make the first few rocks spawn near the center*. It was not a bug report asking why they do.
+
+- If a prompt only describes behavior and doesn't say whether to **implement** it, **investigate** it (explain or diagnose current behavior), or **fix** it, ask which one before doing any work. Asking is cheap; a whole investigation in the wrong direction is not.
+- Clear verbs settle it, so don't ask then. "Add", "make", "implement" and "change" mean implement. "Why", "how does", "check" and "find out" mean investigate. "X is broken" or "X shouldn't happen" mean fix.
+- Reading code to understand the request is fine before asking. Don't edit files or write up a diagnosis until the intent is confirmed.
+
 ## Game design (GDD)
 
 Use the GDD to understand what a feature is *supposed* to do and what it's called in design terms. It does not describe the code.
