@@ -47,6 +47,7 @@ namespace Agame.Run
         public CombatBackgroundManager combatBackgroundManager;
         public ChestInstanceManager chestInstanceManager;
         public FloatingTextManager floatingTextManager;
+        public CurrencyEarningTracker cashEarningTracker;
 
         private bool isUsingTestBuildStats;
         private string baseBuildStatsName = "";
