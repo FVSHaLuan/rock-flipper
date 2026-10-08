@@ -42,6 +42,8 @@ namespace Agame.Run
         private SkillTree skillTree;
         [SerializeField, ReadOnly]
         private bool isSpecialEntry;
+        [SerializeField, ReadOnly]
+        private int grade;
 
         [Header("Decorative")]
         [SerializeField, Tooltip("Not a real skill: no tooltip, no click, never sets its visuals (hide them in the prefab), always acts as a maxed 1/1 skill. Used to shape the tree.")]
@@ -120,6 +122,7 @@ namespace Agame.Run
 
         public SkillTree SkillTree { get => skillTree; }
         public bool IsSpecialEntry { get => isSpecialEntry; }
+        public int Grade { get => grade; }
         public bool IsDecorative => isDecorative;
         public SkillGraphNode GraphNode => graphNode;
         public bool IsActivated { get; private set; }

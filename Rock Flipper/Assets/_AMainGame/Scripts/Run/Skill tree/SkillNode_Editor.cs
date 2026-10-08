@@ -126,7 +126,7 @@ namespace Agame.Run
             Editor_Refund(1);
         }
 
-        public void Editor_SetGradeText(string grade)
+        public void Editor_SetGrade(int grade, string gradeString)
         {
             if (isDecorative)
             {
@@ -134,7 +134,8 @@ namespace Agame.Run
             }
 
             ///
-            gradeText.Text = grade;
+            this.grade = grade;
+            gradeText.Text = gradeString;
         }
 
         public void Editor_RefundAll()

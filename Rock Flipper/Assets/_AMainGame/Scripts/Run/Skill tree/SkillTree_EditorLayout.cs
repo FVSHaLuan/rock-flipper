@@ -287,7 +287,7 @@ namespace Agame.Run
                 ///
                 if (item.Count == 1)
                 {
-                    item[0].Editor_SetGradeText("");
+                    item[0].Editor_SetGrade(0, "");
                     continue;
                 }
 
@@ -297,7 +297,8 @@ namespace Agame.Run
                 ///
                 for (int i = 0; i < item.Count; i++)
                 {
-                    item[i].Editor_SetGradeText((i + 1).ToRomanian());
+                    var node = item[i];
+                    node.Editor_SetGrade(i, (i + 1).ToRomanian());
                 }
             }
         }
