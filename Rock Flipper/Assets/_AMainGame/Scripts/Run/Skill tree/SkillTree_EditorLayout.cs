@@ -379,22 +379,6 @@ namespace Agame.Run
             }
         }
 
-        [System.Obsolete("Obsolete because now there multiple tree roots")]
-        private void Editor_SortNodesByName()
-        {
-            ///
-            GetComponentsInChildren(editor_SkillNodes);
-
-            ///
-            editor_SkillNodes.Sort((SkillNode t1, SkillNode t2) => { return t1.gameObject.name.CompareTo(t2.gameObject.name); });
-
-            ///
-            for (int i = 0; i < editor_SkillNodes.Count; i++)
-            {
-                editor_SkillNodes[i].transform.SetSiblingIndex(i);
-            }
-        }
-
         public SkillNode Editor_GetSkillNode(SkillGraphNode node)
         {
             return editor_SkillGraphNodeDictionary[node];
