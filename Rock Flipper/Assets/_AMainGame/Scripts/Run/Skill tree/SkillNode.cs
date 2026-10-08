@@ -120,6 +120,7 @@ namespace Agame.Run
         private string description;
         private int currencyCount;
         private float lastTimeHandledClick;
+        private string cachedNodeId;
 
         public SkillTree SkillTree { get => skillTree; }
         public bool IsSpecialEntry { get => isSpecialEntry; }
@@ -127,7 +128,20 @@ namespace Agame.Run
         public bool IsDecorative => isDecorative;
         public SkillGraphNode GraphNode => graphNode;
         public bool IsActivated { get; private set; }
-        public string NodeId => graphNode.NodeId;
+        public string NodeId
+        {
+            get
+            {
+#if UNITY_EDITOR
+                if (!Application.isPlaying)
+                {
+                    return GetNodeId();
+                } 
+#endif
+
+                return cachedNodeId ??= GetNodeId();
+            }
+        }
         public Sprite Icon => graphNode.Icon;
         public string TitleGroup => graphNode.TitleGroup;
         public string Title => graphNode.Title;
@@ -1076,6 +1090,11 @@ namespace Agame.Run
             {
                 decorativeImage.color = color;
             }
+        }
+
+        private string GetNodeId()
+        {
+            return $"g{grade}_{graphNode.NodeId}";
         }
 
     }

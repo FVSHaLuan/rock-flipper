@@ -481,7 +481,7 @@ namespace Agame.Run
                         && !otherNode.IsDecorative
                         && node.NodeId == otherNode.NodeId)
                     {
-                        Debug.LogError("Those nodes have the same id:");
+                        Debug.LogError($"Those nodes have the same id, {node.NodeId}:");
                         Debug.LogError(node.name, node);
                         Debug.LogError(otherNode.name, otherNode);
                     }
