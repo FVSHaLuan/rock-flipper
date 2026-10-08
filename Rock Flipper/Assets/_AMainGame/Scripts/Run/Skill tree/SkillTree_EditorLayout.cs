@@ -1,5 +1,6 @@
 using Agame.Run.Stats.Agents;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Agame.Run
@@ -96,9 +97,39 @@ namespace Agame.Run
             Editor_UpdateSize();
             Editor_SpawnDebugNodes();
 
+            // Deeper nodes render on top of shallower ones
+            Editor_SortNodesByDepth(mainTreeRoot);
+            Editor_SortNodesByDepth(laserTreeRoot);
+            Editor_SortNodesByDepth(lightningTreeRoot);
+
             ///
             Debug.Log("Done!");
+
+            ///
             Editor_LogUnconnectedNodes();
+        }
+
+        private void Editor_SortNodesByDepth(Transform rootTransform)
+        {
+            ///
+            var nodes = new List<SkillNode>();
+            foreach (Transform child in rootTransform)
+            {
+                var node = child.GetComponent<SkillNode>();
+                if (node != null)
+                {
+                    nodes.Add(node);
+                }
+            }
+
+            // OrderBy is stable, so nodes of equal depth keep their current order
+            var sortedNodes = nodes.OrderBy(x => x.DepthMax).ToList();
+
+            // Later siblings are rendered on top
+            foreach (var node in sortedNodes)
+            {
+                node.transform.SetAsLastSibling();
+            }
         }
 
         private void Editor_LogUnconnectedNodes()
