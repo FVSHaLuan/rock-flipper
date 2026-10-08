@@ -93,9 +93,9 @@ namespace Agame.Run
 
         public void Editor_HideAllConnectors()
         {
-            foreach (var item in allConnectors)
+            foreach (Direction8 direction in System.Enum.GetValues(typeof(Direction8)))
             {
-                item.gameObject.SetActive(false);
+                connectorSet.GetConnector(direction).gameObject.SetActive(false);
             }
         }
 

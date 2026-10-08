@@ -104,8 +104,8 @@ namespace Agame.Run
         private List<SkillNodeConnector> connectors = new List<SkillNodeConnector>();
 
         [Space]
-        [SerializeField, Tooltip("From the top, clockwise")]
-        private List<SkillNodeConnector> allConnectors = new List<SkillNodeConnector>();
+        [SerializeField]
+        private SkillNodeConnectorSet connectorSet;
 
         private List<SkillNode> parents = new List<SkillNode>();
         private SkillNodeToolTip activeToolTip;
@@ -455,7 +455,7 @@ namespace Agame.Run
 
         private SkillNodeConnector GetConnector(Direction8 direction8)
         {
-            return allConnectors[(int)direction8];
+            return connectorSet.GetConnector(direction8);
         }
 
         private SkillNodeConnector GetConnector(int x, int y)
