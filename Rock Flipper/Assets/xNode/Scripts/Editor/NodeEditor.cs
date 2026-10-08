@@ -17,6 +17,9 @@ namespace XNodeEditor
     public class NodeEditor : XNodeEditor.Internal.NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute, XNode.Node>
     {
 
+        /// <summary> Toggle: draw the editable fields of serialized properties in node bodies. When false, input handles are hidden too and only output handles of port fields are drawn. </summary>
+        private const bool DrawInputFields = false;
+
         private readonly Color DEFAULTCOLOR = new Color32(90, 97, 105, 255);
         private HashSet<string> excludedFields = new HashSet<string> { "m_Script", "graph", "position", "ports" };
 
@@ -110,7 +113,18 @@ namespace XNodeEditor
                 }
 
                 ///
+#pragma warning disable CS0162 // Unreachable code: depends on the DrawInputFields toggle
+                if (!DrawInputFields)
+                {
+                    // Hide input handles too; keep output handles so connections can still be dragged out
+                    XNode.NodePort port = target.GetPort(iterator.name);
+                    if (port != null && !port.IsInput) NodeEditorGUILayout.PortField(port);
+                    continue;
+                }
+
+                ///
                 NodeEditorGUILayout.PropertyField(iterator, true);
+#pragma warning restore CS0162
             }
         }
 
