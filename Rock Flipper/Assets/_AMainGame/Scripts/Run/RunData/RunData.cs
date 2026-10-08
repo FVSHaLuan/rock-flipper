@@ -303,10 +303,7 @@ namespace Agame
             currencyValues[currency] = modifiedAmount;
 
             ///
-            ModifiedCurrenciesThisFrame.Add(currency);
-
-            ///
-            OnCurrencyValueModified?.Invoke(currency);
+            InvokeCurrencyValueModified(currency);
 
             ///
             return true;
@@ -351,13 +348,10 @@ namespace Agame
             DiscoverCurrency(currency);
 
             ///
-            ModifiedCurrenciesThisFrame.Add(currency);
-
-            ///
-            OnCurrencyValueModified?.Invoke(currency);
+            InvokeCurrencyValueModified(currency);
         }
 
-        public void InvokeCurrencyValueModified(Currency currency)
+        private void InvokeCurrencyValueModified(Currency currency)
         {
             ModifiedCurrenciesThisFrame.Add(currency);
             OnCurrencyValueModified?.Invoke(currency);
