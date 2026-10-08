@@ -19,6 +19,19 @@ namespace XNodeEditor
         public event Action onLateGUI;
         private static readonly Vector3[] polyLineTempArray = new Vector3[2];
 
+        /// <summary> Where a connection ends on its input node, gathered in DrawConnections and drawn above the nodes </summary>
+        private struct ConnectionEndHandle
+        {
+            public XNode.NodePort output;
+            public XNode.NodePort input;
+            public Vector2 gridPosition;
+        }
+        [NonSerialized] private readonly List<ConnectionEndHandle> connectionEndHandles = new List<ConnectionEndHandle>();
+        /// <summary> End handle of the connection being dragged, set in DrawDraggedConnection </summary>
+        [NonSerialized] private Vector2 draggedEndHandlePosition;
+        [NonSerialized] private Color draggedEndHandleColor;
+        private const float connectionEndHandleSize = 16f;
+
         protected virtual void OnGUI()
         {
             Event e = Event.current;
@@ -31,6 +44,7 @@ namespace XNodeEditor
             DrawConnections();
             DrawDraggedConnection();
             DrawNodes();
+            DrawConnectionEndHandles();
             DrawSelectionBox();
             DrawTooltip();
             graphEditor.OnGUI();
@@ -414,6 +428,7 @@ namespace XNodeEditor
             hoveredReroute = new RerouteReference();
 
             List<Vector2> gridPoints = new List<Vector2>(2);
+            connectionEndHandles.Clear();
 
             Color col = GUI.color;
             foreach (XNode.Node node in graph.nodes)
@@ -468,6 +483,12 @@ namespace XNodeEditor
                         gridPoints.Add(fromPos);
                         gridPoints.AddRange(reroutePoints);
                         gridPoints.Add(toPos);
+                        connectionEndHandles.Add(new ConnectionEndHandle
+                        {
+                            output = output,
+                            input = input,
+                            gridPosition = GetConnectionEndPosition(input, gridPoints[gridPoints.Count - 2], toPos)
+                        });
                         DrawNoodle(noodleGradient, noodlePath, noodleStroke, noodleThickness, gridPoints);
 
                         // Loop through reroute points again and draw the points
@@ -499,6 +520,76 @@ namespace XNodeEditor
             if (Event.current.type != EventType.Layout && currentActivity == NodeActivity.DragGrid) selectedReroutes = selection;
         }
 
+        /// <summary> Grid position a connection attaches to on the port's node: the node's center when the graph draws straight connections, otherwise the port handle </summary>
+        private bool TryGetConnectionAnchor(XNode.NodePort port, out Vector2 gridPosition)
+        {
+            Vector2 size;
+            if (graph.DrawStraightConnection && nodeSizes.TryGetValue(port.node, out size))
+            {
+                gridPosition = port.node.position + size * 0.5f;
+                return true;
+            }
+            Rect rect;
+            if (_portConnectionPoints.TryGetValue(port, out rect))
+            {
+                gridPosition = rect.center;
+                return true;
+            }
+            gridPosition = Vector2.zero;
+            return false;
+        }
+
+        /// <summary> Where the end handle of a connection into <paramref name="input"/> sits. Straight connections end at the node's center, hidden under the node,
+        /// so the handle moves back along the last segment (from <paramref name="previousPoint"/>) to the node's border </summary>
+        private Vector2 GetConnectionEndPosition(XNode.NodePort input, Vector2 previousPoint, Vector2 endPoint)
+        {
+            Vector2 size;
+            if (!graph.DrawStraightConnection || !nodeSizes.TryGetValue(input.node, out size)) return endPoint;
+
+            Vector2 center = input.node.position + size * 0.5f;
+            Vector2 dir = previousPoint - center;
+            float tx = Mathf.Abs(dir.x) > 0.0001f ? size.x * 0.5f / Mathf.Abs(dir.x) : float.PositiveInfinity;
+            float ty = Mathf.Abs(dir.y) > 0.0001f ? size.y * 0.5f / Mathf.Abs(dir.y) : float.PositiveInfinity;
+            return center + dir * Mathf.Min(1f, Mathf.Min(tx, ty));
+        }
+
+        /// <summary> Draws a port-style handle at a connection's end, at its input node </summary>
+        private void DrawConnectionEndHandle(XNode.NodePort input, Rect windowRect)
+        {
+            NodeEditor editor = NodeEditor.GetEditor(input.node, this);
+            NodeEditorGUILayout.DrawPortHandle(windowRect, editor.GetTint(), graphEditor.GetPortColor(input));
+        }
+
+        private Rect GetConnectionEndHandleRect(Vector2 gridPosition)
+        {
+            Vector2 size = new Vector2(connectionEndHandleSize, connectionEndHandleSize);
+            return GridToWindowRect(new Rect(gridPosition - size * 0.5f, size));
+        }
+
+        /// <summary> Draws the end handle of every connection above the nodes, and marks the hovered one so it can be dragged to detach the connection </summary>
+        private void DrawConnectionEndHandles()
+        {
+            Event e = Event.current;
+            for (int i = 0; i < connectionEndHandles.Count; i++)
+            {
+                ConnectionEndHandle handle = connectionEndHandles[i];
+                Rect rect = GetConnectionEndHandleRect(handle.gridPosition);
+                DrawConnectionEndHandle(handle.input, rect);
+                if (e.type != EventType.Layout && rect.Contains(e.mousePosition))
+                {
+                    hoveredPort = handle.input;
+                    hoveredConnectionOutput = handle.output;
+                }
+            }
+
+            if (IsDraggingPort && TryGetConnectionAnchor(draggedOutput, out _))
+            {
+                Rect rect = GetConnectionEndHandleRect(draggedEndHandlePosition);
+                if (draggedOutputTarget != null) DrawConnectionEndHandle(draggedOutputTarget, rect);
+                else NodeEditorGUILayout.DrawPortHandle(rect, Color.black, draggedEndHandleColor);
+            }
+        }
+
         private void DrawNodes()
         {
             Event e = Event.current;
@@ -522,6 +613,7 @@ namespace XNodeEditor
             {
                 hoveredNode = null;
                 hoveredPort = null;
+                hoveredConnectionOutput = null;
             }
 
             List<UnityEngine.Object> preSelection = preBoxSelection != null ? new List<UnityEngine.Object>(preBoxSelection) : new List<UnityEngine.Object>();

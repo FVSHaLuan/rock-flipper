@@ -22,6 +22,8 @@ namespace XNodeEditor
         private bool IsHoveringReroute { get { return hoveredReroute.port != null; } }
         private XNode.Node hoveredNode = null;
         [NonSerialized] public XNode.NodePort hoveredPort = null;
+        /// <summary> Output of the connection whose end handle is hovered. Set alongside hoveredPort (the input) so the exact connection is detached, not just the input's first one </summary>
+        [NonSerialized] private XNode.NodePort hoveredConnectionOutput = null;
         [NonSerialized] private XNode.NodePort draggedOutput = null;
         [NonSerialized] private XNode.NodePort draggedOutputTarget = null;
         [NonSerialized] private XNode.NodePort autoConnectOutput = null;
@@ -198,7 +200,7 @@ namespace XNodeEditor
                                 if (hoveredPort.IsConnected)
                                 {
                                     XNode.Node node = hoveredPort.node;
-                                    XNode.NodePort output = hoveredPort.Connection;
+                                    XNode.NodePort output = hoveredConnectionOutput != null && hoveredPort.IsConnectedTo(hoveredConnectionOutput) ? hoveredConnectionOutput : hoveredPort.Connection;
                                     int outputConnectionIndex = output.GetConnectionIndex(hoveredPort);
                                     draggedOutputReroutes = output.GetReroutePoints(outputConnectionIndex);
                                     hoveredPort.Disconnect(output);
@@ -635,16 +637,26 @@ namespace XNodeEditor
                 NoodlePath path = graphEditor.GetNoodlePath(draggedOutput, null);
                 NoodleStroke stroke = graphEditor.GetNoodleStroke(draggedOutput, null);
 
-                Rect fromRect;
-                if (!_portConnectionPoints.TryGetValue(draggedOutput, out fromRect)) return;
+                Vector2 fromPos;
+                if (!TryGetConnectionAnchor(draggedOutput, out fromPos)) return;
                 List<Vector2> gridPoints = new List<Vector2>();
-                gridPoints.Add(fromRect.center);
+                gridPoints.Add(fromPos);
                 for (int i = 0; i < draggedOutputReroutes.Count; i++)
                 {
                     gridPoints.Add(draggedOutputReroutes[i]);
                 }
-                if (draggedOutputTarget != null) gridPoints.Add(portConnectionPoints[draggedOutputTarget].center);
-                else gridPoints.Add(WindowToGridPosition(Event.current.mousePosition));
+                Vector2 toPos;
+                if (draggedOutputTarget != null && TryGetConnectionAnchor(draggedOutputTarget, out toPos))
+                {
+                    draggedEndHandlePosition = GetConnectionEndPosition(draggedOutputTarget, gridPoints[gridPoints.Count - 1], toPos);
+                }
+                else
+                {
+                    toPos = WindowToGridPosition(Event.current.mousePosition);
+                    draggedEndHandlePosition = toPos;
+                }
+                gridPoints.Add(toPos);
+                draggedEndHandleColor = gradient.Evaluate(1f);
 
                 DrawNoodle(gradient, path, stroke, thickness, gridPoints);
 
