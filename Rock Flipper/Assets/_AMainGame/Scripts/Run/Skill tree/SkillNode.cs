@@ -63,6 +63,8 @@ namespace Agame.Run
         private GameObject subIconWrapper;
         [SerializeField]
         private UnifiedText gradeText;
+        [SerializeField]
+        private Image decorativeImage;
 
         [Space]
         [SerializeField]
@@ -1060,12 +1062,19 @@ namespace Agame.Run
 
         private void SetConnectorColor(SkillNode outputNode, Color color)
         {
+            ///
             for (int i = 0; i < outputNodes.Count; i++)
             {
                 if (GetOutputNode(i) == outputNode)
                 {
                     connectors[i].SetColor(color);
                 }
+            }
+
+            ///
+            if (IsDecorative)
+            {
+                decorativeImage.color = color;
             }
         }
 
