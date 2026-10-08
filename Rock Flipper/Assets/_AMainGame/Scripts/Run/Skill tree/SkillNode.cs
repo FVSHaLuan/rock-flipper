@@ -1032,12 +1032,42 @@ namespace Agame.Run
             iconImage.color = iconImage.color.OverrideAlpha(iconAlpha);
             subIconBorderImage.color = color;
             subIconImage.color = subIconImage.color.OverrideAlpha(iconAlpha);
+            SetIncomingConnectorsColor(color);
 
             ///
             maxedObject.SetActive(IsMaxed);
 
             ///
             demoLimitedObject.SetActive(IsDemoLimited);
+        }
+
+        /// <summary>
+        /// Colors the connectors from the parents to this node; through a decorative parent, keeps going up to the first normal ancestor
+        /// </summary>
+        private void SetIncomingConnectorsColor(Color color)
+        {
+            foreach (var parent in parents)
+            {
+                ///
+                parent.SetConnectorColor(this, color);
+
+                ///
+                if (parent.isDecorative)
+                {
+                    parent.SetIncomingConnectorsColor(color);
+                }
+            }
+        }
+
+        private void SetConnectorColor(SkillNode outputNode, Color color)
+        {
+            for (int i = 0; i < outputNodes.Count; i++)
+            {
+                if (GetOutputNode(i) == outputNode)
+                {
+                    connectors[i].SetColor(color);
+                }
+            }
         }
 
     }
