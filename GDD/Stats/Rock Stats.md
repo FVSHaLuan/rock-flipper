@@ -9,6 +9,7 @@ All stats of [rocks](../Systems/Rocks.md).
 | Breaking cash multiplier | Per tier | _(+)_ |
 | Cash multiplier of pure rocks | Per tier | _(+)_ |
 | Chance for a new rock to be pure | Per tier | _(+)_ |
+| Chance for a pure rock to be pure again when it breaks | Global | _(+)_ |
 | Max count | Per tier | _(+)_ |
 | Chest exp per landing | Per tier | _(+)_ |
 | Level exp per landing | Per tier | _(+)_ |

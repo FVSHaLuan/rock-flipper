@@ -24,6 +24,7 @@ Each time a rock lands, there is a **critical landing chance** that the landing 
 
 ## Purity
 **Pure** rocks earn a multiplied cash income.
+* When a pure rock breaks, there is a global chance for it to be pure again. This chance is rolled first; if it fails, the replacement rock still gets its tier's chance for a new rock to be pure.
 
 ## Tiers
 Rocks come in different **tiers**, named P0, P1, P2,... Rocks in the same tier share tier-specific stats: **Max HP**, landing cash, **breaking cash multiplier**,...
