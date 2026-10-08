@@ -85,7 +85,7 @@ namespace Agame.Run
         }
 
         /// <summary>
-        /// Always uses this node's own connectors, even toward a decorative output node
+        /// Always uses this node's own connectors: the decorative set toward a decorative output node, the normal set otherwise
         /// </summary>
         [ContextMenu("Editor_MatchOutputNodesToConnectors")]
         public void Editor_MatchOutputNodesToConnectors()
@@ -93,7 +93,8 @@ namespace Agame.Run
             ///
             foreach (Direction8 direction in System.Enum.GetValues(typeof(Direction8)))
             {
-                connectorSet.GetConnector(direction).gameObject.SetActive(false);
+                normalConnectorSet.GetConnector(direction).gameObject.SetActive(false);
+                decorativeConnectorSet.GetConnector(direction).gameObject.SetActive(false);
             }
 
             ///
@@ -214,7 +215,7 @@ namespace Agame.Run
             }
 
             ///
-            return GetConnector(d.x, d.y);
+            return GetConnector(GetConnectorSet(outputNode), d.x, d.y);
         }
 
         public void Editor_SnapOutputNodes(float distance)

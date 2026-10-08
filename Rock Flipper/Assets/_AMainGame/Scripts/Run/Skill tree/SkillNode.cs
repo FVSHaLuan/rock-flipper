@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Serialization;
 using GD;
 using Agame.Run.Stats;
 using OneLine;
@@ -104,8 +105,11 @@ namespace Agame.Run
         private List<SkillNodeConnector> connectors = new List<SkillNodeConnector>();
 
         [Space]
+        [SerializeField, FormerlySerializedAs("connectorSet")]
+        private SkillNodeConnectorSet normalConnectorSet;
+
         [SerializeField]
-        private SkillNodeConnectorSet connectorSet;
+        private SkillNodeConnectorSet decorativeConnectorSet;
 
         private List<SkillNode> parents = new List<SkillNode>();
         private SkillNodeToolTip activeToolTip;
@@ -453,12 +457,15 @@ namespace Agame.Run
             }
         }
 
-        private SkillNodeConnector GetConnector(Direction8 direction8)
+        /// <summary>
+        /// The set used to connect to the given output node: decorative children get their own set
+        /// </summary>
+        private SkillNodeConnectorSet GetConnectorSet(SkillNode outputNode)
         {
-            return connectorSet.GetConnector(direction8);
+            return outputNode.IsDecorative ? decorativeConnectorSet : normalConnectorSet;
         }
 
-        private SkillNodeConnector GetConnector(int x, int y)
+        private static SkillNodeConnector GetConnector(SkillNodeConnectorSet connectorSet, int x, int y)
         {
             if (x == 0)
             {
@@ -468,41 +475,41 @@ namespace Agame.Run
                 }
                 else if (y < 0)
                 {
-                    return GetConnector(Direction8.Down);
+                    return connectorSet.GetConnector(Direction8.Down);
                 }
                 else
                 {
-                    return GetConnector(Direction8.Up);
+                    return connectorSet.GetConnector(Direction8.Up);
                 }
             }
             else if (x < 0)
             {
                 if (y == 0)
                 {
-                    return GetConnector(Direction8.Left);
+                    return connectorSet.GetConnector(Direction8.Left);
                 }
                 else if (y < 0)
                 {
-                    return GetConnector(Direction8.DownLeft);
+                    return connectorSet.GetConnector(Direction8.DownLeft);
                 }
                 else
                 {
-                    return GetConnector(Direction8.UpLeft);
+                    return connectorSet.GetConnector(Direction8.UpLeft);
                 }
             }
             else
             {
                 if (y == 0)
                 {
-                    return GetConnector(Direction8.Right);
+                    return connectorSet.GetConnector(Direction8.Right);
                 }
                 else if (y < 0)
                 {
-                    return GetConnector(Direction8.DownRight);
+                    return connectorSet.GetConnector(Direction8.DownRight);
                 }
                 else
                 {
-                    return GetConnector(Direction8.UpRight);
+                    return connectorSet.GetConnector(Direction8.UpRight);
                 }
             }
         }
