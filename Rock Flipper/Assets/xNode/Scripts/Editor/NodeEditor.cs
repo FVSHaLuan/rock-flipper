@@ -112,12 +112,19 @@ namespace XNodeEditor
                     if (inputAttribute != null || outputAttribute != null) continue;
                 }
 
+                // A node's only output has no visible handle: it's anchored at the line's horizontal center, and dragged from anywhere on the node body
+                XNode.NodePort port = target.GetPort(iterator.name);
+                if (port != null && port == GetSingleOutput(target))
+                {
+                    NodeEditorGUILayout.CenteredPortField(port, false);
+                    continue;
+                }
+
                 ///
 #pragma warning disable CS0162 // Unreachable code: depends on the DrawInputFields toggle
                 if (!DrawInputFields)
                 {
                     // Hide input handles too; keep output handles so connections can still be dragged out
-                    XNode.NodePort port = target.GetPort(iterator.name);
                     if (port != null && !port.IsInput) NodeEditorGUILayout.PortField(port);
                     continue;
                 }
@@ -126,6 +133,18 @@ namespace XNodeEditor
                 NodeEditorGUILayout.PropertyField(iterator, true);
 #pragma warning restore CS0162
             }
+        }
+
+        /// <summary> The node's output if it has exactly one, else null. Its handle is hidden and it's dragged from anywhere on the node body instead. </summary>
+        public static XNode.NodePort GetSingleOutput(XNode.Node node)
+        {
+            XNode.NodePort single = null;
+            foreach (XNode.NodePort output in node.Outputs)
+            {
+                if (single != null) return null;
+                single = output;
+            }
+            return single;
         }
 
         public virtual int GetWidth()

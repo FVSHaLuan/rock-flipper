@@ -226,6 +226,13 @@ namespace XNodeEditor
                             e.Use();
                             currentActivity = NodeActivity.HoldNode;
                         }
+                        else if (IsHoveringNode && NodeEditor.GetSingleOutput(hoveredNode) != null)
+                        {
+                            // Mousedown on the body of a node with a single (hidden) output starts dragging a connection from it
+                            draggedOutput = NodeEditor.GetSingleOutput(hoveredNode);
+                            autoConnectOutput = draggedOutput;
+                            e.Use();
+                        }
                         else if (IsHoveringReroute)
                         {
                             // If reroute isn't selected

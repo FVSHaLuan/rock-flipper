@@ -207,16 +207,26 @@ namespace XNodeEditor {
             PortField(position, port);
         }
 
+        /// <summary> Make a port field with no label, its handle centered horizontally on the line. With <paramref name="drawHandle"/> false the handle
+        /// isn't drawn, only its position is registered as the connection anchor. </summary>
+        public static void CenteredPortField(XNode.NodePort port, bool drawHandle = true) {
+            if (port == null) return;
+            Rect rect = EditorGUILayout.GetControlRect(false, EditorGUIUtility.singleLineHeight);
+            PortField(new Vector2(rect.center.x - 8, rect.y), port, drawHandle);
+        }
+
         /// <summary> Make a simple port field. </summary>
-        public static void PortField(Vector2 position, XNode.NodePort port) {
+        public static void PortField(Vector2 position, XNode.NodePort port, bool drawHandle = true) {
             if (port == null) return;
 
             Rect rect = new Rect(position, new Vector2(16, 16));
 
-            NodeEditor editor = NodeEditor.GetEditor(port.node, NodeEditorWindow.current);
-            Color backgroundColor = editor.GetTint();
-            Color col = NodeEditorWindow.current.graphEditor.GetPortColor(port);
-            DrawPortHandle(rect, backgroundColor, col);
+            if (drawHandle) {
+                NodeEditor editor = NodeEditor.GetEditor(port.node, NodeEditorWindow.current);
+                Color backgroundColor = editor.GetTint();
+                Color col = NodeEditorWindow.current.graphEditor.GetPortColor(port);
+                DrawPortHandle(rect, backgroundColor, col);
+            }
 
             // Register the handle position
             Vector2 portPos = rect.center;
