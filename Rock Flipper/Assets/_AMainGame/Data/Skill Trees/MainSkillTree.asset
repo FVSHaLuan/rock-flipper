@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FlipBot Idle Time
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1000}
+  position: {x: 250, y: 500}
   ports:
     keys:
     - input
@@ -22,7 +22,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -9085484646136457789}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: -5280188213446210041}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -30,7 +33,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -9085484646136457789}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -4888477715943952057}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -127,7 +133,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -7951454483246537858}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 809505434402096920}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -478,7 +487,13 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -5280188213446210041}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 3449549515527872826}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 809505434402096920}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -486,7 +501,13 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -5280188213446210041}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 5938386169034562701}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -9085484646136457789}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -625,7 +646,7 @@ MonoBehaviour:
   m_Name: FlipBot Active Time
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1250}
+  position: {x: 250, y: 750}
   ports:
     keys:
     - input
@@ -634,7 +655,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -4888477715943952057}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: -9085484646136457789}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -642,7 +666,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -4888477715943952057}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -4620618385319408184}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -685,7 +712,13 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -4620618385319408184}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: -4163678286576885277}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -4888477715943952057}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -727,7 +760,7 @@ MonoBehaviour:
   m_Name: FlipBot Flip Interval
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1750}
+  position: {x: -250, y: 750}
   ports:
     keys:
     - input
@@ -736,7 +769,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: -4163678286576885277}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 5938386169034562701}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -744,7 +780,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -4163678286576885277}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -4620618385319408184}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -1081,7 +1120,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: 809505434402096920}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: 3449549515527872826}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -1089,7 +1131,13 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 809505434402096920}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -7951454483246537858}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -5280188213446210041}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -1359,7 +1407,13 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 3449549515527872826}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 809505434402096920}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -5280188213446210041}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -1477,7 +1531,7 @@ MonoBehaviour:
   m_Name: FlipBot Move Speed
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 0, y: 1500}
+  position: {x: -250, y: 500}
   ports:
     keys:
     - input
@@ -1486,7 +1540,10 @@ MonoBehaviour:
     - _fieldName: input
       _node: {fileID: 5938386169034562701}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: output
+        node: {fileID: -5280188213446210041}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
@@ -1494,7 +1551,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 5938386169034562701}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -4163678286576885277}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
