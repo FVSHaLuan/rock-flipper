@@ -284,6 +284,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6576922219200033195, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
+      propertyPath: toNormalConnectorSet
+      value: 
+      objectReference: {fileID: 6643147613133697591}
+    - target: {fileID: 6576922219200033195, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
       propertyPath: toolTipTopLeftAnchor
       value: 
       objectReference: {fileID: 0}
@@ -303,6 +307,10 @@ PrefabInstance:
       propertyPath: toolTipBottomLeftAnchor
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6576922219200033195, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
+      propertyPath: toDecorativeConnectorSet
+      value: 
+      objectReference: {fileID: 6577773398341987563}
     - target: {fileID: 6576922219200033195, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
       propertyPath: toolTipBottomRightAnchor
       value: 

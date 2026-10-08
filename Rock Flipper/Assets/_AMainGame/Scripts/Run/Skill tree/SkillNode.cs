@@ -107,11 +107,10 @@ namespace Agame.Run
         private List<SkillNodeConnector> connectors = new List<SkillNodeConnector>();
 
         [Space]
-        [SerializeField, FormerlySerializedAs("connectorSet")]
-        private SkillNodeConnectorSet normalConnectorSet;
-
-        [SerializeField]
-        private SkillNodeConnectorSet decorativeConnectorSet;
+        [SerializeField, FormerlySerializedAs("normalConnectorSet")]
+        private SkillNodeConnectorSet toNormalConnectorSet;
+        [SerializeField, FormerlySerializedAs("decorativeConnectorSet")]
+        private SkillNodeConnectorSet toDecorativeConnectorSet;
 
         private List<SkillNode> parents = new List<SkillNode>();
         private SkillNodeToolTip activeToolTip;
@@ -465,7 +464,7 @@ namespace Agame.Run
         /// </summary>
         private SkillNodeConnectorSet GetConnectorSet(SkillNode outputNode)
         {
-            return outputNode.IsDecorative ? decorativeConnectorSet : normalConnectorSet;
+            return outputNode.IsDecorative ? toDecorativeConnectorSet : toNormalConnectorSet;
         }
 
         private static SkillNodeConnector GetConnector(SkillNodeConnectorSet connectorSet, int x, int y)

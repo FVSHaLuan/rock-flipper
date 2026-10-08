@@ -93,8 +93,8 @@ namespace Agame.Run
             ///
             foreach (Direction8 direction in System.Enum.GetValues(typeof(Direction8)))
             {
-                normalConnectorSet.GetConnector(direction).gameObject.SetActive(false);
-                decorativeConnectorSet.GetConnector(direction).gameObject.SetActive(false);
+                toNormalConnectorSet.GetConnector(direction).gameObject.SetActive(false);
+                toDecorativeConnectorSet.GetConnector(direction).gameObject.SetActive(false);
             }
 
             ///
