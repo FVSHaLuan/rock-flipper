@@ -229,7 +229,6 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  rockTier: 0
   currency: 0
   prices:
   - cashTier: 0
@@ -244,3 +243,4 @@ MonoBehaviour:
     a: 0
     b: 0
     c: 0
+  rockTier: 0
