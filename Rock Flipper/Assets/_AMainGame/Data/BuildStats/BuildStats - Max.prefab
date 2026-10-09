@@ -209,10 +209,6 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5789884900222166960, guid: e0aedc20c68d6dd43a58df7c77f1af08, type: 3}
-      propertyPath: enabledAutoMouseHover
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5789884900222166960, guid: e0aedc20c68d6dd43a58df7c77f1af08, type: 3}
       propertyPath: laserCrusherBeamCount
       value: 12
       objectReference: {fileID: 0}
