@@ -7,7 +7,7 @@ namespace Agame.Run.Dev
 {
     /// <summary>
     /// While its toggle is on: blocks the real player cursor from flipping, and (until mouse hover is unlocked)
-    /// simulates clicks by flipping a random rock the cursor could flip, flipsPerSecond times per second
+    /// simulates clicks by flipping a random rock or chest the cursor could flip, flipsPerSecond times per second
     /// </summary>
     [RequireComponent(typeof(Toggle))]
     public class AutoMouse : ExtendedMonoBehaviourRun
@@ -21,7 +21,7 @@ namespace Agame.Run.Dev
         private bool isLocking;
         private float clickTimer;
 
-        private readonly List<Rock> candidates = new List<Rock>();
+        private readonly List<FlippableByPlayerCursor> candidates = new List<FlippableByPlayerCursor>();
 
         protected void Start()
         {
@@ -51,7 +51,7 @@ namespace Agame.Run.Dev
             clickTimer += Time.deltaTime * flipsPerSecond;
             while (clickTimer >= 1f)
             {
-                if (!TryFlippingRandomRock())
+                if (!TryFlippingRandomFlippable())
                 {
                     // nothing to flip: click as soon as something is, without banking the missed clicks
                     clickTimer = 1f;
@@ -61,9 +61,9 @@ namespace Agame.Run.Dev
             }
         }
 
-        private bool TryFlippingRandomRock()
+        private bool TryFlippingRandomFlippable()
         {
-            CollectFlippableRocks();
+            CollectFlippables();
             if (candidates.Count == 0)
                 return false;
 
@@ -71,18 +71,26 @@ namespace Agame.Run.Dev
             return candidates[Random.Range(0, candidates.Count)].Flippable.TryFlipping(FlipSource.Mouse);
         }
 
-        /// <summary>
-        /// Same checks <see cref="PlayerCursor"/> applies to a rock under the cursor, plus not already airborne
-        /// </summary>
-        private void CollectFlippableRocks()
+        private void CollectFlippables()
         {
             candidates.Clear();
             foreach (var rock in RunEntry.rockInstanceManager.ActiveRocks)
             {
-                var byCursor = rock.FlippableByPlayerCursor;
-                if (byCursor.isActiveAndEnabled && byCursor.CooledDown && !rock.Flippable.IsFlipping)
-                    candidates.Add(rock);
+                TryAddingCandidate(rock.FlippableByPlayerCursor);
             }
+            foreach (var chest in RunEntry.chestInstanceManager.ActiveChests)
+            {
+                TryAddingCandidate(chest.FlippableByPlayerCursor);
+            }
+        }
+
+        /// <summary>
+        /// Same checks <see cref="PlayerCursor"/> applies to a flippable under the cursor, plus not already airborne
+        /// </summary>
+        private void TryAddingCandidate(FlippableByPlayerCursor byCursor)
+        {
+            if (byCursor != null && byCursor.isActiveAndEnabled && byCursor.CooledDown && !byCursor.Flippable.IsFlipping)
+                candidates.Add(byCursor);
         }
 
         private void OnToggleValueChanged(bool isOn)

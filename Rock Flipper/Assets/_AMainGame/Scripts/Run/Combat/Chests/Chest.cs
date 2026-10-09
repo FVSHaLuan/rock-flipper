@@ -17,7 +17,21 @@ namespace Agame.Run.Combat
         [SerializeField]
         private ChestPoolHandler chestPoolHandler;
 
+        private FlippableByPlayerCursor flippableByPlayerCursor;
+
         public ChestPoolHandler PoolHandler => chestPoolHandler;
+        public Flippable Flippable => flippable;
+        public FlippableByPlayerCursor FlippableByPlayerCursor
+        {
+            get
+            {
+                if (flippableByPlayerCursor == null)
+                {
+                    flippableByPlayerCursor = flippable.GetComponent<FlippableByPlayerCursor>();
+                }
+                return flippableByPlayerCursor;
+            }
+        }
 
         public ChestRarity Rarity => rarity;
         public int MaxHP { get; private set; }

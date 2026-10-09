@@ -8,6 +8,8 @@ namespace Agame.Run.Combat
         private List<Chest> activeChests = new List<Chest>();
         private List<ChestState> savedChestStates = new List<ChestState>();
 
+        public IReadOnlyList<Chest> ActiveChests => activeChests;
+
         public bool SpawnedSavedChests { get; private set; } = false;
 
         protected void Start()
