@@ -149,7 +149,7 @@ namespace Agame.Run
 
         private void UpdateView()
         {
-            backgroundIconImage.sprite = skillNode.Icon;
+            backgroundIconImage.sprite = skillNode.SubIcon ?? skillNode.Icon;
             titleText.Text = $"{skillNode.TitleGroup} - {skillNode.Title}";
             descriptionText.Text = skillNode.Description;
             if (string.IsNullOrWhiteSpace(skillNode.ExtraDescription))

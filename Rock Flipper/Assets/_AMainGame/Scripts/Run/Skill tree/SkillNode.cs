@@ -136,13 +136,14 @@ namespace Agame.Run
                 if (!Application.isPlaying)
                 {
                     return GetNodeId();
-                } 
+                }
 #endif
 
                 return cachedNodeId ??= GetNodeId();
             }
         }
         public Sprite Icon => graphNode.Icon;
+        public Sprite SubIcon => graphNode.SubIcon;
         public string TitleGroup => graphNode.TitleGroup;
         public string Title => graphNode.Title;
         public int OutputNodeCount => outputNodes.Count;
