@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: Mouse Radius
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 500, y: 250}
+  position: {x: 500, y: 500}
   ports:
     keys:
     - input
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: Unlock P1 Rock
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 750, y: 0}
+  position: {x: 750, y: 250}
   ports:
     keys:
     - input
@@ -273,7 +273,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -7525168557237096116}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -5147559459918421793}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -382,6 +385,9 @@ MonoBehaviour:
       - fieldName: input
         node: {fileID: 8544577117764699940}
         reroutePoints: []
+      - fieldName: input
+        node: {fileID: 9008576686679178563}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -411,6 +417,64 @@ MonoBehaviour:
     amount: 1
   - currency: 0
     amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
+--- !u!114 &-5442355391896774071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Max Count
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 750, y: -250}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -5442355391896774071}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -5147559459918421793}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5442355391896774071}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 1554780910028234844, guid: 6d8b3c0ed83ab924f900bc4d87808099, type: 3}
+  buildValue: 10
+  cashTier: 0
+  costs_1:
   - currency: 0
     amount: 1
   - currency: 0
@@ -531,6 +595,87 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &-5147559459918421793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Landing Cash
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 750, y: 0}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -5147559459918421793}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -7525168557237096116}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5147559459918421793}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 1848818967529400550}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 5960043599096181927}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -5442355391896774071}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 5098320305232, guid: d25b8cfc53a2c1c11440dfd56fd7d890, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &-4978227826005627924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +773,60 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 5383652418559783947, guid: 2404066b6d16f0e44a78e3842e7d68dc, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
+--- !u!114 &-4929591552502062245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Level Exp
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 750, y: -750}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -4929591552502062245}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -4098124638672023871}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -4929591552502062245}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 12219726439246, guid: 97b03d541bac785f2cc1e6d14b456f6f, type: 3}
   buildValue: 1
   cashTier: 0
   costs_1:
@@ -885,6 +1084,84 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &-4098124638672023871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Purity
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 500, y: -500}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -4098124638672023871}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 1848818967529400550}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -4098124638672023871}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 8213078786738054279}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -4929591552502062245}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 7382554735492, guid: b9165f611fb9e648187f6343d38472db, type: 3}
+  buildValue: 0.1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &-1834753400696216170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,6 +1213,121 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &-1756804810699808002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 HP
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 750, y: -1000}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -1756804810699808002}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 8213078786738054279}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: 171928034022495418}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -1756804810699808002}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 1208794953138583229, guid: 287425791d2076f4e9fb4f646b674909, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
+--- !u!114 &-471263998860530179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Chest Exp
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 750, y: -500}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -471263998860530179}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 4876357867273730795}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -471263998860530179}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 1464516895700, guid: de0136571d0c8b4c30bd516cf75470ee, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,14 +1370,81 @@ MonoBehaviour:
   - {fileID: -4968184747821918782}
   - {fileID: -5281263294261801891}
   - {fileID: -1834753400696216170}
-  - {fileID: 1417574820063052170}
   - {fileID: 8544577117764699940}
   - {fileID: -8783246194474991710}
   - {fileID: 9008576686679178563}
+  - {fileID: -5147559459918421793}
+  - {fileID: -5442355391896774071}
+  - {fileID: 1848818967529400550}
+  - {fileID: 5960043599096181927}
+  - {fileID: -4098124638672023871}
+  - {fileID: 8213078786738054279}
+  - {fileID: -4929591552502062245}
+  - {fileID: 4876357867273730795}
+  - {fileID: 171928034022495418}
+  - {fileID: -471263998860530179}
+  - {fileID: -1756804810699808002}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
   rootNodeHeaderColor: {r: 0.8901961, g: 0.29411766, b: 0.3647059, a: 1}
+--- !u!114 &171928034022495418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Crit Cash Mult
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 1000, y: -750}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 171928034022495418}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 4876357867273730795}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 171928034022495418}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -1756804810699808002}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 8619025691418994321, guid: 6ded4a9b6274c8f429edfbfa961edbf3, type: 3}
+  buildValue: 0.2
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &360477713891578472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,7 +1553,7 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
---- !u!114 &1417574820063052170
+--- !u!114 &1848818967529400550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1104,32 +1563,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
-  m_Name: Decorative
+  m_Name: P1 Breaking Cash Mult
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 250, y: 0}
+  position: {x: 500, y: -250}
   ports:
     keys:
     - input
     - output
     values:
     - _fieldName: input
-      _node: {fileID: 1417574820063052170}
+      _node: {fileID: 1848818967529400550}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 5352181967948316995}
+        node: {fileID: -5147559459918421793}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 2
       _dynamic: 0
     - _fieldName: output
-      _node: {fileID: 1417574820063052170}
+      _node: {fileID: 1848818967529400550}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: 9008576686679178563}
+        node: {fileID: -4098124638672023871}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1137,12 +1596,12 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  skillNodePrototype: {fileID: 7738089975388807310, guid: 808bcf63a820ade49923676556a9e42a, type: 3}
+  skillNodePrototype: {fileID: 0}
   attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
-  buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
+  buildAgent: {fileID: 23553590355384, guid: 7a56aaad88453c56d0b158f6d6633f47, type: 3}
   buildValue: 1
   cashTier: 0
   costs_1:
@@ -1370,6 +1829,84 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &4876357867273730795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Crit Chance
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 1000, y: -500}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 4876357867273730795}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 5960043599096181927}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 4876357867273730795}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 171928034022495418}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -471263998860530179}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 683687454391888099, guid: 21124c1bd54c40145bea73c81e99f87b, type: 3}
+  buildValue: 0.1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &5352181967948316995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,9 +1949,6 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: input
         node: {fileID: 7332991121257117244}
-        reroutePoints: []
-      - fieldName: input
-        node: {fileID: 1417574820063052170}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1506,6 +2040,81 @@ MonoBehaviour:
   buildValue: 1
   cashTier: 0
   costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
+--- !u!114 &5960043599096181927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Flipping Speed
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 1000, y: -250}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 5960043599096181927}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -5147559459918421793}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 5960043599096181927}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4876357867273730795}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 31800869903227, guid: 76b7fe9828ba4b3d5f91da6f94a3f751, type: 3}
+  buildValue: 1
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
+  - currency: 0
+    amount: 1
   - currency: 0
     amount: 1
   costs_2: []
@@ -1738,6 +2347,63 @@ MonoBehaviour:
   costs_2: []
   costs_3: []
   costFormulas: []
+--- !u!114 &8213078786738054279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Pure Cash Mult
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 500, y: -750}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 8213078786738054279}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -4098124638672023871}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 8213078786738054279}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -1756804810699808002}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 23556871576253, guid: 613dabe6be687c579e41a91eab1cf416, type: 3}
+  buildValue: 0.2
+  cashTier: 0
+  costs_1:
+  - currency: 0
+    amount: 1
+  costs_2: []
+  costs_3: []
+  costFormulas: []
 --- !u!114 &8544577117764699940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,7 +2506,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 1417574820063052170}
+        node: {fileID: -6214745156599126537}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

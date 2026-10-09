@@ -57,6 +57,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3274946891252261634, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+      propertyPath: extraDescription
+      value: ' After landing, P1 Rock has a chance to flip again'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274946891252261634, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: descriptionFormat
       value: Unlock P1 Rock
       objectReference: {fileID: 0}
