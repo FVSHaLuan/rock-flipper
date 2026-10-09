@@ -72,13 +72,21 @@ namespace Agame.Run.Combat
 
         private void FindHits()
         {
+            FindHits(transformHandle.position, flippableHits);
+        }
+
+        /// <summary>
+        /// The flippables a cursor at <paramref name="position"/> would hit (point or mouse-radius circle)
+        /// </summary>
+        public void FindHits(Vector2 position, List<FlippableByPlayerCursor> results)
+        {
             if (BuildStats.enabledMouseRadius)
             {
-                SimpleCast2D.CircleCast(transformHandle.position, BuildStats.mouseRadius, true, flippableHits);
+                SimpleCast2D.CircleCast(position, BuildStats.mouseRadius, true, results);
             }
             else
             {
-                SimpleCast2D.PointCast(transformHandle.position, true, flippableHits);
+                SimpleCast2D.PointCast(position, true, results);
             }
         }
     }
