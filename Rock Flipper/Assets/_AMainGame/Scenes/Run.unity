@@ -26949,6 +26949,7 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   playerCursor: {fileID: 499941808}
+  flipsPerSecond: 5
 --- !u!1 &1910539778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4320365423265808409, guid: e851a25f298e9c849ad18a547776d045, type: 3}

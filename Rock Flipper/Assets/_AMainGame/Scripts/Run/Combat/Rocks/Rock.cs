@@ -71,6 +71,7 @@ namespace Agame.Run.Combat
         public int CurrentHP { get; private set; }
         public RockPoolHandler PoolHandler => rockPoolHandler;
         public Flippable Flippable => flippable;
+        public FlippableByPlayerCursor FlippableByPlayerCursor => flippableByPlayerCursor;
 
         protected void OnDisable()
         {
