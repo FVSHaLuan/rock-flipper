@@ -10789,7 +10789,7 @@ GameObject:
   - component: {fileID: 743661335}
   - component: {fileID: 743661336}
   m_Layer: 5
-  m_Name: Rocks
+  m_Name: Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14724,6 +14724,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 725077161}
     m_Modifications:
+    - target: {fileID: 1586550690541758199, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fb5502dd5b471d742968ef2f146ea093, type: 3}
+    - target: {fileID: 2143108778578496418, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3278779178906561634, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14760,6 +14768,30 @@ PrefabInstance:
       propertyPath: tab
       value: 
       objectReference: {fileID: 825950987}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6640589817164236442, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -17919,6 +17951,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 725077161}
     m_Modifications:
+    - target: {fileID: 1586550690541758199, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b00bccb9066dbfc46ad5b649f41e9aeb, type: 3}
+    - target: {fileID: 2143108778578496418, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3278779178906561634, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -17945,7 +17985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353066277422556101, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_text
-      value: Rocks
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 5353066277422556101, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_fontSize
@@ -17955,6 +17995,30 @@ PrefabInstance:
       propertyPath: tab
       value: 
       objectReference: {fileID: 743661334}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350305225039992976, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6640589817164236442, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18037,7 +18101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6833574206854712843, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       propertyPath: m_Name
-      value: Rocks
+      value: Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
