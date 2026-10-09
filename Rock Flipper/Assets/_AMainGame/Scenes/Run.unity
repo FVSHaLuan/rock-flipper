@@ -3658,6 +3658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232520357}
   - component: {fileID: 232520358}
+  - component: {fileID: 232520359}
   m_Layer: 5
   m_Name: Dev Gameplay Time Scale Controller
   m_TagString: EditorOnly
@@ -3712,6 +3713,19 @@ MonoBehaviour:
   presetScale3: 20
   slider: {fileID: 340923017}
   currentScaleText: {fileID: 1898129727}
+--- !u!114 &232520359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232520356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3433d85ace06a54ea737a78e3cc3bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Dev.DevUIVisibility
+  target: {fileID: 0}
 --- !u!1 &234144875
 GameObject:
   m_ObjectHideFlags: 0
@@ -14256,6 +14270,7 @@ GameObject:
   - component: {fileID: 1005644478}
   - component: {fileID: 1005644477}
   - component: {fileID: 1005644476}
+  - component: {fileID: 1005644480}
   m_Layer: 5
   m_Name: Playtime
   m_TagString: EditorOnly
@@ -14413,6 +14428,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005644474}
   m_CullTransparentMesh: 1
+--- !u!114 &1005644480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005644474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3433d85ace06a54ea737a78e3cc3bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Dev.DevUIVisibility
+  target: {fileID: 0}
 --- !u!1001 &1014403611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26695,6 +26723,7 @@ GameObject:
   - component: {fileID: 1912823204}
   - component: {fileID: 1912823203}
   - component: {fileID: 1912823206}
+  - component: {fileID: 1912823207}
   m_Layer: 5
   m_Name: Test Build Stats Mark
   m_TagString: EditorOnly
@@ -26852,6 +26881,19 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   unifiedText: {fileID: 1912823203}
+--- !u!114 &1912823207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912823200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3433d85ace06a54ea737a78e3cc3bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Dev.DevUIVisibility
+  target: {fileID: 0}
 --- !u!1 &1913836034
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,6 +35,14 @@ internal static partial class TerminalCommands
     {
         DevStatManager.Instance.enemyCount.ToggleActiveState();
     }
+
+#if UNITY_EDITOR
+    [RegisterCommand(Help = "")]
+    private static void ToggleDevUIs(CommandArg[] args)
+    {
+        DevEntry.Instance.IsShowingDevUIs = !DevEntry.Instance.IsShowingDevUIs;
+    }
+#endif
     #endregion DevPanel
 
     #region Screen
