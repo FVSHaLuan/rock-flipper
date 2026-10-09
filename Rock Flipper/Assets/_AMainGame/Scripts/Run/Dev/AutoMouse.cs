@@ -9,7 +9,8 @@ namespace Agame.Run.Dev
     /// While its toggle is on: blocks the real player cursor from flipping, and
     /// - until mouse hover is unlocked: simulates clicks by flipping a random rock or chest the cursor could flip, flipsPerSecond times per second
     /// - once mouse hover is unlocked: simulates hovering with a virtual cursor that moves toward a random rock or chest the cursor could flip
-    ///   at hoverSpeed, flipping everything under it the way the real cursor would (point or mouse radius)
+    ///   at hoverSpeed, flipping everything under it the way the real cursor would (point or mouse radius),
+    ///   and shows the player cursor's view at the virtual cursor
     /// </summary>
     [RequireComponent(typeof(Toggle))]
     public class AutoMouse : ExtendedMonoBehaviourRun
@@ -21,6 +22,7 @@ namespace Agame.Run.Dev
         [SerializeField, Min(0f)]
         private float hoverSpeed = 10f;
 
+        private PlayerCursorView playerCursorView;
         private Toggle toggle;
         private bool isLocking;
         private float clickTimer;
@@ -34,6 +36,7 @@ namespace Agame.Run.Dev
 
         protected void Start()
         {
+            playerCursorView = playerCursor != null ? playerCursor.GetComponent<PlayerCursorView>() : null;
             toggle = GetComponent<Toggle>();
             toggle.onValueChanged.AddListener(OnToggleValueChanged);
             OnToggleValueChanged(toggle.isOn);
@@ -108,6 +111,10 @@ namespace Agame.Run.Dev
             {
                 hoverPosition = Vector2.MoveTowards(hoverPosition, hoverTarget.transform.position, hoverSpeed * Time.deltaTime);
             }
+            if (playerCursorView != null)
+            {
+                playerCursorView.SetPositionOverride(hoverPosition);
+            }
 
             ///
             if (playerCursor == null)
@@ -124,6 +131,10 @@ namespace Agame.Run.Dev
 
         private void StopHovering()
         {
+            if (isHovering && playerCursorView != null)
+            {
+                playerCursorView.ClearPositionOverride();
+            }
             isHovering = false;
             hoverTarget = null;
         }
