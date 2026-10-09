@@ -8200,6 +8200,7 @@ MonoBehaviour:
   - {fileID: 1418351243}
   - {fileID: 1409307606}
   - {fileID: 2104454860}
+  - {fileID: 709700415}
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
@@ -10199,6 +10200,56 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5645279952020925408, guid: ca32f7ea5fc304ebaa3d01dd9635835c, type: 3}
   m_PrefabInstance: {fileID: 703666495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &709700414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177905752930646814, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497503364241793962, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+      propertyPath: m_Name
+      value: SystemCam
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+--- !u!20 &709700415 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3665405533460604237, guid: 81eefda75b580e240bbc4b9d71dc2fbe, type: 3}
+  m_PrefabInstance: {fileID: 709700414}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &716291606
 GameObject:
@@ -30573,6 +30624,7 @@ SceneRoots:
   - {fileID: 1418351244}
   - {fileID: 1409307607}
   - {fileID: 2104454861}
+  - {fileID: 709700414}
   - {fileID: 487646590}
   - {fileID: 528506375}
   - {fileID: 731004323}
