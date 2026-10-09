@@ -12,8 +12,12 @@ namespace Agame.Dev
     [ExecuteInEditMode]
     public class DevEntry : ScriptableObject
     {
+        public static event System.Action OnDevUIsVisibilityChanged;
+
         private const string AssetPath = "Assets/_AMainGame/Data/Dev/DevEntry.asset";
         private static DevEntry instance;
+
+        private bool isShowingDevUIs = true;
 
         [Header("Refs")]
         public UniqueIntManager uniqueIntManager;
@@ -26,6 +30,19 @@ namespace Agame.Dev
         public VisualDefinitions visualDefinitions;
         public DemoHub demoHub;
         public LocalizedStrings localizedStrings;
+        public bool IsShowingDevUIs
+        {
+            get => isShowingDevUIs;
+            set
+            {
+                if (isShowingDevUIs == value)
+                {
+                    return;
+                }
+                isShowingDevUIs = value;
+                OnDevUIsVisibilityChanged?.Invoke();
+            }
+        }
 
 #if UNITY_EDITOR
         [NonSerialized]
