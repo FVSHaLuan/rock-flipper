@@ -17,6 +17,7 @@ namespace Agame.Dev
         private const string AssetPath = "Assets/_AMainGame/Data/Dev/DevEntry.asset";
         private static DevEntry instance;
 
+        [System.NonSerialized]
         private bool isShowingDevUIs = true;
 
         [Header("Refs")]

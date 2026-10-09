@@ -1,3 +1,4 @@
+using FHC.Core.Architecture;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,6 +9,20 @@ namespace Agame.Run.Combat
     {
         private List<FlippableByPlayerCursor> flippableHits = new List<FlippableByPlayerCursor>();
 
+        private BalancerWithObjects flippingLockBalancer = new BalancerWithObjects();
+
+        public bool IsFlippingLocked => !flippingLockBalancer.IsBalanced;
+
+        public void AddFlippingLock(object @object)
+        {
+            flippingLockBalancer.AddObject(@object);
+        }
+
+        public void RemoveFlippingLock(object @object)
+        {
+            flippingLockBalancer.RemoveObject(@object);
+        }
+
         protected void Update()
         {
             var th = transformHandle;
@@ -17,6 +32,12 @@ namespace Agame.Run.Combat
         protected void LateUpdate()
         {
             flippableHits.Clear();
+            if (IsFlippingLocked)
+            {
+                return;
+            }
+
+            ///
             if (BuildStats.enabledMouseHover)
             {
                 FindHitsByHovering();
