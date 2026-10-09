@@ -30,7 +30,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Shop/` | Buy-count/upgrade UI logic — see below. |
 | `Skill tree/` | XNode-graph-driven skill tree — see below. |
 | `Stats/` | The `BuildAgent` stat-application framework shared by Skill Tree and Shop. |
-| `Dev/`, `Demo/`, `Compat/` | QA tools, Steam-demo-build UI, save-compat version holder. |
+| `Dev/`, `Demo/`, `Compat/` | QA tools (incl. `AutoMouse`, see Conventions & gotchas), Steam-demo-build UI, save-compat version holder. |
 | `ShortHands/` | `ShortHandManager.cs` — `{token}` text-replacement dictionary, currently empty/unused. |
 
 ## Rocks / Tiers / Pure Rocks
@@ -106,3 +106,4 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - Editor tooling is baked into runtime classes via `#if UNITY_EDITOR` + `[ContextMenu]` (`PrototypeManager.Validate`, `CurrencyConfigManager.Editor_Sync`, `SkillGraphNode.Editor_FillCosts`, `CashTiers.Editor_AutoColors`) — follow this pattern for new data validators rather than writing separate Editor-only scripts.
 - Pooling: rocks, tooltips, VFX all go through `FH.Core.Architecture.Pool` (`GeneralPoolMemberSimplified`, `TakeInstance`/`TryReturnToPoolAndDeactivate`) — don't `Instantiate`/`Destroy` pooled prefab types directly.
 - Partial-class convention (`RunData`, `Playfield`) — split large types by `TypeName_Aspect.cs`, don't grow one giant file.
+- **Gameplay code must not know about `AutoMouse`** (`Dev/AutoMouse.cs`, the dev toggle that plays the mouse for you). The dependency is one-way: `AutoMouse` uses gameplay APIs, and gameplay never references it. That means no `AutoMouse` fields, type checks, or AutoMouse-specific flags or branches. If `AutoMouse` needs a hook, add a general-purpose public API on the gameplay side that makes sense without it, like `PlayerCursor.AddFlippingLock`/`FindHits` or `ChestInstanceManager.ActiveChests`, and call it from `AutoMouse`.
