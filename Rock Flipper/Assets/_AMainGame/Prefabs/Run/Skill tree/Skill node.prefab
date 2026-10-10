@@ -1009,12 +1009,14 @@ MonoBehaviour:
   outputNodes: []
   skillTree: {fileID: 0}
   isSpecialEntry: 0
+  grade: 0
   isDecorative: 0
   overrider: {fileID: 0}
   iconImage: {fileID: 5203323267215111176}
   subIconImage: {fileID: 6129644047614719403}
   subIconWrapper: {fileID: 4366664554226524026}
   gradeText: {fileID: 1413548792539559826}
+  decorativeImage: {fileID: 0}
   toolTipPrototype: {fileID: 4863529024213764585, guid: 810b962cd1c5a420c81cf81404fe6e33, type: 3}
   toolTipTopRightAnchor: {fileID: 9114054168915920336}
   toolTipBottomRightAnchor: {fileID: 5283159504222857169}
@@ -1024,7 +1026,7 @@ MonoBehaviour:
   subIconBorderImage: {fileID: 3238532469284274791}
   notEnoughColor: {r: 0.21176471, g: 0.2509804, b: 0.28627452, a: 1}
   enoughColor: {r: 0.16647384, g: 0.734095, b: 0.8207547, a: 1}
-  maxedColor: {r: 0.69803923, g: 0.39215687, b: 0.13333334, a: 1}
+  maxedColor: {r: 0.8784314, g: 0.7411765, b: 0.08235294, a: 1}
   notEnoughIconAlpha: 0.3046875
   upgradeFxObject: {fileID: 9015942790880877301}
   upgradeFxImage: {fileID: 2665834157089844467}
@@ -1032,8 +1034,8 @@ MonoBehaviour:
   demoLimitedObject: {fileID: 5960540976040697384}
   editor_AttentionObject: {fileID: 6861576890274636807}
   connectors: []
-  normalConnectorSet: {fileID: 1334136067118190787}
-  decorativeConnectorSet: {fileID: 6044532714025309694}
+  toNormalConnectorSet: {fileID: 1334136067118190787}
+  toDecorativeConnectorSet: {fileID: 6044532714025309694}
 --- !u!222 &257156371372215318
 CanvasRenderer:
   m_ObjectHideFlags: 0
