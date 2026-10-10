@@ -24,15 +24,13 @@ namespace Agame.Run
                         "attentionFlag",
                         "icon",
                         "subIcon",
-                        "cashTier",
                         "buildAgent",
                         "buildValue",
                         "unlockingRequirement",
                         "minParentLevelEach",
-                        "costs_1",
-                        "costs_2",
-                        "costs_3",
-                        "costFormulas",
+                        "levelCount",
+                        "currency",
+                        "price",
                         "demoLimit",
                         "skillNodePrototype",
                         "titleGroup",
@@ -150,7 +148,7 @@ namespace Agame.Run
                 info += "Agent: " + (node.BuildAgent != null ? node.BuildAgent.name : "<NONE>") + "\r\n";
                 info += "Build value: " + node.BuildValue + "\r\n";
                 info += "Level: " + node.LevelCount + "\r\n";
-                info += "2nd + 3rd currency: " + node.SecondaryCurrency + "-" + node.ThirdCurrency + "\r\n";
+                info += "Currency: " + node.Currency + "\r\n";
 
                 ///
                 EditorGUILayout.HelpBox(info, MessageType.Info);

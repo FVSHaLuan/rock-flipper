@@ -19,11 +19,6 @@ namespace Agame.Run
             skillGraphNode.Editor_GetOutputNodes(outputNodes, GetComponentInParent<SkillTree>(true));
 
             ///
-            costs_1 = new List<CurrencyAmount>(graphNode.costs_1);
-            costs_2 = new List<CurrencyAmount>(graphNode.costs_2);
-            costs_3 = new List<CurrencyAmount>(graphNode.costs_3);
-
-            ///
             if (isDecorative)
             {
                 return;

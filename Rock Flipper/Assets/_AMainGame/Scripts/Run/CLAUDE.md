@@ -83,7 +83,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 ## Skill Tree
 
-- `Skill tree/Graph/SkillTreeGraph.cs`/`SkillGraphNode.cs` — **XNode**-based node-graph asset (edited via `Skill tree/Graph/Editor/*`): costs (`costs_1/2/3`, up to 3 currencies), `BuildAgent` ref + `buildValue`, unlock requirements, demo-build limits.
+- `Skill tree/Graph/SkillTreeGraph.cs`/`SkillGraphNode.cs` — **XNode**-based node-graph asset (edited via `Skill tree/Graph/Editor/*`): cost (`levelCount`, one `currency`, and a `TieredExponentialPrice` `price` evaluated per level by `GetNextLevelCost`), `BuildAgent` ref + `buildValue`, unlock requirements, demo-build limits.
 - `Skill tree/SkillNode.cs` — runtime `MonoBehaviour` counterpart of a graph node; click-to-upgrade, spends via `RunData.SpendCurrency`, unlocks children.
 - `Skill tree/SkillTree.cs` — owns 3 parallel graphs (`mainSkillTreeGraph`, `laserSkillTreeGraph`, `lightningSkillTreeGraph`).
 - `Skill tree/Special Crusher Configs/` — a **branching alternate sub-tree mechanic** ("Special Crusher": `SpecialCrusherId { Demo, None, Laser, Lightning }`, `SkillTree.SetActiveSpecialTree`). Currently only 2 variants exist. Not connected to the `Combat/Monoliths/` stub.
@@ -103,7 +103,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 ## Conventions & gotchas
 
-- Editor tooling is baked into runtime classes via `#if UNITY_EDITOR` + `[ContextMenu]` (`PrototypeManager.Validate`, `CurrencyConfigManager.Editor_Sync`, `SkillGraphNode.Editor_FillCosts`, `CashTiers.Editor_AutoColors`) — follow this pattern for new data validators rather than writing separate Editor-only scripts.
+- Editor tooling is baked into runtime classes via `#if UNITY_EDITOR` + `[ContextMenu]` (`PrototypeManager.Validate`, `CurrencyConfigManager.Editor_Sync`, `SkillGraphNode.Editor_LogCosts`, `CashTiers.Editor_AutoColors`) — follow this pattern for new data validators rather than writing separate Editor-only scripts.
 - Pooling: rocks, tooltips, VFX all go through `FH.Core.Architecture.Pool` (`GeneralPoolMemberSimplified`, `TakeInstance`/`TryReturnToPoolAndDeactivate`) — don't `Instantiate`/`Destroy` pooled prefab types directly.
 - Partial-class convention (`RunData`, `Playfield`) — split large types by `TypeName_Aspect.cs`, don't grow one giant file.
 - **Gameplay code must not know about `AutoMouse`** (`Dev/AutoMouse.cs`, the dev toggle that plays the mouse for you). The dependency is one-way: `AutoMouse` uses gameplay APIs, and gameplay never references it. That means no `AutoMouse` fields, type checks, or AutoMouse-specific flags or branches. If `AutoMouse` needs a hook, add a general-purpose public API on the gameplay side that makes sense without it, like `PlayerCursor.AddFlippingLock`/`FindHits` or `ChestInstanceManager.ActiveChests`, and call it from `AutoMouse`.

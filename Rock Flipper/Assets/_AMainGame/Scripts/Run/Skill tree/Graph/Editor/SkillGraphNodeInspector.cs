@@ -41,9 +41,9 @@ namespace Agame.Run
             ///
             using (new EditorGUI.DisabledGroupScope(skillGraphNode.IsDecorative))
             {
-                if (GUILayout.Button("Fill costs", GUILayout.Height(40)))
+                if (GUILayout.Button("Log costs", GUILayout.Height(40)))
                 {
-                    skillGraphNode.Editor_FillCosts();
+                    skillGraphNode.Editor_LogCosts();
                 }
             }
 

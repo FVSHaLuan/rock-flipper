@@ -50,13 +50,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: d23ab68f9157b424eac43b74aacb3b93, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-8783246194474991710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,13 +107,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1784791158015609185, guid: d0dc862140226f941bd87616b2878aa6, type: 3}
   buildValue: 0.2
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-7951454483246537858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,31 +161,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 3b2809b7699bef442a9404bfb7c42d00, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-7897297671128024798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,13 +215,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2730550051412, guid: 6f52895c04c33c65aad02f2b2534106d, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-7525168557237096116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,13 +272,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-7420654112859997324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,13 +323,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2867417085295502336, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-6674332998385890042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,13 +380,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 14071385909965, guid: f37d4d3bcd7130fdfb3029f6d83b2fa2, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-6468107650215265525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,31 +440,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7785889712214016177, guid: e797bac234c0432439f9e37bec929b2a, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-6338184287948210066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,13 +497,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1279933433069, guid: fc268fe73d7991563f09726b7e7e9732, type: 3}
   buildValue: 0.2
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-6214745156599126537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,31 +557,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 12259595726027, guid: 45a0c28ade196735b507d15966843419, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-5442355391896774071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,17 +611,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1554780910028234844, guid: 6d8b3c0ed83ab924f900bc4d87808099, type: 3}
   buildValue: 10
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-5281263294261801891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,13 +662,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 8761055384202003583, guid: dca18381160f1c04f9b780957beb7e6b, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-5280188213446210041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,13 +722,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 6383707989917667417, guid: 9fde276c6698d41429db88f22def70ee, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-5147559459918421793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,31 +785,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 5098320305232, guid: d25b8cfc53a2c1c11440dfd56fd7d890, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4978227826005627924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,13 +839,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 26305293075113, guid: 6c3198000b0c29e3610b634f40241ae1, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4968184747821918782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,13 +890,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 5383652418559783947, guid: 2404066b6d16f0e44a78e3842e7d68dc, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4929591552502062245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,13 +944,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 12219726439246, guid: 97b03d541bac785f2cc1e6d14b456f6f, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4888477715943952057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,13 +1001,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 0b2efaf3ef5b2fd4aac5ade7f7488a3c, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4620618385319408184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,13 +1058,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 4389e468d4f7bca41a2a12efb9377a9c, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4163678286576885277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,13 +1115,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 9bab76ff753f8b64bb09d209d4a18c87, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4136169015872291085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,31 +1175,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 5675730808064, guid: ff3c326e99dee64d5fae8b8909719093, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4098124638672023871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,31 +1235,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7382554735492, guid: b9165f611fb9e648187f6343d38472db, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-2531014852363880603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,17 +1292,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 3547234402766036406, guid: 93a69dd6f55eaa144a734e2e7f073673, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-1834753400696216170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,13 +1343,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2722674040307483464, guid: 2ddb335f7df753141b9942320af13b0a, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-1756804810699808002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,17 +1400,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1208794953138583229, guid: 287425791d2076f4e9fb4f646b674909, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-1177570503993797864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,31 +1460,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 21264572361568, guid: 46ac560c5170d9e089e14f23ca357a73, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-471263998860530179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1652,13 +1514,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1464516895700, guid: de0136571d0c8b4c30bd516cf75470ee, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1781,13 +1643,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 8619025691418994321, guid: 6ded4a9b6274c8f429edfbfa961edbf3, type: 3}
   buildValue: 0.2
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &360477713891578472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1832,13 +1694,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1946088793418438589, guid: 5c5be7101a5abc540bbb72cec3a883d5, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &809505434402096920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,13 +1751,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: -3273421152362287426, guid: fd7dce46c9af5aa4e9eadd515975b7fa, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &1371475079404724768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1943,13 +1805,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 8572412460058, guid: 72da9cde0183f4560304dafbbb7b4956, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &1848818967529400550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,13 +1862,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 23553590355384, guid: 7a56aaad88453c56d0b158f6d6633f47, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &2270611202772109512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,31 +1919,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 6102141854654, guid: 005e5582bcc9f3dd33a00ec971605851, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &2299989078838170068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2132,13 +1976,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: 9e9aa8b979e11bd459fbf4f6c11b75a3, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &2375330221305776675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2183,13 +2027,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: 110de14ea1ddcbd47b99c0102fd55d1d, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &3442198302497414556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2243,13 +2087,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 17053646723936, guid: 2d856b6175980a675ea18212425a8cca, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &3449549515527872826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2303,13 +2147,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: -350137931380787856, guid: d3e70e6d3aabd5048a46dcafd56281a7, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &3463417807162663264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2360,13 +2204,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1692745882771272655, guid: 385835ae381ed274c93188be63a8f870, type: 3}
   buildValue: 0.2
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &4876357867273730795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,31 +2264,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 683687454391888099, guid: 21124c1bd54c40145bea73c81e99f87b, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &5352181967948316995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,31 +2327,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 4195549556207, guid: d73b30568b054bd6dc965a18835bcfc3, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1.5
 --- !u!114 &5402007834992612928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2573,13 +2381,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 10228540997247, guid: f01444f5a0fea20cf2ddb29e9ea4e4b9, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &5938386169034562701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2630,13 +2438,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 5aab55553ccf94749b3d1f880e5c3f1d, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &5960043599096181927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2687,31 +2495,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 31800869903227, guid: 76b7fe9828ba4b3d5f91da6f94a3f751, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &6704568998710670713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2756,13 +2546,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1220408018551060172, guid: 4527d34da4e2c2640ab22e68db5d12e6, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &6916435700911634253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,31 +2609,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 11627510069735, guid: 4b9b4ae354c7588824bd39b95e38a253, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &7208314523899227332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2894,13 +2666,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 14669033888569, guid: f754d022145ea8e51813f926f86c0499, type: 3}
   buildValue: 0.2
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &7332991121257117244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2948,17 +2720,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1707816729240837852, guid: e44baff445c376546a4c0e3eba09b63d, type: 3}
   buildValue: 10
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &7756721122385284476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3006,17 +2774,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1554780910028234844, guid: cc3c289f9ee5df0498488693247f9759, type: 3}
   buildValue: 10
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &8091658075634069737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,13 +2831,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &8186401793209345861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3124,17 +2888,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: -8572537087953257832, guid: 69ff01689ec2b304a94a039d11ef05e3, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &8213078786738054279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3185,13 +2945,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 23556871576253, guid: 613dabe6be687c579e41a91eab1cf416, type: 3}
   buildValue: 0.2
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &8544577117764699940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3245,31 +3005,13 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 1267467975083073632, guid: 19e056251e24f4f40af82c48ba40d478, type: 3}
   buildValue: 0.1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &9008576686679178563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3320,10 +3062,10 @@ MonoBehaviour:
   demoLimit: -1
   buildAgent: {fileID: 7660703132443407574, guid: a407c26ffcf42074ca8a6a605252227d, type: 3}
   buildValue: 1
-  cashTier: 0
-  costs_1:
-  - currency: 0
-    amount: 1
-  costs_2: []
-  costs_3: []
-  costFormulas: []
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1

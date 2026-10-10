@@ -27,11 +27,6 @@ namespace Agame.Run
         private Vector2Int nodePosition;
 
         [Space]
-        private List<CurrencyAmount> costs_1;
-        private List<CurrencyAmount> costs_2;
-        private List<CurrencyAmount> costs_3;
-
-        [Space]
         [SerializeField, ReadOnly]
         private List<SkillNode> outputNodes = new List<SkillNode>();
         #endregion From the graph
@@ -118,7 +113,6 @@ namespace Agame.Run
         private SkillNodeToolTip activeToolTip;
         private SkillNodeState state;
         private string description;
-        private int currencyCount;
         private float lastTimeHandledClick;
         private string cachedNodeId;
 
@@ -186,7 +180,7 @@ namespace Agame.Run
                 }
 
                 ///
-                return costs_1 == null ? 0 : costs_1.Count;
+                return graphNode.LevelCount;
             }
         }
         public bool IsMaxed => Level >= LevelCount;
@@ -323,16 +317,7 @@ namespace Agame.Run
         private void Init(bool resetState)
         {
             ///
-            costs_1 = new List<CurrencyAmount>();
-            costs_2 = new List<CurrencyAmount>();
-            costs_3 = new List<CurrencyAmount>();
-            graphNode.CopyCosts(costs_1, costs_2, costs_3);
-
-            ///
             state = resetState ? new SkillNodeState() : RunData.GetSkillNodeState(NodeId);
-
-            ///
-            CountCurrencies();
 
             ///
             if (isDecorative)
@@ -348,19 +333,6 @@ namespace Agame.Run
 
             ///
             upgradeFxImage.color = iconImage.color;
-        }
-
-        private void CountCurrencies()
-        {
-            currencyCount = 1;
-            if (costs_2 != null && costs_2.Count > 0)
-            {
-                currencyCount++;
-            }
-            if (costs_3 != null && costs_3.Count > 0)
-            {
-                currencyCount++;
-            }
         }
 
         protected void OnDisable()
@@ -383,26 +355,6 @@ namespace Agame.Run
             RunData.OnCurrencyValueModified += RunData_OnCurrencyValueModified;
         }
 
-        private bool CostsContain(Currency currency)
-        {
-            if (costs_1[0].currency == currency)
-            {
-                return true;
-
-            }
-            if (costs_2 != null && costs_2.Count > 0 && costs_2[0].currency == currency)
-            {
-                return true;
-            }
-            if (costs_3 != null && costs_3.Count > 0 && costs_3[0].currency == currency)
-            {
-                return true;
-            }
-
-            ///
-            return false;
-        }
-
         private void RunData_OnCurrencyValueModified(Currency currency)
         {
             ///
@@ -412,7 +364,7 @@ namespace Agame.Run
             }
 
             ///
-            if (CostsContain(currency))
+            if (graphNode.Currency == currency)
             {
                 UpdateLevelRelatedVisuals();
             }
@@ -706,38 +658,9 @@ namespace Agame.Run
             }
         }
 
-        private List<CurrencyAmount> GetCostList(int index)
-        {
-            switch (index)
-            {
-                case 0: return costs_1;
-                case 1: return costs_2;
-                case 2: return costs_3;
-                default:
-                    throw new System.NotImplementedException();
-            }
-        }
-
         private bool Spend()
         {
-            var costIndex = GetNextLevelCostIndex();
-
-            ///
-            if (!RunData.SpendCurrency(costs_1.GetItemWithClampedIndex(costIndex)))
-            {
-                return false;
-            }
-            if (costs_2 != null && costs_2.Count > 0 && !RunData.SpendCurrency(costs_2.GetItemWithClampedIndex(costIndex)))
-            {
-                return false;
-            }
-            if (costs_3 != null && costs_3.Count > 0 && !RunData.SpendCurrency(costs_3.GetItemWithClampedIndex(costIndex)))
-            {
-                return false;
-            }
-
-            ///
-            return true;
+            return RunData.SpendCurrency(GetNextLevelCost());
         }
 
         private void DisplayConnectorsToActivatedOutputNodes()
@@ -911,9 +834,9 @@ namespace Agame.Run
             return totalParentLevel >= graphNode.UnlockingRequirement;
         }
 
-        private int GetNextLevelCostIndex()
+        private CurrencyAmount GetNextLevelCost()
         {
-            return state.level;
+            return graphNode.GetNextLevelCost(state.level);
         }
 
         public bool IsEnoughCurrencyToLevelUp()
@@ -937,24 +860,7 @@ namespace Agame.Run
             }
 
             ///
-            var costIndex = GetNextLevelCostIndex();
-
-            ///
-            if (!RunData.IsEnough(costs_1.GetItemWithClampedIndex(costIndex)))
-            {
-                return false;
-            }
-            if (costs_2 != null && costs_2.Count > 0 && !RunData.IsEnough(costs_2.GetItemWithClampedIndex(costIndex)))
-            {
-                return false;
-            }
-            if (costs_3 != null && costs_3.Count > 0 && !RunData.IsEnough(costs_3.GetItemWithClampedIndex(costIndex)))
-            {
-                return false;
-            }
-
-            ///
-            return true;
+            return RunData.IsEnough(GetNextLevelCost());
         }
 
         public string GetCostString()
@@ -976,34 +882,19 @@ namespace Agame.Run
             }
 
             ///
-            var costIndex = GetNextLevelCostIndex();
+            var currencyAmount = GetNextLevelCost();
+            var currencyConfig = entry.currencyConfigManager.GetConfig(currencyAmount.currency);
+            var currencyValue = RunData.GetCurrencyValue(currencyAmount.currency);
+            var isEnough = currencyValue >= currencyAmount.amount;
 
             ///
-            for (int i = 0; i < currencyCount; i++)
+            if (isEnough)
             {
-                var costList = GetCostList(i);
-                var currencyAmount = costList.GetItemWithClampedIndex(costIndex);
-                var currency = currencyAmount.currency;
-                var currencyConfig = entry.currencyConfigManager.GetConfig(currency);
-                var currencyValue = RunData.GetCurrencyValue(currency);
-                var isEnough = currencyValue >= currencyAmount.amount;
-
-                ///
-                if (i > 0)
-                {
-                    s += "\r\n";
-                }
-                ;
-
-                ///
-                if (isEnough)
-                {
-                    s += string.Format("{0} {1}/{2}", currencyConfig.CurrencyName, currencyValue.ToLargeNumberString(), currencyAmount.amount.ToLargeNumberString());
-                }
-                else
-                {
-                    s += string.Format("{0} <color=#{3}>{1}/{2}</color>", currencyConfig.CurrencyName, currencyValue.ToLargeNumberString(), currencyAmount.amount.ToLargeNumberString(), ColorUtility.ToHtmlStringRGB(VisualDefinitions.Instance.notEnoughTextColor));
-                }
+                s += string.Format("{0} {1}/{2}", currencyConfig.CurrencyName, currencyValue.ToLargeNumberString(), currencyAmount.amount.ToLargeNumberString());
+            }
+            else
+            {
+                s += string.Format("{0} <color=#{3}>{1}/{2}</color>", currencyConfig.CurrencyName, currencyValue.ToLargeNumberString(), currencyAmount.amount.ToLargeNumberString(), ColorUtility.ToHtmlStringRGB(VisualDefinitions.Instance.notEnoughTextColor));
             }
 
             ///
