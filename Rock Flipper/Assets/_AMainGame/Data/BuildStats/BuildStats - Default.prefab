@@ -55,12 +55,14 @@ MonoBehaviour:
   rock_P0:
     unlocked: 1
     count: 1
-    maxCount: 10
-    maxHp: 5
+    maxCount: 50
+    maxHp: 15
     purity: 0
     landingCash: 1
     breakingCashMultiplier: 2
     purityCashMultiplier: 2
+    criticalLandingChance: 0
+    criticalCashMultiplier: 2
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
@@ -74,6 +76,8 @@ MonoBehaviour:
     landingCash: 1
     breakingCashMultiplier: 2
     purityCashMultiplier: 3
+    criticalLandingChance: 0
+    criticalCashMultiplier: 1.5
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
@@ -87,6 +91,8 @@ MonoBehaviour:
     landingCash: 1
     breakingCashMultiplier: 2
     purityCashMultiplier: 3
+    criticalLandingChance: 0
+    criticalCashMultiplier: 1.5
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
@@ -100,10 +106,36 @@ MonoBehaviour:
     landingCash: 1
     breakingCashMultiplier: 2
     purityCashMultiplier: 3
+    criticalLandingChance: 0
+    criticalCashMultiplier: 1.5
     landingCooldown: 0.5
     chestLevelExp: 1
     levelExp: 1
     flippingSpeedFactor: 1
+  globalCriticalLandingChance: 0
+  globalCriticalCashMultiplier: 0
+  bouncyRockBounceChance: 0.1
+  enabledBouncyRockRebound: 0
+  restlessRockSelfFlipDelay: 5
+  restlessRockSelfFlipChance: 0.5
+  shockwaveRockShockwaveChance: 0.2
+  shockwaveRockShockwaveRadius: 0.5
+  shockwaveRockMaxShockwaveFlips: 3
+  monolith_LII:
+    unlocked: 0
+  monolith_LIV:
+    unlocked: 0
+  monolith_LVI:
+    unlocked: 0
+  monolith_LVIII:
+    unlocked: 0
+  monolith_LX:
+    unlocked: 0
+  monolith_LXII:
+    unlocked: 0
+  prismShootingInterval: 5
+  prismMinBeamCount: 1
+  prismMaxBeamCount: 1
   chest_Common:
     weight: 100
     maxHP: 2
@@ -119,6 +151,7 @@ MonoBehaviour:
   chest_Unique:
     weight: 100
     maxHP: 2
+  flipperBotsEnabled: 0
   flipperBotMaxCount: 5
   flipperBotCount: 0
   flipperBotFlippingInterval: 2
