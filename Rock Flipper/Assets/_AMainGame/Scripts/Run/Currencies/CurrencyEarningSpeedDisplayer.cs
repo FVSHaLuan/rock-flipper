@@ -11,7 +11,8 @@ namespace Agame.Run.Combat
 
         protected override double GetCurrentValue()
         {
-            return System.Math.Round(RunEntry.Instance.cashEarningTracker.EarningSpeed);
+            var speed = RunEntry.Instance.cashEarningTracker.EarningSpeed;
+            return speed < 10 ? speed : System.Math.Round(speed);
         }
 
         protected override string GetString(double value)
