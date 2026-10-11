@@ -26,6 +26,7 @@
   * [Mouse Stats](Stats/Mouse%20Stats.md)
   * [Rock Stats](Stats/Rock%20Stats.md)
 * **Content** — instances of a system that differ in rules
+  * [Items](Content/Items.md) — (empty)
   * [Monoliths](Content/Monoliths.md)
   * [Rock Tiers](Content/Rock%20Tiers.md)
   * [Story](Content/Story.md) — the game's story (empty)
