@@ -20,7 +20,7 @@ namespace Agame.Run.Shop
         [SerializeField]
         private UnifiedText levelText;
 
-        private ItemData itemData;
+        private Item item;
 
         protected void Start()
         {
@@ -29,20 +29,20 @@ namespace Agame.Run.Shop
 
         private void RunData_OnItemStateChanged(ItemState obj)
         {
-            if (itemData != null && obj.itemId == itemData.ItemId)
+            if (item != null && obj.itemId == item.ItemId)
             {
                 ViewItemState();
             }
         }
 
-        public void SetItemData(ItemData itemData)
+        public void SetItem(Item item)
         {
             ///
-            this.itemData = itemData;
+            this.item = item;
 
             ///
-            itemIconImage.sprite = itemData.ItemIcon;
-            itemIconImage.color = itemData.Rarity.GetForegroundColor();
+            itemIconImage.sprite = item.ItemIcon;
+            itemIconImage.color = item.Rarity.GetForegroundColor();
 
             ///
             ViewItemState();
@@ -50,8 +50,8 @@ namespace Agame.Run.Shop
 
         public void ViewItemState()
         {
-            var itemState = RunData.GetItemState(itemData.ItemId);
-            var maxLevel = gameBalance.GetItemMaxLevel(itemData.Rarity);
+            var itemState = RunData.GetItemState(item.ItemId);
+            var maxLevel = gameBalance.GetItemMaxLevel(item.Rarity);
 
             ///
             if (itemState.level >= maxLevel)
@@ -75,7 +75,7 @@ namespace Agame.Run.Shop
                 lockedItemIcon.SetActive(false);
                 itemIconImage.gameObject.SetActive(true);
                 levelText.SetText($"Lv. {itemState.level}");
-                var expRequired = gameBalance.GetRequiredExpForNextItemLevel(itemData.Rarity, itemState.level);
+                var expRequired = gameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
                 progressBar.SetValue((float)itemState.exp / expRequired);
             }
         }

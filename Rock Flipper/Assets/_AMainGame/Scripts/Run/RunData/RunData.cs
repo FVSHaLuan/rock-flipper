@@ -512,8 +512,8 @@ namespace Agame
             var newLevel = itemState.level;
 
             ///
-            var itemData = RunEntry.Instance.itemDataManager.GetItemById(itemId);
-            var rarity = itemData.Rarity;
+            var item = RunEntry.Instance.itemDataManager.GetItemById(itemId);
+            var rarity = item.Rarity;
 
             ///
             var gameBalance = Entry.Instance.gameBalance;

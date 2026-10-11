@@ -6,71 +6,131 @@ namespace Agame.Run.Shop
 {
     public class ItemDataManager : ScriptableObjectWithInit
     {
-        [SerializeField, UnityCustomArrayElementHeader]
-        private List<ItemData> itemDataList = new List<ItemData>();
+        [SerializeField]
+        private List<Item> itemPrefabs = new List<Item>();
 
         [System.NonSerialized]
-        private Dictionary<ChestRarity, List<ItemData>> itemDataListByRarityDictionary;
+        private Dictionary<ChestRarity, List<Item>> itemListByRarityDictionary;
         [System.NonSerialized]
-        private Dictionary<string, ItemData> itemDataByIdDictionary;
+        private Dictionary<string, Item> itemByIdDictionary;
 
-        public int AllItemCount => itemDataList.Count;
+        public int AllItemCount => itemPrefabs.Count;
 
         protected override void Init()
         {
-            // fill the dictionary with the item data
-            itemDataListByRarityDictionary = new Dictionary<ChestRarity, List<ItemData>>();
-            itemDataByIdDictionary = new Dictionary<string, ItemData>();
-            foreach (var itemData in itemDataList)
+            ///
+#if UNITY_EDITOR
+            if (!Validate())
+            {
+                throw new System.Exception($"Validation failed in ItemDataManager: {name}");
+            }
+#endif
+
+            // fill the dictionaries with the item prefabs
+            itemListByRarityDictionary = new Dictionary<ChestRarity, List<Item>>();
+            itemByIdDictionary = new Dictionary<string, Item>();
+            foreach (var item in itemPrefabs)
             {
                 // Rarity lists
-                if (!itemDataListByRarityDictionary.ContainsKey(itemData.Rarity))
+                if (!itemListByRarityDictionary.ContainsKey(item.Rarity))
                 {
-                    itemDataListByRarityDictionary[itemData.Rarity] = new List<ItemData>();
+                    itemListByRarityDictionary[item.Rarity] = new List<Item>();
                 }
-                itemDataListByRarityDictionary[itemData.Rarity].Add(itemData);
+                itemListByRarityDictionary[item.Rarity].Add(item);
 
                 // ID dictionary
-                if (!itemDataByIdDictionary.ContainsKey(itemData.ItemId))
-                {
-                    itemDataByIdDictionary[itemData.ItemId] = itemData;
-                }
-                else
-                {
-                    Debug.LogError($"Duplicate item ID found: {itemData.ItemId}. Each item ID must be unique.");
-                }
+                itemByIdDictionary[item.ItemId] = item;
             }
 
             ///
             base.Init();
         }
 
-        public ItemData GetItemByIndex(int index)
+        public Item GetItemByIndex(int index)
         {
-            if (index < 0 || index >= itemDataList.Count)
+            if (index < 0 || index >= itemPrefabs.Count)
             {
-                Debug.LogError($"Index {index} is out of range for itemDataList.");
+                Debug.LogError($"Index {index} is out of range for itemPrefabs.");
                 return null;
             }
-            return itemDataList[index];
+            return itemPrefabs[index];
         }
 
-        public ItemData GetItemById(string itemId)
+        public Item GetItemById(string itemId)
         {
             ///
             TryInit();
 
             ///
-            ItemData itemData;
-            if (itemDataByIdDictionary.TryGetValue(itemId, out itemData))
+            Item item;
+            if (itemByIdDictionary.TryGetValue(itemId, out item))
             {
-                return itemData;
+                return item;
             }
             else
             {
-                throw new System.Exception($"Item with ID {itemId} not found in itemDataByIdDictionary.");
+                throw new System.Exception($"Item with ID {itemId} not found in itemByIdDictionary.");
             }
         }
+
+#if UNITY_EDITOR
+        [ContextMenu("Validate")]
+        private void Editor_Validate()
+        {
+            if (Validate())
+            {
+                Debug.Log($"ItemDataManager {name} is valid. {itemPrefabs.Count} items.");
+            }
+        }
+
+        private bool Validate()
+        {
+            bool isValid = true;
+
+            ///
+            HashSet<Item> uniqueItems = new HashSet<Item>();
+            Dictionary<string, Item> itemsById = new Dictionary<string, Item>();
+
+            ///
+            foreach (var item in itemPrefabs)
+            {
+                ///
+                if (item == null)
+                {
+                    Debug.LogError($"Item is null in ItemDataManager: {name}");
+                    isValid = false;
+                    continue;
+                }
+
+                ///
+                if (!uniqueItems.Add(item))
+                {
+                    Debug.LogError($"Duplicate item found in ItemDataManager: {name}. Item name: {item.name}", item);
+                    isValid = false;
+                    continue;
+                }
+
+                ///
+                if (string.IsNullOrEmpty(item.ItemId))
+                {
+                    Debug.LogError($"Item has an empty ID in ItemDataManager: {name}. Item name: {item.name}", item);
+                    isValid = false;
+                }
+                else if (itemsById.TryGetValue(item.ItemId, out var other))
+                {
+                    Debug.LogError($"Duplicate item ID found: {item.ItemId} ({other.name}, {item.name}). Each item ID must be unique.", item);
+                    isValid = false;
+                }
+                else
+                {
+                    itemsById[item.ItemId] = item;
+                }
+            }
+
+            ///
+            return isValid;
+        }
+#endif
     }
 
 }
