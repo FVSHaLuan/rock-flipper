@@ -16,7 +16,7 @@ namespace Agame.Run.Shop
         private void ViewItems()
         {
             ///
-            var itemDataManager = RunEntry.itemDataManager;
+            var itemManager = RunEntry.itemManager;
 
             // Initialize the item views with the corresponding item prefabs
             for (int i = 0; i < itemViews.Count; i++)
@@ -24,7 +24,7 @@ namespace Agame.Run.Shop
                 var itemView = itemViews[i];
 
                 ///
-                if (i >= itemDataManager.AllItemCount)
+                if (i >= itemManager.AllItemCount)
                 {
                     itemView.gameObject.SetActive(false);
                     continue;
@@ -32,7 +32,7 @@ namespace Agame.Run.Shop
 
                 ///
                 itemView.gameObject.SetActive(true);
-                var item = itemDataManager.GetItemByIndex(i);
+                var item = itemManager.GetItemByIndex(i);
                 itemView.SetItem(item);
             }
         }

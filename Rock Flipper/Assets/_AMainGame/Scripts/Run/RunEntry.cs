@@ -1,6 +1,7 @@
 using Agame.Run.Combat;
 using Agame.Run.Stats;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Agame.Run.Combat.Tutorials;
 using UnityEngine.InputSystem;
@@ -28,7 +29,8 @@ namespace Agame.Run
         private BuildStatsObject buildStatsTutorial;
         public ShortHandManager shortHandManager;
         public CombatSoundEffectManager combatSoundEffectManager;
-        public ItemDataManager itemDataManager;
+        [FormerlySerializedAs("itemDataManager")]
+        public ItemManager itemManager;
         public FlipperBotInstanceManager flipperBotInstanceManager;
 
         [Header("Combat")]

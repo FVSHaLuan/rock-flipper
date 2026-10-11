@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Agame.Run.Shop
 {
     /// <summary>
-    /// Root component of an item prefab. Each item is its own prefab, registered in <see cref="ItemDataManager"/>.
+    /// Root component of an item prefab. Each item is its own prefab, registered in <see cref="ItemManager"/>.
     /// The prefab is a data holder only; it is never spawned.
     /// </summary>
     public class Item : MonoBehaviour

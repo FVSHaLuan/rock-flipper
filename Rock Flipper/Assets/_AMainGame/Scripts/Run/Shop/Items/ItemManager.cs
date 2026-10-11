@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Agame.Run.Shop
 {
-    public class ItemDataManager : ScriptableObjectWithInit
+    public class ItemManager : ScriptableObjectWithInit
     {
         [SerializeField]
         private List<Item> itemPrefabs = new List<Item>();
@@ -22,7 +22,7 @@ namespace Agame.Run.Shop
 #if UNITY_EDITOR
             if (!Validate())
             {
-                throw new System.Exception($"Validation failed in ItemDataManager: {name}");
+                throw new System.Exception($"Validation failed in ItemManager: {name}");
             }
 #endif
 
@@ -79,7 +79,7 @@ namespace Agame.Run.Shop
         {
             if (Validate())
             {
-                Debug.Log($"ItemDataManager {name} is valid. {itemPrefabs.Count} items.");
+                Debug.Log($"ItemManager {name} is valid. {itemPrefabs.Count} items.");
             }
         }
 
@@ -97,7 +97,7 @@ namespace Agame.Run.Shop
                 ///
                 if (item == null)
                 {
-                    Debug.LogError($"Item is null in ItemDataManager: {name}");
+                    Debug.LogError($"Item is null in ItemManager: {name}");
                     isValid = false;
                     continue;
                 }
@@ -105,7 +105,7 @@ namespace Agame.Run.Shop
                 ///
                 if (!uniqueItems.Add(item))
                 {
-                    Debug.LogError($"Duplicate item found in ItemDataManager: {name}. Item name: {item.name}", item);
+                    Debug.LogError($"Duplicate item found in ItemManager: {name}. Item name: {item.name}", item);
                     isValid = false;
                     continue;
                 }
@@ -113,7 +113,7 @@ namespace Agame.Run.Shop
                 ///
                 if (string.IsNullOrEmpty(item.ItemId))
                 {
-                    Debug.LogError($"Item has an empty ID in ItemDataManager: {name}. Item name: {item.name}", item);
+                    Debug.LogError($"Item has an empty ID in ItemManager: {name}. Item name: {item.name}", item);
                     isValid = false;
                 }
                 else if (itemsById.TryGetValue(item.ItemId, out var other))
