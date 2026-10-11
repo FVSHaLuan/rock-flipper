@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc42e2160951c84ab2d85b300b8f4ec, type: 3}
   m_Name: ItemManager
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.ItemManager
-  itemPrefabs: []
+  itemPrefabs:
+  - {fileID: 4824376445780536566, guid: 2e07b446783d24a8a9d935db8a77681f, type: 3}
+  - {fileID: 2493861699991621404, guid: 4629365f08c824a1aa9ec5e4fdc81546, type: 3}
