@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemId
-      value: item_57be7b69
+      value: item_wallet
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemName

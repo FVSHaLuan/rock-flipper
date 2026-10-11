@@ -74,6 +74,29 @@ namespace Agame.Run.Shop
         }
 
 #if UNITY_EDITOR
+        /// <summary>
+        /// Whether the item prefab at <paramref name="itemAssetPath"/> is listed in any <see cref="ItemManager"/> asset.
+        /// </summary>
+        public static bool Editor_IsItemRegistered(string itemAssetPath)
+        {
+            foreach (var guid in UnityEditor.AssetDatabase.FindAssets($"t:{nameof(ItemManager)}"))
+            {
+                var manager = UnityEditor.AssetDatabase.LoadAssetAtPath<ItemManager>(UnityEditor.AssetDatabase.GUIDToAssetPath(guid));
+                if (manager == null)
+                {
+                    continue;
+                }
+                foreach (var item in manager.itemPrefabs)
+                {
+                    if (item != null && UnityEditor.AssetDatabase.GetAssetPath(item) == itemAssetPath)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
         [ContextMenu("Validate")]
         private void Editor_Validate()
         {
