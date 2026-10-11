@@ -2999,19 +2999,19 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 1267467975083073632, guid: 19e056251e24f4f40af82c48ba40d478, type: 3}
-  buildValue: 0.1
+  buildValue: 0.03
   levelCount: 10
   currency: 0
   price:
     cashTier: 0
     a: 0
-    b: 1
-    c: 1
+    b: 500
+    c: 3
 --- !u!114 &9008576686679178563
 MonoBehaviour:
   m_ObjectHideFlags: 0
