@@ -1,10 +1,16 @@
 # Items
 
-All [items](../Systems/Items.md) that differ in rules. No item is documented here yet.
+All [items](../Systems/Items.md) that differ in rules.
+
+| Item | Rarity | Effect |
+|---|---|---|
+| **Wallet** | Common | +[landing cash](../Systems/Rocks.md#flipping) |
+| **Spring** | Common | +flipping speed (see [Rock Stats](../Stats/Rock%20Stats.md)) |
 
 ## Decisions
 
 ## Open Questions
+* Do Wallet and Spring boost their stat for every rock tier, or only some?
 
 ## Parked Ideas
 Each effect scales with item level.
@@ -13,7 +19,6 @@ Each effect scales with item level.
 | Item | Effect |
 |---|---|
 | Pickaxe | −rock Max HP (minimum 1) |
-| Wallet | +landing cash |
 | Hammer | +breaking cash multiplier |
 | Dice | +critical landing chance |
 | Magnifying Glass | +critical cash multiplier |
@@ -25,7 +30,6 @@ Each effect scales with item level.
 | Battery | +Flipper Bot active duration |
 | Alarm Clock | −Flipper Bot inactive duration |
 | Sneakers | +Flipper Bot move speed |
-| Spring | +flipping speed |
 
 ### Uncommon
 | Item | Effect |

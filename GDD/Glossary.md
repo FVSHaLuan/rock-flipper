@@ -76,10 +76,12 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Skill level**: the level of a skill. → [Skill Tree](Systems/SkillTree.md#nodes)
 * **Skill Tree**: the system of nodes (skills) where most of the game's progression happens. → [Skill Tree](Systems/SkillTree.md)
 * **System Menu**: a screen opened from the side bar. *Not yet documented.* → [Main Screen](Screens/MainScreen.md#side-bar)
+* **Spring**: the Common item that increases flipping speed. → [Items](Content/Items.md)
 * **Star** (`ST`): the hard-to-earn currency, spent on a few rare upgrades. → [Currencies](Systems/Currencies.md)
 * **The Rift**: a black-hole-like circle at the center of the playfield. *WIP.* → [The Rift](Systems/TheRift.md)
 * **Tier**: a rock category (P0, P1, P2,...). → [Rocks](Systems/Rocks.md#tiers)
 * **Upgrade**: the general act of spending currencies to progress the game. → [Pillars](Pillars.md#core-loop)
+* **Wallet**: the Common item that increases landing cash. → [Items](Content/Items.md)
 
 ## Open Questions
 * None currently.
