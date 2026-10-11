@@ -111,6 +111,15 @@ namespace Agame.Run.Shop
                 }
 
                 ///
+                var originalSource = UnityEditor.PrefabUtility.GetCorrespondingObjectFromOriginalSource(item);
+                if (UnityEditor.PrefabUtility.GetPrefabAssetType(item.gameObject) != UnityEditor.PrefabAssetType.Variant
+                    || originalSource == null || originalSource.name != Item.ItemBasePrefabName)
+                {
+                    Debug.LogError($"Item is not a prefab variant of {Item.ItemBasePrefabName} in ItemManager: {name}. Item name: {item.name}", item);
+                    isValid = false;
+                }
+
+                ///
                 if (string.IsNullOrEmpty(item.ItemId))
                 {
                     Debug.LogError($"Item has an empty ID in ItemManager: {name}. Item name: {item.name}", item);

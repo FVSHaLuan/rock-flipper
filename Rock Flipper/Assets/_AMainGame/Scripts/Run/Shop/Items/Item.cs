@@ -6,10 +6,12 @@ namespace Agame.Run.Shop
     /// <summary>
     /// Root component of an item prefab. Each item is its own prefab, registered in <see cref="ItemManager"/>.
     /// The prefab is a data holder only; it is never spawned.
+    /// Every production item prefab is a variant of the <see cref="ItemBasePrefabName"/> prefab.
     /// </summary>
     public class Item : MonoBehaviour
     {
         public const string ItemIdPrefix = "item_";
+        public const string ItemBasePrefabName = "ItemBase";
 
         [SerializeField]
         private ChestRarity rarity;
@@ -38,7 +40,23 @@ namespace Agame.Run.Shop
 
         private void TryAssignNewItemId()
         {
-            if (string.IsNullOrEmpty(itemId))
+            // only prefab assets (on disk or open in prefab mode) get an id, never scene instances
+            bool isPrefabAsset = UnityEditor.PrefabUtility.IsPartOfPrefabAsset(this)
+                || UnityEditor.SceneManagement.PrefabStageUtility.GetPrefabStage(gameObject) != null;
+            if (!isPrefabAsset)
+            {
+                return;
+            }
+
+            // the base prefab has no source and keeps an empty id;
+            // a variant needs its own id, not the one inherited from its source
+            var source = UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource(this);
+            if (source == null)
+            {
+                return;
+            }
+
+            if (string.IsNullOrEmpty(itemId) || itemId == source.itemId)
             {
                 Editor_AssignNewItemId();
             }
