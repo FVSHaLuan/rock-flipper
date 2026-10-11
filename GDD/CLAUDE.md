@@ -113,6 +113,7 @@ This GDD focuses on the concepts and rules, so
   - "This upgrade decreases Max HP", "This upgrade increases critical landing chance" are enough and correct, do not specify how much it decreases or increases.
   - "When HP reaches 0, the rock breaks and earn a multiplied income", the exact number here is needed because it's part of the rule.
 - Do not propose or ask about sound, and graphic or anything else that doesn't matter to the concepts and rules.
-- Do not open questions about content quantity, e.g. "How many backgrounds/items are there?". How much content the game has doesn't affect the concepts or rules.
-- General test before documenting anything or adding an Open Question: **would the answer change how a concept or rule works?** If not (content amount, exact tuning values, naming of individual content pieces, presentation, etc.), leave it out.
+- Don't raise content quantity on your own (e.g. "How many backgrounds/items are there?") as long as it doesn't block the current task: no Open Questions, questions in chat or written counts about it. How much content the game has doesn't affect the concepts or rules.
+  - Exception: when I ask you to document content quantity or to suggest it, do it as normal. Content quantity I asked you to document is body text.
+- General test before documenting anything or adding an Open Question on your own: **would the answer change how a concept or rule works?** If not (content amount, exact tuning values, naming of individual content pieces, presentation, etc.), leave it out.
 - This test also applies to what's already written: when editing a doc, remove existing Open Questions that fail it. For [body text](#body-text) that fails it, ask me first.

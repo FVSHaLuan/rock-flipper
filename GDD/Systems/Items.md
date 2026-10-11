@@ -8,6 +8,15 @@
 * Items use the same [rarity](Chests.md#rarity) system as chests. Unique items only drop from Unique chests.
 * Rarity is an intrinsic property of an item, not a variant: each item has exactly one rarity (e.g. the Sword is Uncommon; there is no Common Sword or Rare Sword).
 * When an item is found, the player earns [cash](Currencies.md); rarer items earn more cash.
+* Number of distinct items per rarity:
+
+| Rarity | Items |
+|---|---|
+| Common | 14 |
+| Uncommon | 9 |
+| Rare | 7 |
+| Epic | 5 |
+| Unique | 5 |
 
 ## Item Progression
 * Each item has an **item level** and an **item level bar**.
