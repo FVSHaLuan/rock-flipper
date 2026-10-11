@@ -348,6 +348,12 @@ namespace Agame
             DiscoverCurrency(currency);
 
             ///
+            if (amount > 0)
+            {
+                RegisterCurrencyAddedThisFrame(currency, amount);
+            }
+
+            ///
             InvokeCurrencyValueModified(currency);
         }
 

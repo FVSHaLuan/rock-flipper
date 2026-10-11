@@ -4,9 +4,8 @@ namespace Agame.Run
 {
     /// <summary>
     /// Tracks how much of a currency is earned and computes the earning speed (amount per second)
-    /// over a sliding time window. Earnings are the positive net change of the currency value per frame
-    /// (via <see cref="RunData.OnCurrencyValueModifiedThisFrame"/>), so spending doesn't lower the speed,
-    /// but spending and earning in the same frame cancel each other out.
+    /// over a sliding time window. Earnings are only the amounts added to the currency
+    /// (via <see cref="RunData.OnCurrencyAddedThisFrame"/>), so spending never affects them.
     /// The clock only advances while this component is enabled, following <see cref="timeScaleMode"/>
     /// (so with the default scaled time, pausing freezes the window instead of dragging the speed down).
     /// </summary>
@@ -27,7 +26,6 @@ namespace Agame.Run
         private long currentBucketIndex;
         private float trackedTime;
         private double totalEarned;
-        private double lastCurrencyValue;
         private double earningSpeed;
         private float earningSpeedRefreshTime;
 
@@ -66,17 +64,13 @@ namespace Agame.Run
 
         protected void OnEnable()
         {
-            ///
-            lastCurrencyValue = RunData.GetCurrencyValue(currency);
-
-            ///
-            RunData.OnCurrencyValueModifiedThisFrame += RunData_OnCurrencyValueModifiedThisFrame;
+            RunData.OnCurrencyAddedThisFrame += RunData_OnCurrencyAddedThisFrame;
             StateManager.OnBeforeCombatFromPrestige += StateManager_OnBeforeCombatFromPrestige;
         }
 
         protected void OnDisable()
         {
-            RunData.OnCurrencyValueModifiedThisFrame -= RunData_OnCurrencyValueModifiedThisFrame;
+            RunData.OnCurrencyAddedThisFrame -= RunData_OnCurrencyAddedThisFrame;
             StateManager.OnBeforeCombatFromPrestige -= StateManager_OnBeforeCombatFromPrestige;
         }
 
@@ -99,7 +93,6 @@ namespace Agame.Run
             currentBucketIndex = 0;
             trackedTime = 0;
             totalEarned = 0;
-            lastCurrencyValue = RunData.GetCurrencyValue(currency);
             earningSpeed = 0;
             earningSpeedRefreshTime = 0;
         }
@@ -109,21 +102,10 @@ namespace Agame.Run
             ResetTracking();
         }
 
-        private void RunData_OnCurrencyValueModifiedThisFrame(Currency modifiedCurrency)
+        private void RunData_OnCurrencyAddedThisFrame(Currency addedCurrency, double earned)
         {
             ///
-            if (modifiedCurrency != currency)
-            {
-                return;
-            }
-
-            ///
-            var currencyValue = RunData.GetCurrencyValue(currency);
-            var earned = currencyValue - lastCurrencyValue;
-            lastCurrencyValue = currencyValue;
-
-            ///
-            if (earned <= 0)
+            if (addedCurrency != currency)
             {
                 return;
             }

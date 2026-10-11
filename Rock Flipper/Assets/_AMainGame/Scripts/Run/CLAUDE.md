@@ -61,7 +61,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 ## RunData (per-run save)
 
 - `RunData/RunData.cs` — `[Serializable] partial class`: currency values, tutorial/prestige flags, skill node states, builder-button levels, background unlocks, play time.
-- **Convention: split by partial file** — `RunData_Serialization.cs` (play-time bookkeeping), `RunData_FrameUpdate.cs` (batches `OnCurrencyValueModifiedThisFrame`), `RunData_Correction.cs` (save-migration hook, currently a no-op `CorrectData`). **Extend `RunData` via a new `RunData_<Aspect>.cs` partial rather than growing the main file.**
+- **Convention: split by partial file** — `RunData_Serialization.cs` (play-time bookkeeping), `RunData_FrameUpdate.cs` (batches `OnCurrencyValueModifiedThisFrame`, and `OnCurrencyAddedThisFrame` with the summed positive `AddCurrency` amounts), `RunData_Correction.cs` (save-migration hook, currently a no-op `CorrectData`). **Extend `RunData` via a new `RunData_<Aspect>.cs` partial rather than growing the main file.**
 - `RunData/RunDataObject.cs` — `WritableScriptableObject<RunData>` (the actual save-slot asset). `RunDataManager.cs` — 4 fixed save slots.
 
 ## Stats / BuildAgent framework (shared by Skill Tree + Shop)
