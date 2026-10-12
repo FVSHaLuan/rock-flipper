@@ -1,10 +1,12 @@
 using Agame.Run.Combat;
+using Agame.UI.ToolTips;
 using GD;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Agame.Run.Shop
 {
+    [RequireComponent(typeof(ToolTipTriggerer))]
     public class ItemView : ExtendedMonoBehaviourRun
     {
         [SerializeField]
@@ -21,6 +23,19 @@ namespace Agame.Run.Shop
         private UnifiedText levelText;
 
         private Item item;
+        private ToolTipTriggerer toolTipTriggerer;
+
+        private ToolTipTriggerer ToolTipTriggerer
+        {
+            get
+            {
+                if (toolTipTriggerer == null)
+                {
+                    toolTipTriggerer = GetComponent<ToolTipTriggerer>();
+                }
+                return toolTipTriggerer;
+            }
+        }
 
         protected void Start()
         {
@@ -78,6 +93,43 @@ namespace Agame.Run.Shop
                 var expRequired = gameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
                 progressBar.SetValue((float)itemState.exp / expRequired);
             }
+
+            ///
+            UpdateToolTipContent(itemState, maxLevel);
+        }
+
+        private void UpdateToolTipContent(ItemState itemState, int maxLevel)
+        {
+            ///
+            if (itemState.level == 0 && itemState.exp == 0)
+            {
+                ToolTipTriggerer.MainText = "<b>???</b>\nNot found yet.";
+                return;
+            }
+
+            ///
+            var rarityColor = item.Rarity.GetForegroundColor();
+            var content = $"<b>{rarityColor.WrapText(item.ItemName)}</b>\n";
+            content += $"{rarityColor.WrapText(item.Rarity)}\n";
+            content += itemState.level >= maxLevel ? $"Lv. {itemState.level} (maxed)\n" : $"Lv. {itemState.level}\n";
+
+            ///
+            var skillDescriptor = item.BuildAgent != null ? item.BuildAgent.GetComponent<SkillDescriptor>() : null;
+            if (skillDescriptor != null)
+            {
+                content += $"\n{skillDescriptor.GetDescription(item.BuildValue)}";
+                var extraDescription = skillDescriptor.GetExtraDescription();
+                if (!string.IsNullOrWhiteSpace(extraDescription))
+                {
+                    content += $"\n{extraDescription}";
+                }
+            }
+
+            ///
+            content += "\n\n<i>Effects scale with the item's level.</i>";
+
+            ///
+            ToolTipTriggerer.MainText = content;
         }
     }
 
