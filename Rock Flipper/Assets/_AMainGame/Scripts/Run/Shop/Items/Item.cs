@@ -9,12 +9,16 @@ namespace Agame.Run.Shop
     /// The prefab is a data holder only; it is never spawned.
     /// Every production item prefab is a variant of the <see cref="ItemBasePrefabName"/> prefab.
     /// The item's effect is the referenced <see cref="Stats.Agents.BuildAgent"/> prefab (the same agent prefabs skill nodes use), applied once per item level with <see cref="BuildValue"/>.
+    /// Placeholder items (<see cref="IsPlaceholder"/>) fill the item count per rarity until official items replace them; they have no effect.
     /// </summary>
     public class Item : MonoBehaviour
     {
         public const string ItemIdPrefix = "item_";
         public const string ItemBasePrefabName = "ItemBase";
 
+        [SerializeField]
+        [Tooltip("Stands in for a not-yet-designed item. Official items replace placeholders instead of being added next to them.")]
+        private bool isPlaceholder;
         [SerializeField]
         private ChestRarity rarity;
         [SerializeField]
@@ -28,6 +32,7 @@ namespace Agame.Run.Shop
         [SerializeField]
         private double buildValue;
 
+        public bool IsPlaceholder => isPlaceholder;
         public string ItemId => itemId;
         public string ItemName => itemName;
         public ChestRarity Rarity => rarity;
@@ -43,6 +48,10 @@ namespace Agame.Run.Shop
             ///
             if (buildAgent == null)
             {
+                if (isPlaceholder)
+                {
+                    return;
+                }
                 Debug.LogWarning($"Item {name} has no BuildAgent!", this);
                 return;
             }

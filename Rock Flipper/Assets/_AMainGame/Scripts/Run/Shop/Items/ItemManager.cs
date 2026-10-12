@@ -158,7 +158,7 @@ namespace Agame.Run.Shop
                 }
 
                 ///
-                if (item.BuildAgent == null)
+                if (item.BuildAgent == null && !item.IsPlaceholder)
                 {
                     Debug.LogError($"Item has no BuildAgent in ItemManager: {name}. Item name: {item.name}", item);
                     isValid = false;
