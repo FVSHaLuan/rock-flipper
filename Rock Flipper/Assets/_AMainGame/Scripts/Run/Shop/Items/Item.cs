@@ -8,7 +8,7 @@ namespace Agame.Run.Shop
     /// Root component of an item prefab. Each item is its own prefab, registered in <see cref="ItemManager"/>.
     /// The prefab is a data holder only; it is never spawned.
     /// Every production item prefab is a variant of the <see cref="ItemBasePrefabName"/> prefab.
-    /// The item's effect is the <see cref="Stats.Agents.BuildAgent"/> on the same prefab, applied once per item level with <see cref="BuildValue"/>.
+    /// The item's effect is the referenced <see cref="Stats.Agents.BuildAgent"/> prefab (the same agent prefabs skill nodes use), applied once per item level with <see cref="BuildValue"/>.
     /// </summary>
     public class Item : MonoBehaviour
     {
@@ -24,6 +24,8 @@ namespace Agame.Run.Shop
         [SerializeField]
         private Sprite itemIcon;
         [SerializeField]
+        private BuildAgent buildAgent;
+        [SerializeField]
         private double buildValue;
 
         public string ItemId => itemId;
@@ -31,7 +33,7 @@ namespace Agame.Run.Shop
         public ChestRarity Rarity => rarity;
         public Sprite ItemIcon => itemIcon;
         public double BuildValue => buildValue;
-        public BuildAgent BuildAgent => GetComponent<BuildAgent>();
+        public BuildAgent BuildAgent => buildAgent;
 
         /// <summary>
         /// Applies <paramref name="addingLevel"/> item levels, starting from <paramref name="currentLevel"/>, to the build stats.
@@ -39,7 +41,6 @@ namespace Agame.Run.Shop
         public void ApplyToBuildStats(int currentLevel, int addingLevel)
         {
             ///
-            var buildAgent = BuildAgent;
             if (buildAgent == null)
             {
                 Debug.LogWarning($"Item {name} has no BuildAgent!", this);

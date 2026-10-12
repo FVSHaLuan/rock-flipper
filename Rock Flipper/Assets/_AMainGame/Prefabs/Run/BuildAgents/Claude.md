@@ -1,4 +1,4 @@
-This folder contains BuildAgent prefabs, to be used by skill. Each agent prefab attaches a BuldAgent script in Assets\\\_AMainGame\\Scripts\\Run\\Stats\\Agents. Use Assets\\\_AMainGame\\Prefabs\\Run\\BuildAgents\\SKill Build Agent.prefab as template, replace BuildAgentScriptPlaceholder with a real BuildAgent script.
+This folder contains BuildAgent prefabs, to be used by skills and items (`Item.buildAgent`). Each agent prefab attaches a BuldAgent script in Assets\\\_AMainGame\\Scripts\\Run\\Stats\\Agents. Use Assets\\\_AMainGame\\Prefabs\\Run\\BuildAgents\\SKill Build Agent.prefab as template, replace BuildAgentScriptPlaceholder with a real BuildAgent script.
 
 
 

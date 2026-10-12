@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: itemName
       value: Spring
       objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: buildAgent
+      value: 
+      objectReference: {fileID: 7346554072470719888, guid: 05af5691fb3ca734b81ebcad5f0d6dc3, type: 3}
     - target: {fileID: 5361132389861902556, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -64,33 +68,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spring
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2165666196796831588, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7875256423939956177, guid: d2358b82fd063420eab0c241b11af142, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 513464523826322024}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
---- !u!1 &9048354911641729317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7875256423939956177, guid: d2358b82fd063420eab0c241b11af142, type: 3}
-  m_PrefabInstance: {fileID: 1213914868661167348}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &513464523826322024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9048354911641729317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0946d686ad0854f4abb76926ef97890b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.IncreaseGlobalRockFlippingSpeedFactor
-  selfLog:
-    enableLogger: 0
-    alsoLogToUnityConsole: 0
-    selfLogs: 
