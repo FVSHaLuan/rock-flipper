@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: buildValue
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: isAvailableInDemo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5361132389861902556, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

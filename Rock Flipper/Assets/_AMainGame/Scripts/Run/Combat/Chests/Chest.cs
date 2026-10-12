@@ -95,11 +95,16 @@ namespace Agame.Run.Combat
         }
 
         /// <summary>
-        /// Finds a random item of this chest's rarity.
+        /// Finds a random item of this chest's rarity that can drop in the current build.
         /// </summary>
         private void DropItem()
         {
             var item = RunEntry.itemManager.GetRandomItem(rarity);
+            if (item == null)
+            {
+                Debug.LogWarning($"Chest {name} found no item of rarity {rarity} to drop in the current build.", this);
+                return;
+            }
             var exp = gameBalance.GetItemExpPerFind(rarity);
             RunData.AddItemExp(item.ItemId, exp);
         }

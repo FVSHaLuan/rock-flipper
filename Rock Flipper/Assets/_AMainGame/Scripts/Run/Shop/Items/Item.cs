@@ -1,3 +1,4 @@
+using Agame.FeatureBranching;
 using Agame.Run.Combat;
 using Agame.Run.Stats.Agents;
 using UnityEngine;
@@ -20,6 +21,9 @@ namespace Agame.Run.Shop
         [Tooltip("Stands in for a not-yet-designed item. Official items replace placeholders instead of being added next to them.")]
         private bool isPlaceholder;
         [SerializeField]
+        [Tooltip("Whether chests can drop this item in demo and playtest builds.")]
+        private bool isAvailableInDemo;
+        [SerializeField]
         private ChestRarity rarity;
         [SerializeField]
         private string itemId;
@@ -33,12 +37,19 @@ namespace Agame.Run.Shop
         private double buildValue;
 
         public bool IsPlaceholder => isPlaceholder;
+        public bool IsAvailableInDemo => isAvailableInDemo;
         public string ItemId => itemId;
         public string ItemName => itemName;
         public ChestRarity Rarity => rarity;
         public Sprite ItemIcon => itemIcon;
         public double BuildValue => buildValue;
         public BuildAgent BuildAgent => buildAgent;
+
+        /// <summary>
+        /// Whether chests can drop this item in the current build.
+        /// Demo and playtest builds drop neither placeholders nor items not available in the demo.
+        /// </summary>
+        public bool IsDroppableInCurrentBuild => !VersionBranchInfo.IsPlaytestOrDemo || (!isPlaceholder && isAvailableInDemo);
 
         /// <summary>
         /// Applies <paramref name="addingLevel"/> item levels, starting from <paramref name="currentLevel"/>, to the build stats.

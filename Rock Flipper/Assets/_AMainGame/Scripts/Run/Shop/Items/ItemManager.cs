@@ -14,6 +14,8 @@ namespace Agame.Run.Shop
         private Dictionary<ChestRarity, List<Item>> itemListByRarityDictionary;
         [System.NonSerialized]
         private Dictionary<string, Item> itemByIdDictionary;
+        [System.NonSerialized]
+        private readonly List<Item> droppableItemsBuffer = new List<Item>();
 
         public int AllItemCount => itemPrefabs.Count;
 
@@ -73,7 +75,8 @@ namespace Agame.Run.Shop
         }
 
         /// <summary>
-        /// Picks a random item of <paramref name="rarity"/>, each with the same chance. Placeholders included.
+        /// Picks a random item of <paramref name="rarity"/> that can drop in the current build (<see cref="Item.IsDroppableInCurrentBuild"/>), each with the same chance.
+        /// Returns null if there is none.
         /// </summary>
         public Item GetRandomItem(ChestRarity rarity, IRandomGenerator random = null)
         {
@@ -87,8 +90,24 @@ namespace Agame.Run.Shop
             }
 
             ///
+            droppableItemsBuffer.Clear();
+            foreach (var item in items)
+            {
+                if (item.IsDroppableInCurrentBuild)
+                {
+                    droppableItemsBuffer.Add(item);
+                }
+            }
+            if (droppableItemsBuffer.Count == 0)
+            {
+                return null;
+            }
+
+            ///
             random ??= UnityRandom.Default;
-            return items.GetRandomItem(random);
+            var pickedItem = droppableItemsBuffer.GetRandomItem(random);
+            droppableItemsBuffer.Clear();
+            return pickedItem;
         }
 
         public Item GetItemById(string itemId)
