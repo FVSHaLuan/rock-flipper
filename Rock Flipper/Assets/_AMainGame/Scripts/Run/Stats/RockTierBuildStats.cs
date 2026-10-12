@@ -11,12 +11,21 @@ namespace Agame.Run.Stats
         public int count;
         public int maxCount = 10;
         public int maxHp = 5;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalRockPurity"/>
+        /// </summary>
         public float purity = 0.1f;
         /// <summary>
         /// Added to <see cref="BuildStatsObject.globalRockLandingCash"/>
         /// </summary>
         public double landingCash = 1;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalRockBreakingCashMultiplier"/>
+        /// </summary>
         public double breakingCashMultiplier = 2;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalRockPurityCashMultiplier"/>
+        /// </summary>
         public float purityCashMultiplier = 3;
         /// <summary>
         /// Added to <see cref="BuildStatsObject.globalRockCriticalLandingChance"/>

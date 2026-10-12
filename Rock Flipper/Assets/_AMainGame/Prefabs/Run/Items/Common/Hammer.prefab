@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2930781087178608365
+--- !u!1001 &3762107046452621936
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemId
-      value: item_placeholder_02
+      value: item_hammer
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemName
-      value: Placeholder 02
+      value: Hammer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: buildAgent
+      value: 
+      objectReference: {fileID: 419433408161105742, guid: 7e6bc0410e32e3942b9c2110a956ea15, type: 3}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: buildValue
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: isPlaceholder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5361132389861902556, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7875256423939956177, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: m_Name
-      value: _Placeholder_02
+      value: Hammer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -15,16 +15,13 @@ namespace Agame.Run.Shop
             base.HandleLeveledUp(levelCount);
 
             ///
-            var tierBuildStats = BuildStats.GetRockTierBuildStats(Tier);
-
-            ///
             var regularRockPrototype = RunEntry.prototypeManager.GetRockPrototype(Tier, false);
             var pureRockPrototype = RunEntry.prototypeManager.GetRockPrototype(Tier, true);
 
             /// 
             for (int i = 0; i < levelCount; i++)
             {
-                bool isPure = Random.value <= tierBuildStats.purity;
+                bool isPure = Random.value <= BuildStats.GetRockPurity(Tier);
                 var rockPrototype = isPure ? pureRockPrototype : regularRockPrototype;
                 RunEntry.rockInstanceManager.SpawnAsNewRock(rockPrototype.PoolHandler, newRockStartPosition.position);
             }

@@ -151,11 +151,10 @@ namespace Agame.Run.Combat
 
         private void EarnCash(bool isBreaking)
         {
-            var stats = BuildStats.GetRockTierBuildStats(rockTier);
             var isCritical = Random.value < BuildStats.GetRockCriticalLandingChance(rockTier);
             var amount = BuildStats.GetRockLandingCash(rockTier)
-                * (isBreaking ? stats.breakingCashMultiplier : 1)
-                * (isPure ? stats.purityCashMultiplier : 1)
+                * (isBreaking ? BuildStats.GetRockBreakingCashMultiplier(rockTier) : 1)
+                * (isPure ? BuildStats.GetRockPurityCashMultiplier(rockTier) : 1)
                 * (isCritical ? BuildStats.GetRockCriticalCashMultiplier(rockTier) : 1);
             RunData.AddCurrency(Currency.CASH, amount);
 

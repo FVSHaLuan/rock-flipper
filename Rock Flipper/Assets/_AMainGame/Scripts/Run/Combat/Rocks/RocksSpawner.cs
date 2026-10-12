@@ -46,7 +46,7 @@ namespace Agame.Run.Shop
             ///
             for (int i = 0; i < count; i++)
             {
-                bool isPure = Random.value <= tierBuildStats.purity;
+                bool isPure = Random.value <= BuildStats.GetRockPurity(rockTier);
                 var rockPrototype = isPure ? pureRockPrototype : regularRockPrototype;
                 RunEntry.rockInstanceManager.SpawnAsOldRock(rockPrototype.PoolHandler); 
             }
