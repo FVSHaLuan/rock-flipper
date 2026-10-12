@@ -13,6 +13,10 @@ PrefabInstance:
       value: item_dice
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: itemIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: dd27403d3bcf6f74ba7e19833f19487b, type: 3}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemName
       value: Dice
       objectReference: {fileID: 0}

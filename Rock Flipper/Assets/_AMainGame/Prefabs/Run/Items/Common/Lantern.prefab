@@ -13,6 +13,10 @@ PrefabInstance:
       value: item_lantern
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: itemIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: 511220d6bd95468eab9480eae59af909, type: 3}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemName
       value: Lantern
       objectReference: {fileID: 0}

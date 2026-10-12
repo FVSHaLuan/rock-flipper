@@ -13,6 +13,10 @@ PrefabInstance:
       value: item_soap
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: itemIcon
+      value: 
+      objectReference: {fileID: 21300000, guid: a21c081ca7144e01870006ec199e5700, type: 3}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: itemName
       value: Soap
       objectReference: {fileID: 0}
