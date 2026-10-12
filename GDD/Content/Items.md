@@ -6,6 +6,7 @@ All [items](../Systems/Items.md) that differ in rules.
 |---|---|---|
 | **Wallet** | Common | +[landing cash](../Systems/Rocks.md#flipping) of every rock tier |
 | **Spring** | Common | +flipping speed of every rock tier (see [Rock Stats](../Stats/Rock%20Stats.md)) |
+| **Pickaxe** | Unique | −[Max HP](../Systems/Rocks.md#tiers) of every rock tier (minimum 1) |
 
 ## Decisions
 
@@ -17,7 +18,6 @@ Each effect scales with item level.
 ### Common
 | Item | Effect |
 |---|---|
-| Pickaxe | −rock Max HP (minimum 1) |
 | Hammer | +breaking cash multiplier |
 | Dice | +critical landing chance |
 | Magnifying Glass | +critical cash multiplier |

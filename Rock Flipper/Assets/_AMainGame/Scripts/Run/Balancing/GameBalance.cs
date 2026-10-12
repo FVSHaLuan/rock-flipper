@@ -13,13 +13,32 @@ namespace Agame.Balancing
                 return 0;
             }
 
+            if (chestRarity == ChestRarity.Unique)
+            {
+                return 1;
+            }
+
             ///
             return 10;
         }
 
         public int GetItemMaxLevel(ChestRarity chestRarity)
         {
-            return 20;
+            switch (chestRarity)
+            {
+                case ChestRarity.Common:
+                    return 50;
+                case ChestRarity.Uncommon:
+                    return 20;
+                case ChestRarity.Rare:
+                    return 10;
+                case ChestRarity.Epic:
+                    return 5;
+                case ChestRarity.Unique:
+                    return 1;
+                default:
+                    throw new System.NotImplementedException($"Max level for chest rarity {chestRarity} is not defined.");
+            }
         }
 
         public double GetRequiredExpForNextLevel(int currentLevel)

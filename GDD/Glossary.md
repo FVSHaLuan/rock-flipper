@@ -53,6 +53,7 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Overlay UI elements**: the top layer of the playfield (Current cash, Chest bar, Level bar). → [Main Screen](Screens/MainScreen.md#overlay-ui-elements)
 * **P0, P1, P2,...**: rock tier names. → [Rocks](Systems/Rocks.md#tiers)
 * **Parent skill**: a skill that another skill depends on. → [Skill Tree](Systems/SkillTree.md#structure)
+* **Pickaxe**: the Unique item that decreases rock Max HP. → [Items](Content/Items.md)
 * **Playfield**: the left 3/4 of the main screen, where all the gameplay happens. → [Main Screen](Screens/MainScreen.md#playfield)
 * **Preferred background**: the unlocked background currently marked Preferred. → [Backgrounds](Systems/Backgrounds.md#preferred-background)
 * **Preferred Interval**: how often the Preferred background changes. → [Backgrounds](Systems/Backgrounds.md#preferred-background)
