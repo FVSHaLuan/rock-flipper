@@ -1,4 +1,5 @@
 using Agame.Run.Combat;
+using GD;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -69,6 +70,25 @@ namespace Agame.Run.Shop
                     item.ApplyToBuildStats(0, level);
                 }
             }
+        }
+
+        /// <summary>
+        /// Picks a random item of <paramref name="rarity"/>, each with the same chance. Placeholders included.
+        /// </summary>
+        public Item GetRandomItem(ChestRarity rarity, IRandomGenerator random = null)
+        {
+            ///
+            TryInit();
+
+            ///
+            if (!itemListByRarityDictionary.TryGetValue(rarity, out var items))
+            {
+                throw new System.Exception($"No item with rarity {rarity} in ItemManager: {name}");
+            }
+
+            ///
+            random ??= UnityRandom.Default;
+            return items.GetRandomItem(random);
         }
 
         public Item GetItemById(string itemId)

@@ -88,7 +88,20 @@ namespace Agame.Run.Combat
 
         private void Open()
         {
+            DropItem();
+
+            ///
             PoolHandler.TryReturnToPoolAndDeactivate();
+        }
+
+        /// <summary>
+        /// Finds a random item of this chest's rarity.
+        /// </summary>
+        private void DropItem()
+        {
+            var item = RunEntry.itemManager.GetRandomItem(rarity);
+            var exp = gameBalance.GetItemExpPerFind(rarity);
+            RunData.AddItemExp(item.ItemId, exp);
         }
 
         public ChestState GetState()

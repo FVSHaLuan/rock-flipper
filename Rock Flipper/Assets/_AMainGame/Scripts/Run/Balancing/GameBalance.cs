@@ -41,6 +41,11 @@ namespace Agame.Balancing
             }
         }
 
+        public int GetItemExpPerFind(ChestRarity chestRarity)
+        {
+            return 1;
+        }
+
         public double GetRequiredExpForNextLevel(int currentLevel)
         {
             if (currentLevel < 0)
