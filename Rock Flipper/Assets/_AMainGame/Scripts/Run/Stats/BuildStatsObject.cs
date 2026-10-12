@@ -58,6 +58,10 @@ namespace Agame.Run.Stats
         /// Added to every tier's <see cref="RockTierBuildStats.purityCashMultiplier"/>
         /// </summary>
         public float globalRockPurityCashMultiplier = 0;
+        /// <summary>
+        /// Added to every tier's <see cref="RockTierBuildStats.maxHp"/>
+        /// </summary>
+        public int globalRockMaxHp = 0;
 
         [Header("Bouncy Rocks")]
         public float bouncyRockBounceChance = 0.1f;
@@ -171,6 +175,14 @@ namespace Agame.Run.Stats
         public float GetRockPurityCashMultiplier(RockTier rockTier)
         {
             return GetRockTierBuildStats(rockTier).purityCashMultiplier + globalRockPurityCashMultiplier;
+        }
+
+        /// <summary>
+        /// Never below 1
+        /// </summary>
+        public int GetRockMaxHp(RockTier rockTier)
+        {
+            return Mathf.Max(1, GetRockTierBuildStats(rockTier).maxHp + globalRockMaxHp);
         }
 
         public MonolithBuildStats GetMonolithBuildStats(MonolithType monolithType)

@@ -10,6 +10,9 @@ namespace Agame.Run.Stats
         public bool unlocked = false;
         public int count;
         public int maxCount = 10;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalRockMaxHp"/>
+        /// </summary>
         public int maxHp = 5;
         /// <summary>
         /// Added to <see cref="BuildStatsObject.globalRockPurity"/>

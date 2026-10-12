@@ -198,10 +198,7 @@ namespace Agame.Run.Combat
         public void StartNewLife(bool playNewLifeEffect)
         {
             ///
-            var tierStats = BuildStats.GetRockTierBuildStats(rockTier);
-
-            ///
-            MaxHP = tierStats.maxHp;
+            MaxHP = BuildStats.GetRockMaxHp(rockTier);
             CurrentHP = MaxHP;
 
             ///
