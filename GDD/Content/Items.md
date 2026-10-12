@@ -92,3 +92,5 @@ Each effect scales with item level.
 
 ## Brainstorm
 - auto switch to preferred background
+- drop additional chest after chest bar filled up
+- chests drops additional item
