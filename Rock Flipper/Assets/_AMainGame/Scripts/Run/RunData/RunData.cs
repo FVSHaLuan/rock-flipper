@@ -523,7 +523,13 @@ namespace Agame
             {
                 newExp -= requiredExp;
                 newLevel++;
-                requiredExp = gameBalance.GetRequiredExpForNextItemLevel(rarity, itemState.level);
+                requiredExp = gameBalance.GetRequiredExpForNextItemLevel(rarity, newLevel);
+            }
+
+            ///
+            if (newLevel > itemState.level)
+            {
+                item.ApplyToBuildStats(itemState.level, newLevel - itemState.level);
             }
 
             ///

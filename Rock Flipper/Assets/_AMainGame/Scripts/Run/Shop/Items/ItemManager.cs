@@ -56,6 +56,21 @@ namespace Agame.Run.Shop
             return itemPrefabs[index];
         }
 
+        /// <summary>
+        /// Applies every item's current item level to the build stats.
+        /// </summary>
+        public void ApplyToBuildStats(RunData runData)
+        {
+            foreach (var item in itemPrefabs)
+            {
+                var level = runData.GetItemState(item.ItemId).level;
+                if (level > 0)
+                {
+                    item.ApplyToBuildStats(0, level);
+                }
+            }
+        }
+
         public Item GetItemById(string itemId)
         {
             ///
@@ -139,6 +154,13 @@ namespace Agame.Run.Shop
                     || originalSource == null || originalSource.name != Item.ItemBasePrefabName)
                 {
                     Debug.LogError($"Item is not a prefab variant of {Item.ItemBasePrefabName} in ItemManager: {name}. Item name: {item.name}", item);
+                    isValid = false;
+                }
+
+                ///
+                if (item.BuildAgent == null)
+                {
+                    Debug.LogError($"Item has no BuildAgent in ItemManager: {name}. Item name: {item.name}", item);
                     isValid = false;
                 }
 

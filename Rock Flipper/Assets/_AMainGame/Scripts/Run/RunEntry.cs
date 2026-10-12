@@ -256,6 +256,7 @@ namespace Agame.Run
         {
             sideBarStatBuilder.Apply();
             skillTree.ApplyToBuildStats();
+            itemManager.ApplyToBuildStats(runData);
         }
 
         protected void LateUpdate()

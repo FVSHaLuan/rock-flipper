@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5361132389861902556}
   - component: {fileID: 3621821147570433000}
+  - component: {fileID: 2165666196796831588}
   m_Layer: 0
   m_Name: ItemBase
   m_TagString: Untagged
@@ -48,3 +49,17 @@ MonoBehaviour:
   itemId: 
   itemName: 
   itemIcon: {fileID: 0}
+  buildValue: 0
+--- !u!114 &2165666196796831588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875256423939956177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732f10dc724d60141acb1fd127bbaaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Dev.BuildAgentScriptPlaceholder
+  scriptReference: {fileID: 0}

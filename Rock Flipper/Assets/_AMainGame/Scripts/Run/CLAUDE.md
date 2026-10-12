@@ -6,7 +6,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 ## Entry point & base class
 
-- `RunEntry.cs` — scene singleton (`RunEntry.Instance`), owns serialized refs to every gameplay subsystem, rebuilds `BuildStatsObject` from Skill Tree + Shop.
+- `RunEntry.cs` — scene singleton (`RunEntry.Instance`), owns serialized refs to every gameplay subsystem, rebuilds `BuildStatsObject` from Shop + Skill Tree + Items (`ApplyAllToBuildStats`).
 - `ExtendedMonoBehaviourRun.cs` — base class most gameplay `MonoBehaviour`s derive from; exposes `RunEntry`, `RunData`, `BuildStats`, `Playfield`, `StateManager`, `IsTutorial`, and `TryInitThisCombat()` ("run once per combat" helper).
 - Run-level state machine: `State Manager/RunStateManager.cs` / `RunState.cs` — states `Init, Combat, BeforePrestige, OnPrestige, BeforeCombatFromPrestige`; events `OnStateChanged`, `OnCombatStarted`, `OnBeforePrestige`, `OnPrestige`, `OnBeforeCombatFromPrestige`.
 
@@ -29,7 +29,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `RunData/` | Persistent per-run save data — see below. |
 | `Shop/` | Buy-count/upgrade UI logic — see below. |
 | `Skill tree/` | XNode-graph-driven skill tree — see below. |
-| `Stats/` | The `BuildAgent` stat-application framework shared by Skill Tree and Shop. |
+| `Stats/` | The `BuildAgent` stat-application framework shared by Skill Tree, Shop and Items. |
 | `Dev/`, `Demo/`, `Compat/` | QA tools (incl. `AutoMouse`, see Conventions & gotchas), Steam-demo-build UI, save-compat version holder. |
 | `ShortHands/` | `ShortHandManager.cs` — `{token}` text-replacement dictionary, currently empty/unused. |
 
@@ -64,10 +64,10 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - **Convention: split by partial file** — `RunData_Serialization.cs` (play-time bookkeeping), `RunData_FrameUpdate.cs` (batches `OnCurrencyValueModifiedThisFrame`, and `OnCurrencyAddedThisFrame` with the summed positive `AddCurrency` amounts), `RunData_Correction.cs` (save-migration hook, currently a no-op `CorrectData`). **Extend `RunData` via a new `RunData_<Aspect>.cs` partial rather than growing the main file.**
 - `RunData/RunDataObject.cs` — `WritableScriptableObject<RunData>` (the actual save-slot asset). `RunDataManager.cs` — 4 fixed save slots.
 
-## Stats / BuildAgent framework (shared by Skill Tree + Shop)
+## Stats / BuildAgent framework (shared by Skill Tree + Shop + Items)
 
 - **Only create a new `BuildAgent` subclass when the user explicitly asks for one.** When a feature needs a tunable stat, add the `BuildStatsObject` field (and read it in gameplay code), but leave the agent that upgrades it, and its wiring to Shop buttons or skill nodes, for the user to request.
-- `Stats/BuildStatsObject.cs` — the live mutable stat blob for the current run; rebuilt from base + skill tree + shop every prestige.
+- `Stats/BuildStatsObject.cs` — the live mutable stat blob for the current run; rebuilt from base + shop + skill tree + items every prestige.
 - `Stats/Agents/BuildAgent.cs` — abstract base: `Apply(currentLevel, addingLevel, buildValuePerLevel)`. **`GetDescriptionText`/`TryToReportAchievement`/`TryToReportMaxedAchievement` are hard-stubbed** (`Debug.LogError`/fixed string) — not wired to real implementations despite being called from `SkillNode`.
 - `Stats/Agents/Implementations/Rocks/RockBuildAgent.cs` (abstract, tier-scoped) + `IncreaseRockCount.cs` (concrete) — **the pattern to copy for a new rock-tier upgrade agent.**
 - `Stats/Agents/Implementations/UnlockSkillTree.cs` — sets `BuildStatsObject.UnlockedSkillTree = true` (fires `OnUnlockedSkillTree`), which `Shop/SkillTreeButton.cs` uses to make the Shop's "open skill tree" button interactable. Wire this to a one-time Shop purchase (`StatBuilderButton`), not a skill-tree node — a node inside the tree can't unlock the tree it lives in.
@@ -81,6 +81,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - **"Dumb" prefix convention** = simplest/static-value implementation of an interface (`DumbCostConfig`, `DumbBuildValueConfig`, `DumbMaxLevelConfig`, `DumbBuildAgent`) — often a placeholder rather than final content.
 - `Shop/StatBuilderButtons/Specifics/RockStatBuilderButton.cs`/`RockCountStatBuilderButton.cs` — concrete "buy rock count" button, also spawns rock instances on purchase.
 - `Shop/Items/` — **each item is a data-only prefab** (never spawned) with an `Item` component (plain `MonoBehaviour`) (`itemId`, name, `ChestRarity`, icon; `itemId` auto-derived from `itemName`, or the prefab file name if that's empty: "Lucky Pebble" → `item_lucky_pebble`. The id follows renames until the item is registered in an `ItemManager`, then it's frozen. Resync it by hand with the "Assign Item Id From Name" context menu). **Every production item prefab is a prefab variant of `Prefabs/Run/Items/ItemBase.prefab`**, saved under `Prefabs/Run/Items/<Rarity>/`; the base itself has no `itemId` and is never registered, and a new variant gets its own ID instead of inheriting one. `ItemManager` (ScriptableObject, `RunEntry.itemManager`) lists the prefabs in `itemPrefabs` and validates them in editor (null/duplicate, not an `ItemBase` variant, empty or duplicate ID). Per-item progress is `ItemState` in `RunData`, keyed by `itemId` — never change an existing item's ID.
+- **Item effects**: every item prefab must carry a `BuildAgent` on its root (`ItemBase` ships a `BuildAgentScriptPlaceholder`; replace it in each variant, same as the skill agent template), and `Item.buildValue` is the per-level build value. `ItemManager.ApplyToBuildStats` applies each item's current item level during the BuildStats rebuild, and `RunData.AddItemExp` applies the gained levels when an item levels up. `ItemManager` validation fails for an item without a real `BuildAgent`.
 
 ## Skill Tree
 
