@@ -1,6 +1,7 @@
 using Agame.Run.Combat;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Agame.Run.Stats
 {
@@ -30,11 +31,21 @@ namespace Agame.Run.Stats
         /// <summary>
         /// Added to every tier's <see cref="RockTierBuildStats.criticalLandingChance"/>
         /// </summary>
-        public float globalCriticalLandingChance = 0;
+        [FormerlySerializedAs("globalCriticalLandingChance")]
+        public float globalRockCriticalLandingChance = 0;
         /// <summary>
         /// Added to every tier's <see cref="RockTierBuildStats.criticalCashMultiplier"/>
         /// </summary>
-        public float globalCriticalCashMultiplier = 0;
+        [FormerlySerializedAs("globalCriticalCashMultiplier")]
+        public float globalRockCriticalCashMultiplier = 0;
+        /// <summary>
+        /// Added to every tier's <see cref="RockTierBuildStats.landingCash"/>
+        /// </summary>
+        public double globalRockLandingCash = 0;
+        /// <summary>
+        /// Added to every tier's <see cref="RockTierBuildStats.flippingSpeedFactor"/>
+        /// </summary>
+        public float globalRockFlippingSpeedFactor = 0;
 
         [Header("Bouncy Rocks")]
         public float bouncyRockBounceChance = 0.1f;
@@ -115,14 +126,24 @@ namespace Agame.Run.Stats
             };
         }
 
-        public float GetCriticalLandingChance(RockTier rockTier)
+        public float GetRockCriticalLandingChance(RockTier rockTier)
         {
-            return GetRockTierBuildStats(rockTier).criticalLandingChance + globalCriticalLandingChance;
+            return GetRockTierBuildStats(rockTier).criticalLandingChance + globalRockCriticalLandingChance;
         }
 
-        public float GetCriticalCashMultiplier(RockTier rockTier)
+        public float GetRockCriticalCashMultiplier(RockTier rockTier)
         {
-            return GetRockTierBuildStats(rockTier).criticalCashMultiplier + globalCriticalCashMultiplier;
+            return GetRockTierBuildStats(rockTier).criticalCashMultiplier + globalRockCriticalCashMultiplier;
+        }
+
+        public double GetRockLandingCash(RockTier rockTier)
+        {
+            return GetRockTierBuildStats(rockTier).landingCash + globalRockLandingCash;
+        }
+
+        public float GetRockFlippingSpeedFactor(RockTier rockTier)
+        {
+            return GetRockTierBuildStats(rockTier).flippingSpeedFactor + globalRockFlippingSpeedFactor;
         }
 
         public MonolithBuildStats GetMonolithBuildStats(MonolithType monolithType)

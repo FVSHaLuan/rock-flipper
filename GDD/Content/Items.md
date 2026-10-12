@@ -4,13 +4,12 @@ All [items](../Systems/Items.md) that differ in rules.
 
 | Item | Rarity | Effect |
 |---|---|---|
-| **Wallet** | Common | +[landing cash](../Systems/Rocks.md#flipping) |
-| **Spring** | Common | +flipping speed (see [Rock Stats](../Stats/Rock%20Stats.md)) |
+| **Wallet** | Common | +[landing cash](../Systems/Rocks.md#flipping) of every rock tier |
+| **Spring** | Common | +flipping speed of every rock tier (see [Rock Stats](../Stats/Rock%20Stats.md)) |
 
 ## Decisions
 
 ## Open Questions
-* Do Wallet and Spring boost their stat for every rock tier, or only some?
 
 ## Parked Ideas
 Each effect scales with item level.

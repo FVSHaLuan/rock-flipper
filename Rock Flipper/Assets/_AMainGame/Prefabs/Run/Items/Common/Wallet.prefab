@@ -64,8 +64,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wallet
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2165666196796831588, guid: d2358b82fd063420eab0c241b11af142, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7875256423939956177, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7944293858585959333}
   m_SourcePrefab: {fileID: 100100000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+--- !u!1 &2160157769089522383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7875256423939956177, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+  m_PrefabInstance: {fileID: 8120249569497597726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7944293858585959333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2160157769089522383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39fe33fe43ef1cd4591d35a0afb381be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Stats.Agents.IncreaseGlobalRockLandingCash
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 

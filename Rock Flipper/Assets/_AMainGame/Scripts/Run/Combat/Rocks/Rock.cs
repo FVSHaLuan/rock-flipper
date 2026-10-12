@@ -97,7 +97,7 @@ namespace Agame.Run.Combat
         private void ApplyFromBuildStats()
         {
             var stats = BuildStats.GetRockTierBuildStats(Tier);
-            flippable.FlippingSpeedFactor = stats.flippingSpeedFactor;
+            flippable.FlippingSpeedFactor = BuildStats.GetRockFlippingSpeedFactor(Tier);
             flippableByPlayerCursor.LandingCooldownTime = stats.landingCooldown;
         }
 
@@ -152,11 +152,11 @@ namespace Agame.Run.Combat
         private void EarnCash(bool isBreaking)
         {
             var stats = BuildStats.GetRockTierBuildStats(rockTier);
-            var isCritical = Random.value < BuildStats.GetCriticalLandingChance(rockTier);
-            var amount = stats.landingCash
+            var isCritical = Random.value < BuildStats.GetRockCriticalLandingChance(rockTier);
+            var amount = BuildStats.GetRockLandingCash(rockTier)
                 * (isBreaking ? stats.breakingCashMultiplier : 1)
                 * (isPure ? stats.purityCashMultiplier : 1)
-                * (isCritical ? BuildStats.GetCriticalCashMultiplier(rockTier) : 1);
+                * (isCritical ? BuildStats.GetRockCriticalCashMultiplier(rockTier) : 1);
             RunData.AddCurrency(Currency.CASH, amount);
 
             ///

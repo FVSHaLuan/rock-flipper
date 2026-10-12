@@ -12,15 +12,18 @@ namespace Agame.Run.Stats
         public int maxCount = 10;
         public int maxHp = 5;
         public float purity = 0.1f;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalRockLandingCash"/>
+        /// </summary>
         public double landingCash = 1;
         public double breakingCashMultiplier = 2;
         public float purityCashMultiplier = 3;
         /// <summary>
-        /// Added to <see cref="BuildStatsObject.globalCriticalLandingChance"/>
+        /// Added to <see cref="BuildStatsObject.globalRockCriticalLandingChance"/>
         /// </summary>
         public float criticalLandingChance = 0;
         /// <summary>
-        /// Added to <see cref="BuildStatsObject.globalCriticalCashMultiplier"/>
+        /// Added to <see cref="BuildStatsObject.globalRockCriticalCashMultiplier"/>
         /// </summary>
         public float criticalCashMultiplier = 1.5f;
         /// <summary>
@@ -29,6 +32,9 @@ namespace Agame.Run.Stats
         public float landingCooldown = 0.5f;
         public double chestLevelExp = 1;
         public double levelExp = 1;
+        /// <summary>
+        /// Added to <see cref="BuildStatsObject.globalRockFlippingSpeedFactor"/>
+        /// </summary>
         public float flippingSpeedFactor = 1;
 
         /// <summary>
