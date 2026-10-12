@@ -1,12 +1,38 @@
 # Items
 
-All [items](../Systems/Items.md) that differ in rules.
+All [items](../Systems/Items.md) that differ in rules, one table per rarity; the `#` column tracks how many of each rarity's items are listed.
 
-| Item | Rarity | Effect |
+Number of distinct items per rarity:
+
+| Rarity | Items |
+|---|---|
+| Common | 14 |
+| Uncommon | 9 |
+| Rare | 7 |
+| Epic | 5 |
+| Unique | 5 |
+
+## Common
+| # | Item | Effect |
 |---|---|---|
-| **Wallet** | Common | +[landing cash](../Systems/Rocks.md#flipping) of every rock tier |
-| **Spring** | Common | +flipping speed of every rock tier (see [Rock Stats](../Stats/Rock%20Stats.md)) |
-| **Pickaxe** | Unique | −[Max HP](../Systems/Rocks.md#tiers) of every rock tier (minimum 1) |
+| 1 | **Wallet** | +[landing cash](../Systems/Rocks.md#flipping) of every rock tier |
+| 2 | **Spring** | +flipping speed of every rock tier (see [Rock Stats](../Stats/Rock%20Stats.md)) |
+| 3 | **Hammer** | +[breaking cash multiplier](../Systems/Rocks.md#breaking) |
+| 4 | **Dice** | +[critical landing chance](../Systems/Rocks.md#critical-landing) |
+| 5 | **Magnifying Glass** | +critical cash multiplier |
+| 6 | **Soap** | +chance for a new rock to be [pure](../Systems/Rocks.md#purity) |
+| 7 | **Lantern** | +cash multiplier of pure rocks |
+| 8 | **Key** | +[chest exp](../Systems/Chests.md#chest-bar) per landing |
+| 9 | **Notebook** | +[level exp](../Systems/Levels.md#level-bar) per landing |
+| 10 | **Wrench** | −[Flipper Bot](../Systems/FlipperBots.md) flip interval |
+| 11 | **Battery** | +Flipper Bot active duration |
+| 12 | **Alarm Clock** | −Flipper Bot inactive duration |
+| 13 | **Sneakers** | +Flipper Bot move speed |
+
+## Unique
+| # | Item | Effect |
+|---|---|---|
+| 1 | **Pickaxe** | −[Max HP](../Systems/Rocks.md#tiers) of every rock tier (minimum 1) |
 
 ## Decisions
 
@@ -14,21 +40,6 @@ All [items](../Systems/Items.md) that differ in rules.
 
 ## Parked Ideas
 Each effect scales with item level.
-
-### Common
-| Item | Effect |
-|---|---|
-| Hammer | +breaking cash multiplier |
-| Dice | +critical landing chance |
-| Magnifying Glass | +critical cash multiplier |
-| Soap | +chance for a new rock to be pure |
-| Lantern | +cash multiplier of pure rocks |
-| Key | +chest exp per landing |
-| Notebook | +level exp per landing |
-| Wrench | −Flipper Bot flip interval |
-| Battery | +Flipper Bot active duration |
-| Alarm Clock | −Flipper Bot inactive duration |
-| Sneakers | +Flipper Bot move speed |
 
 ### Uncommon
 | Item | Effect |
@@ -80,3 +91,4 @@ Each effect scales with item level.
 - name of an item should be a thing (sword, clock,...)
 
 ## Brainstorm
+- auto switch to preferred background
