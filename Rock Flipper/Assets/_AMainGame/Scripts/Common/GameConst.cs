@@ -25,7 +25,8 @@ public static class GameConst
     public const string LayerCore = "Core";
 
     // Content
-    public const int BackgroundCount = 6;
+    /// <summary>Total number of combat backgrounds; ids range from 0 to this minus 1.</summary>
+    public const int BackgroundCount = 5;
     public const int MaxStage = 131;
 
     // Steam    

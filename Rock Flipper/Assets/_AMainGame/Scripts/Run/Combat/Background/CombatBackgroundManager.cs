@@ -39,12 +39,14 @@ namespace Agame.Run.Combat.Backgrounds
             }
         }
 
-        /// <summary>Number of background slots; ids range from 0 to this minus 1 (see <see cref="HasBackground"/>).</summary>
-        public int BackgroundCount => combatBackgrounds.Count;
-
+        /// <summary>
+        /// Whether the background with this id has a <see cref="CombatBackground"/> in the scene. Ids range from 0 to
+        /// <see cref="GameConst.BackgroundCount"/> minus 1, whether or not their background exists; only check this
+        /// before accessing the background itself (e.g. its name).
+        /// </summary>
         public bool HasBackground(int id)
         {
-            return id >= 0 && id < combatBackgrounds.Count && combatBackgrounds[id] != null;
+            return id >= 0 && id < GameConst.BackgroundCount && id < combatBackgrounds.Count && combatBackgrounds[id] != null;
         }
 
         /// <summary>Returns the background with this id, or background 0 (with a warning) if there's none.</summary>

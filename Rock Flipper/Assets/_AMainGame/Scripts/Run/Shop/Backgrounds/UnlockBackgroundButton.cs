@@ -77,10 +77,9 @@ namespace Agame.Run.Shop
         private void CollectLockedBackgroundIds()
         {
             lockedBackgroundIds.Clear();
-            var backgroundManager = RunEntry.combatBackgroundManager;
-            for (int id = 1; id < backgroundManager.BackgroundCount; id++)
+            for (int id = 1; id < GameConst.BackgroundCount; id++)
             {
-                if (backgroundManager.HasBackground(id) && !RunData.IsBackgroundUnlocked(id))
+                if (!RunData.IsBackgroundUnlocked(id))
                 {
                     lockedBackgroundIds.Add(id);
                 }

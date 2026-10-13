@@ -415,6 +415,13 @@ namespace Agame
 
         public void UnlockBackground(int backgroundId)
         {
+            if (backgroundId < 0 || backgroundId >= GameConst.BackgroundCount)
+            {
+                Debug.LogWarning($"Can't unlock background {backgroundId}: ids range from 0 to {GameConst.BackgroundCount - 1}.");
+                return;
+            }
+
+            ///
             if (unlockedBackgroundIds == null)
             {
                 unlockedBackgroundIds = new List<int>() { 0 };
