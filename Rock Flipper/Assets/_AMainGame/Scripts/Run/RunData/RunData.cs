@@ -431,6 +431,14 @@ namespace Agame
             if (!unlockedBackgroundIds.Contains(backgroundId))
             {
                 unlockedBackgroundIds.Add(backgroundId);
+
+                // The first Preferred background is the first one unlocked besides background 0.
+                if (unlockedBackgroundIds.Count == 2)
+                {
+                    PreferredBackgroundId = backgroundId;
+                }
+
+                ///
                 OnBackgroundUnlocked?.Invoke(backgroundId);
             }
         }
