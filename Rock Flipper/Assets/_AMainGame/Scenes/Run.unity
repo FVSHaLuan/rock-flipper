@@ -8740,7 +8740,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3225608771684552337, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1982353804}
   m_SourcePrefab: {fileID: 100100000, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
 --- !u!224 &402210860 stripped
 RectTransform:
@@ -39964,6 +39967,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa4c3b0bcf3a6d4089fbb8726f25f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.ItemView
+--- !u!1 &1982353793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3225608771684552337, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 402210859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1982353804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982353793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ac055c8f4dc814ba19f99bd437507d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnlockBackgroundButton
 --- !u!1 &1983632369
 GameObject:
   m_ObjectHideFlags: 0
