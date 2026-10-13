@@ -98,7 +98,7 @@ namespace Agame.Run.Combat.Backgrounds
             }
 
             ///
-            RunEntry.gameplayCamera.backgroundColor = combatBackground.CameraColor;
+            RunEntry.clearingCamera.backgroundColor = combatBackground.CameraColor;
             combatBackground.TryInitThisCombat();
         }
     }

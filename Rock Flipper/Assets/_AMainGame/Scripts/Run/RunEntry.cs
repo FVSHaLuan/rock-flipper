@@ -35,6 +35,7 @@ namespace Agame.Run
 
         [Header("Combat")]
         public Camera gameplayCamera;
+        public Camera clearingCamera;
         public CameraShake cameraShake;
         public Playfield playfield;
         public Selectable combatInvisibleButton;
