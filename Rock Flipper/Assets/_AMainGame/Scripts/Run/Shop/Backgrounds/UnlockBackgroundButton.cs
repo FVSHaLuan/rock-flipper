@@ -7,11 +7,13 @@ namespace Agame.Run.Shop
     /// <summary>
     /// Unlocks a random locked background for stars. The first unlock (the player's first background
     /// besides background 0) costs <see cref="firstUnlockCost"/>, every later one costs <see cref="unlockCost"/>.
+    /// Backgrounds marked as not available in the demo are never picked in demo and playtest builds.
     /// </summary>
     public class UnlockBackgroundButton : ExtendedMonoBehaviourRun
     {
         private const Currency CostCurrency = Currency.STAR;
         private const string UnlockText = "Unlock Random";
+        private const string NotInDemoText = "MORE IN FULL GAME";
 
         [SerializeField]
         private Button button;
@@ -75,25 +77,39 @@ namespace Agame.Run.Shop
             return new CurrencyAmount(CostCurrency, amount);
         }
 
-        private void CollectLockedBackgroundIds()
+        /// <summary>
+        /// Collects the locked backgrounds the player can unlock in the current build, and returns whether any
+        /// background is locked at all (including those not available in the current build).
+        /// </summary>
+        private bool CollectLockedBackgroundIds()
         {
             lockedBackgroundIds.Clear();
+            var anyLocked = false;
+            var backgroundManager = RunEntry.combatBackgroundManager;
             for (int id = 1; id < GameConst.BackgroundCount; id++)
             {
-                if (!RunData.IsBackgroundUnlocked(id))
+                if (RunData.IsBackgroundUnlocked(id))
+                {
+                    continue;
+                }
+
+                ///
+                anyLocked = true;
+                if (backgroundManager.IsBackgroundAvailableInCurrentBuild(id))
                 {
                     lockedBackgroundIds.Add(id);
                 }
             }
+            return anyLocked;
         }
 
         private void UpdateView()
         {
             ///
-            CollectLockedBackgroundIds();
+            var anyLocked = CollectLockedBackgroundIds();
             if (lockedBackgroundIds.Count == 0)
             {
-                costText.SetText("ALL UNLOCKED");
+                costText.SetText(anyLocked ? NotInDemoText : "ALL UNLOCKED");
                 button.interactable = false;
                 return;
             }

@@ -1,3 +1,4 @@
+using Agame.FeatureBranching;
 using GD;
 using OneLine;
 using System.Collections.Generic;
@@ -72,6 +73,9 @@ namespace Agame.Run.Combat.Backgrounds
 
         public string BackgroundName => backgroundName;
         public Color CameraColor => cameraColor;
+
+        /// <summary>False in demo and playtest builds when this background is marked as not available in the demo.</summary>
+        public bool IsAvailableInCurrentBuild => !VersionBranchInfo.IsPlaytestOrDemo || !isNaNInDemo;
 
         protected override void InitThisCombat()
         {

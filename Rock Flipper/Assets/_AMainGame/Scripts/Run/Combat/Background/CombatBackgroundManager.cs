@@ -49,6 +49,15 @@ namespace Agame.Run.Combat.Backgrounds
             return id >= 0 && id < GameConst.BackgroundCount && id < combatBackgrounds.Count && combatBackgrounds[id] != null;
         }
 
+        /// <summary>
+        /// Whether the background with this id can be unlocked in the current build. False only for a background
+        /// marked as not available in the demo, in demo and playtest builds.
+        /// </summary>
+        public bool IsBackgroundAvailableInCurrentBuild(int id)
+        {
+            return !HasBackground(id) || combatBackgrounds[id].IsAvailableInCurrentBuild;
+        }
+
         /// <summary>Returns the background with this id, or background 0 (with a warning) if there's none.</summary>
         public CombatBackground GetBackground(int id)
         {
