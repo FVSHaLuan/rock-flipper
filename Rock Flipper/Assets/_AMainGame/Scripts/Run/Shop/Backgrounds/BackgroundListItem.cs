@@ -26,6 +26,8 @@ namespace Agame.Run.Shop
         private GameObject preferredIndicator;
         [SerializeField, Tooltip("Optional. Blinks the Preferred indicator's text while the Preferred background isn't the active background.")]
         private Blinker preferredTextBlinker;
+        [SerializeField, Tooltip("Optional. Shown by the unlock animation of UnlockBackgroundButton while it stops at this item.")]
+        private GameObject flashBackground;
 
         private RunData subscribedRunData;
         private bool started;
@@ -74,6 +76,14 @@ namespace Agame.Run.Shop
         private void SelectButton_OnClick()
         {
             RunData.ActiveBackgroundId = BackgroundId;
+        }
+
+        public void SetFlashing(bool flashing)
+        {
+            if (flashBackground != null)
+            {
+                flashBackground.SetActive(flashing);
+            }
         }
 
         public void ViewBackgroundState()
