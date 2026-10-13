@@ -16,7 +16,8 @@ Most of the game's progression happens via the **Skill Tree** (see [Pillars](../
 
 ## Known Skills
 Skills mentioned in other docs:
-* Unlocking [backgrounds](Backgrounds.md#unlocking), with [stars](Currencies.md).
+* Unlocking the [background](Backgrounds.md#unlocking) feature.
+* Unlocking backgrounds, with [stars](Currencies.md).
 * Unlocking [monoliths](Monoliths.md), with stars.
 * Upgrading each monolith's [ability](Monoliths.md#ability).
 

@@ -23,6 +23,13 @@ public class TabGroup : MonoBehaviourWithInit
 
     public void SetActiveTab(TabButton tabButton)
     {
+        ///
+        if (tabButton != null && tabButton.IsLocked)
+        {
+            return;
+        }
+
+        ///
         foreach (var button in tabButtons)
         {
             button.SetActive(button == tabButton);

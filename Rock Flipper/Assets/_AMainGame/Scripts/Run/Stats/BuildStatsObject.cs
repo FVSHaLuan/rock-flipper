@@ -8,9 +8,14 @@ namespace Agame.Run.Stats
     public class BuildStatsObject : MonoBehaviourWithInit
     {
         public static event System.Action OnUnlockedSkillTree;
+        public static event System.Action OnEnabledBackgrounds;
 
         [SerializeField]
         private bool unlockedSkillTree;
+
+        [Header("Backgrounds")]
+        [SerializeField]
+        private bool backgroundsEnabled = false;
 
         [Header("Mouse")]
         public bool enabledMouseHover = false;
@@ -126,6 +131,19 @@ namespace Agame.Run.Stats
                 if (value)
                 {
                     OnUnlockedSkillTree?.Invoke();
+                }
+            }
+        }
+
+        public bool BackgroundsEnabled
+        {
+            get => backgroundsEnabled;
+            set
+            {
+                backgroundsEnabled = value;
+                if (value)
+                {
+                    OnEnabledBackgrounds?.Invoke();
                 }
             }
         }

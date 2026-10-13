@@ -10,6 +10,25 @@ public class TabButton : MonoBehaviourWithInit
 
     private Button button;
     private TabGroup tabGroup;
+    private bool isActive;
+    private bool isLocked;
+
+    /// <summary>
+    /// A locked tab button can't be clicked, and its tab group won't activate it.
+    /// </summary>
+    public bool IsLocked
+    {
+        get => isLocked;
+        set
+        {
+            ///
+            TryInit();
+
+            ///
+            isLocked = value;
+            ViewInteractable();
+        }
+    }
 
     protected override bool Init()
     {
@@ -38,7 +57,13 @@ public class TabButton : MonoBehaviourWithInit
         TryInit();
 
         ///
-        button.interactable = !isActive;
+        this.isActive = isActive;
+        ViewInteractable();
         tab.SetActive(isActive);
+    }
+
+    private void ViewInteractable()
+    {
+        button.interactable = !isActive && !isLocked;
     }
 }
