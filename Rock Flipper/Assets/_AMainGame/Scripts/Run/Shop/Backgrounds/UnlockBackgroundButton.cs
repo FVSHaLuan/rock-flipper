@@ -14,7 +14,7 @@ namespace Agame.Run.Shop
     /// </summary>
     public class UnlockBackgroundButton : ExtendedMonoBehaviourRun
     {
-        private const Currency CostCurrency = Currency.STAR;
+        public const Currency CostCurrency = Currency.STAR;
         private const string UnlockText = "Unlock Random";
         private const string NotInDemoText = "MORE IN FULL GAME";
 
@@ -50,6 +50,25 @@ namespace Agame.Run.Shop
         private BackgroundListItem flashingItem;
 
         private bool IsAnimating => animatingBackgroundId >= 0;
+
+        /// <summary>
+        /// Whether the player can unlock a background right now: a locked background other than the one being
+        /// unlocked by the animation can be picked in the current build, and the player has enough stars for it.
+        /// Also works while this button is inactive.
+        /// </summary>
+        public bool CanUnlock
+        {
+            get
+            {
+                CollectLockedBackgroundIds();
+                var unlockableCount = lockedBackgroundIds.Count;
+                if (lockedBackgroundIds.Contains(animatingBackgroundId))
+                {
+                    unlockableCount--;
+                }
+                return unlockableCount > 0 && RunData.IsEnough(GetNextUnlockCost());
+            }
+        }
 
         protected override void ExtendedAwake()
         {
@@ -104,7 +123,9 @@ namespace Agame.Run.Shop
         private CurrencyAmount GetNextUnlockCost()
         {
             // Background 0 is always unlocked, so a count of 1 means no background has been bought yet.
-            var amount = RunData.UnlockedBackgroundCount <= 1 ? firstUnlockCost : unlockCost;
+            // The background being unlocked by the animation is already paid for, so it counts as unlocked.
+            var unlockedCount = RunData.UnlockedBackgroundCount + (IsAnimating ? 1 : 0);
+            var amount = unlockedCount <= 1 ? firstUnlockCost : unlockCost;
             return new CurrencyAmount(CostCurrency, amount);
         }
 
