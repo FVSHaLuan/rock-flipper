@@ -16,6 +16,14 @@ namespace Agame.Run.Stats
         [Header("Backgrounds")]
         [SerializeField]
         private bool backgroundsEnabled = false;
+        /// <summary>
+        /// Preferred Multiplier with exactly 2 backgrounds unlocked. See <see cref="GetPreferredMultiplier"/>
+        /// </summary>
+        public double preferredMultiplierBase = 1.5;
+        /// <summary>
+        /// Added to the Preferred Multiplier for every unlocked background beyond the first 2. See <see cref="GetPreferredMultiplier"/>
+        /// </summary>
+        public double preferredMultiplierPerBackground = 0.25;
 
         [Header("Mouse")]
         public bool enabledMouseHover = false;
@@ -146,6 +154,20 @@ namespace Agame.Run.Stats
                     OnEnabledBackgrounds?.Invoke();
                 }
             }
+        }
+
+        /// <summary>
+        /// The cash income multiplier for using the Preferred background as the active background, with
+        /// <paramref name="unlockedBackgroundCount"/> backgrounds unlocked. 1 with fewer than 2 unlocked, since there is
+        /// no Preferred background then.
+        /// </summary>
+        public double GetPreferredMultiplier(int unlockedBackgroundCount)
+        {
+            if (unlockedBackgroundCount < 2)
+            {
+                return 1;
+            }
+            return preferredMultiplierBase + preferredMultiplierPerBackground * (unlockedBackgroundCount - 2);
         }
 
         public RockTierBuildStats GetRockTierBuildStats(RockTier rockTier)
