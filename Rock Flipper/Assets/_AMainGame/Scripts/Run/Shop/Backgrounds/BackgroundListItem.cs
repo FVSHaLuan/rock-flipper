@@ -1,3 +1,4 @@
+using FH.Core.Gameplay.HelperComponent;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,8 @@ namespace Agame.Run.Shop
         private GameObject activeIndicator;
         [SerializeField, Tooltip("Optional. Shown while this background is the Preferred background.")]
         private GameObject preferredIndicator;
+        [SerializeField, Tooltip("Optional. Blinks the Preferred indicator's text while the Preferred background isn't the active background.")]
+        private Blinker preferredTextBlinker;
 
         private RunData subscribedRunData;
         private bool started;
@@ -104,6 +107,10 @@ namespace Agame.Run.Shop
             if (preferredIndicator != null)
             {
                 preferredIndicator.SetActive(preferred);
+            }
+            if (preferredTextBlinker != null)
+            {
+                preferredTextBlinker.IsBlinking = preferred && !active;
             }
         }
     }

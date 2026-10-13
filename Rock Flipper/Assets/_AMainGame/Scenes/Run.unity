@@ -43664,7 +43664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478966739748433748, guid: f2148b8403f7b4dfba4de521a839e961, type: 3}
       propertyPath: m_Name
-      value: BackgroundListItem
+      value: Background - Grassland
       objectReference: {fileID: 0}
     - target: {fileID: 5996110874678585569, guid: f2148b8403f7b4dfba4de521a839e961, type: 3}
       propertyPath: m_Pivot.x
@@ -43749,6 +43749,18 @@ PrefabInstance:
     - target: {fileID: 7964717839717338693, guid: f2148b8403f7b4dfba4de521a839e961, type: 3}
       propertyPath: m_fontSize
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114572291981809625, guid: f2148b8403f7b4dfba4de521a839e961, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2677243
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114572291981809625, guid: f2148b8403f7b4dfba4de521a839e961, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6886792
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114572291981809625, guid: f2148b8403f7b4dfba4de521a839e961, type: 3}
+      propertyPath: m_Color.r
+      value: 0.19166073
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

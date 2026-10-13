@@ -121,8 +121,9 @@ MonoBehaviour:
   unlockedView: {fileID: 8765538944183845732}
   selectButton: {fileID: 6363045143524954032}
   nameText: {fileID: 6040545412628644170}
-  activeIndicator: {fileID: 0}
+  activeIndicator: {fileID: 3168389226973880752}
   preferredIndicator: {fileID: 3645807145632693955}
+  preferredTextBlinker: {fileID: 6008979613661210013}
 --- !u!1 &2437354247699040121
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +135,7 @@ GameObject:
   - component: {fileID: 145732517761019639}
   - component: {fileID: 5869155766149145738}
   - component: {fileID: 1377160061510437509}
+  - component: {fileID: 6008979613661210013}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -260,6 +262,115 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6008979613661210013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2437354247699040121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a578ba8a8659874fb45cc0b738ceb13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FH.Core.HelperComponent.UIBlinker
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  showingTime: 0.2
+  hiddenTime: 0.2
+  defaultState: 1
+  startBlinkingState: 1
+  randomizedStartBlinkingState: 0
+  controlDisabledState: 0
+  disabledState: 0
+  maxAdditionalShowingTime: 0
+  maxAdditionalHiddenTime: 0
+  isBlinking: 0
+  timeScaleMode: 1
+  onBlinkingHide:
+    m_PersistentCalls:
+      m_Calls: []
+  onBlinkingShow:
+    m_PersistentCalls:
+      m_Calls: []
+  targetRenderer: {fileID: 1377160061510437509}
+--- !u!1 &3168389226973880752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3002956649472167806}
+  - component: {fileID: 7473361180734006594}
+  - component: {fileID: 4256274920389406494}
+  m_Layer: 5
+  m_Name: Selected Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3002956649472167806
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168389226973880752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6232329549235207155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 10, y: -42.51}
+  m_SizeDelta: {x: 34.37, y: 34.37}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &7473361180734006594
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168389226973880752}
+  m_CullTransparentMesh: 1
+--- !u!114 &4256274920389406494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168389226973880752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6745098, g: 0.85882354, b: 0.93333334, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 828f68c4365b15e49b672357f340784e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &3645807145632693955
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +446,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.5
+  m_PixelsPerUnitMultiplier: 0.63
 --- !u!1 &5312191437155979876
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +664,7 @@ RectTransform:
   m_Children:
   - {fileID: 8712680250277096218}
   - {fileID: 3271538856204081813}
+  - {fileID: 3002956649472167806}
   m_Father: {fileID: 5996110874678585569}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -568,6 +680,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6232329549235207155}
     m_Modifications:
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.7843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.7843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.7843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.9607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.9607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.9607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.9607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.9607843
+      objectReference: {fileID: 0}
     - target: {fileID: 3225608771684552337, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
       propertyPath: m_Name
       value: Select Button
