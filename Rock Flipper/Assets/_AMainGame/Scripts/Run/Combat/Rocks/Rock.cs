@@ -155,7 +155,8 @@ namespace Agame.Run.Combat
             var amount = BuildStats.GetRockLandingCash(rockTier)
                 * (isBreaking ? BuildStats.GetRockBreakingCashMultiplier(rockTier) : 1)
                 * (isPure ? BuildStats.GetRockPurityCashMultiplier(rockTier) : 1)
-                * (isCritical ? BuildStats.GetRockCriticalCashMultiplier(rockTier) : 1);
+                * (isCritical ? BuildStats.GetRockCriticalCashMultiplier(rockTier) : 1)
+                * RunEntry.preferredBackgroundMultiplier.CashIncomeMultiplier;
             RunData.AddCurrency(Currency.CASH, amount);
 
             ///
