@@ -48,7 +48,7 @@ namespace Agame.Run.Shop
             var preferredMultiplier = subscribedPreferredMultiplier;
             if (!preferredMultiplier.HasPreferredBackground)
             {
-                statusText.SetText("Unlock more backgrounds to unlock the Preferred background.");
+                statusText.SetText("Unlock more backgrounds!");
                 return;
             }
 
@@ -56,7 +56,7 @@ namespace Agame.Run.Shop
             var multiplier = FormatMultiplier(preferredMultiplier.PreferredMultiplier);
             if (!preferredMultiplier.IsUsingPreferredBackground)
             {
-                statusText.SetText($"Select the Preferred background to get <b>{multiplier}</b> cash income.");
+                statusText.SetText($"Select the Preferred background to get multiplied cash income.");
                 return;
             }
 
