@@ -1,12 +1,12 @@
 # Skill Tree
 
-Most of the game's progression happens via the **Skill Tree** (see [Pillars](../Pillars.md#core-mechanics)), which has its own screen, opened from the [side bar](../Screens/MainScreen.md#side-bar).
+Most of the game's progression happens via the **Skill Tree** (see [Pillars](../Pillars.md#core-mechanics)), which has its own screen, opened from the [Shop tab](../Screens/MainScreen.md#shop-tab) of the side bar. The Skill Tree starts locked and is unlocked in the Shop tab.
 
 ## Purpose
 
 ## Nodes
 * The Skill Tree consists of **nodes**. Each node is a **skill**: it unlocks or upgrades things. Only Skill Tree nodes are skills.
-* Leveling up a skill is an [upgrade](../Pillars.md#core-loop), but not every upgrade is a skill (e.g. buying more rocks or Flipper Bots on the side bar).
+* Leveling up a skill is an [upgrade](../Pillars.md#core-loop), but not every upgrade is a skill (e.g. buying more rocks or Flipper Bots in the Shop tab).
 * A skill can have levels (**skill level**).
 
 ## Structure
@@ -17,8 +17,7 @@ Most of the game's progression happens via the **Skill Tree** (see [Pillars](../
 ## Known Skills
 Skills mentioned in other docs:
 * Unlocking the [background](Backgrounds.md#unlocking) feature.
-* Unlocking backgrounds, with [stars](Currencies.md).
-* Unlocking [monoliths](Monoliths.md), with stars.
+* Unlocking [monoliths](Monoliths.md), with [stars](Currencies.md).
 * Upgrading each monolith's [ability](Monoliths.md#ability).
 
 ## Decisions

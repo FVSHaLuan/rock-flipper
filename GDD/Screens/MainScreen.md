@@ -3,18 +3,16 @@
 The main screen is split horizontally into the **playfield** (left 3/4) and the **side bar** (right 1/4).
 
 ```
-+-------------------------------------------+-----------+
-| Current cash                              | Skill Tree|
-|                                           |-----------|
-|                                           | Buy rock  |
-|               PLAYFIELD (3/4)             | (per tier)|
-|                                           | Buy       |
-|                                           | Flipper   |
-|                                           | Bot       |
-|                                           |-----------|
-| [Chest bar 1/5][      Level bar 4/5      ]| System    |
-|                                           | Menu      |
-+-------------------------------------------+-----------+
++-------------------------------------------+---------------+
+| Current cash                              | SIDE BAR (1/4)|
+|                                           |               |
+|                                           | Tabs:         |
+|               PLAYFIELD (3/4)             | * Shop        |
+|                                           | * Backgrounds |
+|                                           | * Items       |
+|                                           |---------------|
+| [Chest bar 1/5][      Level bar 4/5      ]| System Menu   |
++-------------------------------------------+---------------+
 ```
 
 ## Playfield
@@ -43,14 +41,22 @@ Drawn on top of everything else on the playfield.
 The Chest bar and Level bar together span the full width of the playfield's bottom edge.
 
 ## Side Bar
+The side bar has 3 tabs: the **Shop tab**, the **Backgrounds tab** and the **Items tab**. The System Menu button, at the bottom of the side bar, opens the **System Menu** screen.
+
+| Tab | Purpose |
+|---|---|
+| Shop | Buying rocks, unlocking the [Skill Tree](../Systems/SkillTree.md), buying Flipper Bots |
+| Backgrounds | Selecting the active background and unlocking [backgrounds](../Systems/Backgrounds.md#unlocking) |
+| Items | Viewing [items](../Systems/Items.md) |
+
+### Shop Tab
 A vertical column of buttons.
 
 | Position | Button | Action |
 |---|---|---|
-| Top | Skill Tree | Opens the [Skill Tree](../Systems/SkillTree.md) screen |
+| Top | Skill Tree | Unlocks the Skill Tree; once it's unlocked, opens the Skill Tree screen |
 | Middle | Buy Rock (one per rock tier) | Buys one more rock of that tier |
 | Middle | Buy Flipper Bot | Buys one more Flipper Bot |
-| Bottom | System Menu | Opens the **System Menu** screen |
 
 ## Open Questions
 * Where do newly bought rocks / Flipper Bots appear on the playfield?

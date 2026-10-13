@@ -9,8 +9,9 @@ Backgrounds are the bottom layer of the playfield (see [Main Screen](../Screens/
 ## Unlocking
 * The background feature starts locked and is unlocked in the [Skill Tree](SkillTree.md).
 * The player starts with 1 background unlocked, with the grassland [biome](../Screens/MainScreen.md#background).
-* Other backgrounds are unlocked in the Skill Tree by spending [stars](Currencies.md).
-* The player sets one of the unlocked backgrounds as the **active background**, and can switch it at any time for free.
+* Other backgrounds are unlocked in the [Backgrounds tab](../Screens/MainScreen.md#side-bar) by spending [stars](Currencies.md), one at a time and in random order: each unlock picks a random locked background.
+  * The first unlock costs 0 stars; every later unlock costs 1 star.
+* The player sets one of the unlocked backgrounds as the **active background** in the Backgrounds tab, and can switch it at any time for free.
 
 ## Preferred Background
 * When at least 2 backgrounds are unlocked, at any time one of them is marked as the **Preferred background**. With only 1 background unlocked, there is no Preferred background and no Preferred Multiplier.

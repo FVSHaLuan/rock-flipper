@@ -1,6 +1,6 @@
 # Rocks
 
-**Rocks** lay around the playfield. The game starts with 1 P0 rock; more rocks must be purchased. All rock stats are listed in [Rock Stats](../Stats/Rock%20Stats.md).
+**Rocks** lay around the playfield. The game starts with 1 P0 rock; more rocks must be purchased in the [Shop tab](../Screens/MainScreen.md#shop-tab). All rock stats are listed in [Rock Stats](../Stats/Rock%20Stats.md).
 
 ## Purpose
 

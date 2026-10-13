@@ -39,6 +39,9 @@ namespace Agame.Run.Combat.Backgrounds
             }
         }
 
+        /// <summary>Number of background slots; ids range from 0 to this minus 1 (see <see cref="HasBackground"/>).</summary>
+        public int BackgroundCount => combatBackgrounds.Count;
+
         public bool HasBackground(int id)
         {
             return id >= 0 && id < combatBackgrounds.Count && combatBackgrounds[id] != null;

@@ -229,6 +229,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &3606935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 361396641981361232, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 402210859}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19259f40394f1d40935e416a69b3313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3905087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39972,6 +39983,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3225608771684552337, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
   m_PrefabInstance: {fileID: 402210859}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1982353801 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 402210859}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982353793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f65f87c8ecbb04d9bebda53797e82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1982353804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39984,6 +40006,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ac055c8f4dc814ba19f99bd437507d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockBackgroundButton
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  button: {fileID: 1982353801}
+  costText: {fileID: 3606935}
+  firstUnlockCost: 0
+  unlockCost: 1
 --- !u!1 &1983632369
 GameObject:
   m_ObjectHideFlags: 0
@@ -40961,7 +40991,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2022849465
 RectTransform:
   m_ObjectHideFlags: 0

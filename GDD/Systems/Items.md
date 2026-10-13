@@ -1,6 +1,6 @@
 # Items
 
-**Items** are dropped from [chests](Chests.md). Finding an item earns cash and progresses its item level. All item stats are listed in [Item Stats](../Stats/Item%20Stats.md), and the individual items in the [Items content file](../Content/Items.md).
+**Items** are dropped from [chests](Chests.md). Finding an item earns cash and progresses its item level. The player views items in the [Items tab](../Screens/MainScreen.md#side-bar). All item stats are listed in [Item Stats](../Stats/Item%20Stats.md), and the individual items in the [Items content file](../Content/Items.md).
 
 ## Purpose
 
