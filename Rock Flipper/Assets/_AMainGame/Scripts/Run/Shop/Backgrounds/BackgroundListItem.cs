@@ -93,7 +93,7 @@ namespace Agame.Run.Shop
                 nameText.SetText(backgroundManager.HasBackground(backgroundId)
                     ? backgroundManager.GetBackground(backgroundId).BackgroundName
                     : $"Missing background {backgroundId}");
-                selectButton.interactable = !active;
+                selectButton.interactable = true;
             }
 
             ///
