@@ -16,7 +16,7 @@ Backgrounds are the bottom layer of the playfield (see [Main Screen](../Screens/
 
 ## Preferred Background
 * When at least 2 backgrounds are unlocked, at any time one of them is marked as the **Preferred background**. With only 1 background unlocked, there is no Preferred background and no Preferred Multiplier.
-  * The first Preferred background is the first background unlocked after the starting one.
+  * Whenever a background is unlocked, it immediately becomes the Preferred background. So the first Preferred background is the first background unlocked after the starting one.
 * The Preferred background changes every **Preferred Interval**, to one picked randomly from the other unlocked backgrounds, so it always changes to a different one.
 * When the player sets the Preferred background as the active background, they get an income multiplier, the **Preferred Multiplier**, which applies to [cash](Currencies.md) income from all sources.
 * The Preferred Multiplier increases as the player unlocks more backgrounds.
