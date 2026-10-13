@@ -36,12 +36,24 @@ public static class OpenClaudeCodeHere
             UseShellExecute = true,
         });
 #elif UNITY_EDITOR_OSX
-        var escapedPath = workingDirectory.Replace("\"", "\\\"");
-        var script = $"tell application \"Terminal\" to do script \"cd \\\"{escapedPath}\\\" && claude\"";
-        Process.Start(new ProcessStartInfo("osascript", $"-e '{script}'")
+        // The script goes to osascript over stdin so no command-line quoting is involved;
+        // AppleScript's "quoted form of" handles spaces/quotes in the path for the shell.
+        var appleScriptPath = workingDirectory.Replace("\\", "\\\\").Replace("\"", "\\\"");
+        var script =
+            "tell application \"Terminal\"\n" +
+            "    activate\n" +
+            $"    do script \"cd \" & quoted form of \"{appleScriptPath}\" & \" && claude\"\n" +
+            "end tell\n";
+        using (var process = Process.Start(new ProcessStartInfo("/usr/bin/osascript", "-")
         {
-            UseShellExecute = true,
-        });
+            UseShellExecute = false,
+            RedirectStandardInput = true,
+            CreateNoWindow = true,
+        }))
+        {
+            process.StandardInput.Write(script);
+            process.StandardInput.Close();
+        }
 #else
         Process.Start(new ProcessStartInfo("x-terminal-emulator", "-e bash -c \"claude; exec bash\"")
         {
