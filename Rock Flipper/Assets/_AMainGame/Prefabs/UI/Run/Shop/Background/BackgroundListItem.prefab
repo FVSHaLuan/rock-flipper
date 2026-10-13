@@ -113,6 +113,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7726ff0b6be348a18d895567387bd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundListItem
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  lockedView: {fileID: 8307529681148711258}
+  unlockedView: {fileID: 8765538944183845732}
+  selectButton: {fileID: 6363045143524954032}
+  nameText: {fileID: 6040545412628644170}
+  activeIndicator: {fileID: 0}
+  preferredIndicator: {fileID: 0}
 --- !u!1 &5312191437155979876
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +471,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+--- !u!114 &6040545412628644170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 361396641981361232, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 6257650908155997466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19259f40394f1d40935e416a69b3313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6363045143524954032 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1052073752254063274, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}
+  m_PrefabInstance: {fileID: 6257650908155997466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f65f87c8ecbb04d9bebda53797e82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8712680250277096218 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3332114922633561600, guid: a5ed0e5df4847a54a9b686d74e359d8c, type: 3}

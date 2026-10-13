@@ -70,6 +70,7 @@ namespace Agame.Run.Combat.Backgrounds
             public int MaxCount => maxCount;
         }
 
+        public string BackgroundName => backgroundName;
         public Color CameraColor => cameraColor;
 
         protected override void InitThisCombat()

@@ -437,6 +437,13 @@ internal static partial class TerminalCommands
         RunEntry.Instance.combatBackgroundManager.UpdateBackgroundForCurrentCombat();
     }
 
+    [RegisterCommand(Help = "int backgroundId")]
+    private static void UnlockBackground(CommandArg[] args)
+    {
+        int backgroundId = args[0].Int;
+        RunEntry.Instance.RunData.UnlockBackground(backgroundId);
+    }
+
     [RegisterCommand(Help = "double amount")]
     private static void AddChestLevelExp(CommandArg[] args)
     {

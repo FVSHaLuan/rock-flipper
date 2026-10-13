@@ -21,6 +21,8 @@ namespace Agame
         [field: System.NonSerialized]
         public event Action<int> OnPreferredBackgroundIdChanged;
         [field: System.NonSerialized]
+        public event Action<int> OnBackgroundUnlocked;
+        [field: System.NonSerialized]
         public event Action<int> OnLeveledUp;
         [field: System.NonSerialized]
         public event Action<int> OnChestLeveledUp;
@@ -70,7 +72,7 @@ namespace Agame
         [SerializeField]
         private int preferredBackgroundId;
         [SerializeField]
-        private float preferredBackgroundTimeElapsed;
+        private float preferredBackgroundSetPlayTime;
         public bool visitedBackgroundShop;
         [SerializeField]
         private List<int> unlockedBackgroundIds = new List<int>() { 0 };
@@ -181,13 +183,15 @@ namespace Agame
 
                 ///
                 preferredBackgroundId = value;
-                preferredBackgroundTimeElapsed = 0;
+                preferredBackgroundSetPlayTime = PlayTimeNow;
 
                 ///
                 OnPreferredBackgroundIdChanged?.Invoke(preferredBackgroundId);
             }
         }
-        public float PreferredBackgroundTimeElapsed { get => preferredBackgroundTimeElapsed; set => preferredBackgroundTimeElapsed = value; }
+        /// <summary>Play time (<see cref="PlayTimeNow"/>) at which the current Preferred background was set.</summary>
+        public float PreferredBackgroundSetPlayTime => preferredBackgroundSetPlayTime;
+        public float PreferredBackgroundTimeElapsed => PlayTimeNow - preferredBackgroundSetPlayTime;
         public int UnlockedBackgroundCount => unlockedBackgroundIds == null ? 1 : unlockedBackgroundIds.Count;
 
         #endregion Background - Properties
@@ -420,6 +424,7 @@ namespace Agame
             if (!unlockedBackgroundIds.Contains(backgroundId))
             {
                 unlockedBackgroundIds.Add(backgroundId);
+                OnBackgroundUnlocked?.Invoke(backgroundId);
             }
         }
 
