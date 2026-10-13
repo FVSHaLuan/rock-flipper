@@ -11,7 +11,7 @@ namespace Agame.Run
 
         ///
         CASH = 0,
-        BLANK_BALL = 1,
+        STAR = 1,
         RAW_PRESTIGE = 2,
         PRESTIGE = 3,
         BUCKET = 4,

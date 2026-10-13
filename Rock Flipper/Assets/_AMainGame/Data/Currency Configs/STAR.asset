@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18118eca4e28ee5458a83d80fcd87049, type: 3}
-  m_Name: BLANK_BALL
+  m_Name: STAR
   m_EditorClassIdentifier: Assembly-CSharp::BT.Run.CurrencyConfigAsset
-  header: BLANK_BALL
+  header: STAR
   currency: 1
   isInCombatOnly: 0
   defaultAutoSellPercentage: 0
@@ -22,8 +22,8 @@ MonoBehaviour:
   levelUpCostGrowthFactor: 1.2000000476837158
   mediumValueScale: 3
   bigValueScale: 5
-  icon: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  icon: {fileID: 21300000, guid: 85948e591aa35a941ba65f04a7c0bd84, type: 3}
+  color: {r: 0, g: 1, b: 0.9882353, a: 1}
   textSprite: 
   achievementConfig:
     commonAchievementId: 
