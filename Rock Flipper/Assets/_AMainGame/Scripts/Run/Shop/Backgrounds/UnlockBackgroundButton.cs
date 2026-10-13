@@ -11,6 +11,7 @@ namespace Agame.Run.Shop
     public class UnlockBackgroundButton : ExtendedMonoBehaviourRun
     {
         private const Currency CostCurrency = Currency.STAR;
+        private const string UnlockText = "Unlock Random";
 
         [SerializeField]
         private Button button;
@@ -99,7 +100,7 @@ namespace Agame.Run.Shop
 
             ///
             var cost = GetNextUnlockCost();
-            costText.SetText(cost.amount > 0 ? cost.GetFormattedString() : "FREE");
+            costText.SetText($"{UnlockText} - {cost.GetFormattedString()}");
             button.interactable = RunData.IsEnough(cost);
         }
 
