@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9150943
       objectReference: {fileID: 0}
+    - target: {fileID: 1214488830100265350, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.056
+      objectReference: {fileID: 0}
     - target: {fileID: 1233632966399808367, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
       propertyPath: m_Name
       value: Chest Uncommon
@@ -50,11 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3250124645730561777, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.24
+      value: -4.04
       objectReference: {fileID: 0}
     - target: {fileID: 3250124645730561777, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.12
+      value: -3.448
       objectReference: {fileID: 0}
     - target: {fileID: 3250124645730561777, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87,6 +91,26 @@ PrefabInstance:
     - target: {fileID: 3250124645730561777, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655432969017018256, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9294712910527d84d9fe5e10ac209ef0, type: 3}
+    - target: {fileID: 5655432969017018256, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
+      propertyPath: m_Color.b
+      value: 0.28969383
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655432969017018256, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
+      propertyPath: m_Color.g
+      value: 0.35183784
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655432969017018256, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655432969017018256, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6657458593545727887, guid: 8e1e4e250c1ecf744a568bc5e3f0d3be, type: 3}
       propertyPath: rarity
