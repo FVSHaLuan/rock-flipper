@@ -104,10 +104,15 @@ namespace Agame.Run.Combat
         private void Flippable_OnFinishedFlipping()
         {
             CurrentHP--;
+
+            ///
+            AddChestLevelExp();
+            AddLevelExp();
+
+            ///
             if (CurrentHP <= 0)
             {
                 ///
-                AddChestLevelExp();
                 EarnCash(true);
 
                 ///
@@ -116,7 +121,6 @@ namespace Agame.Run.Combat
             else
             {
                 ///
-                AddLevelExp();
                 EarnCash(false);
 
                 ///
