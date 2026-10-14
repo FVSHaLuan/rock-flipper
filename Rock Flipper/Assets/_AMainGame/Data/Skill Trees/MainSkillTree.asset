@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: Mouse Radius
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 500, y: 500}
+  position: {x: 500, y: 750}
   ports:
     keys:
     - input
@@ -1776,7 +1776,7 @@ MonoBehaviour:
   m_Name: Enable Mouse Radius
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
   graph: {fileID: 11400000}
-  position: {x: 250, y: 250}
+  position: {x: 250, y: 500}
   ports:
     keys:
     - input
