@@ -27,8 +27,10 @@ namespace Agame.Run.Combat
             for (int i = 0; i < allRarities.Length; i++)
             {
                 var rarity = allRarities[i];
-                var buildStats = RunEntry.Instance.BuildStats.GetChestRarityBuildStats(rarity);
-                weightedRarities[i] = new WeightedChestRarity(rarity, buildStats.weight);
+                var weight = rarity == ChestRarity.Unique
+                    ? RunEntry.Instance.uniqueChestDropRules.GetUniqueChestWeight()
+                    : RunEntry.Instance.BuildStats.GetChestRarityBuildStats(rarity).weight;
+                weightedRarities[i] = new WeightedChestRarity(rarity, weight);
             }
 
             return WeightExtensions.PickOneIn(random, weightedRarities).Rarity;

@@ -49,6 +49,7 @@ namespace Agame.Run
         public SideBarStatBuilder sideBarStatBuilder;
         public CombatBackgroundManager combatBackgroundManager;
         public ChestInstanceManager chestInstanceManager;
+        public UniqueChestDropRules uniqueChestDropRules;
         public FloatingTextManager floatingTextManager;
         public CurrencyEarningTracker cashEarningTracker;
         public PreferredBackgroundMultiplier preferredBackgroundMultiplier;

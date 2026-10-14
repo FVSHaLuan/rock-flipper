@@ -136,8 +136,8 @@ namespace Agame
         /// <para>Real time, not gameplay time: in builds it keeps counting while the game is paused and ignores the
         /// gameplay time scale. Use the TimeScaleManager's gameplay time for in-combat timers and cooldowns.</para>
         /// <para>Only valid for the active run in the Run scene: throws when <see cref="RunEntry.Instance"/> is null
-        /// (e.g. in Home). Anything that calls it, like the <see cref="PreferredBackgroundId"/> setter, has the same
-        /// restriction.</para>
+        /// (e.g. in Home). Anything that calls it, like the <see cref="ActiveBackgroundId"/> and
+        /// <see cref="PreferredBackgroundId"/> setters, has the same restriction.</para>
         /// </summary>
         public float PlayTimeNow
         {
@@ -201,6 +201,7 @@ namespace Agame
                 if (activeBackgroundId == value) return;
 
                 ///
+                CommitActiveBackgroundTime();
                 activeBackgroundId = value;
 
                 ///

@@ -29,6 +29,10 @@ Backgrounds are the bottom layer of the playfield (see [Main Screen](../Screens/
 * Each background drops only 1 Unique chest, and only while it is the active background.
   * If the active background has already dropped its Unique chest, no Unique chest drops.
   * Once every background has dropped its Unique chest, Unique chests no longer drop.
+* A Unique chest's item is decided as soon as the chest drops. Unique chests only drop while some Unique items haven't been found yet and aren't held by an unopened Unique chest.
+* A background can only drop its Unique chest once it has been the active background for a minimum time in total, added up across every time it was active.
+  * After that, the longer it has been the active background, the more likely a dropped chest is Unique.
+  * Time only counts once the background feature is unlocked; the starting background begins with a time offset.
 
 ## Decisions
 

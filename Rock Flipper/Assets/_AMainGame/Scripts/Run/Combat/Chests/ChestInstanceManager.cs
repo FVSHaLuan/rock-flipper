@@ -42,10 +42,8 @@ namespace Agame.Run.Combat
         {
             var chestPrototype = RunEntry.prototypeManager.GetChestPrototype(chestRarity);
             var chest = CurrentSceneGeneralPool.TakeInstance(chestPrototype.PoolHandler, this).TargetObject;
-            if (state.HasValue)
-            {
-                chest.ApplyState(state.Value);
-            }
+            // Pooled chests are reused, so a chest without a saved state still gets a fresh one.
+            chest.ApplyState(state ?? new ChestState { rarity = chestRarity });
             chest.transform.position = Playfield.GetRandomPoint(-Vector2.one);
             chest.gameObject.SetActive(true);
             chest.StartNewLife();

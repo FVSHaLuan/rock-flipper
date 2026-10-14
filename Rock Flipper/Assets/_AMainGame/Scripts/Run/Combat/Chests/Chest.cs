@@ -18,6 +18,8 @@ namespace Agame.Run.Combat
         private ChestPoolHandler chestPoolHandler;
 
         private FlippableByPlayerCursor flippableByPlayerCursor;
+        private string uniqueItemId;
+        private int uniqueBackgroundId;
 
         public ChestPoolHandler PoolHandler => chestPoolHandler;
         public Flippable Flippable => flippable;
@@ -36,6 +38,8 @@ namespace Agame.Run.Combat
         public ChestRarity Rarity => rarity;
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
+        /// <summary>See <see cref="ChestState.uniqueItemId"/>.</summary>
+        public string UniqueItemId => uniqueItemId;
 
         protected void OnDisable()
         {
@@ -74,6 +78,10 @@ namespace Agame.Run.Combat
             {
                 Debug.LogError($"Chest state rarity {state.rarity} does not match chest rarity {rarity}");
             }
+
+            ///
+            uniqueItemId = state.uniqueItemId;
+            uniqueBackgroundId = state.uniqueBackgroundId;
         }
 
         public void StartNewLife()
@@ -95,14 +103,17 @@ namespace Agame.Run.Combat
         }
 
         /// <summary>
-        /// Finds a random item of this chest's rarity that can drop in the current build.
+        /// Finds the item picked when this Unique chest dropped (<see cref="UniqueItemId"/>),
+        /// or else a random item of this chest's rarity that can drop right now.
         /// </summary>
         private void DropItem()
         {
-            var item = RunEntry.itemManager.GetRandomItem(rarity);
+            var item = string.IsNullOrEmpty(uniqueItemId)
+                ? RunEntry.itemManager.GetRandomItem(rarity, RunData)
+                : RunEntry.itemManager.GetItemById(uniqueItemId);
             if (item == null)
             {
-                Debug.LogWarning($"Chest {name} found no item of rarity {rarity} to drop in the current build.", this);
+                Debug.LogWarning($"Chest {name} found no item of rarity {rarity} to drop.", this);
                 return;
             }
             var exp = gameBalance.GetItemExpPerFind(rarity);
@@ -113,7 +124,9 @@ namespace Agame.Run.Combat
         {
             return new ChestState
             {
-                rarity = rarity
+                rarity = rarity,
+                uniqueItemId = uniqueItemId,
+                uniqueBackgroundId = uniqueBackgroundId,
             };
         }
 

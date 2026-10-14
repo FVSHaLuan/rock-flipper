@@ -21,7 +21,21 @@ namespace Agame.Run.Combat
         private void SpawnChest()
         {
             var rarity = ChestUtilities.PickRarity();
-            RunEntry.chestInstanceManager.Spawn(rarity);
+            if (rarity != ChestRarity.Unique)
+            {
+                RunEntry.chestInstanceManager.Spawn(rarity);
+                return;
+            }
+
+            // A Unique chest picks the item it holds as it drops.
+            if (RunEntry.uniqueChestDropRules.TryCreateUniqueChestState(out var state))
+            {
+                RunEntry.chestInstanceManager.Spawn(state);
+            }
+            else
+            {
+                Debug.LogError("Picked a Unique chest, but no Unique item is left for it to hold. No chest dropped.", this);
+            }
         }
     }
 

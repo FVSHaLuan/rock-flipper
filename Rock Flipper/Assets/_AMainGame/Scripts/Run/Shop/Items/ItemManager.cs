@@ -75,10 +75,69 @@ namespace Agame.Run.Shop
         }
 
         /// <summary>
-        /// Picks a random item of <paramref name="rarity"/> that can drop in the current build (<see cref="Item.IsDroppableInCurrentBuild"/>), each with the same chance.
-        /// Returns null if there is none.
+        /// Picks a random item of <paramref name="rarity"/> that can drop right now (<see cref="CanDrop"/>), each with the same chance.
+        /// Items in <paramref name="excludedItemIds"/> are skipped. Returns null if there is none.
         /// </summary>
-        public Item GetRandomItem(ChestRarity rarity, IRandomGenerator random = null)
+        public Item GetRandomItem(ChestRarity rarity, RunData runData, ICollection<string> excludedItemIds = null, IRandomGenerator random = null)
+        {
+            ///
+            FillDroppableItemsBuffer(rarity, runData, excludedItemIds);
+            if (droppableItemsBuffer.Count == 0)
+            {
+                return null;
+            }
+
+            ///
+            random ??= UnityRandom.Default;
+            var pickedItem = droppableItemsBuffer.GetRandomItem(random);
+            droppableItemsBuffer.Clear();
+            return pickedItem;
+        }
+
+        /// <summary>
+        /// How many items of <paramref name="rarity"/> can drop right now (<see cref="CanDrop"/>), not counting
+        /// <paramref name="excludedItemIds"/>.
+        /// </summary>
+        public int GetDroppableItemCount(ChestRarity rarity, RunData runData, ICollection<string> excludedItemIds = null)
+        {
+            FillDroppableItemsBuffer(rarity, runData, excludedItemIds);
+            var count = droppableItemsBuffer.Count;
+            droppableItemsBuffer.Clear();
+            return count;
+        }
+
+        /// <summary>
+        /// Whether chests can drop <paramref name="item"/> right now: it must drop in the current build
+        /// (<see cref="Item.IsDroppableInCurrentBuild"/>). A Unique item also must not be a placeholder and must not have
+        /// been found yet, since there is only one of each.
+        /// </summary>
+        private static bool CanDrop(Item item, RunData runData)
+        {
+            ///
+            if (!item.IsDroppableInCurrentBuild)
+            {
+                return false;
+            }
+
+            ///
+            if (item.Rarity == ChestRarity.Unique)
+            {
+                if (item.IsPlaceholder)
+                {
+                    return false;
+                }
+                var state = runData.GetItemState(item.ItemId);
+                if (state.level > 0 || state.exp > 0)
+                {
+                    return false;
+                }
+            }
+
+            ///
+            return true;
+        }
+
+        private void FillDroppableItemsBuffer(ChestRarity rarity, RunData runData, ICollection<string> excludedItemIds)
         {
             ///
             TryInit();
@@ -93,21 +152,12 @@ namespace Agame.Run.Shop
             droppableItemsBuffer.Clear();
             foreach (var item in items)
             {
-                if (item.IsDroppableInCurrentBuild)
+                if (CanDrop(item, runData)
+                    && (excludedItemIds == null || !excludedItemIds.Contains(item.ItemId)))
                 {
                     droppableItemsBuffer.Add(item);
                 }
             }
-            if (droppableItemsBuffer.Count == 0)
-            {
-                return null;
-            }
-
-            ///
-            random ??= UnityRandom.Default;
-            var pickedItem = droppableItemsBuffer.GetRandomItem(random);
-            droppableItemsBuffer.Clear();
-            return pickedItem;
         }
 
         public Item GetItemById(string itemId)
