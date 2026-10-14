@@ -128,6 +128,7 @@ namespace Agame.Run.Stats
         public float flipperBotMovementSpeedFactor = 1f;
         public float flipperBotActiveTime = 10f;
         public float flipperBotIdleTime = 5f;
+        public bool flipperBotChestFlippingEnabled = false;
         private MaxCountCapBreakpoints flipperBotMaxCountCapBreakpoints = new MaxCountCapBreakpoints();
 
         public bool UnlockedSkillTree

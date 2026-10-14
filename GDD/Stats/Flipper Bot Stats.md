@@ -10,6 +10,7 @@ All stats of [Flipper Bots](../Systems/FlipperBots.md).
 | Flip range | Global | _(+)_ |
 | Max count | Global | _(+)_ |
 | Move speed | Global | _(+)_ |
+| Chest flipping | _Global_ | (\*) |
 
 ## Parked Ideas
 

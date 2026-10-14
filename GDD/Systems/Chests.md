@@ -10,6 +10,7 @@
 
 ## Flipping & Breaking
 * Chests have integer HP and are flipped the same way as rocks (see [Rocks → Flipping](Rocks.md#flipping)).
+* [Flipper Bots](FlipperBots.md#active-state) can't flip chests until chest flipping is unlocked.
 * When a chest's HP reaches 0, it breaks, which opens it.
 
 ## Opening
@@ -32,7 +33,7 @@ Unique chests drop Unique items, which only drop from Unique chests. When Unique
   * Do chest landings add chest exp and [level exp](Levels.md#level-bar)?
   * Does a chest lose exactly 1 HP per landing? Does a chest landing earn landing cash?
   * Can chests make [critical landings](Rocks.md#critical-landing)?
-  * Can chests be flipped by the [mouse](Mouse.md) and by [Flipper Bots](FlipperBots.md)?
+  * Can chests be flipped by the [mouse](Mouse.md)?
 * Does the chest bar get harder to fill over time?
 * How is a dropped chest's rarity decided (random chance, upgradable odds)?
 * Where does a dropped chest appear on the playfield? Is it a [gameplay element](../Screens/MainScreen.md#gameplay-elements)?

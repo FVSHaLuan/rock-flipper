@@ -11,6 +11,8 @@ In **Inactive state**, a Flipper Bot is still floating up and down, but not movi
 ## Active State
 In **Active state**, a Flipper Bot moves randomly and continuously performs a flip every time interval, flipping all ground rocks in range. A flip is performed even when no ground rocks are in range.
 
+By default, Flipper Bots can't flip [chests](Chests.md). Chest flipping, unlocked in the [Skill Tree](SkillTree.md), lets them flip chests.
+
 ## Decisions
 
 ## Open Questions

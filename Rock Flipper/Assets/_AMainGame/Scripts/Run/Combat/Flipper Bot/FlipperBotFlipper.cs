@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace Agame.Run.Combat
 {
-    public class FlipperBotFlipper : MonoBehaviour
+    public class FlipperBotFlipper : ExtendedMonoBehaviourRun
     {
         [SerializeField]
         private CircleCollider2D refCollider;
@@ -22,6 +22,11 @@ namespace Agame.Run.Combat
             ///
             foreach (var flippable in flippables)
             {
+                if (!BuildStats.flipperBotChestFlippingEnabled && flippable.GetComponentInParent<Chest>() != null)
+                {
+                    continue;
+                }
+
                 flippable.TryFlipping(FlipSource.FlipperBot);
             }
 

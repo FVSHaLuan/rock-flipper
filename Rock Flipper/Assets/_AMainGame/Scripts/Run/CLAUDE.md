@@ -51,6 +51,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 ## Flipping (player + bots)
 
 - Flipper Bot upgradable stats today: only `flipperBotMovementSpeed` / `flipperBotFlippingInterval`.
+- Flipper Bots skip chests (any `Flippable` with a `Chest` in its parents) unless `BuildStatsObject.flipperBotChestFlippingEnabled` is set, by the `EnableFlipperBotChestFlipping` agent (`Prefabs/Run/BuildAgents/Flipper Bots/Enable Flipper Bot Chest Flipping.prefab`).
 
 ## Currencies
 
