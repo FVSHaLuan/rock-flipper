@@ -23,8 +23,12 @@ Backgrounds are the bottom layer of the playfield (see [Main Screen](../Screens/
 * All background stats are listed in [Background Stats](../Stats/Background%20Stats.md).
 
 ## Unique Items
-* Some [items](Items.md) can only be found in specific backgrounds.
-* Unique [chests](Chests.md#rarity) drop items unique to a background; these items only drop from Unique chests.
+* Unique [items](Items.md#rarity) aren't tied to a specific background: each background drops a Unique item of a random kind.
+* Unique items only drop from Unique [chests](Chests.md#rarity).
+* Unique chests can only drop once the background feature is unlocked.
+* Each background drops only 1 Unique chest, and only while it is the active background.
+  * If the active background has already dropped its Unique chest, no Unique chest drops.
+  * Once every background has dropped its Unique chest, Unique chests no longer drop.
 
 ## Decisions
 

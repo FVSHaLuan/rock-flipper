@@ -22,7 +22,7 @@ Chests come in these **rarities**: Common, Uncommon, Rare, Epic, Unique. [Items]
 
 Chests of the same rarity share rarity-specific stats, such as Max HP.
 
-Unique chests drop items unique to a [background](Backgrounds.md#unique-items); these items only drop from Unique chests.
+Unique chests drop Unique items, which only drop from Unique chests. When Unique chests can drop is covered in [Backgrounds](Backgrounds.md#unique-items).
 
 ## Decisions
 * "Open" is the term for getting a chest's contents out.
@@ -40,7 +40,6 @@ Unique chests drop items unique to a [background](Backgrounds.md#unique-items); 
 * After a chest breaks, is it gone for good (unlike rocks, which are replaced)?
 * What other ways to open chests might be added?
 * How many items does a chest drop — does it depend on rarity?
-* Can a Unique chest drop when only one background is unlocked? Which background's unique items does it drop — the one set as [active background](Backgrounds.md#unlocking)?
 
 ## Parked Ideas
 

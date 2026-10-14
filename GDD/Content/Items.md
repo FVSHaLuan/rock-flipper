@@ -73,12 +73,12 @@ Each effect scales with item level.
 | Anvil | Chance a dropped chest is one rarity higher (never into Unique). |
 | Crystal Ball | Chance a chest opens the moment it drops. |
 | Halo | Chance a breaking landing pays breaking cash twice. |
+| Gemstone | Every Nth landing is guaranteed critical; landings of all rocks count toward N (N shrinks, minimum 2). |
 
 ### Unique
 | Item | Effect |
 |---|---|
 | Snow Globe | Inactive Flipper Bots still flip, at a long interval. |
-| Gemstone | Every Nth landing of a rock is critical (N shrinks, minimum 2). |
 | Glove | The mouse leaves a short trail that flips the rocks it touches. |
 | Paper Plane | Flipper Bots may head toward the area with the most rocks. |
 | Weather Vane | Using the Preferred background gives a bonus cash multiplier until it changes. |
