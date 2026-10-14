@@ -25302,7 +25302,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6640589817164236442, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1007708456}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6833574206854712843, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1307615678}
   m_SourcePrefab: {fileID: 100100000, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
 --- !u!224 &1034858996 stripped
 RectTransform:
@@ -33669,6 +33672,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1425365482117535473, guid: fc5f87dc7257dce41a0e75ad97011566, type: 3}
   m_PrefabInstance: {fileID: 1304155026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1307615666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6833574206854712843, guid: 3bb53f69218fa3d438f6d3b32bd834fd, type: 3}
+  m_PrefabInstance: {fileID: 1034858995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1307615678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307615666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3afacda45a4ecb44d944236132a77090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.ItemsTabButtonNoticeBadge
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  badge: {fileID: 1007708455}
 --- !u!1 &1313745879
 GameObject:
   m_ObjectHideFlags: 0

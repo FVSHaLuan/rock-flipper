@@ -584,6 +584,13 @@ namespace Agame
             }
 
             ///
+            var newlyFound = !itemState.IsFound && (newLevel > 0 || newExp > 0);
+            if (newlyFound || newLevel > itemState.level)
+            {
+                itemState.unseen = true;
+            }
+
+            ///
             itemState.exp = newExp;
             itemState.level = newLevel;
             SetItemState(itemId, itemState);

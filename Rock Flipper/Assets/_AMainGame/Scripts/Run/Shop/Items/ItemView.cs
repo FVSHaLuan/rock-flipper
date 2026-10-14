@@ -21,9 +21,12 @@ namespace Agame.Run.Shop
         private GameObject maxedText;
         [SerializeField]
         private UnifiedText levelText;
+        [SerializeField, Tooltip("Shown while the item is unseen (found or leveled up since the player last saw it).")]
+        private GameObject noticeBadge;
 
         private Item item;
         private ToolTipTriggerer toolTipTriggerer;
+        private RunData subscribedRunData;
 
         private ToolTipTriggerer ToolTipTriggerer
         {
@@ -39,7 +42,18 @@ namespace Agame.Run.Shop
 
         protected void Start()
         {
-            RunData.OnItemStateChanged += RunData_OnItemStateChanged;
+            subscribedRunData = RunData;
+            subscribedRunData.OnItemStateChanged += RunData_OnItemStateChanged;
+        }
+
+        protected void OnDestroy()
+        {
+            // RunData outlives this scene, so drop the handler even if RunEntry is already destroyed.
+            if (subscribedRunData != null)
+            {
+                subscribedRunData.OnItemStateChanged -= RunData_OnItemStateChanged;
+                subscribedRunData = null;
+            }
         }
 
         private void RunData_OnItemStateChanged(ItemState obj)
@@ -93,6 +107,9 @@ namespace Agame.Run.Shop
                 var expRequired = gameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
                 progressBar.SetValue((float)itemState.exp / expRequired);
             }
+
+            ///
+            noticeBadge.SetActive(itemState.unseen);
 
             ///
             UpdateToolTipContent(itemState, maxLevel);
