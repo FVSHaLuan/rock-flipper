@@ -24,6 +24,8 @@ namespace Agame.Run.Shop
         private UnifiedText levelText;
         [SerializeField, Tooltip("Shown while the item is unseen (found or leveled up since the player last saw it).")]
         private GameObject noticeBadge;
+        [SerializeField, Tooltip("Shown in demo and playtest builds when the item can't be found there (placeholder or not available in the demo).")]
+        private GameObject naInDemoObject;
         [SerializeField, Min(0f), Tooltip("Real-time seconds the view must stay hovered or selected to mark an unseen item seen.")]
         private float markSeenHoverDuration = 2f;
 
@@ -141,6 +143,7 @@ namespace Agame.Run.Shop
             ///
             itemIconImage.sprite = item.ItemIcon;
             itemIconImage.color = item.Rarity.GetForegroundColor();
+            naInDemoObject.SetActive(!item.IsDroppableInCurrentBuild);
 
             ///
             ViewItemState();
