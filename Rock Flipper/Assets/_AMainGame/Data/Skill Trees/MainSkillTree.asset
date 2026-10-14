@@ -37,6 +37,9 @@ MonoBehaviour:
       - fieldName: input
         node: {fileID: -4888477715943952057}
         reroutePoints: []
+      - fieldName: input
+        node: {fileID: -4771205358381411957}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -1008,6 +1011,63 @@ MonoBehaviour:
     a: 0
     b: 1
     c: 1
+--- !u!114 &-4771205358381411957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: FlipBot Flip Chests
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: 0, y: 1000}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -4771205358381411957}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 5938386169034562701}
+        reroutePoints: []
+      - fieldName: output
+        node: {fileID: -9085484646136457789}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -4771205358381411957}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 7433921506489623200, guid: 8a4dd0f6aa86cad49ab84374972f307c, type: 3}
+  buildValue: 1
+  levelCount: 1
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-4620618385319408184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,6 +1649,8 @@ MonoBehaviour:
   - {fileID: -2531014852363880603}
   - {fileID: -6468107650215265525}
   - {fileID: 3463417807162663264}
+  - {fileID: 3985561045363190598}
+  - {fileID: -4771205358381411957}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
@@ -2211,6 +2273,57 @@ MonoBehaviour:
     a: 0
     b: 1
     c: 1
+--- !u!114 &3985561045363190598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: Skill Repo
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: -1000, y: -2250}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 3985561045363190598}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 3985561045363190598}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 4195549556207, guid: d73b30568b054bd6dc965a18835bcfc3, type: 3}
+  buildValue: 1
+  levelCount: 20
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 2
+    c: 1.5
 --- !u!114 &4876357867273730795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2424,6 +2537,9 @@ MonoBehaviour:
       connections:
       - fieldName: input
         node: {fileID: -4163678286576885277}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -4771205358381411957}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
