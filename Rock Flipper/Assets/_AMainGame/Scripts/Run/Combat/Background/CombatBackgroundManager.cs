@@ -98,6 +98,7 @@ namespace Agame.Run.Combat.Backgrounds
         private void SetActiveBackground(CombatBackground combatBackground)
         {
             ///
+            bool isSwitching = combatBackground != activeBackground;
             activeBackground = combatBackground;
 
             ///
@@ -108,7 +109,12 @@ namespace Agame.Run.Combat.Backgrounds
 
             ///
             RunEntry.clearingCamera.backgroundColor = combatBackground.CameraColor;
-            combatBackground.TryInitThisCombat();
+
+            // A background shown earlier this combat skips its init, so rearrange its elements here.
+            if (!combatBackground.TryInitThisCombatBool() && isSwitching)
+            {
+                combatBackground.RandomizeElements();
+            }
         }
     }
 }

@@ -90,7 +90,7 @@ namespace Agame.Run.Combat.Backgrounds
         }
 
         [ContextMenu("RandomizeElements")]
-        private void RandomizeElements()
+        public void RandomizeElements()
         {
 #if UNITY_EDITOR
             if (!Application.isPlaying)
