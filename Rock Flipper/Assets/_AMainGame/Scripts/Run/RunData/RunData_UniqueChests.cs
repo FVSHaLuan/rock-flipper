@@ -8,6 +8,10 @@ namespace Agame
     /// </summary>
     public partial class RunData
     {
+        /// <summary>Fires with the background id when a background drops its Unique chest.</summary>
+        [field: System.NonSerialized]
+        public event System.Action<int> OnBackgroundDroppedUniqueChest;
+
         [SerializeField]
         private List<int> uniqueChestDroppedBackgroundIds = new List<int>();
 
@@ -31,6 +35,7 @@ namespace Agame
             if (!uniqueChestDroppedBackgroundIds.Contains(backgroundId))
             {
                 uniqueChestDroppedBackgroundIds.Add(backgroundId);
+                OnBackgroundDroppedUniqueChest?.Invoke(backgroundId);
             }
         }
     }

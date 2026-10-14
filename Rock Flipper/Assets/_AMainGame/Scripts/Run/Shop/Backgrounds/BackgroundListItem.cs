@@ -1,3 +1,4 @@
+using Agame.FeatureBranching;
 using FH.Core.Gameplay.HelperComponent;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,6 +29,8 @@ namespace Agame.Run.Shop
         private Blinker preferredTextBlinker;
         [SerializeField, Tooltip("Optional. Shown by the unlock animation of UnlockBackgroundButton while it stops at this item.")]
         private GameObject flashBackground;
+        [SerializeField, Tooltip("Optional. Shows how many Unique items this background has dropped: \"0/1\" or \"1/1\", or \"0/1 (N/A in demo)\" in demo and playtest builds once another background has dropped one.")]
+        private UnifiedText uniqueItemCountText;
 
         private RunData subscribedRunData;
         private bool started;
@@ -44,6 +47,7 @@ namespace Agame.Run.Shop
             subscribedRunData.OnActiveBackgroundIdChanged += RunData_OnBackgroundStateChanged;
             subscribedRunData.OnPreferredBackgroundIdChanged += RunData_OnBackgroundStateChanged;
             subscribedRunData.OnBackgroundUnlocked += RunData_OnBackgroundStateChanged;
+            subscribedRunData.OnBackgroundDroppedUniqueChest += RunData_OnBackgroundStateChanged;
 
             ///
             started = true;
@@ -65,6 +69,7 @@ namespace Agame.Run.Shop
                 subscribedRunData.OnActiveBackgroundIdChanged -= RunData_OnBackgroundStateChanged;
                 subscribedRunData.OnPreferredBackgroundIdChanged -= RunData_OnBackgroundStateChanged;
                 subscribedRunData.OnBackgroundUnlocked -= RunData_OnBackgroundStateChanged;
+                subscribedRunData.OnBackgroundDroppedUniqueChest -= RunData_OnBackgroundStateChanged;
             }
         }
 
@@ -122,6 +127,27 @@ namespace Agame.Run.Shop
             {
                 preferredTextBlinker.IsBlinking = preferred && !active;
             }
+            if (uniqueItemCountText != null)
+            {
+                uniqueItemCountText.SetText(GetUniqueItemCountText(backgroundId));
+            }
+        }
+
+        private string GetUniqueItemCountText(int backgroundId)
+        {
+            if (RunData.HasBackgroundDroppedUniqueChest(backgroundId))
+            {
+                return "1/1";
+            }
+
+            // Demo and playtest builds drop only 1 Unique chest per save (UniqueChestDropRules).
+            if (VersionBranchInfo.IsPlaytestOrDemo && RunData.UniqueChestDropCount > 0)
+            {
+                return "0/1 (N/A in demo)";
+            }
+
+            ///
+            return "0/1";
         }
     }
 

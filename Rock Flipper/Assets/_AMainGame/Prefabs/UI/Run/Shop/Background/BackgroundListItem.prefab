@@ -125,6 +125,7 @@ MonoBehaviour:
   preferredIndicator: {fileID: 3645807145632693955}
   preferredTextBlinker: {fileID: 6008979613661210013}
   flashBackground: {fileID: 2313815408161274870}
+  uniqueItemCountText: {fileID: 5121119047689097091}
 --- !u!1 &1866702970188543590
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +855,7 @@ GameObject:
   - component: {fileID: 6536302704296751178}
   - component: {fileID: 9153433994918879716}
   - component: {fileID: 6393229651777614083}
-  - component: {fileID: 1894774963337577894}
+  - component: {fileID: 5121119047689097091}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -981,7 +982,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1894774963337577894
+--- !u!114 &5121119047689097091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -990,31 +991,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8095692494136496268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a578ba8a8659874fb45cc0b738ceb13, type: 3}
+  m_Script: {fileID: 11500000, guid: a19259f40394f1d40935e416a69b3313, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FH.Core.HelperComponent.UIBlinker
-  selfLog:
-    enableLogger: 0
-    alsoLogToUnityConsole: 0
-    selfLogs: 
-  showingTime: 0.2
-  hiddenTime: 0.2
-  defaultState: 1
-  startBlinkingState: 1
-  randomizedStartBlinkingState: 0
-  controlDisabledState: 0
-  disabledState: 0
-  maxAdditionalShowingTime: 0
-  maxAdditionalHiddenTime: 0
-  isBlinking: 0
-  timeScaleMode: 1
-  onBlinkingHide:
-    m_PersistentCalls:
-      m_Calls: []
-  onBlinkingShow:
-    m_PersistentCalls:
-      m_Calls: []
-  targetRenderer: {fileID: 6393229651777614083}
+  m_EditorClassIdentifier: FHC::UnifiedText
+  uguiText: {fileID: 0}
+  tmp_Text: {fileID: 6393229651777614083}
 --- !u!1 &8307529681148711258
 GameObject:
   m_ObjectHideFlags: 0
