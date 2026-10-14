@@ -20,6 +20,12 @@ namespace Agame.Run.Combat
             ///
             chest.OnHPChanged += Chest_OnHPChanged;
             chest.OnStartedNewLife += Chest_OnStartedNewLife;
+            chest.OnOpened += Chest_OnOpened;
+        }
+
+        private void Chest_OnOpened()
+        {
+            wrapper.SetActive(false);
         }
 
         private void Chest_OnStartedNewLife()

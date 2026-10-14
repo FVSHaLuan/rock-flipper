@@ -12251,6 +12251,7 @@ MonoBehaviour:
   sideBarStatBuilder: {fileID: 2052955422}
   combatBackgroundManager: {fileID: 4075723}
   chestInstanceManager: {fileID: 863627441}
+  foundItemAnimation: {fileID: 1629473407}
   uniqueChestDropRules: {fileID: 1132203392}
   floatingTextManager: {fileID: 311759380}
   cashEarningTracker: {fileID: 1271886624}
@@ -17594,6 +17595,7 @@ Transform:
   - {fileID: 540508565}
   - {fileID: 1515944352}
   - {fileID: 1132203391}
+  - {fileID: 1629473406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &731284647
@@ -40684,6 +40686,126 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3677ea1a69bab624dafd5f6bebe3b6a2, type: 3}
+--- !u!1 &1629473405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629473406}
+  - component: {fileID: 1629473407}
+  m_Layer: 0
+  m_Name: FoundItemAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629473406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629473405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 731004323}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1629473407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629473405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2bd8e7438c09c4da43886fff61b0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.Shop.FoundItemAnimation
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  avatarPrototype: {fileID: 7266202733195095125, guid: a889ec64d2cb2e9458780bbc513b6fe2, type: 3}
+  target: {fileID: 1034858996}
+  appearDuration: 0.35
+  appearRise: 0.6
+  appearScale:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.7
+      value: 1.2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hoverDuration: 0.6
+  flightDuration: 0.55
+  flightProgress:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  flightArcHeight: 1
+  flightEndScale: 0.3
+  nameFadeDuration: 0.15
+  onAppeared:
+    m_PersistentCalls:
+      m_Calls: []
+  onArrived:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1634753400
 PrefabInstance:
   m_ObjectHideFlags: 0

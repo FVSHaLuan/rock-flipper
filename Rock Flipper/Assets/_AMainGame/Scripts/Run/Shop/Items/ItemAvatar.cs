@@ -25,6 +25,15 @@ namespace Agame.Run.Shop
             ///
             iconRenderer.sprite = item.ItemIcon;
             nameText.SetText(item.ItemName);
+            SetNameAlpha(1f);
+        }
+
+        /// <summary>
+        /// Fades the name in or out. <see cref="SetItem"/> shows it fully again.
+        /// </summary>
+        public void SetNameAlpha(float alpha)
+        {
+            nameText.alpha = alpha;
         }
 
 #if UNITY_EDITOR

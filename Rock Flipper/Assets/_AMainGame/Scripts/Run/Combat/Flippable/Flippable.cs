@@ -1,3 +1,4 @@
+using FHC.Core.Architecture;
 using UnityEngine;
 
 namespace Agame.Run.Combat
@@ -27,6 +28,8 @@ namespace Agame.Run.Combat
         private Vector2 flippingStartPosition;
         private Vector2 flippingEndPosition;
 
+        private readonly BalancerWithObjects flippingLockBalancer = new BalancerWithObjects();
+
         public float FlippingSpeedFactor { get; set; } = 1f;
         public bool IsFlipping { get; private set; }
         public float FlippingProgress { get; private set; }
@@ -36,11 +39,25 @@ namespace Agame.Run.Combat
         /// Source of the current flip, or of the last one once landed
         /// </summary>
         public FlipSource LastFlipSource { get; private set; }
+        /// <summary>
+        /// While locked, <see cref="TryFlipping"/> fails (e.g. a chest that is opening)
+        /// </summary>
+        public bool IsFlippingLocked => !flippingLockBalancer.IsBalanced;
+
+        public void AddFlippingLock(object @object)
+        {
+            flippingLockBalancer.AddObject(@object);
+        }
+
+        public void RemoveFlippingLock(object @object)
+        {
+            flippingLockBalancer.RemoveObject(@object);
+        }
 
         public bool TryFlipping(FlipSource source)
         {
             ///
-            if (IsFlipping)
+            if (IsFlipping || IsFlippingLocked)
                 return false;
 
             ///

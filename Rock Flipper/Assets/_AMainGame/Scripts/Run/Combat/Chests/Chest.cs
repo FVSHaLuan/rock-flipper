@@ -1,4 +1,5 @@
-using System;
+using Agame.Run.Shop;
+using System.Collections;
 using UnityEngine;
 
 namespace Agame.Run.Combat
@@ -7,6 +8,7 @@ namespace Agame.Run.Combat
     {
         public event System.Action OnStartedNewLife;
         public event System.Action OnHPChanged;
+        public event System.Action OnOpened;
 
         [SerializeField]
         private ChestRarity rarity;
@@ -16,6 +18,8 @@ namespace Agame.Run.Combat
         private Flippable flippable;
         [SerializeField]
         private ChestPoolHandler chestPoolHandler;
+        [SerializeField]
+        private ChestOpeningAnimation openingAnimation;
 
         private FlippableByPlayerCursor flippableByPlayerCursor;
         private string uniqueItemId;
@@ -38,6 +42,10 @@ namespace Agame.Run.Combat
         public ChestRarity Rarity => rarity;
         public int MaxHP { get; private set; }
         public int CurrentHP { get; private set; }
+        /// <summary>
+        /// Between <see cref="Open"/> and the end of the opening animation, after which the chest returns to the pool.
+        /// </summary>
+        public bool IsOpening { get; private set; }
         /// <summary>See <see cref="ChestState.uniqueItemId"/>.</summary>
         public string UniqueItemId => uniqueItemId;
 
@@ -86,25 +94,59 @@ namespace Agame.Run.Combat
             CurrentHP = MaxHP;
 
             ///
+            if (IsOpening)
+            {
+                IsOpening = false;
+                flippable.RemoveFlippingLock(this);
+            }
+            openingAnimation.ResetView();
+
+            ///
             OnStartedNewLife?.Invoke();
         }
 
+        /// <summary>
+        /// The item is found right away, so quitting mid-animation loses nothing; the animation only shows it.
+        /// </summary>
         private void Open()
         {
-            DropItem();
+            ///
+            IsOpening = true;
+            flippable.AddFlippingLock(this);
+
+            ///
+            var item = DropItem();
 
             ///
             // Removed here rather than in OnDisable: unloading the scene also disables chests,
             // and the save made on unload must still include them.
             RunEntry.chestInstanceManager.RemoveActiveChest(this);
+
+            ///
+            OnOpened?.Invoke();
+            StartCoroutine(PlayOpening(item));
+        }
+
+        private IEnumerator PlayOpening(Item item)
+        {
+            ///
+            yield return openingAnimation.Play(() =>
+            {
+                if (item != null)
+                {
+                    RunEntry.foundItemAnimation.Play(item, openingAnimation.ItemOrigin);
+                }
+            });
+
+            ///
             PoolHandler.TryReturnToPoolAndDeactivate();
         }
 
         /// <summary>
         /// Finds the item picked when this Unique chest dropped (<see cref="UniqueItemId"/>),
-        /// or else a random item of this chest's rarity that can drop right now.
+        /// or else a random item of this chest's rarity that can drop right now. Returns null if no item can drop.
         /// </summary>
-        private void DropItem()
+        private Item DropItem()
         {
             var item = string.IsNullOrEmpty(uniqueItemId)
                 ? RunEntry.itemManager.GetRandomItem(rarity, RunData)
@@ -112,10 +154,11 @@ namespace Agame.Run.Combat
             if (item == null)
             {
                 Debug.LogWarning($"Chest {name} found no item of rarity {rarity} to drop.", this);
-                return;
+                return null;
             }
             var exp = gameBalance.GetItemExpPerFind(rarity);
             RunData.AddItemExp(item.ItemId, exp);
+            return item;
         }
 
         public ChestState GetState()
@@ -129,6 +172,11 @@ namespace Agame.Run.Combat
         }
 
 #if UNITY_EDITOR
+        protected void Reset()
+        {
+            openingAnimation = GetComponent<ChestOpeningAnimation>();
+        }
+
         [ContextMenu("Spawn This Rarity"), PlayModeOnly]
         private void Editor_SpawnThisRarity()
         {
