@@ -112,7 +112,7 @@ namespace XNodeEditor
                     if (inputAttribute != null || outputAttribute != null) continue;
                 }
 
-                // A node's only output has no visible handle: it's anchored at the line's horizontal center, and dragged from anywhere on the node body
+                // A node's only output has no visible handle: it's anchored at the line's horizontal center, and Ctrl/Cmd-dragged from anywhere on the node
                 XNode.NodePort port = target.GetPort(iterator.name);
                 if (port != null && port == GetSingleOutput(target))
                 {
@@ -135,7 +135,7 @@ namespace XNodeEditor
             }
         }
 
-        /// <summary> The node's output if it has exactly one, else null. Its handle is hidden and it's dragged from anywhere on the node body instead. </summary>
+        /// <summary> The node's output if it has exactly one, else null. Its handle is hidden and it's Ctrl/Cmd-dragged from anywhere on the node instead. </summary>
         public static XNode.NodePort GetSingleOutput(XNode.Node node)
         {
             XNode.NodePort single = null;

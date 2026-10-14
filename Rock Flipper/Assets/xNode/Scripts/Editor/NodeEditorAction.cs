@@ -28,6 +28,8 @@ namespace XNodeEditor
         [NonSerialized] private XNode.NodePort draggedOutputTarget = null;
         [NonSerialized] private XNode.NodePort autoConnectOutput = null;
         [NonSerialized] private List<Vector2> draggedOutputReroutes = new List<Vector2>();
+        /// <summary> Node pressed with the action key (Ctrl, Cmd on Mac). Dragging starts a connection from its single output; releasing without a drag toggles its selection </summary>
+        [NonSerialized] private XNode.Node pendingConnectionNode = null;
         private RerouteReference hoveredReroute = new RerouteReference();
         public List<RerouteReference> selectedReroutes = new List<RerouteReference>();
         private Vector2 dragBoxStart;
@@ -66,6 +68,13 @@ namespace XNodeEditor
                 case EventType.MouseDrag:
                     if (e.button == 0 && e.modifiers != EventModifiers.Alt)
                     {
+                        if (pendingConnectionNode != null)
+                        {
+                            draggedOutput = NodeEditor.GetSingleOutput(pendingConnectionNode);
+                            autoConnectOutput = draggedOutput;
+                            pendingConnectionNode = null;
+                        }
+
                         if (IsDraggingPort)
                         {
                             // Set target even if we can't connect, so as to prevent auto-conn menu from opening erroneously
@@ -185,6 +194,7 @@ namespace XNodeEditor
                     if (e.button == 0)
                     {
                         draggedOutputReroutes.Clear();
+                        pendingConnectionNode = null;
 
                         if (IsHoveringPort)
                         {
@@ -210,9 +220,15 @@ namespace XNodeEditor
                                 }
                             }
                         }
-                        else if (IsHoveringNode && IsHoveringTitle(hoveredNode))
+                        else if (IsHoveringNode && EditorGUI.actionKey && NodeEditor.GetSingleOutput(hoveredNode) != null)
                         {
-                            // If mousedown on node header, select or deselect
+                            // Action key + mousedown anywhere on a node with a single (hidden) output: a drag connects from it, a click toggles selection
+                            pendingConnectionNode = hoveredNode;
+                            e.Use();
+                        }
+                        else if (IsHoveringNode)
+                        {
+                            // If mousedown anywhere on a node, select or deselect
                             if (!Selection.Contains(hoveredNode))
                             {
                                 SelectNode(hoveredNode, e.control || e.shift);
@@ -225,13 +241,6 @@ namespace XNodeEditor
 
                             e.Use();
                             currentActivity = NodeActivity.HoldNode;
-                        }
-                        else if (IsHoveringNode && NodeEditor.GetSingleOutput(hoveredNode) != null)
-                        {
-                            // Mousedown on the body of a node with a single (hidden) output starts dragging a connection from it
-                            draggedOutput = NodeEditor.GetSingleOutput(hoveredNode);
-                            autoConnectOutput = draggedOutput;
-                            e.Use();
                         }
                         else if (IsHoveringReroute)
                         {
@@ -268,8 +277,15 @@ namespace XNodeEditor
                 case EventType.MouseUp:
                     if (e.button == 0)
                     {
+                        // Action key click on a node without dragging: toggle its selection
+                        if (pendingConnectionNode != null)
+                        {
+                            if (Selection.Contains(pendingConnectionNode)) DeselectNode(pendingConnectionNode);
+                            else SelectNode(pendingConnectionNode, true);
+                            pendingConnectionNode = null;
+                        }
                         //Port drag release
-                        if (IsDraggingPort)
+                        else if (IsDraggingPort)
                         {
                             // If connection is valid, save it
                             if (draggedOutputTarget != null && draggedOutputTarget.node != draggedOutput.node && draggedOutput.CanConnectTo(draggedOutputTarget))
@@ -316,7 +332,7 @@ namespace XNodeEditor
                             if (NodeEditorPreferences.GetSettings().autoSave) AssetDatabase.SaveAssets();
                         }
 
-                        // If click node header, select it.
+                        // If click node, select it.
                         if (currentActivity == NodeActivity.HoldNode && !(e.control || e.shift))
                         {
                             selectedReroutes.Clear();
@@ -361,7 +377,7 @@ namespace XNodeEditor
                             {
                                 ShowPortContextMenu(hoveredPort);
                             }
-                            else if (IsHoveringNode && IsHoveringTitle(hoveredNode))
+                            else if (IsHoveringNode)
                             {
                                 if (!Selection.Contains(hoveredNode)) SelectNode(hoveredNode, false);
                                 autoConnectOutput = null;
@@ -449,6 +465,7 @@ namespace XNodeEditor
                         Repaint();
                         currentActivity = NodeActivity.Idle;
                     }
+                    if (e.rawType == EventType.MouseUp) pendingConnectionNode = null;
                     break;
             }
         }
@@ -683,19 +700,6 @@ namespace XNodeEditor
                     NodeEditorGUILayout.DrawPortHandle(rect, bgcol, frcol);
                 }
             }
-        }
-
-        bool IsHoveringTitle(XNode.Node node)
-        {
-            Vector2 mousePos = Event.current.mousePosition;
-            //Get node position
-            Vector2 nodePos = GridToWindowPosition(node.position);
-            float width;
-            Vector2 size;
-            if (nodeSizes.TryGetValue(node, out size)) width = size.x;
-            else width = 200;
-            Rect windowRect = new Rect(nodePos, new Vector2(width / zoom, 30 / zoom));
-            return windowRect.Contains(mousePos);
         }
 
         /// <summary> Attempt to connect dragged output to target node </summary>
