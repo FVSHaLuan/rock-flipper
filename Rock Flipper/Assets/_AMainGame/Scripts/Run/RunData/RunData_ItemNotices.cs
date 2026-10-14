@@ -30,6 +30,20 @@ namespace Agame
             }
         }
 
+        public void MarkItemUnseen(string itemId)
+        {
+            ///
+            var itemState = GetItemState(itemId);
+            if (itemState.unseen)
+            {
+                return;
+            }
+
+            ///
+            itemState.unseen = true;
+            SetItemState(itemId, itemState);
+        }
+
         public void MarkItemSeen(string itemId)
         {
             ///

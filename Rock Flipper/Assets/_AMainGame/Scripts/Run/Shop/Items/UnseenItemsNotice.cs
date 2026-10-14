@@ -5,7 +5,8 @@ namespace Agame.Run.Shop
 {
     /// <summary>
     /// Shows <see cref="content"/> (the "red dot" explanation and the dismiss-all button) on the Items tab while at least
-    /// one item is unseen (<see cref="ItemState.unseen"/>). The button marks every item seen.
+    /// one item is unseen (<see cref="ItemState.unseen"/>), counting a found item only once it lands on the Items tab button
+    /// (<see cref="FoundItemAnimation.HasRevealedUnseenItems"/>). The button marks every item seen.
     /// </summary>
     public class UnseenItemsNotice : ExtendedMonoBehaviourRun
     {
@@ -15,6 +16,7 @@ namespace Agame.Run.Shop
         private Button markAllSeenButton;
 
         private RunData subscribedRunData;
+        private FoundItemAnimation subscribedFoundItemAnimation;
 
         protected override void ExtendedAwake()
         {
@@ -27,6 +29,8 @@ namespace Agame.Run.Shop
             ///
             subscribedRunData = RunData;
             subscribedRunData.OnItemStateChanged += RunData_OnItemStateChanged;
+            subscribedFoundItemAnimation = RunEntry.foundItemAnimation;
+            subscribedFoundItemAnimation.OnItemRevealed += FoundItemAnimation_OnItemRevealed;
 
             ///
             UpdateView();
@@ -40,9 +44,19 @@ namespace Agame.Run.Shop
                 subscribedRunData.OnItemStateChanged -= RunData_OnItemStateChanged;
                 subscribedRunData = null;
             }
+            if (subscribedFoundItemAnimation != null)
+            {
+                subscribedFoundItemAnimation.OnItemRevealed -= FoundItemAnimation_OnItemRevealed;
+                subscribedFoundItemAnimation = null;
+            }
         }
 
         private void RunData_OnItemStateChanged(ItemState itemState)
+        {
+            UpdateView();
+        }
+
+        private void FoundItemAnimation_OnItemRevealed(string itemId)
         {
             UpdateView();
         }
@@ -54,7 +68,7 @@ namespace Agame.Run.Shop
 
         private void UpdateView()
         {
-            content.SetActive(subscribedRunData.HasUnseenItems);
+            content.SetActive(subscribedFoundItemAnimation.HasRevealedUnseenItems);
         }
     }
 

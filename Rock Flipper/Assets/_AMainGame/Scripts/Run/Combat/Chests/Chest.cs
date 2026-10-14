@@ -106,7 +106,8 @@ namespace Agame.Run.Combat
         }
 
         /// <summary>
-        /// The item is found right away, so quitting mid-animation loses nothing; the animation only shows it.
+        /// The item is found right away, so quitting mid-animation loses nothing; the animation only shows it,
+        /// and the items UI shows the find once it lands (<see cref="FoundItemAnimation.FindItem"/>).
         /// </summary>
         private void Open()
         {
@@ -115,7 +116,7 @@ namespace Agame.Run.Combat
             flippable.AddFlippingLock(this);
 
             ///
-            var item = DropItem();
+            var find = DropItem();
 
             ///
             // Removed here rather than in OnDisable: unloading the scene also disables chests,
@@ -124,17 +125,17 @@ namespace Agame.Run.Combat
 
             ///
             OnOpened?.Invoke();
-            StartCoroutine(PlayOpening(item));
+            StartCoroutine(PlayOpening(find));
         }
 
-        private IEnumerator PlayOpening(Item item)
+        private IEnumerator PlayOpening(FoundItemAnimation.UnrevealedFind find)
         {
             ///
             yield return openingAnimation.Play(() =>
             {
-                if (item != null)
+                if (find != null)
                 {
-                    RunEntry.foundItemAnimation.Play(item, openingAnimation.ItemOrigin);
+                    RunEntry.foundItemAnimation.Play(find, openingAnimation.ItemOrigin);
                 }
             });
 
@@ -144,9 +145,10 @@ namespace Agame.Run.Combat
 
         /// <summary>
         /// Finds the item picked when this Unique chest dropped (<see cref="UniqueItemId"/>),
-        /// or else a random item of this chest's rarity that can drop right now. Returns null if no item can drop.
+        /// or else a random item of this chest's rarity that can drop right now, and returns its find.
+        /// Returns null if no item can drop.
         /// </summary>
-        private Item DropItem()
+        private FoundItemAnimation.UnrevealedFind DropItem()
         {
             var item = string.IsNullOrEmpty(uniqueItemId)
                 ? RunEntry.itemManager.GetRandomItem(rarity, RunData)
@@ -157,8 +159,7 @@ namespace Agame.Run.Combat
                 return null;
             }
             var exp = gameBalance.GetItemExpPerFind(rarity);
-            RunData.AddItemExp(item.ItemId, exp);
-            return item;
+            return RunEntry.foundItemAnimation.FindItem(item, exp);
         }
 
         public ChestState GetState()

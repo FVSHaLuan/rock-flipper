@@ -9,10 +9,37 @@ namespace Agame.Run.Shop
     /// Shows a found item (e.g. dropped by an opening chest) with an <see cref="ItemAvatar"/>: it pops up from where it
     /// was found, hovers for a moment, then flies to the Items tab button, shrinking as its name fades out.
     /// On arrival it plays the target's <see cref="NoticeEffect"/>, if it has one among its children.
-    /// Visual only: the item is already found when this plays.
+    /// <para>
+    /// A find goes through <see cref="FindItem"/>: it's saved in <see cref="RunData"/> right away, so quitting before the
+    /// item arrives loses nothing, but the items UI (item grid, notice badges) keeps showing the item as it was before the
+    /// find until the item reaches the target. That UI reads <see cref="GetRevealedItemState"/> and
+    /// <see cref="HasRevealedUnseenItems"/> instead of <see cref="RunData"/>, and refreshes on <see cref="OnItemRevealed"/>.
+    /// </para>
     /// </summary>
     public class FoundItemAnimation : ExtendedMonoBehaviourRun
     {
+        /// <summary>
+        /// An item find already saved in <see cref="RunData"/> but not shown in the items UI yet. See <see cref="FindItem"/>.
+        /// </summary>
+        public class UnrevealedFind
+        {
+            public Item Item { get; }
+            public ItemState StateBeforeFind { get; }
+            /// <summary>The find marked the item unseen (found or leveled it up).</summary>
+            public bool MarkedUnseen { get; internal set; }
+
+            public UnrevealedFind(Item item, ItemState stateBeforeFind)
+            {
+                Item = item;
+                StateBeforeFind = stateBeforeFind;
+            }
+        }
+
+        /// <summary>
+        /// Called with the item id when a find reaches the target and the items UI may show it.
+        /// </summary>
+        public event System.Action<string> OnItemRevealed;
+
         [SerializeField]
         private ItemAvatar avatarPrototype;
         [SerializeField, Tooltip("Where the item flies to: the Items tab button. A UI element in any canvas render mode, or a world-space transform.")]
@@ -56,6 +83,8 @@ namespace Agame.Run.Shop
         private Canvas targetCanvas;
         private NoticeEffect targetNoticeEffect;
         private readonly List<ItemAvatar> activeAvatars = new List<ItemAvatar>();
+        // oldest first
+        private readonly List<UnrevealedFind> unrevealedFinds = new List<UnrevealedFind>();
 
         protected void Start()
         {
@@ -73,27 +102,120 @@ namespace Agame.Run.Shop
             foreach (var avatar in activeAvatars)
                 avatar.TryReturnToPoolAndDeactivate();
             activeAvatars.Clear();
+
+            // Their flights can't arrive anymore. Not revealed one by one: this only happens as the scene unloads,
+            // when RunEntry may already be gone. The finds are saved in RunData either way.
+            unrevealedFinds.Clear();
         }
 
         /// <summary>
-        /// Plays the animation for <paramref name="item"/>, found at <paramref name="origin"/> (world position).
-        /// Several can play at once.
+        /// Adds <paramref name="exp"/> to <paramref name="item"/> in <see cref="RunData"/> right away, but holds the find
+        /// back from the items UI until <see cref="Play"/>'s flight reaches the target.
+        /// Pass the returned find to <see cref="Play"/>.
         /// </summary>
-        public void Play(Item item, Vector3 origin)
+        public UnrevealedFind FindItem(Item item, int exp)
+        {
+            // Held back before the exp is added, so the UI refreshing on RunData's change already sees it held back.
+            var find = new UnrevealedFind(item, RunData.GetItemState(item.ItemId));
+            unrevealedFinds.Add(find);
+            find.MarkedUnseen = RunData.AddItemExp(item.ItemId, exp);
+            return find;
+        }
+
+        /// <summary>
+        /// Plays the animation for <paramref name="find"/> (from <see cref="FindItem"/>), found at <paramref name="origin"/>
+        /// (world position), and reveals it in the items UI on arrival. Several can play at once.
+        /// </summary>
+        public void Play(UnrevealedFind find, Vector3 origin)
         {
             ///
             var avatar = CurrentGeneralPool.TakeInstance(avatarPrototype, this);
             activeAvatars.Add(avatar);
-            avatar.SetItem(item);
+            avatar.SetItem(find.Item);
             avatar.transform.position = origin;
             avatar.transform.localScale = Vector3.zero;
             avatar.gameObject.SetActive(true);
 
             ///
-            StartCoroutine(Animate(avatar, origin));
+            StartCoroutine(Animate(avatar, origin, find));
         }
 
-        private IEnumerator Animate(ItemAvatar avatar, Vector3 origin)
+        /// <summary>
+        /// <paramref name="itemId"/>'s state as the items UI shows it: its <see cref="RunData"/> state, minus the finds
+        /// that haven't reached the target yet.
+        /// </summary>
+        public ItemState GetRevealedItemState(string itemId)
+        {
+            ///
+            var itemState = RunData.GetItemState(itemId);
+
+            // The oldest unrevealed find of this item holds the state the player last saw.
+            foreach (var find in unrevealedFinds)
+            {
+                if (find.Item.ItemId != itemId)
+                {
+                    continue;
+                }
+
+                ///
+                itemState.level = find.StateBeforeFind.level;
+                itemState.exp = find.StateBeforeFind.exp;
+                // Still unseen only if it was before the find and the player hasn't seen it since.
+                itemState.unseen &= find.StateBeforeFind.unseen;
+                break;
+            }
+            return itemState;
+        }
+
+        /// <summary>
+        /// Whether the items UI shows at least one item as unseen (<see cref="GetRevealedItemState"/>).
+        /// </summary>
+        public bool HasRevealedUnseenItems
+        {
+            get
+            {
+                ///
+                if (!RunData.HasUnseenItems)
+                {
+                    return false;
+                }
+                if (unrevealedFinds.Count == 0)
+                {
+                    return true;
+                }
+
+                ///
+                var itemManager = RunEntry.itemManager;
+                for (int i = 0; i < itemManager.AllItemCount; i++)
+                {
+                    if (GetRevealedItemState(itemManager.GetItemByIndex(i).ItemId).unseen)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        }
+
+        private void Reveal(UnrevealedFind find)
+        {
+            ///
+            if (!unrevealedFinds.Remove(find))
+            {
+                return;
+            }
+
+            // The player may have marked the item seen while the find was held back (e.g. with "mark all seen").
+            if (find.MarkedUnseen)
+            {
+                RunData.MarkItemUnseen(find.Item.ItemId);
+            }
+
+            ///
+            OnItemRevealed?.Invoke(find.Item.ItemId);
+        }
+
+        private IEnumerator Animate(ItemAvatar avatar, Vector3 origin, UnrevealedFind find)
         {
             var avatarTransform = avatar.transform;
             var normalScale = avatarPrototype.transform.localScale;
@@ -131,6 +253,7 @@ namespace Agame.Run.Shop
             // Arrival
             activeAvatars.Remove(avatar);
             avatar.TryReturnToPoolAndDeactivate();
+            Reveal(find);
             if (targetNoticeEffect != null)
             {
                 targetNoticeEffect.Play();

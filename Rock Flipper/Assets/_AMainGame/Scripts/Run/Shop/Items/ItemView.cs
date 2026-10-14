@@ -30,6 +30,7 @@ namespace Agame.Run.Shop
         private Item item;
         private ToolTipTriggerer toolTipTriggerer;
         private RunData subscribedRunData;
+        private FoundItemAnimation subscribedFoundItemAnimation;
         private bool isPointerOver;
         private bool isSelected;
         private float hoverTime;
@@ -50,6 +51,8 @@ namespace Agame.Run.Shop
         {
             subscribedRunData = RunData;
             subscribedRunData.OnItemStateChanged += RunData_OnItemStateChanged;
+            subscribedFoundItemAnimation = RunEntry.foundItemAnimation;
+            subscribedFoundItemAnimation.OnItemRevealed += FoundItemAnimation_OnItemRevealed;
         }
 
         protected void OnDestroy()
@@ -59,6 +62,11 @@ namespace Agame.Run.Shop
             {
                 subscribedRunData.OnItemStateChanged -= RunData_OnItemStateChanged;
                 subscribedRunData = null;
+            }
+            if (subscribedFoundItemAnimation != null)
+            {
+                subscribedFoundItemAnimation.OnItemRevealed -= FoundItemAnimation_OnItemRevealed;
+                subscribedFoundItemAnimation = null;
             }
         }
 
@@ -74,7 +82,7 @@ namespace Agame.Run.Shop
             ///
             if (item == null
                 || !(isPointerOver || isSelected)
-                || !RunData.GetItemState(item.ItemId).unseen)
+                || !RunEntry.foundItemAnimation.GetRevealedItemState(item.ItemId).unseen)
             {
                 hoverTime = 0f;
                 return;
@@ -117,6 +125,14 @@ namespace Agame.Run.Shop
             }
         }
 
+        private void FoundItemAnimation_OnItemRevealed(string itemId)
+        {
+            if (item != null && itemId == item.ItemId)
+            {
+                ViewItemState();
+            }
+        }
+
         public void SetItem(Item item)
         {
             ///
@@ -132,7 +148,8 @@ namespace Agame.Run.Shop
 
         public void ViewItemState()
         {
-            var itemState = RunData.GetItemState(item.ItemId);
+            // Not RunData's state: a found item shows here only once it lands on the Items tab button.
+            var itemState = RunEntry.foundItemAnimation.GetRevealedItemState(item.ItemId);
             var maxLevel = gameBalance.GetItemMaxLevel(item.Rarity);
 
             ///

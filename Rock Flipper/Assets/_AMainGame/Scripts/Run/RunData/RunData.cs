@@ -556,7 +556,10 @@ namespace Agame
         #endregion Stat builder states
 
         #region Other Gameplay Data (RESET)
-        public void AddItemExp(string itemId, int exp)
+        /// <summary>
+        /// Returns whether the item was found or leveled up, which marks it unseen (<see cref="Run.Shop.ItemState.unseen"/>).
+        /// </summary>
+        public bool AddItemExp(string itemId, int exp)
         {
             var itemState = GetItemState(itemId);
             var newExp = itemState.exp + exp;
@@ -585,7 +588,8 @@ namespace Agame
 
             ///
             var newlyFound = !itemState.IsFound && (newLevel > 0 || newExp > 0);
-            if (newlyFound || newLevel > itemState.level)
+            var markedUnseen = newlyFound || newLevel > itemState.level;
+            if (markedUnseen)
             {
                 itemState.unseen = true;
             }
@@ -594,6 +598,7 @@ namespace Agame
             itemState.exp = newExp;
             itemState.level = newLevel;
             SetItemState(itemId, itemState);
+            return markedUnseen;
         }
 
         private void SetItemState(string itemId, ItemState itemState)
