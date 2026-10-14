@@ -51,6 +51,7 @@ Use the GDD to understand what a feature is *supposed* to do and what it's calle
 
 - Use the `unity-cli` skill for any interaction with the Unity Editor or this Unity project: inspecting/editing the scene hierarchy, creating or modifying GameObjects, editing prefabs/assets, running C# in a live connected Editor, or building/testing the project. Prefer it over hand-editing `.unity`/`.prefab`/`.asset` YAML files directly whenever a live or CLI-driven Editor operation can do the job.
 - **Unrequested scene edits: ask first.** If a task turns out to need a change to a scene (`.unity`) that the user didn't explicitly ask for, stop before touching the scene and ask whether they want to make that change themselves. Describe the exact change (which GameObject/component/field, or which editor tool or context menu to run) so they can do it by hand. Only edit the scene yourself if they say so. This applies to every way of changing a scene: `unity-cli` operations, running editor tools that modify the open scene, saving the scene, or hand-editing its YAML.
+- **Play mode testing: ask first.** Live testing in Play mode can be very time-consuming. Before entering Play mode to test something (through `unity-cli` or any other route), stop and ask the user. Say what you want to verify and how, so they can let you go ahead, test it themselves, or skip it. Edit-mode checks such as compiling, reading the console or inspecting assets don't need to ask.
 
 ## Conventions that apply project-wide
 
