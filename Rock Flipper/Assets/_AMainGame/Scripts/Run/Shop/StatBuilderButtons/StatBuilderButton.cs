@@ -40,7 +40,7 @@ namespace Agame.Run.Shop
             Assert.IsNotNull(maxLevelConfig, $"StatBuilderButton: {name} is missing IMaxLevelConfig component in parent.");
 
             ///
-            statBuilderButtonSpecific = GetComponentInParent<IStatBuilderButtonSpecific>();
+            statBuilderButtonSpecific = GetComponentInParent<IStatBuilderButtonSpecific>(true);
             if (statBuilderButtonSpecific == null)
             {
                 statBuilderButtonSpecific = new StatBuilderButtonDefaultSpecific();
