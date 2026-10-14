@@ -17,6 +17,11 @@ namespace Agame.Run.Combat
             entry.playerDataSaver.OnBeforeSave += PlayerDataSaver_OnBeforeSave;
         }
 
+        protected void OnDestroy()
+        {
+            entry.playerDataSaver.OnBeforeSave -= PlayerDataSaver_OnBeforeSave;
+        }
+
         private void PlayerDataSaver_OnBeforeSave()
         {
             if (SpawnedSavedChests && CurrentRunState == RunState.Combat)

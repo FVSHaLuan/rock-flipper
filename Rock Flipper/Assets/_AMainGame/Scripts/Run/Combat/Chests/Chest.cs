@@ -41,11 +41,6 @@ namespace Agame.Run.Combat
         /// <summary>See <see cref="ChestState.uniqueItemId"/>.</summary>
         public string UniqueItemId => uniqueItemId;
 
-        protected void OnDisable()
-        {
-            RunEntry.chestInstanceManager.RemoveActiveChest(this);
-        }
-
         protected void Start()
         {
             flippable.OnFinishedFlipping += Flippable_OnFinishedFlipping;
@@ -99,6 +94,9 @@ namespace Agame.Run.Combat
             DropItem();
 
             ///
+            // Removed here rather than in OnDisable: unloading the scene also disables chests,
+            // and the save made on unload must still include them.
+            RunEntry.chestInstanceManager.RemoveActiveChest(this);
             PoolHandler.TryReturnToPoolAndDeactivate();
         }
 
