@@ -26,7 +26,9 @@ namespace Agame.Run
 
             ///
             iconImage.sprite = graphNode.Icon;
-            iconImage.color = skillGraphNode.Editor_GetCashTierColor();
+            iconImage.color = skillGraphNode.Currency != Currency.CASH
+                ? Agame.Dev.DevEntry.Instance.currencyConfigManager.Editor_GetConfig(skillGraphNode.Currency).Color
+                : skillGraphNode.Editor_GetCashTierColor();
             upgradeFxImage.sprite = graphNode.Icon;
 
             ///

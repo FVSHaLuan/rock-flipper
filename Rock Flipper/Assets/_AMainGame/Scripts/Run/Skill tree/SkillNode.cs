@@ -332,6 +332,14 @@ namespace Agame.Run
 #endif
 
             ///
+            if (graphNode.Currency != Currency.CASH)
+            {
+                var currencyColor = entry.currencyConfigManager.GetConfig(graphNode.Currency).Color;
+                iconImage.color = currencyColor;
+                subIconImage.color = currencyColor;
+            }
+
+            ///
             upgradeFxImage.color = iconImage.color;
         }
 
