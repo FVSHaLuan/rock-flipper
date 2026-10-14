@@ -8,6 +8,7 @@ namespace Agame.Run.Shop
     /// <summary>
     /// Shows a found item (e.g. dropped by an opening chest) with an <see cref="ItemAvatar"/>: it pops up from where it
     /// was found, hovers for a moment, then flies to the Items tab button, shrinking as its name fades out.
+    /// On arrival it plays the target's <see cref="NoticeEffect"/>, if it has one among its children.
     /// Visual only: the item is already found when this plays.
     /// </summary>
     public class FoundItemAnimation : ExtendedMonoBehaviourRun
@@ -53,6 +54,7 @@ namespace Agame.Run.Shop
         private UnityEvent onArrived;
 
         private Canvas targetCanvas;
+        private NoticeEffect targetNoticeEffect;
         private readonly List<ItemAvatar> activeAvatars = new List<ItemAvatar>();
 
         protected void Start()
@@ -62,6 +64,7 @@ namespace Agame.Run.Shop
             {
                 targetCanvas = targetCanvas.rootCanvas;
             }
+            targetNoticeEffect = target.GetComponentInChildren<NoticeEffect>(true);
         }
 
         protected void OnDisable()
@@ -128,6 +131,10 @@ namespace Agame.Run.Shop
             // Arrival
             activeAvatars.Remove(avatar);
             avatar.TryReturnToPoolAndDeactivate();
+            if (targetNoticeEffect != null)
+            {
+                targetNoticeEffect.Play();
+            }
             onArrived?.Invoke();
         }
 
