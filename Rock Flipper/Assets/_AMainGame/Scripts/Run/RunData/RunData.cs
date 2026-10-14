@@ -101,6 +101,10 @@ namespace Agame
         [field: NonSerialized]
         public static int UpStagedFrame { get; private set; } = -1;
 
+        /// <summary>
+        /// <see cref="Time.realtimeSinceStartup"/> at which play time was last committed into <see cref="PlayTime"/>
+        /// (run start or last save). Not serialized: only meaningful for the active run in the Run scene.
+        /// </summary>
         public float LastSaveTime => lastSaveTime;
 
         public int CompatVersion => compatVersion;
@@ -108,9 +112,33 @@ namespace Agame
         public bool FinishedTutorial { get => finishedTutorial; set => finishedTutorial = value; }
         public bool IsInPrestige { get => isInPrestige; }
         public int PrestigeCount { get => prestigeCount; }
+        /// <summary>
+        /// Play time in seconds as of the last save (the committed, serialized value). Lags behind the real play time
+        /// by up to one auto-save interval (<see cref="RunAutoSaver"/>), so gameplay code should read
+        /// <see cref="PlayTimeNow"/> instead. Use this only outside the Run scene (e.g. the Home save-slot view),
+        /// where <see cref="PlayTimeNow"/> throws.
+        /// </summary>
         public float PlayTime => playTime;
+        /// <summary>
+        /// Uncommitted play-time correction in seconds, added to <see cref="PlayTimeNow"/> and folded into
+        /// <see cref="PlayTime"/> (then reset to 0) on the next save. Editor-only dev tools use it so play time follows
+        /// gameplay time: <see cref="PlaytimeAdjustmentModifier"/> subtracts paused time and
+        /// <see cref="GameplayTimeScaleSlider"/> adds the extra time from a sped-up time scale.
+        /// Not serialized. Never write <c>playTime</c> directly; adjust through this.
+        /// </summary>
         [field: NonSerialized]
         public float PlayTimeAdjustment { get; set; }
+        /// <summary>
+        /// Live total play time of this save, in seconds: <see cref="PlayTime"/> + real time since
+        /// <see cref="LastSaveTime"/> + <see cref="PlayTimeAdjustment"/>. Persists across sessions, so it's the clock to
+        /// use for anything timed in play time across saves: store a <see cref="PlayTimeNow"/> stamp in <see cref="RunData"/>
+        /// and compare it to a later <see cref="PlayTimeNow"/> (see <see cref="PreferredBackgroundSetPlayTime"/>).
+        /// <para>Real time, not gameplay time: in builds it keeps counting while the game is paused and ignores the
+        /// gameplay time scale. Use the TimeScaleManager's gameplay time for in-combat timers and cooldowns.</para>
+        /// <para>Only valid for the active run in the Run scene: throws when <see cref="RunEntry.Instance"/> is null
+        /// (e.g. in Home). Anything that calls it, like the <see cref="PreferredBackgroundId"/> setter, has the same
+        /// restriction.</para>
+        /// </summary>
         public float PlayTimeNow
         {
             get
@@ -130,6 +158,11 @@ namespace Agame
                 return PlayTime + delta + PlayTimeAdjustment;
             }
         }
+        /// <summary>
+        /// Same as <see cref="PlayTimeNow"/>, but for the current prestige. Nothing resets <c>prestigePlayTime</c> or
+        /// writes <see cref="PreviousPrestigePlayTime"/> yet (Prestige is still scaffolded), so for now it equals
+        /// <see cref="PlayTimeNow"/>.
+        /// </summary>
         public float PrestigePlayTimeNow
         {
             get

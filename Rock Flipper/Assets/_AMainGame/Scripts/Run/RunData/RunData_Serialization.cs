@@ -14,6 +14,11 @@ namespace Agame
             }
         }
 
+        /// <summary>
+        /// Commits the play time elapsed since <see cref="LastSaveTime"/> (plus <see cref="PlayTimeAdjustment"/>) into
+        /// the serialized <c>playTime</c>/<c>prestigePlayTime</c>. The only place those fields grow; runs on every save
+        /// of the active run, so <see cref="PlayTimeNow"/> stays continuous across it.
+        /// </summary>
         private void UpdatePlayTime()
         {
             ///
