@@ -25,6 +25,7 @@ This list all effects, mechanics, things...I think we can add to the game. Use t
 - Chests that spawn another chest after opened
 - Clone chest
 - Enlarge rock
+- earn some cash when an item leveled up (not retrospective)
 
 ## System ideas
 Ideas for systems to be added to the game.
