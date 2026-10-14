@@ -786,6 +786,7 @@ MonoBehaviour:
   maxedText: {fileID: 7424722310289460307}
   levelText: {fileID: 425921884078203879}
   noticeBadge: {fileID: 6928978667327173473}
+  markSeenHoverDuration: 0.3
 --- !u!114 &4365417569551325085
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,12 +2,13 @@ using Agame.Run.Combat;
 using Agame.UI.ToolTips;
 using GD;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Agame.Run.Shop
 {
     [RequireComponent(typeof(ToolTipTriggerer))]
-    public class ItemView : ExtendedMonoBehaviourRun
+    public class ItemView : ExtendedMonoBehaviourRun, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
     {
         [SerializeField]
         private Image itemIconImage;
@@ -23,10 +24,15 @@ namespace Agame.Run.Shop
         private UnifiedText levelText;
         [SerializeField, Tooltip("Shown while the item is unseen (found or leveled up since the player last saw it).")]
         private GameObject noticeBadge;
+        [SerializeField, Min(0f), Tooltip("Real-time seconds the view must stay hovered or selected to mark an unseen item seen.")]
+        private float markSeenHoverDuration = 2f;
 
         private Item item;
         private ToolTipTriggerer toolTipTriggerer;
         private RunData subscribedRunData;
+        private bool isPointerOver;
+        private bool isSelected;
+        private float hoverTime;
 
         private ToolTipTriggerer ToolTipTriggerer
         {
@@ -54,6 +60,53 @@ namespace Agame.Run.Shop
                 subscribedRunData.OnItemStateChanged -= RunData_OnItemStateChanged;
                 subscribedRunData = null;
             }
+        }
+
+        protected void OnDisable()
+        {
+            isPointerOver = false;
+            isSelected = false;
+            hoverTime = 0f;
+        }
+
+        protected void Update()
+        {
+            ///
+            if (item == null
+                || !(isPointerOver || isSelected)
+                || !RunData.GetItemState(item.ItemId).unseen)
+            {
+                hoverTime = 0f;
+                return;
+            }
+
+            ///
+            hoverTime += Time.unscaledDeltaTime;
+            if (hoverTime >= markSeenHoverDuration)
+            {
+                hoverTime = 0f;
+                RunData.MarkItemSeen(item.ItemId);
+            }
+        }
+
+        void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
+        {
+            isPointerOver = true;
+        }
+
+        void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
+        {
+            isPointerOver = false;
+        }
+
+        void ISelectHandler.OnSelect(BaseEventData eventData)
+        {
+            isSelected = true;
+        }
+
+        void IDeselectHandler.OnDeselect(BaseEventData eventData)
+        {
+            isSelected = false;
         }
 
         private void RunData_OnItemStateChanged(ItemState obj)
