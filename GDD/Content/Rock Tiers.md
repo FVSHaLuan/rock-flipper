@@ -36,6 +36,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 ## Open Questions
 * What special abilities can higher tiers have?
 * Are bounce chance and shockwave chance capped at 100%, or does anything happen beyond it?
+* Bouncy: does a bounce reset the rock's [temporary stats](../Systems/TemporaryStats.md) like a new flip, and do they apply to the bounce landing?
 
 ## Parked Ideas
 | Tier | Name | Unique rules / abilities |

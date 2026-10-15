@@ -1,6 +1,6 @@
 # Rock Stats
 
-All stats of [rocks](../Systems/Rocks.md).
+All stats of [rocks](../Systems/Rocks.md). Their temporary stats are listed in [Temporary Stats](Temporary%20Stats.md).
 
 | Stat | Scope | Upgrade Direction |
 |---|---|---|

@@ -8,6 +8,7 @@
   * [Main Screen](Screens/MainScreen.md) — playfield, side bar, HUD layout
 * **Systems**
   * [Rocks](Systems/Rocks.md) — HP, flipping, critical landing, breaking, purity, tiers
+  * [Temporary Stats](Systems/TemporaryStats.md) — per-rock stats that reset every flip: temporary multiplier, critical landing chance, pure chance
   * [Currencies](Systems/Currencies.md) — cash and stars: symbols, sources, usage
   * [Backgrounds](Systems/Backgrounds.md) — unlocking, Preferred background, unique items
   * [Chests](Systems/Chests.md) — chest bar, flipping & breaking, rarity
@@ -25,6 +26,7 @@
   * [Monolith Stats](Stats/Monolith%20Stats.md)
   * [Mouse Stats](Stats/Mouse%20Stats.md)
   * [Rock Stats](Stats/Rock%20Stats.md)
+  * [Temporary Stats](Stats/Temporary%20Stats.md)
 * **Content** — instances of a system that differ in rules
   * [Backgrounds](Content/Backgrounds.md)
   * [Items](Content/Items.md) — (empty)

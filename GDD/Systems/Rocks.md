@@ -11,6 +11,7 @@ Rocks have integer **HP**.
 **Flipping** a rock throws it from the ground up into the air.
 * A flipped rock always **lands** in a different position than its initial position.
 * On landing, the rock earns **landing cash**.
+* Each rock has [temporary stats](TemporaryStats.md), which reset each time it starts to flip.
 
 ### Critical Landing
 Each time a rock lands, there is a **critical landing chance** that the landing is a **critical landing**, which earns landing cash multiplied by the **critical cash multiplier**.
