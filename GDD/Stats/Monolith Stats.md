@@ -11,3 +11,4 @@ Stats of [L VIII](../Content/Monoliths.md#l-viii).
 | Shooting interval | _Per monolith_ | _(-)_ |
 | Min beam count | _Per monolith_ | _(+)_ |
 | Max beam count | _Per monolith_ | _(+)_ |
+| Temporary multiplier increase per beam hit | _Per monolith_ | (+) |
