@@ -53568,7 +53568,7 @@ MonoBehaviour:
     selfLogs: 
   playerCursor: {fileID: 499941808}
   flipsPerSecond: 3
-  hoverSpeed: 10
+  hoverSpeed: 15
 --- !u!1001 &1900501223
 PrefabInstance:
   m_ObjectHideFlags: 0
