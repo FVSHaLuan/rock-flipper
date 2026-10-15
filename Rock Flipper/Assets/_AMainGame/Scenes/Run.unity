@@ -33710,6 +33710,7 @@ GameObject:
   - component: {fileID: 1167162691}
   - component: {fileID: 1167162690}
   - component: {fileID: 1167162692}
+  - component: {fileID: 1167162693}
   m_Layer: 5
   m_Name: Chest bar
   m_TagString: Untagged
@@ -33792,6 +33793,33 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   progressBar: {fileID: 1257498215}
+--- !u!114 &1167162693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167162688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e2ba0cdae6c0040960f291e9b4534e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.UI.ToolTips.ToolTipTriggerer
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  toolTipPrototype: {fileID: 0}
+  mainText: 
+  updatePositionEveryFrame: 1
+  useMouseCursor: 1
+  mouseCursorOffset: {x: 0, y: 0}
+  doNotHideOnMouseDown: 0
+  centerTransform: {fileID: 0}
+  toolTipTopRightAnchor: {fileID: 0}
+  toolTipBottomRightAnchor: {fileID: 0}
+  toolTipTopLeftAnchor: {fileID: 0}
+  toolTipBottomLeftAnchor: {fileID: 0}
 --- !u!1001 &1169541872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54276,6 +54304,7 @@ GameObject:
   - component: {fileID: 1913836037}
   - component: {fileID: 1913836036}
   - component: {fileID: 1913836038}
+  - component: {fileID: 1913836039}
   m_Layer: 5
   m_Name: Level bar
   m_TagString: Untagged
@@ -54358,6 +54387,33 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   progressBar: {fileID: 259525352}
+--- !u!114 &1913836039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913836034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e2ba0cdae6c0040960f291e9b4534e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.UI.ToolTips.ToolTipTriggerer
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  toolTipPrototype: {fileID: 0}
+  mainText: 
+  updatePositionEveryFrame: 1
+  useMouseCursor: 1
+  mouseCursorOffset: {x: 0, y: 0}
+  doNotHideOnMouseDown: 0
+  centerTransform: {fileID: 0}
+  toolTipTopRightAnchor: {fileID: 0}
+  toolTipBottomRightAnchor: {fileID: 0}
+  toolTipTopLeftAnchor: {fileID: 0}
+  toolTipBottomLeftAnchor: {fileID: 0}
 --- !u!1 &1914240181
 GameObject:
   m_ObjectHideFlags: 0
