@@ -2187,7 +2187,7 @@ MonoBehaviour:
   input: 0
   output: 0
   skillNodePrototype: {fileID: 0}
-  attentionFlag: 1
+  attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
   demoLimit: -1
@@ -2198,7 +2198,7 @@ MonoBehaviour:
   price:
     cashTier: 0
     a: 0
-    b: 1
+    b: 200
     c: 1
 --- !u!114 &1106490328389452621
 MonoBehaviour:
