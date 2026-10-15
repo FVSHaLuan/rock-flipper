@@ -682,7 +682,9 @@ namespace Agame
             ///
             if (level > savedLevel)
             {
-                OnLeveledUp?.Invoke(level - savedLevel);
+                var levelCount = level - savedLevel;
+                AddCurrency(Currency.STAR, levelCount * Balancing.GameBalance.StarsPerLevelUp);
+                OnLeveledUp?.Invoke(levelCount);
             }
         }
 

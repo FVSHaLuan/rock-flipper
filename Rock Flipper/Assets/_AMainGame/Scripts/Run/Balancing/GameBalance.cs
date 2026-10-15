@@ -7,6 +7,9 @@ namespace Agame.Balancing
     {
         public const int ChestExpRequired = 1000;
 
+        /// <summary>Stars earned per level-up. Not upgradable by design.</summary>
+        public const int StarsPerLevelUp = 1;
+
         public double GetRequiredExpForNextLevel(int currentLevel)
         {
             if (currentLevel < 0)
