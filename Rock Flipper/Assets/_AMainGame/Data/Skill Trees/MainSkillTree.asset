@@ -2526,7 +2526,7 @@ MonoBehaviour:
   attentionFlag: 0
   unlockingRequirement: 1
   minParentLevelEach: 0
-  demoLimit: -1
+  demoLimit: 0
   buildAgent: {fileID: 7660703132443407574, guid: 110de14ea1ddcbd47b99c0102fd55d1d, type: 3}
   buildValue: 1
   levelCount: 1
