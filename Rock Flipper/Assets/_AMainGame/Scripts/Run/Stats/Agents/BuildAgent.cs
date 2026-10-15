@@ -15,5 +15,13 @@ namespace Agame.Run.Stats.Agents
             ///
             return true;
         }
+
+#if UNITY_EDITOR
+        [ContextMenu("Apply 1/1"), PlayModeOnly]
+        private void Editor_ApplyOneOne()
+        {
+            Apply(0, 1, 0);
+        }
+#endif
     }
 }
