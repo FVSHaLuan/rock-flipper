@@ -14,6 +14,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 * A landing from any flip (e.g. by the [mouse](../Systems/Mouse.md) or a [Flipper Bot](../Systems/FlipperBots.md)) can bounce. A bounce landing is just like a normal landing, except that initially it can't bounce again.
 * **Rebound** is the unlockable ability for a bounce landing to bounce again. Once Rebound is unlocked, a bounce landing has the same bounce chance to bounce again.
 * A Bouncy rock that breaks can't bounce.
+* A bounce is a new flip, so it resets the rock's [temporary stats](../Systems/TemporaryStats.md): the bounce landing uses only what the rock gains during the bounce.
 
 ## P2: Restless
 **Restless** is the P2 tier. After a Restless rock has been on the ground for its **self-flip delay**, it has a **self-flip chance** to **self-flip**: it flips itself, with no [mouse](../Systems/Mouse.md) or [Flipper Bot](../Systems/FlipperBots.md) needed. Self-flip delay and self-flip chance are upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#restless-p2)).
@@ -36,7 +37,6 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 ## Open Questions
 * What special abilities can higher tiers have?
 * Are bounce chance and shockwave chance capped at 100%, or does anything happen beyond it?
-* Bouncy: does a bounce reset the rock's [temporary stats](../Systems/TemporaryStats.md) like a new flip, and do they apply to the bounce landing?
 
 ## Parked Ideas
 | Tier | Name | Unique rules / abilities |

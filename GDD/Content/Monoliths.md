@@ -10,7 +10,7 @@ All [monoliths](../Systems/Monoliths.md) and their unique [abilities](../Systems
 **L VIII** is a monolith that periodically fires **beams** (laser beams) at random airborne [rocks](../Systems/Rocks.md). How often it fires is its **shooting interval**. L VIII is unlocked, and its shooting interval, min beam count, max beam count and temporary multiplier increase per beam hit upgraded, in the [Skill Tree](../Systems/SkillTree.md) (see [Monolith Stats](../Stats/Monolith%20Stats.md#l-viii)).
 * Each time L VIII shoots, the number of beams it fires is random between its **min beam count** and its **max beam count**. If the min beam count is greater than the max beam count, it fires the max beam count.
 * Each beam of a shot fires at a different airborne rock. If fewer rocks are airborne than the shot's number of beams, it fires only as many beams as there are airborne rocks.
-* By default, a beam hit increases the [temporary multiplier](../Systems/TemporaryStats.md#temporary-multiplier) of the rock it hits. Other beam hit behaviors need further upgrades.
+* By default, a beam hit increases the [temporary multiplier](../Systems/TemporaryStats.md#temporary-multiplier) of the rock it hits: it adds L VIII's temporary multiplier increase per beam hit to it, so hits on the same flip add up. Other beam hit behaviors need further upgrades.
 * Internal name: Prism (development-only, not shown to players).
 
 ## Decisions

@@ -21,7 +21,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Combat/Flippable/` | `Flippable.cs` — the generic flip-animation state machine used by rocks (`TryFlipping`/`ForceFlipping`, arc motion via `Mathf.Sin`, fires `OnStartedFlipping`/`OnFinishedFlipping`/`OnUpdatedFlipping`). Every flip is tagged with a `FlipSource` (mouse, Flipper Bot, bounce, self-flip, new rock, shockwave), readable as `LastFlipSource` until the next flip; abilities use it to react only to some flips. Plus rotator/shadow/sorting cosmetic add-ons. |
 | `Combat/Flipper Bot/` | `FlipperBot.cs`, `FlipperBotFlipper.cs` (circle-cast + flip), `FlipperBotMovement.cs` (wanders via `Vector2.MoveTowards`). |
 | `Combat/Player Cursor/` | `PlayerCursor.cs` + `FlippableByPlayerCursor.cs` — click/hover-to-flip, circle/point cast each `LateUpdate`, per-object landing cooldown. |
-| `Combat/Monoliths/` | Early stub: `Monolith.cs` (`ExtendedMonoBehaviourRun` holding a serialized `MonolithType`; activates/deactivates its own GameObject from `GetMonolithBuildStats(monolithType).unlocked` on `Start` and whenever the skill tree screen closes, so per-monolith scripts never check `unlocked` themselves) + `MonolithType.cs` enum (`LII, LIV, LVI, LVIII, LX, LXII`). Per-monolith scripts go in `Specifics/<Name>/` (so far only `Specifics/Prism/Prism.cs`, Prism = L VIII: every `prismShootingInterval` it beams a random airborne rock (found via `RockInstanceManager.ActiveRocks`); the hit effect `ZapRock` is still empty, pending the GDD). Used by `Prefabs/Run/Combat/Monolith/Monolith Base.prefab`. |
+| `Combat/Monoliths/` | Early stub: `Monolith.cs` (`ExtendedMonoBehaviourRun` holding a serialized `MonolithType`; activates/deactivates its own GameObject from `GetMonolithBuildStats(monolithType).unlocked` on `Start` and whenever the skill tree screen closes, so per-monolith scripts never check `unlocked` themselves) + `MonolithType.cs` enum (`LII, LIV, LVI, LVIII, LX, LXII`). Per-monolith scripts go in `Specifics/<Name>/` (so far only `Specifics/Prism/Prism.cs`, Prism = L VIII: every `prismShootingInterval` it beams a random airborne rock (found via `RockInstanceManager.ActiveRocks`); each hit (`ZapRock`) adds `prismTemporaryMultiplierIncrease` to the rock's temporary multiplier). Used by `Prefabs/Run/Combat/Monolith/Monolith Base.prefab`. |
 | `Combat/Playfield/` | `Playfield.cs` (partial class — bounds math, clamping, random points, edges). |
 | `Combat/Rocks/` | The Rock system core — see below. |
 | `Combat/Tutorials/` | Sequential onboarding task system (`TutorialTaskManager`/`Controller`). |
@@ -36,6 +36,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 ## Rocks / Tiers / Pure Rocks
 
 - `Combat/Rocks/Rock.cs` — per-rock MonoBehaviour: HP, tier, `IsPure`, cash-on-land/break, re-roll (`BreakCurrentRockAndSpawnNewOne`).
+- **Temporary stats** (GDD term) live on `Rock`. They reset on every flip start (bounces included) and on `StartNewLife`. Only `TemporaryMultiplier` exists so far: it multiplies landing and breaking cash in `EarnCash`. Change it only through `AddTemporaryMultiplier`, which ignores calls while the rock is on the ground. Temporary critical landing chance and temporary pure chance aren't in code yet.
 - `Combat/Rocks/RockTier.cs` — enum **`{ P0, P1, P2, P3 }`** — 4 tiers implemented. **Map "Tier I"→`P0`, "Tier II"→`P1`, etc.** when tiers are referred to by Roman numerals.
 - `Combat/Rocks/PrototypeManager.cs` — ScriptableObject: rock prefabs per (tier, isPure); `GetRockPrototype(tier, isPure)`; validated via `PrototypeManager.Validate()` in editor (rejects duplicate/null/"Rock"-named prototypes).
 - `Combat/Rocks/RockInstanceManager.cs` — spawn API: `SpawnAsOldRock` (combat start), `SpawnAsReplacement` (HP-hit-0 re-roll), `SpawnAsNewRock` (shop purchase); `Despawn` (return to pool). Tracks the rocks on the playfield as `ActiveRocks` — always spawn/despawn rocks through it so that list stays correct.
@@ -112,7 +113,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 **Scaffolded but incomplete**: **Prestige** — `RunStateManager` has full state transitions/events but the actual data-reset calls are **commented out** (`// RunData.Prestige();` etc. in `RunStateManager.cs`); `RunData.CorrectData` is an empty stub. Don't assume Prestige resets anything without verifying. Also: `GameAchievementsReporter` (empty), several `BuildAgent` description/achievement hooks (hardcoded stubs), `GameBalance`/`ShortHandManager` (empty).
 
-**Stub only**: Monoliths — `Combat/Monoliths/` has a `Monolith` component + `MonolithType` enum and a base prefab; only Prism (L VIII) has behavior so far (targeting/laser, no hit effect yet).
+**Stub only**: Monoliths — `Combat/Monoliths/` has a `Monolith` component + `MonolithType` enum and a base prefab; only Prism (L VIII) has behavior so far (targeting/laser, hits raise the rock's temporary multiplier).
 
 **Not present at all in code**: The Rift. Pure design-doc concept with zero implementation (see `GDD/Systems/`).
 

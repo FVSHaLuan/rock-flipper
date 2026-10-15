@@ -72,6 +72,10 @@ namespace Agame.Run.Combat
         public RockPoolHandler PoolHandler => rockPoolHandler;
         public Flippable Flippable => flippable;
         public FlippableByPlayerCursor FlippableByPlayerCursor => flippableByPlayerCursor;
+        /// <summary>
+        /// Temporary stat: multiplies the cash earned on landing (breaking included), reset to 1 whenever the rock starts to flip
+        /// </summary>
+        public float TemporaryMultiplier { get; private set; } = 1f;
 
         protected void OnDisable()
         {
@@ -160,6 +164,7 @@ namespace Agame.Run.Combat
                 * (isBreaking ? BuildStats.GetRockBreakingCashMultiplier(rockTier) : 1)
                 * (isPure ? BuildStats.GetRockPurityCashMultiplier(rockTier) : 1)
                 * (isCritical ? BuildStats.GetRockCriticalCashMultiplier(rockTier) : 1)
+                * TemporaryMultiplier
                 * RunEntry.preferredBackgroundMultiplier.CashIncomeMultiplier;
             RunData.AddCurrency(Currency.CASH, amount);
 
@@ -196,7 +201,27 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnStartedFlipping()
         {
+            ResetTemporaryStats();
+
+            ///
             onStartedFlipping?.Invoke();
+        }
+
+        private void ResetTemporaryStats()
+        {
+            TemporaryMultiplier = 1f;
+        }
+
+        /// <summary>
+        /// Temporary stats can only be modified while the rock is airborne, so this does nothing otherwise
+        /// </summary>
+        public void AddTemporaryMultiplier(float amount)
+        {
+            if (!flippable.IsFlipping)
+                return;
+
+            ///
+            TemporaryMultiplier += amount;
         }
 
         [ContextMenu("Start New Life"), PlayModeOnly]
@@ -205,6 +230,9 @@ namespace Agame.Run.Combat
             ///
             MaxHP = BuildStats.GetRockMaxHp(rockTier);
             CurrentHP = MaxHP;
+
+            ///
+            ResetTemporaryStats();
 
             ///
             UpdateLandingCooldown();

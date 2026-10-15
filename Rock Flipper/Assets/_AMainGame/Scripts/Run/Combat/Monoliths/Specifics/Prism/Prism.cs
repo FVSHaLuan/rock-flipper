@@ -9,7 +9,8 @@ namespace Agame.Run.Combat
     /// <summary>
     /// L VIII: every shooting interval, fires a random number of beams (between min and max beam count, max if min > max)
     /// at distinct random airborne rocks, capped by how many rocks are airborne
-    /// (if no rock is airborne when the interval is up, it fires as soon as one is)
+    /// (if no rock is airborne when the interval is up, it fires as soon as one is).
+    /// Each beam hit increases the rock's temporary multiplier by <see cref="Stats.BuildStatsObject.prismTemporaryMultiplierIncrease"/>
     /// </summary>
     public class Prism : ExtendedMonoBehaviourRun
     {
@@ -126,10 +127,11 @@ namespace Agame.Run.Combat
         private Vector3 BeamOriginPosition => beamOrigin != null ? beamOrigin.position : transform.position;
 
         /// <summary>
-        /// What a beam hit does to the rock (undecided in the GDD, intentionally left empty for now)
+        /// A beam hit increases the rock's temporary multiplier
         /// </summary>
         private void ZapRock(Rock rock)
         {
+            rock.AddTemporaryMultiplier(BuildStats.prismTemporaryMultiplierIncrease);
         }
     }
 

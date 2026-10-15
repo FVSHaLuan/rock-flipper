@@ -107,6 +107,7 @@ namespace Agame.Run.Stats
         public float prismShootingInterval = 5f;
         public int prismMinBeamCount = 1;
         public int prismMaxBeamCount = 1;
+        public float prismTemporaryMultiplierIncrease = 0.5f;
 
         [Header("Chests")]
         [SerializeField]
