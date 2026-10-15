@@ -202,7 +202,15 @@ namespace Agame.Run.Shop
             var rarityColor = item.Rarity.GetForegroundColor();
             var content = $"<b>{rarityColor.WrapText(item.ItemName)}</b>\n";
             content += $"{rarityColor.WrapText(item.Rarity)}\n";
-            content += itemState.level >= maxLevel ? $"Lv. {itemState.level} (maxed)\n" : $"Lv. {itemState.level}\n";
+            if (itemState.level >= maxLevel)
+            {
+                content += $"Lv. {itemState.level} (maxed)\n";
+            }
+            else
+            {
+                var expRequired = GameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
+                content += $"Lv. {itemState.level}\nExp: {itemState.exp}/{expRequired}\n";
+            }
 
             ///
             var skillDescriptor = item.BuildAgent != null ? item.BuildAgent.GetComponent<SkillDescriptor>() : null;
