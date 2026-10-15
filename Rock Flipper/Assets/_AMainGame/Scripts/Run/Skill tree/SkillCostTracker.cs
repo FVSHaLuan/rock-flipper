@@ -67,6 +67,12 @@ namespace Agame.Run
             }
         }
 
+        public void Clear()
+        {
+            trackingSkillNodes.Clear();
+            AvailableSkill = null;
+        }
+
         public void RemoveTrackingSkill(SkillNode skillNode)
         {
             var rs = trackingSkillNodes.Remove(skillNode);

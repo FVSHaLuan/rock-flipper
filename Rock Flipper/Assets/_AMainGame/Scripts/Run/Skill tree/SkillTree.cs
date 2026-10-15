@@ -68,8 +68,8 @@ namespace Agame.Run
             ///
             AssignParents();
 
-            ///
-            DrawTree(true);
+            /// BuildStats are applied by RunEntry.ApplyAllToBuildStats, right after this init
+            DrawTree(false);
 
             ///
             return base.Init();
@@ -83,6 +83,8 @@ namespace Agame.Run
 
         private void DrawTree(bool applyToBuildStats)
         {
+            ///
+            RunEntry.skillCostTracker.Clear();
             HideAllNodes();
 
             ///

@@ -177,11 +177,10 @@ namespace Agame.Run
             OnStateChanged?.Invoke();
 
             ///
-            ReleaseToolTip();
             RunEntry.skillTree.DrawTreeWithoutApplyingToBuildStats();
 
             ///
-            RunEntry.MarkBuildStatsAsInvalid();
+            RunEntry.RebuildBuildStats();
         }
 
         private SkillNodeConnector Editor_GetConnector(SkillNode outputNode)

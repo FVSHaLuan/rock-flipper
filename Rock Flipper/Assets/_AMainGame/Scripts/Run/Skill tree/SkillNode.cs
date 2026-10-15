@@ -694,6 +694,7 @@ namespace Agame.Run
             IsActivated = false;
 
             ///
+            ReleaseToolTip();
             gameObject.SetActive(false);
 
             ///
