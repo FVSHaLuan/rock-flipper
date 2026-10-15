@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using GD;
 
@@ -6,7 +7,7 @@ namespace Agame.Run.Combat
     public static class ChestUtilities
     {
         private static readonly ChestRarity[] allRarities = (ChestRarity[])System.Enum.GetValues(typeof(ChestRarity));
-        private static readonly WeightedChestRarity[] weightedRarities = new WeightedChestRarity[allRarities.Length];
+        private static readonly List<WeightedChestRarity> weightedRarities = new List<WeightedChestRarity>(allRarities.Length);
 
         private readonly struct WeightedChestRarity : IWeighted
         {
@@ -20,20 +21,49 @@ namespace Agame.Run.Combat
             }
         }
 
-        public static ChestRarity PickRarity(IRandomGenerator random = null)
+        /// <summary>
+        /// Picks the rarity of a chest dropping right now, by weight. A rarity whose chest would drop no item
+        /// (<see cref="Shop.ItemManager.GetDroppableItemCount"/> is 0) is skipped.
+        /// Returns false if no rarity can drop.
+        /// </summary>
+        public static bool TryPickRarity(out ChestRarity rarity, IRandomGenerator random = null)
         {
+            ///
             random ??= UnityRandom.Default;
+            var runEntry = RunEntry.Instance;
 
-            for (int i = 0; i < allRarities.Length; i++)
+            ///
+            weightedRarities.Clear();
+            foreach (var candidate in allRarities)
             {
-                var rarity = allRarities[i];
-                var weight = rarity == ChestRarity.Unique
-                    ? RunEntry.Instance.uniqueChestDropRules.GetUniqueChestWeight()
-                    : RunEntry.Instance.BuildStats.GetChestRarityBuildStats(rarity).weight;
-                weightedRarities[i] = new WeightedChestRarity(rarity, weight);
+                // Unique drop rules already give 0 when no Unique item is left.
+                float weight;
+                if (candidate == ChestRarity.Unique)
+                {
+                    weight = runEntry.uniqueChestDropRules.GetUniqueChestWeight();
+                }
+                else
+                {
+                    weight = runEntry.itemManager.GetDroppableItemCount(candidate, runEntry.RunData) > 0
+                        ? runEntry.BuildStats.GetChestRarityBuildStats(candidate).weight
+                        : 0;
+                }
+
+                if (weight > 0)
+                {
+                    weightedRarities.Add(new WeightedChestRarity(candidate, weight));
+                }
             }
 
-            return WeightExtensions.PickOneIn(random, weightedRarities).Rarity;
+            ///
+            if (weightedRarities.Count == 0)
+            {
+                rarity = default;
+                return false;
+            }
+            rarity = weightedRarities.PickOne(random).Rarity;
+            weightedRarities.Clear();
+            return true;
         }
 
     }

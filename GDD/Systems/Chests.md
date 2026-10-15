@@ -23,6 +23,8 @@ Chests come in these **rarities**: Common, Uncommon, Rare, Epic, Unique. [Items]
 
 Chests of the same rarity share rarity-specific stats, such as Max HP.
 
+A chest never drops with a rarity that has no item left to drop.
+
 Unique chests drop Unique items, which only drop from Unique chests. When Unique chests can drop is covered in [Backgrounds](Backgrounds.md#unique-items).
 
 ## Decisions

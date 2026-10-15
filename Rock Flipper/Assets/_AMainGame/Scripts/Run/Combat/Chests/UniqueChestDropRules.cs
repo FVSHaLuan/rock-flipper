@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Agame.Run.Combat
 {
     /// <summary>
-    /// Decides the weight of the Unique rarity when a chest drops (<see cref="ChestUtilities.PickRarity"/>), and which
+    /// Decides the weight of the Unique rarity when a chest drops (<see cref="ChestUtilities.TryPickRarity"/>), and which
     /// Unique item a dropped Unique chest holds (<see cref="TryCreateUniqueChestState"/>).
     /// A Unique chest can only drop when all of these hold, otherwise its weight is 0:
     /// <list type="bullet">

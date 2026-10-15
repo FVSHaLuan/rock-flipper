@@ -20,7 +20,11 @@ namespace Agame.Run.Combat
         [ContextMenu("SpawnChest"), PlayModeOnly]
         private void SpawnChest()
         {
-            var rarity = ChestUtilities.PickRarity();
+            if (!ChestUtilities.TryPickRarity(out var rarity))
+            {
+                Debug.LogWarning("No chest rarity has an item left to drop. No chest dropped.", this);
+                return;
+            }
             if (rarity != ChestRarity.Unique)
             {
                 RunEntry.chestInstanceManager.Spawn(rarity);
