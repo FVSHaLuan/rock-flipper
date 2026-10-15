@@ -1,3 +1,4 @@
+using Agame.Balancing;
 using Agame.Run.Combat;
 using Agame.UI.ToolTips;
 using GD;
@@ -153,7 +154,7 @@ namespace Agame.Run.Shop
         {
             // Not RunData's state: a found item shows here only once it lands on the Items tab button.
             var itemState = RunEntry.foundItemAnimation.GetRevealedItemState(item.ItemId);
-            var maxLevel = gameBalance.GetItemMaxLevel(item.Rarity);
+            var maxLevel = GameBalance.GetItemMaxLevel(item.Rarity);
 
             ///
             if (itemState.level >= maxLevel)
@@ -177,7 +178,7 @@ namespace Agame.Run.Shop
                 lockedItemIcon.SetActive(false);
                 itemIconImage.gameObject.SetActive(true);
                 levelText.SetText($"Lv. {itemState.level}");
-                var expRequired = gameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
+                var expRequired = GameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
                 progressBar.SetValue((float)itemState.exp / expRequired);
             }
 

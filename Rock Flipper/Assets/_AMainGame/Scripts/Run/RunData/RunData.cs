@@ -570,14 +570,13 @@ namespace Agame
             var rarity = item.Rarity;
 
             ///
-            var gameBalance = Entry.Instance.gameBalance;
-            var maxLevel = gameBalance.GetItemMaxLevel(rarity);
-            var requiredExp = gameBalance.GetRequiredExpForNextItemLevel(rarity, itemState.level);
+            int maxLevel = Balancing.GameBalance.GetItemMaxLevel(rarity);
+            var requiredExp = Balancing.GameBalance.GetRequiredExpForNextItemLevel(rarity, itemState.level);
             while (newExp >= requiredExp && newLevel < maxLevel)
             {
                 newExp -= requiredExp;
                 newLevel++;
-                requiredExp = gameBalance.GetRequiredExpForNextItemLevel(rarity, newLevel);
+                requiredExp = Balancing.GameBalance.GetRequiredExpForNextItemLevel(rarity, newLevel);
             }
 
             ///
@@ -642,13 +641,13 @@ namespace Agame
 
             ///
             var gameBalance = Entry.Instance.gameBalance;
-            var requiredExp = gameBalance.GetRequiredExpForNextChestLevel(chestLevel);
+            var requiredExp = Balancing.GameBalance.GetRequiredExpForNextChestLevel(chestLevel);
             var savedLevel = chestLevel;
             while (chestLevelExp >= requiredExp)
             {
                 chestLevelExp -= requiredExp;
                 chestLevel++;
-                requiredExp = gameBalance.GetRequiredExpForNextChestLevel(chestLevel);
+                requiredExp = Balancing.GameBalance.GetRequiredExpForNextChestLevel(chestLevel);
             }
 
             ///

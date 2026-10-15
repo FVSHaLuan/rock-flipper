@@ -1,3 +1,4 @@
+using Agame.Balancing;
 using Agame.Run.Shop;
 using System.Collections;
 using UnityEngine;
@@ -158,7 +159,7 @@ namespace Agame.Run.Combat
                 Debug.LogWarning($"Chest {name} found no item of rarity {rarity} to drop.", this);
                 return null;
             }
-            var exp = gameBalance.GetItemExpPerFind(rarity);
+            var exp = GameBalance.GetItemExpPerFind(rarity);
             return RunEntry.foundItemAnimation.FindItem(item, exp);
         }
 

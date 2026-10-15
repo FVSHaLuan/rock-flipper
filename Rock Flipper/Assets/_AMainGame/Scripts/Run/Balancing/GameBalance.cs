@@ -5,7 +5,9 @@ namespace Agame.Balancing
 {
     public partial class GameBalance : ScriptableObjectWithInit
     {
-        public int GetRequiredExpForNextItemLevel(ChestRarity chestRarity, int currentLevel)
+        public const int ChestExpRequired = 1000;
+
+        public double GetRequiredExpForNextLevel(int currentLevel)
         {
             if (currentLevel < 0)
             {
@@ -13,16 +15,38 @@ namespace Agame.Balancing
                 return 0;
             }
 
-            if (chestRarity == ChestRarity.Unique)
+            ///
+            return 1000;
+        }
+
+        #region Chests and items
+        public static int GetRequiredExpForNextItemLevel(ChestRarity chestRarity, int currentLevel)
+        {
+            if (currentLevel < 0)
             {
-                return 1;
+                Debug.LogError("Current level cannot be negative.");
+                return 0;
             }
 
             ///
-            return 10;
+            switch (chestRarity)
+            {
+                case ChestRarity.Common:
+                    return 2 + currentLevel * 2;
+                case ChestRarity.Uncommon:
+                    return 2 + currentLevel * 2;
+                case ChestRarity.Rare:
+                    return 2 + currentLevel * 2;
+                case ChestRarity.Epic:
+                    return 2 + currentLevel * 2;
+                case ChestRarity.Unique:
+                    return 1;
+                default:
+                    throw new System.NotImplementedException();
+            }
         }
 
-        public int GetItemMaxLevel(ChestRarity chestRarity)
+        public static int GetItemMaxLevel(ChestRarity chestRarity)
         {
             switch (chestRarity)
             {
@@ -41,33 +65,9 @@ namespace Agame.Balancing
             }
         }
 
-        public int GetItemExpPerFind(ChestRarity chestRarity)
-        {
-            return 1;
-        }
+        public static double GetRequiredExpForNextChestLevel(int currentLevel) => ChestExpRequired;
 
-        public double GetRequiredExpForNextLevel(int currentLevel)
-        {
-            if (currentLevel < 0)
-            {
-                Debug.LogError("Current level cannot be negative.");
-                return 0;
-            }
-
-            ///
-            return 1000;
-        }
-
-        public double GetRequiredExpForNextChestLevel(int currentLevel)
-        {
-            if (currentLevel < 0)
-            {
-                Debug.LogError("Current level cannot be negative.");
-                return 0;
-            }
-
-            ///
-            return 1000;
-        }
+        public static int GetItemExpPerFind(ChestRarity chestRarity) => 1;
+        #endregion Chests and items
     }
 }

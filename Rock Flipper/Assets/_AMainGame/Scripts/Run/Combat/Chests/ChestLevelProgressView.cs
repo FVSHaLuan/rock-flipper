@@ -1,3 +1,4 @@
+using Agame.Balancing;
 using GD;
 using UnityEngine;
 
@@ -20,7 +21,7 @@ namespace Agame.Run.Combat
 
         private void UpdateProgressBar()
         {
-            var nextLevelRequirement = gameBalance.GetRequiredExpForNextChestLevel(RunData.ChestLevel);
+            var nextLevelRequirement = GameBalance.GetRequiredExpForNextChestLevel(RunData.ChestLevel);
             var currentExp = RunData.ChestLevelExp;
             progressBar.SetValue((float)(currentExp / nextLevelRequirement));
         }
