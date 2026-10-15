@@ -148,24 +148,24 @@ MonoBehaviour:
   prismTemporaryMultiplierIncrease: 0.5
   chest_Common:
     weight: 100
-    maxHP: 2
+    maxHP: 5
     itemFindCash: 100
   chest_Uncommon:
     weight: 100
-    maxHP: 2
+    maxHP: 5
     itemFindCash: 300
   chest_Rare:
     weight: 100
-    maxHP: 2
+    maxHP: 5
     itemFindCash: 1000
   chest_Epic:
     weight: 100
-    maxHP: 2
-    itemFindCash: 3000
+    maxHP: 5
+    itemFindCash: 5000
   chest_Unique:
     weight: 100
-    maxHP: 2
-    itemFindCash: 10000
+    maxHP: 5
+    itemFindCash: 50000
   flipperBotsEnabled: 0
   flipperBotMaxCount: 5
   flipperBotCount: 0
