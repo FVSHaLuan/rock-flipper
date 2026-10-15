@@ -932,7 +932,7 @@ namespace Agame.Run
             {
                 color = maxedColor;
             }
-            else if (IsEnoughCurrencyToLevelUp())
+            else if (!IsDemoLimited && IsEnoughCurrencyToLevelUp())
             {
                 color = enoughColor;
             }
