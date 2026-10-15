@@ -45425,6 +45425,8 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   avatarPrototype: {fileID: 7266202733195095125, guid: a889ec64d2cb2e9458780bbc513b6fe2, type: 3}
+  cashFloatingTextPrototype: {fileID: 1556781043285993931, guid: 2167588779b3ac448a0b7e377cba4448, type: 3}
+  cashFloatingTextOffset: {x: 0, y: 0.6}
   target: {fileID: 1034858996}
   appearDuration: 0.35
   appearRise: 0.6

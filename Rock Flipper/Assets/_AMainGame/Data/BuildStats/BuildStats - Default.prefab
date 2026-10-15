@@ -49,6 +49,9 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   unlockedSkillTree: 0
+  backgroundsEnabled: 0
+  preferredMultiplierBase: 1.5
+  preferredMultiplierPerBackground: 0.25
   enabledMouseHover: 0
   enabledMouseRadius: 0
   mouseRadius: 0.5
@@ -112,8 +115,14 @@ MonoBehaviour:
     chestLevelExp: 1
     levelExp: 1
     flippingSpeedFactor: 1
-  globalCriticalLandingChance: 0
-  globalCriticalCashMultiplier: 0
+  globalRockCriticalLandingChance: 0
+  globalRockCriticalCashMultiplier: 0
+  globalRockLandingCash: 0
+  globalRockFlippingSpeedFactor: 0
+  globalRockBreakingCashMultiplier: 0
+  globalRockPurity: 0
+  globalRockPurityCashMultiplier: 0
+  globalRockMaxHp: 0
   bouncyRockBounceChance: 0.1
   enabledBouncyRockRebound: 0
   restlessRockSelfFlipDelay: 5
@@ -136,21 +145,27 @@ MonoBehaviour:
   prismShootingInterval: 5
   prismMinBeamCount: 1
   prismMaxBeamCount: 1
+  prismTemporaryMultiplierIncrease: 0.5
   chest_Common:
     weight: 100
     maxHP: 2
+    itemFindCash: 100
   chest_Uncommon:
     weight: 100
     maxHP: 2
+    itemFindCash: 300
   chest_Rare:
     weight: 100
     maxHP: 2
+    itemFindCash: 1000
   chest_Epic:
     weight: 100
     maxHP: 2
+    itemFindCash: 3000
   chest_Unique:
     weight: 100
     maxHP: 2
+    itemFindCash: 10000
   flipperBotsEnabled: 0
   flipperBotMaxCount: 5
   flipperBotCount: 0
@@ -158,3 +173,4 @@ MonoBehaviour:
   flipperBotMovementSpeedFactor: 0.2
   flipperBotActiveTime: 10
   flipperBotIdleTime: 5
+  flipperBotChestFlippingEnabled: 0

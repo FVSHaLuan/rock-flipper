@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FH.Core.Architecture.Pool;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -42,6 +43,10 @@ namespace Agame.Run.Shop
 
         [SerializeField]
         private ItemAvatar avatarPrototype;
+        [SerializeField, Tooltip("Shows the cash earned by the find as the item appears.")]
+        private GeneralPoolMemberSimplifiedEffect cashFloatingTextPrototype;
+        [SerializeField, Tooltip("Where the cash floating text appears, relative to where the item appears.")]
+        private Vector2 cashFloatingTextOffset;
         [SerializeField, Tooltip("Where the item flies to: the Items tab button. A UI element in any canvas render mode, or a world-space transform.")]
         private Transform target;
 
@@ -221,8 +226,9 @@ namespace Agame.Run.Shop
             var normalScale = avatarPrototype.transform.localScale;
 
             // Appear
-            onAppeared?.Invoke();
             var appearEnd = origin + Vector3.up * appearRise;
+            EarnFindCash(find.Item, appearEnd);
+            onAppeared?.Invoke();
             for (var elapsed = 0f; elapsed < appearDuration; elapsed += Time.deltaTime)
             {
                 var progress = elapsed / appearDuration;
@@ -259,6 +265,30 @@ namespace Agame.Run.Shop
                 targetNoticeEffect.Play();
             }
             onArrived?.Invoke();
+        }
+
+        /// <summary>
+        /// Earns the cash for finding <paramref name="item"/> (per its rarity, whatever its item level) and shows it as a
+        /// floating text near <paramref name="position"/>. Earned as the item appears, so a find whose item never
+        /// appears (quitting mid-animation) earns no cash.
+        /// </summary>
+        private void EarnFindCash(Item item, Vector3 position)
+        {
+            ///
+            var amount = BuildStats.GetChestRarityBuildStats(item.Rarity).itemFindCash;
+            if (amount <= 0)
+            {
+                return;
+            }
+            RunData.AddCurrency(Currency.CASH, amount);
+
+            ///
+            if (cashFloatingTextPrototype == null)
+            {
+                return;
+            }
+            var text = entry.currencyConfigManager.GetConfig(Currency.CASH).CurrencyName + amount.ToLargeNumberString();
+            RunEntry.floatingTextManager.Spawn(cashFloatingTextPrototype, (Vector2)position + cashFloatingTextOffset, text);
         }
 
         /// <summary>
