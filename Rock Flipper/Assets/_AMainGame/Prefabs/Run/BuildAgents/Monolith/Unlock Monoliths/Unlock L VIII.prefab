@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 381521938923219142, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
+      propertyPath: extraDescription
+      value: Monolith L VIII periodically shoots laser beams at flying rocks and increases their temporary multipliers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 381521938923219142, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: descriptionFormat
       value: Unlock Monolith L VIII
       objectReference: {fileID: 0}
