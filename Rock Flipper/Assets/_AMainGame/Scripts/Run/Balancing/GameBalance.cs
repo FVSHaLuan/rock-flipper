@@ -19,7 +19,7 @@ namespace Agame.Balancing
             }
 
             ///
-            return 1000;
+            return 2000 * System.Math.Pow(2d, currentLevel);
         }
 
         #region Chests and items
