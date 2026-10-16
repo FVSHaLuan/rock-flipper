@@ -684,6 +684,60 @@ MonoBehaviour:
     a: 0
     b: 1
     c: 1
+--- !u!114 &-5700861179744409256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P2 Self-flip Chance
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: -500, y: -1250}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -5700861179744409256}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -2531014852363880603}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5700861179744409256}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 4887100862916581765, guid: af960d29f02627740984cb1d2f173b3c, type: 3}
+  buildValue: 0.05
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-5442355391896774071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,6 +786,60 @@ MonoBehaviour:
   buildAgent: {fileID: 1554780910028234844, guid: 6d8b3c0ed83ab924f900bc4d87808099, type: 3}
   buildValue: 10
   levelCount: 3
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
+--- !u!114 &-5388302956088700057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P2 Self-flip Delay
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: -1000, y: -1250}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -5388302956088700057}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -2531014852363880603}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5388302956088700057}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 5172542415251949545, guid: 877b136eac0930749a37cd08f2f34489, type: 3}
+  buildValue: 0.3
+  levelCount: 10
   currency: 0
   price:
     cashTier: 0
@@ -1650,7 +1758,13 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: -2531014852363880603}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -5388302956088700057}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: -5700861179744409256}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -2104,6 +2218,8 @@ MonoBehaviour:
   - {fileID: 4176523378940023387}
   - {fileID: -872249281205540302}
   - {fileID: 4405461949262060247}
+  - {fileID: -5388302956088700057}
+  - {fileID: -5700861179744409256}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
