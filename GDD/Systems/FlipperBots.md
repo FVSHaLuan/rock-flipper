@@ -13,7 +13,7 @@ In **Active state**, a Flipper Bot moves and continuously performs a flip every 
 
 By default, Flipper Bots can't flip [chests](Chests.md). Chest flipping, unlocked in the [Skill Tree](SkillTree.md), lets them flip chests.
 
-By default, Flipper Bots move randomly. **Rock Seeking**, unlocked in the Skill Tree, replaces random movement: Flipper Bots move in a way optimized to flip the most rocks. Once chest flipping is unlocked, Rock Seeking also counts chests, treating rocks and chests identically.
+By default, Flipper Bots move randomly. **Smart Pathing**, unlocked in the Skill Tree, replaces random movement: Flipper Bots move in a way optimized to flip the most rocks. Once chest flipping is unlocked, Smart Pathing also counts chests, treating rocks and chests identically.
 
 ## Strength and Flip Range
 Each flip flips ground rocks (and chests, once chest flipping is unlocked) within the **flip range**: the radius of the circle around the Flipper Bot in which it finds rocks and chests to flip. A flip flips up to **strength** rocks and chests at once: when more are in range than its strength, the ones to flip are picked at random. Strength and flip range are upgradable.
