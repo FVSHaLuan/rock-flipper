@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Increase P1 Rock Max Count
       objectReference: {fileID: 0}
+    - target: {fileID: 6238146525533148067, guid: e44baff445c376546a4c0e3eba09b63d, type: 3}
+      propertyPath: localizedTitleGroup.m_TableEntryReference.m_KeyId
+      value: 7130968932352
+      objectReference: {fileID: 0}
     - target: {fileID: 7033856927510863441, guid: e44baff445c376546a4c0e3eba09b63d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

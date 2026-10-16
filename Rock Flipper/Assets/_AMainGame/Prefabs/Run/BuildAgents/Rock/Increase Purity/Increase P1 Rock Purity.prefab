@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: 21300000, guid: f946ec705791946439828dad9aa89618, type: 3}
+    - target: {fileID: 20825393489893, guid: ff3c326e99dee64d5fae8b8909719093, type: 3}
+      propertyPath: localizedTitleGroup.m_TableEntryReference.m_KeyId
+      value: 7130968932352
+      objectReference: {fileID: 0}
     - target: {fileID: 33831169455054, guid: ff3c326e99dee64d5fae8b8909719093, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
