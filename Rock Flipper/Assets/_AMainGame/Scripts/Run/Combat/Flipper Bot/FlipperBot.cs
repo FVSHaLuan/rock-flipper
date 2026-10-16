@@ -23,7 +23,22 @@ namespace Agame.Run.Combat
         private CooldownObject flipCooldown;
         private CooldownObject stateCooldown;
 
+        private FlipperBotMovement movement;
+
         public FlipperBotPoolHandler PoolHandler => poolHandler;
+        public FlipperBotFlipper Flipper => flipper;
+        public FlipperBotMovement Movement
+        {
+            get
+            {
+                if (movement == null)
+                {
+                    movement = GetComponent<FlipperBotMovement>();
+                }
+
+                return movement;
+            }
+        }
 
         public FlipperBotState State { get; private set; } = FlipperBotState.Active;
 

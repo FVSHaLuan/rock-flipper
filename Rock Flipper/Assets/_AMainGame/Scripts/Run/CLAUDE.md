@@ -53,6 +53,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 - Flipper Bot upgradable stats today: only `flipperBotMovementSpeed` / `flipperBotFlippingInterval`.
 - Each bot flip (`FlipperBotFlipper.TryToFlipRocks`) circle-casts `BuildStatsObject.flipperBotFlipRange` (GDD "flip range") around the bot body, keeps the flippables that can flip now, and flips up to `flipperBotStrength` (GDD "strength") of them, picked at random. Neither stat has an agent yet.
+- **Smart Pathing** (`BuildStatsObject.flipperBotSmartPathingEnabled`, no agent yet): `FlipperBotMovement` swaps random wandering for the best spot, re-picked every `smartPathingRetargetInterval`. Each grounded, unlocked rock (and chest, once chest flipping is on) is a candidate spot. A spot scores min(flippables within flip range, strength) / (travel time + flip interval). A new spot has to beat the current one by `smartPathingSwitchThreshold`. Flippables near another Active bot's target are left to that bot. The bot waits at a reached spot, and wanders randomly when nothing is left to flip.
 - Flipper Bots skip chests (any `Flippable` with a `Chest` in its parents) unless `BuildStatsObject.flipperBotChestFlippingEnabled` is set, by the `EnableFlipperBotChestFlipping` agent (`Prefabs/Run/BuildAgents/Flipper Bots/Enable Flipper Bot Chest Flipping.prefab`).
 
 ## Currencies

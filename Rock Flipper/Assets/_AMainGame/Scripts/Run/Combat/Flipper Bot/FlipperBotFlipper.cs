@@ -14,6 +14,11 @@ namespace Agame.Run.Combat
         private List<Flippable> castFlippables = new List<Flippable>();
         private List<Flippable> flippables = new List<Flippable>();
 
+        /// <summary>
+        /// Center of the flip range circle
+        /// </summary>
+        public Vector2 FlipRangeCenter => refCollider.bounds.center;
+
         [ContextMenu("Try To Flip Rocks"), PlayModeOnly]
         public void TryToFlipRocks()
         {
@@ -40,7 +45,7 @@ namespace Agame.Run.Combat
         /// </summary>
         private void FindFlippablesInRange()
         {
-            SimpleCast2D.CircleCast(refCollider.bounds.center, BuildStats.flipperBotFlipRange, true, castFlippables);
+            SimpleCast2D.CircleCast(FlipRangeCenter, BuildStats.flipperBotFlipRange, true, castFlippables);
 
             flippables.Clear();
             foreach (var flippable in castFlippables)

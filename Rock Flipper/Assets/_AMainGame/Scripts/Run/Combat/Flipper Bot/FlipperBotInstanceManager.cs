@@ -10,6 +10,7 @@ namespace Agame.Run.Combat
         /// </summary>
         private List<FlipperBot> activeFlipperBots = new List<FlipperBot>();
 
+        public IReadOnlyList<FlipperBot> ActiveFlipperBots => activeFlipperBots;
         public int ActiveFlipperBotCount => activeFlipperBots.Count;
 
         [ContextMenu("Spawn Flipper Bot"), PlayModeOnly]

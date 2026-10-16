@@ -134,6 +134,8 @@ namespace Agame.Run.Stats
         public float flipperBotActiveTime = 10f;
         public float flipperBotIdleTime = 5f;
         public bool flipperBotChestFlippingEnabled = false;
+        [Tooltip("Smart Pathing: Flipper Bots move toward the spots where they flip the most rocks (and chests, once chest flipping is enabled) instead of wandering randomly.")]
+        public bool flipperBotSmartPathingEnabled = false;
         private MaxCountCapBreakpoints flipperBotMaxCountCapBreakpoints = new MaxCountCapBreakpoints();
 
         public bool UnlockedSkillTree
