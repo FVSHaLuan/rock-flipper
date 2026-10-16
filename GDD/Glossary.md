@@ -75,6 +75,7 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Rebound**: the unlockable ability for a Bouncy rock's bounce landing to bounce again. → [Rock Tiers](Content/Rock%20Tiers.md#p1-bouncy)
 * **Restless**: the P2 rock tier. → [Rock Tiers](Content/Rock%20Tiers.md#p2-restless)
 * **Rock**: an object lying around the playfield, flipped to earn cash. → [Rocks](Systems/Rocks.md)
+* **Rock Seeking**: the unlock that replaces Flipper Bots' random movement with movement optimized to flip the most rocks. → [Flipper Bots](Systems/FlipperBots.md#active-state)
 * **Root skill**: the only skill with no parent skills. → [Skill Tree](Systems/SkillTree.md#structure)
 * **Self-flip**: a Restless rock flipping itself. → [Rock Tiers](Content/Rock%20Tiers.md#p2-restless)
 * **Self-flip chance**: the chance that a Restless rock self-flips once its self-flip delay is reached. → [Rock Tiers](Content/Rock%20Tiers.md#p2-restless)

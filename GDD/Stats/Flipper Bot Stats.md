@@ -12,14 +12,9 @@ All stats of [Flipper Bots](../Systems/FlipperBots.md).
 | Max count | Global | _(+)_ |
 | Move speed | Global | _(+)_ |
 | Chest flipping | _Global_ | (\*) |
+| Rock Seeking | _Global_ | (\*) |
 
 ## Parked Ideas
-
-### Movement
-| Stat | Scope | Upgrade Direction | Idea |
-|---|---|---|---|
-| Rock seeking | _Global_ | _(\*)_ | Bots move toward rocks instead of randomly. |
-| Chest seeking | _Global_ | _(\*)_ | Bots prioritize moving toward [chests](../Systems/Chests.md). |
 
 ### Flip Output
 | Stat | Scope | Upgrade Direction | Idea |
