@@ -8,6 +8,7 @@ All stats of [Flipper Bots](../Systems/FlipperBots.md).
 | Active duration | Global | _(+)_ |
 | Flip interval | Global | _(-)_ |
 | Flip range | Global | _(+)_ |
+| Strength | _Global_ | _(+)_ |
 | Max count | Global | _(+)_ |
 | Move speed | Global | _(+)_ |
 | Chest flipping | _Global_ | (\*) |

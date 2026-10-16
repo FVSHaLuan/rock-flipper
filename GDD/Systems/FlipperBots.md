@@ -9,9 +9,12 @@ Flipper Bots are the main idle device of the game.
 In **Inactive state**, a Flipper Bot is still floating up and down, but not moving and not flipping.
 
 ## Active State
-In **Active state**, a Flipper Bot moves randomly and continuously performs a flip every time interval, flipping all ground rocks in range. A flip is performed even when no ground rocks are in range.
+In **Active state**, a Flipper Bot moves randomly and continuously performs a flip every time interval. A flip is performed even when no ground rocks are in range.
 
 By default, Flipper Bots can't flip [chests](Chests.md). Chest flipping, unlocked in the [Skill Tree](SkillTree.md), lets them flip chests.
+
+## Strength and Flip Range
+Each flip flips ground rocks (and chests, once chest flipping is unlocked) within the **flip range**: the radius of the circle around the Flipper Bot in which it finds rocks and chests to flip. A flip flips up to **strength** rocks and chests at once: when more are in range than its strength, the ones to flip are picked at random. Strength and flip range are upgradable.
 
 ## Decisions
 
@@ -19,7 +22,6 @@ By default, Flipper Bots can't flip [chests](Chests.md). Chest flipping, unlocke
 * Which state does a newly bought Flipper Bot start in?
 * Are the Inactive and Active durations fixed or random?
 * Is movement constrained to the playfield? Can Flipper Bots overlap rocks or each other?
-* What is the shape of the flip range?
 
 ## Parked Ideas
 
