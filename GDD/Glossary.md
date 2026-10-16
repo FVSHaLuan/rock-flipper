@@ -20,6 +20,7 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Breaking**: what happens to a rock or chest when its HP reaches 0. → [Rocks](Systems/Rocks.md#breaking), [Chests](Systems/Chests.md#flipping--breaking)
 * **Breaking cash**: cash earned when a rock breaks. → [Rocks](Systems/Rocks.md#breaking)
 * **Breaking cash multiplier**: the tier-specific stat that sets breaking cash as a multiple of landing cash. → [Rocks](Systems/Rocks.md#tiers)
+* **Cache**: the unlockable ability for a Restless rock to self-flip after landing from a flip other than a self-flip. → [Rock Tiers](Content/Rock%20Tiers.md#p2-restless)
 * **Cash** (`$`): the currency spent on most upgrades. → [Currencies](Systems/Currencies.md)
 * **Chest**: an object dropped when the chest bar fills, opened to drop items. → [Chests](Systems/Chests.md)
 * **Chest bar**: the overlay UI bar that drops a chest when full. → [Chests](Systems/Chests.md#chest-bar)

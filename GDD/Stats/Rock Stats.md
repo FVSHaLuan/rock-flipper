@@ -36,6 +36,7 @@ Stats only [Restless](../Content/Rock%20Tiers.md#p2-restless) rocks have.
 |---|---|---|
 | Self-flip delay | Per tier | (-) |
 | Self-flip chance | Per tier | _(+)_ |
+| Cache | _Per tier_ | (\*) |
 
 ## Shockwave (P3)
 Stats only [Shockwave](../Content/Rock%20Tiers.md#p3-shockwave) rocks have.

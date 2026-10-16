@@ -23,6 +23,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 * Only continuous time on the ground counts: whenever the rock is in the air, whatever flipped it, the count restarts from zero.
 * If the self-flip chance fails, the count restarts, and the rock tries again after another self-flip delay on the ground.
 * A self-flip is a normal flip.
+* **Cache** is the unlockable ability for a Restless rock that was flipped by anything other than a self-flip to self-flip after landing. If the rock breaks on that landing, the new rock that replaces it self-flips instead.
 
 ## P3: Shockwave
 **Shockwave** is the P3 tier. On landing, a Shockwave rock has a **shockwave chance** to trigger a **shockwave**: it flips the rocks on the ground within the **shockwave radius** around it, up to **max shockwave flips** rocks. Shockwave chance, shockwave radius and max shockwave flips are upgradable (see [Rock Stats](../Stats/Rock%20Stats.md#shockwave-p3)).
@@ -39,6 +40,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 ## Open Questions
 * What special abilities can higher tiers have?
 * Are bounce chance and shockwave chance capped at 100%, or does anything happen beyond it?
+* Restless: does the Cache self-flip happen right away after landing, or after the self-flip delay? Does it always happen, or does it roll the self-flip chance?
 
 ## Parked Ideas
 | Tier | Name | Unique rules / abilities |
