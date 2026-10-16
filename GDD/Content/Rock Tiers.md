@@ -5,7 +5,7 @@ All rock [tiers](../Systems/Rocks.md#tiers) and what makes each one differ in ru
 | Tier | Name | Unique rules / abilities |
 |---|---|---|
 | P0 | | None: P0 rocks are just ordinary rocks. |
-| P1 | [Bouncy](#p1-bouncy) | Has a chance to bounce and land once more after landing, with extra critical landing chance. |
+| P1 | [Bouncy](#p1-bouncy) | Has a chance to bounce and land once more after landing. |
 | P2 | [Restless](#p2-restless) | Has a chance to flip itself after a duration on the ground. |
 | P3 | [Shockwave](#p3-shockwave) | Has a chance to trigger a shockwave on landing, which flips ground rocks around it. |
 
