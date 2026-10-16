@@ -9,6 +9,10 @@ namespace Agame.Run.Combat
     {
         public event System.Action OnStartedNewLife;
         public event System.Action OnHPChanged;
+        /// <summary>
+        /// When it lands with HP left. Its last landing opens it instead (<see cref="OnOpened"/>).
+        /// </summary>
+        public event System.Action OnLanded;
         public event System.Action OnOpened;
 
         [SerializeField]
@@ -73,6 +77,7 @@ namespace Agame.Run.Combat
             else
             {
                 OnHPChanged?.Invoke();
+                OnLanded?.Invoke();
             }
         }
 
