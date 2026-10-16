@@ -1845,6 +1845,63 @@ MonoBehaviour:
     a: 0
     b: 1
     c: 1
+--- !u!114 &-872249281205540302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Bounce Chance
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: -750, y: -1500}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: -872249281205540302}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 3985561045363190598}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -872249281205540302}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4405461949262060247}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 1212828346496478368, guid: d514674c7607aa84c8d2cbda3ab691da, type: 3}
+  buildValue: 0.05
+  levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
 --- !u!114 &-471263998860530179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2042,6 +2099,8 @@ MonoBehaviour:
   - {fileID: 8141562867468801245}
   - {fileID: 2742769314233879568}
   - {fileID: 4176523378940023387}
+  - {fileID: -872249281205540302}
+  - {fileID: 4405461949262060247}
   overlappedNodes: []
   rootNode: {fileID: 5352181967948316995}
   compactModeWidth: 140
@@ -2871,7 +2930,10 @@ MonoBehaviour:
     - _fieldName: output
       _node: {fileID: 3985561045363190598}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -872249281205540302}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
@@ -2940,6 +3002,60 @@ MonoBehaviour:
   buildAgent: {fileID: 9039125081591761920, guid: 4a5d86f34782f6545af6d07cbcda5c12, type: 3}
   buildValue: 0.1
   levelCount: 10
+  currency: 0
+  price:
+    cashTier: 0
+    a: 0
+    b: 1
+    c: 1
+--- !u!114 &4405461949262060247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbf462afc3fc1845a809a21d023fc7f, type: 3}
+  m_Name: P1 Rebound
+  m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillGraphNode
+  graph: {fileID: 11400000}
+  position: {x: -500, y: -1500}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 4405461949262060247}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -872249281205540302}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 4405461949262060247}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  input: 0
+  output: 0
+  skillNodePrototype: {fileID: 0}
+  attentionFlag: 0
+  unlockingRequirement: 1
+  minParentLevelEach: 0
+  demoLimit: -1
+  buildAgent: {fileID: 6690282744104016673, guid: 8f733bc18174e744d957fc6ecb9e2445, type: 3}
+  buildValue: 1
+  levelCount: 1
   currency: 0
   price:
     cashTier: 0
