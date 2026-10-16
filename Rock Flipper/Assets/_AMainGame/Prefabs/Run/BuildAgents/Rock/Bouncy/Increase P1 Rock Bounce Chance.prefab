@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 21300000, guid: f946ec705791946439828dad9aa89618, type: 3}
-  subIcon: {fileID: 0}
+  subIcon: {fileID: 21300000, guid: ae166b19f20ceb141b3b1d9aa1b701e4, type: 3}
   titleGroup: P1 Rock
   localizedTitleGroup:
     m_TableReference:
