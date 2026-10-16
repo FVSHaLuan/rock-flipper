@@ -15,6 +15,7 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Biome**: the environment of the playfield (e.g. grassland, desert), shown by the background; a development-only term not shown to players. → [Main Screen](Screens/MainScreen.md#background)
 * **Bounce**: a Bouncy rock landing once more after a landing. → [Rock Tiers](Content/Rock%20Tiers.md#p1-bouncy)
 * **Bounce chance**: the chance that a Bouncy rock bounces after landing. → [Rock Tiers](Content/Rock%20Tiers.md#p1-bouncy)
+* **Bounce critical landing chance**: the extra critical landing chance of a Bouncy rock's bounce landing. → [Rock Tiers](Content/Rock%20Tiers.md#p1-bouncy)
 * **Bouncy**: the P1 rock tier. → [Rock Tiers](Content/Rock%20Tiers.md#p1-bouncy)
 * **Breaking**: what happens to a rock or chest when its HP reaches 0. → [Rocks](Systems/Rocks.md#breaking), [Chests](Systems/Chests.md#flipping--breaking)
 * **Breaking cash**: cash earned when a rock breaks. → [Rocks](Systems/Rocks.md#breaking)

@@ -26,6 +26,7 @@ Stats only [Bouncy](../Content/Rock%20Tiers.md#p1-bouncy) rocks have.
 | Stat | Scope | Upgrade Direction |
 |---|---|---|
 | Bounce chance | Per tier | _(+)_ |
+| Bounce critical landing chance | Per tier | _(+)_ |
 | Rebound | Per tier | (\*) |
 
 ## Restless (P2)
