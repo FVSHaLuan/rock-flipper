@@ -126,6 +126,10 @@ namespace Agame.Run.Stats
         public int flipperBotMaxCount = 5;
         public int flipperBotCount = 0;
         public float flipperBotFlippingInterval = 2.0f;
+        [Tooltip("Radius of the circle around a Flipper Bot within which it flips rocks and chests.")]
+        public float flipperBotFlipRange = 0.5f;
+        [Tooltip("Max number of rocks and chests a Flipper Bot flips at once.")]
+        public int flipperBotStrength = 1;
         public float flipperBotMovementSpeedFactor = 1f;
         public float flipperBotActiveTime = 10f;
         public float flipperBotIdleTime = 5f;

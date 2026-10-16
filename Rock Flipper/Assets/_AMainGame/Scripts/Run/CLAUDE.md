@@ -52,6 +52,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 ## Flipping (player + bots)
 
 - Flipper Bot upgradable stats today: only `flipperBotMovementSpeed` / `flipperBotFlippingInterval`.
+- Each bot flip (`FlipperBotFlipper.TryToFlipRocks`) circle-casts `BuildStatsObject.flipperBotFlipRange` (GDD "flip range") around the bot body, keeps the flippables that can flip now, and flips up to `flipperBotStrength` (GDD "strength") of them, picked at random. Neither stat has an agent yet.
 - Flipper Bots skip chests (any `Flippable` with a `Chest` in its parents) unless `BuildStatsObject.flipperBotChestFlippingEnabled` is set, by the `EnableFlipperBotChestFlipping` agent (`Prefabs/Run/BuildAgents/Flipper Bots/Enable Flipper Bot Chest Flipping.prefab`).
 
 ## Currencies
