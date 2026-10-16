@@ -81,7 +81,6 @@ Each effect scales with item level.
 | Snow Globe | Inactive Flipper Bots still flip, at a long interval. |
 | Glove | The mouse leaves a short trail that flips the rocks it touches. |
 | Paper Plane | Flipper Bots may head toward the area with the most rocks. |
-| Weather Vane | Using the Preferred background gives a bonus cash multiplier until it changes. |
 
 ## Creative Guidance
 - it is OK to have items with effects that are useless until something is unlocked, but preferably use them in rarer tier.

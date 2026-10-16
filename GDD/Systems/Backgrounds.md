@@ -20,6 +20,9 @@ Backgrounds are the bottom layer of the playfield (see [Main Screen](../Screens/
 * The Preferred background changes every **Preferred Interval**, to one picked randomly from the other unlocked backgrounds, so it always changes to a different one.
 * When the player sets the Preferred background as the active background, they get an income multiplier, the **Preferred Multiplier**, which applies to [cash](Currencies.md) income from all sources.
 * The Preferred Multiplier increases as the player unlocks more backgrounds.
+* Two late-game skills in the [Skill Tree](SkillTree.md) change how the Preferred background works:
+  * **Auto Preferred**: whenever the Preferred background changes, the active background automatically switches to it. Once unlocked, the player can turn it on or off.
+  * **All Preferred**: there is no longer a Preferred background; every background gets the Preferred Multiplier at any time, even when only 1 background is unlocked.
 * All background stats are listed in [Background Stats](../Stats/Background%20Stats.md).
 
 ## Unique Items

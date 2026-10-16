@@ -5,6 +5,8 @@ Game-specific terms, in alphabetical order. Each entry is a short definition; th
 * **Active background**: the unlocked background the player has set as active. → [Backgrounds](Systems/Backgrounds.md#unlocking)
 * **Active state**: the Flipper Bot state in which it moves and flips. → [Flipper Bots](Systems/FlipperBots.md#active-state)
 * **Alarm Clock**: the Common item that decreases Flipper Bot inactive duration. → [Items](Content/Items.md#common)
+* **All Preferred**: the skill that removes the Preferred background and gives every background the Preferred Multiplier. → [Backgrounds](Systems/Backgrounds.md#preferred-background)
+* **Auto Preferred**: the skill that automatically switches the active background to the new Preferred background. → [Backgrounds](Systems/Backgrounds.md#preferred-background)
 * **Background**: the bottom layer of the playfield, representing the current biome. → [Main Screen](Screens/MainScreen.md#background), [Backgrounds](Systems/Backgrounds.md)
 * **Background elements**: decorations representing the biome, scattered over the playfield. → [Main Screen](Screens/MainScreen.md#background)
 * **Backgrounds tab**: the side bar tab for selecting the active background and unlocking backgrounds. → [Main Screen](Screens/MainScreen.md#side-bar)

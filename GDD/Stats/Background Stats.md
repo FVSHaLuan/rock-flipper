@@ -7,3 +7,5 @@ All stats of [backgrounds](../Systems/Backgrounds.md).
 | Background feature | _Global_ | _(\*)_ |
 | Preferred Interval | _Global_ | ? |
 | Preferred Multiplier | _Global_ | _(+)_ |
+| Auto Preferred | _Global_ | _(\*)_ |
+| All Preferred | _Global_ | _(\*)_ |
