@@ -45,11 +45,30 @@ namespace Agame.Run.Combat
 
         public Chest Spawn(ChestRarity chestRarity, ChestState? state = null)
         {
+            return Spawn(chestRarity, state, GetSpawnPoint());
+        }
+
+        /// <summary>
+        /// Spawns a chest at <paramref name="startPosition"/> that flips onto the playfield (e.g. dropping from the chest bar)
+        /// </summary>
+        public Chest SpawnAsNewChest(ChestRarity chestRarity, Vector2 startPosition)
+        {
+            var chest = Spawn(chestRarity, null, startPosition);
+
+            ///
+            chest.DoNewChestFlipping(GetSpawnPoint());
+
+            ///
+            return chest;
+        }
+
+        private Chest Spawn(ChestRarity chestRarity, ChestState? state, Vector2 position)
+        {
             var chestPrototype = RunEntry.prototypeManager.GetChestPrototype(chestRarity);
             var chest = CurrentSceneGeneralPool.TakeInstance(chestPrototype.PoolHandler, this).TargetObject;
             // Pooled chests are reused, so a chest without a saved state still gets a fresh one.
             chest.ApplyState(state ?? new ChestState { rarity = chestRarity });
-            chest.transform.position = Playfield.GetRandomPoint(-Vector2.one);
+            chest.transform.position = position;
             chest.gameObject.SetActive(true);
             chest.StartNewLife();
 
@@ -58,6 +77,11 @@ namespace Agame.Run.Combat
 
             ///
             return chest;
+        }
+
+        private Vector2 GetSpawnPoint()
+        {
+            return Playfield.GetRandomPoint(-Vector2.one);
         }
 
         public void SetSpawnedSavedChest()

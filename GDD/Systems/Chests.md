@@ -7,6 +7,7 @@
 ## Chest Bar
 * When a [rock](Rocks.md) lands, it adds **chest exp** to the **chest bar** (see [Main Screen](../Screens/MainScreen.md#overlay-ui-elements) for its position).
 * When the chest bar fills up, it resets and drops a chest.
+* A dropped chest that isn't Unique flips from the chest bar onto the playfield. This flip doesn't cost the chest any HP.
 
 ## Flipping & Breaking
 * Chests have integer HP and are flipped the same way as rocks (see [Rocks → Flipping](Rocks.md#flipping)).
@@ -38,7 +39,7 @@ Unique chests drop Unique items, which only drop from Unique chests. When Unique
   * Can chests be flipped by the [mouse](Mouse.md)?
 * Does the chest bar get harder to fill over time?
 * How is a dropped chest's rarity decided (random chance, upgradable odds)?
-* Where does a dropped chest appear on the playfield? Is it a [gameplay element](../Screens/MainScreen.md#gameplay-elements)?
+* Where on the playfield does a dropped chest land (or appear, for a Unique chest)? Is it a [gameplay element](../Screens/MainScreen.md#gameplay-elements)?
 * Is there a cap on how many chests can be on the playfield at once?
 * After a chest breaks, is it gone for good (unlike rocks, which are replaced)?
 * What other ways to open chests might be added?

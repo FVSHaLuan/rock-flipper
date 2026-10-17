@@ -18,6 +18,12 @@ namespace Agame.Run.Combat
         [SerializeField]
         private ChestRarity rarity;
 
+        [Header("New chest flipping")]
+        [SerializeField]
+        private float newChestFlippingDuration = 1f;
+        [SerializeField]
+        private float newChestFlippingHeight = 2f;
+
         [Space]
         [SerializeField]
         private Flippable flippable;
@@ -67,6 +73,14 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnFinishedFlipping()
         {
+            // Dropping from the chest bar is the chest's arrival, not a landing that costs HP.
+            if (flippable.LastFlipSource == FlipSource.NewChest)
+            {
+                OnLanded?.Invoke();
+                return;
+            }
+
+            ///
             CurrentHP--;
 
             ///
@@ -109,6 +123,11 @@ namespace Agame.Run.Combat
 
             ///
             OnStartedNewLife?.Invoke();
+        }
+
+        public void DoNewChestFlipping(Vector2 landingPosition)
+        {
+            flippable.ForceFlipping(newChestFlippingDuration, landingPosition, newChestFlippingHeight, FlipSource.NewChest);
         }
 
         /// <summary>

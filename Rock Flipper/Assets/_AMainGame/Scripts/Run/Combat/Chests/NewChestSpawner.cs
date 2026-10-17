@@ -4,6 +4,9 @@ namespace Agame.Run.Combat
 {
     public class NewChestSpawner : ExtendedMonoBehaviourRun
     {
+        [SerializeField, Tooltip("Where non-Unique chests start their flip onto the playfield (on the chest bar)")]
+        private Transform newChestStartPosition;
+
         protected void Start()
         {
             RunData.OnChestLeveledUp += RunData_OnChestLeveledUp;
@@ -27,7 +30,7 @@ namespace Agame.Run.Combat
             }
             if (rarity != ChestRarity.Unique)
             {
-                RunEntry.chestInstanceManager.Spawn(rarity);
+                RunEntry.chestInstanceManager.SpawnAsNewChest(rarity, newChestStartPosition.position);
                 return;
             }
 

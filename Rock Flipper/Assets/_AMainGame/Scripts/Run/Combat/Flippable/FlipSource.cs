@@ -23,5 +23,9 @@ namespace Agame.Run.Combat
         /// Flip from a Shockwave rock's shockwave
         /// </summary>
         Shockwave = 5,
+        /// <summary>
+        /// Flip of a new chest dropping from the chest bar onto the playfield
+        /// </summary>
+        NewChest = 6,
     }
 }
