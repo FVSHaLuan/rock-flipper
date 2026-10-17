@@ -1425,7 +1425,7 @@ MonoBehaviour:
   currency: 0
   price:
     cashTier: 0
-    a: 0
+    a: 100000
     b: 1
     c: 1
 --- !u!114 &-4234517935429154923
@@ -2728,7 +2728,7 @@ MonoBehaviour:
   currency: 0
   price:
     cashTier: 0
-    a: 0
+    a: 100000
     b: 1
     c: 1
 --- !u!114 &2742769314233879568
@@ -3121,7 +3121,7 @@ MonoBehaviour:
   currency: 0
   price:
     cashTier: 1
-    a: 1
+    a: 100000
     b: 0
     c: 0
 --- !u!114 &4405461949262060247
@@ -3232,7 +3232,7 @@ MonoBehaviour:
   currency: 0
   price:
     cashTier: 0
-    a: 90000
+    a: 100000
     b: 1
     c: 1
 --- !u!114 &4876357867273730795
@@ -4045,7 +4045,7 @@ MonoBehaviour:
   currency: 0
   price:
     cashTier: 0
-    a: 0
+    a: 100000
     b: 1
     c: 1
 --- !u!114 &8186401793209345861
@@ -4216,7 +4216,7 @@ MonoBehaviour:
   currency: 0
   price:
     cashTier: 0
-    a: 0
+    a: 100000
     b: 1
     c: 1
 --- !u!114 &8544577117764699940
