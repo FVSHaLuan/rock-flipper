@@ -211,6 +211,8 @@ namespace Agame.Run.Shop
                 var expRequired = GameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
                 content += $"Lv. {itemState.level}\nExp: {itemState.exp}/{expRequired}\n";
             }
+            var cashName = entry.currencyConfigManager.GetConfig(Currency.CASH).CurrencyName;
+            content += $"Cash earned: {cashName}{itemState.earnedCash.ToLargeNumberString()}\n";
 
             ///
             var skillDescriptor = item.BuildAgent != null ? item.BuildAgent.GetComponent<SkillDescriptor>() : null;

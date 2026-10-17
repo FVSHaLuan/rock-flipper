@@ -281,6 +281,7 @@ namespace Agame.Run.Shop
                 return;
             }
             RunData.AddCurrency(Currency.CASH, amount);
+            RunData.AddItemEarnedCash(item.ItemId, amount);
 
             ///
             if (cashFloatingTextPrototype == null)

@@ -13,6 +13,10 @@ namespace Agame.Run.Shop
         /// (<see cref="ItemView"/>, <see cref="ItemsTabButtonNoticeBadge"/>).
         /// </summary>
         public bool unseen;
+        /// <summary>
+        /// Total cash finding this item has earned (<see cref="Combat.ChestRarityBuildStats.itemFindCash"/> per find).
+        /// </summary>
+        public double earnedCash;
 
         public bool IsFound => level > 0 || exp > 0;
     }
