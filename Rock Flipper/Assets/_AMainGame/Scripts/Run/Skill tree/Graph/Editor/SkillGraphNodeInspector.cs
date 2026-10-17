@@ -65,6 +65,16 @@ namespace Agame.Run
                     }
                 }
             }
+
+            ///
+            using (new EditorGUI.DisabledGroupScope(skillGraphNode.Currency != Currency.CASH))
+            {
+                if (GUILayout.Button("Change Cash Tier", GUILayout.Height(40)))
+                {
+                    var buttonRect = GUILayoutUtility.GetLastRect();
+                    PopupWindow.Show(buttonRect, new ChangeCashTierPopup(skillGraphNode));
+                }
+            }
         }
     }
 

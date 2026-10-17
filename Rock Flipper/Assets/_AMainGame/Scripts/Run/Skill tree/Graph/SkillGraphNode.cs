@@ -209,6 +209,64 @@ namespace Agame.Run
             return DevEntry.Instance.cashTiers.GetColor(price.cashTier, (float)price.b);
         }
 
+        /// <summary>
+        /// Moves the price to <paramref name="newCashTier"/> and rescales b so that b * cashTierBase stays the same
+        /// </summary>
+        public void Editor_ChangeCashTier(CashTier newCashTier)
+        {
+            ///
+            if (newCashTier == price.cashTier)
+            {
+                return;
+            }
+
+            ///
+            if (!Editor_TryGetRescaledPriceB(newCashTier, out var newB, out var error))
+            {
+                Debug.LogError($"{name} - {error}");
+                return;
+            }
+
+            ///
+            UnityEditor.Undo.RecordObject(this, "Change Cash Tier");
+            price.b = newB;
+            price.cashTier = newCashTier;
+            UnityEditor.EditorUtility.SetDirty(this);
+        }
+
+        /// <summary>
+        /// The price's b after moving to <paramref name="newCashTier"/>, so that b * cashTierBase stays the same
+        /// </summary>
+        public bool Editor_TryGetRescaledPriceB(CashTier newCashTier, out double newB, out string error)
+        {
+            ///
+            newB = price.b;
+            error = null;
+
+            ///
+            var cashTiers = DevEntry.Instance?.cashTiers;
+            if (cashTiers == null)
+            {
+                error = "Can't change cash tier: DevEntry has no CashTiers";
+                return false;
+            }
+
+            ///
+            var oldCashTierBase = cashTiers.GetConfig(price.cashTier).cashBase;
+            var newCashTierBase = cashTiers.GetConfig(newCashTier).cashBase;
+            if (oldCashTierBase == 0 || newCashTierBase == 0)
+            {
+                error = $"Can't change cash tier from {price.cashTier} to {newCashTier}: a cash tier base is 0";
+                return false;
+            }
+
+            ///
+            newB = price.b * oldCashTierBase / newCashTierBase;
+            return true;
+        }
+
+        public double Editor_PriceB => price.b;
+
         [ContextMenu("Editor_LogCosts")]
         public void Editor_LogCosts()
         {
