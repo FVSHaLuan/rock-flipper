@@ -20,7 +20,9 @@ foreach (UIScreen s in stack) names.Add(s.name);
 sb.AppendLine("screenStack: [" + string.Join(" > ", names) + "]");
 
 // economy
-sb.AppendLine("cash: " + data.GetCurrencyValue(Agame.Run.Currency.CASH).ToString("0.##") + ", level " + data.Level + " (exp " + data.LevelExp.ToString("0.#") + "), chestLevel " + data.ChestLevel + " (exp " + data.ChestLevelExp.ToString("0.#") + ")");
+sb.AppendLine("cash: " + data.GetCurrencyValue(Agame.Run.Currency.CASH).ToString("0.##") + ", stars: " + data.GetCurrencyValue(Agame.Run.Currency.STAR)
+    + ", level " + data.Level + " (exp " + data.LevelExp.ToString("0.#") + "/" + entry.gameBalance.GetRequiredExpForNextLevel(data.Level) + ")"
+    + ", chestLevel " + data.ChestLevel + " (exp " + data.ChestLevelExp.ToString("0.#") + "/" + Agame.Balancing.GameBalance.GetRequiredExpForNextChestLevel(data.ChestLevel) + ")");
 sb.AppendLine("mouse: " + (stats.enabledMouseHover ? "hover" : "click") + (stats.enabledMouseRadius ? ", radius " + stats.mouseRadius : ", point") + "; skillTreeUnlocked: " + stats.UnlockedSkillTree + "; activeBackground: " + data.ActiveBackgroundId);
 
 // playfield
