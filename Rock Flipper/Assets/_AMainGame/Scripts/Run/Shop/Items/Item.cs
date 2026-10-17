@@ -1,3 +1,4 @@
+using Agame.Balancing;
 using Agame.FeatureBranching;
 using Agame.Run.Combat;
 using Agame.Run.Stats.Agents;
@@ -80,6 +81,22 @@ namespace Agame.Run.Shop
         protected void OnValidate()
         {
             TryAssignItemIdFromName();
+        }
+
+        [ContextMenu("Editor_LogMaxBuildValue")]
+        private void Editor_LogMaxBuildValue()
+        {
+            var maxLevel = GameBalance.GetItemMaxLevel(rarity);
+            var maxBuildValue = maxLevel * buildValue;
+
+            ///
+            var skillDescriptor = buildAgent != null ? buildAgent.GetComponent<SkillDescriptor>() : null;
+            if (skillDescriptor != null)
+            {
+                Debug.Log($"Max lv. = {maxLevel}, {skillDescriptor.GetDescription(maxBuildValue)}", this);
+                return;
+            }
+            Debug.Log($"Max level = {maxLevel}, max build value = {maxBuildValue}", this);
         }
 
         /// <summary>

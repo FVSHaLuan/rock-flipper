@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 5193860744944518393, guid: 6a339d7b139bf6a44bfe1995ad803887, type: 3}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: buildValue
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: isPlaceholder
