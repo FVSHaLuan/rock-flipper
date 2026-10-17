@@ -25,6 +25,8 @@ namespace Agame.Run.Combat
 
         private FlipperBotMovement movement;
 
+        public event System.Action OnStateChanged;
+
         public FlipperBotPoolHandler PoolHandler => poolHandler;
         public FlipperBotFlipper Flipper => flipper;
         public FlipperBotMovement Movement
@@ -76,6 +78,8 @@ namespace Agame.Run.Combat
             var baseDuration = State == FlipperBotState.Active ? BuildStats.flipperBotActiveTime : BuildStats.flipperBotIdleTime;
             stateCooldown.CooldownTime = GetRandomizedStateDuration(baseDuration);
             stateCooldown.StartCoolingDown();
+
+            OnStateChanged?.Invoke();
         }
 
         private float GetRandomizedStateDuration(float baseDuration)
