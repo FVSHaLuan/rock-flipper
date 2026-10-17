@@ -36606,6 +36606,7 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   newChestStartPosition: {fileID: 2108978960}
+  uniqueChestSpawnEffectPrototype: {fileID: 7472112871143324529, guid: dc19070e8b5c2a644a6eb4fe684e34cc, type: 3}
 --- !u!1 &1251681730
 GameObject:
   m_ObjectHideFlags: 0

@@ -19590,6 +19590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Unique Chest Appear Vfx
       objectReference: {fileID: 0}
+    - target: {fileID: 6083098594861048817, guid: 221cbf562bda3d1409939a6543dae0fa, type: 3}
+      propertyPath: countDownTime
+      value: 2.15
+      objectReference: {fileID: 0}
     - target: {fileID: 7472144903417849073, guid: 221cbf562bda3d1409939a6543dae0fa, type: 3}
       propertyPath: m_SortingLayer
       value: 7

@@ -1,3 +1,4 @@
+using FH.Core.Architecture.Pool;
 using UnityEngine;
 
 namespace Agame.Run.Combat
@@ -6,6 +7,8 @@ namespace Agame.Run.Combat
     {
         [SerializeField, Tooltip("Where non-Unique chests start their flip onto the playfield (on the chest bar)")]
         private Transform newChestStartPosition;
+        [SerializeField, Tooltip("Effect spawned at a Unique chest's position when it drops (optional)")]
+        private GeneralPoolMember uniqueChestSpawnEffectPrototype;
 
         protected void Start()
         {
@@ -47,16 +50,33 @@ namespace Agame.Run.Combat
             // A Unique chest picks the item it holds as it drops.
             if (RunEntry.uniqueChestDropRules.TryCreateUniqueChestState(out var state))
             {
-                RunEntry.chestInstanceManager.Spawn(state);
+                var chest = RunEntry.chestInstanceManager.Spawn(state);
+                SpawnUniqueChestSpawnEffect(chest.transform.position);
             }
             else if (force)
             {
-                RunEntry.chestInstanceManager.Spawn(rarity);
+                var chest = RunEntry.chestInstanceManager.Spawn(rarity);
+                SpawnUniqueChestSpawnEffect(chest.transform.position);
             }
             else
             {
                 Debug.LogError("Picked a Unique chest, but no Unique item is left for it to hold. No chest dropped.", this);
             }
+        }
+
+        private void SpawnUniqueChestSpawnEffect(Vector3 position)
+        {
+            if (uniqueChestSpawnEffectPrototype == null)
+            {
+                return;
+            }
+
+            ///
+            var effect = CurrentGeneralPool.TakeInstance(uniqueChestSpawnEffectPrototype, this);
+            effect.OnSpawned?.Invoke();
+            effect.transform.position = position;
+            effect.gameObject.SetActive(true);
+            effect.OnAfterSetPosition?.Invoke();
         }
     }
 
