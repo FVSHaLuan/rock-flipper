@@ -28,6 +28,16 @@ namespace Agame.Run.Combat
                 Debug.LogWarning("No chest rarity has an item left to drop. No chest dropped.", this);
                 return;
             }
+            SpawnChest(rarity);
+        }
+
+        /// <summary>
+        /// Drops a chest of <paramref name="rarity"/> the way a filled chest bar does.
+        /// With <paramref name="force"/>, a Unique chest still drops when no Unique item is left for it to hold;
+        /// it then holds no item.
+        /// </summary>
+        public void SpawnChest(ChestRarity rarity, bool force = false)
+        {
             if (rarity != ChestRarity.Unique)
             {
                 RunEntry.chestInstanceManager.SpawnAsNewChest(rarity, newChestStartPosition.position);
@@ -38,6 +48,10 @@ namespace Agame.Run.Combat
             if (RunEntry.uniqueChestDropRules.TryCreateUniqueChestState(out var state))
             {
                 RunEntry.chestInstanceManager.Spawn(state);
+            }
+            else if (force)
+            {
+                RunEntry.chestInstanceManager.Spawn(rarity);
             }
             else
             {

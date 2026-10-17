@@ -206,7 +206,7 @@ namespace Agame.Run.Combat
         [ContextMenu("Spawn This Rarity"), PlayModeOnly]
         private void Editor_SpawnThisRarity()
         {
-            RunEntry.Instance.chestInstanceManager.Spawn(rarity);
+            FindAnyObjectByType<NewChestSpawner>().SpawnChest(rarity, force: true);
         }
 #endif
     }
