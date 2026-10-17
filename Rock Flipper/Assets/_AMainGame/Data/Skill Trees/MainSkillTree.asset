@@ -52,14 +52,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: d23ab68f9157b424eac43b74aacb3b93, type: 3}
-  buildValue: 2
-  levelCount: 1
+  buildValue: 0.5
+  levelCount: 4
   currency: 0
   price:
     cashTier: 0
     a: 0
-    b: 400
-    c: 1
+    b: 200
+    c: 1.6
 --- !u!114 &-8783246194474991710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,14 +445,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 14071385909965, guid: f37d4d3bcd7130fdfb3029f6d83b2fa2, type: 3}
-  buildValue: 1.5
-  levelCount: 1
+  buildValue: 0.75
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
     b: 60
-    c: 1
+    c: 1.8
 --- !u!114 &-6468107650215265525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,14 +505,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 7785889712214016177, guid: e797bac234c0432439f9e37bec929b2a, type: 3}
-  buildValue: 0.1
-  levelCount: 1
+  buildValue: 0.04
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 220
-    c: 1
+    b: 200
+    c: 1.6
 --- !u!114 &-6338184287948210066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,14 +562,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 1279933433069, guid: fc268fe73d7991563f09726b7e7e9732, type: 3}
-  buildValue: 1
-  levelCount: 1
+  buildValue: 0.5
+  levelCount: 2
   currency: 0
   price:
     cashTier: 1
     a: 0
     b: 280
-    c: 1
+    c: 2
 --- !u!114 &-6214745156599126537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,14 +730,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 4887100862916581765, guid: af960d29f02627740984cb1d2f173b3c, type: 3}
-  buildValue: 0.16
-  levelCount: 1
+  buildValue: 0.04
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 180
-    c: 1
+    b: 150
+    c: 1.5
 --- !u!114 &-5442355391896774071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,14 +838,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 5172542415251949545, guid: 877b136eac0930749a37cd08f2f34489, type: 3}
-  buildValue: 1.5
-  levelCount: 1
+  buildValue: 0.5
+  levelCount: 3
   currency: 0
   price:
     cashTier: 1
     a: 0
     b: 180
-    c: 1
+    c: 1.6
 --- !u!114 &-5281263294261801891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,14 +1015,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 5098320305232, guid: d25b8cfc53a2c1c11440dfd56fd7d890, type: 3}
-  buildValue: 6
-  levelCount: 5
+  buildValue: 3
+  levelCount: 10
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 2
-    c: 1.6
+    b: 1.5
+    c: 1.4
 --- !u!114 &-5053481924290766066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,14 +1306,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 0b2efaf3ef5b2fd4aac5ade7f7488a3c, type: 3}
-  buildValue: 4
-  levelCount: 1
+  buildValue: 1
+  levelCount: 4
   currency: 0
   price:
     cashTier: 0
     a: 0
-    b: 500
-    c: 1
+    b: 250
+    c: 1.6
 --- !u!114 &-4771205358381411957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,14 +1474,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 5053357415098008190, guid: bb2e388f6bccbef4f817889be5f25345, type: 3}
-  buildValue: 0.225
-  levelCount: 2
+  buildValue: 0.15
+  levelCount: 3
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 5
-    c: 2
+    b: 3.5
+    c: 1.8
 --- !u!114 &-4163678286576885277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,14 +1534,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 9bab76ff753f8b64bb09d209d4a18c87, type: 3}
-  buildValue: 0.5
-  levelCount: 1
+  buildValue: 0.1
+  levelCount: 5
   currency: 0
   price:
     cashTier: 0
     a: 0
-    b: 600
-    c: 1
+    b: 250
+    c: 1.5
 --- !u!114 &-4136169015872291085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,14 +1654,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 7382554735492, guid: b9165f611fb9e648187f6343d38472db, type: 3}
-  buildValue: 0.1
-  levelCount: 1
+  buildValue: 0.025
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 8
-    c: 1
+    b: 3
+    c: 1.7
 --- !u!114 &-2578467967624778572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,14 +1954,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 21264572361568, guid: 46ac560c5170d9e089e14f23ca357a73, type: 3}
-  buildValue: 0.1
-  levelCount: 1
+  buildValue: 0.025
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 90
-    c: 1
+    b: 80
+    c: 1.7
 --- !u!114 &-872249281205540302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2011,14 +2011,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 1212828346496478368, guid: d514674c7607aa84c8d2cbda3ab691da, type: 3}
-  buildValue: 0.12
-  levelCount: 2
+  buildValue: 0.06
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 12
-    c: 1.8
+    b: 7
+    c: 1.5
 --- !u!114 &-471263998860530179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2273,14 +2273,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 8619025691418994321, guid: 6ded4a9b6274c8f429edfbfa961edbf3, type: 3}
-  buildValue: 1
-  levelCount: 1
+  buildValue: 0.5
+  levelCount: 2
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 12
-    c: 1
+    b: 8
+    c: 2
 --- !u!114 &360477713891578472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2555,14 +2555,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 23553590355384, guid: 7a56aaad88453c56d0b158f6d6633f47, type: 3}
-  buildValue: 1.5
-  levelCount: 1
+  buildValue: 0.75
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 5
-    c: 1
+    b: 3
+    c: 1.8
 --- !u!114 &2270611202772109512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2612,14 +2612,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 6102141854654, guid: 005e5582bcc9f3dd33a00ec971605851, type: 3}
-  buildValue: 0.3
-  levelCount: 1
+  buildValue: 0.15
+  levelCount: 3
   currency: 0
   price:
     cashTier: 1
     a: 0
     b: 75
-    c: 1
+    c: 2
 --- !u!114 &2299989078838170068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2777,14 +2777,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 9009931701870285070, guid: fd831fb145d1e2a4f915edfa02a955cc, type: 3}
-  buildValue: 0.225
-  levelCount: 2
+  buildValue: 0.15
+  levelCount: 3
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 3
-    c: 2
+    b: 2
+    c: 1.8
 --- !u!114 &3442198302497414556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,14 +2954,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 1692745882771272655, guid: 385835ae381ed274c93188be63a8f870, type: 3}
-  buildValue: 1
-  levelCount: 1
+  buildValue: 0.5
+  levelCount: 2
   currency: 0
   price:
     cashTier: 1
     a: 0
     b: 300
-    c: 1
+    c: 2
 --- !u!114 &3797153540803063763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3287,14 +3287,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 683687454391888099, guid: 21124c1bd54c40145bea73c81e99f87b, type: 3}
-  buildValue: 0.1
-  levelCount: 1
+  buildValue: 0.04
+  levelCount: 4
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 9
-    c: 1
+    b: 4
+    c: 1.8
 --- !u!114 &5352181967948316995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3464,14 +3464,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 6596586409392501739, guid: 7d4bf09ba2ce75141af0b20a2677f875, type: 3}
-  buildValue: 0.75
-  levelCount: 2
+  buildValue: 0.5
+  levelCount: 3
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 5
-    c: 2
+    b: 3.5
+    c: 1.8
 --- !u!114 &5938386169034562701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3524,14 +3524,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 2258807152673733409, guid: 5aab55553ccf94749b3d1f880e5c3f1d, type: 3}
-  buildValue: 0.2
-  levelCount: 1
+  buildValue: 0.05
+  levelCount: 4
   currency: 0
   price:
     cashTier: 0
     a: 0
-    b: 400
-    c: 1
+    b: 200
+    c: 1.6
 --- !u!114 &5960043599096181927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3584,14 +3584,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 31800869903227, guid: 76b7fe9828ba4b3d5f91da6f94a3f751, type: 3}
-  buildValue: 0.3
-  levelCount: 1
+  buildValue: 0.15
+  levelCount: 3
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 6
-    c: 1
+    b: 4
+    c: 2
 --- !u!114 &6704568998710670713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3704,14 +3704,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 11627510069735, guid: 4b9b4ae354c7588824bd39b95e38a253, type: 3}
-  buildValue: 100
-  levelCount: 5
+  buildValue: 50
+  levelCount: 10
   currency: 0
   price:
     cashTier: 1
     a: 0
     b: 20
-    c: 1.7
+    c: 1.5
 --- !u!114 &7073261972293507406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4154,14 +4154,14 @@ MonoBehaviour:
   minParentLevelEach: 0
   demoLimit: -1
   buildAgent: {fileID: 23556871576253, guid: 613dabe6be687c579e41a91eab1cf416, type: 3}
-  buildValue: 1
-  levelCount: 1
+  buildValue: 0.5
+  levelCount: 2
   currency: 0
   price:
     cashTier: 1
     a: 0
-    b: 10
-    c: 1
+    b: 7
+    c: 2
 --- !u!114 &8541827862012684260
 MonoBehaviour:
   m_ObjectHideFlags: 0
