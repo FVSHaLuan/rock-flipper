@@ -11,6 +11,7 @@ Rocks have integer **HP**.
 **Flipping** a rock throws it from the ground up into the air.
 * A flipped rock always **lands** in a different position than its initial position.
 * On landing, the rock earns **landing cash**.
+* The first landing of a newly purchased rock earns no cash, [chest exp](Chests.md#chest-bar) or [level exp](Levels.md#level-bar), and doesn't cost it any HP. It still counts as a landing for tier abilities.
 * Each rock has [temporary stats](TemporaryStats.md), which reset each time it starts to flip.
 
 ### Critical Landing

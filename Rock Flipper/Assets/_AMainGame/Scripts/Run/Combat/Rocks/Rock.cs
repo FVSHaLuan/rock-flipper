@@ -107,11 +107,18 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnFinishedFlipping()
         {
-            CurrentHP--;
+            // A newly bought rock's first landing costs no HP and earns no cash or exp (abilities still react to it).
+            var isNewRockLanding = flippable.LastFlipSource == FlipSource.NewRock;
 
             ///
-            AddChestLevelExp();
-            AddLevelExp();
+            if (!isNewRockLanding)
+            {
+                CurrentHP--;
+
+                ///
+                AddChestLevelExp();
+                AddLevelExp();
+            }
 
             ///
             if (CurrentHP <= 0)
@@ -125,7 +132,10 @@ namespace Agame.Run.Combat
             else
             {
                 ///
-                EarnCash(false);
+                if (!isNewRockLanding)
+                {
+                    EarnCash(false);
+                }
 
                 ///
                 UpdateLandingCooldown();
