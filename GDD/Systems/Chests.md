@@ -8,6 +8,8 @@
 * When a [rock](Rocks.md) lands, it adds **chest exp** to the **chest bar** (see [Main Screen](../Screens/MainScreen.md#overlay-ui-elements) for its position).
 * When the chest bar fills up, it resets and drops a chest.
 * A dropped chest that isn't Unique flips from the chest bar onto the playfield. This flip doesn't cost the chest any HP.
+* The first few chests of a save, and every Unique chest, only appear when the player is on the main screen, so the player sees them drop. If the chest bar fills while the player is elsewhere, the chest waits and appears once the player is back on the main screen.
+  * If the player quits while a chest is waiting, the chest is still kept: it appears on the playfield the next time the game loads.
 
 ## Flipping & Breaking
 * Chests have integer HP and are flipped the same way as rocks (see [Rocks → Flipping](Rocks.md#flipping)).

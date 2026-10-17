@@ -7,8 +7,15 @@ namespace Agame.Run.Combat
     {
         private List<Chest> activeChests = new List<Chest>();
         private List<ChestState> savedChestStates = new List<ChestState>();
+        private List<ChestState> waitingChestStates = new List<ChestState>();
 
         public IReadOnlyList<Chest> ActiveChests => activeChests;
+
+        /// <summary>
+        /// Chests that dropped while the player wasn't on the Combat Screen and aren't on the playfield yet
+        /// (see <see cref="NewChestSpawner"/>). Saved with the chests on the playfield, so they appear in place on the next load.
+        /// </summary>
+        public IReadOnlyList<ChestState> WaitingChestStates => waitingChestStates;
 
         public bool SpawnedSavedChests { get; private set; } = false;
 
@@ -36,6 +43,27 @@ namespace Agame.Run.Combat
             {
                 activeChests.Remove(chest);
             }
+        }
+
+        public void AddWaitingChest(ChestState chestState)
+        {
+            waitingChestStates.Add(chestState);
+        }
+
+        /// <summary>
+        /// Removes the oldest waiting chest and returns its state, to spawn it. Returns false if no chest is waiting.
+        /// </summary>
+        public bool TryTakeWaitingChest(out ChestState chestState)
+        {
+            if (waitingChestStates.Count == 0)
+            {
+                chestState = default;
+                return false;
+            }
+
+            chestState = waitingChestStates[0];
+            waitingChestStates.RemoveAt(0);
+            return true;
         }
 
         public Chest Spawn(ChestState chestState)
@@ -99,6 +127,7 @@ namespace Agame.Run.Combat
                 var state = chest.GetState();
                 savedChestStates.Add(state);
             }
+            savedChestStates.AddRange(waitingChestStates);
 
             ///
             RunData.SetChestStates(savedChestStates);

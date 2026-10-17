@@ -12,7 +12,7 @@ namespace Agame.Run.Combat
     /// <list type="bullet">
     /// <item>the background feature is enabled;</item>
     /// <item>the active background hasn't dropped its Unique chest yet;</item>
-    /// <item>some non-placeholder Unique item is unfound and not held by a Unique chest on the playfield;</item>
+    /// <item>some non-placeholder Unique item is unfound and not held by a Unique chest on the playfield or waiting to drop;</item>
     /// <item>the active background's total active time (<see cref="RunData.GetBackgroundActiveTime"/>) is at least <see cref="minActiveTime"/>;</item>
     /// <item>in demo and playtest builds, no Unique chest has dropped yet in this save.</item>
     /// </list>
@@ -149,16 +149,24 @@ namespace Agame.Run.Combat
         }
 
         /// <summary>
-        /// Fills <see cref="heldUniqueItemIds"/> with the items held by the Unique chests on the playfield.
+        /// Fills <see cref="heldUniqueItemIds"/> with the items held by the Unique chests on the playfield or waiting to drop.
         /// </summary>
         private void CollectHeldUniqueItemIds()
         {
             heldUniqueItemIds.Clear();
-            foreach (var chest in RunEntry.chestInstanceManager.ActiveChests)
+            var chestInstanceManager = RunEntry.chestInstanceManager;
+            foreach (var chest in chestInstanceManager.ActiveChests)
             {
                 if (chest.Rarity == ChestRarity.Unique && !string.IsNullOrEmpty(chest.UniqueItemId))
                 {
                     heldUniqueItemIds.Add(chest.UniqueItemId);
+                }
+            }
+            foreach (var state in chestInstanceManager.WaitingChestStates)
+            {
+                if (state.rarity == ChestRarity.Unique && state.HasUniqueItem)
+                {
+                    heldUniqueItemIds.Add(state.uniqueItemId);
                 }
             }
         }
