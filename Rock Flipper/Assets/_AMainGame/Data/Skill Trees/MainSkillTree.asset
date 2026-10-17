@@ -56,9 +56,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 200
+    b: 2
     c: 1.6
 --- !u!114 &-8783246194474991710
 MonoBehaviour:
@@ -113,9 +113,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 300
+    b: 3
     c: 2.5
 --- !u!114 &-8240257537122502506
 MonoBehaviour:
@@ -170,9 +170,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 20
+    b: 2
     c: 3
 --- !u!114 &-7951454483246537858
 MonoBehaviour:
@@ -278,9 +278,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 200
+    b: 2
     c: 1
 --- !u!114 &-7525168557237096116
 MonoBehaviour:
@@ -335,9 +335,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 400
+    b: 4
     c: 1
 --- !u!114 &-7420654112859997324
 MonoBehaviour:
@@ -449,9 +449,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 60
+    b: 6
     c: 1.8
 --- !u!114 &-6468107650215265525
 MonoBehaviour:
@@ -509,9 +509,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 200
+    b: 2
     c: 1.6
 --- !u!114 &-6338184287948210066
 MonoBehaviour:
@@ -566,9 +566,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 280
+    b: 2.8
     c: 2
 --- !u!114 &-6214745156599126537
 MonoBehaviour:
@@ -680,9 +680,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 30
+    b: 3
     c: 3
 --- !u!114 &-5700861179744409256
 MonoBehaviour:
@@ -734,9 +734,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 150
+    b: 1.5
     c: 1.5
 --- !u!114 &-5442355391896774071
 MonoBehaviour:
@@ -788,9 +788,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 20
+    b: 2
     c: 1
 --- !u!114 &-5388302956088700057
 MonoBehaviour:
@@ -842,9 +842,9 @@ MonoBehaviour:
   levelCount: 3
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 180
+    b: 1.8
     c: 1.6
 --- !u!114 &-5281263294261801891
 MonoBehaviour:
@@ -956,9 +956,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 300
+    b: 3
     c: 1
 --- !u!114 &-5147559459918421793
 MonoBehaviour:
@@ -1130,9 +1130,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 300
+    b: 3
     c: 1
 --- !u!114 &-4968184747821918782
 MonoBehaviour:
@@ -1310,9 +1310,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 250
+    b: 2.5
     c: 1.6
 --- !u!114 &-4771205358381411957
 MonoBehaviour:
@@ -1367,9 +1367,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 1000
+    b: 10
     c: 1
 --- !u!114 &-4620618385319408184
 MonoBehaviour:
@@ -1538,9 +1538,9 @@ MonoBehaviour:
   levelCount: 5
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 250
+    b: 2.5
     c: 1.5
 --- !u!114 &-4136169015872291085
 MonoBehaviour:
@@ -1781,9 +1781,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 300
+    b: 3
     c: 1.7
 --- !u!114 &-1834753400696216170
 MonoBehaviour:
@@ -1898,9 +1898,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 15
+    b: 1.5
     c: 2
 --- !u!114 &-1177570503993797864
 MonoBehaviour:
@@ -1958,9 +1958,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 80
+    b: 8
     c: 1.7
 --- !u!114 &-872249281205540302
 MonoBehaviour:
@@ -2391,9 +2391,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 200
+    b: 2
     c: 1
 --- !u!114 &1106490328389452621
 MonoBehaviour:
@@ -2502,9 +2502,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 200
+    b: 2
     c: 1
 --- !u!114 &1848818967529400550
 MonoBehaviour:
@@ -2616,9 +2616,9 @@ MonoBehaviour:
   levelCount: 3
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 75
+    b: 7.5
     c: 2
 --- !u!114 &2299989078838170068
 MonoBehaviour:
@@ -2673,9 +2673,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 15
+    b: 1.5
     c: 1
 --- !u!114 &2375330221305776675
 MonoBehaviour:
@@ -2958,9 +2958,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 300
+    b: 3
     c: 2
 --- !u!114 &3797153540803063763
 MonoBehaviour:
@@ -3174,9 +3174,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 45
+    b: 4.5
     c: 1
 --- !u!114 &4570366847741314761
 MonoBehaviour:
@@ -3414,9 +3414,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 200
+    b: 2
     c: 1
 --- !u!114 &5746355078283522572
 MonoBehaviour:
@@ -3528,9 +3528,9 @@ MonoBehaviour:
   levelCount: 4
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 200
+    b: 2
     c: 1.6
 --- !u!114 &5960043599096181927
 MonoBehaviour:
@@ -3708,9 +3708,9 @@ MonoBehaviour:
   levelCount: 10
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 2
     a: 0
-    b: 20
+    b: 2
     c: 1.5
 --- !u!114 &7073261972293507406
 MonoBehaviour:
@@ -3822,9 +3822,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 200
+    b: 2
     c: 2.5
 --- !u!114 &7332991121257117244
 MonoBehaviour:
@@ -3876,9 +3876,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 600
+    b: 6
     c: 1
 --- !u!114 &7756721122385284476
 MonoBehaviour:
@@ -3930,9 +3930,9 @@ MonoBehaviour:
   levelCount: 1
   currency: 0
   price:
-    cashTier: 1
+    cashTier: 3
     a: 0
-    b: 250
+    b: 2.5
     c: 1
 --- !u!114 &8091658075634069737
 MonoBehaviour:
@@ -4101,9 +4101,9 @@ MonoBehaviour:
   levelCount: 2
   currency: 0
   price:
-    cashTier: 0
+    cashTier: 1
     a: 0
-    b: 300
+    b: 3
     c: 2
 --- !u!114 &8213078786738054279
 MonoBehaviour:
