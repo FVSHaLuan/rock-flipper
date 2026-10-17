@@ -75,6 +75,36 @@ namespace Agame.Run
             return base.Init();
         }
 
+        protected void Start()
+        {
+            RunEntry.skillTreeScreen.OnClosed += SkillTreeScreen_OnClosed;
+        }
+
+        protected void OnDestroy()
+        {
+            RunEntry.skillTreeScreen.OnClosed -= SkillTreeScreen_OnClosed;
+        }
+
+        private void SkillTreeScreen_OnClosed()
+        {
+            ReleaseAllToolTips();
+        }
+
+        private void ReleaseAllToolTips()
+        {
+            ReleaseToolTips(mainSkillNodes);
+            ReleaseToolTips(laserSkillNodes);
+            ReleaseToolTips(lightningSkillNodes);
+        }
+
+        private void ReleaseToolTips(List<SkillNode> skillNodes)
+        {
+            foreach (var skillNode in skillNodes)
+            {
+                skillNode.ReleaseToolTip();
+            }
+        }
+
         [ContextMenu("DrawTreeWithoutApplyingToBuildStats"), PlayModeOnly]
         public void DrawTreeWithoutApplyingToBuildStats()
         {
