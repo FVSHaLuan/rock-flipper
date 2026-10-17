@@ -11,6 +11,11 @@ namespace Agame.Run.Shop
         [SerializeField, Min(1), Tooltip("Seconds of play time between two Preferred background changes.")]
         private float preferredInterval = 300;
 
+        /// <summary>
+        /// Seconds of play time between two Preferred background changes.
+        /// </summary>
+        public float PreferredInterval => preferredInterval;
+
         protected void Update()
         {
             ///
