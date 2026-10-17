@@ -72,6 +72,7 @@ Create the node through `unity-cli` eval, using the snippet in Skill Trees CLAUD
 - `m_Name`: short `[object] [property]`, unique across the graph (e.g. `L VIII Max Beams`, `P2 Crit Chance`).
 - Position: on the 250-unit grid, one hop from the parent, in a direction that parent's other children don't already use. No overlaps.
 - Connect `parent.output` to `child.input`, and set `buildAgent` to the prefab's `BuildAgent` component, plus the cost and level fields from step 0.
+- If any of `buildValue`, `levelCount` or `price` is placeholder balance, set `attentionFlag` to true. The flag means "not balanced yet": the node can't be bought until balancing (the `balance-demo` skill) sets its values and clears it.
 - `AssetDatabase.SaveAssets()`, then read the console. The graph editor flags "No icon", "No title group", "No title" and "No agent".
 
 **Don't re-import into `Scenes/Run.unity`.** That's a scene edit (see root `CLAUDE.md`). When you finish, tell the user the Run scene's tree is out of date. Ask whether they'll run `SkillTree` → `Editor_ImportFromGraph (Dirty)` themselves or want you to.

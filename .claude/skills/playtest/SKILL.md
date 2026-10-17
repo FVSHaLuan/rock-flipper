@@ -74,7 +74,7 @@ Repeat **observe → act → let it run → observe**, keeping it tied to the go
 - **Let it run**: `Start-Sleep -Seconds N` in PowerShell between observations (a few `run.sh` calls in a row also take a few seconds). Write down the time scale with each observation, so rates (`Cash speed`, cash per minute) are read correctly.
 - **Compare against intent**: when a number or rule looks off, check the GDD ([GDD/README.md](../../../GDD/README.md), stats in `GDD/Stats/`) and the code. Report mismatches; **don't fix code during a playtest** unless the user asked for that.
 
-Never during a playtest: save the scene (`save_scene`, `save_all`), edit prefabs or assets, or click Home / Quit / Wishlist / Feedback / Reload Scene (`click.cs` refuses them). Changes snippets make in Play mode (activating dev UIs, editing `BuildStats`) are discarded when Play stops, which is fine.
+Never during a playtest: save the scene (`save_scene`, `save_all`), edit prefabs or assets, or click Home / Quit / Wishlist / Feedback / Reload Scene (`click.cs` refuses them). Changes snippets make in Play mode (activating dev UIs, editing `BuildStats`) are discarded when Play stops, which is fine. The exception is a balancing session: the `balance-demo` skill edits skill-graph values during Play, within its own rules.
 
 ## 4. Feel and visuals
 
