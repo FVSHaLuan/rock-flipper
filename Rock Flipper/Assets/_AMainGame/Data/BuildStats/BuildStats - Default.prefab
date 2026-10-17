@@ -76,7 +76,7 @@ MonoBehaviour:
     maxCount: 10
     maxHp: 5
     purity: 0.1
-    landingCash: 1
+    landingCash: 20
     breakingCashMultiplier: 2
     purityCashMultiplier: 3
     criticalLandingChance: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     maxCount: 10
     maxHp: 5
     purity: 0.1
-    landingCash: 1
+    landingCash: 400
     breakingCashMultiplier: 2
     purityCashMultiplier: 3
     criticalLandingChance: 0
@@ -170,7 +170,10 @@ MonoBehaviour:
   flipperBotMaxCount: 5
   flipperBotCount: 0
   flipperBotFlippingInterval: 2
+  flipperBotFlipRange: 0.5
+  flipperBotStrength: 1
   flipperBotMovementSpeedFactor: 0.2
   flipperBotActiveTime: 10
   flipperBotIdleTime: 5
   flipperBotChestFlippingEnabled: 0
+  flipperBotSmartPathingEnabled: 0

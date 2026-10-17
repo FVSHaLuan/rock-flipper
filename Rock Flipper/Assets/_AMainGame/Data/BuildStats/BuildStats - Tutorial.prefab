@@ -73,6 +73,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5789884900222166960, guid: e0aedc20c68d6dd43a58df7c77f1af08, type: 3}
+      propertyPath: rock_P1.landingCash
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789884900222166960, guid: e0aedc20c68d6dd43a58df7c77f1af08, type: 3}
+      propertyPath: rock_P2.landingCash
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789884900222166960, guid: e0aedc20c68d6dd43a58df7c77f1af08, type: 3}
       propertyPath: initialEnergyProportion
       value: 0.65
       objectReference: {fileID: 0}
