@@ -71,6 +71,11 @@ MonoBehaviour:
     m_Key: Youre playing the demo version of Rock Flipper This demo limits skills
     m_Metadata:
       m_Items: []
+  - m_Id: 13345685015281664
+    m_Key: Backgrounds
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505135
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -78,6 +83,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2838372046370505135
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Plural noun: the playfield backgrounds (biomes) the player unlocks and picks from. Shown as a skill''s title group, e.g. "Backgrounds - Enable".'
     - rid: 3480083155795050782
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

@@ -19,6 +19,36 @@ MonoBehaviour:
     m_Key: Max Rock Count
     m_Metadata:
       m_Items: []
+  - m_Id: 13344243827261440
+    m_Key: Enable
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505129
+  - m_Id: 13344243839844352
+    m_Key: Enable Backgrounds
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505130
+  - m_Id: 13344244250886144
+    m_Key: Preferred Multiplier
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505131
+  - m_Id: 13344244250886145
+    m_Key: 0 Preferred Multiplier
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505132
+  - m_Id: 13344244561264640
+    m_Key: Preferred Multiplier Per Background
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505133
+  - m_Id: 13344244561264641
+    m_Key: 0 Preferred Multiplier per unlocked Background
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505134
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -26,6 +56,30 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2838372046370505129
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, verb. Shown after the title group as "Backgrounds - Enable": this skill unlocks the Backgrounds feature.'
+    - rid: 2838372046370505130
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description: this skill unlocks the Backgrounds feature (choosing and unlocking playfield backgrounds).'
+    - rid: 2838372046370505131
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title, game term (noun phrase). The cash income multiplier for using the Preferred background (the background currently marked Preferred) as the active background. Shown as "Backgrounds - Preferred Multiplier".
+    - rid: 2838372046370505132
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the amount added to the Preferred Multiplier (the cash income multiplier for using the Preferred background as the active background).'
+    - rid: 2838372046370505133
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title. The skill increases the Preferred Multiplier by an amount for each background the player has unlocked. Shown as "Backgrounds - Preferred Multiplier Per Background".
+    - rid: 2838372046370505134
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, added to the Preferred Multiplier (the cash income multiplier for using the Preferred background) for each background the player has unlocked.'
     - rid: 3480083155795050789
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

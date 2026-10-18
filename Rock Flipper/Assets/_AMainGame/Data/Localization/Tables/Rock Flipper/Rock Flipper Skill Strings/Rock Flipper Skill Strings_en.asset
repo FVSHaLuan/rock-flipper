@@ -22,6 +22,30 @@ MonoBehaviour:
     m_Localized: Max Rock Count
     m_Metadata:
       m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Enable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: Enable Backgrounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: Preferred Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: +{0} Preferred Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: Preferred Multiplier Per Background
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: +{0} Preferred Multiplier per unlocked Background
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
