@@ -30,6 +30,10 @@ namespace Agame.Run.Combat
         [SerializeField]
         private UnityEvent playItemArrivalDelegate;
 
+        [Header("Monoliths")]
+        [SerializeField]
+        private UnityEvent playPrismShotDelegate;
+
         private BalancerWithObjects clickLoopPlayerUnmutedBalancer = new BalancerWithObjects();
 
         protected void OnDestroy()
@@ -156,6 +160,17 @@ namespace Agame.Run.Combat
 
             ///
             playItemArrivalDelegate?.Invoke();
+        }
+
+        public void PlayPrismShot()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playPrismShotDelegate?.Invoke();
         }
     }
 

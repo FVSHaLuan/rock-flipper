@@ -95,6 +95,7 @@ namespace Agame.Run.Combat
             }
 
             ///
+            RunEntry.combatSoundEffectManager.PlayPrismShot();
             onShot?.Invoke();
         }
 
