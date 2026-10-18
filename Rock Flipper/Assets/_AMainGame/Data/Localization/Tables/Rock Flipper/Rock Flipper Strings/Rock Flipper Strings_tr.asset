@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: "P0 Ta\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: "P1 Ta\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: "P2 Ta\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: "P3 Ta\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: "P4 Ta\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: "P5 Ta\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: "Sonraki G\xF6zde Arka Plan:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: "G\xF6zde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: "Rastgele A\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: "F\u0131rlat\u0131c\u0131 Bot"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: "K\u0131rm\u0131z\u0131 noktal\u0131 e\u015Fyalar yeni bulunmu\u015F veya seviye atlam\u0131\u015Ft\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: "T\xFCm\xFCn\xFC Temizle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: "Tamam, F\u0131rlat!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "<b>Rock Flipper</b> oyununun <b>demo</b> s\xFCr\xFCm\xFCn\xFC oynuyorsun. Bu demo, mevcut yetenekleri ve e\u015Fyalar\u0131 <b>s\u0131n\u0131rlar</b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: Arka Planlar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: "F\u0131rlat\u0131c\u0131 Botlar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolit L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolit L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: Fare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: "T\xFCm Ta\u015Flar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolit L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolit L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolit L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolit L XII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>DEMO SINIRI!</b>\n\nBu, demodaki y\xFCkseltme s\u0131n\u0131r\u0131. Tam oyunda y\xFCkseltmeye devam edebilir ve daha fazla yetene\u011Fin kilidini a\xE7abilirsin.\n\n<b>Tam oyuna g\xF6z atmak i\xE7in t\u0131kla.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: "Daha fazla arka plan\u0131n kilidini a\xE7!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: "Gelirini katlamak i\xE7in G\xF6zde arka plan\u0131 se\xE7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: "G\xF6zde arka plan: {0} gelir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: "Art\u0131rmak i\xE7in daha fazla arka plan\u0131n kilidini a\xE7."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: "Hen\xFCz bulunmad\u0131."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: "Kazan\u0131lan Para"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: "Etkiler e\u015Fya seviyesiyle birlikte artar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: "Yayg\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: Seyrek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Nadir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: "Destans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: "E\u015Fsiz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: "Ta\u015Flar\u0131n ini\u015Fleri bu \xE7ubu\u011Fu doldurur. Doldu\u011Funda seviye atlar ve {0} kazan\u0131rs\u0131n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: "Sand\u0131k \xC7ubu\u011Fu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: "Ta\u015Flar\u0131n ini\u015Fleri bu \xE7ubu\u011Fu doldurur. Doldu\u011Funda bir sand\u0131k d\xFC\u015Fer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: Zar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: "\xC7eki\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Fener
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: "B\xFCy\xFCte\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Kazma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: Sabun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Yay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: "C\xFCzdan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: "\xC7\xF6l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: "\xC7ay\u0131r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: Volkanik
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

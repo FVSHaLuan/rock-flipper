@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: "Maks. Ta\u015F Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: "Etkinle\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: "Arka planlar\u0131 etkinle\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: "G\xF6zde \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: "+{0} G\xF6zde \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: "Arka Plan Ba\u015F\u0131na G\xF6zde \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: "A\xE7\u0131lan her arka plan i\xE7in +{0} G\xF6zde \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: "Sand\u0131klar\u0131 F\u0131rlat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: "F\u0131rlat\u0131c\u0131 botlar sand\u0131klar\u0131 da f\u0131rlatabilir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: "Ak\u0131ll\u0131 Rota"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "F\u0131rlat\u0131c\u0131 botlar en faydal\u0131 f\u0131rlatmalar\u0131 yapabilecekleri yere gider"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: "F\u0131rlat\u0131c\u0131 botlar\u0131 etkinle\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: "F\u0131rlat\u0131c\u0131 botlar etrafta dola\u015F\u0131r ve f\u0131rlatmay\u0131 senin yerine yapar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: "Aktif S\xFCre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: "+{0}s Aktif S\xFCre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: "F\u0131rlatma Menzili"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: "+{0} F\u0131rlatma Menzili"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: "Maks. Say\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: "+{0} Maks. F\u0131rlat\u0131c\u0131 Bot Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: "Hareket H\u0131z\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: "+%{0} Hareket H\u0131z\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: "G\xFC\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: "+{0} G\xFC\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: "F\u0131rlatma Aral\u0131\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: "-{0}s F\u0131rlatma Aral\u0131\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: "Dinlenme S\xFCresi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: "-{0}s Dinlenme S\xFCresi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: "Maks. I\u015F\u0131n Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: "+{0} Maks. I\u015F\u0131n Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: "Min. I\u015F\u0131n Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: "+{0} Min. I\u015F\u0131n Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: "Ge\xE7ici \xC7arpan Art\u0131\u015F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: "L VIII \u0131\u015F\u0131n\u0131n\u0131n her isabetinde +{0} Ge\xE7ici \xC7arpan"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: "At\u0131\u015F Aral\u0131\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: "-{0}s At\u0131\u015F Aral\u0131\u011F\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: "Monolit L II'nin kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: "\xDCzerine Gelme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: "Fareyle \xFCzerine gelerek f\u0131rlatmay\u0131 etkinle\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: "Alan F\u0131rlatma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: "Fare Yar\u0131\xE7ap\u0131n\u0131 etkinle\u015Ftir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: "Yar\u0131\xE7ap"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: "+{0} Fare Yar\u0131\xE7ap\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Tekrar Sekme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: "Sekme ini\u015Fleri tekrar sekebilir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: "Sekme \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: "+%{0} Sekme \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: Maks. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in -{0} Maks. HP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} Maks. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: "K\u0131r\u0131lma \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +{0} K\u0131r\u0131lma \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: "+{0} K\u0131r\u0131lma \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: "Sand\u0131k XP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: "Her ini\u015Fte +{0} Sand\u0131k XP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: "Kritik \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +{0} Kritik \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: "Kritik \u0130ni\u015F Paras\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: "+%{0} Kritik \u0130ni\u015F Paras\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: "Kritik \u0130ni\u015F \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +%{0} Kritik \u0130ni\u015F \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: "+%{0} Kritik \u0130ni\u015F \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: "F\u0131rlatma H\u0131z\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +%{0} F\u0131rlatma H\u0131z\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: "+%{0} F\u0131rlatma H\u0131z\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: "\u0130ni\u015F Paras\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +{0} \u0130ni\u015F Paras\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: "+{0} \u0130ni\u015F Paras\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: Seviye XP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: "Her ini\u015Fte +{0} Seviye XP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: "+{0} Maks. Ta\u015F Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: "Safl\u0131k \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +{0} Safl\u0131k \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: "+{0} Safl\u0131k \xC7arpan\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: "Safl\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: "T\xFCm ta\u015Flar i\xE7in +%{0} saf olma \u015Fans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: "K\u0131r\u0131l\u0131nca +%{0} saf olma \u015Fans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: "\u0130ni\u015F Bekleme S\xFCresi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: "Ta\u015F\u0131n ini\u015Ften sonra tekrar f\u0131rlat\u0131labilmesi i\xE7in -{0}s bekleme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: "Oto F\u0131rlatma \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: "+%{0} Oto F\u0131rlatma \u015Eans\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: "Oto F\u0131rlatma Gecikmesi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: "-{0}s Oto F\u0131rlatma Gecikmesi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "Monolit L VIII belirli aral\u0131klarla havadaki ta\u015Flara lazer \u0131\u015F\u0131nlar\u0131 ate\u015Fler ve ge\xE7ici \xE7arpanlar\u0131n\u0131 art\u0131r\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: "P1 ta\u015F\u0131n\u0131n kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: "\u0130ni\u015Ften sonra P1 ta\u015F\u0131n\u0131n yeniden f\u0131rlama \u015Fans\u0131 vard\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: "P2 ta\u015F\u0131n\u0131n kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: "Yerdeyken P2 ta\u015Flar\u0131 kendilerini f\u0131rlatmaya \xE7al\u0131\u015F\u0131r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: "P3 ta\u015F\u0131n\u0131n kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: "Monolit L IV'\xFCn kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: "Monolit L VI'n\u0131n kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: "Monolit L VIII'in kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: "Monolit L X'un kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: "Monolit L XII'nin kilidini a\xE7"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

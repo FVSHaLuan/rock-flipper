@@ -44,13 +44,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "\u0130ngilizce d\u0131\u015F\u0131ndaki diller yapay zeka ile \xE7evrilmi\u015Ftir.\nBaz\u0131
-      metinler hatal\u0131 veya do\u011Fal olmayan bir \u015Fekilde g\xF6r\xFCnebilir."
+    m_Localized: "\u0130ngilizce d\u0131\u015F\u0131ndaki diller yapay zeka ile \xE7evrilmi\u015Ftir.\nBaz\u0131 metinler hatal\u0131 veya do\u011Fal olmayan bir \u015Fekilde g\xF6r\xFCnebilir."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: "Dil tam olarak de\u011Fi\u015Fmezse oyunu yeniden ba\u015Flatman
-      gerekebilir."
+    m_Localized: "Dil tam olarak de\u011Fi\u015Fmezse oyunu yeniden ba\u015Flatman gerekebilir."
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -102,8 +100,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 516414255968256
-    m_Localized: "Bu kay\u0131t yuvas\u0131n\u0131 silmek istedi\u011Finizden emin
-      misiniz?"
+    m_Localized: "Bu kay\u0131t yuvas\u0131n\u0131 silmek istedi\u011Finizden emin misiniz?"
     m_Metadata:
       m_Items: []
   - m_Id: 521668297011200
@@ -347,8 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "Yeni \xE7\xF6z\xFCn\xFCrl\xFCk, bu Ayarlar ekran\u0131n\u0131 kapatt\u0131\u011F\u0131nda
-      uygulanacak"
+    m_Localized: "Yeni \xE7\xF6z\xFCn\xFCrl\xFCk, bu Ayarlar ekran\u0131n\u0131 kapatt\u0131\u011F\u0131nda uygulanacak"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -364,8 +360,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1823941297356800
-    m_Localized: "Ba\u015Flang\u0131\xE7 Ekran\u0131na d\xF6nmek istedi\u011Finden
-      emin misin?"
+    m_Localized: "Ba\u015Flang\u0131\xE7 Ekran\u0131na d\xF6nmek istedi\u011Finden emin misin?"
     m_Metadata:
       m_Items: []
   - m_Id: 2948955904065536
@@ -386,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: "Kazand\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: "Kilidi A\xE7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: "Sevece\u011Fin di\u011Fer oyunum!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: Tam oyunu istek listene ekle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: "\xD6zel \u0130ndirim"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "Yetenek A\u011Fac\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: "Ma\u011Faza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: Arka pl.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: "E\u015Fyalar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Sv.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: XP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: demoda yok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: "Tam oyunda daha fazlas\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: "T\xFCm\xFC a\xE7\u0131ld\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "Maliyetin tamam\u0131 iade edilecek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Bu yuva, oyunun art\u0131k desteklenmeyen eski bir s\xFCr\xFCm\xFCyle kaydedildi.\nVerdi\u011Fimiz rahats\u0131zl\u0131k i\xE7in \xF6z\xFCr dileriz :("
     m_Metadata:
       m_Items: []
   references:
