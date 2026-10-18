@@ -31,7 +31,6 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Skill tree/` | XNode-graph-driven skill tree — see below. |
 | `Stats/` | The `BuildAgent` stat-application framework shared by Skill Tree, Shop and Items. |
 | `Dev/`, `Demo/`, `Compat/` | QA tools (incl. `AutoMouse`, see Conventions & gotchas), Steam-demo-build UI, save-compat version holder. |
-| `ShortHands/` | `ShortHandManager.cs` — `{token}` text-replacement dictionary, currently empty/unused. |
 
 ## Rocks / Tiers / Pure Rocks
 
@@ -115,7 +114,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 
 **Solid & working**: Rocks/Tiers/Pure Rocks, Flippable animation, Player Cursor input, Flipper Bots (basic — no smart targeting/battery/charging), Shop stat-builder buttons, Skill Tree incl. branching Special Crusher sub-trees, Currency/RunData persistence, tutorial task sequencing, combat backgrounds, save-slot management.
 
-**Scaffolded but incomplete**: **Prestige** — `RunStateManager` has full state transitions/events but the actual data-reset calls are **commented out** (`// RunData.Prestige();` etc. in `RunStateManager.cs`); `RunData.CorrectData` is an empty stub. Don't assume Prestige resets anything without verifying. Also: `GameAchievementsReporter` (empty), several `BuildAgent` description/achievement hooks (hardcoded stubs), `GameBalance`/`ShortHandManager` (empty).
+**Scaffolded but incomplete**: **Prestige** — `RunStateManager` has full state transitions/events but the actual data-reset calls are **commented out** (`// RunData.Prestige();` etc. in `RunStateManager.cs`); `RunData.CorrectData` is an empty stub. Don't assume Prestige resets anything without verifying. Also: `GameAchievementsReporter` (empty), several `BuildAgent` description/achievement hooks (hardcoded stubs), `GameBalance` (empty).
 
 **Stub only**: Monoliths — `Combat/Monoliths/` has a `Monolith` component + `MonolithType` enum and a base prefab; only Prism (L VIII) has behavior so far (targeting/laser, hits raise the rock's temporary multiplier).
 

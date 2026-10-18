@@ -50,6 +50,7 @@
 | Runtime Initialization | Single `[RuntimeInitializeOnLoadMethod]` script (hides cursor on load). |
 | ScreenReader | Screen/resolution reading + coordinate transform (`TransformationLib`). |
 | SerializableDictionary | **Vendored** — the well-known community Unity serializable-dictionary implementation (PDF manual included). Standard usage, not custom. |
+| ShortHands | `ShortHandManager` (namespace `Agame.ShortHands`, asset `Data/ShortHandManager.asset`, referenced by `Entry.shortHandManager`) replaces `[TOKEN]` shorthands in text. `Apply(str)` looks each bracketed token up in a code-defined dictionary; so far the only one is `[NEWLINE]` → `Environment.NewLine`. `[@text]` escapes a token and stays `[text]`. An unknown token logs an error and shows `<INVALID_PARAM: X>` in the editor, and stays `[X]` in builds. Only `GeneralDialogLauncher.Launch` calls it, on every dialog message, localized ones included, so literal square brackets in dialog text need the `@`. |
 | Steamworks.NET (wrapper) | `SteamManager.cs` is stock Steamworks.NET boilerplate; a few thin game-specific wrappers (overlay, leaderboard, SteamId display) on top. The actual SDK lives at `Assets/com.rlabrecque.steamworks.net`. |
 | Tutorials | `Tutorial`/`TutorialUnit` step definitions + popup display. |
 | UI | Broad widget library (39 files: sliders, dialog/popup system, HUD camera, loading screen, `ButtonScroller/EnhancedScroller` wrapper). Mostly self-descriptive; the `General Dialog` launcher/result pattern is the one thing worth knowing (ask if unclear — not separately documented). |

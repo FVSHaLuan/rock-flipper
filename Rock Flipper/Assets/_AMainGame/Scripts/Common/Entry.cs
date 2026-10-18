@@ -14,6 +14,7 @@ using Agame.GamePlatform;
 using Agame.Marketing;
 using Agame.Run;
 using Agame.Localization;
+using Agame.ShortHands;
 
 public partial class Entry : MonoBehaviour
 {
