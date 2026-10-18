@@ -390,6 +390,14 @@ MonoBehaviour:
     m_Key: My other game that you would love
     m_Metadata:
       m_Items: []
+  - m_Id: 27730418658623488
+    m_Key: Wishlist The Full Game On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Key: Special Discount
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
