@@ -13,18 +13,7 @@ namespace Agame.Localization
             }
         }
 
-        public LocalizedString freeTag;
-        public LocalizedString jumpy;
-        public LocalizedString dark;
-        public LocalizedString ball;
-        public LocalizedString moduleLevel;
-
-        [Header("Damage sources")]
-        public LocalizedString mouseHover;
-        public LocalizedString mouseClick;
-        public LocalizedString yellowLightningBolt;
-        public LocalizedString blueLightningBolt;
-        public LocalizedString auraWave;
+  
     }
 
 }
