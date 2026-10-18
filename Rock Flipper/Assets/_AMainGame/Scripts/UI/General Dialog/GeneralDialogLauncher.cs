@@ -1,5 +1,7 @@
+using Agame.Localization;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization;
 
 namespace Agame.UI
 {
@@ -7,6 +9,8 @@ namespace Agame.UI
     {
         [SerializeField, TextArea]
         private string message;
+        [SerializeField, Tooltip("Used instead of message when set")]
+        private LocalizedString localizedMessage;
         [SerializeField]
         private bool isCancellable;
         [SerializeField]
@@ -28,7 +32,8 @@ namespace Agame.UI
         public void Launch()
         {
             ///
-            var finalMessage = string.IsNullOrWhiteSpace(message) ? string.Empty : message;
+            var rawMessage = localizedMessage.IsValidAndNotEmpty() ? localizedMessage.GetLocalizedString() : message;
+            var finalMessage = string.IsNullOrWhiteSpace(rawMessage) ? string.Empty : rawMessage;
 
             ///
             var option = new GeneralDialog.DialogOption()

@@ -4819,6 +4819,15 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   message: Are you sure you want to quit?
+  localizedMessage:
+    m_TableReference:
+      m_TableCollectionName: GUID:7da8669fdb0c01b47a5b9e567d12a3f1
+    m_TableEntryReference:
+      m_KeyId: 501445913260032
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   isCancellable: 1
   callbackImmediatelyOnCancel: 0
   callbackImmediatelyOnOK: 1
@@ -4842,6 +4851,9 @@ MonoBehaviour:
   onCancelled:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &453842005
 PrefabInstance:
   m_ObjectHideFlags: 0

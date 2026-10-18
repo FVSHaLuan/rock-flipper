@@ -46,7 +46,7 @@ A snapshot. Re-check before relying on the numbers.
   - `Run/Combat/Tutorials/TutorialTaskController.cs` — `taskDescription`.
   - `Run/Currencies/CurrencyConfigAsset.cs` — `header`.
   - `Run/Skill tree/Special Crusher Configs/SpecialCrusherConfigAsset.cs` — `specialCrusherDescription`.
-  - `UI/General Dialog/GeneralDialog.cs`, `GeneralDialogLauncher.cs` — `message`.
+  - `UI/General Dialog/GeneralDialog.cs` — `message`. `GeneralDialogLauncher.cs` has `localizedMessage` with fallback to `message`, but none are set.
   - `UI Systems/Horizontal Menu/HorizontalMenuItem.cs` — `title`.
   - `UI Systems/ButtonPrompt/ContextButtonPrompt/ContextButtonPrompt.cs` — `text`.
 - **Literals in code**:
