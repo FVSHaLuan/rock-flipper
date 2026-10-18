@@ -83,8 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: Enable Flipper Bots to flip rocks automatically
-  extraDescription: 
+  descriptionFormat: Enable Flipper Bots
+  extraDescription: Flipper Bots move around and do the flip for you
   buildValueMultiplier: 1
 --- !u!114 &6383707989917667417
 MonoBehaviour:
