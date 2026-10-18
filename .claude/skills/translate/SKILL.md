@@ -48,13 +48,13 @@ Cells are tab-separated; write a newline inside a text as `\n` and a zero-width 
 
 Read each entry's metadata first. Comments sit in two places, the shared entry (`note:`) and the English entry (`en note:`), and they often explain a term or an abbreviation: `BK.GR`'s English note says it's "Background" shortened to fit the UI. A note in a target locale (`<code> note:` with `SHOW`) applies to that translation. Where the notes don't settle the meaning:
 - Find where the text is shown: grep the entry id (`m_KeyId: <id>`) in `Prefabs/` and `Scenes/`, and the key or table name in `Scripts/`. A button label, a tooltip and a sentence need different wording.
-- Game terms (Rock, Tier, Pure, Flipper Bot, Skill Tree, Shop, Cash…): read their meaning in `GDD/Glossary.md`. There's no translation glossary yet. Pick one translation per term, use it everywhere, and list your choices in the report so the owner can build the glossary from them. Keep each term's translation as close to the English term's length as possible: a term repeats across labels, buttons and descriptions, so a long one makes all of them longer. Among accurate options, take the one closest in length. Before choosing, check how an already-translated entry renders the term (`KEY=<term> SHOW=all`).
+- Game terms (Rock, Tier, Pure, Flipper Bot, Skill Tree, Shop, Cash…): use the fixed translation from `LOC/Glossary.tsv` in every locale, and follow `LOC/Glossary.md`. It holds each term's meaning, the do-not-translate list, units and inflection rules. For a game term the glossary lacks, read its meaning in `GDD/Glossary.md` and pick one translation. Keep it as close to the English term's length as possible: a term repeats across labels, buttons and descriptions, so a long one makes all of them longer. Among accurate options, take the one closest in length. Then add the term to both glossary files and list it in the report.
 - If you still can't tell what a fragment or abbreviation means, ask. Don't guess.
 
 ### 3. Translate
 
 - **Placeholders and markup stay exact.** Keep `{0}`, `{name}` and Smart String syntax (`{count:plural:…}`, `{x:choose(…)…}`), translating only the words inside. Plural forms follow the target language: Russian, Ukrainian, Polish and Czech need more forms, Japanese, Korean, Chinese, Thai and Vietnamese one. Keep rich-text tags (`<b>`, `<color=…>`, `<sprite…>`) around the matching words, which can move within the sentence. Keep `[NEWLINE]` and other `[TOKEN]` shorthands, and `[@…]` escapes, as they are.
-- **Don't translate**: the game title `Rock Flipper`, platform and product names (`Steam`, `Steam Deck`). The language-name entry `LanguageName` is the language's own name in that language.
+- **Don't translate**: the game title `Rock Flipper`, platform and product names (`Steam`, `Steam Deck`), and the rest of the list in `LOC/Glossary.md` (tier codes, monolith names, currency prefixes). The language-name entry `LanguageName` is the language's own name in that language.
 - **Register**: match the existing translations in the same locale (`SHOW=<locale>` on a few translated entries). As of 2026-10-18, `de` uses "du", `es` "tú", `fr` "vous". If a locale has nothing to match, ask.
 - **Length**: UI labels are short. Stay close to the English length, and prefer the shorter wording for buttons and headers in `de`, `ru`, `pl`, `fr` and `pt-BR`. Respect any limit in the note.
 - **Thai word breaks**: Thai has no spaces between words, and TMP can only wrap a line at a space or a zero-width space (U+200B). Without one, it breaks mid-word wherever the line runs out (`LOC/CLAUDE.md`, Decisions). So every `th` text gets `​` between its words, written as that 6-character escape in the TSV (`write.cs` turns it into the character):
@@ -76,6 +76,6 @@ The tables are existing assets, so there are no new `.meta` files to wait for. I
 ### 5. Report
 
 - what was translated: tables, number of entries × locales, plus anything skipped and why
-- term choices made for game words, per locale where they differ meaningfully
+- game terms added to the glossary, and any place where a glossary term didn't fit (it read wrong in context, or overflowed)
 - problems found in the English source
 - anything not checked: layout and overflow in game (a screenshot pass is the QA step in the plan, not part of this skill unless asked), including whether Thai wraps at the inserted breaks

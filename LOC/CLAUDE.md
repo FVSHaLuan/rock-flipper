@@ -1,7 +1,7 @@
 # Localization workspace for the game Rock Flipper.
 
 ## Overview
-`LOC/` is the working folder for localization: anything produced or gathered while translating the game that isn't the game's data itself. The owner's decisions are under [Decisions](#decisions). No folder structure, file format or exchange workflow has been decided yet.
+`LOC/` is the working folder for localization: anything produced or gathered while translating the game that isn't the game's data itself. The owner's decisions are under [Decisions](#decisions). Apart from the glossary's two files (see [Contents](#contents)), no folder structure, file format or exchange workflow has been decided yet.
 
 ## Decisions
 Set by the owner on 2026-10-18.
@@ -13,7 +13,7 @@ Set by the owner on 2026-10-18.
 Set by the owner later on 2026-10-18.
 - **Where translations go**: mostly straight into the string table assets. For any other text, the owner sets the format per task.
 - **English source changes**: the owner tracks them and asks for re-translation of the changed entries. Nothing needs to detect stale translations, so plan item 5 is dropped.
-- **Glossary**: to be built later (plan item 4). Until then, translations keep game terms consistent on their own and report the choices.
+- **Glossary**: every translation uses the fixed term translations in [Glossary.tsv](Glossary.tsv), following the rules in [Glossary.md](Glossary.md). It covers player-facing terms from the GDD glossary and the string tables, but not development-only ones. Generic words already shipped in `Common Strings` (Cash, Tier, Level…) were adopted as they are. Built on 2026-10-18.
 - **Term length**: keep each game term's translation as close to the English term's length as possible.
 - **AI notice**: the `AI translated notice` is shown on the language select screen.
 - **Thai line breaking**: zero-width spaces (U+200B) go between Thai words, added during translation (the `translate` skill has the rules). Thai has no spaces between words, and TMP only wraps at spaces and U+200B (it has no Thai word segmentation). Without them, long Thai text breaks mid-word wherever the line runs out, and Auto Size text first shrinks toward its minimum size. Not chosen: a word-splitting tool run over the tables, and splitting at runtime. The Thai translations made before this decision (`Common Strings`) got their breaks on 2026-10-18.
@@ -36,7 +36,7 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
    - Move or remove the previous game's leftover keys from `Common`.
    - Keep keys generated from the English text for generic words. Use semantic keys (e.g. `skill.flipRange.desc`) for game content.
 4. **Source quality for AI translation**: since nobody reviews the output, give the AI the context:
-   - a glossary built from [GDD/Glossary.md](../GDD/Glossary.md), including terms not to translate
+   - a glossary built from [GDD/Glossary.md](../GDD/Glossary.md), including terms not to translate. Done on 2026-10-18: [Glossary.md](Glossary.md).
    - a translator comment on every entry
    - length limits where layout is tight
 5. ~~**Stale translations**~~: dropped. The owner manages English source changes (see Decisions).
@@ -50,6 +50,7 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
 ## Open Questions
 - Whether language buttons also get an "(AI)" tag (`LanguageSetterButton` supports one). The notice itself is decided (see Decisions).
 ## Contents
+- [Glossary.md](Glossary.md) and [Glossary.tsv](Glossary.tsv): the translation glossary. The `.md` holds the usage rules, the do-not-translate list, per-locale conventions and each term's meaning. The `.tsv` holds one row per English term with its fixed translation in each of the 16 locales, in the same text conventions as the `translate` skill's TSV.
 - [TargetLanguages.md](TargetLanguages.md): the 16 target languages (everything but the English source and the pseudo-locales), with locale codes, read from the project's locale assets.
 - `Reference/`: external reference material (platform and store rules, third-party docs), one Markdown file per source, named in PascalCase after its topic. Each file links its source and the date it was copied.
   - [SteamLanguages.md](Reference/SteamLanguages.md): the languages Steam supports, at both levels (Full Platform Support and Game Support Only), with Steamworks API and Web API language codes.
