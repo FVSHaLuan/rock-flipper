@@ -4,7 +4,7 @@ This repo is **two things at once**:
 1. A specific game: **Rock Flipper**, a 2D casual/idle "flipping" incremental game shipping on Steam (one-time purchase).
 2. A general toolkit: most of the code here is written to be reused across the owner's *future* games, not just this one. When editing, default to asking "does this belong to Rock Flipper specifically, or to the reusable toolkit?" — see the folder-level `CLAUDE.md` files for exactly where that line falls in each area.
 
-Two top-level folders: **`GDD/`**, the owner's game design document in Markdown (see [Game design (GDD)](#game-design-gdd)), and **`Rock Flipper/`**, the Unity project root (see [Inside `Rock Flipper/`](#inside-rock-flipper)).
+Three top-level folders: **`GDD/`**, the owner's game design document in Markdown (see [Game design (GDD)](#game-design-gdd)); **`LOC/`**, the localization workspace (see [Localization workspace (LOC)](#localization-workspace-loc)); and **`Rock Flipper/`**, the Unity project root (see [Inside `Rock Flipper/`](#inside-rock-flipper)).
 
 ## Implement or investigate? Ask when unclear
 
@@ -32,6 +32,10 @@ Use the GDD to understand what a feature is *supposed* to do and what it's calle
 **Keeping the GDD in sync with design changes.** When the user asks to implement a design change (a new or changed mechanic, rule, stat, system, content instance or game term), update the GDD in the same task. Read [GDD/CLAUDE.md](GDD/CLAUDE.md) first and follow it: document only what the user stated, ask about rule-level choices made during implementation instead of writing them in, and keep the glossary, stat files and content files in sync. Mention the GDD edits in the final summary. Code-only tasks (refactors, bug fixes that restore intended behavior, tooling, UI plumbing) don't touch the GDD. Otherwise, coding tasks don't edit the GDD unless the user asks.
 
 **Editing the GDD.** Any GDD work follows [GDD/CLAUDE.md](GDD/CLAUDE.md). Its `idea-critic` subagent lives in `GDD/.claude/agents/`, so it's only available when the session is started from `GDD/`.
+
+## Localization workspace (LOC)
+
+`LOC/` is the working folder for localization (translation work and related material). It's outside the Unity project, so it's never imported or built, and its files need no `.meta`. The shipping localization data (Unity Localization locales and string tables) stays in `Rock Flipper/Assets/_AMainGame/Data/Localization/`. The folder is empty for now. Before working in it, read [LOC/CLAUDE.md](LOC/CLAUDE.md).
 
 ## Inside `Rock Flipper/`
 
