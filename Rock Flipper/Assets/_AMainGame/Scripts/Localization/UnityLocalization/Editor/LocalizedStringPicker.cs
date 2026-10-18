@@ -72,7 +72,7 @@ namespace Agame.Localization
             var context = SearchService.CreateContext(searchProvider, searchText);
 
             ///
-            SearchService.ShowPicker(
+            var view = SearchService.ShowPicker(
                 context,
                 (item, canceled) =>
                 {
@@ -87,6 +87,11 @@ namespace Agame.Localization
                         onSelected(localizedString);
                     }
                 });
+
+            ///
+            // Lowest zoom level (internal UnityEditor.Search.DisplayMode.Compact). Set on the view after it opens,
+            // because the picker overrides SearchViewState.itemSize with its saved size.
+            view.itemIconSize = 1f;
         }
 
         private static void PopulateSearchItems(string searchQuery)
