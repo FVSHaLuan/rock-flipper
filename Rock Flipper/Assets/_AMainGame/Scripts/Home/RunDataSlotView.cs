@@ -33,7 +33,7 @@ namespace Agame.Home
 
         protected void Start()
         {
-            slotNameText.Text = "Slot " + slotIndex;
+            slotNameText.Text = entry.localizedStrings.slot.GetLocalizedString() + " " + slotIndex;
 
             ///
             UpdateView(true);
