@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: P0-Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: P1-Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: P2-Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: P3-Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: P4-Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: P5-Stein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: "N\xE4chster bevorzugter Hintergr.:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: Bevorzugt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: "Zuf\xE4llig freischalten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: Wurfbot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: Items mit rotem Punkt sind neu gefunden oder eine Stufe aufgestiegen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: Alle ausblenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: OK, wirf ihn!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "Du spielst die <b>Demoversion</b> von <b>Rock Flipper</b>. Diese Demo <b>begrenzt</b> die verf\xFCgbaren F\xE4higkeiten und Items."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: "Hintergr\xFCnde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: Wurfbots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolith L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolith L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: Maus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: Alle Steine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolith L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolith L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolith L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolith L XII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>DEMO-LIMIT!</b>\n\nDas ist die Upgrade-Grenze der Demo. In der Vollversion kannst du weiter upgraden und mehr F\xE4higkeiten freischalten.\n\n<b>Klicke, um dir die Vollversion anzusehen.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: "Schalte mehr Hintergr\xFCnde frei!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: "W\xE4hle den bevorzugten Hintergrund f\xFCr ein vervielfachtes Einkommen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: 'Bevorzugter Hintergrund: {0} Einkommen.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: "Schalte mehr Hintergr\xFCnde frei, um den Multiplikator zu erh\xF6hen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: Noch nicht gefunden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: Verdientes Geld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: Die Effekte wachsen mit der Item-Stufe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: "Gew\xF6hnlich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: "Ungew\xF6hnlich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Selten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: Episch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: Einzigartig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: "Landende Steine f\xFCllen diese Leiste. Wenn sie voll ist, steigst du eine Stufe auf und erh\xE4ltst {0}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: Truhenleiste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: "Landende Steine f\xFCllen diese Leiste. Wenn sie voll ist, f\xE4llt eine Truhe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: "W\xFCrfel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Laterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Lupe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Spitzhacke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: Seife
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Feder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: "Geldb\xF6rse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: "W\xFCste"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Grasland
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: Vulkan
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

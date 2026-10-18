@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: Max. Steinanzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Aktivieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: "Hintergr\xFCnde aktivieren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: Vorzugsmultiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: +{0} Vorzugsmultiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: Vorzugsmultiplikator pro Hintergrund
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: +{0} Vorzugsmultiplikator pro freigeschaltetem Hintergrund
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Truhen werfen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: "Wurfbots k\xF6nnen Truhen werfen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Kluge Routen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "Wurfbots bewegen sich dorthin, wo ihre W\xFCrfe am meisten bringen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: Wurfbots aktivieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: "Wurfbots bewegen sich umher und werfen f\xFCr dich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Aktivzeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: +{0}s Aktivzeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: Wurfradius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: +{0} Wurfradius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: Max. Anzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: +{0} max. Wurfbot-Anzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: Bewegungstempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: +{0} % Bewegungstempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: "St\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: "+{0} St\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: Wurfintervall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: -{0}s Wurfintervall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: Ruhezeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: -{0}s Ruhezeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: Max. Strahlen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: +{0} max. Strahlen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: Min. Strahlen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: +{0} min. Strahlen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: "Tempor\xE4rer Multiplikatorzuwachs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: "+{0} tempor\xE4rer Multiplikator pro Strahltreffer von L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: Schussintervall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: -{0}s Schussintervall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: Monolith L II freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Mouseover
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: Werfen per Mouseover aktivieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: "Fl\xE4chenwurf"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: Mausradius aktivieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: +{0} Mausradius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: "R\xFCckprall"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: "Abprall-Landungen k\xF6nnen erneut abprallen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: Abprallchance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: +{0} % Abprallchance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: Max. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: "-{0} max. HP f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} max. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: Bruchgeld-Multiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: "+{0} Bruchgeld-Multiplikator f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: +{0} Bruchgeld-Multiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: Truhen-EP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: +{0} Truhen-EP pro Landung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: Kritischer Multiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: "+{0} kritischer Multiplikator f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: Kritisches Landungsgeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: +{0} % kritisches Landungsgeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: Chance auf kritische Landung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "+{0} % Chance auf kritische Landung f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: +{0} % Chance auf kritische Landung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: Wurftempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: "+{0} % Wurftempo f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: +{0} % Wurftempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Landungsgeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: "+{0} Landungsgeld f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} Landungsgeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: Stufen-EP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: +{0} Stufen-EP pro Landung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: +{0} max. Steinanzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: Reinheitsmultiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: "+{0} Reinheitsmultiplikator f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: +{0} Reinheitsmultiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: Reinheit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: "+{0} % Chance auf Reinheit f\xFCr alle Steine"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: +{0} % Chance auf Reinheit beim Zerbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: Landeabklingzeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: -{0}s Wartezeit nach der Landung, bis ein Stein wieder geworfen werden kann
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: Selbstwurfchance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: +{0} % Selbstwurfchance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: "Selbstwurfverz\xF6gerung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: "-{0}s Selbstwurfverz\xF6gerung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "Monolith L VIII schie\xDFt regelm\xE4\xDFig Laserstrahlen auf fliegende Steine und erh\xF6ht ihre tempor\xE4ren Multiplikatoren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: P1-Stein freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: Nach der Landung hat ein P1-Stein die Chance, erneut geworfen zu werden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: P2-Stein freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: Auf dem Boden versuchen P2-Steine, sich selbst zu werfen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: P3-Stein freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: Monolith L IV freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: Monolith L VI freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: Monolith L VIII freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: Monolith L X freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: Monolith L XII freischalten
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

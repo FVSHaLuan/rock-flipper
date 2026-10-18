@@ -44,13 +44,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "Alle Sprachen au\xDFer Englisch wurden mit KI \xFCbersetzt.\nEinige
-      Texte k\xF6nnen Fehler enthalten oder unnat\xFCrlich klingen."
+    m_Localized: "Alle Sprachen au\xDFer Englisch wurden mit KI \xFCbersetzt.\nEinige Texte k\xF6nnen Fehler enthalten oder unnat\xFCrlich klingen."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: "M\xF6glicherweise musst du das Spiel neu starten, wenn die Sprache
-      nicht vollst\xE4ndig wechselt."
+    m_Localized: "M\xF6glicherweise musst du das Spiel neu starten, wenn die Sprache nicht vollst\xE4ndig wechselt."
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -346,8 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "Die neue Aufl\xF6sung wird \xFCbernommen, wenn du dieses Einstellungsfenster
-      schlie\xDFt"
+    m_Localized: "Die neue Aufl\xF6sung wird \xFCbernommen, wenn du dieses Einstellungsfenster schlie\xDFt"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -384,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: Gewonnen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: Mein anderes Spiel, das dir gefallen wird!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: Setze die Vollversion auf die Wunschliste bei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: Sonderrabatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "F\xE4higkeitsbaum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: Hintergr.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Stufe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: EP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: nicht in der Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: Mehr in der Vollversion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: Alles freigeschaltet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: Die Kosten werden voll erstattet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Dieser Speicherplatz wurde mit einer \xE4lteren Spielversion gespeichert, die nicht mehr unterst\xFCtzt wird.\nEntschuldige die Unannehmlichkeiten :("
     m_Metadata:
       m_Items: []
   references:
