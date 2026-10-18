@@ -408,6 +408,23 @@ MonoBehaviour:
     m_Localized: Special Discount
     m_Metadata:
       m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: Skill Tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: BK.GR
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505018
+  - m_Id: 27760457588588544
+    m_Localized: Items
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
@@ -448,3 +465,7 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: as in "lost a battle"
+    - rid: 2838372046370505018
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: it's Background shorten down to fit the UI
