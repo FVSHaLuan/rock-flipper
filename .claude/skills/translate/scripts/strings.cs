@@ -6,7 +6,7 @@
 // Per entry: key, id, [smart], the entry's metadata ("note:" on the shared entry, "en note:" on the English entry),
 // the English text, missing locales, then the SHOW texts with their own notes.
 // Notes print comment texts, and other metadata types as <TypeName> (Smart flags show as [smart] instead).
-// Newlines in texts print as \n. Pseudo-locales are skipped.
+// Newlines in texts print as \n, zero-width spaces (U+200B) as ​. Pseudo-locales are skipped.
 var tableArg = "{{TABLE}}";
 var keyArg = "{{KEY}}";
 var missingArg = "{{MISSING}}";
@@ -27,7 +27,7 @@ var show = new System.Collections.Generic.List<string>();
 if (showArg == "all") locales.ForEach(l => show.Add(l.Identifier.Code));
 else if (showArg != "-") show.AddRange(showArg.Split(','));
 
-System.Func<string, string> esc = s => s == null ? "" : s.Replace("\r", "").Replace("\n", "\\n");
+System.Func<string, string> esc = s => s == null ? "" : s.Replace("\r", "").Replace("\n", "\\n").Replace("\u200B", "\\u200B");
 // every metadata item: comments as their text, anything else by type name
 System.Func<System.Collections.Generic.IList<UnityEngine.Localization.Metadata.IMetadata>, string> meta = items =>
 {

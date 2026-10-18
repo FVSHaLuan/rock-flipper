@@ -15,6 +15,7 @@ Set by the owner later on 2026-10-18.
 - **English source changes**: the owner tracks them and asks for re-translation of the changed entries. Nothing needs to detect stale translations, so plan item 5 is dropped.
 - **Glossary**: to be built later (plan item 4). Until then, translations keep game terms consistent on their own and report the choices.
 - **AI notice**: the `AI translated notice` is shown on the language select screen.
+- **Thai line breaking**: zero-width spaces (U+200B) go between Thai words, added during translation (the `translate` skill has the rules). Thai has no spaces between words, and TMP only wraps at spaces and U+200B (it has no Thai word segmentation). Without them, long Thai text breaks mid-word wherever the line runs out, and Auto Size text first shrinks toward its minimum size. Not chosen: a word-splitting tool run over the tables, and splitting at runtime. The Thai translations made before this decision (`Common Strings`) got their breaks on 2026-10-18.
 
 ## Proposed Plan
 Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed it item by item, so treat it as the default direction and check before deviating. The audit (what's wired, what isn't, runtime pitfalls) is in [Scripts/Localization/CLAUDE.md](../Rock%20Flipper/Assets/_AMainGame/Scripts/Localization/CLAUDE.md).
@@ -42,13 +43,11 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
 7. **QA**:
    - a pseudo-locale pass for missed text and about 30% text expansion
    - a screenshot sweep per language for overflow, with extra care for CJK
-   - Thai line breaking, since TMP needs zero-width spaces
+   - Thai line breaking: check that long Thai text wraps at the zero-width spaces (see Decisions)
 8. **Steam store page**: localize the description and any text in the capsule art.
 
 ## Open Questions
 - Whether language buttons also get an "(AI)" tag (`LanguageSetterButton` supports one). The notice itself is decided (see Decisions).
-- **Thai line breaking** (deferred by the owner on 2026-10-18, to be tackled later): TMP has no Thai word segmentation, so long Thai text won't wrap. Options include inserting zero-width spaces (U+200B) between words, by hand or with a tool. Current Thai text has none. Until it's decided, translations go in without them.
-
 ## Contents
 - `Reference/`: external reference material (platform and store rules, third-party docs), one Markdown file per source, named in PascalCase after its topic. Each file links its source and the date it was copied.
   - [SteamLanguages.md](Reference/SteamLanguages.md): the languages Steam supports, at both levels (Full Platform Support and Game Support Only), with Steamworks API and Web API language codes.

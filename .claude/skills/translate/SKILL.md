@@ -34,7 +34,7 @@ Preferred	首选	お気に入り	Bevorzugt
 Dismiss All	全部忽略	すべて閉じる	Alle verwerfen
 ```
 
-Cells are tab-separated; write a newline inside a text as `\n`. An empty cell leaves that locale alone.
+Cells are tab-separated; write a newline inside a text as `\n` and a zero-width space as `​` (Thai, see Translate). `strings.cs` prints both back the same way. An empty cell leaves that locale alone.
 
 ## Workflow
 
@@ -57,14 +57,19 @@ Read each entry's metadata first. Comments sit in two places, the shared entry (
 - **Don't translate**: the game title `Rock Flipper`, platform and product names (`Steam`, `Steam Deck`). The language-name entry `LanguageName` is the language's own name in that language.
 - **Register**: match the existing translations in the same locale (`SHOW=<locale>` on a few translated entries). As of 2026-10-18, `de` uses "du", `es` "tú", `fr` "vous". If a locale has nothing to match, ask.
 - **Length**: UI labels are short. Stay close to the English length, and prefer the shorter wording for buttons and headers in `de`, `ru`, `pl`, `fr` and `pt-BR`. Respect any limit in the note.
-- **Thai**: TMP doesn't break lines between Thai words. The fix is deferred (`LOC/CLAUDE.md`, Open Questions), so translate Thai normally and don't insert zero-width spaces (U+200B) unless the owner asks.
+- **Thai word breaks**: Thai has no spaces between words, and TMP can only wrap a line at a space or a zero-width space (U+200B). Without one, it breaks mid-word wherever the line runs out (`LOC/CLAUDE.md`, Decisions). So every `th` text gets `​` between its words, written as that 6-character escape in the TSV (`write.cs` turns it into the character):
+  - `คุณ​อาจ​ต้อง​รีสตาร์ท​เกม` ("you may need to restart the game")
+  - Split at word boundaries only, never inside a word. Keep a compound that reads as one unit together (ครบถ้วน, รีสตาร์ท), and keep a leading vowel (เ แ โ ใ ไ) with the consonant after it.
+  - None at the start or end of the text, and none next to an ordinary space, which already allows a break.
+  - Never inside a placeholder, a Smart String's syntax, a rich-text tag, a `[TOKEN]` or a `[@…]` escape. A break just before or after one is fine, and so is one between Thai words inside a Smart String's word options.
+  - Single-word labels need none.
 - **Problems in the English** (typos, broken grammar, ambiguity): don't fix the English. Translate the evident meaning and list the problem in the report.
 
 ### 4. Write
 
 1. `unity status`. The Editor must be connected and in Edit mode.
 2. Write the TSV, run `write.cs ... DRY=true`, check the counts and skips, then run it with `DRY=false`.
-3. Read it back with `strings.cs ... SHOW=<locales>` and check that nothing is still listed as missing that should have been filled.
+3. Read it back with `strings.cs ... SHOW=<locales>` and check that nothing is still listed as missing that should have been filled, and that multi-word `th` texts show their `​` breaks.
 
 The tables are existing assets, so there are no new `.meta` files to wait for. If table files change on disk outside the Editor (a `git restore`, a pull), run `eval 'UnityEditor.AssetDatabase.Refresh(); return "ok";'` before writing. Otherwise the Editor writes its stale in-memory copy back over them.
 
@@ -73,4 +78,4 @@ The tables are existing assets, so there are no new `.meta` files to wait for. I
 - what was translated: tables, number of entries × locales, plus anything skipped and why
 - term choices made for game words, per locale where they differ meaningfully
 - problems found in the English source
-- anything not checked: layout and overflow in game (a screenshot pass is the QA step in the plan, not part of this skill unless asked), Thai line breaking
+- anything not checked: layout and overflow in game (a screenshot pass is the QA step in the plan, not part of this skill unless asked), including whether Thai wraps at the inserted breaks
