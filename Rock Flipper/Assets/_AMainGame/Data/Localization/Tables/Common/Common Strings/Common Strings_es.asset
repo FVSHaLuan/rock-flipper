@@ -44,8 +44,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "Los idiomas distintos del ingl\xE9s se tradujeron con IA.\nAlg\xFAn
-      texto puede contener errores o sonar poco natural."
+    m_Localized: "Los idiomas distintos del ingl\xE9s se tradujeron con IA.\nAlg\xFAn texto puede contener errores o sonar poco natural."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
@@ -345,8 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "La nueva resoluci\xF3n se aplicar\xE1 al cerrar esta pantalla de
-      Ajustes"
+    m_Localized: "La nueva resoluci\xF3n se aplicar\xE1 al cerrar esta pantalla de Ajustes"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -383,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: Victoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Desbloquear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: "\xA1Otro juego m\xEDo que te encantar\xE1!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: "A\xF1ade el juego completo a tu lista de deseos en"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: Descuento especial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "\xC1rbol de habilidades"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Tienda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: Fondo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: Objetos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Niv.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: Exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: N/D en la demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: "M\xE1s en el juego completo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: Todo desbloqueado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "Se reembolsar\xE1 el importe completo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Esta ranura se guard\xF3 con una versi\xF3n antigua del juego que ya no es compatible.\nPerdona las molestias :("
     m_Metadata:
       m_Items: []
   references:

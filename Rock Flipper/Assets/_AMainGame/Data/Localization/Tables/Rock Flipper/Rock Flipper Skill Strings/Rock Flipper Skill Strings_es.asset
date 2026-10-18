@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: "M\xE1x. de rocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Activar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: Activar fondos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: Multiplicador preferido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: +{0} al multiplicador preferido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: Multiplicador preferido por fondo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: +{0} al multiplicador preferido por fondo desbloqueado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Voltear cofres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: Permitir que los bots volteadores volteen cofres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Ruta inteligente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "Los bots volteadores van a donde pueden hacer los volteos m\xE1s \xFAtiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: Activar bots volteadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: Los bots volteadores se mueven y voltean por ti.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Tiempo activo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: +{0}s de tiempo activo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: Alcance de volteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: +{0} de alcance de volteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: "Cantidad m\xE1x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: "+{0} a la cantidad m\xE1x. de bots volteadores"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: Velocidad de movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: +{0}% de velocidad de movimiento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: Fuerza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: +{0} de fuerza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: Intervalo de volteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: -{0}s de intervalo de volteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: Tiempo inactivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: -{0}s de tiempo inactivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: "M\xE1x. de rayos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: "+{0} al m\xE1x. de rayos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: "M\xEDn. de rayos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: "+{0} al m\xEDn. de rayos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: Aumento del multiplicador temporal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: +{0} al multiplicador temporal por impacto de rayo del L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: Intervalo de disparo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: -{0}s de intervalo de disparo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: Desbloquear Monolito L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Pasar encima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: "Activar el volteo al pasar el rat\xF3n por encima"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: "Volteo en \xE1rea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: "Activar Radio del rat\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: Radio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: "+{0} de radio del rat\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Rebote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: Los aterrizajes de bote pueden volver a botar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: Probabilidad de bote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: +{0}% de probabilidad de bote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: "HP m\xE1x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: "-{0} de HP m\xE1x. para todas las rocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: "-{0} de HP m\xE1x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: Multiplicador de rotura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: +{0} al multiplicador de rotura para todas las rocas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: +{0} al multiplicador de rotura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: Exp de cofre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: +{0} de Exp de cofre por aterrizaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: "Multiplicador cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: "+{0} al multiplicador cr\xEDtico para todas las rocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: "Dinero por aterrizaje cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: "+{0}% de dinero por aterrizaje cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: "Probabilidad de aterrizaje cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "+{0}% de probabilidad de aterrizaje cr\xEDtico para todas las rocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: "+{0}% de probabilidad de aterrizaje cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: Velocidad de volteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: +{0}% de velocidad de volteo para todas las rocas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: +{0}% de velocidad de volteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Dinero por aterrizaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: +{0} de dinero por aterrizaje para todas las rocas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} de dinero por aterrizaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: Exp de nivel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: +{0} de Exp de nivel por aterrizaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: "+{0} al m\xE1x. de rocas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: Multiplicador de pureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: +{0} al multiplicador de pureza para todas las rocas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: +{0} al multiplicador de pureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: Pureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: +{0}% de probabilidad de ser pura para todas las rocas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: +{0}% de probabilidad de ser pura al romperse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: Espera tras aterrizaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: -{0}s hasta que una roca pueda voltearse de nuevo tras aterrizar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: Probabilidad de autovolteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: +{0}% de probabilidad de autovolteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: Retardo de autovolteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: -{0}s de retardo de autovolteo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "El Monolito L VIII dispara peri\xF3dicamente rayos l\xE1ser a las rocas en el aire y aumenta sus multiplicadores temporales."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: Desbloquear Roca P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: Tras aterrizar, una roca P1 tiene probabilidad de volver a voltearse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: Desbloquear Roca P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: En el suelo, las rocas P2 intentan autovoltearse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: Desbloquear Roca P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: Desbloquear Monolito L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: Desbloquear Monolito L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: Desbloquear Monolito L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: Desbloquear Monolito L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: Desbloquear Monolito L XII
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: Roca P0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: Roca P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: Roca P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: Roca P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: Roca P4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: Roca P5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: "Pr\xF3x. fondo preferido:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: Preferido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: Desbloquear al azar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: Bot volteador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: Los objetos con un punto rojo son nuevos o han subido de nivel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: Descartar todo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: "\xA1Vale, a voltear!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "Est\xE1s jugando a la versi\xF3n <b>demo</b> de <b>Rock Flipper</b>. Esta demo <b>limita</b> las habilidades y los objetos disponibles."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: Fondos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: Bots volteadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolito L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolito L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: "Rat\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: Todas las rocas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolito L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolito L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolito L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolito L XII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>\xA1DEMO LIMITADA!</b>\n\nEste es el l\xEDmite de mejoras de la demo. En el juego completo, puedes seguir mejorando y desbloquear m\xE1s habilidades.\n\n<b>Haz clic para ver el juego completo.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: "\xA1Desbloquea m\xE1s fondos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: Selecciona el fondo preferido para multiplicar tus ingresos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: 'Fondo preferido: ingresos {0}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: "Desbloquea m\xE1s fondos para aumentarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: "A\xFAn no encontrado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: Dinero ganado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: Los efectos aumentan con el nivel del objeto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: "Com\xFAn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: "Poco com\xFAn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Raro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: "\xC9pico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: "\xDAnico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: Los aterrizajes de rocas llenan esta barra. Cuando se llena, subes de nivel y ganas {0}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: Barra de cofre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: Los aterrizajes de rocas llenan esta barra. Cuando se llena, cae un cofre.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: Dados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Martillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Farol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Lupa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Pico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: "Jab\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Muelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: Cartera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: Desierto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Pradera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: "Volc\xE1nico"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
