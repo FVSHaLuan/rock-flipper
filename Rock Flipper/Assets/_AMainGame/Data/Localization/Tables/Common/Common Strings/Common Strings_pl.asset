@@ -447,6 +447,10 @@ MonoBehaviour:
     m_Localized: "Ten slot zosta\u0142 zapisany w starszej wersji gry, kt\xF3ra nie jest ju\u017C obs\u0142ugiwana.\nPrzepraszam za niedogodno\u015Bci :("
     m_Metadata:
       m_Items: []
+  - m_Id: 27878785799864320
+    m_Localized: /s
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

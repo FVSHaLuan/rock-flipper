@@ -156,6 +156,15 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  perSecondSuffix:
+    m_TableReference:
+      m_TableCollectionName: GUID:7da8669fdb0c01b47a5b9e567d12a3f1
+    m_TableEntryReference:
+      m_KeyId: 27878785799864320
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   costWillBeFullyRefunded:
     m_TableReference:
       m_TableCollectionName: GUID:7da8669fdb0c01b47a5b9e567d12a3f1

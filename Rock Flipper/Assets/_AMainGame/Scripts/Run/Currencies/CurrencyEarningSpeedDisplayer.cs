@@ -1,4 +1,7 @@
+using Agame.Localization;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 namespace Agame.Run.Combat
 {
@@ -8,6 +11,22 @@ namespace Agame.Run.Combat
         private Currency currency;
 
         private string currencyName;
+        private string perSecondSuffix;
+
+        protected override void OnEnable()
+        {
+            perSecondSuffix = LocalizedStrings.Instance.perSecondSuffix.GetLocalizedString();
+            LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+            base.OnEnable();
+        }
+
+        private void OnDisable() => LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+
+        private void OnLocaleChanged(Locale _)
+        {
+            perSecondSuffix = LocalizedStrings.Instance.perSecondSuffix.GetLocalizedString();
+            ForceDisplay();
+        }
 
         protected override double GetCurrentValue()
         {
@@ -21,7 +40,7 @@ namespace Agame.Run.Combat
             {
                 currencyName = Entry.Instance.currencyConfigManager.GetConfig(currency).CurrencyName;
             }
-            return $"{currencyName}{value.ToLargeNumberString()}/s";
+            return $"{currencyName}{value.ToLargeNumberString()}{perSecondSuffix}";
         }
     }
 

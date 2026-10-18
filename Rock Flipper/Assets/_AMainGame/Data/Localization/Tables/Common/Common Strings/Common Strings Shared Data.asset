@@ -454,6 +454,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2838372046370505243
+  - m_Id: 27878785799864320
+    m_Key: Per second suffix
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505290
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -525,3 +530,7 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: Dialog message when the player opens a save slot made by an old, incompatible version of the game.
+    - rid: 2838372046370505290
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Unit suffix right after a rate number, e.g. "12K/s" = 12K cash per second (earning speed in the HUD). Keep it as short as "/s": a slash plus your language''s short form for seconds.'

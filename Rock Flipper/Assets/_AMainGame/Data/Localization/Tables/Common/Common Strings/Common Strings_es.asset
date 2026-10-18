@@ -447,6 +447,10 @@ MonoBehaviour:
     m_Localized: "Esta ranura se guard\xF3 con una versi\xF3n antigua del juego que ya no es compatible.\nPerdona las molestias :("
     m_Metadata:
       m_Items: []
+  - m_Id: 27878785799864320
+    m_Localized: /s
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

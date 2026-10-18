@@ -22,6 +22,7 @@ namespace Agame.Localization
         public LocalizedString naInDemo;
         public LocalizedString moreInFullGame;
         public LocalizedString allUnlocked;
+        public LocalizedString perSecondSuffix;
         public LocalizedString costWillBeFullyRefunded;
         public LocalizedString unsupportedSaveVersion;
 

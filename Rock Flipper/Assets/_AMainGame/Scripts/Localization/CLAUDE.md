@@ -4,7 +4,7 @@
 
 ## Files
 
-- `LocalizedStrings.cs` — `ScriptableObjectWithInit` holding generic `LocalizedString` fields: terms (stage, slot, on/off, speed, damage, cash, maxed, cost, recommended, level, `lvl` "Lvl.", `exp` "Exp", `naInDemo`, `moreInFullGame`, `allUnlocked`) and a few toolkit sentences (`costWillBeFullyRefunded`, `unsupportedSaveVersion`). Reached via `LocalizedStrings.Instance` (`Entry.Instance.localizedStrings`; in edit mode `DevEntry.Instance.localizedStrings`). Asset: `Data/Localization/LocalizedStrings.asset`. Toolkit side.
+- `LocalizedStrings.cs` — `ScriptableObjectWithInit` holding generic `LocalizedString` fields: terms (stage, slot, on/off, speed, damage, cash, maxed, cost, recommended, level, `lvl` "Lvl.", `exp` "Exp", `naInDemo`, `moreInFullGame`, `allUnlocked`, `perSecondSuffix` "/s") and a few toolkit sentences (`costWillBeFullyRefunded`, `unsupportedSaveVersion`). Reached via `LocalizedStrings.Instance` (`Entry.Instance.localizedStrings`; in edit mode `DevEntry.Instance.localizedStrings`). Asset: `Data/Localization/LocalizedStrings.asset`. Toolkit side.
 - `SpecificLocalizedStrings.cs` — same pattern for game-specific text (`Entry.Instance.specificLocalizedStrings`), with entries in the `Rock Flipper Strings` table: background terms and status sentences, item tooltip terms, the 5 item rarity names (read through `ChestRarity.GetLocalizedName()`), and the Level/Chest bar tooltips. Sentences live here too when their component is in a scene, so localizing them needs no scene edit. `Instance` has no edit-mode fallback, and `DevEntry` has no reference to it. Asset: `Data/Localization/SpecificLocalizedStrings.asset`.
 - `Dev/ILocalizable.cs` — editor interface (`Editor_IsLocalized`, `Editor_TryCreatingLocalizationTerms`). **Nothing implements it yet.**
 - `Dev/UnlocalizedObjectFinder.cs` — SO with a context menu that lists every `ILocalizable` in chosen folders and the open scene whose `Editor_IsLocalized` is false. Only useful once types implement `ILocalizable`.
@@ -21,7 +21,7 @@
 
 - **Locales**: en (project locale) plus zh, zh-TW, ja, ko, ru, uk, pl, cs, de, fr, es, es-419 (Spanish, Latin America; added 2026-10-18), it, pt-BR, tr, th, vi, and two pseudo-locales. Every non-English, non-pseudo locale has a **Fallback Locale** metadata pointing to `en`, except zh-TW, which falls back to zh, and es-419, which falls back to es (and so on to `en`). Add the same metadata to any new locale. Unity's Mono has no `es-419` culture, so es-419's `Identifier.CultureInfo` resolves to plain `es` (only casing in `GetLocalizedStringUpper()` uses it).
 - **String tables** — `Common/` is toolkit, `Rock Flipper/` is game-specific:
-  - `Common Strings` (default string table): 106 keys. 90 are translated in every locale; the 16 newest (`Unlock`, `Shop`, `Skill Tree`, `Items`, `Demo`, `Lvl`, `Exp`, `NA in demo`…) are English only (2026-10-18). Includes the language-switch strings `AI translated notice` and `Reset to apply translation notice` ("You may need to restart the game if it won't fully change to the new language."). Some keys are leftovers from the previous game (`game.Rock Crusher`, `Boss Level`, `Beat All Bosses`, Animal/Food/Fantasy/Space).
+  - `Common Strings` (default string table): 107 keys. 91 are translated in every locale (`Per second suffix` included); the 16 newest before it (`Unlock`, `Shop`, `Skill Tree`, `Items`, `Demo`, `Lvl`, `Exp`, `NA in demo`…) are English only (2026-10-18). Includes the language-switch strings `AI translated notice` and `Reset to apply translation notice` ("You may need to restart the game if it won't fully change to the new language."). Some keys are leftovers from the previous game (`game.Rock Crusher`, `Boss Level`, `Beat All Bosses`, Animal/Food/Fantasy/Space).
   - `Test Strings`: 1 test key.
   - `Rock Flipper Strings`: 53 keys (`P0 Rock`…`P5 Rock` placeholders, the skill title groups `Backgrounds`, `Flipper Bots`, `Mouse`, `All Rocks` and `Monolith L II`…`Monolith L XII`, Shop, Items and demo-notice text, the `SpecificLocalizedStrings` terms and sentences, the 8 non-placeholder item names and the 5 background names), English only. Most new entries carry a translator comment.
   - `Rock Flipper Skill Strings`: 93 keys, the BuildAgent prefabs' skill titles and description formats, English only.
@@ -38,7 +38,7 @@
 A snapshot. Re-check before relying on the numbers.
 
 - **No localized UI in the game**: 0 `GameObjectLocalizer`s in `Main.unity`, `Run.unity` or `_AMainGame` prefabs (about 36 + 22 scene texts and 115 prefab texts with content). The only one in the project is in `_Exp/`.
-- Code-built text localized through the term holders: background status/unlock button/list item, item view and tooltip (rarity included), Shop stat button and Skill Tree tooltip (Lvl., MAXED, refund note), Level and Chest bar tooltips, the old-save dialog. Item names (`Item.localizedItemName`, 8 non-placeholder items) and background names (`CombatBackground.localizedBackgroundName`, in `Run.unity`) are localized; placeholder items still use plain `itemName`.
+- Code-built text localized through the term holders: background status/unlock button/list item, item view and tooltip (rarity included), Shop stat button and Skill Tree tooltip (Lvl., MAXED, refund note), Level and Chest bar tooltips, the old-save dialog, the cash earning speed `/s` suffix (`CurrencyEarningSpeedDisplayer`). Item names (`Item.localizedItemName`, 8 non-placeholder items) and background names (`CombatBackground.localizedBackgroundName`, in `Run.unity`) are localized; placeholder items still use plain `itemName`.
 - **Plain `string` fields shown to players** (need `LocalizedString`):
   - `Run/Skill tree/SkillNode.cs` — `description`.
   - `Run/Combat/Tutorials/TutorialTaskController.cs` — `taskDescription`.
@@ -49,7 +49,6 @@ A snapshot. Re-check before relying on the numbers.
   - `UI Systems/ButtonPrompt/ContextButtonPrompt/ContextButtonPrompt.cs` — `text`.
 - **Literals in code**:
   - `Run/Combat/Tutorials/TutorialTaskManager.cs` — `"Tutorial Task [x/y]:"`, `"Hint:"` (not used by any scene or prefab).
-  - `Run/Currencies/CurrencyEarningSpeedDisplayer.cs` — the `"/s"` suffix.
   - `UI/Feedback/FeedbackPopup.cs` — `"Sending..."`, `"Done: {result}. Thank you!"`.
   - Unused scripts: `UI/Audio Setting/MusicToggleButton.cs` (TURN MUSIC ON/OFF), `ContextButtonPromptView.cs` (`[HOLD]`), `HorizontalMenuListItem.cs` (`[LOCKED]`), `Common/TextConst.cs`.
 - **Numbers**: `Helpers/PureSripting/BigNumber/BigNumberString.cs` uses fixed English suffixes (K, M, B, T, then letter pairs). Decimal formatting follows the OS culture implicitly; no code sets a culture. The only culture-sensitive parsing outside the editor is in `FHC/Core/Architecture/SimpleJSON.cs`, used only by `Marketing/Steam Discount/SteamStoreStateDetector.cs`.

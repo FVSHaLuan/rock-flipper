@@ -447,6 +447,10 @@ MonoBehaviour:
     m_Localized: "Dieser Speicherplatz wurde mit einer \xE4lteren Spielversion gespeichert, die nicht mehr unterst\xFCtzt wird.\nEntschuldige die Unannehmlichkeiten :("
     m_Metadata:
       m_Items: []
+  - m_Id: 27878785799864320
+    m_Localized: /s
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

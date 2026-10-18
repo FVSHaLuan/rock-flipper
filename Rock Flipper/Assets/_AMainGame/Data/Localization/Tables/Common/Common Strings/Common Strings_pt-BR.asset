@@ -447,6 +447,10 @@ MonoBehaviour:
     m_Localized: "Este slot foi salvo em uma vers\xE3o antiga do jogo que n\xE3o \xE9 mais suportada.\nDesculpe o transtorno :("
     m_Metadata:
       m_Items: []
+  - m_Id: 27878785799864320
+    m_Localized: /s
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

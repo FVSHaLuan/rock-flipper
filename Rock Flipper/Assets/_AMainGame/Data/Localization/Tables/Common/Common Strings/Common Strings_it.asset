@@ -449,6 +449,10 @@ MonoBehaviour:
     m_Localized: "Questo slot \xE8 stato salvato con una versione precedente del gioco che non \xE8 pi\xF9 supportata.\nCi scusiamo per l'inconveniente :("
     m_Metadata:
       m_Items: []
+  - m_Id: 27878785799864320
+    m_Localized: /s
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

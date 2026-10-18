@@ -447,6 +447,10 @@ MonoBehaviour:
     m_Localized: "Cet emplacement a \xE9t\xE9 sauvegard\xE9 avec une ancienne version du jeu qui n'est plus prise en charge.\nD\xE9sol\xE9 pour la g\xEAne occasionn\xE9e :("
     m_Metadata:
       m_Items: []
+  - m_Id: 27878785799864320
+    m_Localized: /s
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
