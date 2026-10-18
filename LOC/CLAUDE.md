@@ -5,10 +5,16 @@
 
 ## Decisions
 Set by the owner on 2026-10-18.
-- **Languages**: all 16 locales already in the project: English (source), Simplified Chinese (zh), Traditional Chinese (zh-TW), Japanese, Korean, Russian, Ukrainian, Polish, Czech, German, French, Spanish (Spain, `es`), Italian, Portuguese-Brazil (pt-BR), Turkish, Thai, Vietnamese. The two pseudo-locales are for testing only.
+- **Languages**: all 17 locales already in the project: English (source) and 16 targets, Simplified Chinese (zh), Traditional Chinese (zh-TW), Japanese, Korean, Russian, Ukrainian, Polish, Czech, German, French, Spanish (Spain, `es`), Italian, Portuguese-Brazil (pt-BR), Turkish, Thai, Vietnamese. The two pseudo-locales are for testing only.
 - **Translation**: AI translation, with no human reviewer.
 - **Switching language in game**: partly live. Text that refreshes on a switch changes right away. If a player sees untranslated text left over from switching, they must restart the game. The existing `Common Strings` entry `Reset to apply translation notice` already says this ("You may need to restart the game if it won't fully change to the new language.").
 - **Big-number suffixes**: keep the current K/M/B/T suffixes for every language for now. No CJK-style units (万/億).
+
+Set by the owner later on 2026-10-18.
+- **Where translations go**: mostly straight into the string table assets. For any other text, the owner sets the format per task.
+- **English source changes**: the owner tracks them and asks for re-translation of the changed entries. Nothing needs to detect stale translations, so plan item 5 is dropped.
+- **Glossary**: to be built later (plan item 4). Until then, translations keep game terms consistent on their own and report the choices.
+- **AI notice**: the `AI translated notice` is shown on the language select screen.
 
 ## Proposed Plan
 Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed it item by item, so treat it as the default direction and check before deviating. The audit (what's wired, what isn't, runtime pitfalls) is in [Scripts/Localization/CLAUDE.md](../Rock%20Flipper/Assets/_AMainGame/Scripts/Localization/CLAUDE.md).
@@ -31,7 +37,7 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
    - a glossary built from [GDD/Glossary.md](../GDD/Glossary.md), including terms not to translate
    - a translator comment on every entry
    - length limits where layout is tight
-5. **Stale translations**: the JSON importer only fills empty entries. Add a way to flag translations whose English source changed, e.g. a hash of the source stored per entry and checked on export.
+5. ~~**Stale translations**~~: dropped. The owner manages English source changes (see Decisions).
 6. **Translate after the text freezes**, once balancing stops changing the wording.
 7. **QA**:
    - a pseudo-locale pass for missed text and about 30% text expansion
@@ -40,7 +46,8 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
 8. **Steam store page**: localize the description and any text in the capsule art.
 
 ## Open Questions
-- Whether the game shows the existing "Languages other than English have been translated using AI" notice (`AI translated notice`) and/or an "(AI)" tag on language buttons.
+- Whether language buttons also get an "(AI)" tag (`LanguageSetterButton` supports one). The notice itself is decided (see Decisions).
+- **Thai line breaking** (deferred by the owner on 2026-10-18, to be tackled later): TMP has no Thai word segmentation, so long Thai text won't wrap. Options include inserting zero-width spaces (U+200B) between words, by hand or with a tool. Current Thai text has none. Until it's decided, translations go in without them.
 
 ## Contents
 - `Reference/`: external reference material (platform and store rules, third-party docs), one Markdown file per source, named in PascalCase after its topic. Each file links its source and the date it was copied.
@@ -57,5 +64,6 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
 - Localization work doesn't change the design. Don't edit the GDD from here unless asked.
 
 ## Working Here
+- Two skills cover the work: `localize` makes text localizable (string table entries, `LocalizedString` in code, prefab and scene bindings), and `translate` fills in the other languages.
 - Until the owner sets conventions, ask before creating a folder structure, file format or naming scheme here. Once one is agreed, record it in this file.
 - Keep this file up to date as the folder gains content, so it stays the index of what's in `LOC/`.

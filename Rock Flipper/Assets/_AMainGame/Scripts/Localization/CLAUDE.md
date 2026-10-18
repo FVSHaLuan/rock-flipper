@@ -21,9 +21,9 @@
 
 - **Locales**: en (project locale) plus zh, zh-TW, ja, ko, ru, uk, pl, cs, de, fr, es, it, pt-BR, tr, th, vi, and two pseudo-locales. Every non-English, non-pseudo locale has a **Fallback Locale** metadata pointing to `en`, except zh-TW, which falls back to zh (and so on to `en`). Add the same metadata to any new locale.
 - **String tables** — `Common/` is toolkit, `Rock Flipper/` is game-specific:
-  - `Common Strings` (default string table): 91 keys, translated in all 16 locales. Includes the language-switch strings `AI translated notice` and `Reset to apply translation notice` ("You may need to restart the game if it won't fully change to the new language."). Some keys are leftovers from the previous game (`game.Rock Crusher`, `Boss Level`, `Beat All Bosses`, Animal/Food/Fantasy/Space).
+  - `Common Strings` (default string table): 99 keys. 90 are translated in every locale; the 9 newest (`Unlock`, `Shop`, `Skill Tree`, `Items`, `Demo`…) are English only (2026-10-18). Includes the language-switch strings `AI translated notice` and `Reset to apply translation notice` ("You may need to restart the game if it won't fully change to the new language."). Some keys are leftovers from the previous game (`game.Rock Crusher`, `Boss Level`, `Beat All Bosses`, Animal/Food/Fantasy/Space).
   - `Test Strings`: 1 test key.
-  - `Rock Flipper Strings`: 6 placeholder keys (`P0 Rock`…`P5 Rock`), English only.
+  - `Rock Flipper Strings`: 14 keys (`P0 Rock`…`P5 Rock` placeholders, plus Shop, Items and demo-notice text), English only.
   - `Rock Flipper Skill Strings`: 1 key (`Max Rock Count`), English only.
   - `Common Assets` (default asset table): `NotoFont` / `NotoFontMaterial` per locale (Noto Sans, NotoSansJP/KR/SC/TC/Thai). The fonts must be Addressable: Noto Sans in `Localization-Assets-Shared`, the others in `Localization-Assets-<locale>`. A font that isn't throws `InvalidKeyException` when its locale's text loads. Assign entries through the table editor (or `AssetTableCollection.AddAssetToTable`), which creates the group entries. Copying table files alone doesn't.
 - **Localization Settings.asset**:

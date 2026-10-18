@@ -1,6 +1,6 @@
 ---
 name: localize
-description: Localize player-facing text in Rock Flipper with Unity Localization. Covers finding or reusing string table entries, converting code-driven text (displayers, string.Format fields) to LocalizedString, binding TMP text and fonts with GameObjectLocalizer, the serialized LocalizedString YAML, and verifying the result in the connected Editor. Use when asked to localize, translate or "hook up" a component, prefab, screen, label or string, or to add a localized string entry.
+description: Localize player-facing text in Rock Flipper with Unity Localization. Covers finding or reusing string table entries, converting code-driven text (displayers, string.Format fields) to LocalizedString, binding TMP text and fonts with GameObjectLocalizer, the serialized LocalizedString YAML, and verifying the result in the connected Editor. Use when asked to localize or "hook up" a component, prefab, screen, label or string, to turn hard-coded or static text into localized text, or to add a localized string entry. Translating the text into other languages is the translate skill.
 ---
 
 # Localize text
@@ -17,7 +17,7 @@ Read these first. This skill is the working checklist; they hold the facts:
 
 ## 2. Reuse an entry before creating one
 
-`Common Strings` already has 91 keys translated in all 16 locales (e.g. `Now Playing`, `OK`, `Settings`, `Level`). Search before adding:
+`Common Strings` already has 99 keys, most translated in all 16 other locales (e.g. `Now Playing`, `OK`, `Settings`, `Level`). Search before adding:
 
 ```bash
 cd "Rock Flipper/Assets/_AMainGame/Data/Localization/Tables/Common/Common Strings"
@@ -27,7 +27,8 @@ id=<m_Id>; for f in Common\ Strings_*.asset; do echo "$f: $(grep -A1 "m_Id: $id"
 
 - Toolkit text goes in `Common Strings`, game-specific text in a `Rock Flipper` table.
 - Prefer putting only the translatable phrase in the table and keeping rich-text tags and symbols (`<b>`, `▶`) in the code-side format. It lets you reuse plain entries and keeps markup away from the AI translator.
-- A new entry: **Create Localized String Entry** (or `LocalizationUtility.CreateEnglishEntry`), then save the project, because the entry is only marked dirty. It is English only until translated. Ask the user whether to add the other 15 locales now, since the plan is to translate once the text freezes.
+- A new entry: **Create Localized String Entry** (or `LocalizationUtility.CreateEnglishEntry`), then save the project, because the entry is only marked dirty. It is English only until translated. Ask the user whether to translate it into the other 16 locales now (the `translate` skill), since the plan is to translate once the text freezes.
+- Give a new entry a translator comment when the English alone is ambiguous (a fragment, an abbreviation, a word with several meanings), saying where it's shown and what it means. The translation is AI with no human review, and the comment is its only context.
 
 ## 3. Convert the script
 
@@ -99,4 +100,4 @@ Play mode testing of the live language switch: ask the user first (root `CLAUDE.
 
 ## 6. Report
 
-Say which entry was reused or created, which locales are translated and which are English only, what changed on the prefab (including any `m_text` binding you removed), and what was or wasn't tested.
+Say which entry was reused or created (with any translator comment), which locales are translated and which are English only, what changed on the prefab (including any `m_text` binding you removed), and what was or wasn't tested.
