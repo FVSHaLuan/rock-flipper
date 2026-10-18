@@ -35,7 +35,7 @@ Use the GDD to understand what a feature is *supposed* to do and what it's calle
 
 ## Localization workspace (LOC)
 
-`LOC/` is the working folder for localization (translation work and related material). It's outside the Unity project, so it's never imported or built, and its files need no `.meta`. The shipping localization data (Unity Localization locales and string tables) stays in `Rock Flipper/Assets/_AMainGame/Data/Localization/`. The folder is empty for now. Before working in it, read [LOC/CLAUDE.md](LOC/CLAUDE.md).
+`LOC/` is the working folder for localization (translation work and related material). It's outside the Unity project, so it's never imported or built, and its files need no `.meta`. The shipping localization data (Unity Localization locales and string tables) stays in `Rock Flipper/Assets/_AMainGame/Data/Localization/`. Before working in it, read [LOC/CLAUDE.md](LOC/CLAUDE.md), which also indexes what the folder contains.
 
 ## Inside `Rock Flipper/`
 
