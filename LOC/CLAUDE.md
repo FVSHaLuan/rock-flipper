@@ -49,6 +49,7 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
 ## Open Questions
 - Whether language buttons also get an "(AI)" tag (`LanguageSetterButton` supports one). The notice itself is decided (see Decisions).
 ## Contents
+- [TargetLanguages.md](TargetLanguages.md): the 16 target languages (everything but the English source and the pseudo-locales), with locale codes, read from the project's locale assets.
 - `Reference/`: external reference material (platform and store rules, third-party docs), one Markdown file per source, named in PascalCase after its topic. Each file links its source and the date it was copied.
   - [SteamLanguages.md](Reference/SteamLanguages.md): the languages Steam supports, at both levels (Full Platform Support and Game Support Only), with Steamworks API and Web API language codes.
 
