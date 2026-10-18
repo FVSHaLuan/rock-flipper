@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: Pierre P0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: Pierre P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: Pierre P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: Pierre P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: Pierre P4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: Pierre P5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: "Proch. d\xE9cor pr\xE9f\xE9r\xE9 :"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: "Pr\xE9f\xE9r\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: "D\xE9bloquer au hasard"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: Robot lanceur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: "Les objets avec un point rouge sont nouveaux ou ont mont\xE9 de niveau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: Tout ignorer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: OK, on lance !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "Vous jouez \xE0 la version <b>d\xE9mo</b> de <b>Rock Flipper</b>. Cette d\xE9mo <b>limite</b> les comp\xE9tences et les objets disponibles."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: "D\xE9cors"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: Robots lanceurs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolithe L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolithe L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: Souris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: Toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolithe L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolithe L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolithe L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolithe L XII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>LIMITE DE LA D\xC9MO !</b>\n\nC'est le plafond d'am\xE9lioration de la d\xE9mo. Dans le jeu complet, vous pouvez continuer \xE0 am\xE9liorer et d\xE9bloquer plus de comp\xE9tences.\n\n<b>Cliquez pour d\xE9couvrir le jeu complet.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: "D\xE9bloquez plus de d\xE9cors !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: "Choisissez le d\xE9cor pr\xE9f\xE9r\xE9 pour multiplier vos revenus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: "D\xE9cor pr\xE9f\xE9r\xE9 : revenus {0}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: "D\xE9bloquez plus de d\xE9cors pour l'augmenter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: "Pas encore trouv\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: "Argent gagn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: Les effets augmentent avec le niveau de l'objet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: Commun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: Peu commun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Rare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: "\xC9pique"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: Unique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: Les atterrissages des pierres remplissent cette barre. Une fois pleine, vous montez de niveau et gagnez {0}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: Barre de coffre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: Les atterrissages des pierres remplissent cette barre. Une fois pleine, un coffre tombe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: "D\xE9s"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Marteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Lanterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Loupe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Pioche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: Savon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Ressort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: Portefeuille
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: "D\xE9sert"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Prairie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Toundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: Volcanique
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

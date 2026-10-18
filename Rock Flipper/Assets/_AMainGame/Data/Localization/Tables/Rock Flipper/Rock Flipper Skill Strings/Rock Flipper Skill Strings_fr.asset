@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: Nombre max de pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Activer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: "Activer les d\xE9cors"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: "Multiplicateur pr\xE9f\xE9r\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: "+{0} au multiplicateur pr\xE9f\xE9r\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: "Multiplicateur pr\xE9f\xE9r\xE9 par d\xE9cor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: "+{0} au multiplicateur pr\xE9f\xE9r\xE9 par d\xE9cor d\xE9bloqu\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Lancer les coffres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: Permettre aux robots lanceurs de lancer les coffres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Trajet intelligent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "Les robots lanceurs se d\xE9placent l\xE0 o\xF9 leurs lancers sont les plus utiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: Activer les robots lanceurs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: "Les robots lanceurs se d\xE9placent et lancent \xE0 votre place."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Temps actif
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: +{0}s de temps actif
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: "Port\xE9e de lancer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: "+{0} de port\xE9e de lancer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: Nombre max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: +{0} au nombre max de robots lanceurs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: "Vitesse de d\xE9placement"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: "+{0} % de vitesse de d\xE9placement"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: Force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: +{0} de force
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: Intervalle de lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: -{0}s d'intervalle de lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: Temps de repos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: -{0}s de temps de repos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: Faisceaux max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: +{0} faisceaux max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: Faisceaux min
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: +{0} faisceaux min
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: Hausse du multiplicateur temporaire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: +{0} au multiplicateur temporaire par impact de faisceau du L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: Intervalle de tir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: -{0}s d'intervalle de tir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: "D\xE9bloquer le Monolithe L II"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Survol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: Activer le lancer au survol de la souris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: Lancer de zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: Activer le Rayon de la souris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: Rayon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: +{0} au rayon de la souris
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Ricochet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: "Les atterrissages apr\xE8s un rebond peuvent rebondir \xE0 nouveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: Chance de rebond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: +{0} % de chance de rebond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: PV max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: -{0} PV max pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} PV max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: Multiplicateur de casse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: +{0} au multiplicateur de casse pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: +{0} au multiplicateur de casse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: Exp de coffre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: +{0} d'Exp de coffre par atterrissage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: Multiplicateur critique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: +{0} au multiplicateur critique pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: Argent d'atterrissage critique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: +{0} % d'argent d'atterrissage critique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: Chance d'atterrissage critique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: +{0} % de chance d'atterrissage critique pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: +{0} % de chance d'atterrissage critique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: Vitesse de lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: +{0} % de vitesse de lancer pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: +{0} % de vitesse de lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Argent d'atterrissage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: +{0} d'argent d'atterrissage pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} d'argent d'atterrissage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: Exp de niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: +{0} d'Exp de niveau par atterrissage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: +{0} au nombre max de pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: "Multiplicateur de puret\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: "+{0} au multiplicateur de puret\xE9 pour toutes les pierres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: "+{0} au multiplicateur de puret\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: "Puret\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: +{0} % de chance de devenir pure pour toutes les pierres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: "+{0} % de chance de devenir pure \xE0 la casse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: Recharge d'atterrissage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: "-{0}s avant qu'une pierre puisse \xEAtre relanc\xE9e apr\xE8s l'atterrissage"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: Chance d'auto-lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: +{0} % de chance d'auto-lancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: "D\xE9lai d'auto-lancer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: "-{0}s de d\xE9lai d'auto-lancer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "Le Monolithe L VIII tire r\xE9guli\xE8rement des faisceaux laser sur les pierres en vol et augmente leurs multiplicateurs temporaires."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: "D\xE9bloquer la pierre P1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: "Apr\xE8s son atterrissage, une pierre P1 a une chance d'\xEAtre relanc\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: "D\xE9bloquer la pierre P2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: Au sol, les pierres P2 tentent de s'auto-lancer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: "D\xE9bloquer la pierre P3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: "D\xE9bloquer le Monolithe L IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: "D\xE9bloquer le Monolithe L VI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: "D\xE9bloquer le Monolithe L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: "D\xE9bloquer le Monolithe L X"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: "D\xE9bloquer le Monolithe L XII"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -44,13 +44,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "Les langues autres que l'anglais ont \xE9t\xE9 traduites par IA.\nCertains
-      textes peuvent contenir des erreurs ou sembler peu naturels."
+    m_Localized: "Les langues autres que l'anglais ont \xE9t\xE9 traduites par IA.\nCertains textes peuvent contenir des erreurs ou sembler peu naturels."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: "Il se peut que vous deviez red\xE9marrer le jeu si la langue ne
-      change pas compl\xE8tement."
+    m_Localized: "Il se peut que vous deviez red\xE9marrer le jeu si la langue ne change pas compl\xE8tement."
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -346,8 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "La nouvelle r\xE9solution sera appliqu\xE9e \xE0 la fermeture de
-      cet \xE9cran"
+    m_Localized: "La nouvelle r\xE9solution sera appliqu\xE9e \xE0 la fermeture de cet \xE9cran"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -384,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: Victoire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: "D\xE9bloquer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: Mon autre jeu que vous allez adorer !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: "Ajoutez le jeu complet \xE0 votre liste de souhaits sur"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: "R\xE9duction sp\xE9ciale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "Arbre de comp\xE9tences"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Boutique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: "D\xE9cor"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: Objets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: "D\xE9mo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Niv.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: Exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: "N/D en d\xE9mo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: Plus dans le jeu complet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: "Tout d\xE9bloqu\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "Le co\xFBt sera enti\xE8rement rembours\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Cet emplacement a \xE9t\xE9 sauvegard\xE9 avec une ancienne version du jeu qui n'est plus prise en charge.\nD\xE9sol\xE9 pour la g\xEAne occasionn\xE9e :("
     m_Metadata:
       m_Items: []
   references:
