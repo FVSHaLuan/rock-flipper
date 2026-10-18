@@ -46,13 +46,11 @@ MonoBehaviour:
   - m_Id: 304893903024128
     m_Localized: 'Le lingue diverse dall''inglese sono state tradotte con l''IA.
 
-      Alcuni
-      testi potrebbero contenere errori o suonare innaturali.'
+      Alcuni testi potrebbero contenere errori o suonare innaturali.'
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: Potrebbe essere necessario riavviare il gioco se la lingua non cambia
-      del tutto.
+    m_Localized: Potrebbe essere necessario riavviare il gioco se la lingua non cambia del tutto.
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -348,8 +346,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "La nuova risoluzione verr\xE0 applicata alla chiusura di questa
-      schermata Impostazioni"
+    m_Localized: "La nuova risoluzione verr\xE0 applicata alla chiusura di questa schermata Impostazioni"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -386,6 +383,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: Vittoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Sblocca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: Un altro mio gioco che adorerai!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: Aggiungi il gioco completo alla lista dei desideri su
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: Sconto speciale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "Albero delle abilit\xE0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Negozio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: Sfondo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: Oggetti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Liv.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: Exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: N/D nella demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: Altro nel gioco completo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: Tutto sbloccato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "Il costo sar\xE0 rimborsato per intero"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Questo slot \xE8 stato salvato con una versione precedente del gioco che non \xE8 pi\xF9 supportata.\nCi scusiamo per l'inconveniente :("
     m_Metadata:
       m_Items: []
   references:

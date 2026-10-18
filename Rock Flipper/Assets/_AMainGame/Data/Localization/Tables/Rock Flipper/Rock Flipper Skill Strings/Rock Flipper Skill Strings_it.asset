@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: Numero max di rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Attiva
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: Attiva gli sfondi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: Moltiplicatore preferito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: +{0} moltiplicatore preferito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: Moltiplicatore preferito per sfondo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: +{0} moltiplicatore preferito per ogni sfondo sbloccato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Lancia forzieri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: Permette ai Bot lanciatori di lanciare i forzieri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Percorso intelligente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "I Bot lanciatori si spostano dove i lanci sono pi\xF9 utili"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: Attiva i Bot lanciatori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: I Bot lanciatori si muovono e lanciano al posto tuo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Tempo attivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: +{0}s tempo attivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: Raggio di lancio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: +{0} raggio di lancio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: Numero max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: +{0} numero max di Bot lanciatori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: "Velocit\xE0 di movimento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: "+{0}% velocit\xE0 di movimento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: Forza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: +{0} forza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: Intervallo di lancio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: -{0}s intervallo di lancio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: Tempo di riposo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: -{0}s tempo di riposo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: Fasci max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: +{0} fasci max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: Fasci min
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: +{0} fasci min
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: Aumento del moltiplicatore temporaneo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: +{0} moltiplicatore temporaneo per ogni colpo di fascio di L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: Intervallo di tiro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: -{0}s intervallo di tiro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: Sblocca Monolito L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Sorvolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: Attiva il sorvolo del mouse per lanciare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: Lancio ad area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: Attiva Raggio del mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: Raggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: +{0} raggio del mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Rimbalzo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: Gli atterraggi dopo un balzo possono balzare di nuovo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: "Probabilit\xE0 di balzo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: "+{0}% probabilit\xE0 di balzo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: HP max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: -{0} HP max per tutte le rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} HP max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: Moltiplicatore di rottura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: +{0} moltiplicatore di rottura per tutte le rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: +{0} moltiplicatore di rottura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: Exp forziere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: +{0} Exp forziere all'atterraggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: Moltiplicatore critico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: +{0} moltiplicatore critico per tutte le rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: Denaro per atterraggio critico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: +{0}% denaro per atterraggio critico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: "Probabilit\xE0 di atterraggio critico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "+{0}% probabilit\xE0 di atterraggio critico per tutte le rocce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: "+{0}% probabilit\xE0 di atterraggio critico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: "Velocit\xE0 di lancio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: "+{0}% velocit\xE0 di lancio per tutte le rocce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: "+{0}% velocit\xE0 di lancio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Denaro per atterraggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: +{0} denaro per atterraggio per tutte le rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} denaro per atterraggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: Exp di livello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: +{0} Exp di livello all'atterraggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: +{0} numero max di rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: Moltiplicatore di purezza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: +{0} moltiplicatore di purezza per tutte le rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: +{0} moltiplicatore di purezza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: Purezza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: "+{0}% probabilit\xE0 di diventare pura per tutte le rocce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: "+{0}% probabilit\xE0 di diventare pura alla rottura"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: Ricarica atterraggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: -{0}s prima che una roccia possa essere lanciata di nuovo dopo l'atterraggio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: "Probabilit\xE0 di autolancio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: "+{0}% probabilit\xE0 di autolancio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: Ritardo di autolancio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: -{0}s ritardo di autolancio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: Il Monolito L VIII spara periodicamente fasci laser alle rocce in volo e ne aumenta i moltiplicatori temporanei.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: Sblocca Roccia P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: "Dopo l'atterraggio, una roccia P1 ha una probabilit\xE0 di lanciarsi di nuovo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: Sblocca Roccia P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: Quando sono a terra, le rocce P2 provano ad autolanciarsi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: Sblocca Roccia P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: Sblocca Monolito L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: Sblocca Monolito L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: Sblocca Monolito L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: Sblocca Monolito L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: Sblocca Monolito L XII
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

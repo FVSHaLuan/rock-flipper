@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: Roccia P0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: Roccia P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: Roccia P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: Roccia P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: Roccia P4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: Roccia P5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: 'Pross. sfondo preferito:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: Preferito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: Sblocca casuale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: Bot lanciatore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: Gli oggetti con un punto rosso sono nuovi o sono saliti di livello.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: Segna come visti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: OK, lanciamola!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "Stai giocando alla versione <b>demo</b> di <b>Rock Flipper</b>. Questa demo <b>limita</b> le abilit\xE0 e gli oggetti disponibili."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: Sfondi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: Bot lanciatori
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolito L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolito L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: Tutte le rocce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolito L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolito L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolito L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolito L XII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>LIMITE DELLA DEMO!</b>\n\nQuesto \xE8 il limite di potenziamento della demo. Nel gioco completo puoi continuare a potenziare e sbloccare altre abilit\xE0.\n\n<b>Clicca per scoprire il gioco completo.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: Sblocca altri sfondi!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: Seleziona lo sfondo Preferito per moltiplicare le entrate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: 'Sfondo preferito: entrate {0}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: Sblocca altri sfondi per aumentarlo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: Non ancora trovato.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: Denaro guadagnato
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: Gli effetti crescono con il livello dell'oggetto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: Comune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: Non comune
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Raro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: Epico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: Unico
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: "Gli atterraggi delle rocce riempiono questa barra. Quando \xE8 piena, sali di livello e ottieni {0}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: Barra del forziere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: "Gli atterraggi delle rocce riempiono questa barra. Quando \xE8 piena, cade un forziere."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: Dadi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Martello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Lanterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Lente d'ingrandimento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Piccone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: Sapone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Molla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: Portafoglio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: Deserto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Prateria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: Vulcanico
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
