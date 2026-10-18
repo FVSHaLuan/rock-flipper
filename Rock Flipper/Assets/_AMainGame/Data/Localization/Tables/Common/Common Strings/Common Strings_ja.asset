@@ -383,6 +383,70 @@ MonoBehaviour:
     m_Localized: "\u52DD\u3061"
     m_Metadata:
       m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: "\u89E3\u653E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: "\u304D\u3063\u3068\u6C17\u306B\u5165\u308B\u3001\u79C1\u306E\u5225\u306E\u30B2\u30FC\u30E0\uFF01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: "\u88FD\u54C1\u7248\u3092\u30A6\u30A3\u30C3\u30B7\u30E5\u30EA\u30B9\u30C8\u306B\u8FFD\u52A0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: "\u7279\u5225\u5272\u5F15"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "\u30B9\u30AD\u30EB\u30C4\u30EA\u30FC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: "\u30B7\u30E7\u30C3\u30D7"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: "\u80CC\u666F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: "\u30A2\u30A4\u30C6\u30E0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: "\u4F53\u9A13\u7248"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Lv.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: EXP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: "\u4F53\u9A13\u7248\u5BFE\u8C61\u5916"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: "\u7D9A\u304D\u306F\u88FD\u54C1\u7248\u3067"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: "\u3059\u3079\u3066\u89E3\u653E\u6E08\u307F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "\u30B3\u30B9\u30C8\u306F\u5168\u984D\u8FD4\u91D1\u3055\u308C\u307E\u3059"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "\u3053\u306E\u30B9\u30ED\u30C3\u30C8\u306F\u3001\u30B5\u30DD\u30FC\u30C8\u304C\u7D42\u4E86\u3057\u305F\u53E4\u3044\u30D0\u30FC\u30B8\u30E7\u30F3\u306E\u30B2\u30FC\u30E0\u3067\u4FDD\u5B58\u3055\u308C\u3066\u3044\u307E\u3059\u3002\n\u3054\u4E0D\u4FBF\u3092\u304A\u304B\u3051\u3057\u3066\u7533\u3057\u8A33\u3042\u308A\u307E\u305B\u3093 :("
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
