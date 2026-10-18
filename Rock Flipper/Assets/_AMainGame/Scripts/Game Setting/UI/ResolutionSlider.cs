@@ -206,7 +206,7 @@ public class ResolutionSlider : MonoBehaviour
         currentResolutionText.Text = string.Format("{0} x {1}", resolution.x, resolution.y);
         if (resolution.isRecommended)
         {
-            currentResolutionText.Text += "\r\n(Recommended)";
+            currentResolutionText.Text += $"\r\n({Entry.Instance.localizedStrings.recommended.GetLocalizedString()})";
         }
     }
 
