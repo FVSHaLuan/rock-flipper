@@ -44,14 +44,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "J\u0119zyki inne ni\u017C angielski zosta\u0142y przet\u0142umaczone
-      przez AI.\nNiekt\xF3re teksty mog\u0105 zawiera\u0107 b\u0142\u0119dy lub brzmie\u0107
-      nienaturalnie."
+    m_Localized: "J\u0119zyki inne ni\u017C angielski zosta\u0142y przet\u0142umaczone przez AI.\nNiekt\xF3re teksty mog\u0105 zawiera\u0107 b\u0142\u0119dy lub brzmie\u0107 nienaturalnie."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: "Mo\u017Ce by\u0107 konieczne ponowne uruchomienie gry, je\u015Bli
-      j\u0119zyk nie zmieni si\u0119 w pe\u0142ni."
+    m_Localized: "Mo\u017Ce by\u0107 konieczne ponowne uruchomienie gry, je\u015Bli j\u0119zyk nie zmieni si\u0119 w pe\u0142ni."
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -347,8 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "Nowa rozdzielczo\u015B\u0107 zostanie zastosowana po zamkni\u0119ciu
-      Ustawie\u0144"
+    m_Localized: "Nowa rozdzielczo\u015B\u0107 zostanie zastosowana po zamkni\u0119ciu Ustawie\u0144"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -385,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: Wygrana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Odblokuj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: "Moja inna gra, kt\xF3ra ci si\u0119 spodoba!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: "Dodaj pe\u0142n\u0105 wersj\u0119 do listy \u017Cycze\u0144 na"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: "Specjalna zni\u017Cka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "Drzewko umiej\u0119tno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Sklep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: "T\u0142o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: Przedmioty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Poz.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: PD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: brak w demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: "Wi\u0119cej w pe\u0142nej wersji"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: Wszystko odblokowane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "Koszt zostanie w pe\u0142ni zwr\xF3cony"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Ten slot zosta\u0142 zapisany w starszej wersji gry, kt\xF3ra nie jest ju\u017C obs\u0142ugiwana.\nPrzepraszam za niedogodno\u015Bci :("
     m_Metadata:
       m_Items: []
   references:

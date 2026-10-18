@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: Maks. liczba kamieni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: "W\u0142\u0105cz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: "W\u0142\u0105cz t\u0142a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: "Mno\u017Cnik ulubionego"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: "+{0} mno\u017Cnika ulubionego"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: "Mno\u017Cnik ulubionego za t\u0142o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: "+{0} mno\u017Cnika ulubionego za ka\u017Cde odblokowane t\u0142o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Podrzucaj skrzynie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: "Pozwala botom podrzucaj\u0105cym podrzuca\u0107 skrzynie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Inteligentna trasa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "Boty podrzucaj\u0105ce ruszaj\u0105 tam, gdzie ich podrzuty s\u0105 najbardziej przydatne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: "W\u0142\u0105cz boty podrzucaj\u0105ce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: "Boty podrzucaj\u0105ce kr\u0105\u017C\u0105 po planszy i podrzucaj\u0105 za ciebie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: "Czas aktywno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: "+{0}s czasu aktywno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: "Zasi\u0119g podrzutu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: "+{0} zasi\u0119gu podrzutu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: Maks. liczba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: "+{0} maks. liczby bot\xF3w podrzucaj\u0105cych"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: "Pr\u0119dko\u015B\u0107 ruchu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: "+{0}% pr\u0119dko\u015Bci ruchu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: "Si\u0142a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: "+{0} si\u0142y"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: "Odst\u0119p podrzut\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: "-{0}s odst\u0119pu podrzut\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: "Czas bezczynno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: "-{0}s czasu bezczynno\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: "Maks. liczba wi\u0105zek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: "+{0} maks. liczby wi\u0105zek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: "Min. liczba wi\u0105zek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: "+{0} min. liczby wi\u0105zek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: "Wzrost mno\u017Cnika tymczasowego"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: "+{0} mno\u017Cnika tymczasowego za ka\u017Cde trafienie wi\u0105zki L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: "Odst\u0119p strza\u0142\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: "-{0}s odst\u0119pu strza\u0142\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: Odblokuj Monolit L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Najechanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: "W\u0142\u0105cz podrzut przez najechanie mysz\u0105"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: Podrzut obszarowy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: "W\u0142\u0105cz promie\u0144 myszy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: "Promie\u0144"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: +{0} promienia myszy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Rykoszet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: "L\u0105dowania po odbiciu mog\u0105 zn\xF3w si\u0119 odbi\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: Szansa na odbicie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: +{0}% szansy na odbicie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: Maks. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: -{0} maks. HP dla wszystkich kamieni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} maks. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: "Mno\u017Cnik za rozbicie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: "+{0} mno\u017Cnika za rozbicie dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: "+{0} mno\u017Cnika za rozbicie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: PD skrzyni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: "+{0} PD skrzyni za l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: "Mno\u017Cnik krytyczny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: "+{0} mno\u017Cnika krytycznego dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: "Got\xF3wka za krytyczne l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: "+{0}% got\xF3wki za krytyczne l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: "Szansa na krytyczne l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "+{0}% szansy na krytyczne l\u0105dowanie dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: "+{0}% szansy na krytyczne l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: "Pr\u0119dko\u015B\u0107 podrzutu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: "+{0}% pr\u0119dko\u015Bci podrzutu dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: "+{0}% pr\u0119dko\u015Bci podrzutu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: "Got\xF3wka za l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: "+{0} got\xF3wki za l\u0105dowanie dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: "+{0} got\xF3wki za l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: PD poziomu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: "+{0} PD poziomu za l\u0105dowanie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: +{0} maks. liczby kamieni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: "Mno\u017Cnik czysto\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: "+{0} mno\u017Cnika czysto\u015Bci dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: "+{0} mno\u017Cnika czysto\u015Bci"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: "Czysto\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: "+{0}% szansy na czysto\u015B\u0107 dla wszystkich kamieni"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: "+{0}% szansy na czysto\u015B\u0107 po rozbiciu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: "Odnowienie l\u0105dowania"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: "-{0}s do ponownego podrzutu kamienia po l\u0105dowaniu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: Szansa na samopodrzut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: +{0}% szansy na samopodrzut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: "Op\xF3\u017Anienie samopodrzutu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: "-{0}s op\xF3\u017Anienia samopodrzutu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "Monolit L VIII co jaki\u015B czas strzela wi\u0105zkami lasera w lec\u0105ce kamienie i zwi\u0119ksza ich mno\u017Cniki tymczasowe."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: "Odblokuj kamie\u0144 P1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: "Po l\u0105dowaniu kamie\u0144 P1 ma szans\u0119 na ponowny podrzut."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: "Odblokuj kamie\u0144 P2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: "Le\u017C\u0105c na ziemi, kamienie P2 pr\xF3buj\u0105 wykona\u0107 samopodrzut."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: "Odblokuj kamie\u0144 P3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: Odblokuj Monolit L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: Odblokuj Monolit L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: Odblokuj Monolit L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: Odblokuj Monolit L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: Odblokuj Monolit L XII
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
