@@ -19277,7 +19277,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  minInterval: 0.03
+  minInterval: 0.5
   maxPerFrame: 1
   onShouldActivate:
     m_PersistentCalls:
@@ -19314,10 +19314,10 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  audioClip: {fileID: 8300000, guid: 98ee5bbb606a8fc41a75e7db45c0a193, type: 3}
+  audioClip: {fileID: 8300000, guid: 04a9baaa82b463a4ba515b34ab28989d, type: 3}
   gameAudioChannel: 1
   staticVolumeGroup: 0
-  selfVolume: 0.8
+  selfVolume: 0.2
   priority: 74
   mixerGroup: {fileID: 0}
   playOnEnable: 0
@@ -30036,10 +30036,10 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  audioClip: {fileID: 8300000, guid: f66224abe5d28ce4db934a4a6b82dd71, type: 3}
+  audioClip: {fileID: 8300000, guid: 483895491750daa498e305432e488032, type: 3}
   gameAudioChannel: 1
   staticVolumeGroup: 0
-  selfVolume: 0.6
+  selfVolume: 0.2
   priority: 128
   mixerGroup: {fileID: 0}
   playOnEnable: 0
@@ -30063,7 +30063,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  minInterval: 0.03
+  minInterval: 0.5
   maxPerFrame: 1
   onShouldActivate:
     m_PersistentCalls:
@@ -43236,10 +43236,10 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  audioClip: {fileID: 8300000, guid: f66224abe5d28ce4db934a4a6b82dd71, type: 3}
+  audioClip: {fileID: 8300000, guid: 7f26ce7b037a96443a54447d4b38c0d3, type: 3}
   gameAudioChannel: 1
   staticVolumeGroup: 0
-  selfVolume: 0.6
+  selfVolume: 0.2
   priority: 128
   mixerGroup: {fileID: 0}
   playOnEnable: 0
@@ -43263,7 +43263,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  minInterval: 0.03
+  minInterval: 0.5
   maxPerFrame: 1
   onShouldActivate:
     m_PersistentCalls:
