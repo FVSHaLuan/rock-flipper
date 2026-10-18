@@ -40,7 +40,7 @@ A snapshot. Re-check before relying on the numbers.
 - **No localized UI in the game**: 0 `GameObjectLocalizer`s in `Main.unity`, `Run.unity` or `_AMainGame` prefabs (about 36 + 22 scene texts and 115 prefab texts with content). The only one in the project is in `_Exp/`.
 - `LocalizedStrings` / `SpecificLocalizedStrings` are read in only 2 places in code.
 - **Plain `string` fields shown to players** (need `LocalizedString`):
-  - `Run/Skill tree/Graph/SkillDescriptor.cs` — `descriptionFormat` (`string.Format` with `{0}`; 46 prefabs) and `extraDescription`.
+  - `Run/Skill tree/Graph/SkillDescriptor.cs` — `descriptionFormat` (`string.Format` with `{0}`; 46 prefabs) and `extraDescription`. Has `localizedDescriptionFormat` / `localizedExtraDescription` with fallback, but none are set.
   - `Run/Skill tree/Graph/SkillMetaData.cs` — `title` / `titleGroup` (44 prefabs). Has `localizedTitle` / `localizedTitleGroup` with fallback, but none are set.
   - `Run/Skill tree/SkillNode.cs` — `description`.
   - `Run/Combat/Tutorials/TutorialTaskController.cs` — `taskDescription`.
