@@ -20,18 +20,21 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5753811fe8be543418ff14e648400544
     m_Address: Rock Flipper Strings_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f724e3e706247b4cb73d048f23aabd0
     m_Address: Common Strings_zh-TW
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-zh-TW
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7781285193b5b1c47a529dc4c9b62c23
     m_Address: Test Strings_zh-TW

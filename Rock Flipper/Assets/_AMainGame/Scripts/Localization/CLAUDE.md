@@ -11,7 +11,7 @@
 - `UnityLocalization/LocalizationUtility.cs` — `CreateEnglishEntry(collection, key, text)` (editor only) and `GenerateKey(text)` (strips formatting and non-alphanumerics, max 70 chars). Keys are derived from the English text.
 - `UnityLocalization/LocalizedStringExtension.cs` — `IsValidAndNotEmpty()`; used for "localized if set, else plain string" fallbacks (see `SkillMetaData`).
 - `UnityLocalization/UnityLocalizationHelperSettings.cs` — SO with the default `LocalizedTmpFont` + `LocalizedMaterial` (point at the `Common Assets` table's `NotoFont` / `NotoFontMaterial`). Asset: `Data/Localization/UnityLocalizationHelperSettings.asset` (auto-created in editor if missing).
-- `UnityLocalization/LanguageSetterButton.cs` — sets `LocalizationSettings.SelectedLocale`; editor context menu fills the button label in the target language/font, with an optional " (AI)" suffix. Not currently used by any prefab or scene (the Home `Languages` / `Language Button` prefabs use other scripts).
+- `UnityLocalization/LanguageSetterButton.cs` — sets `LocalizationSettings.SelectedLocale`; editor context menu fills the button label in the target language/font, with an optional " (AI)" suffix. Used by `Prefabs/UI/Home/Language Button.prefab` (copied from Incoremental): one instance per locale (17, every non-pseudo locale) under `Lanaguage Select Screen/Wrapper/Language Menu` in `Main.unity`. Run the context menu after changing a button's locale. The screen itself is `Scripts/Home/LanguageSelectScreen.cs`.
 - `UnityLocalization/Editor/LocalizedTextMeshProAutoSetup.cs` — TMP context menu **Setup Localization**: adds a `GameObjectLocalizer`, tracks `m_text`, and binds `m_fontAsset`/`m_sharedMaterial` to the per-locale font from `UnityLocalizationHelperSettings`, then opens the picker. `GameObjectLocalizer` context menus: **Search For Localized Terms**, **Create Localized String Entry** (creates an English entry keyed by `GenerateKey`).
 - `UnityLocalization/Editor/LocalizedStringPicker.cs` — search window for existing entries by text.
 - `UnityLocalization/Editor/GlossaryUtility.cs` — dumps every English value of chosen tables into a text field.
@@ -25,11 +25,12 @@
   - `Test Strings`: 1 test key.
   - `Rock Flipper Strings`: 6 placeholder keys (`P0 Rock`…`P5 Rock`), English only.
   - `Rock Flipper Skill Strings`: 1 key (`Max Rock Count`), English only.
-  - `Common Assets` (default asset table): `NotoFont` / `NotoFontMaterial` per locale (Noto Sans, NotoSansJP/KR/SC/TC/Thai).
+  - `Common Assets` (default asset table): `NotoFont` / `NotoFontMaterial` per locale (Noto Sans, NotoSansJP/KR/SC/TC/Thai). The fonts must be Addressable: Noto Sans in `Localization-Assets-Shared`, the others in `Localization-Assets-<locale>`. A font that isn't throws `InvalidKeyException` when its locale's text loads. Assign entries through the table editor (or `AssetTableCollection.AddAssetToTable`), which creates the group entries. Copying table files alone doesn't.
 - **Localization Settings.asset**:
   - Startup selectors in order: command line (`-language=`) → PlayerPrefs → system (OS) locale → `en`. **No Steam language selector**: the Steam client language is ignored.
   - String database: `m_UseFallback: 1`, but `m_MissingTranslationState: -1` (all flags), so a missing entry shows "No translation found for '…'" to players, in shipping builds too.
   - Preload behavior 2, synchronous initialization on.
+  - `Common Strings`, `Common Assets`, `Rock Flipper Strings` and `Rock Flipper Skill Strings` are flagged **Preload** for every locale (a `Preload` label on their Addressables entries); `Test Strings` isn't. Flag any new real table too. The language buttons switch the locale on hover, and without preloading a quick hover across them makes queued string lookups run on released table handles ("Load Table Operation Failed", "Attempting to use an invalid operation handle").
 - Fonts (`_AMainGame/Fonts/`): every TMP font asset is dynamic. Main UI font is `NotoSans-Regular SDF`. TMP has no Thai word segmentation, so long Thai text won't wrap without zero-width spaces.
 
 ## Coverage audit (2026-10-18)

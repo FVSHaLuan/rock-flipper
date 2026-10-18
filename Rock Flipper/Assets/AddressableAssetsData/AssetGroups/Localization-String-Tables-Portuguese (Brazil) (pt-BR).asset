@@ -20,12 +20,14 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 78c2b0ccdbef0484c82c8fd9e7a2624e
     m_Address: Rock Flipper Skill Strings_pt-BR
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb3ff3d54df6e6d42b6df21ac2f278eb
     m_Address: Test Strings_pt-BR
@@ -38,6 +40,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-pt-BR
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7ea615a24b56fc842a14450a7782461b, type: 2}

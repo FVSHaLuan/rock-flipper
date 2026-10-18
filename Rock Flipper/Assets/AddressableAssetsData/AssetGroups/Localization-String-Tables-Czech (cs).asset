@@ -26,18 +26,21 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9911b61eb1fabdf44826fa8dbfe78eb4
     m_Address: Rock Flipper Strings_cs
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e939e1f6e37c339469b69f098ed41e0c
     m_Address: Common Strings_cs
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7ea615a24b56fc842a14450a7782461b, type: 2}

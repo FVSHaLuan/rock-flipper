@@ -13,6 +13,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 - `ShowDemoNoticePopup.cs` — one-time "this is a demo" popup, gated by `VersionBranchInfo.IsDemo || IsPlaytest` + a static `showed` flag.
 - `ShowInterAdsInHomeScreen.cs` — skips the interstitial on first Home load (fresh launch), shows `InterAds.Show(null)` on later visits (i.e. after a run).
 - `SteamPromotionPanel.cs` — empty stub, no members.
+- `LanguageSelectScreen.cs` — on the `Lanaguage Select Screen` UIScreen in `Main.unity` (copied from Incoremental). Remembers `LocalizationSettings.SelectedLocale` in `OnEnable`; in `OnDisable`, if the locale changed, reloads the current scene (`entry.visualSceneLoader.Load(Entry.ActiveGameScene)`) so every text picks up the new language. The language buttons in its `Language Menu` are `Prefabs/UI/Home/Language Button` instances (`LanguageSetterButton`, see `Scripts/Localization/CLAUDE.md`); the screen is opened by the `Languages` prefab button.
 
 ## Known-broken
 

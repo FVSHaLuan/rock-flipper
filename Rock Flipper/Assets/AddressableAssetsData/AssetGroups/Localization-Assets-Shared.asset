@@ -30,6 +30,23 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f3ce6ddc99b3464192547e04b3a0017
+    m_Address: NotoSans-Regular SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs
+    - Locale-de
+    - Locale-en
+    - Locale-es
+    - Locale-fr
+    - Locale-it
+    - Locale-pl
+    - Locale-pt-BR
+    - Locale-ru
+    - Locale-tr
+    - Locale-uk
+    - Locale-vi
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e8641deda4657724dad79e857e19cbe9
     m_Address: Assets/_AMainGame/Data/Localization/Tables/Common/Test Strings/Test Strings Shared Data.asset
     m_ReadOnly: 1

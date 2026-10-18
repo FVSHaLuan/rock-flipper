@@ -20,12 +20,14 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 736f36c4bb2b45b47a821905cdfb4787
     m_Address: Common Strings_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c1ba1662c39025f4f9e0336321dfbb5c
     m_Address: Test Strings_fr
@@ -38,6 +40,7 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
+    - Preload
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7ea615a24b56fc842a14450a7782461b, type: 2}
