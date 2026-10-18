@@ -8,6 +8,7 @@ namespace Agame.Run.Combat
     public class PlayerCursor : ExtendedMonoBehaviourRun
     {
         private List<FlippableByPlayerCursor> flippableHits = new List<FlippableByPlayerCursor>();
+        private List<FlippableByPlayerCursor> lastFlippableHits = new List<FlippableByPlayerCursor>();
 
         private BalancerWithObjects flippingLockBalancer = new BalancerWithObjects();
 
@@ -31,6 +32,7 @@ namespace Agame.Run.Combat
 
         protected void LateUpdate()
         {
+            (lastFlippableHits, flippableHits) = (flippableHits, lastFlippableHits);
             flippableHits.Clear();
             if (IsFlippingLocked)
             {
@@ -38,36 +40,47 @@ namespace Agame.Run.Combat
             }
 
             ///
-            if (BuildStats.enabledMouseHover)
-            {
-                FindHitsByHovering();
-            }
-            else
-            {
-                FindHitsByClicking();
-            }
+            FindHits();
 
             ///
+            StartHoveringNewHits();
+
+            ///
+            if (BuildStats.enabledMouseHover)
+            {
+                FlipHits();
+            }
+            else if (Mouse.current.leftButton.wasPressedThisFrame && FlipHits())
+            {
+                entry.clickParticleManager.Play();
+            }
+        }
+
+        private void StartHoveringNewHits()
+        {
             foreach (var item in flippableHits)
             {
-                if (item.isActiveAndEnabled && item.CooledDown)
+                if (item.isActiveAndEnabled && !lastFlippableHits.Contains(item))
                 {
-                    item.Flippable.TryFlipping(FlipSource.Mouse);
+                    item.StartHovering();
                 }
             }
         }
 
-        private void FindHitsByHovering()
+        /// <summary>
+        /// Returns whether anything started flipping
+        /// </summary>
+        private bool FlipHits()
         {
-            FindHits();
-        }        
-
-        private void FindHitsByClicking()
-        {
-            if (Mouse.current.leftButton.wasPressedThisFrame)
+            var flippedAny = false;
+            foreach (var item in flippableHits)
             {
-                FindHits();
+                if (item.isActiveAndEnabled && item.CooledDown && item.Flippable.TryFlipping(FlipSource.Mouse))
+                {
+                    flippedAny = true;
+                }
             }
+            return flippedAny;
         }
 
         private void FindHits()
