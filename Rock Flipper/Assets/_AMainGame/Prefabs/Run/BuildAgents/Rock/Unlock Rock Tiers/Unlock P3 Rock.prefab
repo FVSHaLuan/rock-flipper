@@ -57,8 +57,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3274946891252261634, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
-      propertyPath: descriptionFormat
-      value: Unlock P3 Rock
+      propertyPath: localizedDescriptionFormat.m_TableEntryReference.m_KeyId
+      value: 13347645856595968
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274946891252261634, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
+      propertyPath: localizedDescriptionFormat.m_TableReference.m_TableCollectionName
+      value: GUID:ed5a504acb0168d4fa400bc0317dac45
       objectReference: {fileID: 0}
     - target: {fileID: 4476014252699719964, guid: 71cf200a8d38fff448ffd04912b7a96e, type: 3}
       propertyPath: m_Name

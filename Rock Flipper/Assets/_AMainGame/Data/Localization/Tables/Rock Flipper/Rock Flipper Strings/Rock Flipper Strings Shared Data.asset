@@ -76,6 +76,51 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2838372046370505135
+  - m_Id: 13349067394301952
+    m_Key: Flipper Bots
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505217
+  - m_Id: 13349071173369856
+    m_Key: Monolith L VIII
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505218
+  - m_Id: 13349072561684480
+    m_Key: Monolith L II
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505219
+  - m_Id: 13349073006280704
+    m_Key: Mouse
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505220
+  - m_Id: 13349075195707392
+    m_Key: All Rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505221
+  - m_Id: 13349348899209216
+    m_Key: Monolith L IV
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505227
+  - m_Id: 13349349234753536
+    m_Key: Monolith L VI
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505228
+  - m_Id: 13349349897453568
+    m_Key: Monolith L X
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505229
+  - m_Id: 13349350212026368
+    m_Key: Monolith L XII
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505230
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -87,6 +132,42 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: 'Plural noun: the playfield backgrounds (biomes) the player unlocks and picks from. Shown as a skill''s title group, e.g. "Backgrounds - Enable".'
+    - rid: 2838372046370505217
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title group, game term (plural noun): Flipper Bots, floating robots that flip rocks for the player. Shown before the skill title, e.g. "Flipper Bots - Max Count".'
+    - rid: 2838372046370505218
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L VIII" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L VIII - Unlock".
+    - rid: 2838372046370505219
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L II" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L II - Unlock".
+    - rid: 2838372046370505220
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title group, game term: the player''s mouse cursor, used to flip rocks. Shown before the skill title, e.g. "Mouse - Radius".'
+    - rid: 2838372046370505221
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, the skill applies to rocks of every tier. Shown before the skill title, e.g. "All Rocks - Max HP".
+    - rid: 2838372046370505227
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L IV" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L IV - Unlock".
+    - rid: 2838372046370505228
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L VI" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L VI - Unlock".
+    - rid: 2838372046370505229
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L X" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L X - Unlock".
+    - rid: 2838372046370505230
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L XII" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L XII - Unlock".
     - rid: 3480083155795050782
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

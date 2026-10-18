@@ -75,12 +75,12 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  title: Landing Cash
+  title: 
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13347639091183616
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -100,6 +100,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: +{0} Cash on landing
+  descriptionFormat: 
+  localizedDescriptionFormat:
+    m_TableReference:
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
+    m_TableEntryReference:
+      m_KeyId: 13347639439310848
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   extraDescription: 
+  localizedExtraDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   buildValueMultiplier: 1
+  references:
+    version: 2
+    RefIds: []

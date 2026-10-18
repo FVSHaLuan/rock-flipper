@@ -46,6 +46,350 @@ MonoBehaviour:
     m_Localized: +{0} Preferred Multiplier per unlocked Background
     m_Metadata:
       m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Flip Chests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: Enable Flipper Bots to flip chests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Smart Pathing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: Flipper Bots move to where they can do the most useful flips
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: Enable Flipper Bots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: Flipper Bots move around and do the flip for you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Active Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: +{0}s Active Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: Flip Range
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: +{0} Flip Range
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: Max Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: +{0} Max Flipper Bot Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: Movement Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: +{0}% Movement Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: Strength
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: +{0} Strength
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: Flipping Interval
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: -{0}s Flipping Interval
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: Idle Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: -{0}s Idle Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: Max Beam Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: +{0} Max Beam Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: Min Beam Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: +{0} Min Beam Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: Temporary Multiplier Increase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: +{0} temporary multiplier per L VIII beam hit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: Shooting Interval
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: -{0}s Shooting Interval
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: Unlock Monolith L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Hover
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: Enable Mouse Hover to flip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: Area Flip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: Enable Mouse Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: +{0} Mouse Radius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Rebound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: Bounce landings can bounce again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: Bounce Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: +{0}% Bounce Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: Max HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: -{0} Max HP for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} Max HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: Breaking Cash Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: +{0} Cash Multiplier on break for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: +{0} Cash Multiplier on break
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: Chest Exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: +{0} Chest Exp on landing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: Critical Cash Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: +{0} Critical Landing Cash Multiplier for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: Critical Landing Cash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: +{0}% Critical Landing Cash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: Critical Landing Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: +{0}% Critical Landing chance for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: +{0}% Critical Landing chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: Flipping Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: +{0}% Flipping Speed for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: +{0}% Flipping Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Landing Cash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: +{0} Cash on landing for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} Cash on landing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: Level Exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: +{0} Level Exp on landing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: +{0} Max Rock Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: Pure Cash Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: +{0} Pure rock Cash Multiplier for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: +{0} Pure rock Cash Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: Purity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: +{0}% chance to become Pure for all rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: +{0}% chance to become Pure on destroyed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: Landing Cooldown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: -{0}s before a rock can flip again after landing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: Self-flip Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: +{0}% Self-flip Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: Self-flip Delay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: -{0}s Self-flip Delay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: Monolith L VIII periodically shoots laser beams at flying rocks and increases their temporary multipliers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: Unlock P1 Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: After landing, P1 Rock has a chance to flip again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: Unlock P2 Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: While on the ground, P2 Rocks try to self-flip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: Unlock P3 Rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: Unlock Monolith L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: Unlock Monolith L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: Unlock Monolith L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: Unlock Monolith L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: Unlock Monolith L XII
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

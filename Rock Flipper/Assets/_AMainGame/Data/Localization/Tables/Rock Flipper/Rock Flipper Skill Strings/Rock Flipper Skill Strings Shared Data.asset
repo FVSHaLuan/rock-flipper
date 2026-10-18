@@ -49,6 +49,436 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2838372046370505134
+  - m_Id: 13347626168532992
+    m_Key: Flip Chests
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505136
+  - m_Id: 13347626172727296
+    m_Key: Enable Flipper Bots to flip chests
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505137
+  - m_Id: 13347626709598208
+    m_Key: Smart Pathing
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505138
+  - m_Id: 13347626709598209
+    m_Key: Flipper Bots move to where they can do the most useful flips
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505139
+  - m_Id: 13347627074502656
+    m_Key: Enable Flipper Bots
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505140
+  - m_Id: 13347627074502657
+    m_Key: Flipper Bots move around and do the flip for you
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505141
+  - m_Id: 13347627443601408
+    m_Key: Active Time
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505142
+  - m_Id: 13347627443601409
+    m_Key: 0s Active Time
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505143
+  - m_Id: 13347627816894464
+    m_Key: Flip Range
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505144
+  - m_Id: 13347627821088768
+    m_Key: 0 Flip Range
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505145
+  - m_Id: 13347628169216000
+    m_Key: Max Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505146
+  - m_Id: 13347628169216001
+    m_Key: 0 Max Flipper Bot Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505147
+  - m_Id: 13347628521537536
+    m_Key: Movement Speed
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505148
+  - m_Id: 13347628521537537
+    m_Key: 0 Movement Speed
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505149
+  - m_Id: 13347628865470464
+    m_Key: Strength
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505150
+  - m_Id: 13347628865470465
+    m_Key: 0 Strength
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505151
+  - m_Id: 13347629213597696
+    m_Key: Flipping Interval
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505152
+  - m_Id: 13347629221986304
+    m_Key: -0s Flipping Interval
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505153
+  - m_Id: 13347629582696448
+    m_Key: Idle Time
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505154
+  - m_Id: 13347629586890752
+    m_Key: -0s Idle Time
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505155
+  - m_Id: 13347629947600896
+    m_Key: Max Beam Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505156
+  - m_Id: 13347629947600897
+    m_Key: 0 Max Beam Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505157
+  - m_Id: 13347630308311040
+    m_Key: Min Beam Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505158
+  - m_Id: 13347630308311041
+    m_Key: 0 Min Beam Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505159
+  - m_Id: 13347630643855360
+    m_Key: Temporary Multiplier Increase
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505160
+  - m_Id: 13347630643855361
+    m_Key: 0 temporary multiplier per L VIII beam hit
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505161
+  - m_Id: 13347630979399680
+    m_Key: Shooting Interval
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505162
+  - m_Id: 13347630983593984
+    m_Key: -0s Shooting Interval
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505163
+  - m_Id: 13347631327526912
+    m_Key: Unlock Monolith L II
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505164
+  - m_Id: 13347631772123136
+    m_Key: Hover
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505165
+  - m_Id: 13347631772123137
+    m_Key: Enable Mouse Hover to flip
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505166
+  - m_Id: 13347632225107968
+    m_Key: Area Flip
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505167
+  - m_Id: 13347632225107969
+    m_Key: Enable Mouse Radius
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505168
+  - m_Id: 13347632636149760
+    m_Key: Radius
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505169
+  - m_Id: 13347632640344064
+    m_Key: 0 Mouse Radius
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505170
+  - m_Id: 13347633105911808
+    m_Key: Rebound
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505171
+  - m_Id: 13347633110106112
+    m_Key: Bounce landings can bounce again
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505172
+  - m_Id: 13347633567285248
+    m_Key: Bounce Chance
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505173
+  - m_Id: 13347633567285249
+    m_Key: 0 Bounce Chance
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505174
+  - m_Id: 13347633961549824
+    m_Key: Max HP
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505175
+  - m_Id: 13347633965744128
+    m_Key: -0 Max HP for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505176
+  - m_Id: 13347634439700480
+    m_Key: -0 Max HP
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505177
+  - m_Id: 13347634947211264
+    m_Key: Breaking Cash Multiplier
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505178
+  - m_Id: 13347634955599872
+    m_Key: 0 Cash Multiplier on break for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505179
+  - m_Id: 13347635542802432
+    m_Key: 0 Cash Multiplier on break
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505180
+  - m_Id: 13347636109033472
+    m_Key: Chest Exp
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505181
+  - m_Id: 13347636109033473
+    m_Key: 0 Chest Exp on landing
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505182
+  - m_Id: 13347636591378432
+    m_Key: Critical Cash Multiplier
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505183
+  - m_Id: 13347636591378433
+    m_Key: 0 Critical Landing Cash Multiplier for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505184
+  - m_Id: 13347637048557568
+    m_Key: Critical Landing Cash
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505185
+  - m_Id: 13347637052751872
+    m_Key: 0 Critical Landing Cash
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505186
+  - m_Id: 13347637514125312
+    m_Key: Critical Landing Chance
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505187
+  - m_Id: 13347637518319616
+    m_Key: 0 Critical Landing chance for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505188
+  - m_Id: 13347637874835456
+    m_Key: 0 Critical Landing chance
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505189
+  - m_Id: 13347638294265856
+    m_Key: Flipping Speed
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505190
+  - m_Id: 13347638298460160
+    m_Key: 0 Flipping Speed for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505191
+  - m_Id: 13347638654976000
+    m_Key: 0 Flipping Speed
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505192
+  - m_Id: 13347639091183616
+    m_Key: Landing Cash
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505193
+  - m_Id: 13347639091183617
+    m_Key: 0 Cash on landing for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505194
+  - m_Id: 13347639439310848
+    m_Key: 0 Cash on landing
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505195
+  - m_Id: 13347639846158336
+    m_Key: Level Exp
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505196
+  - m_Id: 13347639846158337
+    m_Key: 0 Level Exp on landing
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505197
+  - m_Id: 13347640290754560
+    m_Key: 0 Max Rock Count
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505198
+  - m_Id: 13347640693407744
+    m_Key: Pure Cash Multiplier
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505199
+  - m_Id: 13347640693407745
+    m_Key: 0 Pure rock Cash Multiplier for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505200
+  - m_Id: 13347641066700800
+    m_Key: 0 Pure rock Cash Multiplier
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505201
+  - m_Id: 13347641452576768
+    m_Key: Purity
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505202
+  - m_Id: 13347641452576769
+    m_Key: 0 chance to become Pure for all rocks
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505203
+  - m_Id: 13347641796509696
+    m_Key: 0 chance to become Pure on destroyed
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505204
+  - m_Id: 13347642169802752
+    m_Key: Landing Cooldown
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505205
+  - m_Id: 13347642173997056
+    m_Key: -0s before a rock can flip again after landing
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505206
+  - m_Id: 13347642555678720
+    m_Key: Self-flip Chance
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505207
+  - m_Id: 13347642555678721
+    m_Key: 0 Self-flip Chance
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505208
+  - m_Id: 13347642887028736
+    m_Key: Self-flip Delay
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505209
+  - m_Id: 13347642891223040
+    m_Key: -0s Self-flip Delay
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505210
+  - m_Id: 13347643918827520
+    m_Key: Monolith L VIII periodically shoots laser beams at flying rocks and in
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505211
+  - m_Id: 13347645126787072
+    m_Key: Unlock P1 Rock
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505212
+  - m_Id: 13347645126787073
+    m_Key: After landing P1 Rock has a chance to flip again
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505213
+  - m_Id: 13347645487497216
+    m_Key: Unlock P2 Rock
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505214
+  - m_Id: 13347645487497217
+    m_Key: While on the ground P2 Rocks try to self-flip
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505215
+  - m_Id: 13347645856595968
+    m_Key: Unlock P3 Rock
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505216
+  - m_Id: 13347907669245952
+    m_Key: Unlock Monolith L IV
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505222
+  - m_Id: 13347908000595968
+    m_Key: Unlock Monolith L VI
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505223
+  - m_Id: 13347908319363072
+    m_Key: Unlock Monolith L VIII
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505224
+  - m_Id: 13347908663296000
+    m_Key: Unlock Monolith L X
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505225
+  - m_Id: 13347908977868800
+    m_Key: Unlock Monolith L XII
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505226
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -80,6 +510,350 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: 'Skill description. {0}: a number, added to the Preferred Multiplier (the cash income multiplier for using the Preferred background) for each background the player has unlocked.'
+    - rid: 2838372046370505136
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title (verb phrase). Shown after the title group as "Flipper Bots - Flip Chests": the skill lets Flipper Bots flip chests too, not only rocks.'
+    - rid: 2838372046370505137
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. Flipper Bots (floating robots that flip rocks for the player) can now flip chests too.
+    - rid: 2838372046370505138
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, game term. Shown after the title group as "Flipper Bots - Smart Pathing": Flipper Bots stop moving randomly and move to where they can flip the most rocks.'
+    - rid: 2838372046370505139
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. Flipper Bots (floating robots that flip rocks for the player) stop moving randomly and move to where they can flip the most rocks.
+    - rid: 2838372046370505140
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Flipper Bots, floating robots that flip rocks for the player.
+    - rid: 2838372046370505141
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Extra skill description, shown under the description of the skill that unlocks Flipper Bots (floating robots). "Flip" means throwing a rock up into the air, the game's core action.
+    - rid: 2838372046370505142
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Flipper Bots - Active Time": how long a Flipper Bot stays active (moving and flipping) before it goes idle.'
+    - rid: 2838372046370505143
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number of seconds added to how long a Flipper Bot stays active (moving and flipping). "s" is the seconds unit.'
+    - rid: 2838372046370505144
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Flipper Bots - Flip Range": the radius around a Flipper Bot within which it flips rocks and chests.'
+    - rid: 2838372046370505145
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the radius around a Flipper Bot within which it flips rocks and chests.'
+    - rid: 2838372046370505146
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Flipper Bots - Max Count": the maximum number of Flipper Bots.'
+    - rid: 2838372046370505147
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the maximum number of Flipper Bots.'
+    - rid: 2838372046370505148
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Flipper Bots - Movement Speed": how fast Flipper Bots move.'
+    - rid: 2838372046370505149
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to Flipper Bots'' movement speed.'
+    - rid: 2838372046370505150
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, game term. Shown after the title group as "Flipper Bots - Strength": the maximum number of rocks and chests a Flipper Bot flips at once (not physical strength).'
+    - rid: 2838372046370505151
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to Flipper Bot Strength, the maximum number of rocks and chests a Flipper Bot flips at once (not physical strength).'
+    - rid: 2838372046370505152
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Flipper Bots - Flipping Interval": the time between two flips of a Flipper Bot.'
+    - rid: 2838372046370505153
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number of seconds removed from the time between two flips of a Flipper Bot. "s" is the seconds unit.'
+    - rid: 2838372046370505154
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Flipper Bots - Idle Time": how long a Flipper Bot stays idle (not moving or flipping) before it becomes active again.'
+    - rid: 2838372046370505155
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number of seconds removed from how long a Flipper Bot stays idle (not moving or flipping). "s" is the seconds unit.'
+    - rid: 2838372046370505156
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Monolith L VIII - Max Beam Count": the most laser beams Monolith L VIII fires each time it shoots.'
+    - rid: 2838372046370505157
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the most laser beams Monolith L VIII fires each time it shoots.'
+    - rid: 2838372046370505158
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Monolith L VIII - Min Beam Count": the fewest laser beams Monolith L VIII fires each time it shoots.'
+    - rid: 2838372046370505159
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the fewest laser beams Monolith L VIII fires each time it shoots.'
+    - rid: 2838372046370505160
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Monolith L VIII - Temporary Multiplier Increase": how much each hit of a Monolith L VIII laser beam increases a rock''s temporary multiplier (a cash multiplier that resets each time the rock is flipped).'
+    - rid: 2838372046370505161
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to a rock''s temporary multiplier (a cash multiplier that resets each time the rock is flipped) each time a laser beam of Monolith L VIII hits it. "L VIII" is a name; keep it as is.'
+    - rid: 2838372046370505162
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Monolith L VIII - Shooting Interval": the time between two shots of Monolith L VIII.'
+    - rid: 2838372046370505163
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number of seconds removed from the time between two shots of Monolith L VIII. "s" is the seconds unit.'
+    - rid: 2838372046370505164
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Monolith L II, a floating structure at the center of the playfield. "L II" is its name in Roman numerals; keep it as is.
+    - rid: 2838372046370505165
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title (noun). Shown after the title group as "Mouse - Hover": the skill lets the player flip rocks by hovering the mouse cursor over them, without clicking.'
+    - rid: 2838372046370505166
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. Lets the player flip rocks by hovering the mouse cursor over them, without clicking.
+    - rid: 2838372046370505167
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, game term. Shown after the title group as "Mouse - Area Flip": the skill lets the mouse flip every rock within a radius around the cursor at once.'
+    - rid: 2838372046370505168
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. Lets the mouse flip every rock within a radius around the cursor at once. "Mouse Radius" is the name of that ability.
+    - rid: 2838372046370505169
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "Mouse - Radius": the radius around the mouse cursor within which rocks are flipped.'
+    - rid: 2838372046370505170
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the radius around the mouse cursor within which rocks are flipped.'
+    - rid: 2838372046370505171
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, game term. Shown after the title group as "P1 Rock - Rebound": when a P1 rock bounces (lands once more after a landing), that bounce landing can bounce again.'
+    - rid: 2838372046370505172
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. For P1 rocks: when a P1 rock bounces (lands once more after a landing), that bounce landing can bounce again too.'
+    - rid: 2838372046370505173
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P1 Rock - Bounce Chance": the chance that a P1 rock bounces (lands once more) after a landing.'
+    - rid: 2838372046370505174
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the chance that a P1 rock bounces (lands once more) after a landing.'
+    - rid: 2838372046370505175
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Max HP" or "All Rocks - Max HP": the HP (hit points) a rock starts with. A rock breaks when its HP reaches 0.'
+    - rid: 2838372046370505176
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a whole number removed from the HP (hit points) that rocks of every tier start with.'
+    - rid: 2838372046370505177
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a whole number removed from the HP (hit points) that rocks of one tier start with. The tier is named in the skill title.'
+    - rid: 2838372046370505178
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Breaking Cash Multiplier": sets the cash a rock earns when it breaks (its HP reaches 0), as a multiple of the cash it earns on landing.'
+    - rid: 2838372046370505179
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the multiplier for the cash a rock earns when it breaks (its HP reaches 0), for rocks of every tier.'
+    - rid: 2838372046370505180
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the multiplier for the cash a rock earns when it breaks (its HP reaches 0), for one rock tier named in the skill title.'
+    - rid: 2838372046370505181
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Chest Exp": experience points that fill the chest bar; a chest drops when the bar is full. "Exp" is short for experience.'
+    - rid: 2838372046370505182
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the chest exp (experience points that fill the chest bar) a rock gives each time it lands.'
+    - rid: 2838372046370505183
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "All Rocks - Critical Cash Multiplier": the multiplier applied to a rock''s landing cash on a critical landing (a lucky landing that earns extra cash).'
+    - rid: 2838372046370505184
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the multiplier applied to landing cash on a critical landing (a lucky landing that earns extra cash), for rocks of every tier.'
+    - rid: 2838372046370505185
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Critical Landing Cash": the extra cash a rock earns on a critical landing (a lucky landing that earns extra cash).'
+    - rid: 2838372046370505186
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the cash a rock earns on a critical landing (a lucky landing that earns extra cash).'
+    - rid: 2838372046370505187
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Critical Landing Chance": the chance that a landing is a critical landing (a lucky landing that earns extra cash).'
+    - rid: 2838372046370505188
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the chance that a landing is a critical landing (a lucky landing that earns extra cash), for rocks of every tier.'
+    - rid: 2838372046370505189
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the chance that a landing is a critical landing (a lucky landing that earns extra cash), for one rock tier named in the skill title.'
+    - rid: 2838372046370505190
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Flipping Speed": how fast a rock moves when it is flipped (thrown up into the air).'
+    - rid: 2838372046370505191
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to how fast rocks of every tier move when flipped (thrown up into the air).'
+    - rid: 2838372046370505192
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to how fast rocks of one tier move when flipped (thrown up into the air).'
+    - rid: 2838372046370505193
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Landing Cash": the cash a rock earns each time it lands.'
+    - rid: 2838372046370505194
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: an amount of cash (the game''s currency) added to what rocks of every tier earn each time they land.'
+    - rid: 2838372046370505195
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: an amount of cash (the game''s currency) added to what rocks of one tier earn each time they land.'
+    - rid: 2838372046370505196
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Level Exp": experience points that fill the player''s level bar. "Exp" is short for experience.'
+    - rid: 2838372046370505197
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the level exp (experience points that fill the player''s level bar) a rock gives each time it lands.'
+    - rid: 2838372046370505198
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the maximum number of rocks of one tier, named in the skill title.'
+    - rid: 2838372046370505199
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Pure Cash Multiplier": the cash multiplier of Pure rocks. A Pure rock earns multiplied cash.'
+    - rid: 2838372046370505200
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the cash multiplier of Pure rocks, for rocks of every tier.'
+    - rid: 2838372046370505201
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number added to the cash multiplier of Pure rocks of one tier, named in the skill title.'
+    - rid: 2838372046370505202
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, game term. Shown after the title group as "P0 Rock - Purity": the chance that a rock is Pure. A Pure rock earns multiplied cash.'
+    - rid: 2838372046370505203
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the chance that a rock is Pure (earns multiplied cash), for rocks of every tier.'
+    - rid: 2838372046370505204
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the chance that the new rock replacing a broken rock of this tier is Pure (earns multiplied cash).'
+    - rid: 2838372046370505205
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P0 Rock - Landing Cooldown": how long a rock must wait after landing before it can be flipped again.'
+    - rid: 2838372046370505206
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number of seconds removed from how long a rock must wait after landing before it can be flipped again. "s" is the seconds unit.'
+    - rid: 2838372046370505207
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P2 Rock - Self-flip Chance": the chance that a P2 rock flips itself (throws itself into the air) once its self-flip delay is over.'
+    - rid: 2838372046370505208
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number, the percentage added to the chance that a P2 rock flips itself (throws itself into the air) once its self-flip delay is over.'
+    - rid: 2838372046370505209
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill title, stat name. Shown after the title group as "P2 Rock - Self-flip Delay": how long a P2 rock stays on the ground before it may flip itself (throw itself into the air).'
+    - rid: 2838372046370505210
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Skill description. {0}: a number of seconds removed from how long a P2 rock stays on the ground before it may flip itself. "s" is the seconds unit.'
+    - rid: 2838372046370505211
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Extra skill description of the skill that unlocks Monolith L VIII. A temporary multiplier is a cash multiplier on a rock that resets each time the rock is flipped. "L VIII" is a name; keep it as is.
+    - rid: 2838372046370505212
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks P1 rocks, a new rock tier. "P1" is the tier name; keep it as is.
+    - rid: 2838372046370505213
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Extra skill description of the skill that unlocks P1 rocks: after landing, a P1 rock may bounce back up into the air once more. "P1" is the tier name; keep it as is.'
+    - rid: 2838372046370505214
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks P2 rocks, a new rock tier. "P2" is the tier name; keep it as is.
+    - rid: 2838372046370505215
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Extra skill description of the skill that unlocks P2 rocks: P2 rocks lying on the ground try to flip themselves (throw themselves into the air). "P2" is the tier name; keep it as is.'
+    - rid: 2838372046370505216
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks P3 rocks, a new rock tier. "P3" is the tier name; keep it as is.
+    - rid: 2838372046370505222
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Monolith L IV, a floating structure at the center of the playfield. "L IV" is its name in Roman numerals; keep it as is.
+    - rid: 2838372046370505223
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Monolith L VI, a floating structure at the center of the playfield. "L VI" is its name in Roman numerals; keep it as is.
+    - rid: 2838372046370505224
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Monolith L VIII, a floating structure at the center of the playfield. "L VIII" is its name in Roman numerals; keep it as is.
+    - rid: 2838372046370505225
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Monolith L X, a floating structure at the center of the playfield. "L X" is its name in Roman numerals; keep it as is.
+    - rid: 2838372046370505226
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Skill description. This skill unlocks Monolith L XII, a floating structure at the center of the playfield. "L XII" is its name in Roman numerals; keep it as is.
     - rid: 3480083155795050789
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

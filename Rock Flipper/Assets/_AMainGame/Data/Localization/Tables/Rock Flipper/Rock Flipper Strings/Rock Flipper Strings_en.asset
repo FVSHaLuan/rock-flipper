@@ -78,6 +78,42 @@ MonoBehaviour:
     m_Localized: Backgrounds
     m_Metadata:
       m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: Flipper Bots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolith L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolith L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: All Rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolith L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolith L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolith L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolith L XII
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

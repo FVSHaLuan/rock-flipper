@@ -9,8 +9,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 381521938923219142, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
-      propertyPath: descriptionFormat
-      value: Unlock Monolith L VI
+      propertyPath: localizedDescriptionFormat.m_TableEntryReference.m_KeyId
+      value: 13347908000595968
       objectReference: {fileID: 0}
     - target: {fileID: 2567235487356618235, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: m_Name
@@ -25,8 +25,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5816d437f464a554eb326a992048bc32, type: 3}
     - target: {fileID: 6238146525533148067, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
-      propertyPath: titleGroup
-      value: Monolith L VI
+      propertyPath: localizedTitleGroup.m_TableEntryReference.m_KeyId
+      value: 13349349234753536
       objectReference: {fileID: 0}
     - target: {fileID: 7033856927510863441, guid: 4365454c68cf18642a0cf8982d567c65, type: 3}
       propertyPath: m_LocalPosition.x

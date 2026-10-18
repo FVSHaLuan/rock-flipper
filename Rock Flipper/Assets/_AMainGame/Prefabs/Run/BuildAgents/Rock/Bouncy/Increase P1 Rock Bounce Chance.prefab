@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 21300000, guid: f946ec705791946439828dad9aa89618, type: 3}
   subIcon: {fileID: 21300000, guid: ae166b19f20ceb141b3b1d9aa1b701e4, type: 3}
-  titleGroup: P1 Rock
+  titleGroup: 
   localizedTitleGroup:
     m_TableReference:
       m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
@@ -58,12 +58,12 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  title: Bounce Chance
+  title: 
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13347633567285248
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -83,9 +83,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: +{0}% Bounce Chance
+  descriptionFormat: 
+  localizedDescriptionFormat:
+    m_TableReference:
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
+    m_TableEntryReference:
+      m_KeyId: 13347633567285249
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   extraDescription: 
+  localizedExtraDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   buildValueMultiplier: 100
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1212828346496478368
 MonoBehaviour:
   m_ObjectHideFlags: 0

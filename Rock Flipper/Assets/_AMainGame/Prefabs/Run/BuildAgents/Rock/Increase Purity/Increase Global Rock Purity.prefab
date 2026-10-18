@@ -48,22 +48,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 0}
   subIcon: {fileID: 21300000, guid: 487848e08109e3c4ebb1ba2ffac723e9, type: 3}
-  titleGroup: All Rocks
+  titleGroup: 
   localizedTitleGroup:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13349075195707392
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  title: Purity
+  title: 
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13347641452576768
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -83,9 +83,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: +{0}% chance to become Pure for all rocks
+  descriptionFormat: 
+  localizedDescriptionFormat:
+    m_TableReference:
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
+    m_TableEntryReference:
+      m_KeyId: 13347641452576769
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   extraDescription: 
+  localizedExtraDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   buildValueMultiplier: 100
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &35484315075884582
 MonoBehaviour:
   m_ObjectHideFlags: 0

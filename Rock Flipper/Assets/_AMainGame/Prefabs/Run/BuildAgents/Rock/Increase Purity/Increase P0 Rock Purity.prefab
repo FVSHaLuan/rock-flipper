@@ -75,12 +75,12 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  title: Purity
+  title: 
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13347641452576768
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -100,6 +100,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: +{0}% chance to become Pure on destroyed
+  descriptionFormat: 
+  localizedDescriptionFormat:
+    m_TableReference:
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
+    m_TableEntryReference:
+      m_KeyId: 13347641796509696
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   extraDescription: 
+  localizedExtraDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   buildValueMultiplier: 100
+  references:
+    version: 2
+    RefIds: []

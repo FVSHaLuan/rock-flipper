@@ -129,6 +129,9 @@ Subscribing to one term's `StringChanged` works too when the text uses only that
 
 ## 6. Wire the prefab
 
+- **Localized + plain fallback pairs** (`SkillMetaData.titleGroup`/`localizedTitleGroup` and `title`/`localizedTitle`, `SkillDescriptor.descriptionFormat`/`localizedDescriptionFormat` and `extraDescription`/`localizedExtraDescription`, `GeneralDialogLauncher.message`/`localizedMessage`): in the same edit that sets the `LocalizedString`, **clear the plain string**. Once the localized field is set the plain text is never shown, so a leftover copy only drifts out of date. Take the English for a new entry from the plain field before you clear it. Leave the plain field in the code, since prefabs that haven't been converted still use it.
+  - **Prefab variants**: localize the base prefab first. In a variant that overrides the plain field, set the localized field as a variant override, then revert the plain override (`PrefabUtility.RevertPropertyOverride`) so it inherits the base's empty string. Don't leave an override set to "". A variant that doesn't override the plain field inherits the base's localized field and needs no change.
+  - **Gotcha**: once the base is localized, a variant's localized field looks set, because it's inherited from the base, even though it holds the base's entry. So a plain override in the variant (`SerializedProperty.prefabOverride`) means the variant needs its own entry. Don't skip it as "already localized" just because the localized field is set. Read the text from the plain override.
 - **Code-driven TMP**: Setup Localization adds three tracked properties: `m_text`, `m_fontAsset` and `m_sharedMaterial`. Keep the font and material, which CJK/Thai need. **Remove the `m_text` property**, because the script owns the text and the two would fight.
 - Serialized `LocalizedString` YAML. The table is referenced by the **Shared Data asset's GUID**:
 
@@ -162,6 +165,7 @@ ls.LocaleOverride = locale; ls.GetLocalizedString();
 Other eval notes:
 - `new LocalizedString("Common Strings", keyId)` works; `TableReference.TableCollectionName` is read-only.
 - Use `eval_file` with a scratchpad `.cs` for anything multi-line.
+- For a bulk edit (many prefabs or entries), write the script with a dry-run flag. Run it dry first to check key collisions and the planned entries, then for real. A long run can fail in the CLI with "Main thread operation timed out after 5000ms" while the Editor keeps running it to the end. Don't re-run it blindly. Check `git status` and re-run the dry pass to see what's left.
 
 Play mode testing of the live language switch: ask the user first (root `CLAUDE.md`).
 

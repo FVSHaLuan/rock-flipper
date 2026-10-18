@@ -48,22 +48,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillMetaData
   icon: {fileID: 21300000, guid: 0d8229fa0b8fde64f8f971114b1d05f3, type: 3}
   subIcon: {fileID: 21300000, guid: b40e4d37126e83c49afc24f1488fd911, type: 3}
-  titleGroup: Monolith L VIII
+  titleGroup: 
   localizedTitleGroup:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13349071173369856
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  title: Shooting Interval
+  title: 
   localizedTitle:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 13347630979399680
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -83,9 +83,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390108775c2fd084fa162eefecc1cf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Run.SkillDescriptor
-  descriptionFormat: -{0}s Shooting Interval
+  descriptionFormat: 
+  localizedDescriptionFormat:
+    m_TableReference:
+      m_TableCollectionName: GUID:ed5a504acb0168d4fa400bc0317dac45
+    m_TableEntryReference:
+      m_KeyId: 13347630983593984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   extraDescription: 
+  localizedExtraDescription:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   buildValueMultiplier: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &6596586409392501739
 MonoBehaviour:
   m_ObjectHideFlags: 0
