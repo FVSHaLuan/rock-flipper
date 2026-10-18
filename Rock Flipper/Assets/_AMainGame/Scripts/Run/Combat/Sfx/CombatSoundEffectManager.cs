@@ -9,25 +9,13 @@ namespace Agame.Run.Combat
         [SerializeField]
         private GameAudioController clickLoopPlayer;
         [SerializeField]
-        private PooledAudioPlayer coreHitByBallPlayer;
-
-        [Space]
+        private UnityEvent playStartFlippingDelegate;
         [SerializeField]
-        private UnityEvent playCoreHitByBallDelegate;
+        private UnityEvent playNormalLandingDelegate;
         [SerializeField]
-        private UnityEvent playCoreDeathDelegate;
+        private UnityEvent playBreakingLandingDelegate;
 
         private BalancerWithObjects clickLoopPlayerUnmutedBalancer = new BalancerWithObjects();
-        private float maxCoreHitByBallVolume;
-
-        protected override bool Init()
-        {
-            ///
-            maxCoreHitByBallVolume = coreHitByBallPlayer.selfVolume;
-
-            ///
-            return base.Init();
-        }
 
         protected void OnDestroy()
         {
@@ -49,19 +37,6 @@ namespace Agame.Run.Combat
         private void ClickHold_OnAnyClickHoldStarted(ClickHold obj)
         {
             PlayClickLoop(obj);
-        }
-
-        [ContextMenu("PlayCoreDeath"), PlayModeOnly]
-        public void PlayCoreDeath()
-        {
-            ///
-            if (CurrentRunState != RunState.Combat)
-            {
-                return;
-            }
-
-            ///
-            playCoreDeathDelegate?.Invoke();
         }
 
         [ContextMenu("PlayClickLoop"), PlayModeOnly]
@@ -89,6 +64,39 @@ namespace Agame.Run.Combat
             {
                 clickLoopPlayer.StopImmediately();
             }
+        }
+
+        public void PlayStartFlipping()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playStartFlippingDelegate?.Invoke();
+        }
+
+        public void PlayNormalLanding()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playNormalLandingDelegate?.Invoke();
+        }
+
+        public void PlayBreakingLanding()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playBreakingLandingDelegate?.Invoke();
         }
     }
 
