@@ -44,13 +44,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "Os idiomas al\xE9m do ingl\xEAs foram traduzidos por IA.\nAlgum
-      texto pode conter erros ou soar pouco natural."
+    m_Localized: "Os idiomas al\xE9m do ingl\xEAs foram traduzidos por IA.\nAlgum texto pode conter erros ou soar pouco natural."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: "Talvez seja necess\xE1rio reiniciar o jogo se o novo idioma n\xE3o
-      for aplicado totalmente."
+    m_Localized: "Talvez seja necess\xE1rio reiniciar o jogo se o novo idioma n\xE3o for aplicado totalmente."
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -346,8 +344,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: "A nova resolu\xE7\xE3o ser\xE1 aplicada ao fechar esta tela de
-      Configura\xE7\xF5es"
+    m_Localized: "A nova resolu\xE7\xE3o ser\xE1 aplicada ao fechar esta tela de Configura\xE7\xF5es"
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -384,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: "Vit\xF3ria"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Desbloquear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: "Meu outro jogo que voc\xEA vai adorar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: "Adicione o jogo completo \xE0 lista de desejos na"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: Desconto especial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "\xC1rvore de habilidades"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Loja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: Fundo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: Itens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: "N\xEDv."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: XP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: N/D na demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: Mais no jogo completo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: Tudo desbloqueado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "O custo ser\xE1 totalmente reembolsado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Este slot foi salvo em uma vers\xE3o antiga do jogo que n\xE3o \xE9 mais suportada.\nDesculpe o transtorno :("
     m_Metadata:
       m_Items: []
   references:

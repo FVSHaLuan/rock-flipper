@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: "M\xE1x. de pedras"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Ativar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: Ativar fundos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: Multiplicador preferido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: +{0} de multiplicador preferido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: Multiplicador preferido por fundo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: +{0} de multiplicador preferido por fundo desbloqueado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: "Lan\xE7ar ba\xFAs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: "Permitir que os Bots lan\xE7adores lancem ba\xFAs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: Rota inteligente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "Os Bots lan\xE7adores v\xE3o para onde podem fazer os lan\xE7amentos mais \xFAteis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: "Ativar Bots lan\xE7adores"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: "Os Bots lan\xE7adores se movem e fazem os lan\xE7amentos por voc\xEA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Tempo ativo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: +{0}s de tempo ativo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: "Alcance de lan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: "+{0} de alcance de lan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: "Quantidade m\xE1x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: "+{0} na quantidade m\xE1x. de Bots lan\xE7adores"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: Velocidade de movimento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: +{0}% de velocidade de movimento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: "For\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: "+{0} de for\xE7a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: "Intervalo de lan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: "-{0}s no intervalo de lan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: Tempo ocioso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: -{0}s de tempo ocioso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: "M\xE1x. de feixes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: "+{0} no m\xE1x. de feixes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: "M\xEDn. de feixes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: "+{0} no m\xEDn. de feixes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: "Aumento do multiplicador tempor\xE1rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: "+{0} de multiplicador tempor\xE1rio por acerto de feixe do L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: Intervalo de disparo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: -{0}s no intervalo de disparo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: "Desbloquear Mon\xF3lito L II"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: Pairar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: "Ativar lan\xE7amento ao pairar o mouse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: "Lan\xE7amento em \xE1rea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: Ativar Raio do mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: Raio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: +{0} de raio do mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: Rebote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: Pousos de quique podem quicar de novo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: Chance de quique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: +{0}% de chance de quique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: "HP m\xE1x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: "-{0} de HP m\xE1x. para todas as pedras"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: "-{0} de HP m\xE1x."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: Multiplicador de quebra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: +{0} de multiplicador de quebra para todas as pedras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: +{0} de multiplicador de quebra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: "XP de ba\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: "+{0} de XP de ba\xFA por pouso"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: "Multiplicador cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: "+{0} de multiplicador cr\xEDtico para todas as pedras"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: "Dinheiro por pouso cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: "+{0}% de dinheiro por pouso cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: "Chance de pouso cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "+{0}% de chance de pouso cr\xEDtico para todas as pedras"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: "+{0}% de chance de pouso cr\xEDtico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: "Velocidade de lan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: "+{0}% de velocidade de lan\xE7amento para todas as pedras"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: "+{0}% de velocidade de lan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Dinheiro por pouso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: +{0} de dinheiro por pouso para todas as pedras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} de dinheiro por pouso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: "XP de n\xEDvel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: "+{0} de XP de n\xEDvel por pouso"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: "+{0} no m\xE1x. de pedras"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: Multiplicador de pureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: +{0} de multiplicador de pureza para todas as pedras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: +{0} de multiplicador de pureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: Pureza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: +{0}% de chance de ficar pura para todas as pedras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: +{0}% de chance de ficar pura ao quebrar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: Recarga de pouso
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: "-{0}s at\xE9 uma pedra poder ser lan\xE7ada de novo ap\xF3s o pouso"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: "Chance de autolan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: "+{0}% de chance de autolan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: "Atraso de autolan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: "-{0}s no atraso de autolan\xE7amento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "O Mon\xF3lito L VIII dispara feixes de laser periodicamente contra pedras no ar e aumenta seus multiplicadores tempor\xE1rios."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: Desbloquear Pedra P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: "Ap\xF3s o pouso, uma pedra P1 tem chance de ser lan\xE7ada de novo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: Desbloquear Pedra P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: "No ch\xE3o, as pedras P2 tentam se autolan\xE7ar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: Desbloquear Pedra P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: "Desbloquear Mon\xF3lito L IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: "Desbloquear Mon\xF3lito L VI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: "Desbloquear Mon\xF3lito L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: "Desbloquear Mon\xF3lito L X"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: "Desbloquear Mon\xF3lito L XII"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: Pedra P0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: Pedra P1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: Pedra P2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: Pedra P3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: Pedra P4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: Pedra P5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: "Pr\xF3x. fundo preferido:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: Preferido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: "Desbloquear aleat\xF3rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: "Bot lan\xE7ador"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: "Itens com um ponto vermelho s\xE3o novos ou subiram de n\xEDvel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: Dispensar tudo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: "OK, vamos lan\xE7ar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "Voc\xEA est\xE1 jogando a vers\xE3o <b>demo</b> de <b>Rock Flipper</b>. Esta demo <b>limita</b> as habilidades e os itens dispon\xEDveis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: Fundos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: "Bots lan\xE7adores"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: "Mon\xF3lito L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: "Mon\xF3lito L II"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: Todas as pedras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: "Mon\xF3lito L IV"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: "Mon\xF3lito L VI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: "Mon\xF3lito L X"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: "Mon\xF3lito L XII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>LIMITE DA DEMO!</b>\n\nEste \xE9 o limite de melhorias da demo. No jogo completo, voc\xEA pode continuar melhorando e desbloquear mais habilidades.\n\n<b>Clique para conhecer o jogo completo.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: Desbloqueie mais fundos!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: Selecione o fundo preferido para multiplicar sua renda.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: 'Fundo preferido: renda {0}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: "Desbloqueie mais fundos para aument\xE1-lo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: "Ainda n\xE3o encontrado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: Dinheiro ganho
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: "Os efeitos aumentam com o n\xEDvel do item."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: Comum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: Incomum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Raro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: "\xC9pico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: "\xDAnico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: "Pousos de pedras enchem esta barra. Quando ela estiver cheia, voc\xEA sobe de n\xEDvel e ganha {0}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: "Barra de ba\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: "Pousos de pedras enchem esta barra. Quando ela estiver cheia, um ba\xFA cai."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: Dados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Martelo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Lanterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Lupa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Picareta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: Sabonete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Mola
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: Carteira
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: Deserto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Pradaria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Marte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: "Vulc\xE2nico"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
