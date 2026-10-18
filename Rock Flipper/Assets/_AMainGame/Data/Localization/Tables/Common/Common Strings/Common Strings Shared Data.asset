@@ -393,7 +393,8 @@ MonoBehaviour:
   - m_Id: 27730418658623488
     m_Key: Wishlist The Full Game On
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 2838372046370504987
   - m_Id: 27730577425612800
     m_Key: Special Discount
     m_Metadata:
@@ -437,3 +438,7 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: Screen resolution
+    - rid: 2838372046370504987
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: as in "Wishlist the full game on Steam"
