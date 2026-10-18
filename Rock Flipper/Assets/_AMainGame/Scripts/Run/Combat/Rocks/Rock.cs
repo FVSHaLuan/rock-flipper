@@ -127,6 +127,9 @@ namespace Agame.Run.Combat
                 EarnCash(true);
 
                 ///
+                RunEntry.combatSoundEffectManager.PlayBreakingLanding();
+
+                ///
                 BreakCurrentRockAndSpawnNewOne();
             }
             else
@@ -139,6 +142,9 @@ namespace Agame.Run.Combat
 
                 ///
                 UpdateLandingCooldown();
+
+                ///
+                RunEntry.combatSoundEffectManager.PlayNormalLanding();
 
                 ///
                 onLanded?.Invoke();
@@ -212,6 +218,9 @@ namespace Agame.Run.Combat
         private void Flippable_OnStartedFlipping()
         {
             ResetTemporaryStats();
+
+            ///
+            RunEntry.combatSoundEffectManager.PlayStartFlipping();
 
             ///
             onStartedFlipping?.Invoke();
