@@ -21241,7 +21241,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  audioClip: {fileID: 8300000, guid: 483895491750daa498e305432e488032, type: 3}
+  audioClip: {fileID: 8300000, guid: ccc2cfeb6348279448a298738078c89a, type: 3}
   gameAudioChannel: 1
   staticVolumeGroup: 0
   selfVolume: 0.437
@@ -41000,7 +41000,7 @@ MonoBehaviour:
     enableLogger: 0
     alsoLogToUnityConsole: 0
     selfLogs: 
-  audioClip: {fileID: 8300000, guid: 3891697131c3a7a47a78cfc90d2c2cc9, type: 3}
+  audioClip: {fileID: 8300000, guid: 81748bec7e9f63245a0f390a1bf12097, type: 3}
   gameAudioChannel: 1
   staticVolumeGroup: 0
   selfVolume: 0.437
