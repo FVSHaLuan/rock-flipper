@@ -386,6 +386,10 @@ MonoBehaviour:
     m_Key: Unlock
     m_Metadata:
       m_Items: []
+  - m_Id: 27730108183658496
+    m_Key: My other game that you would love
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
