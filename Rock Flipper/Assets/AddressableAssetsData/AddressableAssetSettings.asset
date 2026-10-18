@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: edf2192c4b3249442830478c579a8781
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: b72a7070ccf9fc4745ba9bed6f259b64
   m_ExtractTypeTreeData: 0
   m_DisableWriteTypeTree: 0
   m_OptimizeCatalogSize: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bea08ad395dbcb04c9c2ee61926e673f, type: 2}
   - {fileID: 11400000, guid: 4822fb1483a59604c8874077169ac371, type: 2}
   - {fileID: 11400000, guid: 3fd4ae1fa8207e1458bc196ab3d8a7cb, type: 2}
+  - {fileID: 11400000, guid: ae2fd09b06b9fbe4a8db4684db67b1d5, type: 2}
   - {fileID: 11400000, guid: ee45a20c7f9ff6548b4e4732ee28f18e, type: 2}
   - {fileID: 11400000, guid: 0294c1712e1d0b84297707f89c2f70ad, type: 2}
   - {fileID: 11400000, guid: c30508ff04de1d44a8bd13a956719f7f, type: 2}
@@ -89,6 +90,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3b9a493bb3a94024090549bfb83e5b49, type: 2}
   - {fileID: 11400000, guid: cd3f82981c9fd7a4596a7db5498c301e, type: 2}
   - {fileID: 11400000, guid: 1a67be2c1c3802d4ba8872eff8de13a4, type: 2}
+  - {fileID: 11400000, guid: f82a3f8014c45404ea3f684921dfc1ec, type: 2}
   - {fileID: 11400000, guid: 7272e313e3ec6dd4fb70c63a03905f33, type: 2}
   - {fileID: 11400000, guid: bc14e02a4740b38489b1ec30980657df, type: 2}
   - {fileID: 11400000, guid: 04f29c66fd7caa6438eb5935524494cb, type: 2}
@@ -164,6 +166,7 @@ MonoBehaviour:
     - Locale-cs
     - Locale-vi
     - Preload
+    - Locale-es-419
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 50fbba5aeb2ab264ea0a3551f4173a9a, type: 2}

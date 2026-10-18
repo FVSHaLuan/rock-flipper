@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Spanish (Latin America) (es-419)
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Localization-String-Tables-Spanish (Latin America) (es-419)
+  m_GUID: 4e55f3644e3e3574eb3bc63b93eb7c04
+  m_SerializeEntries:
+  - m_GUID: 0ddb04b91bfcb9049b4bcfce1181442e
+    m_Address: Common Strings_es-419
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-419
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e9c38ea60a0b37468f15fa46d47774a
+    m_Address: Rock Flipper Strings_es-419
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-419
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c305263416266c8468837294fea08e2a
+    m_Address: Test Strings_es-419
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-419
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3db16b24d1ffb541a848b4d579d4e9d
+    m_Address: Rock Flipper Skill Strings_es-419
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es-419
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 7ea615a24b56fc842a14450a7782461b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e634d56577d5c0d42b57eb054ab99450, type: 2}
+    - {fileID: 11400000, guid: 3632c30e71b9a1046af92abf0d1c0227, type: 2}
+    - {fileID: 11400000, guid: 54cdcf7b7b2245c45a0dd97c2eb928b4, type: 2}

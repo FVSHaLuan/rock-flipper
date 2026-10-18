@@ -1,136 +1,136 @@
 # Rock Flipper translation glossary. Rules, do-not-translate list and term meanings: Glossary.md.
 # One row per English term; one fixed translation per locale, in the locales' sort order.
 # " / " separates the forms named in Glossary.md (e.g. verb / noun). \u200B is a zero-width space (Thai word break).
-term	zh	ru	pt-BR	de	ja	ko	es	fr	tr	zh-TW	pl	uk	it	th	cs	vi
+term	zh	ru	pt-BR	de	ja	ko	es	fr	tr	zh-TW	pl	uk	it	th	cs	vi	es-419
 # Rocks
-Rock	石头	Камень	Pedra	Stein	石	돌	Roca	Pierre	Taş	石頭	Kamień	Камінь	Roccia	หิน	Kámen	Đá
-All Rocks	所有石头	Все камни	Todas as pedras	Alle Steine	全ての石	모든 돌	Todas las rocas	Toutes les pierres	Tüm taşlar	所有石頭	Wszystkie kamienie	Усі камені	Tutte le rocce	หิน\u200Bทั้ง\u200Bหมด	Všechny kameny	Mọi viên đá
-P1 Rock	P1石头	Камень P1	Pedra P1	P1-Stein	P1の石	P1 돌	Roca P1	Pierre P1	P1 taşı	P1石頭	Kamień P1	Камінь P1	Roccia P1	หิน P1	Kámen P1	Đá P1
-Tier	阶	Ранг	Grau	Stufe	階級	티어	Grado	Palier	Kademe	階	Ranga	Ранг	Grado	เทียร์	Stupeň	Bậc
-Bouncy	弹性	Прыгучий	Saltitante	Hüpfend	バウンシー	통통	Saltarina	Sauteuse	Zıpzıp	彈性	Skoczny	Стрибучий	Balzante	เด้ง\u200Bดึ๋ง	Skákavý	Hay nảy
-Restless	躁动	Неугомонный	Inquieta	Rastlos	ソワソワ	들썩이는	Inquieta	Agitée	Huzursuz	躁動	Niespokojny	Непосидючий	Irrequieta	อยู่\u200Bไม่\u200Bสุข	Neposedný	Hiếu động
-Shockwave	冲击波	Ударная волна	Onda de choque	Schockwelle	衝撃波	충격파	Onda expansiva	Onde de choc	Şok dalgası	衝擊波	Fala uderzeniowa	Ударна хвиля	Onda d'urto	คลื่น\u200Bกระแทก	Rázová vlna	Sóng xung kích
-Flip	翻 / 翻石	подбросить / подброс	lançar / lançamento	werfen / Wurf	フリップする / フリップ	플립하다 / 플립	voltear / volteo	lancer / lancer	fırlatmak / fırlatma	翻 / 翻石	podrzucić / podrzut	підкинути / підкид	lanciare / lancio	โยน / การ\u200Bโยน	nadhodit / nadhoz	tung / cú tung
-Landing	落地	Приземление	Pouso	Landung	着地	착지	Aterrizaje	Atterrissage	İniş	落地	Lądowanie	Приземлення	Atterraggio	ลง\u200Bพื้น	Dopad	Tiếp đất
-Critical Landing	暴击落地	Критическое приземление	Pouso crítico	Kritische Landung	クリティカル着地	치명타 착지	Aterrizaje crítico	Atterrissage critique	Kritik iniş	暴擊落地	Krytyczne lądowanie	Критичне приземлення	Atterraggio critico	ลง\u200Bพื้น\u200Bคริติคอล	Kritický dopad	Tiếp đất chí mạng
-Break	碎裂	разрушиться / разрушение	quebrar / quebra	zerbrechen / Bruch	破壊される / 破壊	파괴되다 / 파괴	romperse / rotura	casser / casse	kırılmak / kırılma	碎裂	rozbić się / rozbicie	зруйнуватися / руйнування	rompersi / rottura	แตก	rozbít se / rozbití	vỡ
-HP	HP	HP	HP	HP	HP	HP	HP	PV	HP	HP	HP	HP	HP	HP	HP	HP
-Max HP	最大HP	Макс. HP	HP máx.	Max. HP	最大HP	최대 HP	HP máx.	PV max	Maks. HP	最大HP	Maks. HP	Макс. HP	HP max	HP สูงสุด	Max. HP	HP tối đa
-Pure	纯净	Чистый	Puro	Rein	ピュア	순수	Puro	Pur	Saf	純淨	Czysty	Чистий	Puro	บริสุทธิ์	Čistý	Tinh khiết
-Purity	纯度	Чистота	Pureza	Reinheit	純度	순도	Pureza	Pureté	Saflık	純度	Czystość	Чистота	Purezza	ความ\u200Bบริสุทธิ์	Čistota	Độ tinh khiết
-Bounce	弹跳	Отскок	Quique	Abprall	バウンド	바운스	Bote	Rebond	Sekme	彈跳	Odbicie	Відскок	Balzo	เด้ง	Odraz	Nảy
-Rebound	连弹	Рикошет	Rebote	Rückprall	リバウンド	리바운드	Rebote	Ricochet	Tekrar sekme	連彈	Rykoszet	Рикошет	Rimbalzo	เด้ง\u200Bซ้ำ	Rikošet	Nảy tiếp
-Self-flip	自翻	Самоподброс	Autolançamento	Selbstwurf	セルフフリップ	셀프 플립	Autovolteo	Auto-lancer	Oto fırlatma	自翻	Samopodrzut	Самопідкид	Autolancio	โยน\u200Bตัว\u200Bเอง	Samonadhoz	Tự tung
-Cache	缓存	Кэш	Cache	Cache	キャッシュメモリ	캐시 메모리	Caché	Cache	Önbellek	快取	Cache	Кеш	Cache	แคช	Cache	Cache
+Rock	石头	Камень	Pedra	Stein	石	돌	Roca	Pierre	Taş	石頭	Kamień	Камінь	Roccia	หิน	Kámen	Đá	Roca
+All Rocks	所有石头	Все камни	Todas as pedras	Alle Steine	全ての石	모든 돌	Todas las rocas	Toutes les pierres	Tüm taşlar	所有石頭	Wszystkie kamienie	Усі камені	Tutte le rocce	หิน\u200Bทั้ง\u200Bหมด	Všechny kameny	Mọi viên đá	Todas las rocas
+P1 Rock	P1石头	Камень P1	Pedra P1	P1-Stein	P1の石	P1 돌	Roca P1	Pierre P1	P1 taşı	P1石頭	Kamień P1	Камінь P1	Roccia P1	หิน P1	Kámen P1	Đá P1	Roca P1
+Tier	阶	Ранг	Grau	Stufe	階級	티어	Grado	Palier	Kademe	階	Ranga	Ранг	Grado	เทียร์	Stupeň	Bậc	Grado
+Bouncy	弹性	Прыгучий	Saltitante	Hüpfend	バウンシー	통통	Saltarina	Sauteuse	Zıpzıp	彈性	Skoczny	Стрибучий	Balzante	เด้ง\u200Bดึ๋ง	Skákavý	Hay nảy	Saltarina
+Restless	躁动	Неугомонный	Inquieta	Rastlos	ソワソワ	들썩이는	Inquieta	Agitée	Huzursuz	躁動	Niespokojny	Непосидючий	Irrequieta	อยู่\u200Bไม่\u200Bสุข	Neposedný	Hiếu động	Inquieta
+Shockwave	冲击波	Ударная волна	Onda de choque	Schockwelle	衝撃波	충격파	Onda expansiva	Onde de choc	Şok dalgası	衝擊波	Fala uderzeniowa	Ударна хвиля	Onda d'urto	คลื่น\u200Bกระแทก	Rázová vlna	Sóng xung kích	Onda expansiva
+Flip	翻 / 翻石	подбросить / подброс	lançar / lançamento	werfen / Wurf	フリップする / フリップ	플립하다 / 플립	voltear / volteo	lancer / lancer	fırlatmak / fırlatma	翻 / 翻石	podrzucić / podrzut	підкинути / підкид	lanciare / lancio	โยน / การ\u200Bโยน	nadhodit / nadhoz	tung / cú tung	voltear / volteo
+Landing	落地	Приземление	Pouso	Landung	着地	착지	Aterrizaje	Atterrissage	İniş	落地	Lądowanie	Приземлення	Atterraggio	ลง\u200Bพื้น	Dopad	Tiếp đất	Aterrizaje
+Critical Landing	暴击落地	Критическое приземление	Pouso crítico	Kritische Landung	クリティカル着地	치명타 착지	Aterrizaje crítico	Atterrissage critique	Kritik iniş	暴擊落地	Krytyczne lądowanie	Критичне приземлення	Atterraggio critico	ลง\u200Bพื้น\u200Bคริติคอล	Kritický dopad	Tiếp đất chí mạng	Aterrizaje crítico
+Break	碎裂	разрушиться / разрушение	quebrar / quebra	zerbrechen / Bruch	破壊される / 破壊	파괴되다 / 파괴	romperse / rotura	casser / casse	kırılmak / kırılma	碎裂	rozbić się / rozbicie	зруйнуватися / руйнування	rompersi / rottura	แตก	rozbít se / rozbití	vỡ	romperse / rotura
+HP	HP	HP	HP	HP	HP	HP	HP	PV	HP	HP	HP	HP	HP	HP	HP	HP	HP
+Max HP	最大HP	Макс. HP	HP máx.	Max. HP	最大HP	최대 HP	HP máx.	PV max	Maks. HP	最大HP	Maks. HP	Макс. HP	HP max	HP สูงสุด	Max. HP	HP tối đa	HP máx.
+Pure	纯净	Чистый	Puro	Rein	ピュア	순수	Puro	Pur	Saf	純淨	Czysty	Чистий	Puro	บริสุทธิ์	Čistý	Tinh khiết	Puro
+Purity	纯度	Чистота	Pureza	Reinheit	純度	순도	Pureza	Pureté	Saflık	純度	Czystość	Чистота	Purezza	ความ\u200Bบริสุทธิ์	Čistota	Độ tinh khiết	Pureza
+Bounce	弹跳	Отскок	Quique	Abprall	バウンド	바운스	Bote	Rebond	Sekme	彈跳	Odbicie	Відскок	Balzo	เด้ง	Odraz	Nảy	Rebote
+Rebound	连弹	Рикошет	Rebote	Rückprall	リバウンド	리바운드	Rebote	Ricochet	Tekrar sekme	連彈	Rykoszet	Рикошет	Rimbalzo	เด้ง\u200Bซ้ำ	Rikošet	Nảy tiếp	Multirrebote
+Self-flip	自翻	Самоподброс	Autolançamento	Selbstwurf	セルフフリップ	셀프 플립	Autovolteo	Auto-lancer	Oto fırlatma	自翻	Samopodrzut	Самопідкид	Autolancio	โยน\u200Bตัว\u200Bเอง	Samonadhoz	Tự tung	Autovolteo
+Cache	缓存	Кэш	Cache	Cache	キャッシュメモリ	캐시 메모리	Caché	Cache	Önbellek	快取	Cache	Кеш	Cache	แคช	Cache	Cache	Caché
 # Rock stats
-Landing Cash	落地现金	Деньги за приземление	Dinheiro por pouso	Landungsgeld	着地キャッシュ	착지 캐시	Dinero por aterrizaje	Argent d'atterrissage	İniş parası	落地現金	Gotówka za lądowanie	Гроші за приземлення	Denaro per atterraggio	เงิน\u200Bลง\u200Bพื้น	Hotovost za dopad	Tiền tiếp đất
-Breaking Cash	碎裂现金	Деньги за разрушение	Dinheiro por quebra	Bruchgeld	破壊キャッシュ	파괴 캐시	Dinero por rotura	Argent de casse	Kırılma parası	碎裂現金	Gotówka za rozbicie	Гроші за руйнування	Denaro per rottura	เงิน\u200Bตอน\u200Bแตก	Hotovost za rozbití	Tiền khi vỡ
-Breaking Cash Multiplier	碎裂现金倍率	Множитель денег за разрушение	Multiplicador de quebra	Bruchgeld-Multiplikator	破壊キャッシュ倍率	파괴 캐시 배율	Multiplicador de rotura	Multiplicateur de casse	Kırılma çarpanı	碎裂現金倍率	Mnożnik za rozbicie	Множник за руйнування	Moltiplicatore di rottura	ตัวคูณ\u200Bเงิน\u200Bตอน\u200Bแตก	Násobitel za rozbití	Hệ số nhân khi vỡ
-Critical Cash Multiplier	暴击倍率	Критический множитель	Multiplicador crítico	Kritischer Multiplikator	クリティカル倍率	치명타 배율	Multiplicador crítico	Multiplicateur critique	Kritik çarpanı	暴擊倍率	Mnożnik krytyczny	Критичний множник	Moltiplicatore critico	ตัวคูณ\u200Bคริติคอล	Kritický násobitel	Hệ số nhân chí mạng
-Critical Landing Cash	暴击落地现金	Деньги за критическое приземление	Dinheiro por pouso crítico	Kritisches Landungsgeld	クリティカル着地キャッシュ	치명타 착지 캐시	Dinero por aterrizaje crítico	Argent d'atterrissage critique	Kritik iniş parası	暴擊落地現金	Gotówka za krytyczne lądowanie	Гроші за критичне приземлення	Denaro per atterraggio critico	เงิน\u200Bลง\u200Bพื้น\u200Bคริติคอล	Hotovost za kritický dopad	Tiền tiếp đất chí mạng
-Critical Landing Chance	暴击落地几率	Шанс критического приземления	Chance de pouso crítico	Chance auf kritische Landung	クリティカル着地率	치명타 착지 확률	Probabilidad de aterrizaje crítico	Chance d'atterrissage critique	Kritik iniş şansı	暴擊落地機率	Szansa na krytyczne lądowanie	Шанс критичного приземлення	Probabilità di atterraggio critico	โอกาส\u200Bลง\u200Bพื้น\u200Bคริติคอล	Šance na kritický dopad	Tỉ lệ tiếp đất chí mạng
-Pure Cash Multiplier	纯净倍率	Множитель чистоты	Multiplicador de pureza	Reinheitsmultiplikator	ピュア倍率	순수 배율	Multiplicador de pureza	Multiplicateur de pureté	Saflık çarpanı	純淨倍率	Mnożnik czystości	Множник чистоти	Moltiplicatore di purezza	ตัวคูณ\u200Bความ\u200Bบริสุทธิ์	Násobitel čistoty	Hệ số nhân tinh khiết
-Flipping Speed	翻石速度	Скорость подброса	Velocidade de lançamento	Wurftempo	フリップ速度	플립 속도	Velocidad de volteo	Vitesse de lancer	Fırlatma hızı	翻石速度	Prędkość podrzutu	Швидкість підкиду	Velocità di lancio	ความ\u200Bเร็ว\u200Bโยน	Rychlost nadhozu	Tốc độ tung
-Landing Cooldown	落地冷却	Откат приземления	Recarga de pouso	Landeabklingzeit	着地クールダウン	착지 쿨다운	Espera tras aterrizaje	Recharge d'atterrissage	İniş bekleme süresi	落地冷卻	Odnowienie lądowania	Відкат приземлення	Ricarica atterraggio	คูลดาวน์\u200Bลง\u200Bพื้น	Čekání po dopadu	Chờ sau tiếp đất
-Max Rock Count	石头数量上限	Макс. количество камней	Máx. de pedras	Max. Steinanzahl	石の最大数	최대 돌 개수	Máx. de rocas	Nombre max de pierres	Maks. taş sayısı	石頭數量上限	Maks. liczba kamieni	Макс. кількість каменів	Numero max di rocce	จำนวน\u200Bหิน\u200Bสูงสุด	Max. počet kamenů	Số đá tối đa
-Bounce Chance	弹跳几率	Шанс отскока	Chance de quique	Abprallchance	バウンド率	바운스 확률	Probabilidad de bote	Chance de rebond	Sekme şansı	彈跳機率	Szansa na odbicie	Шанс відскоку	Probabilità di balzo	โอกาส\u200Bเด้ง	Šance na odraz	Tỉ lệ nảy
-Self-flip Chance	自翻几率	Шанс самоподброса	Chance de autolançamento	Selbstwurfchance	セルフフリップ率	셀프 플립 확률	Probabilidad de autovolteo	Chance d'auto-lancer	Oto fırlatma şansı	自翻機率	Szansa na samopodrzut	Шанс самопідкиду	Probabilità di autolancio	โอกาส\u200Bโยน\u200Bตัว\u200Bเอง	Šance na samonadhoz	Tỉ lệ tự tung
-Self-flip Delay	自翻延迟	Задержка самоподброса	Atraso de autolançamento	Selbstwurfverzögerung	セルフフリップ待機	셀프 플립 대기	Retardo de autovolteo	Délai d'auto-lancer	Oto fırlatma gecikmesi	自翻延遲	Opóźnienie samopodrzutu	Затримка самопідкиду	Ritardo di autolancio	ดีเลย์\u200Bโยน\u200Bตัว\u200Bเอง	Prodleva samonadhozu	Độ trễ tự tung
-Shockwave Chance	冲击波几率	Шанс ударной волны	Chance de onda de choque	Schockwellenchance	衝撃波発生率	충격파 확률	Probabilidad de onda expansiva	Chance d'onde de choc	Şok dalgası şansı	衝擊波機率	Szansa na falę uderzeniową	Шанс ударної хвилі	Probabilità di onda d'urto	โอกาส\u200Bคลื่น\u200Bกระแทก	Šance na rázovou vlnu	Tỉ lệ sóng xung kích
-Shockwave Radius	冲击波半径	Радиус ударной волны	Raio da onda de choque	Schockwellenradius	衝撃波半径	충격파 반경	Radio de onda expansiva	Rayon d'onde de choc	Şok dalgası yarıçapı	衝擊波半徑	Promień fali uderzeniowej	Радіус ударної хвилі	Raggio dell'onda d'urto	รัศมี\u200Bคลื่น\u200Bกระแทก	Poloměr rázové vlny	Bán kính sóng xung kích
-Max Shockwave Flips	冲击波最多翻石数	Макс. подбросов волной	Máx. de lançamentos da onda	Max. Schockwellenwürfe	衝撃波の最大フリップ数	충격파 최대 플립 수	Máx. de volteos de onda	Lancers max de l'onde	Maks. şok dalgası fırlatma	衝擊波最多翻石數	Maks. podrzutów fali	Макс. підкидів хвилею	Lanci max dell'onda	จำนวน\u200Bโยน\u200Bสูงสุด\u200Bของ\u200Bคลื่น	Max. nadhozů vlnou	Số lần tung tối đa của sóng
-Chance	几率	Шанс	Chance	Chance	確率	확률	Probabilidad	Chance	Şans	機率	Szansa	Шанс	Probabilità	โอกาส	Šance	Tỉ lệ
-Radius	半径	Радиус	Raio	Radius	半径	반경	Radio	Rayon	Yarıçap	半徑	Promień	Радіус	Raggio	รัศมี	Poloměr	Bán kính
+Landing Cash	落地现金	Деньги за приземление	Dinheiro por pouso	Landungsgeld	着地キャッシュ	착지 캐시	Dinero por aterrizaje	Argent d'atterrissage	İniş parası	落地現金	Gotówka za lądowanie	Гроші за приземлення	Denaro per atterraggio	เงิน\u200Bลง\u200Bพื้น	Hotovost za dopad	Tiền tiếp đất	Dinero por aterrizaje
+Breaking Cash	碎裂现金	Деньги за разрушение	Dinheiro por quebra	Bruchgeld	破壊キャッシュ	파괴 캐시	Dinero por rotura	Argent de casse	Kırılma parası	碎裂現金	Gotówka za rozbicie	Гроші за руйнування	Denaro per rottura	เงิน\u200Bตอน\u200Bแตก	Hotovost za rozbití	Tiền khi vỡ	Dinero por rotura
+Breaking Cash Multiplier	碎裂现金倍率	Множитель денег за разрушение	Multiplicador de quebra	Bruchgeld-Multiplikator	破壊キャッシュ倍率	파괴 캐시 배율	Multiplicador de rotura	Multiplicateur de casse	Kırılma çarpanı	碎裂現金倍率	Mnożnik za rozbicie	Множник за руйнування	Moltiplicatore di rottura	ตัวคูณ\u200Bเงิน\u200Bตอน\u200Bแตก	Násobitel za rozbití	Hệ số nhân khi vỡ	Multiplicador de rotura
+Critical Cash Multiplier	暴击倍率	Критический множитель	Multiplicador crítico	Kritischer Multiplikator	クリティカル倍率	치명타 배율	Multiplicador crítico	Multiplicateur critique	Kritik çarpanı	暴擊倍率	Mnożnik krytyczny	Критичний множник	Moltiplicatore critico	ตัวคูณ\u200Bคริติคอล	Kritický násobitel	Hệ số nhân chí mạng	Multiplicador crítico
+Critical Landing Cash	暴击落地现金	Деньги за критическое приземление	Dinheiro por pouso crítico	Kritisches Landungsgeld	クリティカル着地キャッシュ	치명타 착지 캐시	Dinero por aterrizaje crítico	Argent d'atterrissage critique	Kritik iniş parası	暴擊落地現金	Gotówka za krytyczne lądowanie	Гроші за критичне приземлення	Denaro per atterraggio critico	เงิน\u200Bลง\u200Bพื้น\u200Bคริติคอล	Hotovost za kritický dopad	Tiền tiếp đất chí mạng	Dinero por aterrizaje crítico
+Critical Landing Chance	暴击落地几率	Шанс критического приземления	Chance de pouso crítico	Chance auf kritische Landung	クリティカル着地率	치명타 착지 확률	Probabilidad de aterrizaje crítico	Chance d'atterrissage critique	Kritik iniş şansı	暴擊落地機率	Szansa na krytyczne lądowanie	Шанс критичного приземлення	Probabilità di atterraggio critico	โอกาส\u200Bลง\u200Bพื้น\u200Bคริติคอล	Šance na kritický dopad	Tỉ lệ tiếp đất chí mạng	Probabilidad de aterrizaje crítico
+Pure Cash Multiplier	纯净倍率	Множитель чистоты	Multiplicador de pureza	Reinheitsmultiplikator	ピュア倍率	순수 배율	Multiplicador de pureza	Multiplicateur de pureté	Saflık çarpanı	純淨倍率	Mnożnik czystości	Множник чистоти	Moltiplicatore di purezza	ตัวคูณ\u200Bความ\u200Bบริสุทธิ์	Násobitel čistoty	Hệ số nhân tinh khiết	Multiplicador de pureza
+Flipping Speed	翻石速度	Скорость подброса	Velocidade de lançamento	Wurftempo	フリップ速度	플립 속도	Velocidad de volteo	Vitesse de lancer	Fırlatma hızı	翻石速度	Prędkość podrzutu	Швидкість підкиду	Velocità di lancio	ความ\u200Bเร็ว\u200Bโยน	Rychlost nadhozu	Tốc độ tung	Velocidad de volteo
+Landing Cooldown	落地冷却	Откат приземления	Recarga de pouso	Landeabklingzeit	着地クールダウン	착지 쿨다운	Espera tras aterrizaje	Recharge d'atterrissage	İniş bekleme süresi	落地冷卻	Odnowienie lądowania	Відкат приземлення	Ricarica atterraggio	คูลดาวน์\u200Bลง\u200Bพื้น	Čekání po dopadu	Chờ sau tiếp đất	Espera tras aterrizaje
+Max Rock Count	石头数量上限	Макс. количество камней	Máx. de pedras	Max. Steinanzahl	石の最大数	최대 돌 개수	Máx. de rocas	Nombre max de pierres	Maks. taş sayısı	石頭數量上限	Maks. liczba kamieni	Макс. кількість каменів	Numero max di rocce	จำนวน\u200Bหิน\u200Bสูงสุด	Max. počet kamenů	Số đá tối đa	Máx. de rocas
+Bounce Chance	弹跳几率	Шанс отскока	Chance de quique	Abprallchance	バウンド率	바운스 확률	Probabilidad de bote	Chance de rebond	Sekme şansı	彈跳機率	Szansa na odbicie	Шанс відскоку	Probabilità di balzo	โอกาส\u200Bเด้ง	Šance na odraz	Tỉ lệ nảy	Probabilidad de rebote
+Self-flip Chance	自翻几率	Шанс самоподброса	Chance de autolançamento	Selbstwurfchance	セルフフリップ率	셀프 플립 확률	Probabilidad de autovolteo	Chance d'auto-lancer	Oto fırlatma şansı	自翻機率	Szansa na samopodrzut	Шанс самопідкиду	Probabilità di autolancio	โอกาส\u200Bโยน\u200Bตัว\u200Bเอง	Šance na samonadhoz	Tỉ lệ tự tung	Probabilidad de autovolteo
+Self-flip Delay	自翻延迟	Задержка самоподброса	Atraso de autolançamento	Selbstwurfverzögerung	セルフフリップ待機	셀프 플립 대기	Retardo de autovolteo	Délai d'auto-lancer	Oto fırlatma gecikmesi	自翻延遲	Opóźnienie samopodrzutu	Затримка самопідкиду	Ritardo di autolancio	ดีเลย์\u200Bโยน\u200Bตัว\u200Bเอง	Prodleva samonadhozu	Độ trễ tự tung	Retardo de autovolteo
+Shockwave Chance	冲击波几率	Шанс ударной волны	Chance de onda de choque	Schockwellenchance	衝撃波発生率	충격파 확률	Probabilidad de onda expansiva	Chance d'onde de choc	Şok dalgası şansı	衝擊波機率	Szansa na falę uderzeniową	Шанс ударної хвилі	Probabilità di onda d'urto	โอกาส\u200Bคลื่น\u200Bกระแทก	Šance na rázovou vlnu	Tỉ lệ sóng xung kích	Probabilidad de onda expansiva
+Shockwave Radius	冲击波半径	Радиус ударной волны	Raio da onda de choque	Schockwellenradius	衝撃波半径	충격파 반경	Radio de onda expansiva	Rayon d'onde de choc	Şok dalgası yarıçapı	衝擊波半徑	Promień fali uderzeniowej	Радіус ударної хвилі	Raggio dell'onda d'urto	รัศมี\u200Bคลื่น\u200Bกระแทก	Poloměr rázové vlny	Bán kính sóng xung kích	Radio de onda expansiva
+Max Shockwave Flips	冲击波最多翻石数	Макс. подбросов волной	Máx. de lançamentos da onda	Max. Schockwellenwürfe	衝撃波の最大フリップ数	충격파 최대 플립 수	Máx. de volteos de onda	Lancers max de l'onde	Maks. şok dalgası fırlatma	衝擊波最多翻石數	Maks. podrzutów fali	Макс. підкидів хвилею	Lanci max dell'onda	จำนวน\u200Bโยน\u200Bสูงสุด\u200Bของ\u200Bคลื่น	Max. nadhozů vlnou	Số lần tung tối đa của sóng	Máx. de volteos de onda
+Chance	几率	Шанс	Chance	Chance	確率	확률	Probabilidad	Chance	Şans	機率	Szansa	Шанс	Probabilità	โอกาส	Šance	Tỉ lệ	Probabilidad
+Radius	半径	Радиус	Raio	Radius	半径	반경	Radio	Rayon	Yarıçap	半徑	Promień	Радіус	Raggio	รัศมี	Poloměr	Bán kính	Radio
 # Flipper Bots
-Flipper Bot	翻石机器人	Флиппер-бот	Bot lançador	Wurfbot	フリッパーボット	플리퍼 봇	Bot volteador	Robot lanceur	Fırlatıcı bot	翻石機器人	Bot podrzucający	Фліпер-бот	Bot lanciatore	บอท\u200Bโยน\u200Bหิน	Nadhazovací bot	Bot tung đá
-Active Time	工作时间	Время работы	Tempo ativo	Aktivzeit	稼働時間	활동 시간	Tiempo activo	Temps actif	Aktif süre	運作時間	Czas aktywności	Час роботи	Tempo attivo	เวลา\u200Bทำงาน	Doba aktivity	Thời gian hoạt động
-Idle Time	待机时间	Время простоя	Tempo ocioso	Ruhezeit	待機時間	대기 시간	Tiempo inactivo	Temps de repos	Dinlenme süresi	待機時間	Czas bezczynności	Час простою	Tempo di riposo	เวลา\u200Bพัก	Doba nečinnosti	Thời gian nghỉ
-Flip Range	翻石范围	Радиус подброса	Alcance de lançamento	Wurfradius	フリップ範囲	플립 범위	Alcance de volteo	Portée de lancer	Fırlatma menzili	翻石範圍	Zasięg podrzutu	Радіус підкиду	Raggio di lancio	ระยะ\u200Bโยน	Dosah nadhozu	Tầm tung
-Strength	力量	Сила	Força	Stärke	パワー	힘	Fuerza	Force	Güç	力量	Siła	Сила	Forza	พลัง	Síla	Sức mạnh
-Smart Pathing	智能寻路	Умный маршрут	Rota inteligente	Kluge Routen	スマート経路	스마트 경로	Ruta inteligente	Trajet intelligent	Akıllı rota	智慧尋路	Inteligentna trasa	Розумний маршрут	Percorso intelligente	เส้นทาง\u200Bอัจฉริยะ	Chytré trasy	Tìm đường thông minh
-Movement Speed	移动速度	Скорость движения	Velocidade de movimento	Bewegungstempo	移動速度	이동 속도	Velocidad de movimiento	Vitesse de déplacement	Hareket hızı	移動速度	Prędkość ruchu	Швидкість руху	Velocità di movimento	ความ\u200Bเร็ว\u200Bเคลื่อนที่	Rychlost pohybu	Tốc độ di chuyển
-Flipping Interval	翻石间隔	Интервал подброса	Intervalo de lançamento	Wurfintervall	フリップ間隔	플립 간격	Intervalo de volteo	Intervalle de lancer	Fırlatma aralığı	翻石間隔	Odstęp podrzutów	Інтервал підкиду	Intervallo di lancio	ช่วง\u200Bเวลา\u200Bโยน	Interval nadhozu	Chu kỳ tung
-Max Count	数量上限	Макс. количество	Quantidade máx.	Max. Anzahl	最大数	최대 개수	Cantidad máx.	Nombre max	Maks. sayı	數量上限	Maks. liczba	Макс. кількість	Numero max	จำนวน\u200Bสูงสุด	Max. počet	Số lượng tối đa
+Flipper Bot	翻石机器人	Флиппер-бот	Bot lançador	Wurfbot	フリッパーボット	플리퍼 봇	Bot volteador	Robot lanceur	Fırlatıcı bot	翻石機器人	Bot podrzucający	Фліпер-бот	Bot lanciatore	บอท\u200Bโยน\u200Bหิน	Nadhazovací bot	Bot tung đá	Bot volteador
+Active Time	工作时间	Время работы	Tempo ativo	Aktivzeit	稼働時間	활동 시간	Tiempo activo	Temps actif	Aktif süre	運作時間	Czas aktywności	Час роботи	Tempo attivo	เวลา\u200Bทำงาน	Doba aktivity	Thời gian hoạt động	Tiempo activo
+Idle Time	待机时间	Время простоя	Tempo ocioso	Ruhezeit	待機時間	대기 시간	Tiempo inactivo	Temps de repos	Dinlenme süresi	待機時間	Czas bezczynności	Час простою	Tempo di riposo	เวลา\u200Bพัก	Doba nečinnosti	Thời gian nghỉ	Tiempo inactivo
+Flip Range	翻石范围	Радиус подброса	Alcance de lançamento	Wurfradius	フリップ範囲	플립 범위	Alcance de volteo	Portée de lancer	Fırlatma menzili	翻石範圍	Zasięg podrzutu	Радіус підкиду	Raggio di lancio	ระยะ\u200Bโยน	Dosah nadhozu	Tầm tung	Alcance de volteo
+Strength	力量	Сила	Força	Stärke	パワー	힘	Fuerza	Force	Güç	力量	Siła	Сила	Forza	พลัง	Síla	Sức mạnh	Fuerza
+Smart Pathing	智能寻路	Умный маршрут	Rota inteligente	Kluge Routen	スマート経路	스마트 경로	Ruta inteligente	Trajet intelligent	Akıllı rota	智慧尋路	Inteligentna trasa	Розумний маршрут	Percorso intelligente	เส้นทาง\u200Bอัจฉริยะ	Chytré trasy	Tìm đường thông minh	Ruta inteligente
+Movement Speed	移动速度	Скорость движения	Velocidade de movimento	Bewegungstempo	移動速度	이동 속도	Velocidad de movimiento	Vitesse de déplacement	Hareket hızı	移動速度	Prędkość ruchu	Швидкість руху	Velocità di movimento	ความ\u200Bเร็ว\u200Bเคลื่อนที่	Rychlost pohybu	Tốc độ di chuyển	Velocidad de movimiento
+Flipping Interval	翻石间隔	Интервал подброса	Intervalo de lançamento	Wurfintervall	フリップ間隔	플립 간격	Intervalo de volteo	Intervalle de lancer	Fırlatma aralığı	翻石間隔	Odstęp podrzutów	Інтервал підкиду	Intervallo di lancio	ช่วง\u200Bเวลา\u200Bโยน	Interval nadhozu	Chu kỳ tung	Intervalo de volteo
+Max Count	数量上限	Макс. количество	Quantidade máx.	Max. Anzahl	最大数	최대 개수	Cantidad máx.	Nombre max	Maks. sayı	數量上限	Maks. liczba	Макс. кількість	Numero max	จำนวน\u200Bสูงสุด	Max. počet	Số lượng tối đa	Cantidad máx.
 # Mouse
-Mouse	鼠标	Мышь	Mouse	Maus	マウス	마우스	Ratón	Souris	Fare	滑鼠	Mysz	Миша	Mouse	เมาส์	Myš	Chuột
-Hover	悬停	Наведение	Pairar	Mouseover	ホバー	호버	Pasar encima	Survol	Üzerine gelme	懸停	Najechanie	Наведення	Sorvolo	โฮเวอร์	Najetí	Di chuột
-Area Flip	范围翻石	Массовый подброс	Lançamento em área	Flächenwurf	範囲フリップ	범위 플립	Volteo en área	Lancer de zone	Alan fırlatma	範圍翻石	Podrzut obszarowy	Масовий підкид	Lancio ad area	โยน\u200Bวง\u200Bกว้าง	Plošný nadhoz	Tung diện rộng
-Mouse Radius	鼠标半径	Радиус мыши	Raio do mouse	Mausradius	マウス半径	마우스 반경	Radio del ratón	Rayon de la souris	Fare yarıçapı	滑鼠半徑	Promień myszy	Радіус миші	Raggio del mouse	รัศมี\u200Bเมาส์	Poloměr myši	Bán kính chuột
+Mouse	鼠标	Мышь	Mouse	Maus	マウス	마우스	Ratón	Souris	Fare	滑鼠	Mysz	Миша	Mouse	เมาส์	Myš	Chuột	Mouse
+Hover	悬停	Наведение	Pairar	Mouseover	ホバー	호버	Pasar encima	Survol	Üzerine gelme	懸停	Najechanie	Наведення	Sorvolo	โฮเวอร์	Najetí	Di chuột	Pasar encima
+Area Flip	范围翻石	Массовый подброс	Lançamento em área	Flächenwurf	範囲フリップ	범위 플립	Volteo en área	Lancer de zone	Alan fırlatma	範圍翻石	Podrzut obszarowy	Масовий підкид	Lancio ad area	โยน\u200Bวง\u200Bกว้าง	Plošný nadhoz	Tung diện rộng	Volteo en área
+Mouse Radius	鼠标半径	Радиус мыши	Raio do mouse	Mausradius	マウス半径	마우스 반경	Radio del ratón	Rayon de la souris	Fare yarıçapı	滑鼠半徑	Promień myszy	Радіус миші	Raggio del mouse	รัศมี\u200Bเมาส์	Poloměr myši	Bán kính chuột	Radio del mouse
 # Monoliths
-Monolith	巨碑	Монолит	Monólito	Monolith	モノリス	모노리스	Monolito	Monolithe	Monolit	巨碑	Monolit	Моноліт	Monolito	โมโนลิธ	Monolit	Monolith
-Monolith L VIII	巨碑 L VIII	Монолит L VIII	Monólito L VIII	Monolith L VIII	モノリス L VIII	모노리스 L VIII	Monolito L VIII	Monolithe L VIII	Monolit L VIII	巨碑 L VIII	Monolit L VIII	Моноліт L VIII	Monolito L VIII	โมโนลิธ L VIII	Monolit L VIII	Monolith L VIII
-Beam	光束	Луч	Feixe	Strahl	ビーム	빔	Rayo	Faisceau	Işın	光束	Wiązka	Промінь	Fascio	ลำแสง	Paprsek	Tia
-Laser Beam	激光束	Лазерный луч	Feixe de laser	Laserstrahl	レーザービーム	레이저 빔	Rayo láser	Faisceau laser	Lazer ışını	雷射光束	Wiązka lasera	Лазерний промінь	Fascio laser	ลำแสง\u200Bเลเซอร์	Laserový paprsek	Tia laser
-Max Beam Count	最大光束数	Макс. количество лучей	Máx. de feixes	Max. Strahlen	最大ビーム数	최대 빔 수	Máx. de rayos	Faisceaux max	Maks. ışın sayısı	最大光束數	Maks. liczba wiązek	Макс. кількість променів	Fasci max	จำนวน\u200Bลำแสง\u200Bสูงสุด	Max. počet paprsků	Số tia tối đa
-Min Beam Count	最小光束数	Мин. количество лучей	Mín. de feixes	Min. Strahlen	最小ビーム数	최소 빔 수	Mín. de rayos	Faisceaux min	Min. ışın sayısı	最小光束數	Min. liczba wiązek	Мін. кількість променів	Fasci min	จำนวน\u200Bลำแสง\u200Bต่ำสุด	Min. počet paprsků	Số tia tối thiểu
-Shooting Interval	射击间隔	Интервал выстрелов	Intervalo de disparo	Schussintervall	発射間隔	발사 간격	Intervalo de disparo	Intervalle de tir	Atış aralığı	射擊間隔	Odstęp strzałów	Інтервал пострілів	Intervallo di tiro	ช่วง\u200Bเวลา\u200Bยิง	Interval střelby	Chu kỳ bắn
-Temporary Multiplier	临时倍率	Временный множитель	Multiplicador temporário	Temporärer Multiplikator	一時倍率	임시 배율	Multiplicador temporal	Multiplicateur temporaire	Geçici çarpan	臨時倍率	Mnożnik tymczasowy	Тимчасовий множник	Moltiplicatore temporaneo	ตัวคูณ\u200Bชั่วคราว	Dočasný násobitel	Hệ số nhân tạm thời
-The Rift	裂隙	Разлом	A Fenda	Der Riss	リフト	균열	La Grieta	La Faille	Yarık	裂隙	Szczelina	Розлом	Lo Squarcio	รอย\u200Bแยก	Trhlina	Khe nứt
+Monolith	巨碑	Монолит	Monólito	Monolith	モノリス	모노리스	Monolito	Monolithe	Monolit	巨碑	Monolit	Моноліт	Monolito	โมโนลิธ	Monolit	Monolith	Monolito
+Monolith L VIII	巨碑 L VIII	Монолит L VIII	Monólito L VIII	Monolith L VIII	モノリス L VIII	모노리스 L VIII	Monolito L VIII	Monolithe L VIII	Monolit L VIII	巨碑 L VIII	Monolit L VIII	Моноліт L VIII	Monolito L VIII	โมโนลิธ L VIII	Monolit L VIII	Monolith L VIII	Monolito L VIII
+Beam	光束	Луч	Feixe	Strahl	ビーム	빔	Rayo	Faisceau	Işın	光束	Wiązka	Промінь	Fascio	ลำแสง	Paprsek	Tia	Rayo
+Laser Beam	激光束	Лазерный луч	Feixe de laser	Laserstrahl	レーザービーム	레이저 빔	Rayo láser	Faisceau laser	Lazer ışını	雷射光束	Wiązka lasera	Лазерний промінь	Fascio laser	ลำแสง\u200Bเลเซอร์	Laserový paprsek	Tia laser	Rayo láser
+Max Beam Count	最大光束数	Макс. количество лучей	Máx. de feixes	Max. Strahlen	最大ビーム数	최대 빔 수	Máx. de rayos	Faisceaux max	Maks. ışın sayısı	最大光束數	Maks. liczba wiązek	Макс. кількість променів	Fasci max	จำนวน\u200Bลำแสง\u200Bสูงสุด	Max. počet paprsků	Số tia tối đa	Máx. de rayos
+Min Beam Count	最小光束数	Мин. количество лучей	Mín. de feixes	Min. Strahlen	最小ビーム数	최소 빔 수	Mín. de rayos	Faisceaux min	Min. ışın sayısı	最小光束數	Min. liczba wiązek	Мін. кількість променів	Fasci min	จำนวน\u200Bลำแสง\u200Bต่ำสุด	Min. počet paprsků	Số tia tối thiểu	Mín. de rayos
+Shooting Interval	射击间隔	Интервал выстрелов	Intervalo de disparo	Schussintervall	発射間隔	발사 간격	Intervalo de disparo	Intervalle de tir	Atış aralığı	射擊間隔	Odstęp strzałów	Інтервал пострілів	Intervallo di tiro	ช่วง\u200Bเวลา\u200Bยิง	Interval střelby	Chu kỳ bắn	Intervalo de disparo
+Temporary Multiplier	临时倍率	Временный множитель	Multiplicador temporário	Temporärer Multiplikator	一時倍率	임시 배율	Multiplicador temporal	Multiplicateur temporaire	Geçici çarpan	臨時倍率	Mnożnik tymczasowy	Тимчасовий множник	Moltiplicatore temporaneo	ตัวคูณ\u200Bชั่วคราว	Dočasný násobitel	Hệ số nhân tạm thời	Multiplicador temporal
+The Rift	裂隙	Разлом	A Fenda	Der Riss	リフト	균열	La Grieta	La Faille	Yarık	裂隙	Szczelina	Розлом	Lo Squarcio	รอย\u200Bแยก	Trhlina	Khe nứt	La Grieta
 # Chests and items
-Chest	宝箱	Сундук	Baú	Truhe	宝箱	상자	Cofre	Coffre	Sandık	寶箱	Skrzynia	Скриня	Forziere	หีบ	Truhla	Rương
-Chest Bar	宝箱进度条	Шкала сундука	Barra de baú	Truhenleiste	宝箱ゲージ	상자 게이지	Barra de cofre	Barre de coffre	Sandık çubuğu	寶箱進度條	Pasek skrzyni	Шкала скрині	Barra del forziere	แถบ\u200Bหีบ	Ukazatel truhly	Thanh rương
-Chest Exp	宝箱经验	Опыт сундука	XP de baú	Truhen-EP	宝箱EXP	상자 경험치	Exp de cofre	Exp de coffre	Sandık XP	寶箱經驗	PD skrzyni	Досвід скрині	Exp forziere	EXP หีบ	XP truhly	EXP rương
-Open	打开	открыть	abrir	öffnen	開ける	열다	abrir	ouvrir	açmak	打開	otworzyć	відкрити	aprire	เปิด	otevřít	mở
-Drop	掉落	выпасть	cair	fallen	ドロップする	드롭되다	caer	tomber	düşmek	掉落	wypaść	випасти	cadere	ดรอป	padnout	rơi ra
-Item	道具	Предмет	Item	Item	アイテム	아이템	Objeto	Objet	Eşya	道具	Przedmiot	Предмет	Oggetto	ไอเทม	Předmět	Vật phẩm
-Item Level	道具等级	Уровень предмета	Nível do item	Item-Stufe	アイテムレベル	아이템 레벨	Nivel del objeto	Niveau de l'objet	Eşya seviyesi	道具等級	Poziom przedmiotu	Рівень предмета	Livello dell'oggetto	เลเวล\u200Bไอเทม	Úroveň předmětu	Cấp vật phẩm
-Rarity	稀有度	Редкость	Raridade	Seltenheit	レア度	희귀도	Rareza	Rareté	Nadirlik	稀有度	Rzadkość	Рідкість	Rarità	ความ\u200Bหายาก	Vzácnost	Độ hiếm
-Common	普通	Обычный	Comum	Gewöhnlich	コモン	일반	Común	Commun	Yaygın	普通	Zwykły	Звичайний	Comune	ธรรมดา	Běžný	Thường
-Uncommon	优秀	Необычный	Incomum	Ungewöhnlich	アンコモン	고급	Poco común	Peu commun	Seyrek	優秀	Niezwykły	Незвичайний	Non comune	ไม่\u200Bธรรมดา	Neobvyklý	Ít gặp
-Rare	稀有	Редкий	Raro	Selten	レア	희귀	Raro	Rare	Nadir	稀有	Rzadki	Рідкісний	Raro	หายาก	Vzácný	Hiếm
-Epic	史诗	Эпический	Épico	Episch	エピック	영웅	Épico	Épique	Destansı	史詩	Epicki	Епічний	Epico	มหากาพย์	Epický	Sử thi
-Unique	唯一	Уникальный	Único	Einzigartig	ユニーク	고유	Único	Unique	Eşsiz	唯一	Unikatowy	Унікальний	Unico	ไม่\u200Bซ้ำ\u200Bใคร	Unikátní	Độc nhất
-Alarm Clock	闹钟	Будильник	Despertador	Wecker	目覚まし時計	알람 시계	Despertador	Réveil	Çalar saat	鬧鐘	Budzik	Будильник	Sveglia	นาฬิกา\u200Bปลุก	Budík	Đồng hồ báo thức
-Battery	电池	Батарейка	Bateria	Batterie	電池	배터리	Batería	Batterie	Pil	電池	Bateria	Батарейка	Batteria	แบตเตอรี่	Baterie	Pin
-Dice	骰子	Кубики	Dados	Würfel	サイコロ	주사위	Dados	Dés	Zar	骰子	Kości	Кубики	Dadi	ลูกเต๋า	Kostky	Xúc xắc
-Hammer	锤子	Молоток	Martelo	Hammer	ハンマー	망치	Martillo	Marteau	Çekiç	鎚子	Młotek	Молоток	Martello	ค้อน	Kladivo	Búa
-Key	钥匙	Ключ	Chave	Schlüssel	鍵	열쇠	Llave	Clé	Anahtar	鑰匙	Klucz	Ключ	Chiave	กุญแจ	Klíč	Chìa khóa
-Lantern	提灯	Фонарь	Lanterna	Laterne	ランタン	랜턴	Farol	Lanterne	Fener	提燈	Latarnia	Ліхтар	Lanterna	ตะเกียง	Lucerna	Đèn lồng
-Magnifying Glass	放大镜	Лупа	Lupa	Lupe	虫眼鏡	돋보기	Lupa	Loupe	Büyüteç	放大鏡	Lupa	Лупа	Lente d'ingrandimento	แว่น\u200Bขยาย	Lupa	Kính lúp
-Notebook	笔记本	Блокнот	Caderno	Notizbuch	ノート	노트	Cuaderno	Carnet	Defter	筆記本	Notes	Блокнот	Taccuino	สมุด\u200Bโน้ต	Zápisník	Sổ tay
-Pickaxe	鹤嘴镐	Кирка	Picareta	Spitzhacke	つるはし	곡괭이	Pico	Pioche	Kazma	十字鎬	Kilof	Кайло	Piccone	อีเต้อ	Krumpáč	Cuốc chim
-Sneakers	运动鞋	Кроссовки	Tênis	Turnschuhe	スニーカー	운동화	Zapatillas	Baskets	Spor ayakkabı	球鞋	Trampki	Кросівки	Sneakers	รองเท้า\u200Bผ้าใบ	Tenisky	Giày thể thao
-Soap	肥皂	Мыло	Sabonete	Seife	石鹸	비누	Jabón	Savon	Sabun	肥皂	Mydło	Мило	Sapone	สบู่	Mýdlo	Xà phòng
-Spring	弹簧	Пружина	Mola	Feder	バネ	스프링	Muelle	Ressort	Yay	彈簧	Sprężyna	Пружина	Molla	สปริง	Pružina	Lò xo
-Wallet	钱包	Кошелёк	Carteira	Geldbörse	財布	지갑	Cartera	Portefeuille	Cüzdan	錢包	Portfel	Гаманець	Portafoglio	กระเป๋า\u200Bสตางค์	Peněženka	Ví
-Wrench	扳手	Гаечный ключ	Chave inglesa	Maulschlüssel	レンチ	렌치	Llave inglesa	Clé à molette	İngiliz anahtarı	扳手	Klucz francuski	Гайковий ключ	Chiave inglese	ประแจ	Francouzský klíč	Cờ lê
+Chest	宝箱	Сундук	Baú	Truhe	宝箱	상자	Cofre	Coffre	Sandık	寶箱	Skrzynia	Скриня	Forziere	หีบ	Truhla	Rương	Cofre
+Chest Bar	宝箱进度条	Шкала сундука	Barra de baú	Truhenleiste	宝箱ゲージ	상자 게이지	Barra de cofre	Barre de coffre	Sandık çubuğu	寶箱進度條	Pasek skrzyni	Шкала скрині	Barra del forziere	แถบ\u200Bหีบ	Ukazatel truhly	Thanh rương	Barra de cofre
+Chest Exp	宝箱经验	Опыт сундука	XP de baú	Truhen-EP	宝箱EXP	상자 경험치	Exp de cofre	Exp de coffre	Sandık XP	寶箱經驗	PD skrzyni	Досвід скрині	Exp forziere	EXP หีบ	XP truhly	EXP rương	Exp de cofre
+Open	打开	открыть	abrir	öffnen	開ける	열다	abrir	ouvrir	açmak	打開	otworzyć	відкрити	aprire	เปิด	otevřít	mở	abrir
+Drop	掉落	выпасть	cair	fallen	ドロップする	드롭되다	caer	tomber	düşmek	掉落	wypaść	випасти	cadere	ดรอป	padnout	rơi ra	caer
+Item	道具	Предмет	Item	Item	アイテム	아이템	Objeto	Objet	Eşya	道具	Przedmiot	Предмет	Oggetto	ไอเทม	Předmět	Vật phẩm	Objeto
+Item Level	道具等级	Уровень предмета	Nível do item	Item-Stufe	アイテムレベル	아이템 레벨	Nivel del objeto	Niveau de l'objet	Eşya seviyesi	道具等級	Poziom przedmiotu	Рівень предмета	Livello dell'oggetto	เลเวล\u200Bไอเทม	Úroveň předmětu	Cấp vật phẩm	Nivel del objeto
+Rarity	稀有度	Редкость	Raridade	Seltenheit	レア度	희귀도	Rareza	Rareté	Nadirlik	稀有度	Rzadkość	Рідкість	Rarità	ความ\u200Bหายาก	Vzácnost	Độ hiếm	Rareza
+Common	普通	Обычный	Comum	Gewöhnlich	コモン	일반	Común	Commun	Yaygın	普通	Zwykły	Звичайний	Comune	ธรรมดา	Běžný	Thường	Común
+Uncommon	优秀	Необычный	Incomum	Ungewöhnlich	アンコモン	고급	Poco común	Peu commun	Seyrek	優秀	Niezwykły	Незвичайний	Non comune	ไม่\u200Bธรรมดา	Neobvyklý	Ít gặp	Poco común
+Rare	稀有	Редкий	Raro	Selten	レア	희귀	Raro	Rare	Nadir	稀有	Rzadki	Рідкісний	Raro	หายาก	Vzácný	Hiếm	Raro
+Epic	史诗	Эпический	Épico	Episch	エピック	영웅	Épico	Épique	Destansı	史詩	Epicki	Епічний	Epico	มหากาพย์	Epický	Sử thi	Épico
+Unique	唯一	Уникальный	Único	Einzigartig	ユニーク	고유	Único	Unique	Eşsiz	唯一	Unikatowy	Унікальний	Unico	ไม่\u200Bซ้ำ\u200Bใคร	Unikátní	Độc nhất	Único
+Alarm Clock	闹钟	Будильник	Despertador	Wecker	目覚まし時計	알람 시계	Despertador	Réveil	Çalar saat	鬧鐘	Budzik	Будильник	Sveglia	นาฬิกา\u200Bปลุก	Budík	Đồng hồ báo thức	Despertador
+Battery	电池	Батарейка	Bateria	Batterie	電池	배터리	Batería	Batterie	Pil	電池	Bateria	Батарейка	Batteria	แบตเตอรี่	Baterie	Pin	Batería
+Dice	骰子	Кубики	Dados	Würfel	サイコロ	주사위	Dados	Dés	Zar	骰子	Kości	Кубики	Dadi	ลูกเต๋า	Kostky	Xúc xắc	Dados
+Hammer	锤子	Молоток	Martelo	Hammer	ハンマー	망치	Martillo	Marteau	Çekiç	鎚子	Młotek	Молоток	Martello	ค้อน	Kladivo	Búa	Martillo
+Key	钥匙	Ключ	Chave	Schlüssel	鍵	열쇠	Llave	Clé	Anahtar	鑰匙	Klucz	Ключ	Chiave	กุญแจ	Klíč	Chìa khóa	Llave
+Lantern	提灯	Фонарь	Lanterna	Laterne	ランタン	랜턴	Farol	Lanterne	Fener	提燈	Latarnia	Ліхтар	Lanterna	ตะเกียง	Lucerna	Đèn lồng	Farol
+Magnifying Glass	放大镜	Лупа	Lupa	Lupe	虫眼鏡	돋보기	Lupa	Loupe	Büyüteç	放大鏡	Lupa	Лупа	Lente d'ingrandimento	แว่น\u200Bขยาย	Lupa	Kính lúp	Lupa
+Notebook	笔记本	Блокнот	Caderno	Notizbuch	ノート	노트	Cuaderno	Carnet	Defter	筆記本	Notes	Блокнот	Taccuino	สมุด\u200Bโน้ต	Zápisník	Sổ tay	Cuaderno
+Pickaxe	鹤嘴镐	Кирка	Picareta	Spitzhacke	つるはし	곡괭이	Pico	Pioche	Kazma	十字鎬	Kilof	Кайло	Piccone	อีเต้อ	Krumpáč	Cuốc chim	Pico
+Sneakers	运动鞋	Кроссовки	Tênis	Turnschuhe	スニーカー	운동화	Zapatillas	Baskets	Spor ayakkabı	球鞋	Trampki	Кросівки	Sneakers	รองเท้า\u200Bผ้าใบ	Tenisky	Giày thể thao	Tenis
+Soap	肥皂	Мыло	Sabonete	Seife	石鹸	비누	Jabón	Savon	Sabun	肥皂	Mydło	Мило	Sapone	สบู่	Mýdlo	Xà phòng	Jabón
+Spring	弹簧	Пружина	Mola	Feder	バネ	스프링	Muelle	Ressort	Yay	彈簧	Sprężyna	Пружина	Molla	สปริง	Pružina	Lò xo	Resorte
+Wallet	钱包	Кошелёк	Carteira	Geldbörse	財布	지갑	Cartera	Portefeuille	Cüzdan	錢包	Portfel	Гаманець	Portafoglio	กระเป๋า\u200Bสตางค์	Peněženka	Ví	Billetera
+Wrench	扳手	Гаечный ключ	Chave inglesa	Maulschlüssel	レンチ	렌치	Llave inglesa	Clé à molette	İngiliz anahtarı	扳手	Klucz francuski	Гайковий ключ	Chiave inglese	ประแจ	Francouzský klíč	Cờ lê	Llave inglesa
 # Backgrounds
-Background	背景	Фон	Fundo	Hintergrund	背景	배경	Fondo	Décor	Arka plan	背景	Tło	Фон	Sfondo	พื้นหลัง	Pozadí	Phông nền
-BK.GR	背景	Фон	Fundo	Hintergr.	背景	배경	Fondo	Décor	Arka pl.	背景	Tło	Фон	Sfondo	พื้นหลัง	Pozadí	Nền
-Active Background	当前背景	Активный фон	Fundo ativo	Aktiver Hintergrund	使用中の背景	활성 배경	Fondo activo	Décor actif	Etkin arka plan	目前背景	Aktywne tło	Активний фон	Sfondo attivo	พื้นหลัง\u200Bที่\u200Bใช้	Aktivní pozadí	Phông nền đang dùng
-Preferred	首选	Избранный	Preferido	Bevorzugt	おすすめ	선호	Preferido	Préféré	Gözde	首選	Ulubiony	Обраний	Preferito	โปรด	Oblíbený	Ưa thích
-Preferred Background	首选背景	Избранный фон	Fundo preferido	Bevorzugter Hintergrund	おすすめ背景	선호 배경	Fondo preferido	Décor préféré	Gözde arka plan	首選背景	Ulubione tło	Обраний фон	Sfondo preferito	พื้นหลัง\u200Bโปรด	Oblíbené pozadí	Phông nền ưa thích
-Preferred Multiplier	首选倍率	Множитель избранного	Multiplicador preferido	Vorzugsmultiplikator	おすすめ倍率	선호 배율	Multiplicador preferido	Multiplicateur préféré	Gözde çarpanı	首選倍率	Mnożnik ulubionego	Множник обраного	Moltiplicatore preferito	ตัวคูณ\u200Bโปรด	Násobitel oblíbeného	Hệ số nhân ưa thích
-Preferred Interval	首选间隔	Интервал избранного	Intervalo do preferido	Vorzugsintervall	おすすめ間隔	선호 간격	Intervalo del preferido	Intervalle du préféré	Gözde aralığı	首選間隔	Odstęp ulubionego	Інтервал обраного	Intervallo del preferito	รอบ\u200Bเปลี่ยน\u200Bโปรด	Interval oblíbeného	Chu kỳ ưa thích
-All Preferred	全部首选	Все избранные	Todos preferidos	Alle bevorzugt	全部おすすめ	모두 선호	Todos preferidos	Tous préférés	Hepsi gözde	全部首選	Wszystkie ulubione	Усі обрані	Tutti preferiti	โปรด\u200Bทั้ง\u200Bหมด	Všechna oblíbená	Tất cả ưa thích
-Auto Preferred	自动首选	Авто-избранный	Preferido automático	Auto-Bevorzugt	自動おすすめ	자동 선호	Preferido automático	Préféré auto	Otomatik gözde	自動首選	Auto-ulubione	Авто-обраний	Preferito automatico	โปรด\u200Bอัตโนมัติ	Automaticky oblíbené	Tự động ưa thích
-Desert	沙漠	Пустыня	Deserto	Wüste	砂漠	사막	Desierto	Désert	Çöl	沙漠	Pustynia	Пустеля	Deserto	ทะเลทราย	Poušť	Sa mạc
-Grassland	草原	Луга	Pradaria	Grasland	草原	초원	Pradera	Prairie	Çayır	草原	Łąki	Луки	Prateria	ทุ่ง\u200Bหญ้า	Louky	Đồng cỏ
-Mars	火星	Марс	Marte	Mars	火星	화성	Marte	Mars	Mars	火星	Mars	Марс	Marte	ดาว\u200Bอังคาร	Mars	Sao Hỏa
-Tundra	苔原	Тундра	Tundra	Tundra	ツンドラ	툰드라	Tundra	Toundra	Tundra	凍原	Tundra	Тундра	Tundra	ทุนดรา	Tundra	Lãnh nguyên
-Volcanic	火山	Вулкан	Vulcânico	Vulkan	火山	화산	Volcánico	Volcanique	Volkanik	火山	Wulkan	Вулкан	Vulcanico	ภูเขา\u200Bไฟ	Vulkán	Núi lửa
+Background	背景	Фон	Fundo	Hintergrund	背景	배경	Fondo	Décor	Arka plan	背景	Tło	Фон	Sfondo	พื้นหลัง	Pozadí	Phông nền	Fondo
+BK.GR	背景	Фон	Fundo	Hintergr.	背景	배경	Fondo	Décor	Arka pl.	背景	Tło	Фон	Sfondo	พื้นหลัง	Pozadí	Nền	Fondo
+Active Background	当前背景	Активный фон	Fundo ativo	Aktiver Hintergrund	使用中の背景	활성 배경	Fondo activo	Décor actif	Etkin arka plan	目前背景	Aktywne tło	Активний фон	Sfondo attivo	พื้นหลัง\u200Bที่\u200Bใช้	Aktivní pozadí	Phông nền đang dùng	Fondo activo
+Preferred	首选	Избранный	Preferido	Bevorzugt	おすすめ	선호	Preferido	Préféré	Gözde	首選	Ulubiony	Обраний	Preferito	โปรด	Oblíbený	Ưa thích	Preferido
+Preferred Background	首选背景	Избранный фон	Fundo preferido	Bevorzugter Hintergrund	おすすめ背景	선호 배경	Fondo preferido	Décor préféré	Gözde arka plan	首選背景	Ulubione tło	Обраний фон	Sfondo preferito	พื้นหลัง\u200Bโปรด	Oblíbené pozadí	Phông nền ưa thích	Fondo preferido
+Preferred Multiplier	首选倍率	Множитель избранного	Multiplicador preferido	Vorzugsmultiplikator	おすすめ倍率	선호 배율	Multiplicador preferido	Multiplicateur préféré	Gözde çarpanı	首選倍率	Mnożnik ulubionego	Множник обраного	Moltiplicatore preferito	ตัวคูณ\u200Bโปรด	Násobitel oblíbeného	Hệ số nhân ưa thích	Multiplicador preferido
+Preferred Interval	首选间隔	Интервал избранного	Intervalo do preferido	Vorzugsintervall	おすすめ間隔	선호 간격	Intervalo del preferido	Intervalle du préféré	Gözde aralığı	首選間隔	Odstęp ulubionego	Інтервал обраного	Intervallo del preferito	รอบ\u200Bเปลี่ยน\u200Bโปรด	Interval oblíbeného	Chu kỳ ưa thích	Intervalo del preferido
+All Preferred	全部首选	Все избранные	Todos preferidos	Alle bevorzugt	全部おすすめ	모두 선호	Todos preferidos	Tous préférés	Hepsi gözde	全部首選	Wszystkie ulubione	Усі обрані	Tutti preferiti	โปรด\u200Bทั้ง\u200Bหมด	Všechna oblíbená	Tất cả ưa thích	Todos preferidos
+Auto Preferred	自动首选	Авто-избранный	Preferido automático	Auto-Bevorzugt	自動おすすめ	자동 선호	Preferido automático	Préféré auto	Otomatik gözde	自動首選	Auto-ulubione	Авто-обраний	Preferito automatico	โปรด\u200Bอัตโนมัติ	Automaticky oblíbené	Tự động ưa thích	Preferido automático
+Desert	沙漠	Пустыня	Deserto	Wüste	砂漠	사막	Desierto	Désert	Çöl	沙漠	Pustynia	Пустеля	Deserto	ทะเลทราย	Poušť	Sa mạc	Desierto
+Grassland	草原	Луга	Pradaria	Grasland	草原	초원	Pradera	Prairie	Çayır	草原	Łąki	Луки	Prateria	ทุ่ง\u200Bหญ้า	Louky	Đồng cỏ	Pradera
+Mars	火星	Марс	Marte	Mars	火星	화성	Marte	Mars	Mars	火星	Mars	Марс	Marte	ดาว\u200Bอังคาร	Mars	Sao Hỏa	Marte
+Tundra	苔原	Тундра	Tundra	Tundra	ツンドラ	툰드라	Tundra	Toundra	Tundra	凍原	Tundra	Тундра	Tundra	ทุนดรา	Tundra	Lãnh nguyên	Tundra
+Volcanic	火山	Вулкан	Vulcânico	Vulkan	火山	화산	Volcánico	Volcanique	Volkanik	火山	Wulkan	Вулкан	Vulcanico	ภูเขา\u200Bไฟ	Vulkán	Núi lửa	Volcánico
 # Currencies and progression
-Cash	现金	Деньги	Dinheiro	Geld	キャッシュ	캐시	Dinero	Argent	Para	現金	Gotówka	Гроші	Denaro	เงิน	Hotovost	Tiền
-Cash Income	现金收入	Доход	Renda	Einkommen	キャッシュ収入	캐시 수입	Ingresos	Revenus	Gelir	現金收入	Dochód	Дохід	Entrate	รายได้	Příjem	Thu nhập
-Star	星星	Звезда	Estrela	Stern	スター	별	Estrella	Étoile	Yıldız	星星	Gwiazda	Зірка	Stella	ดาว	Hvězda	Sao
-Multiplier	倍率	Множитель	Multiplicador	Multiplikator	倍率	배율	Multiplicador	Multiplicateur	Çarpan	倍率	Mnożnik	Множник	Moltiplicatore	ตัวคูณ	Násobitel	Hệ Số Nhân
-Level	等级	Уровень	Nível	Stufe	レベル	레벨	Nivel	Niveau	Seviye	等級	Poziom	Рівень	Livello	เลเวล	Úroveň	Cấp độ
-Lvl.	Lv.	Ур.	Nív.	Stufe	Lv.	Lv.	Niv.	Niv.	Sv.	Lv.	Poz.	Рів.	Liv.	Lv.	Úr.	Cấp
-Level Up	升级	повысить уровень / новый уровень	subir de nível	aufsteigen / Stufenaufstieg	レベルアップする / レベルアップ	레벨 업하다 / 레벨 업	subir de nivel	monter de niveau	seviye atlamak	升級	awansować / awans	підвищити рівень / новий рівень	salire di livello	เลเวล\u200Bอัป	postoupit / postup úrovně	lên cấp
-Level Bar	等级进度条	Шкала уровня	Barra de nível	Stufenleiste	レベルゲージ	레벨 게이지	Barra de nivel	Barre de niveau	Seviye çubuğu	等級進度條	Pasek poziomu	Шкала рівня	Barra del livello	แถบ\u200Bเลเวล	Ukazatel úrovně	Thanh cấp độ
-Exp	经验	Опыт	XP	EP	EXP	경험치	Exp	Exp	XP	經驗	PD	Досвід	Exp	EXP	XP	EXP
-Level Exp	等级经验	Опыт уровня	XP de nível	Stufen-EP	レベルEXP	레벨 경험치	Exp de nivel	Exp de niveau	Seviye XP	等級經驗	PD poziomu	Досвід рівня	Exp di livello	EXP เลเวล	XP úrovně	EXP cấp độ
-Skill	技能	Навык	Habilidade	Fähigkeit	スキル	스킬	Habilidad	Compétence	Yetenek	技能	Umiejętność	Навичка	Abilità	สกิล	Dovednost	Kỹ năng
-Skill Tree	技能树	Древо навыков	Árvore de habilidades	Fähigkeitsbaum	スキルツリー	스킬 트리	Árbol de habilidades	Arbre de compétences	Yetenek ağacı	技能樹	Drzewko umiejętności	Дерево навичок	Albero delle abilità	สกิล\u200Bทรี	Strom dovedností	Cây kỹ năng
-Skill Level	技能等级	Уровень навыка	Nível da habilidade	Fähigkeitsstufe	スキルレベル	스킬 레벨	Nivel de habilidad	Niveau de compétence	Yetenek seviyesi	技能等級	Poziom umiejętności	Рівень навички	Livello dell'abilità	เลเวล\u200Bสกิล	Úroveň dovednosti	Cấp kỹ năng
-Skill Points	技能点	Очки навыков	Pontos de Habilidade	Fähigkeitspunkte	スキルポイント	스킬 포인트	Puntos de Habilidad	Points de compétence	Yetenek Puanı	技能點	Punkty Umiejętności	Очки навичок	Punti Abilità	แต้ม\u200Bทักษะ	Body dovedností	Điểm kỹ năng
-Shop	商店	Магазин	Loja	Shop	ショップ	상점	Tienda	Boutique	Mağaza	商店	Sklep	Магазин	Negozio	ร้านค้า	Obchod	Cửa hàng
-Upgrade	强化	Улучшение	Melhoria	Upgrade	強化	강화	Mejora	Amélioration	Yükseltme	強化	Ulepszenie	Покращення	Potenziamento	อัปเกรด	Vylepšení	Nâng cấp
-Unlock	解锁	открыть	desbloquear	freischalten	解放する	해금하다	desbloquear	débloquer	kilidini açmak	解鎖	odblokować	розблокувати	sbloccare	ปลดล็อก	odemknout	mở khóa
-Enable	启用	Включить	Ativar	Aktivieren	有効化	활성화	Activar	Activer	Etkinleştir	啟用	Włącz	Увімкнути	Attiva	เปิดใช้	Aktivovat	Kích hoạt
-Count	数量	Количество	Quantidade	Anzahl	数	개수	Cantidad	Nombre	Sayı	數量	Liczba	Кількість	Numero	จำนวน	Počet	Số lượng
-Speed	速度	Скорость	Velocidade	Geschwindigkeit	速度	속도	Velocidad	Vitesse	Hız	速度	Prędkość	Швидкість	Velocità	ความเร็ว	Rychlost	Tốc độ
-Maxed	已满级	Максимум	Máximo	Maximal	最大	최대	Máximo	Maximum	Maksimum	已滿級	Max	Максимум	Massimo	เต็ม\u200Bแล้ว	Max	Tối đa
-Demo	试玩版	Демо	Demo	Demo	体験版	데모	Demo	Démo	Demo	試玩版	Demo	Демо	Demo	เดโม	Demo	Demo
-Full Game	完整版	Полная версия	Jogo completo	Vollversion	製品版	정식 버전	Juego completo	Jeu complet	Tam oyun	完整版	Pełna wersja	Повна версія	Gioco completo	ฉบับ\u200Bเต็ม	Plná hra	Bản đầy đủ
-Wishlist	愿望单	Желаемое	Lista de desejos	Wunschliste	ウィッシュリスト	찜하기	Lista de deseos	Liste de souhaits	İstek listesi	願望清單	Lista życzeń	Список бажаного	Lista dei desideri	รายการ\u200Bที่\u200Bอยาก\u200Bได้	Seznam přání	Danh sách ước muốn
+Cash	现金	Деньги	Dinheiro	Geld	キャッシュ	캐시	Dinero	Argent	Para	現金	Gotówka	Гроші	Denaro	เงิน	Hotovost	Tiền	Dinero
+Cash Income	现金收入	Доход	Renda	Einkommen	キャッシュ収入	캐시 수입	Ingresos	Revenus	Gelir	現金收入	Dochód	Дохід	Entrate	รายได้	Příjem	Thu nhập	Ingresos
+Star	星星	Звезда	Estrela	Stern	スター	별	Estrella	Étoile	Yıldız	星星	Gwiazda	Зірка	Stella	ดาว	Hvězda	Sao	Estrella
+Multiplier	倍率	Множитель	Multiplicador	Multiplikator	倍率	배율	Multiplicador	Multiplicateur	Çarpan	倍率	Mnożnik	Множник	Moltiplicatore	ตัวคูณ	Násobitel	Hệ Số Nhân	Multiplicador
+Level	等级	Уровень	Nível	Stufe	レベル	레벨	Nivel	Niveau	Seviye	等級	Poziom	Рівень	Livello	เลเวล	Úroveň	Cấp độ	Nivel
+Lvl.	Lv.	Ур.	Nív.	Stufe	Lv.	Lv.	Niv.	Niv.	Sv.	Lv.	Poz.	Рів.	Liv.	Lv.	Úr.	Cấp	Niv.
+Level Up	升级	повысить уровень / новый уровень	subir de nível	aufsteigen / Stufenaufstieg	レベルアップする / レベルアップ	레벨 업하다 / 레벨 업	subir de nivel	monter de niveau	seviye atlamak	升級	awansować / awans	підвищити рівень / новий рівень	salire di livello	เลเวล\u200Bอัป	postoupit / postup úrovně	lên cấp	subir de nivel
+Level Bar	等级进度条	Шкала уровня	Barra de nível	Stufenleiste	レベルゲージ	레벨 게이지	Barra de nivel	Barre de niveau	Seviye çubuğu	等級進度條	Pasek poziomu	Шкала рівня	Barra del livello	แถบ\u200Bเลเวล	Ukazatel úrovně	Thanh cấp độ	Barra de nivel
+Exp	经验	Опыт	XP	EP	EXP	경험치	Exp	Exp	XP	經驗	PD	Досвід	Exp	EXP	XP	EXP	Exp
+Level Exp	等级经验	Опыт уровня	XP de nível	Stufen-EP	レベルEXP	레벨 경험치	Exp de nivel	Exp de niveau	Seviye XP	等級經驗	PD poziomu	Досвід рівня	Exp di livello	EXP เลเวล	XP úrovně	EXP cấp độ	Exp de nivel
+Skill	技能	Навык	Habilidade	Fähigkeit	スキル	스킬	Habilidad	Compétence	Yetenek	技能	Umiejętność	Навичка	Abilità	สกิล	Dovednost	Kỹ năng	Habilidad
+Skill Tree	技能树	Древо навыков	Árvore de habilidades	Fähigkeitsbaum	スキルツリー	스킬 트리	Árbol de habilidades	Arbre de compétences	Yetenek ağacı	技能樹	Drzewko umiejętności	Дерево навичок	Albero delle abilità	สกิล\u200Bทรี	Strom dovedností	Cây kỹ năng	Árbol de habilidades
+Skill Level	技能等级	Уровень навыка	Nível da habilidade	Fähigkeitsstufe	スキルレベル	스킬 레벨	Nivel de habilidad	Niveau de compétence	Yetenek seviyesi	技能等級	Poziom umiejętności	Рівень навички	Livello dell'abilità	เลเวล\u200Bสกิล	Úroveň dovednosti	Cấp kỹ năng	Nivel de habilidad
+Skill Points	技能点	Очки навыков	Pontos de Habilidade	Fähigkeitspunkte	スキルポイント	스킬 포인트	Puntos de Habilidad	Points de compétence	Yetenek Puanı	技能點	Punkty Umiejętności	Очки навичок	Punti Abilità	แต้ม\u200Bทักษะ	Body dovedností	Điểm kỹ năng	Puntos de habilidad
+Shop	商店	Магазин	Loja	Shop	ショップ	상점	Tienda	Boutique	Mağaza	商店	Sklep	Магазин	Negozio	ร้านค้า	Obchod	Cửa hàng	Tienda
+Upgrade	强化	Улучшение	Melhoria	Upgrade	強化	강화	Mejora	Amélioration	Yükseltme	強化	Ulepszenie	Покращення	Potenziamento	อัปเกรด	Vylepšení	Nâng cấp	Mejora
+Unlock	解锁	открыть	desbloquear	freischalten	解放する	해금하다	desbloquear	débloquer	kilidini açmak	解鎖	odblokować	розблокувати	sbloccare	ปลดล็อก	odemknout	mở khóa	desbloquear
+Enable	启用	Включить	Ativar	Aktivieren	有効化	활성화	Activar	Activer	Etkinleştir	啟用	Włącz	Увімкнути	Attiva	เปิดใช้	Aktivovat	Kích hoạt	Activar
+Count	数量	Количество	Quantidade	Anzahl	数	개수	Cantidad	Nombre	Sayı	數量	Liczba	Кількість	Numero	จำนวน	Počet	Số lượng	Cantidad
+Speed	速度	Скорость	Velocidade	Geschwindigkeit	速度	속도	Velocidad	Vitesse	Hız	速度	Prędkość	Швидкість	Velocità	ความเร็ว	Rychlost	Tốc độ	Velocidad
+Maxed	已满级	Максимум	Máximo	Maximal	最大	최대	Máximo	Maximum	Maksimum	已滿級	Max	Максимум	Massimo	เต็ม\u200Bแล้ว	Max	Tối đa	Máximo
+Demo	试玩版	Демо	Demo	Demo	体験版	데모	Demo	Démo	Demo	試玩版	Demo	Демо	Demo	เดโม	Demo	Demo	Demo
+Full Game	完整版	Полная версия	Jogo completo	Vollversion	製品版	정식 버전	Juego completo	Jeu complet	Tam oyun	完整版	Pełna wersja	Повна версія	Gioco completo	ฉบับ\u200Bเต็ม	Plná hra	Bản đầy đủ	Juego completo
+Wishlist	愿望单	Желаемое	Lista de desejos	Wunschliste	ウィッシュリスト	찜하기	Lista de deseos	Liste de souhaits	İstek listesi	願望清單	Lista życzeń	Список бажаного	Lista dei desideri	รายการ\u200Bที่\u200Bอยาก\u200Bได้	Seznam přání	Danh sách ước muốn	Lista de deseados

@@ -1,11 +1,11 @@
 # Target Languages
 
-The languages Rock Flipper is translated into. Read from the Unity Localization settings on 2026-10-18: the locale assets in `Rock Flipper/Assets/_AMainGame/Data/Localization/Locales/` and `Localization Settings.asset`.
+The languages Rock Flipper is translated into. Read from the Unity Localization settings on 2026-10-18 (Spanish (Latin America) added later the same day): the locale assets in `Rock Flipper/Assets/_AMainGame/Data/Localization/Locales/` and `Localization Settings.asset`.
 
 **Source language**: English (`en`), the project locale (`m_ProjectLocaleIdentifier`). It isn't a target.
 
 ## Targets
-16 languages, in the locales' sort order (`m_SortOrder`).
+17 languages, in the locales' sort order (`m_SortOrder`).
 
 | # | Language | Locale code | Sort order |
 |---|---|---|---|
@@ -25,6 +25,7 @@ The languages Rock Flipper is translated into. Read from the Unity Localization 
 | 14 | Thai | `th` | 14 |
 | 15 | Czech | `cs` | 15 |
 | 16 | Vietnamese | `vi` | 16 |
+| 17 | Spanish (Latin America) | `es-419` | 17 |
 
 ## Not Targets
 - **English (`en`)**: the source language.

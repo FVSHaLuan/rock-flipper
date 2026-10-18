@@ -13,7 +13,7 @@ Read these first. This skill is the working checklist; they hold the facts:
 
 ## Targets
 
-16 locales besides English: `zh` (Simplified), `zh-TW` (Traditional, Taiwan usage, not a character conversion of `zh`), `ja`, `ko`, `ru`, `uk`, `pl`, `cs`, `de`, `fr`, `es` (Spain), `it`, `pt-BR` (Brazil), `tr`, `th`, `vi`. Skip the two pseudo-locales. `strings.cs` prints the live list.
+17 locales besides English: `zh` (Simplified), `zh-TW` (Traditional, Taiwan usage, not a character conversion of `zh`), `ja`, `ko`, `ru`, `uk`, `pl`, `cs`, `de`, `fr`, `es` (Spain), `es-419` (Latin America, Latin American usage, not a copy of `es`; it falls back to `es`, so an untranslated entry shows the Spain text), `it`, `pt-BR` (Brazil), `tr`, `th`, `vi`. Skip the two pseudo-locales. `strings.cs` prints the live list.
 
 ## Helpers
 
@@ -55,7 +55,7 @@ Read each entry's metadata first. Comments sit in two places, the shared entry (
 
 - **Placeholders and markup stay exact.** Keep `{0}`, `{name}` and Smart String syntax (`{count:plural:…}`, `{x:choose(…)…}`), translating only the words inside. Plural forms follow the target language: Russian, Ukrainian, Polish and Czech need more forms, Japanese, Korean, Chinese, Thai and Vietnamese one. Keep rich-text tags (`<b>`, `<color=…>`, `<sprite…>`) around the matching words, which can move within the sentence. Keep `[NEWLINE]` and other `[TOKEN]` shorthands, and `[@…]` escapes, as they are.
 - **Don't translate**: the game title `Rock Flipper`, platform and product names (`Steam`, `Steam Deck`), and the rest of the list in `LOC/Glossary.md` (tier codes, monolith names, currency prefixes). The language-name entry `LanguageName` is the language's own name in that language.
-- **Register**: match the existing translations in the same locale (`SHOW=<locale>` on a few translated entries). As of 2026-10-18, `de` uses "du", `es` "tú", `fr` "vous". If a locale has nothing to match, ask.
+- **Register**: match the existing translations in the same locale (`SHOW=<locale>` on a few translated entries). As of 2026-10-18, `de` uses "du", `es` "tú", `es-419` "tú" (plural "ustedes", never "vosotros"), `fr` "vous". If a locale has nothing to match, ask.
 - **Length**: UI labels are short. Stay close to the English length, and prefer the shorter wording for buttons and headers in `de`, `ru`, `pl`, `fr` and `pt-BR`. Respect any limit in the note.
 - **Thai word breaks**: Thai has no spaces between words, and TMP can only wrap a line at a space or a zero-width space (U+200B). Without one, it breaks mid-word wherever the line runs out (`LOC/CLAUDE.md`, Decisions). So every `th` text gets `\u200B` between its words, written as that 6-character escape in the TSV (`write.cs` turns it into the character):
   - `คุณ\u200Bอาจ\u200Bต้อง\u200Bรีสตาร์ท\u200Bเกม` ("you may need to restart the game")

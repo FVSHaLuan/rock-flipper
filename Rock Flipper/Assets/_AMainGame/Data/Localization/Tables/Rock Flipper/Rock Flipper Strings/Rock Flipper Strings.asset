@@ -31,6 +31,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e9b15faf87eb0954bbc48b1c30ae6cf2, type: 2}
   - {fileID: 11400000, guid: 9911b61eb1fabdf44826fa8dbfe78eb4, type: 2}
   - {fileID: 11400000, guid: 273be9326975bce40b050c93a555256c, type: 2}
+  - {fileID: 11400000, guid: 3e9c38ea60a0b37468f15fa46d47774a, type: 2}
   m_Extensions: []
   m_Group: Rock Flipper
   references:

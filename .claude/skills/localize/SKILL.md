@@ -7,7 +7,7 @@ description: Localize player-facing text in Rock Flipper with Unity Localization
 
 Read these first. This skill is the working checklist; they hold the facts:
 - `Rock Flipper/Assets/_AMainGame/Scripts/Localization/CLAUDE.md`: helpers, tables, settings, the coverage audit.
-- `LOC/CLAUDE.md`: the owner's decisions (16 locales, AI translation, partly-live language switch) and the proposed plan.
+- `LOC/CLAUDE.md`: the owner's decisions (17 target locales, AI translation, partly-live language switch) and the proposed plan.
 
 ## 1. Find out how the text gets on screen
 
@@ -38,7 +38,7 @@ Two ScriptableObjects expose single terms to code as `LocalizedString` fields, s
 
 ### Table entries
 
-`Common Strings` already has 99 keys, most translated in all 16 other locales (e.g. `Now Playing`, `OK`, `Settings`, `Level`). Not every key has a term-holder field. Search before adding:
+`Common Strings` already has 99 keys, most translated in the other locales (e.g. `Now Playing`, `OK`, `Settings`, `Level`). Not every key has a term-holder field. Search before adding:
 
 ```bash
 cd "Rock Flipper/Assets/_AMainGame/Data/Localization/Tables/Common/Common Strings"
@@ -48,7 +48,7 @@ id=<m_Id>; for f in Common\ Strings_*.asset; do echo "$f: $(grep -A1 "m_Id: $id"
 
 - Toolkit text goes in `Common Strings`, game-specific text in a `Rock Flipper` table.
 - Prefer putting only the translatable phrase in the table and keeping rich-text tags and symbols (`<b>`, `▶`) in the code-side format. It lets you reuse plain entries and keeps markup away from the AI translator.
-- A new entry: **Create Localized String Entry** (or `LocalizationUtility.CreateEnglishEntry`), then save the project, because the entry is only marked dirty. It is English only until translated. Ask the user whether to translate it into the other 16 locales now (the `translate` skill), since the plan is to translate once the text freezes.
+- A new entry: **Create Localized String Entry** (or `LocalizationUtility.CreateEnglishEntry`), then save the project, because the entry is only marked dirty. It is English only until translated. Ask the user whether to translate it into the other 17 locales now (the `translate` skill), since the plan is to translate once the text freezes.
 - Give a new entry a translator comment when the English alone is ambiguous (a fragment, an abbreviation, a word with several meanings), saying where it's shown and what it means. The translation is AI with no human review, and the comment is its only context. Single terms almost always need one: "Cost" (noun, a price label), "Rock" (the game object, not the music genre).
 
 ## 3. Break fixed text into terms

@@ -3,7 +3,7 @@
 The fixed translations of Rock Flipper's game terms, so AI translation stays consistent without a human reviewer (plan item 4 in [CLAUDE.md](CLAUDE.md)). Built on 2026-10-18 from [GDD/Glossary.md](../GDD/Glossary.md) and the English string tables.
 
 - **This file**: how to use the glossary, what not to translate, conventions per locale, and what each term means.
-- **[Glossary.tsv](Glossary.tsv)**: the translations. One row per English term, one column per locale in the locales' sort order (`zh`, `ru`, `pt-BR`, `de`, `ja`, `ko`, `es`, `fr`, `tr`, `zh-TW`, `pl`, `uk`, `it`, `th`, `cs`, `vi`). Same text conventions as the `translate` skill's TSV: tab-separated, `#` lines are comments, `\u200B` is a zero-width space.
+- **[Glossary.tsv](Glossary.tsv)**: the translations. One row per English term, one column per locale in the locales' sort order (`zh`, `ru`, `pt-BR`, `de`, `ja`, `ko`, `es`, `fr`, `tr`, `zh-TW`, `pl`, `uk`, `it`, `th`, `cs`, `vi`, `es-419`). The `es-419` column was added later on 2026-10-18. Same text conventions as the `translate` skill's TSV: tab-separated, `#` lines are comments, `\u200B` is a zero-width space.
 
 ## Using It
 - **Use the listed term** every time the English term appears, in labels, titles and descriptions alike.
@@ -27,8 +27,8 @@ The fixed translations of Rock Flipper's game terms, so AI translation stays con
 ## Conventions
 - **Seconds unit** in "+{0}s Active Time" and similar: `zh`, `zh-TW` and `ja` use `秒`, `ko` `초`, `ru` and `uk` `с`, `th` `วิ`. Every other locale keeps `s`.
 - **Percent sign** `%`: kept. `fr` puts a space before it (`+5 %`), `de`, `cs` and `tr` follow their usual typography (`+5 %`, `+5 %`, `+%5`).
-- **Gender agreement**: the tier names Bouncy and Restless are adjectives agreeing with "Rock" (feminine in `es`, `pt-BR`, `fr`, `it`; masculine in `ru`, `uk`, `pl`, `cs`). The rarities agree with the noun they describe. The cells give the form for "Item" (masculine in `es`, `fr`, `it`, `pt-BR`, `ru`, `uk`, `pl`, `cs`); a chest takes the chest noun's gender (e.g. `pl` *zwykła skrzynia*).
-- **Register**: `de` uses *du*, `es` *tú*, `fr` *vous* (as the existing translations do).
+- **Gender agreement**: the tier names Bouncy and Restless are adjectives agreeing with "Rock" (feminine in `es`, `es-419`, `pt-BR`, `fr`, `it`; masculine in `ru`, `uk`, `pl`, `cs`). The rarities agree with the noun they describe. The cells give the form for "Item" (masculine in `es`, `es-419`, `fr`, `it`, `pt-BR`, `ru`, `uk`, `pl`, `cs`); a chest takes the chest noun's gender (e.g. `pl` *zwykła skrzynia*).
+- **Register**: `de` uses *du*, `es` *tú*, `fr` *vous* (as the existing translations do). `es-419` uses *tú*, and *ustedes* for the plural, never *vosotros* (set by the owner on 2026-10-18).
 - **Thai**: multi-word cells already carry their `\u200B` breaks. Keep them when using the term.
 
 ### Per Locale
@@ -36,6 +36,7 @@ The fixed translations of Rock Flipper's game terms, so AI translation stays con
 - **`ru`, `uk`**: Flipper Bot is transliterated (*Флиппер-бот*, *Фліпер-бот*), while the flip itself is translated (*подбросить*, *підкинути*).
 - **`fr`, `it`, `pl`, `pt-BR`**: Beam uses *faisceau*, *fascio*, *wiązka*, *feixe*, so it doesn't clash with Radius (*rayon*, *raggio*, *promień*, *raio*).
 - **`zh`, `zh-TW`**: Upgrade is 强化/強化 and Level Up is 升级/升級, so the two never share a word. `zh-TW` uses Taiwan usage (滑鼠, 雷射), not a character conversion of `zh`.
+- **`es-419`**: Latin American vocabulary where it differs from `es`: Mouse stays *mouse* (not *ratón*), *billetera*, *resorte*, *tenis*, *lista de deseados*, *agregar* (not *añadir*), *costo*, *disculpa*. Bounce is *rebote* (*bote* reads as "boat"), so Rebound is *multirrebote*. Every other term matches `es`. Spanish sentence case, not English title case.
 - **`ja`, `ko`**: Flip-based terms use katakana and hangul loanwords (フリップ, 플립). Chance compounds in `ja` use the 〜率 suffix.
 
 ## Terms

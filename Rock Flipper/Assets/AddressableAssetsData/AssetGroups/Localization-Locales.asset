@@ -93,6 +93,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6b3e31256c00be4ebcf418219a4c867
+    m_Address: Spanish (Latin America) (es-419)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be89844d846013947b939c080349b91f
     m_Address: Polish (pl)
     m_ReadOnly: 1

@@ -59,6 +59,7 @@ MonoBehaviour:
           - cs
           - vi
           - it
+          - es-419
         m_TypeString: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     - rid: 323497289479356418
       type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
@@ -83,4 +84,5 @@ MonoBehaviour:
           - it
           - cs
           - vi
+          - es-419
         m_TypeString: UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
