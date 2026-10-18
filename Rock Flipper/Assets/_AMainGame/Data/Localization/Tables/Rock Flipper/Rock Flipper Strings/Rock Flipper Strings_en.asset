@@ -71,7 +71,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13304398807482368
-    m_Localized: You're playing the <b>demo</b> version of <b>Rock Flipper</b>. This demo <b>limits</b> skills and items you have.
+    m_Localized: You're playing the <b>demo</b> version of <b>Rock Flipper</b>. This demo <b>limits</b> the skills and items available.
     m_Metadata:
       m_Items: []
   - m_Id: 13345685015281664
@@ -173,7 +173,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13358496848199680
-    m_Localized: Landing rocks fills this bar. When it's full, you level up and earn {0}.
+    m_Localized: Landing rocks fill this bar. When it's full, you level up and earn {0}.
     m_Metadata:
       m_Items: []
   - m_Id: 13358496848199681
@@ -181,7 +181,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13358496848199682
-    m_Localized: Landing rocks fills this bar. When it's full, a chest drops.
+    m_Localized: Landing rocks fill this bar. When it's full, a chest drops.
     m_Metadata:
       m_Items: []
   - m_Id: 13358496848199683

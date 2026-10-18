@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13344244561264641
-    m_Localized: +{0} Preferred Multiplier per unlocked Background
+    m_Localized: +{0} Preferred Multiplier per unlocked background
     m_Metadata:
       m_Items: []
   - m_Id: 13347626168532992
@@ -67,7 +67,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347627074502657
-    m_Localized: Flipper Bots move around and do the flip for you
+    m_Localized: Flipper Bots move around and do the flip for you.
     m_Metadata:
       m_Items: []
   - m_Id: 13347627443601408
@@ -147,7 +147,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347630643855361
-    m_Localized: +{0} temporary multiplier per L VIII beam hit
+    m_Localized: +{0} Temporary Multiplier per L VIII beam hit
     m_Metadata:
       m_Items: []
   - m_Id: 13347630979399680
@@ -219,11 +219,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347634955599872
-    m_Localized: +{0} Cash Multiplier on break for all rocks
+    m_Localized: +{0} Breaking Cash Multiplier for all rocks
     m_Metadata:
       m_Items: []
   - m_Id: 13347635542802432
-    m_Localized: +{0} Cash Multiplier on break
+    m_Localized: +{0} Breaking Cash Multiplier
     m_Metadata:
       m_Items: []
   - m_Id: 13347636109033472
@@ -239,7 +239,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347636591378433
-    m_Localized: +{0} Critical Landing Cash Multiplier for all rocks
+    m_Localized: +{0} Critical Cash Multiplier for all rocks
     m_Metadata:
       m_Items: []
   - m_Id: 13347637048557568
@@ -255,11 +255,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347637518319616
-    m_Localized: +{0}% Critical Landing chance for all rocks
+    m_Localized: +{0}% Critical Landing Chance for all rocks
     m_Metadata:
       m_Items: []
   - m_Id: 13347637874835456
-    m_Localized: +{0}% Critical Landing chance
+    m_Localized: +{0}% Critical Landing Chance
     m_Metadata:
       m_Items: []
   - m_Id: 13347638294265856
@@ -279,11 +279,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347639091183617
-    m_Localized: +{0} Cash on landing for all rocks
+    m_Localized: +{0} Landing Cash for all rocks
     m_Metadata:
       m_Items: []
   - m_Id: 13347639439310848
-    m_Localized: +{0} Cash on landing
+    m_Localized: +{0} Landing Cash
     m_Metadata:
       m_Items: []
   - m_Id: 13347639846158336
@@ -303,11 +303,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347640693407745
-    m_Localized: +{0} Pure rock Cash Multiplier for all rocks
+    m_Localized: +{0} Pure Cash Multiplier for all rocks
     m_Metadata:
       m_Items: []
   - m_Id: 13347641066700800
-    m_Localized: +{0} Pure rock Cash Multiplier
+    m_Localized: +{0} Pure Cash Multiplier
     m_Metadata:
       m_Items: []
   - m_Id: 13347641452576768
@@ -319,7 +319,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347641796509696
-    m_Localized: +{0}% chance to become Pure on destroyed
+    m_Localized: +{0}% chance to become Pure on break
     m_Metadata:
       m_Items: []
   - m_Id: 13347642169802752
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347642173997056
-    m_Localized: -{0}s before a rock can flip again after landing
+    m_Localized: -{0}s before a rock can be flipped again after landing
     m_Metadata:
       m_Items: []
   - m_Id: 13347642555678720
@@ -355,7 +355,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347645126787073
-    m_Localized: After landing, P1 Rock has a chance to flip again.
+    m_Localized: After landing, a P1 rock has a chance to flip again.
     m_Metadata:
       m_Items: []
   - m_Id: 13347645487497216
@@ -363,7 +363,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13347645487497217
-    m_Localized: While on the ground, P2 Rocks try to self-flip
+    m_Localized: While on the ground, P2 Rocks try to self-flip.
     m_Metadata:
       m_Items: []
   - m_Id: 13347645856595968

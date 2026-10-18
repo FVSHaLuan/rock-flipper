@@ -319,7 +319,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1636319181189120
-    m_Localized: Effect volume
+    m_Localized: Effects volume
     m_Metadata:
       m_Items: []
   - m_Id: 1778153123524608
@@ -331,7 +331,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1778737583009792
-    m_Localized: Screen Shaking Effect
+    m_Localized: Screen shake
     m_Metadata:
       m_Items: []
   - m_Id: 1778884614336512
@@ -351,7 +351,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1779845445496832
-    m_Localized: New resolution will be applied when you close this Settings screen
+    m_Localized: New resolution will be applied when you close this Settings screen.
     m_Metadata:
       m_Items: []
   - m_Id: 1782616336936960
@@ -401,7 +401,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 27730418658623488
-    m_Localized: Wishlist The Full Game On
+    m_Localized: Wishlist the full game on
     m_Metadata:
       m_Items: []
   - m_Id: 27730577425612800
