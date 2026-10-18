@@ -31,3 +31,4 @@ Idle/incremental: rocks spawn on screen; the player clicks/hovers to "flip" them
 - **Demo/playtest/platform-specific behavior** → [Scripts/FeatureBranching/CLAUDE.md](Scripts/FeatureBranching/CLAUDE.md)
 - **`Entry`/`ExtendedMonoBehaviour`/app-wide wiring** → [Scripts/Common/CLAUDE.md](Scripts/Common/CLAUDE.md)
 - **Dev tools / terminal commands / cheats** → [Scripts/Dev/CLAUDE.md](Scripts/Dev/CLAUDE.md)
+- **Localizing text / adding strings / languages** → [Scripts/Localization/CLAUDE.md](Scripts/Localization/CLAUDE.md) (code, data, coverage), with strategy and decisions in [LOC/CLAUDE.md](../../../LOC/CLAUDE.md)
