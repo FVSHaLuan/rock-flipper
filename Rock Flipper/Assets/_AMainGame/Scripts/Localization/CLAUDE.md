@@ -5,7 +5,7 @@
 ## Files
 
 - `LocalizedStrings.cs` — `ScriptableObjectWithInit` holding generic `LocalizedString` fields (stage, slot, on/off, speed, damage, cash, maxed, cost, recommended). Reached via `LocalizedStrings.Instance` (`Entry.Instance.localizedStrings`; in edit mode `DevEntry.Instance.localizedStrings`). Asset: `Data/Localization/LocalizedStrings.asset`. Toolkit side.
-- `SpecificLocalizedStrings.cs` — same pattern for game-specific strings (`Entry.Instance.specificLocalizedStrings`). Several fields (jumpy, dark, ball, lightning bolts, aura wave) are leftovers from the previous game. Asset: `Data/Localization/SpecificLocalizedStrings.asset`.
+- `SpecificLocalizedStrings.cs` — same pattern for game-specific terms (`Entry.Instance.specificLocalizedStrings`), with entries in the `Rock Flipper Strings` table. No fields yet (the previous game's leftovers were removed). `Instance` has no edit-mode fallback, and `DevEntry` has no reference to it. Asset: `Data/Localization/SpecificLocalizedStrings.asset`.
 - `Dev/ILocalizable.cs` — editor interface (`Editor_IsLocalized`, `Editor_TryCreatingLocalizationTerms`). **Nothing implements it yet.**
 - `Dev/UnlocalizedObjectFinder.cs` — SO with a context menu that lists every `ILocalizable` in chosen folders and the open scene whose `Editor_IsLocalized` is false. Only useful once types implement `ILocalizable`.
 - `UnityLocalization/LocalizationUtility.cs` — `CreateEnglishEntry(collection, key, text)` (editor only) and `GenerateKey(text)` (strips formatting and non-alphanumerics, max 70 chars). Keys are derived from the English text.
