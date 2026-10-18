@@ -124,6 +124,118 @@ MonoBehaviour:
       <b>Click to check out the full game.</b>'
     m_Metadata:
       m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: Unlock more backgrounds!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: Select the Preferred background to get multiplied cash income.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: 'Preferred background: {0} cash income.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: Unlock more backgrounds to increase it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: Not found yet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: Cash earned
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: Effects scale with the item's level.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: Common
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: Uncommon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: Rare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: Epic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: Unique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: Landing rocks fills this bar. When it's full, you level up and earn {0}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: Chest Bar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: Landing rocks fills this bar. When it's full, a chest drops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: Dice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Lantern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Magnifying Glass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: Pickaxe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: Soap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: Spring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: Wallet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: Desert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Grassland
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: Volcanic
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -28,7 +28,7 @@ Two ScriptableObjects expose single terms to code as `LocalizedString` fields, s
 | Access | `LocalizedStrings.Instance` (`entry.localizedStrings`) | `SpecificLocalizedStrings.Instance` (`entry.specificLocalizedStrings`) |
 | Asset | `Data/Localization/LocalizedStrings.asset` | `Data/Localization/SpecificLocalizedStrings.asset` |
 | Entries in | `Common Strings` | `Rock Flipper Strings` |
-| Fields (2026-10-18) | `stage`, `slot`, `on`, `off`, `speed`, `damage`, `cash`, `maxed`, `cost`, `recommended` | none yet |
+| Fields (2026-10-18) | `stage`, `slot`, `on`, `off`, `speed`, `damage`, `cash`, `maxed`, `cost`, `recommended`, `level`, `lvl`, `exp`, `naInDemo`, `moreInFullGame`, `allUnlocked`, plus 2 sentences | background, item, rarity and Level/Chest bar terms and sentences |
 
 - Read the class for the current fields; the table above is a snapshot.
 - To decide which holder: would another of the owner's games use the word? Then `LocalizedStrings`, otherwise `SpecificLocalizedStrings`.

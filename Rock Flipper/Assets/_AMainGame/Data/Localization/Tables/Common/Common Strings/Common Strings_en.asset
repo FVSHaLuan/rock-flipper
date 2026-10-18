@@ -429,6 +429,36 @@ MonoBehaviour:
     m_Localized: Demo
     m_Metadata:
       m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: Lvl.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: Exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: N/A in demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: More in full game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: All unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: Cost will be fully refunded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: 'This slot was saved with an older version of the game that is no longer supported.
+
+      Sorry for the inconvenience :('
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

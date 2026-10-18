@@ -1,3 +1,4 @@
+using Agame.Localization;
 using UnityEngine;
 
 namespace Agame.Run.Shop
@@ -45,10 +46,11 @@ namespace Agame.Run.Shop
         private void UpdateView()
         {
             ///
+            var strings = SpecificLocalizedStrings.Instance;
             var preferredMultiplier = subscribedPreferredMultiplier;
             if (!preferredMultiplier.HasPreferredBackground)
             {
-                statusText.SetText("Unlock more backgrounds!");
+                statusText.SetText(strings.unlockMoreBackgrounds.GetLocalizedString());
                 return;
             }
 
@@ -56,15 +58,15 @@ namespace Agame.Run.Shop
             var multiplier = FormatMultiplier(preferredMultiplier.PreferredMultiplier);
             if (!preferredMultiplier.IsUsingPreferredBackground)
             {
-                statusText.SetText($"Select the Preferred background to get multiplied cash income.");
+                statusText.SetText(strings.selectPreferredBackground.GetLocalizedString());
                 return;
             }
 
             ///
-            var text = $"Preferred background: <b>{multiplier}</b> cash income.";
+            var text = string.Format(strings.preferredBackgroundCashIncome.GetLocalizedString(), $"<b>{multiplier}</b>");
             if (RunData.UnlockedBackgroundCount < GameConst.BackgroundCount)
             {
-                text += "\nUnlock more backgrounds to increase it.";
+                text += $"\n{strings.unlockMoreBackgroundsToIncreaseIt.GetLocalizedString()}";
             }
             statusText.SetText(text);
         }

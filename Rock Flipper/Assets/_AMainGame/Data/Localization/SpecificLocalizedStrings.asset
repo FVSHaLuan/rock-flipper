@@ -12,92 +12,146 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1021da2e14415144b5af3f8bf1182c8, type: 3}
   m_Name: SpecificLocalizedStrings
   m_EditorClassIdentifier: Assembly-CSharp::Agame.Localization.SpecificLocalizedStrings
-  freeTag:
+  unlockRandom:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 128662131097600
+      m_KeyId: 13301272792711168
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  jumpy:
+  unlockMoreBackgrounds:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 453188870127616
+      m_KeyId: 13358496835616768
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  dark:
+  selectPreferredBackground:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 453249167441920
+      m_KeyId: 13358496835616769
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  ball:
+  preferredBackgroundCashIncome:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 457588896350208
+      m_KeyId: 13358496835616770
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  moduleLevel:
+  unlockMoreBackgroundsToIncreaseIt:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 1077776834543616
+      m_KeyId: 13358496835616771
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  mouseHover:
+  notFoundYet:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 802604973998080
+      m_KeyId: 13358496835616772
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  mouseClick:
+  cashEarned:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 802738390614016
+      m_KeyId: 13358496839811072
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  yellowLightningBolt:
+  effectsScaleWithItemLevel:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 802785882718208
+      m_KeyId: 13358496839811073
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  blueLightningBolt:
+  commonRarity:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 802810700414976
+      m_KeyId: 13358496844005376
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  auraWave:
+  uncommonRarity:
     m_TableReference:
-      m_TableCollectionName: GUID:eb7f267795a458c42bbd8acd4408532e
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
     m_TableEntryReference:
-      m_KeyId: 556370136842240
+      m_KeyId: 13358496844005377
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  rareRarity:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358496844005378
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  epicRarity:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358496844005379
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  uniqueRarity:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358496844005380
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  levelBarDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358496848199680
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  chestBar:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358496848199681
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  chestBarDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358496848199682
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

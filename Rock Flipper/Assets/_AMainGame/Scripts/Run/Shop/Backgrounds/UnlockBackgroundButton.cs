@@ -1,3 +1,4 @@
+using Agame.Localization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +16,6 @@ namespace Agame.Run.Shop
     public class UnlockBackgroundButton : ExtendedMonoBehaviourRun
     {
         public const Currency CostCurrency = Currency.STAR;
-        private const string UnlockText = "Unlock Random";
-        private const string NotInDemoText = "MORE IN FULL GAME";
 
         [SerializeField]
         private Button button;
@@ -164,14 +163,15 @@ namespace Agame.Run.Shop
             var anyLocked = CollectLockedBackgroundIds();
             if (lockedBackgroundIds.Count == 0)
             {
-                costText.SetText(anyLocked ? NotInDemoText : "ALL UNLOCKED");
+                var strings = LocalizedStrings.Instance;
+                costText.SetText(anyLocked ? strings.moreInFullGame.GetLocalizedStringUpper() : strings.allUnlocked.GetLocalizedStringUpper());
                 button.interactable = false;
                 return;
             }
 
             ///
             var cost = GetNextUnlockCost();
-            costText.SetText($"{UnlockText} - {cost.GetFormattedString()}");
+            costText.SetText($"{SpecificLocalizedStrings.Instance.unlockRandom.GetLocalizedString()} - {cost.GetFormattedString()}");
             button.interactable = !IsAnimating && RunData.IsEnough(cost);
         }
 

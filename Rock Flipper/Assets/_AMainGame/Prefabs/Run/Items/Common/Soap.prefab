@@ -17,10 +17,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a21c081ca7144e01870006ec199e5700, type: 3}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
-      propertyPath: itemName
-      value: Soap
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: buildAgent
       value: 
       objectReference: {fileID: 35484315075884582, guid: 361a9bbf742e23a4c9221258ad99443b, type: 3}
@@ -35,6 +31,14 @@ PrefabInstance:
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: isAvailableInDemo
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: localizedItemName.m_TableEntryReference.m_KeyId
+      value: 13358498626584576
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: localizedItemName.m_TableReference.m_TableCollectionName
+      value: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
       objectReference: {fileID: 0}
     - target: {fileID: 5361132389861902556, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: m_LocalPosition.x

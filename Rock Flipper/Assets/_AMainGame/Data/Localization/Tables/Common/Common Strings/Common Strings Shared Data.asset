@@ -419,6 +419,41 @@ MonoBehaviour:
     m_Key: Demo
     m_Metadata:
       m_Items: []
+  - m_Id: 27821301697527808
+    m_Key: Lvl
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505237
+  - m_Id: 27821301701722112
+    m_Key: Exp
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505238
+  - m_Id: 27821301701722113
+    m_Key: NA in demo
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505239
+  - m_Id: 27821301701722114
+    m_Key: More in full game
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505240
+  - m_Id: 27821301701722115
+    m_Key: All unlocked
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505241
+  - m_Id: 27821301701722116
+    m_Key: Cost will be fully refunded
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505242
+  - m_Id: 27821301710110720
+    m_Key: This slot was saved with an older version of the game that is no longe
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505243
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -462,3 +497,31 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: as in "Wishlist the full game on Steam"
+    - rid: 2838372046370505237
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Short form of Level, shown before a level number, e.g. "Lvl. 3/5". Keep it short.
+    - rid: 2838372046370505238
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Short form of experience points, shown as "Exp: 40/100". Keep it short.'
+    - rid: 2838372046370505239
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Short note: not available in the demo version of the game. Shown in brackets after a count, e.g. "0/1 (N/A in demo)".'
+    - rid: 2838372046370505240
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Button label in the demo version, shown when the remaining content is only in the full game. Displayed in upper case.
+    - rid: 2838372046370505241
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Button label shown when everything has been unlocked. Displayed in upper case.
+    - rid: 2838372046370505242
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Small note under an upgrade''s price: the player will get the full price back.'
+    - rid: 2838372046370505243
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Dialog message when the player opens a save slot made by an old, incompatible version of the game.

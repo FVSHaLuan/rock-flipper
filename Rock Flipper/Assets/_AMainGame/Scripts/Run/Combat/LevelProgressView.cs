@@ -1,4 +1,5 @@
 using Agame.Balancing;
+using Agame.Localization;
 using Agame.UI.ToolTips;
 using GD;
 using UnityEngine;
@@ -49,9 +50,10 @@ namespace Agame.Run.Combat
         {
             var nextLevelRequirement = gameBalance.GetRequiredExpForNextLevel(RunData.Level);
             var stars = new CurrencyAmount(Currency.STAR, GameBalance.StarsPerLevelUp).GetFormattedString();
-            var content = $"<b>Level {RunData.Level}</b>\n";
-            content += $"Landing rocks fills this bar. When it's full, you level up and earn {stars}.\n";
-            content += $"Exp: {RunData.LevelExp.ToLargeNumberString()}/{nextLevelRequirement.ToLargeNumberString()}";
+            var strings = LocalizedStrings.Instance;
+            var content = $"<b>{strings.level.GetLocalizedString()} {RunData.Level}</b>\n";
+            content += $"{string.Format(SpecificLocalizedStrings.Instance.levelBarDescription.GetLocalizedString(), stars)}\n";
+            content += $"{strings.exp.GetLocalizedString()}: {RunData.LevelExp.ToLargeNumberString()}/{nextLevelRequirement.ToLargeNumberString()}";
 
             ///
             if (content != toolTipTriggerer.MainText)

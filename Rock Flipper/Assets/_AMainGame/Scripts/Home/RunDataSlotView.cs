@@ -55,7 +55,7 @@ namespace Agame.Home
             ///
             if (runData.InitedRun && runData.CompatVersion != entry.compatManager.CurrentCompatVersion)
             {
-                entry.GeneralDialog.Show("This slot was saved with an older version of the game that is no longer supported.\r\nSorry for the inconvenience :(", false, null);
+                entry.GeneralDialog.Show(entry.localizedStrings.unsupportedSaveVersion.GetLocalizedString(), false, null);
                 return;
             }
 

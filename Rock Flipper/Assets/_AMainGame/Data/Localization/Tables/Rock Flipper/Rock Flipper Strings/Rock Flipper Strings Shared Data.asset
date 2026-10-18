@@ -125,6 +125,146 @@ MonoBehaviour:
     m_Key: 'DEMO LIMITEDThis is the upgrade cap for the demo In the full game you '
     m_Metadata:
       m_Items: []
+  - m_Id: 13358496835616768
+    m_Key: Unlock more backgrounds
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505244
+  - m_Id: 13358496835616769
+    m_Key: Select the Preferred background to get multiplied cash income
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505245
+  - m_Id: 13358496835616770
+    m_Key: Preferred background 0 cash income
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505246
+  - m_Id: 13358496835616771
+    m_Key: Unlock more backgrounds to increase it
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505247
+  - m_Id: 13358496835616772
+    m_Key: Not found yet
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505248
+  - m_Id: 13358496839811072
+    m_Key: Cash earned
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505249
+  - m_Id: 13358496839811073
+    m_Key: Effects scale with the items level
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505250
+  - m_Id: 13358496844005376
+    m_Key: Common
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505251
+  - m_Id: 13358496844005377
+    m_Key: Uncommon
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505252
+  - m_Id: 13358496844005378
+    m_Key: Rare
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505253
+  - m_Id: 13358496844005379
+    m_Key: Epic
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505254
+  - m_Id: 13358496844005380
+    m_Key: Unique
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505255
+  - m_Id: 13358496848199680
+    m_Key: Landing rocks fills this bar When its full you level up and earn 0
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505256
+  - m_Id: 13358496848199681
+    m_Key: Chest Bar
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505257
+  - m_Id: 13358496848199682
+    m_Key: Landing rocks fills this bar When its full a chest drops
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505258
+  - m_Id: 13358496848199683
+    m_Key: Dice
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505259
+  - m_Id: 13358497351516160
+    m_Key: Hammer
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505260
+  - m_Id: 13358497661894656
+    m_Key: Lantern
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505261
+  - m_Id: 13358497976467456
+    m_Key: Magnifying Glass
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505262
+  - m_Id: 13358498303623168
+    m_Key: Pickaxe
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505263
+  - m_Id: 13358498626584576
+    m_Key: Soap
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505264
+  - m_Id: 13358498936963072
+    m_Key: Spring
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505265
+  - m_Id: 13358499234758656
+    m_Key: Wallet
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505266
+  - m_Id: 13358499545137152
+    m_Key: Desert
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505267
+  - m_Id: 13358499553525760
+    m_Key: Grassland
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505268
+  - m_Id: 13358499553525761
+    m_Key: Mars
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505269
+  - m_Id: 13358499553525762
+    m_Key: Tundra
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505270
+  - m_Id: 13358499553525763
+    m_Key: Volcanic
+    m_Metadata:
+      m_Items:
+      - rid: 2838372046370505271
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -172,6 +312,118 @@ MonoBehaviour:
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
         m_CommentText: Skill title group, name of a Monolith (a floating structure at the center of the playfield). "L XII" is its name in Roman numerals; keep it as is. Shown before the skill title, e.g. "Monolith L XII - Unlock".
+    - rid: 2838372046370505244
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Backgrounds are the playfield's landscapes, which the player unlocks in the Shop.
+    - rid: 2838372046370505245
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: The Preferred background is the one background that currently multiplies cash income. Translate "Preferred" the same way as the Preferred label.
+    - rid: 2838372046370505246
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: '{0} is a multiplier such as x2.5, so it reads "Preferred background: x2.5 cash income." Cash is the game''s money.'
+    - rid: 2838372046370505247
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: '"it" is the Preferred background''s cash multiplier, shown in the sentence before.'
+    - rid: 2838372046370505248
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Tooltip of an item the player hasn't found yet (items drop from chests).
+    - rid: 2838372046370505249
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Label in an item's tooltip, followed by the total cash the item has earned so far. Cash is the game's money.
+    - rid: 2838372046370505250
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Note at the bottom of an item''s tooltip: the item''s effects get stronger as its level goes up.'
+    - rid: 2838372046370505251
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item rarity, the lowest of: Common, Uncommon, Rare, Epic, Unique.'
+    - rid: 2838372046370505252
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item rarity, the 2nd of: Common, Uncommon, Rare, Epic, Unique.'
+    - rid: 2838372046370505253
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item rarity, the 3rd of: Common, Uncommon, Rare, Epic, Unique.'
+    - rid: 2838372046370505254
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item rarity, the 4th of: Common, Uncommon, Rare, Epic, Unique.'
+    - rid: 2838372046370505255
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item rarity, the highest of: Common, Uncommon, Rare, Epic, Unique. Unique items are one of a kind.'
+    - rid: 2838372046370505256
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Tooltip of the level progress bar. {0} is an amount of stars with a star icon. Rocks are flipped into the air and land on the ground.
+    - rid: 2838372046370505257
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Name of the progress bar that drops a chest when it's full.
+    - rid: 2838372046370505258
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: Tooltip of the Chest Bar. Rocks are flipped into the air and land on the ground.
+    - rid: 2838372046370505259
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a pair of dice (the game pieces).'
+    - rid: 2838372046370505260
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a hammer (the tool).'
+    - rid: 2838372046370505261
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a lantern (the lamp).'
+    - rid: 2838372046370505262
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a magnifying glass.'
+    - rid: 2838372046370505263
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a pickaxe (the mining tool).'
+    - rid: 2838372046370505264
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a bar of soap.'
+    - rid: 2838372046370505265
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a coiled metal spring, not the season.'
+    - rid: 2838372046370505266
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Item name: a wallet (for money).'
+    - rid: 2838372046370505267
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Background name: a desert landscape.'
+    - rid: 2838372046370505268
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Background name: a grassland landscape.'
+    - rid: 2838372046370505269
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Background name: the planet Mars.'
+    - rid: 2838372046370505270
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Background name: a tundra landscape.'
+    - rid: 2838372046370505271
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: 'Background name: a volcanic landscape.'
     - rid: 3480083155795050782
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

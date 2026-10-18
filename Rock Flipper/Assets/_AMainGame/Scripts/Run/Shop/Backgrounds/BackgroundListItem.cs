@@ -1,4 +1,5 @@
 using Agame.FeatureBranching;
+using Agame.Localization;
 using FH.Core.Gameplay.HelperComponent;
 using UnityEngine;
 using UnityEngine.UI;
@@ -143,7 +144,7 @@ namespace Agame.Run.Shop
             // Demo and playtest builds drop only 1 Unique chest per save (UniqueChestDropRules).
             if (VersionBranchInfo.IsPlaytestOrDemo && RunData.UniqueChestDropCount > 0)
             {
-                return "0/1 (N/A in demo)";
+                return $"0/1 ({LocalizedStrings.Instance.naInDemo.GetLocalizedString()})";
             }
 
             ///

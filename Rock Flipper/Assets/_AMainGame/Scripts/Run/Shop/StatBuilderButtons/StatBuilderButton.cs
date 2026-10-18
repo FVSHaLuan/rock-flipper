@@ -1,3 +1,4 @@
+using Agame.Localization;
 using Agame.Run.Stats;
 using Agame.Run.Stats.Agents;
 using UnityEngine;
@@ -97,7 +98,7 @@ namespace Agame.Run.Shop
                 level = RunData.GetBuilderButtonLevel(buttonId);
             }
             levelText.Text = $"{level}/{maxLevelConfig.MaxLevel}";
-            costText.Text = level < maxLevelConfig.MaxLevel ? $"{costConfig.GetNextLevelCost(level).GetFormattedString()}" : "MAXED";
+            costText.Text = level < maxLevelConfig.MaxLevel ? $"{costConfig.GetNextLevelCost(level).GetFormattedString()}" : LocalizedStrings.Instance.maxed.GetLocalizedStringUpper();
         }
 
         private void UpdateInteractability(int level = -1)

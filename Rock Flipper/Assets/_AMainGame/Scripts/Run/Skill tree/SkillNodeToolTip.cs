@@ -1,5 +1,6 @@
 using FH.Core.Architecture.Pool;
 using Agame.FeatureBranching;
+using Agame.Localization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -162,15 +163,16 @@ namespace Agame.Run
                 extraDescriptionText.Text = skillNode.ExtraDescription;
 
             }
+            var lvl = LocalizedStrings.Instance.lvl.GetLocalizedString();
             if (skillNode.LevelCount == int.MaxValue)
             {
-                levelText.Text = $"Lvl. {skillNode.Level}/\u221E";
+                levelText.Text = $"{lvl} {skillNode.Level}/\u221E";
             }
             else
             {
-                levelText.Text = string.Format("Lvl. {0}/{1}", skillNode.Level, skillNode.LevelCount);
+                levelText.Text = string.Format("{0} {1}/{2}", lvl, skillNode.Level, skillNode.LevelCount);
             }
-            costText.Text = skillNode.IsMaxed ? "MAXED" : skillNode.GetCostString();
+            costText.Text = skillNode.IsMaxed ? LocalizedStrings.Instance.maxed.GetLocalizedStringUpper() : skillNode.GetCostString();
 
             ///
             if (skillNode.IsMaxed)

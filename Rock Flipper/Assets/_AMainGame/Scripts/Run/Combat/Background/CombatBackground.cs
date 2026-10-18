@@ -1,9 +1,11 @@
 using Agame.FeatureBranching;
+using Agame.Localization;
 using GD;
 using OneLine;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization;
 
 namespace Agame.Run.Combat.Backgrounds
 {
@@ -16,6 +18,8 @@ namespace Agame.Run.Combat.Backgrounds
         [Space]
         [SerializeField]
         private string backgroundName;
+        [SerializeField, Tooltip("Overrides backgroundName when set.")]
+        private LocalizedString localizedBackgroundName;
         [SerializeField]
         private Color cameraColor = Color.white;
         [SerializeField]
@@ -71,7 +75,7 @@ namespace Agame.Run.Combat.Backgrounds
             public int MaxCount => maxCount;
         }
 
-        public string BackgroundName => backgroundName;
+        public string BackgroundName => localizedBackgroundName.GetLocalizedStringOr(backgroundName);
         public Color CameraColor => cameraColor;
 
         /// <summary>False in demo and playtest builds when this background is marked as not available in the demo.</summary>

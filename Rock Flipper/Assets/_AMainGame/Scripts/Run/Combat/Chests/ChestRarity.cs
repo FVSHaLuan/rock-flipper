@@ -1,3 +1,4 @@
+using Agame.Localization;
 using System.Collections;
 using UnityEngine;
 
@@ -28,6 +29,26 @@ namespace Agame.Run.Combat
                     return VisualDefinitions.Instance.epicRarityForegroundColor;
                 case ChestRarity.Unique:
                     return VisualDefinitions.Instance.uniqueRarityForegroundColor;
+                default:
+                    throw new System.NotImplementedException();
+            }
+        }
+
+        public static string GetLocalizedName(this ChestRarity rarity)
+        {
+            var strings = SpecificLocalizedStrings.Instance;
+            switch (rarity)
+            {
+                case ChestRarity.Common:
+                    return strings.commonRarity.GetLocalizedStringOr(rarity.ToString());
+                case ChestRarity.Uncommon:
+                    return strings.uncommonRarity.GetLocalizedStringOr(rarity.ToString());
+                case ChestRarity.Rare:
+                    return strings.rareRarity.GetLocalizedStringOr(rarity.ToString());
+                case ChestRarity.Epic:
+                    return strings.epicRarity.GetLocalizedStringOr(rarity.ToString());
+                case ChestRarity.Unique:
+                    return strings.uniqueRarity.GetLocalizedStringOr(rarity.ToString());
                 default:
                     throw new System.NotImplementedException();
             }

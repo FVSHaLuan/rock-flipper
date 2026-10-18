@@ -1,8 +1,10 @@
 using Agame.Balancing;
 using Agame.FeatureBranching;
+using Agame.Localization;
 using Agame.Run.Combat;
 using Agame.Run.Stats.Agents;
 using UnityEngine;
+using UnityEngine.Localization;
 
 namespace Agame.Run.Shop
 {
@@ -30,6 +32,8 @@ namespace Agame.Run.Shop
         private string itemId;
         [SerializeField]
         private string itemName;
+        [SerializeField, Tooltip("Overrides itemName when set.")]
+        private LocalizedString localizedItemName;
         [SerializeField]
         private Sprite itemIcon;
         [SerializeField]
@@ -40,7 +44,7 @@ namespace Agame.Run.Shop
         public bool IsPlaceholder => isPlaceholder;
         public bool IsAvailableInDemo => isAvailableInDemo;
         public string ItemId => itemId;
-        public string ItemName => itemName;
+        public string ItemName => localizedItemName.GetLocalizedStringOr(itemName);
         public ChestRarity Rarity => rarity;
         public Sprite ItemIcon => itemIcon;
         public double BuildValue => buildValue;
@@ -171,14 +175,20 @@ namespace Agame.Run.Shop
         }
 
         /// <summary>
-        /// Builds the id from <see cref="itemName"/>, or from the prefab file name if it's empty.
-        /// "Lucky Pebble" → "item_lucky_pebble".
+        /// Builds the id from the English text of <see cref="localizedItemName"/>, else from <see cref="itemName"/>,
+        /// else from the prefab file name. "Lucky Pebble" → "item_lucky_pebble".
         /// </summary>
         private string Editor_GetItemIdFromName(string assetPath)
         {
-            string sourceName = !string.IsNullOrWhiteSpace(itemName)
-                ? itemName
-                : System.IO.Path.GetFileNameWithoutExtension(assetPath);
+            string sourceName = localizedItemName.Editor_GetEnglishString();
+            if (string.IsNullOrWhiteSpace(sourceName))
+            {
+                sourceName = itemName;
+            }
+            if (string.IsNullOrWhiteSpace(sourceName))
+            {
+                sourceName = System.IO.Path.GetFileNameWithoutExtension(assetPath);
+            }
 
             var sb = new System.Text.StringBuilder();
             foreach (char c in sourceName.ToLowerInvariant())

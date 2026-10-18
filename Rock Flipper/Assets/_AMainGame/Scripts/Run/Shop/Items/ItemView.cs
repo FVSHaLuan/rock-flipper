@@ -1,4 +1,5 @@
 using Agame.Balancing;
+using Agame.Localization;
 using Agame.Run.Combat;
 using Agame.UI.ToolTips;
 using GD;
@@ -177,7 +178,7 @@ namespace Agame.Run.Shop
                 maxedText.SetActive(false);
                 lockedItemIcon.SetActive(false);
                 itemIconImage.gameObject.SetActive(true);
-                levelText.SetText($"Lv. {itemState.level}");
+                levelText.SetText($"{LocalizedStrings.Instance.lvl.GetLocalizedString()} {itemState.level}");
                 var expRequired = GameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
                 progressBar.SetValue((float)itemState.exp / expRequired);
             }
@@ -194,25 +195,28 @@ namespace Agame.Run.Shop
             ///
             if (itemState.level == 0 && itemState.exp == 0)
             {
-                ToolTipTriggerer.MainText = "<b>???</b>\nNot found yet.";
+                ToolTipTriggerer.MainText = $"<b>???</b>\n{SpecificLocalizedStrings.Instance.notFoundYet.GetLocalizedString()}";
                 return;
             }
 
             ///
+            var strings = LocalizedStrings.Instance;
+            var specificStrings = SpecificLocalizedStrings.Instance;
+            var lvl = strings.lvl.GetLocalizedString();
             var rarityColor = item.Rarity.GetForegroundColor();
             var content = $"<b>{rarityColor.WrapText(item.ItemName)}</b>\n";
-            content += $"{rarityColor.WrapText(item.Rarity)}\n";
+            content += $"{rarityColor.WrapText(item.Rarity.GetLocalizedName())}\n";
             if (itemState.level >= maxLevel)
             {
-                content += $"Lv. {itemState.level} (maxed)\n";
+                content += $"{lvl} {itemState.level} ({strings.maxed.GetLocalizedString()})\n";
             }
             else
             {
                 var expRequired = GameBalance.GetRequiredExpForNextItemLevel(item.Rarity, itemState.level);
-                content += $"Lv. {itemState.level}\nExp: {itemState.exp}/{expRequired}\n";
+                content += $"{lvl} {itemState.level}\n{strings.exp.GetLocalizedString()}: {itemState.exp}/{expRequired}\n";
             }
             var cashName = entry.currencyConfigManager.GetConfig(Currency.CASH).CurrencyName;
-            content += $"Cash earned: {cashName}{itemState.earnedCash.ToLargeNumberString()}\n";
+            content += $"{specificStrings.cashEarned.GetLocalizedString()}: {cashName}{itemState.earnedCash.ToLargeNumberString()}\n";
 
             ///
             var skillDescriptor = item.BuildAgent != null ? item.BuildAgent.GetComponent<SkillDescriptor>() : null;
@@ -227,7 +231,7 @@ namespace Agame.Run.Shop
             }
 
             ///
-            content += "\n\n<i>Effects scale with the item's level.</i>";
+            content += $"\n\n<i>{specificStrings.effectsScaleWithItemLevel.GetLocalizedString()}</i>";
 
             ///
             ToolTipTriggerer.MainText = content;

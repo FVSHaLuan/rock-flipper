@@ -1,4 +1,5 @@
 using Agame.Balancing;
+using Agame.Localization;
 using Agame.UI.ToolTips;
 using GD;
 using UnityEngine;
@@ -48,9 +49,10 @@ namespace Agame.Run.Combat
         private void UpdateToolTipContent()
         {
             var nextLevelRequirement = GameBalance.GetRequiredExpForNextChestLevel(RunData.ChestLevel);
-            var content = "<b>Chest Bar</b>\n";
-            content += "Landing rocks fills this bar. When it's full, a chest drops.\n";
-            content += $"Exp: {RunData.ChestLevelExp.ToLargeNumberString()}/{nextLevelRequirement.ToLargeNumberString()}";
+            var specificStrings = SpecificLocalizedStrings.Instance;
+            var content = $"<b>{specificStrings.chestBar.GetLocalizedString()}</b>\n";
+            content += $"{specificStrings.chestBarDescription.GetLocalizedString()}\n";
+            content += $"{LocalizedStrings.Instance.exp.GetLocalizedString()}: {RunData.ChestLevelExp.ToLargeNumberString()}/{nextLevelRequirement.ToLargeNumberString()}";
 
             ///
             if (content != toolTipTriggerer.MainText)

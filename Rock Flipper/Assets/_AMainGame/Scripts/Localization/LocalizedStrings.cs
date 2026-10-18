@@ -16,6 +16,14 @@ namespace Agame.Localization
         public LocalizedString maxed;
         public LocalizedString cost;
         public LocalizedString recommended;
+        public LocalizedString level;
+        public LocalizedString lvl;
+        public LocalizedString exp;
+        public LocalizedString naInDemo;
+        public LocalizedString moreInFullGame;
+        public LocalizedString allUnlocked;
+        public LocalizedString costWillBeFullyRefunded;
+        public LocalizedString unsupportedSaveVersion;
 
         public static LocalizedStrings Instance
         {

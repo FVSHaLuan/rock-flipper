@@ -17,10 +17,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: dd27403d3bcf6f74ba7e19833f19487b, type: 3}
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
-      propertyPath: itemName
-      value: Dice
-      objectReference: {fileID: 0}
-    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: buildAgent
       value: 
       objectReference: {fileID: 3896471343328955010, guid: 2c1b0bf994370e04cb1cd26d0be03b93, type: 3}
@@ -35,6 +31,14 @@ PrefabInstance:
     - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: isAvailableInDemo
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: localizedItemName.m_TableEntryReference.m_KeyId
+      value: 13358496848199683
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621821147570433000, guid: d2358b82fd063420eab0c241b11af142, type: 3}
+      propertyPath: localizedItemName.m_TableReference.m_TableCollectionName
+      value: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
       objectReference: {fileID: 0}
     - target: {fileID: 5361132389861902556, guid: d2358b82fd063420eab0c241b11af142, type: 3}
       propertyPath: m_LocalPosition.x

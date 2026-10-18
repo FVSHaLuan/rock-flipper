@@ -20249,7 +20249,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.85
+  m_fontSize: 17.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29272,7 +29272,16 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   isNaNInDemo: 1
-  backgroundName: Volcanic
+  backgroundName: 
+  localizedBackgroundName:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358499553525763
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   cameraColor: {r: 0.1254902, g: 0.47058824, b: 0.24705882, a: 1}
   thumbnail: {fileID: 0}
   elementRoot: {fileID: 28282358}
@@ -29341,6 +29350,9 @@ MonoBehaviour:
   onInitThisCombat:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &976616716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39856,7 +39868,16 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   isNaNInDemo: 1
-  backgroundName: Mars
+  backgroundName: 
+  localizedBackgroundName:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358499553525761
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   cameraColor: {r: 0.1254902, g: 0.47058824, b: 0.24705882, a: 1}
   thumbnail: {fileID: 0}
   elementRoot: {fileID: 789839524}
@@ -39925,6 +39946,9 @@ MonoBehaviour:
   onInitThisCombat:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1321830869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45399,7 +45423,16 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   isNaNInDemo: 0
-  backgroundName: Desert
+  backgroundName: 
+  localizedBackgroundName:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358499545137152
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   cameraColor: {r: 0.52156866, g: 0.4117647, b: 0.22352941, a: 1}
   thumbnail: {fileID: 0}
   elementRoot: {fileID: 1884978772}
@@ -45464,6 +45497,9 @@ MonoBehaviour:
   onInitThisCombat:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1532554061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51255,7 +51291,16 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   isNaNInDemo: 1
-  backgroundName: Tundra
+  backgroundName: 
+  localizedBackgroundName:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358499553525762
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   cameraColor: {r: 0.1254902, g: 0.47058824, b: 0.24705882, a: 1}
   thumbnail: {fileID: 0}
   elementRoot: {fileID: 1999970101}
@@ -51324,6 +51369,9 @@ MonoBehaviour:
   onInitThisCombat:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1718176837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54399,7 +54447,16 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   isNaNInDemo: 0
-  backgroundName: Grassland
+  backgroundName: 
+  localizedBackgroundName:
+    m_TableReference:
+      m_TableCollectionName: GUID:5fc3eb9ac00fb72499bf7ebd1793ffbe
+    m_TableEntryReference:
+      m_KeyId: 13358499553525760
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   cameraColor: {r: 0.1254902, g: 0.47058824, b: 0.24705882, a: 1}
   thumbnail: {fileID: 0}
   elementRoot: {fileID: 2078869356}
@@ -54468,6 +54525,9 @@ MonoBehaviour:
   onInitThisCombat:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1823943502
 PrefabInstance:
   m_ObjectHideFlags: 0

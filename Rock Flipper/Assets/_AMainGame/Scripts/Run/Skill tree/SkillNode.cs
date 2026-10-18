@@ -909,7 +909,7 @@ namespace Agame.Run
             ///
             if (graphNode.BuildAgent.RefundCost)
             {
-                s += $"\r\n<size=60%><i>*Cost will be fully refunded</i></size>";
+                s += $"\r\n<size=60%><i>*{Agame.Localization.LocalizedStrings.Instance.costWillBeFullyRefunded.GetLocalizedString()}</i></size>";
             }
 
             ///
