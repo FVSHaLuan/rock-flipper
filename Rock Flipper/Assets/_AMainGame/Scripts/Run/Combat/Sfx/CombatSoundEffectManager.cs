@@ -26,6 +26,10 @@ namespace Agame.Run.Combat
         [SerializeField]
         private UnityEvent playChestOpeningLandingDelegate;
 
+        [Header("Items")]
+        [SerializeField]
+        private UnityEvent playItemArrivalDelegate;
+
         private BalancerWithObjects clickLoopPlayerUnmutedBalancer = new BalancerWithObjects();
 
         protected void OnDestroy()
@@ -141,6 +145,17 @@ namespace Agame.Run.Combat
 
             ///
             playChestOpeningLandingDelegate?.Invoke();
+        }
+
+        public void PlayItemArrival()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playItemArrivalDelegate?.Invoke();
         }
     }
 

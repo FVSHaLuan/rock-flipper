@@ -9,7 +9,7 @@ namespace Agame.Run.Shop
     /// <summary>
     /// Shows a found item (e.g. dropped by an opening chest) with an <see cref="ItemAvatar"/>: it pops up from where it
     /// was found, hovers for a moment, then flies to the Items tab button, shrinking as its name fades out.
-    /// On arrival it plays the target's <see cref="NoticeEffect"/>, if it has one among its children.
+    /// On arrival it plays the item arrival sound and the target's <see cref="NoticeEffect"/>, if it has one among its children.
     /// <para>
     /// A find goes through <see cref="FindItem"/>: it's saved in <see cref="RunData"/> right away, so quitting before the
     /// item arrives loses nothing, but the items UI (item grid, notice badges) keeps showing the item as it was before the
@@ -260,6 +260,7 @@ namespace Agame.Run.Shop
             activeAvatars.Remove(avatar);
             avatar.TryReturnToPoolAndDeactivate();
             Reveal(find);
+            RunEntry.combatSoundEffectManager.PlayItemArrival();
             if (targetNoticeEffect != null)
             {
                 targetNoticeEffect.Play();
