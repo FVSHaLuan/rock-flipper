@@ -114,6 +114,16 @@ MonoBehaviour:
     m_Localized: Monolith L XII
     m_Metadata:
       m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: '<b>DEMO LIMITED!</b>
+
+
+      This is the upgrade cap for the demo. In the full game, you can keep upgrading and unlock more skills.
+
+
+      <b>Click to check out the full game.</b>'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

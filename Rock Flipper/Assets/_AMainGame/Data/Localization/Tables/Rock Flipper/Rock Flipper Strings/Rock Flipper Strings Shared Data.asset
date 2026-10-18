@@ -121,6 +121,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 2838372046370505230
+  - m_Id: 13351213242171392
+    m_Key: 'DEMO LIMITEDThis is the upgrade cap for the demo In the full game you '
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
