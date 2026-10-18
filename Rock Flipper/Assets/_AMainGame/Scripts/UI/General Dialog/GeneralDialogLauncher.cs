@@ -1,4 +1,5 @@
 using Agame.Localization;
+using Agame.Run;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
@@ -34,6 +35,7 @@ namespace Agame.UI
             ///
             var rawMessage = localizedMessage.IsValidAndNotEmpty() ? localizedMessage.GetLocalizedString() : message;
             var finalMessage = string.IsNullOrWhiteSpace(rawMessage) ? string.Empty : rawMessage;
+            finalMessage = entry.shortHandManager.Apply(finalMessage);
 
             ///
             var option = new GeneralDialog.DialogOption()

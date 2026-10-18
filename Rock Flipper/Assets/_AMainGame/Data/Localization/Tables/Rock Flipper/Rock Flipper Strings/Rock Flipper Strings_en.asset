@@ -66,6 +66,14 @@ MonoBehaviour:
     m_Localized: Dismiss All
     m_Metadata:
       m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: OK, Flip It!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: You're playing the <b>demo</b> version of <b>Rock Flipper</b>. This demo <b>limits</b> skills and items you and have.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

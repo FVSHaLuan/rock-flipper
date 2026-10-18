@@ -14,7 +14,7 @@ namespace Agame.Run
         {
             shortHandDictionary = new Dictionary<string, Func<string>>()
                                     {
-                                        
+                { "NEWLINE", () => Environment.NewLine }
                                     };
 
             ///
@@ -27,7 +27,7 @@ namespace Agame.Run
             TryInit();
 
             ///
-            return str.ApplyParameters(GetDescriptionParameterValue).Replace('{', '[').Replace('}', ']');
+            return str.ApplyParameters(GetDescriptionParameterValue);//.Replace('{', '[').Replace('}', ']');
         }
 
         private string GetDescriptionParameterValue(Match match)
@@ -36,19 +36,38 @@ namespace Agame.Run
             var parameter = match.Value;
 
             ///
+            if (string.IsNullOrWhiteSpace(parameter))
+            {
+                return parameter;
+            }
+
+            ///
             Func<string> valueGetter = null;
 
             ///
             shortHandDictionary.TryGetValue(parameter, out valueGetter);
 
             ///
-            if (valueGetter != null)
+            if (parameter[0] == '@')
             {
-                return valueGetter();
+                ///
+                return parameter.Substring(1);
             }
 
             ///
-            return string.Format("<INVALID_PARAM: {0}>", parameter);
+            if (valueGetter != null)
+            {
+                return $"<{valueGetter()}>";
+            }
+
+            ///
+#if UNITY_EDITOR
+            var errorMessage = string.Format("<<INVALID_PARAM: {0}>>", parameter);
+            Debug.LogError($"{errorMessage}, please add '@' after the '[' to ignore ShortHand");
+            return errorMessage;
+#else
+            return parameter;
+#endif
         }
     }
 

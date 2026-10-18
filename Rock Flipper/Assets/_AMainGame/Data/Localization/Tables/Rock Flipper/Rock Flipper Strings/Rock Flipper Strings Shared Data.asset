@@ -63,6 +63,14 @@ MonoBehaviour:
     m_Key: Dismiss All
     m_Metadata:
       m_Items: []
+  - m_Id: 13304211712163840
+    m_Key: OK Flip It
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Key: Youre playing the demo version of Rock Flipper This demo limits skills
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

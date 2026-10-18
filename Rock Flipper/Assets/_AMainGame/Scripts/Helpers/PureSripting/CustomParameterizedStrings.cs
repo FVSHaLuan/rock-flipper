@@ -19,6 +19,6 @@ public static class CustomParameterizedStrings
         }
 
         ///
-        return Regex.Replace(s, @"(?<=\[).*?(?=\])", parameterValueGetter).Replace("[", "").Replace("]", "");
+        return Regex.Replace(s, @"(?<=\[).*?(?=\])", parameterValueGetter).Replace("[<", "").Replace(">]", "");
     }
 }

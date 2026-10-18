@@ -79,6 +79,7 @@ public partial class Entry : MonoBehaviour
     public CompatManager compatManager;
     public LocalizedStrings localizedStrings;
     public SpecificLocalizedStrings specificLocalizedStrings;
+    public ShortHandManager shortHandManager;
 
     [Header("1. Time")]
     public TimeScaleManager timeScaleManager;

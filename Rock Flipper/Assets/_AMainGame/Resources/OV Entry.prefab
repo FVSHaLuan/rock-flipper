@@ -4604,6 +4604,7 @@ MonoBehaviour:
   compatManager: {fileID: 11400000, guid: a1a5c5c4758b233469eff7b63b187631, type: 2}
   localizedStrings: {fileID: 11400000, guid: 32b76629aeabd254b8616ecdb35a605d, type: 2}
   specificLocalizedStrings: {fileID: 11400000, guid: 75c8da7470fcdd844befca7f4db7456d, type: 2}
+  shortHandManager: {fileID: 11400000, guid: 8c88ddbdb57f1544696ac1bdb378ce99, type: 2}
   timeScaleManager: {fileID: 5008013400781487061}
   audioManager: {fileID: 5008013400737874755}
   backgroundMusicManager: {fileID: 5008013401431930744}
