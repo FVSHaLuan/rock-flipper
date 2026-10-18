@@ -14,6 +14,7 @@ Set by the owner later on 2026-10-18.
 - **Where translations go**: mostly straight into the string table assets. For any other text, the owner sets the format per task.
 - **English source changes**: the owner tracks them and asks for re-translation of the changed entries. Nothing needs to detect stale translations, so plan item 5 is dropped.
 - **Glossary**: to be built later (plan item 4). Until then, translations keep game terms consistent on their own and report the choices.
+- **Term length**: keep each game term's translation as close to the English term's length as possible.
 - **AI notice**: the `AI translated notice` is shown on the language select screen.
 - **Thai line breaking**: zero-width spaces (U+200B) go between Thai words, added during translation (the `translate` skill has the rules). Thai has no spaces between words, and TMP only wraps at spaces and U+200B (it has no Thai word segmentation). Without them, long Thai text breaks mid-word wherever the line runs out, and Auto Size text first shrinks toward its minimum size. Not chosen: a word-splitting tool run over the tables, and splitting at runtime. The Thai translations made before this decision (`Common Strings`) got their breaks on 2026-10-18.
 

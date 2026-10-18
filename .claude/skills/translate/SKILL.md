@@ -48,7 +48,7 @@ Cells are tab-separated; write a newline inside a text as `\n` and a zero-width 
 
 Read each entry's metadata first. Comments sit in two places, the shared entry (`note:`) and the English entry (`en note:`), and they often explain a term or an abbreviation: `BK.GR`'s English note says it's "Background" shortened to fit the UI. A note in a target locale (`<code> note:` with `SHOW`) applies to that translation. Where the notes don't settle the meaning:
 - Find where the text is shown: grep the entry id (`m_KeyId: <id>`) in `Prefabs/` and `Scenes/`, and the key or table name in `Scripts/`. A button label, a tooltip and a sentence need different wording.
-- Game terms (Rock, Tier, Pure, Flipper Bot, Skill Tree, Shop, Cash…): read their meaning in `GDD/Glossary.md`. There's no translation glossary yet. Pick one translation per term, use it everywhere, and list your choices in the report so the owner can build the glossary from them. Before choosing, check how an already-translated entry renders the term (`KEY=<term> SHOW=all`).
+- Game terms (Rock, Tier, Pure, Flipper Bot, Skill Tree, Shop, Cash…): read their meaning in `GDD/Glossary.md`. There's no translation glossary yet. Pick one translation per term, use it everywhere, and list your choices in the report so the owner can build the glossary from them. Keep each term's translation as close to the English term's length as possible: a term repeats across labels, buttons and descriptions, so a long one makes all of them longer. Among accurate options, take the one closest in length. Before choosing, check how an already-translated entry renders the term (`KEY=<term> SHOW=all`).
 - If you still can't tell what a fragment or abbreviation means, ask. Don't guess.
 
 ### 3. Translate
