@@ -17,7 +17,379 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ed5a504acb0168d4fa400bc0317dac45, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1318490279829504
+    m_Localized: "Max. po\u010Det kamen\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243827261440
+    m_Localized: Aktivovat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344243839844352
+    m_Localized: "Aktivovat pozad\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886144
+    m_Localized: "N\xE1sobitel obl\xEDben\xE9ho"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244250886145
+    m_Localized: "+{0} k n\xE1sobiteli obl\xEDben\xE9ho"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264640
+    m_Localized: "N\xE1sobitel obl\xEDben\xE9ho za pozad\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13344244561264641
+    m_Localized: "+{0} k n\xE1sobiteli obl\xEDben\xE9ho za ka\u017Ed\xE9 odem\u010Den\xE9 pozad\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626168532992
+    m_Localized: Nadhazovat truhly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626172727296
+    m_Localized: "Umo\u017En\xED nadhazovac\xEDm bot\u016Fm nadhazovat truhly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598208
+    m_Localized: "Chytr\xE9 trasy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347626709598209
+    m_Localized: "Nadhazovac\xED boti se p\u0159esouvaj\xED tam, kde jsou jejich nadhozy neju\u017Eite\u010Dn\u011Bj\u0161\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502656
+    m_Localized: "Aktivovat nadhazovac\xED boty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627074502657
+    m_Localized: "Nadhazovac\xED boti se pohybuj\xED a nadhazuj\xED kameny za v\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601408
+    m_Localized: Doba aktivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627443601409
+    m_Localized: "+{0} s k dob\u011B aktivity"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627816894464
+    m_Localized: Dosah nadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347627821088768
+    m_Localized: +{0} k dosahu nadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216000
+    m_Localized: "Max. po\u010Det"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628169216001
+    m_Localized: "+{0} k max. po\u010Dtu nadhazovac\xEDch bot\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537536
+    m_Localized: Rychlost pohybu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628521537537
+    m_Localized: +{0} % k rychlosti pohybu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470464
+    m_Localized: "S\xEDla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347628865470465
+    m_Localized: "+{0} k s\xEDle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629213597696
+    m_Localized: Interval nadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629221986304
+    m_Localized: -{0} s k intervalu nadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629582696448
+    m_Localized: "Doba ne\u010Dinnosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629586890752
+    m_Localized: "-{0} s k dob\u011B ne\u010Dinnosti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600896
+    m_Localized: "Max. po\u010Det paprsk\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347629947600897
+    m_Localized: "+{0} k max. po\u010Dtu paprsk\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311040
+    m_Localized: "Min. po\u010Det paprsk\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630308311041
+    m_Localized: "+{0} k min. po\u010Dtu paprsk\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855360
+    m_Localized: "Zv\xFD\u0161en\xED do\u010Dasn\xE9ho n\xE1sobitele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630643855361
+    m_Localized: "+{0} k do\u010Dasn\xE9mu n\xE1sobiteli za ka\u017Ed\xFD z\xE1sah paprskem L VIII"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630979399680
+    m_Localized: "Interval st\u0159elby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347630983593984
+    m_Localized: "-{0} s k intervalu st\u0159elby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631327526912
+    m_Localized: Odemknout Monolit L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123136
+    m_Localized: "Najet\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347631772123137
+    m_Localized: "Aktivovat nadhoz najet\xEDm my\u0161i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107968
+    m_Localized: "Plo\u0161n\xFD nadhoz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632225107969
+    m_Localized: "Aktivovat polom\u011Br my\u0161i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632636149760
+    m_Localized: "Polom\u011Br"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347632640344064
+    m_Localized: "+{0} k polom\u011Bru my\u0161i"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633105911808
+    m_Localized: "Riko\u0161et"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633110106112
+    m_Localized: "Po odrazu se k\xE1men m\u016F\u017Ee znovu odrazit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285248
+    m_Localized: "\u0160ance na odraz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633567285249
+    m_Localized: "+{0} % k \u0161anci na odraz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633961549824
+    m_Localized: Max. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347633965744128
+    m_Localized: "-{0} k max. HP v\u0161ech kamen\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634439700480
+    m_Localized: -{0} k max. HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634947211264
+    m_Localized: "N\xE1sobitel za rozbit\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347634955599872
+    m_Localized: "+{0} k n\xE1sobiteli za rozbit\xED pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347635542802432
+    m_Localized: "+{0} k n\xE1sobiteli za rozbit\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033472
+    m_Localized: XP truhly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636109033473
+    m_Localized: +{0} XP truhly za dopad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378432
+    m_Localized: "Kritick\xFD n\xE1sobitel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347636591378433
+    m_Localized: "+{0} ke kritick\xE9mu n\xE1sobiteli pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637048557568
+    m_Localized: "Hotovost za kritick\xFD dopad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637052751872
+    m_Localized: "+{0} % k hotovosti za kritick\xFD dopad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637514125312
+    m_Localized: "\u0160ance na kritick\xFD dopad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637518319616
+    m_Localized: "+{0} % k \u0161anci na kritick\xFD dopad pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347637874835456
+    m_Localized: "+{0} % k \u0161anci na kritick\xFD dopad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638294265856
+    m_Localized: Rychlost nadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638298460160
+    m_Localized: "+{0} % k rychlosti nadhozu pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347638654976000
+    m_Localized: +{0} % k rychlosti nadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183616
+    m_Localized: Hotovost za dopad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639091183617
+    m_Localized: "+{0} k hotovosti za dopad pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639439310848
+    m_Localized: +{0} k hotovosti za dopad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158336
+    m_Localized: "XP \xFArovn\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347639846158337
+    m_Localized: "+{0} XP \xFArovn\u011B za dopad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640290754560
+    m_Localized: "+{0} k max. po\u010Dtu kamen\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407744
+    m_Localized: "N\xE1sobitel \u010Distoty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347640693407745
+    m_Localized: "+{0} k n\xE1sobiteli \u010Distoty pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641066700800
+    m_Localized: "+{0} k n\xE1sobiteli \u010Distoty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576768
+    m_Localized: "\u010Cistota"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641452576769
+    m_Localized: "+{0} % k \u0161anci st\xE1t se \u010Dist\xFDm pro v\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347641796509696
+    m_Localized: "+{0} % k \u0161anci st\xE1t se \u010Dist\xFDm p\u0159i rozbit\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642169802752
+    m_Localized: "\u010Cek\xE1n\xED po dopadu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642173997056
+    m_Localized: "-{0} s, ne\u017E lze k\xE1men po dopadu znovu nadhodit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678720
+    m_Localized: "\u0160ance na samonadhoz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642555678721
+    m_Localized: "+{0} % k \u0161anci na samonadhoz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642887028736
+    m_Localized: Prodleva samonadhozu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347642891223040
+    m_Localized: "-{0} s k prodlev\u011B samonadhozu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347643918827520
+    m_Localized: "Monolit L VIII pravideln\u011B st\u0159\xEDl\xED laserov\xE9 paprsky na let\xEDc\xED kameny a zvy\u0161uje jejich do\u010Dasn\xE9 n\xE1sobitele."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787072
+    m_Localized: "Odemknout k\xE1men P1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645126787073
+    m_Localized: "Po dopadu m\xE1 k\xE1men P1 \u0161anci na dal\u0161\xED nadhoz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497216
+    m_Localized: "Odemknout k\xE1men P2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645487497217
+    m_Localized: "Kameny P2 se na zemi pokou\u0161ej\xED o samonadhoz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347645856595968
+    m_Localized: "Odemknout k\xE1men P3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347907669245952
+    m_Localized: Odemknout Monolit L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908000595968
+    m_Localized: Odemknout Monolit L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908319363072
+    m_Localized: Odemknout Monolit L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908663296000
+    m_Localized: Odemknout Monolit L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13347908977868800
+    m_Localized: Odemknout Monolit L XII
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -44,13 +44,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 304893903024128
-    m_Localized: "Jazyky krom\u011B angli\u010Dtiny byly p\u0159elo\u017Eeny pomoc\xED
-      AI.\nN\u011Bkter\xFD text m\u016F\u017Ee obsahovat chyby nebo zn\xEDt nep\u0159irozen\u011B."
+    m_Localized: "Jazyky krom\u011B angli\u010Dtiny byly p\u0159elo\u017Eeny pomoc\xED AI.\nN\u011Bkter\xFD text m\u016F\u017Ee obsahovat chyby nebo zn\xEDt nep\u0159irozen\u011B."
     m_Metadata:
       m_Items: []
   - m_Id: 304941520957440
-    m_Localized: "Mo\u017En\xE1 budete muset hru restartovat, pokud se jazyk nezm\u011Bn\xED
-      \xFApln\u011B."
+    m_Localized: "Mo\u017En\xE1 budete muset hru restartovat, pokud se jazyk nezm\u011Bn\xED \xFApln\u011B."
     m_Metadata:
       m_Items: []
   - m_Id: 357107782692864
@@ -383,6 +381,70 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3274599526469632
     m_Localized: "V\xFDhra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14470836574404608
+    m_Localized: Odemknout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730108183658496
+    m_Localized: "Moje dal\u0161\xED hra, kter\xE1 se v\xE1m bude l\xEDbit!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730418658623488
+    m_Localized: "P\u0159idejte si plnou hru do seznamu p\u0159\xE1n\xED na"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27730577425612800
+    m_Localized: "Speci\xE1ln\xED sleva"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27759792975953920
+    m_Localized: "Strom dovednost\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760016561717248
+    m_Localized: Obchod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760156546613248
+    m_Localized: "Pozad\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27760457588588544
+    m_Localized: "P\u0159edm\u011Bty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27766828988022784
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301697527808
+    m_Localized: "\xDAr."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722112
+    m_Localized: XP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722113
+    m_Localized: "nen\xED v demu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722114
+    m_Localized: "V\xEDce v pln\xE9 h\u0159e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722115
+    m_Localized: "V\u0161e odem\u010Deno"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301701722116
+    m_Localized: "Cena bude pln\u011B vr\xE1cena"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27821301710110720
+    m_Localized: "Tato pozice byla ulo\u017Eena ve star\u0161\xED verzi hry, kter\xE1 ji\u017E nen\xED podporov\xE1na.\nOmlouv\xE1me se za nep\u0159\xEDjemnosti :("
     m_Metadata:
       m_Items: []
   references:

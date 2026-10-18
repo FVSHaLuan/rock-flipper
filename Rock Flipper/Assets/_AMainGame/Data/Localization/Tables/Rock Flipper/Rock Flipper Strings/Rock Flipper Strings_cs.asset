@@ -17,7 +17,219 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5fc3eb9ac00fb72499bf7ebd1793ffbe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 7059745456128
+    m_Localized: "K\xE1men P0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7130968932352
+    m_Localized: "K\xE1men P1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7173725667328
+    m_Localized: "K\xE1men P2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7208756494336
+    m_Localized: "K\xE1men P3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238640910336
+    m_Localized: "K\xE1men P4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7262829461504
+    m_Localized: "K\xE1men P5"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300708134535168
+    m_Localized: "Dal\u0161\xED obl\xEDben\xE9 pozad\xED:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13300936485027840
+    m_Localized: "Obl\xEDben\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13301272792711168
+    m_Localized: "Odemknout n\xE1hodn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302028673400832
+    m_Localized: "Nadhazovac\xED bot"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13302979580837888
+    m_Localized: "P\u0159edm\u011Bty s \u010Dervenou te\u010Dkou jsou nov\u011B nalezen\xE9 nebo maj\xED vy\u0161\u0161\xED \xFArove\u0148."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13303223290871808
+    m_Localized: "Skr\xFDt v\u0161e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304211712163840
+    m_Localized: OK, nadhodit!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13304398807482368
+    m_Localized: "Hrajete <b>demoverzi</b> hry <b>Rock Flipper</b>. Tato demoverze <b>omezuje</b> dostupn\xE9 dovednosti a p\u0159edm\u011Bty."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13345685015281664
+    m_Localized: "Pozad\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349067394301952
+    m_Localized: "Nadhazovac\xED boti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349071173369856
+    m_Localized: Monolit L VIII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349072561684480
+    m_Localized: Monolit L II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349073006280704
+    m_Localized: "My\u0161"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349075195707392
+    m_Localized: "V\u0161echny kameny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349348899209216
+    m_Localized: Monolit L IV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349234753536
+    m_Localized: Monolit L VI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349349897453568
+    m_Localized: Monolit L X
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13349350212026368
+    m_Localized: Monolit L XII
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13351213242171392
+    m_Localized: "<b>OMEZEN\xCD DEMA!</b>\n\nToto je limit vylep\u0161en\xED v demu. V pln\xE9 h\u0159e m\u016F\u017Eete vylep\u0161ovat d\xE1l a odemknout dal\u0161\xED dovednosti.\n\n<b>Klikn\u011Bte a pod\xEDvejte se na plnou hru.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616768
+    m_Localized: "Odemkn\u011Bte dal\u0161\xED pozad\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616769
+    m_Localized: "Zvolte obl\xEDben\xE9 pozad\xED a z\xEDskejte n\xE1soben\xFD p\u0159\xEDjem."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616770
+    m_Localized: "Obl\xEDben\xE9 pozad\xED: p\u0159\xEDjem {0}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616771
+    m_Localized: "Odemkn\u011Bte dal\u0161\xED pozad\xED a zvy\u0161te n\xE1sobitel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496835616772
+    m_Localized: "Zat\xEDm nenalezeno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811072
+    m_Localized: "Vyd\u011Blan\xE1 hotovost"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496839811073
+    m_Localized: "\xDA\u010Dinky rostou s \xFArovn\xED p\u0159edm\u011Btu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005376
+    m_Localized: "B\u011B\u017En\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005377
+    m_Localized: "Neobvykl\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005378
+    m_Localized: "Vz\xE1cn\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005379
+    m_Localized: "Epick\xFD"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496844005380
+    m_Localized: "Unik\xE1tn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199680
+    m_Localized: "Dopady kamen\u016F pln\xED tento ukazatel. Kdy\u017E se zapln\xED, postoup\xEDte na dal\u0161\xED \xFArove\u0148 a z\xEDsk\xE1te {0}."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199681
+    m_Localized: Ukazatel truhly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199682
+    m_Localized: "Dopady kamen\u016F pln\xED tento ukazatel. Kdy\u017E se zapln\xED, padne truhla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358496848199683
+    m_Localized: Kostky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497351516160
+    m_Localized: Kladivo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497661894656
+    m_Localized: Lucerna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358497976467456
+    m_Localized: Lupa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498303623168
+    m_Localized: "Krump\xE1\u010D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498626584576
+    m_Localized: "M\xFDdlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358498936963072
+    m_Localized: "Pru\u017Eina"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499234758656
+    m_Localized: "Pen\u011B\u017Eenka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499545137152
+    m_Localized: "Pou\u0161\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525760
+    m_Localized: Louky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525761
+    m_Localized: Mars
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525762
+    m_Localized: Tundra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13358499553525763
+    m_Localized: "Vulk\xE1n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
