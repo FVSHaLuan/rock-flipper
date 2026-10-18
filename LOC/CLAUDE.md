@@ -15,7 +15,7 @@ Proposed on 2026-10-18 after an audit of the project. The owner hasn't confirmed
 
 1. **Runtime fixes** (toolkit, reusable):
    - Add a Steam language locale selector, gated by `#if !DISABLESTEAMWORKS`. Place it after PlayerPrefs and before the system locale. It maps Steam API codes (`schinese`, `koreana`, `brazilian`…; see [SteamLanguages.md](Reference/SteamLanguages.md)) to project locales.
-   - Give every locale an English fallback.
+   - Give every locale an English fallback. Done on 2026-10-18.
    - Show the "No translation found" message only in the Editor and dev builds.
    - Centralize number formatting.
 2. **Hook up all English text**:

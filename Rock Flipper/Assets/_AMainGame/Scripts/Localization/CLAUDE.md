@@ -19,7 +19,7 @@
 
 ## Data (`Data/Localization/`)
 
-- **Locales**: en (project locale) plus zh, zh-TW, ja, ko, ru, uk, pl, cs, de, fr, es, it, pt-BR, tr, th, vi, and two pseudo-locales. Only zh-TW has a fallback locale set.
+- **Locales**: en (project locale) plus zh, zh-TW, ja, ko, ru, uk, pl, cs, de, fr, es, it, pt-BR, tr, th, vi, and two pseudo-locales. Every non-English, non-pseudo locale has a **Fallback Locale** metadata pointing to `en`, except zh-TW, which falls back to zh (and so on to `en`). Add the same metadata to any new locale.
 - **String tables** — `Common/` is toolkit, `Rock Flipper/` is game-specific:
   - `Common Strings` (default string table): 91 keys, translated in all 16 locales. Includes the language-switch strings `AI translated notice` and `Reset to apply translation notice` ("You may need to restart the game if it won't fully change to the new language."). Some keys are leftovers from the previous game (`game.Rock Crusher`, `Boss Level`, `Beat All Bosses`, Animal/Food/Fantasy/Space).
   - `Test Strings`: 1 test key.
@@ -28,7 +28,7 @@
   - `Common Assets` (default asset table): `NotoFont` / `NotoFontMaterial` per locale (Noto Sans, NotoSansJP/KR/SC/TC/Thai). The fonts must be Addressable: Noto Sans in `Localization-Assets-Shared`, the others in `Localization-Assets-<locale>`. A font that isn't throws `InvalidKeyException` when its locale's text loads. Assign entries through the table editor (or `AssetTableCollection.AddAssetToTable`), which creates the group entries. Copying table files alone doesn't.
 - **Localization Settings.asset**:
   - Startup selectors in order: command line (`-language=`) → PlayerPrefs → system (OS) locale → `en`. **No Steam language selector**: the Steam client language is ignored.
-  - String database: `m_UseFallback: 1`, but `m_MissingTranslationState: -1` (all flags), so a missing entry shows "No translation found for '…'" to players, in shipping builds too.
+  - String database: `m_UseFallback: 1`, so an entry that is missing or empty in the selected locale shows the fallback locale's text (English). `m_MissingTranslationState: -1` (all flags) means "No translation found for '…'" still shows, in shipping builds too, when the English entry is missing as well.
   - Preload behavior 2, synchronous initialization on.
   - `Common Strings`, `Common Assets`, `Rock Flipper Strings` and `Rock Flipper Skill Strings` are flagged **Preload** for every locale (a `Preload` label on their Addressables entries); `Test Strings` isn't. Flag any new real table too. The language buttons switch the locale on hover, and without preloading a quick hover across them makes queued string lookups run on released table handles ("Load Table Operation Failed", "Attempting to use an invalid operation handle").
 - Fonts (`_AMainGame/Fonts/`): every TMP font asset is dynamic. Main UI font is `NotoSans-Regular SDF`. TMP has no Thai word segmentation, so long Thai text won't wrap without zero-width spaces.
