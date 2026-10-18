@@ -68,7 +68,7 @@ namespace Agame.Run.Combat
 
         private void Flippable_OnStartedFlipping()
         {
-
+            RunEntry.combatSoundEffectManager.PlayChestStartFlipping();
         }
 
         private void Flippable_OnFinishedFlipping()
@@ -76,6 +76,7 @@ namespace Agame.Run.Combat
             // Dropping from the chest bar is the chest's arrival, not a landing that costs HP.
             if (flippable.LastFlipSource == FlipSource.NewChest)
             {
+                RunEntry.combatSoundEffectManager.PlayChestNormalLanding();
                 OnLanded?.Invoke();
                 return;
             }
@@ -86,10 +87,12 @@ namespace Agame.Run.Combat
             ///
             if (CurrentHP <= 0)
             {
+                RunEntry.combatSoundEffectManager.PlayChestOpeningLanding();
                 Open();
             }
             else
             {
+                RunEntry.combatSoundEffectManager.PlayChestNormalLanding();
                 OnHPChanged?.Invoke();
                 OnLanded?.Invoke();
             }

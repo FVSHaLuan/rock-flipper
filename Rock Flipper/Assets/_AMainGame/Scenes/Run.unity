@@ -7158,6 +7158,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225515211}
   m_CullTransparentMesh: 1
+--- !u!1 &232003400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232003401}
+  - component: {fileID: 232003403}
+  - component: {fileID: 232003402}
+  m_Layer: 0
+  m_Name: Chest Normal Landing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232003401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232003400}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1865691667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232003402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232003400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668c06181051c9c4fbe21433ccadf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PooledAudioPlayer
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  audioClip: {fileID: 8300000, guid: 7f26ce7b037a96443a54447d4b38c0d3, type: 3}
+  gameAudioChannel: 1
+  staticVolumeGroup: 0
+  selfVolume: 0.437
+  priority: 128
+  mixerGroup: {fileID: 0}
+  playOnEnable: 0
+  minPlayTimeInterval: 0
+  startTrimmingTime: -1
+  endTrimmingTime: -1
+  randomAudioClips: []
+--- !u!114 &232003403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232003400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abc6db5ac3d5e445a3144c058450cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConcurrentActivatorByUnityObjectInstance
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  minInterval: 0.5
+  maxPerFrame: 1
+  onShouldActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 232003402}
+        m_TargetAssemblyTypeName: PooledAudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onShouldNotActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  unityObject: {fileID: 232003400}
 --- !u!1 &232520356
 GameObject:
   m_ObjectHideFlags: 0
@@ -9912,6 +10009,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8160900520168656092, guid: e851a25f298e9c849ad18a547776d045, type: 3}
   m_PrefabInstance: {fileID: 1584064241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &336147746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336147747}
+  - component: {fileID: 336147749}
+  - component: {fileID: 336147748}
+  m_Layer: 0
+  m_Name: Chest Start Flipping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336147747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336147746}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1865691667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336147748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336147746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668c06181051c9c4fbe21433ccadf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PooledAudioPlayer
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  audioClip: {fileID: 8300000, guid: 04a9baaa82b463a4ba515b34ab28989d, type: 3}
+  gameAudioChannel: 1
+  staticVolumeGroup: 0
+  selfVolume: 0.437
+  priority: 74
+  mixerGroup: {fileID: 0}
+  playOnEnable: 0
+  minPlayTimeInterval: 0
+  startTrimmingTime: -1
+  endTrimmingTime: -1
+  randomAudioClips: []
+--- !u!114 &336147749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336147746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abc6db5ac3d5e445a3144c058450cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConcurrentActivatorByUnityObjectInstance
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  minInterval: 0.5
+  maxPerFrame: 1
+  onShouldActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 336147748}
+        m_TargetAssemblyTypeName: PooledAudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onShouldNotActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  unityObject: {fileID: 336147746}
 --- !u!1001 &336765460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19240,7 +19434,7 @@ GameObject:
   - component: {fileID: 655757634}
   - component: {fileID: 655757635}
   m_Layer: 0
-  m_Name: Start Flipping
+  m_Name: Rock Start Flipping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20998,6 +21192,103 @@ MonoBehaviour:
     selfLogs: 
   nearCenterRockCount: 3
   nearCenterRadius: 2.5
+--- !u!1 &717192913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717192914}
+  - component: {fileID: 717192916}
+  - component: {fileID: 717192915}
+  m_Layer: 0
+  m_Name: Chest Opening Landing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &717192914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717192913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1865691667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &717192915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717192913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668c06181051c9c4fbe21433ccadf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PooledAudioPlayer
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  audioClip: {fileID: 8300000, guid: 483895491750daa498e305432e488032, type: 3}
+  gameAudioChannel: 1
+  staticVolumeGroup: 0
+  selfVolume: 0.437
+  priority: 128
+  mixerGroup: {fileID: 0}
+  playOnEnable: 0
+  minPlayTimeInterval: 0
+  startTrimmingTime: -1
+  endTrimmingTime: -1
+  randomAudioClips: []
+--- !u!114 &717192916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717192913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abc6db5ac3d5e445a3144c058450cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConcurrentActivatorByUnityObjectInstance
+  selfLog:
+    enableLogger: 0
+    alsoLogToUnityConsole: 0
+    selfLogs: 
+  minInterval: 0.5
+  maxPerFrame: 1
+  onShouldActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 717192915}
+        m_TargetAssemblyTypeName: PooledAudioPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onShouldNotActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  unityObject: {fileID: 717192913}
 --- !u!1 &719949131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4320365423265808409, guid: e3f5b5c3c0d565a4ca6db69c59a7438f, type: 3}
@@ -29999,7 +30290,7 @@ GameObject:
   - component: {fileID: 996909750}
   - component: {fileID: 996909749}
   m_Layer: 0
-  m_Name: Breaking Landing
+  m_Name: Rock Breaking Landing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43199,7 +43490,7 @@ GameObject:
   - component: {fileID: 1466605067}
   - component: {fileID: 1466605066}
   m_Layer: 0
-  m_Name: Normal Landing
+  m_Name: Rock Normal Landing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56531,6 +56822,9 @@ Transform:
   - {fileID: 655757633}
   - {fileID: 1466605065}
   - {fileID: 996909748}
+  - {fileID: 336147747}
+  - {fileID: 232003401}
+  - {fileID: 717192914}
   - {fileID: 168892194}
   m_Father: {fileID: 731004323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -56551,7 +56845,7 @@ MonoBehaviour:
     alsoLogToUnityConsole: 0
     selfLogs: 
   clickLoopPlayer: {fileID: 168892195}
-  playStartFlippingDelegate:
+  playRockStartFlippingDelegate:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 655757634}
@@ -56566,7 +56860,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  playNormalLandingDelegate:
+  playRockNormalLandingDelegate:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1466605067}
@@ -56581,7 +56875,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  playBreakingLandingDelegate:
+  playRockBreakingLandingDelegate:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 996909750}
@@ -56591,6 +56885,51 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playChestStartFlippingDelegate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 336147749}
+        m_TargetAssemblyTypeName: ConcurrentActivator, Assembly-CSharp
+        m_MethodName: TryActivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playChestNormalLandingDelegate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 232003403}
+        m_TargetAssemblyTypeName: ConcurrentActivator, Assembly-CSharp
+        m_MethodName: TryActivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playChestOpeningLandingDelegate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 717192916}
+        m_TargetAssemblyTypeName: ConcurrentActivator, Assembly-CSharp
+        m_MethodName: TryActivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -127,7 +127,7 @@ namespace Agame.Run.Combat
                 EarnCash(true);
 
                 ///
-                RunEntry.combatSoundEffectManager.PlayBreakingLanding();
+                RunEntry.combatSoundEffectManager.PlayRockBreakingLanding();
 
                 ///
                 BreakCurrentRockAndSpawnNewOne();
@@ -144,7 +144,7 @@ namespace Agame.Run.Combat
                 UpdateLandingCooldown();
 
                 ///
-                RunEntry.combatSoundEffectManager.PlayNormalLanding();
+                RunEntry.combatSoundEffectManager.PlayRockNormalLanding();
 
                 ///
                 onLanded?.Invoke();
@@ -220,7 +220,7 @@ namespace Agame.Run.Combat
             ResetTemporaryStats();
 
             ///
-            RunEntry.combatSoundEffectManager.PlayStartFlipping();
+            RunEntry.combatSoundEffectManager.PlayRockStartFlipping();
 
             ///
             onStartedFlipping?.Invoke();

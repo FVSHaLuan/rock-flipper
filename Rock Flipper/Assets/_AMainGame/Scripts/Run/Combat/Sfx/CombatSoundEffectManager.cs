@@ -1,6 +1,7 @@
 using FHC.Core.Architecture;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Agame.Run.Combat
 {
@@ -8,12 +9,22 @@ namespace Agame.Run.Combat
     {
         [SerializeField]
         private GameAudioController clickLoopPlayer;
+
+        [Header("Rocks")]
+        [SerializeField, FormerlySerializedAs("playStartFlippingDelegate")]
+        private UnityEvent playRockStartFlippingDelegate;
+        [SerializeField, FormerlySerializedAs("playNormalLandingDelegate")]
+        private UnityEvent playRockNormalLandingDelegate;
+        [SerializeField, FormerlySerializedAs("playBreakingLandingDelegate")]
+        private UnityEvent playRockBreakingLandingDelegate;
+
+        [Header("Chests")]
         [SerializeField]
-        private UnityEvent playStartFlippingDelegate;
+        private UnityEvent playChestStartFlippingDelegate;
         [SerializeField]
-        private UnityEvent playNormalLandingDelegate;
+        private UnityEvent playChestNormalLandingDelegate;
         [SerializeField]
-        private UnityEvent playBreakingLandingDelegate;
+        private UnityEvent playChestOpeningLandingDelegate;
 
         private BalancerWithObjects clickLoopPlayerUnmutedBalancer = new BalancerWithObjects();
 
@@ -66,7 +77,7 @@ namespace Agame.Run.Combat
             }
         }
 
-        public void PlayStartFlipping()
+        public void PlayRockStartFlipping()
         {
             if (CurrentRunState != RunState.Combat)
             {
@@ -74,10 +85,10 @@ namespace Agame.Run.Combat
             }
 
             ///
-            playStartFlippingDelegate?.Invoke();
+            playRockStartFlippingDelegate?.Invoke();
         }
 
-        public void PlayNormalLanding()
+        public void PlayRockNormalLanding()
         {
             if (CurrentRunState != RunState.Combat)
             {
@@ -85,10 +96,10 @@ namespace Agame.Run.Combat
             }
 
             ///
-            playNormalLandingDelegate?.Invoke();
+            playRockNormalLandingDelegate?.Invoke();
         }
 
-        public void PlayBreakingLanding()
+        public void PlayRockBreakingLanding()
         {
             if (CurrentRunState != RunState.Combat)
             {
@@ -96,7 +107,40 @@ namespace Agame.Run.Combat
             }
 
             ///
-            playBreakingLandingDelegate?.Invoke();
+            playRockBreakingLandingDelegate?.Invoke();
+        }
+
+        public void PlayChestStartFlipping()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playChestStartFlippingDelegate?.Invoke();
+        }
+
+        public void PlayChestNormalLanding()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playChestNormalLandingDelegate?.Invoke();
+        }
+
+        public void PlayChestOpeningLanding()
+        {
+            if (CurrentRunState != RunState.Combat)
+            {
+                return;
+            }
+
+            ///
+            playChestOpeningLandingDelegate?.Invoke();
         }
     }
 
