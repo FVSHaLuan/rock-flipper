@@ -2,7 +2,7 @@
 //   FILE       absolute path to the TSV file (forward slashes)
 //   OVERWRITE  "false" skips entries that already have text in that locale, "true" replaces them
 //   DRY        "true" only reports what would change
-// TSV (tab-separated, one entry per row, a newline inside a text written as \n and a zero-width space (U+200B) as ​, lines starting with # ignored):
+// TSV (tab-separated, one entry per row, a newline inside a text written as \n and a zero-width space (U+200B) as \u200B, lines starting with # ignored):
 //   table	Rock Flipper Strings
 //   key	zh	ja	...            <- locale codes, any subset, any order
 //   Preferred	首选	お気に入り	...  <- an empty cell leaves that locale alone
@@ -54,7 +54,7 @@ for (int r = 2; r < lines.Count; r++)
     var smart = enEntry != null && enEntry.IsSmart;
     for (int c = 1; c < lines[r].Length; c++)
     {
-        var text = lines[r][c].Replace("\\n", "\n").Replace("\\u200B", "​");
+        var text = lines[r][c].Replace("\\n", "\n").Replace("\\u200B", "\u200B");
         if (text.Trim().Length == 0) continue;
         var table = (UnityEngine.Localization.Tables.StringTable)collection.GetTable(codes[c]);
         var entry = table.GetEntry(shared.Id);

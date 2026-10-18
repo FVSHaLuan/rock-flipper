@@ -181,9 +181,12 @@ Meanings come from the GDD and the string tables' translator notes. "Shown as" g
 | Shop | The side bar tab for buying rocks and Flipper Bots and unlocking the Skill Tree. | |
 | Upgrade | Spending currency to progress. | Must differ from Level Up. |
 | Unlock | Making something available. | Verb; matches the shipped "Not unlocked". |
+| Enable | Skill title verb for a skill that turns a feature on ("Backgrounds - Enable", "Enable Mouse Radius"). | Verb, in the form used as a skill title. |
 | Count, Speed | Generic words used in stat names. | Adopted. |
 | Maxed | At the maximum level. | Adopted. |
 | Demo | The demo version of the game. | |
+| Full Game | The paid full version, as opposed to the Demo ("More in full game"). | |
+| Wishlist | Steam's wishlist ("Wishlist the full game on Steam"). | Steam's own term in each language. |
 
 ## Not Included
 - **Development-only terms** that players never see: Biome, Prism, Playfield, Gameplay elements, Background elements, Overlay UI elements, Node, Parent skill, Root skill.

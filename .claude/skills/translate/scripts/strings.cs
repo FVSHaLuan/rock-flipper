@@ -6,7 +6,7 @@
 // Per entry: key, id, [smart], the entry's metadata ("note:" on the shared entry, "en note:" on the English entry),
 // the English text, missing locales, then the SHOW texts with their own notes.
 // Notes print comment texts, and other metadata types as <TypeName> (Smart flags show as [smart] instead).
-// Newlines in texts print as \n, zero-width spaces (U+200B) as ​. Pseudo-locales are skipped.
+// Newlines in texts print as \n, zero-width spaces (U+200B) as \u200B. Pseudo-locales are skipped.
 var tableArg = "{{TABLE}}";
 var keyArg = "{{KEY}}";
 var missingArg = "{{MISSING}}";
