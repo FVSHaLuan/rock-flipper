@@ -84,6 +84,7 @@ public class BranchedBuildConfig : ScriptableObject
             if (!Directory.Exists(platformPath))
             {
                 Debug.LogError($"Failed to create build folder: {platformPath}");
+                return;
             }
         }
 
