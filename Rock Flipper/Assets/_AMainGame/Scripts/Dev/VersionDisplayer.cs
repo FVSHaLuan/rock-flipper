@@ -53,7 +53,7 @@ public class VersionDisplayer : MonoBehaviour
                 }
                 else
                 {
-                    text.Text = (VersionBranchInfo.IsTargetedOrOnMobile ? "PR - " : "Pre-release - ") + Application.version;
+                    text.Text = /*(VersionBranchInfo.IsTargetedOrOnMobile ? "PR - " : "Pre-release - ") +*/ Application.version;
                     text.Color = FullVersionColor;
                 }
                 ///
