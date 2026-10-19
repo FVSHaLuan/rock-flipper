@@ -32,33 +32,11 @@ public class BranchedBuildConfig : ScriptableObject
 
     [SerializeField]
     private string version = "0.0.0";
-    [SerializeField, FormerlySerializedAs("buildFolder")]
-#if UNITY_EDITOR_OSX
-    [ReadOnly]
-#endif
-    private string windowsBuildFolder = "D:\\Builds\\BT Builds";
     [SerializeField]
-#if UNITY_EDITOR_WIN
-    [ReadOnly]
-#endif
-    private string macBuildFolder = "D:\\Builds\\BT Builds";
+    private string buildFolder;
     [SerializeField, FormerlySerializedAs("buildExecutableName")]
     private string buildExecutableNameBase = "Ballatory";
 
-    private string buildFolder
-    {
-        get
-        {
-
-#if UNITY_EDITOR_WIN
-            return windowsBuildFolder;
-#elif UNITY_EDITOR_OSX
-            return macBuildFolder;
-#else
-            throw new System.NotImplementedException("Not implemented for this editor");
-#endif
-        }
-    }
     public string Version => version;
     public string BuildExecutableNameBase => buildExecutableNameBase;
 
@@ -78,7 +56,19 @@ public class BranchedBuildConfig : ScriptableObject
     [ContextMenu("Open Target Folder")]
     private void OpenTargetFolder()
     {
-        EditorUtility.RevealInFinder(GetBuildPath(out var platformPath));
+        GetBuildPath(out var platformPath);
+        if (!Directory.Exists(platformPath))
+        {
+            Directory.CreateDirectory(platformPath);
+            if (Directory.Exists(platformPath))
+            {
+                Debug.LogError($"path doesn't exist: {platformPath}");
+                return;
+            }
+        }
+
+        ///
+        EditorUtility.RevealInFinder(platformPath);
     }
 
     [ContextMenu("Build Current"), EditorModeOnly]
@@ -91,6 +81,10 @@ public class BranchedBuildConfig : ScriptableObject
         if (!Directory.Exists(platformPath))
         {
             Directory.CreateDirectory(platformPath);
+            if (!Directory.Exists(platformPath))
+            {
+                Debug.LogError($"Failed to create build folder: {platformPath}");
+            }
         }
 
         ///

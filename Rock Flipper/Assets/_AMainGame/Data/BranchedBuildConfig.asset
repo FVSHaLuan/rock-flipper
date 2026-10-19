@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: BranchedBuildConfig
   m_EditorClassIdentifier: Assembly-CSharp-Editor::BranchedBuildConfig
   version: 0.0.5
-  windowsBuildFolder: D:\Builds\RF Builds
-  macBuildFolder: TestBuilds
+  buildFolder: Builds\Output
   buildExecutableNameBase: Rock Flipper
