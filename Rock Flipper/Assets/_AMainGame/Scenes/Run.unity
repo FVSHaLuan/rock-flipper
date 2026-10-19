@@ -28803,7 +28803,7 @@ MonoBehaviour:
     selfLogs: 
   beamPrototype: {fileID: 5685105166493525496, guid: 20a2c7f7c4998c045b2635f51e256471, type: 3}
   beamOrigin: {fileID: 523433628}
-  beamDuration: 2
+  beamDuration: 0.3
   onShot:
     m_PersistentCalls:
       m_Calls: []
