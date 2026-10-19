@@ -1,5 +1,7 @@
 using Agame.Meta;
-using Steamworks;
+#if !DISABLESTEAMWORKS
+using Steamworks; 
+#endif
 using UnityEngine;
 using static System.Net.WebRequestMethods;
 
