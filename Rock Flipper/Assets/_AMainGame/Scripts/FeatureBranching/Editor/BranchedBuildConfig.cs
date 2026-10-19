@@ -60,7 +60,7 @@ public class BranchedBuildConfig : ScriptableObject
         if (!Directory.Exists(platformPath))
         {
             Directory.CreateDirectory(platformPath);
-            if (Directory.Exists(platformPath))
+            if (!Directory.Exists(platformPath))
             {
                 Debug.LogError($"path doesn't exist: {platformPath}");
                 return;
