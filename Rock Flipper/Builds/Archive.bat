@@ -3,8 +3,8 @@ setlocal
 :: Usage: Archive.bat [folder]
 :: Packs, cleans and archives the Windows, Linux and Mac builds in [folder] (default: this script's folder).
 :: Each variant folder (Output\Demo, Output\Release, ...) has its own small Archive.bat that calls this one.
+:: The game name and version come from the "title" and "version" lines of the builds' buildCfg.ini.
 
-set gameName=Ballatory
 set archiveRoot=Archives
 :: Appended to the version folder name when that folder already exists. # is replaced by the number.
 set "dupFormat=_#"
@@ -26,13 +26,28 @@ if not defined toPack (
     goto END
 )
 
-set "ver="
-for %%P in (Windows Linux Mac) do if not defined ver call :READVER %%P
-if not defined ver (
-    echo Could not read the version number from buildCfg.ini in any platform folder.
+::------------ Read the build config (Unity writes the Mac one inside Mac.app)
+set "cfgFile="
+for %%F in (Windows\buildCfg.ini Linux\buildCfg.ini Mac\Mac.app\buildCfg.ini Mac\buildCfg.ini) do if not defined cfgFile if exist ".\%%F" set "cfgFile=.\%%F"
+if not defined cfgFile (
+    echo Could not find buildCfg.ini in any platform folder.
     goto END
 )
 
+set "gameName="
+set "ver="
+call :READCFG title gameName
+call :READCFG version ver
+if not defined gameName (
+    echo Could not read the title from %cfgFile%
+    goto END
+)
+if not defined ver (
+    echo Could not read the version number from %cfgFile%
+    goto END
+)
+
+echo game name: %gameName%
 echo version number: %ver%
 echo platforms to pack:%toPack%
 if not defined missing goto CONFIRM
@@ -102,11 +117,9 @@ dir /s /b /a-d ".\%1" 2>nul | findstr "^" >nul
 if errorlevel 1 (set "missing=%missing% %1") else (set "toPack=%toPack% %1")
 exit /b
 
-:READVER
-if not exist ".\%1\buildCfg.ini" exit /b
-for /f "tokens=2 delims==" %%A in ('findstr /i "^version" ".\%1\buildCfg.ini"') do set "ver=%%A"
-:: Trim leading spaces
-if defined ver for /f "tokens=*" %%V in ("%ver%") do set "ver=%%V"
+:: Sets variable %2 to the value of the "%1 = value" line in cfgFile, without leading spaces.
+:READCFG
+for /f "tokens=1* delims==" %%A in ('findstr /i /r /c:"^%1 *=" "%cfgFile%"') do for /f "tokens=*" %%V in ("%%B") do set "%2=%%V"
 exit /b
 
 :: The trailing-backslash masks exclude whole folders, the others exclude matching files.
