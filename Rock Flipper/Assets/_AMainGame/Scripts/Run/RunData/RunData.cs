@@ -276,6 +276,7 @@ namespace Agame
             slotId = thisSlotId;
             compatVersion = Entry.Instance.compatManager.CurrentCompatVersion;
             finishedTutorial = source.finishedTutorial;
+            finishedFirstFlipTutorial = source.finishedFirstFlipTutorial;
 
             // Currency values
             if (currencyValues == null)

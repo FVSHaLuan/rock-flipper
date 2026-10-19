@@ -24,7 +24,7 @@ See also: [Scripts/CLAUDE.md](../CLAUDE.md), [Scripts/Common/CLAUDE.md](../Commo
 | `Combat/Monoliths/` | Early stub: `Monolith.cs` (`ExtendedMonoBehaviourRun` holding a serialized `MonolithType`; activates/deactivates its own GameObject from `GetMonolithBuildStats(monolithType).unlocked` on `Start` and whenever the skill tree screen closes, so per-monolith scripts never check `unlocked` themselves) + `MonolithType.cs` enum (`LII, LIV, LVI, LVIII, LX, LXII`). Per-monolith scripts go in `Specifics/<Name>/` (so far only `Specifics/Prism/Prism.cs`, Prism = L VIII: every `prismShootingInterval` it beams a random airborne rock (found via `RockInstanceManager.ActiveRocks`); each hit (`ZapRock`) adds `prismTemporaryMultiplierIncrease` to the rock's temporary multiplier). Used by `Prefabs/Run/Combat/Monolith/Monolith Base.prefab`. |
 | `Combat/Playfield/` | `Playfield.cs` (partial class — bounds math, clamping, random points, edges). |
 | `Combat/Rocks/` | The Rock system core — see below. |
-| `Combat/Tutorials/` | Sequential onboarding task system (`TutorialTaskManager`/`Controller`). |
+| `Combat/Tutorials/` | Sequential onboarding task system (`TutorialTaskManager`/`Controller`, legacy, tied to `RunData.FinishedTutorial`). Plus `FirstFlipTutorial` (scene object `Services/FirstFlipTutorial`): a tapping hand over a grounded rock until the player's first mouse flip of any rock, once per save (`RunData.FinishedFirstFlipTutorial`, in `RunData_FirstFlipTutorial.cs`). |
 | `Currencies/` | Currency enum + per-currency config/state — see gotcha below. |
 | `RunData/` | Persistent per-run save data — see below. |
 | `Shop/` | Buy-count/upgrade UI logic — see below. |
