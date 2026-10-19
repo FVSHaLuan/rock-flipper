@@ -15,6 +15,7 @@ public class BranchedBuilder : IPreprocessBuildWithReport, IPostprocessBuildWith
     {
         ///
         StringBuilder sb = new StringBuilder();
+        sb.AppendLine($"title = {PlayerSettings.productName}"); 
         sb.AppendLine($"version = {PlayerSettings.bundleVersion}");
         sb.AppendLine($"branch = {VersionBranchInfo.Current}");
 
