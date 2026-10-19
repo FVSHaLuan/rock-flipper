@@ -26,9 +26,11 @@ if not defined toPack (
     goto END
 )
 
-::------------ Read the build config (Unity writes the Mac one inside Mac.app)
+::------------ Read the build config (Unity writes the Mac one inside [gameName].app)
 set "cfgFile="
-for %%F in (Windows\buildCfg.ini Linux\buildCfg.ini Mac\Mac.app\buildCfg.ini Mac\buildCfg.ini) do if not defined cfgFile if exist ".\%%F" set "cfgFile=.\%%F"
+for %%F in (Windows\buildCfg.ini Linux\buildCfg.ini) do if not defined cfgFile if exist ".\%%F" set "cfgFile=.\%%F"
+for /d %%D in (".\Mac\*.app") do if not defined cfgFile if exist "%%~D\buildCfg.ini" set "cfgFile=%%~D\buildCfg.ini"
+if not defined cfgFile if exist ".\Mac\buildCfg.ini" set "cfgFile=.\Mac\buildCfg.ini"
 if not defined cfgFile (
     echo Could not find buildCfg.ini in any platform folder.
     goto END
@@ -80,7 +82,7 @@ mkdir ".\Linux"
 del ".\Mac\*" /s /q 2>nul
 rmdir ".\Mac" /s /q 2>nul
 mkdir ".\Mac"
-mkdir ".\Mac\Mac.app"
+mkdir ".\Mac\%gameName%.app"
 
 del ".\Windows\*" /s /q 2>nul
 rmdir ".\Windows" /s /q 2>nul
@@ -125,6 +127,6 @@ exit /b
 :: The trailing-backslash masks exclude whole folders, the others exclude matching files.
 :PACK
 echo packing %1...
-"C:\Program Files\WinRAR\WinRAR.exe" a  -r -ep1 -x*\*DoNotShip* -x*\*DontShip* -x*\*DoNotShip*\ -x*\*DontShip*\ ".\%gameName% - %1 - %ver% - release.zip" ".\%1\*"
+"C:\Program Files\WinRAR\WinRAR.exe" a  -r -ep1 -x*\*DoNotShip* -x*\*DontShip* -x*\*DoNotShip*\ -x*\*DontShip*\ ".\%gameName% - %1 - %ver%.zip" ".\%1\*"
 if errorlevel 1 set packFailed=1
 exit /b

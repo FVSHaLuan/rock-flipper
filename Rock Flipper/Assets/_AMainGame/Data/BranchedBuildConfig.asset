@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3f2e55a15148245bb955fecc37693c, type: 3}
   m_Name: BranchedBuildConfig
   m_EditorClassIdentifier: Assembly-CSharp-Editor::BranchedBuildConfig
-  version: 0.0.5
+  version: 0.1.5
   buildFolder: Builds\Output
   buildExecutableNameBase: Rock Flipper
