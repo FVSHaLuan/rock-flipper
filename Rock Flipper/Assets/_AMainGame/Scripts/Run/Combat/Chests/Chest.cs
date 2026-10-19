@@ -145,6 +145,10 @@ namespace Agame.Run.Combat
 
             ///
             var find = DropItem();
+            if (find != null && find.Item.IsPlaceholder)
+            {
+                find = null;
+            }
 
             ///
             // Removed here rather than in OnDisable: unloading the scene also disables chests,
